@@ -1,0 +1,887 @@
+{
+  "premiumMessage": "6 selecciones Premium hoy. Baja confianza \u274c Apuestas con valor esperado positivo, no seguras.",
+  "premiumTop3Classic": [
+    {
+      "id": "C2",
+      "type": "classic",
+      "title": "MMA/UFC - Partido #2",
+      "sport": "mma",
+      "event": "Evento MMA/UFC #2",
+      "market": "Round Betting",
+      "startTime": "2026-01-17T06:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n MMA/UFC",
+          "odds": 1.25,
+          "probability": 0.8783
+        }
+      ],
+      "totalProbability": 0.88,
+      "totalOdds": 1.25,
+      "stake": 50.0,
+      "potentialWin": 62.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 98.0,
+      "premiumReason": "Alta probabilidad estimada (88%) con cuota atractiva (1.25). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C3",
+      "type": "classic",
+      "title": "F\u00fatbol Americano - Partido #3",
+      "sport": "american_football",
+      "event": "Evento F\u00fatbol Americano #3",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T02:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol Americano",
+          "odds": 1.34,
+          "probability": 0.8204
+        }
+      ],
+      "totalProbability": 0.82,
+      "totalOdds": 1.34,
+      "stake": 50.0,
+      "potentialWin": 67.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 92.0,
+      "premiumReason": "Alta probabilidad estimada (82%) con cuota atractiva (1.34). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C8",
+      "type": "classic",
+      "title": "Hockey - Partido #8",
+      "sport": "hockey",
+      "event": "Evento Hockey #8",
+      "market": "Puck Line",
+      "startTime": "2026-01-17T08:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Hockey",
+          "odds": 1.22,
+          "probability": 0.872
+        }
+      ],
+      "totalProbability": 0.87,
+      "totalOdds": 1.22,
+      "stake": 50.0,
+      "potentialWin": 61.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 97.0,
+      "premiumReason": "Alta probabilidad estimada (87%) con cuota atractiva (1.22). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    }
+  ],
+  "premiumTop3Parlay": [
+    {
+      "id": "P1",
+      "type": "parlay",
+      "title": "Parlay Seguro",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T05:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Baloncesto - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "Over/Under",
+          "odds": 1.29,
+          "probability": 0.8536
+        },
+        {
+          "name": "B\u00e9isbol - Selecci\u00f3n 2",
+          "sport": "baseball",
+          "market": "Over/Under",
+          "odds": 1.26,
+          "probability": 0.8605
+        }
+      ],
+      "totalProbability": 0.73,
+      "totalOdds": 1.63,
+      "stake": 50.0,
+      "potentialWin": 81.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 83.0,
+      "premiumReason": "Alta probabilidad estimada (73%) con cuota atractiva (1.63). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P2",
+      "type": "parlay",
+      "title": "Parlay F\u00fatbol Mix",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T02:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "BTTS",
+          "odds": 1.41,
+          "probability": 0.7597
+        },
+        {
+          "name": "Baloncesto - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "Moneyline",
+          "odds": 1.48,
+          "probability": 0.7342
+        }
+      ],
+      "totalProbability": 0.56,
+      "totalOdds": 2.09,
+      "stake": 50.0,
+      "potentialWin": 104.5,
+      "riskLevel": "yellow",
+      "isPremium": true,
+      "premiumScore": 71.0,
+      "premiumReason": "Alta probabilidad estimada (56%) con cuota atractiva (2.09). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P7",
+      "type": "parlay",
+      "title": "Parlay Seguro Multi",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T02:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "1X2",
+          "odds": 1.38,
+          "probability": 0.771
+        },
+        {
+          "name": "Baloncesto - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "Handicap",
+          "odds": 1.33,
+          "probability": 0.8102
+        },
+        {
+          "name": "Tenis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "Moneyline",
+          "odds": 1.36,
+          "probability": 0.7819
+        }
+      ],
+      "totalProbability": 0.49,
+      "totalOdds": 2.5,
+      "stake": 50.0,
+      "potentialWin": 125.0,
+      "riskLevel": "red",
+      "isPremium": true,
+      "premiumScore": 59.0,
+      "premiumReason": "Alta probabilidad estimada (49%) con cuota atractiva (2.5). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    }
+  ],
+  "classic": [
+    {
+      "id": "C1",
+      "type": "classic",
+      "title": "F\u00fatbol Americano - Partido #1",
+      "sport": "american_football",
+      "event": "Evento F\u00fatbol Americano #1",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T03:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol Americano",
+          "odds": 1.48,
+          "probability": 0.7003
+        }
+      ],
+      "totalProbability": 0.7,
+      "totalOdds": 1.48,
+      "stake": 50.0,
+      "potentialWin": 74.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 80.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C2",
+      "type": "classic",
+      "title": "MMA/UFC - Partido #2",
+      "sport": "mma",
+      "event": "Evento MMA/UFC #2",
+      "market": "Round Betting",
+      "startTime": "2026-01-17T06:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n MMA/UFC",
+          "odds": 1.25,
+          "probability": 0.8783
+        }
+      ],
+      "totalProbability": 0.88,
+      "totalOdds": 1.25,
+      "stake": 50.0,
+      "potentialWin": 62.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 98.0,
+      "premiumReason": "Alta probabilidad estimada (88%) con cuota atractiva (1.25). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C3",
+      "type": "classic",
+      "title": "F\u00fatbol Americano - Partido #3",
+      "sport": "american_football",
+      "event": "Evento F\u00fatbol Americano #3",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T02:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol Americano",
+          "odds": 1.34,
+          "probability": 0.8204
+        }
+      ],
+      "totalProbability": 0.82,
+      "totalOdds": 1.34,
+      "stake": 50.0,
+      "potentialWin": 67.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 92.0,
+      "premiumReason": "Alta probabilidad estimada (82%) con cuota atractiva (1.34). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C4",
+      "type": "classic",
+      "title": "Baloncesto - Partido #4",
+      "sport": "basketball",
+      "event": "Evento Baloncesto #4",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T04:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Baloncesto",
+          "odds": 1.35,
+          "probability": 0.7812
+        }
+      ],
+      "totalProbability": 0.78,
+      "totalOdds": 1.35,
+      "stake": 50.0,
+      "potentialWin": 67.5,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 88.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C5",
+      "type": "classic",
+      "title": "F\u00fatbol Americano - Partido #5",
+      "sport": "american_football",
+      "event": "Evento F\u00fatbol Americano #5",
+      "market": "Spread",
+      "startTime": "2026-01-17T08:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol Americano",
+          "odds": 1.57,
+          "probability": 0.6832
+        }
+      ],
+      "totalProbability": 0.68,
+      "totalOdds": 1.57,
+      "stake": 50.0,
+      "potentialWin": 78.5,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 83.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C6",
+      "type": "classic",
+      "title": "MMA/UFC - Partido #6",
+      "sport": "mma",
+      "event": "Evento MMA/UFC #6",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T06:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n MMA/UFC",
+          "odds": 1.32,
+          "probability": 0.8197
+        }
+      ],
+      "totalProbability": 0.82,
+      "totalOdds": 1.32,
+      "stake": 50.0,
+      "potentialWin": 66.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 92.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C7",
+      "type": "classic",
+      "title": "F\u00fatbol Americano - Partido #7",
+      "sport": "american_football",
+      "event": "Evento F\u00fatbol Americano #7",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T04:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol Americano",
+          "odds": 1.58,
+          "probability": 0.6889
+        }
+      ],
+      "totalProbability": 0.69,
+      "totalOdds": 1.58,
+      "stake": 50.0,
+      "potentialWin": 79.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 84.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C8",
+      "type": "classic",
+      "title": "Hockey - Partido #8",
+      "sport": "hockey",
+      "event": "Evento Hockey #8",
+      "market": "Puck Line",
+      "startTime": "2026-01-17T08:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Hockey",
+          "odds": 1.22,
+          "probability": 0.872
+        }
+      ],
+      "totalProbability": 0.87,
+      "totalOdds": 1.22,
+      "stake": 50.0,
+      "potentialWin": 61.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 97.0,
+      "premiumReason": "Alta probabilidad estimada (87%) con cuota atractiva (1.22). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C9",
+      "type": "classic",
+      "title": "Hockey - Partido #9",
+      "sport": "hockey",
+      "event": "Evento Hockey #9",
+      "market": "Moneyline",
+      "startTime": "2026-01-17T05:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Hockey",
+          "odds": 1.34,
+          "probability": 0.7795
+        }
+      ],
+      "totalProbability": 0.78,
+      "totalOdds": 1.34,
+      "stake": 50.0,
+      "potentialWin": 67.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 88.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C10",
+      "type": "classic",
+      "title": "F\u00fatbol - Partido #10",
+      "sport": "football",
+      "event": "Evento F\u00fatbol #10",
+      "market": "Over/Under 2.5",
+      "startTime": "2026-01-16T21:39:28.849836",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n F\u00fatbol",
+          "odds": 1.34,
+          "probability": 0.7938
+        }
+      ],
+      "totalProbability": 0.79,
+      "totalOdds": 1.34,
+      "stake": 50.0,
+      "potentialWin": 67.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 89.0,
+      "premiumReason": null,
+      "result": null
+    }
+  ],
+  "parlay": [
+    {
+      "id": "P1",
+      "type": "parlay",
+      "title": "Parlay Seguro",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T05:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Baloncesto - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "Over/Under",
+          "odds": 1.29,
+          "probability": 0.8536
+        },
+        {
+          "name": "B\u00e9isbol - Selecci\u00f3n 2",
+          "sport": "baseball",
+          "market": "Over/Under",
+          "odds": 1.26,
+          "probability": 0.8605
+        }
+      ],
+      "totalProbability": 0.73,
+      "totalOdds": 1.63,
+      "stake": 50.0,
+      "potentialWin": 81.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 83.0,
+      "premiumReason": "Alta probabilidad estimada (73%) con cuota atractiva (1.63). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P2",
+      "type": "parlay",
+      "title": "Parlay F\u00fatbol Mix",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T02:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "BTTS",
+          "odds": 1.41,
+          "probability": 0.7597
+        },
+        {
+          "name": "Baloncesto - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "Moneyline",
+          "odds": 1.48,
+          "probability": 0.7342
+        }
+      ],
+      "totalProbability": 0.56,
+      "totalOdds": 2.09,
+      "stake": 50.0,
+      "potentialWin": 104.5,
+      "riskLevel": "yellow",
+      "isPremium": true,
+      "premiumScore": 71.0,
+      "premiumReason": "Alta probabilidad estimada (56%) con cuota atractiva (2.09). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P3",
+      "type": "parlay",
+      "title": "Parlay Alto Valor",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-16T22:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "MMA/UFC - Selecci\u00f3n 1",
+          "sport": "mma",
+          "market": "Method of Victory",
+          "odds": 1.49,
+          "probability": 0.6931
+        },
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "BTTS",
+          "odds": 1.52,
+          "probability": 0.6861
+        }
+      ],
+      "totalProbability": 0.48,
+      "totalOdds": 2.26,
+      "stake": 50.0,
+      "potentialWin": 113.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 58.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P4",
+      "type": "parlay",
+      "title": "Parlay Multideporte",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T06:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "Double Chance",
+          "odds": 1.44,
+          "probability": 0.7471
+        },
+        {
+          "name": "Hockey - Selecci\u00f3n 2",
+          "sport": "hockey",
+          "market": "Over/Under",
+          "odds": 1.48,
+          "probability": 0.7276
+        },
+        {
+          "name": "Tenis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "Sets Handicap",
+          "odds": 1.38,
+          "probability": 0.7552
+        }
+      ],
+      "totalProbability": 0.41,
+      "totalOdds": 2.94,
+      "stake": 50.0,
+      "potentialWin": 147.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 51.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P5",
+      "type": "parlay",
+      "title": "Parlay Equilibrado",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T00:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Tenis - Selecci\u00f3n 1",
+          "sport": "tennis",
+          "market": "Total Games",
+          "odds": 1.38,
+          "probability": 0.7629
+        },
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "Over/Under 2.5",
+          "odds": 1.49,
+          "probability": 0.7003
+        },
+        {
+          "name": "Hockey - Selecci\u00f3n 3",
+          "sport": "hockey",
+          "market": "Over/Under",
+          "odds": 1.51,
+          "probability": 0.7003
+        }
+      ],
+      "totalProbability": 0.37,
+      "totalOdds": 3.1,
+      "stake": 50.0,
+      "potentialWin": 155.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 47.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P6",
+      "type": "parlay",
+      "title": "Parlay Cuota Alta",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T01:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "B\u00e9isbol - Selecci\u00f3n 1",
+          "sport": "baseball",
+          "market": "Moneyline",
+          "odds": 1.6,
+          "probability": 0.6634
+        },
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "Over/Under 2.5",
+          "odds": 1.52,
+          "probability": 0.6863
+        },
+        {
+          "name": "Hockey - Selecci\u00f3n 3",
+          "sport": "hockey",
+          "market": "Moneyline",
+          "odds": 1.63,
+          "probability": 0.6608
+        }
+      ],
+      "totalProbability": 0.3,
+      "totalOdds": 3.96,
+      "stake": 50.0,
+      "potentialWin": 198.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 40.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P7",
+      "type": "parlay",
+      "title": "Parlay Seguro Multi",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T02:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "1X2",
+          "odds": 1.38,
+          "probability": 0.771
+        },
+        {
+          "name": "Baloncesto - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "Handicap",
+          "odds": 1.33,
+          "probability": 0.8102
+        },
+        {
+          "name": "Tenis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "Moneyline",
+          "odds": 1.36,
+          "probability": 0.7819
+        }
+      ],
+      "totalProbability": 0.49,
+      "totalOdds": 2.5,
+      "stake": 50.0,
+      "potentialWin": 125.0,
+      "riskLevel": "red",
+      "isPremium": true,
+      "premiumScore": 59.0,
+      "premiumReason": "Alta probabilidad estimada (49%) con cuota atractiva (2.5). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P8",
+      "type": "parlay",
+      "title": "Jackpot Conservador",
+      "sport": "multi",
+      "event": "Combinada 4 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T05:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Baloncesto - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "Over/Under",
+          "odds": 1.4,
+          "probability": 0.7561
+        },
+        {
+          "name": "B\u00e9isbol - Selecci\u00f3n 2",
+          "sport": "baseball",
+          "market": "Moneyline",
+          "odds": 1.49,
+          "probability": 0.728
+        },
+        {
+          "name": "MMA/UFC - Selecci\u00f3n 3",
+          "sport": "mma",
+          "market": "Round Betting",
+          "odds": 1.45,
+          "probability": 0.7382
+        },
+        {
+          "name": "Hockey - Selecci\u00f3n 4",
+          "sport": "hockey",
+          "market": "Puck Line",
+          "odds": 1.42,
+          "probability": 0.7609
+        }
+      ],
+      "totalProbability": 0.31,
+      "totalOdds": 4.3,
+      "stake": 50.0,
+      "potentialWin": 215.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 41.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P9",
+      "type": "parlay",
+      "title": "Jackpot Moderado",
+      "sport": "multi",
+      "event": "Combinada 4 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T04:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "F\u00fatbol Americano - Selecci\u00f3n 1",
+          "sport": "american_football",
+          "market": "Spread",
+          "odds": 1.41,
+          "probability": 0.7364
+        },
+        {
+          "name": "MMA/UFC - Selecci\u00f3n 2",
+          "sport": "mma",
+          "market": "Moneyline",
+          "odds": 1.43,
+          "probability": 0.7531
+        },
+        {
+          "name": "Tenis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "Total Games",
+          "odds": 1.48,
+          "probability": 0.7274
+        },
+        {
+          "name": "Hockey - Selecci\u00f3n 4",
+          "sport": "hockey",
+          "market": "Puck Line",
+          "odds": 1.53,
+          "probability": 0.6908
+        }
+      ],
+      "totalProbability": 0.28,
+      "totalOdds": 4.57,
+      "stake": 50.0,
+      "potentialWin": 228.5,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 38.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P10",
+      "type": "parlay",
+      "title": "Jackpot Agresivo",
+      "sport": "multi",
+      "event": "Combinada 4 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T04:39:28.851298",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Hockey - Selecci\u00f3n 1",
+          "sport": "hockey",
+          "market": "Over/Under",
+          "odds": 1.73,
+          "probability": 0.6029
+        },
+        {
+          "name": "F\u00fatbol Americano - Selecci\u00f3n 2",
+          "sport": "american_football",
+          "market": "Over/Under",
+          "odds": 1.67,
+          "probability": 0.6424
+        },
+        {
+          "name": "MMA/UFC - Selecci\u00f3n 3",
+          "sport": "mma",
+          "market": "Round Betting",
+          "odds": 1.63,
+          "probability": 0.6581
+        },
+        {
+          "name": "Baloncesto - Selecci\u00f3n 4",
+          "sport": "basketball",
+          "market": "Handicap",
+          "odds": 1.54,
+          "probability": 0.6725
+        }
+      ],
+      "totalProbability": 0.17,
+      "totalOdds": 7.25,
+      "stake": 50.0,
+      "potentialWin": 362.5,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 27.0,
+      "premiumReason": null,
+      "result": null
+    }
+  ],
+  "_meta": {
+    "date": "2026-01-16",
+    "generatedAt": "2026-01-16T20:39:28.858524Z",
+    "locked": true,
+    "version": "1.0"
+  }
+}

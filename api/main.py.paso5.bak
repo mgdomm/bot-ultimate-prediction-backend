@@ -1,0 +1,32 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from datetime import datetime, timedelta
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.get("/bets/today")
+def get_bets_today():
+    now = datetime.utcnow()
+    bets = []
+    for i in range(1, 11):
+        bets.append({
+            "id": i,
+            "title": f"API CAMBIO Apuesta {i}",  # <-- CAMBIO visible
+            "startTime": (now + timedelta(hours=i)).isoformat(),
+            "probability": 0.78,
+            "odds": 1.85,
+            "status": "scheduled",
+        })
+    return bets

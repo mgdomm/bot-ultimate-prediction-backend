@@ -1,0 +1,85 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+type Bet = {
+  id: number;
+  title: string;
+  startTime: string;
+  probability: number;
+  odds: number;
+  status: string;
+};
+
+export default function Home() {
+  const [bets, setBets] = useState<Bet[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/bets/today")
+      .then((res) => res.json())
+      .then((data) => {
+        setBets(data);
+        setLoading(false);
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <main className="p-6 space-y-6">
+      <h1 className="text-2xl font-semibold">Bot Ultimate Prediction</h1>
+
+      <section className="bg-[#111827] rounded-xl p-4">
+        <h2 className="text-lg mb-4">Resumen</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-[#0F172A] rounded-lg p-4">
+            <div className="text-sm text-gray-400">Efectividad hoy</div>
+            <div className="text-xl">—</div>
+          </div>
+          <div className="bg-[#0F172A] rounded-lg p-4">
+            <div className="text-sm text-gray-400">Efectividad mes</div>
+            <div className="text-xl">—</div>
+          </div>
+          <div className="bg-[#0F172A] rounded-lg p-4">
+            <div className="text-sm text-gray-400">Efectividad total</div>
+            <div className="text-xl">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#111827] rounded-xl p-4">
+        <h2 className="text-lg mb-4">10 apuestas del día</h2>
+
+        {loading && (
+          <div className="text-gray-400">Cargando apuestas…</div>
+        )}
+
+        {!loading && bets.length === 0 && (
+          <div className="text-gray-400">No hay apuestas</div>
+        )}
+
+        <ul className="space-y-3">
+          {bets.map((bet) => (
+            <li
+              key={bet.id}
+              className="bg-[#0F172A] rounded-lg p-4 flex justify-between items-center"
+            >
+              <div>
+                <div className="font-medium">{bet.title}</div>
+                <div className="text-sm text-gray-400">
+                  Probabilidad: {Math.round(bet.probability * 100)}% · Cuota{" "}
+                  {bet.odds}
+                </div>
+              </div>
+              <div className="text-sm text-blue-400">
+                {new Date(bet.startTime).toLocaleTimeString()}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </main>
+  );
+}

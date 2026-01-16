@@ -1,0 +1,161 @@
+type BetStatus = "GREEN" | "YELLOW" | "RED" | "PENDING";
+
+type Bet = {
+  id: number;
+  title: string;
+  startTime: string;
+  probability: number;
+  odds: number;
+  status: BetStatus;
+};
+
+async function getBetsToday(): Promise<{ date: string; bets: Bet[] }> {
+  const res = await fetch("http://localhost:8000/bets/today", { cache: "no-store" });
+  if (!res.ok) {
+    return { date: "today", bets: [] };
+  }
+  return res.json();
+}
+
+function statusBadge(status: BetStatus) {
+  const base = {
+    padding: "4px 10px",
+    borderRadius: 999,
+    fontSize: 12,
+    border: "1px solid #1F2933",
+  } as const;
+
+  if (status === "GREEN") return { ...base, color: "#22C55E", background: "rgba(34,197,94,0.08)" };
+  if (status === "YELLOW") return { ...base, color: "#EAB308", background: "rgba(234,179,8,0.08)" };
+  if (status === "RED") return { ...base, color: "#EF4444", background: "rgba(239,68,68,0.08)" };
+  return { ...base, color: "#9CA3AF", background: "rgba(156,163,175,0.06)" };
+}
+
+function statusText(status: BetStatus) {
+  if (status === "GREEN") return "Ganando";
+  if (status === "YELLOW") return "En riesgo";
+  if (status === "RED") return "Crítico";
+  return "Pendiente";
+}
+
+export default async function Home() {
+  const data = await getBetsToday();
+  const bets = data.bets ?? [];
+
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#0F172A",
+        color: "#E5E7EB",
+        padding: 16,
+        fontFamily:
+          "ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial",
+      }}
+    >
+      <h1 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>
+        Bot Ultimate Prediction
+      </h1>
+
+      <section
+        style={{
+          background: "#111827",
+          borderRadius: 16,
+          padding: 16,
+          border: "1px solid #1F2933",
+          maxWidth: 720,
+          marginBottom: 16,
+        }}
+      >
+        <div style={{ color: "#9CA3AF", fontSize: 14, marginBottom: 6 }}>
+          Resumen
+        </div>
+
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <div
+            style={{
+              background: "#0B1220",
+              border: "1px solid #1F2933",
+              borderRadius: 12,
+              padding: 12,
+              minWidth: 180,
+            }}
+          >
+            <div style={{ color: "#9CA3AF", fontSize: 12 }}>Efectividad hoy</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>—</div>
+          </div>
+
+          <div
+            style={{
+              background: "#0B1220",
+              border: "1px solid #1F2933",
+              borderRadius: 12,
+              padding: 12,
+              minWidth: 180,
+            }}
+          >
+            <div style={{ color: "#9CA3AF", fontSize: 12 }}>Efectividad mes</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>—</div>
+          </div>
+
+          <div
+            style={{
+              background: "#0B1220",
+              border: "1px solid #1F2933",
+              borderRadius: 12,
+              padding: 12,
+              minWidth: 180,
+            }}
+          >
+            <div style={{ color: "#9CA3AF", fontSize: 12 }}>
+              Efectividad total
+            </div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>—</div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        style={{
+          background: "#111827",
+          borderRadius: 16,
+          padding: 16,
+          border: "1px solid #1F2933",
+          maxWidth: 720,
+        }}
+      >
+        <div style={{ color: "#9CA3AF", fontSize: 14, marginBottom: 10 }}>
+          10 apuestas del día
+        </div>
+
+        <div style={{ display: "grid", gap: 10 }}>
+          {bets.map((b) => (
+            <div
+              key={b.id}
+              style={{
+                background: "#0B1220",
+                border: "1px solid #1F2933",
+                borderRadius: 12,
+                padding: 12,
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                gap: 12,
+              }}
+            >
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontWeight: 600 }}>{b.title}</div>
+                <div style={{ color: "#9CA3AF", fontSize: 12, marginTop: 4 }}>
+                  {b.startTime} · Prob {(b.probability * 100).toFixed(0)}% · Cuota{" "}
+                  {b.odds.toFixed(2)}
+                </div>
+              </div>
+
+              <span style={statusBadge(b.status)}>{statusText(b.status)}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

@@ -1,0 +1,39 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(title="Bot Ultimate Prediction API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.get("/bets/today")
+def bets_today():
+    bets = []
+    for i in range(10):
+        status = "PENDING"
+        if i == 0:
+            status = "GREEN"
+        elif i == 1:
+            status = "YELLOW"
+        elif i == 2:
+            status = "RED"
+
+        bets.append({
+            "id": i + 1,
+            "title": f"API Apuesta {i + 1}",
+            "startTime": "🌙 02:15" if i < 3 else "☀️ 18:30",
+            "probability": round(0.75 + (i % 5) * 0.03, 2),
+            "odds": round(1.6 + (i % 4) * 0.2, 2),
+            "status": status,
+        })
+
+    return {"date": "today", "bets": bets}

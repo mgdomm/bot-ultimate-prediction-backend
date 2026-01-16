@@ -1,0 +1,60 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from datetime import datetime, timedelta
+
+app = FastAPI()
+
+# CORS abierto (desarrollo)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+@app.get("/bets/today")
+def get_bets_today():
+    now = datetime.utcnow()
+
+    bets = []
+
+    for i in range(1, 11):
+        bets.append({
+            "id": i,
+            "title": f"Apuesta combinada #{i}",
+            "sport": "Fútbol",
+            "event": f"Evento Deportivo {i}",
+            "market": "Resultado / Total / Ambos marcan",
+            "startTime": (now + timedelta(hours=i)).isoformat(),
+            "status": "scheduled",
+
+            "selections": [
+                {
+                    "name": "Equipo A gana",
+                    "odds": 1.40,
+                    "probability": 0.80
+                },
+                {
+                    "name": "Más de 1.5 goles",
+                    "odds": 1.30,
+                    "probability": 0.82
+                },
+                {
+                    "name": "Ambos equipos marcan",
+                    "odds": 1.50,
+                    "probability": 0.78
+                },
+                {
+                    "name": "Más de 3.5 córners",
+                    "odds": 1.25,
+                    "probability": 0.85
+                }
+            ]
+        })
+
+    return bets

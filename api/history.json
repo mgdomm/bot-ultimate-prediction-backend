@@ -1,0 +1,772 @@
+[
+  {
+    "id": "C1",
+    "type": "classic",
+    "title": "Apuesta Clásica #1",
+    "sport": "Fútbol",
+    "event": "Evento 1",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T18:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C2",
+    "type": "classic",
+    "title": "Apuesta Clásica #2",
+    "sport": "Fútbol",
+    "event": "Evento 2",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T19:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C3",
+    "type": "classic",
+    "title": "Apuesta Clásica #3",
+    "sport": "Fútbol",
+    "event": "Evento 3",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T20:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C4",
+    "type": "classic",
+    "title": "Apuesta Clásica #4",
+    "sport": "Fútbol",
+    "event": "Evento 4",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T21:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C5",
+    "type": "classic",
+    "title": "Apuesta Clásica #5",
+    "sport": "Fútbol",
+    "event": "Evento 5",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T22:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C6",
+    "type": "classic",
+    "title": "Apuesta Clásica #6",
+    "sport": "Fútbol",
+    "event": "Evento 6",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-16T23:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C7",
+    "type": "classic",
+    "title": "Apuesta Clásica #7",
+    "sport": "Fútbol",
+    "event": "Evento 7",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-17T00:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C8",
+    "type": "classic",
+    "title": "Apuesta Clásica #8",
+    "sport": "Fútbol",
+    "event": "Evento 8",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-17T01:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C9",
+    "type": "classic",
+    "title": "Apuesta Clásica #9",
+    "sport": "Fútbol",
+    "event": "Evento 9",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-17T02:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "C10",
+    "type": "classic",
+    "title": "Apuesta Clásica #10",
+    "sport": "Fútbol",
+    "event": "Evento 10",
+    "market": "Mercados combinados",
+    "startTime": "2026-01-17T03:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Favorito gana",
+        "odds": 1.45,
+        "probability": 0.82
+      },
+      {
+        "name": "Más de 1.5 goles",
+        "odds": 1.35,
+        "probability": 0.84
+      },
+      {
+        "name": "Ambos marcan",
+        "odds": 1.55,
+        "probability": 0.78
+      },
+      {
+        "name": "Más de 4.5 córners",
+        "odds": 1.3,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.78,
+    "totalOdds": 3.94,
+    "stake": 50.0,
+    "potentialWin": 197.0,
+    "riskLevel": "yellow",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P1",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #1",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T18:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P2",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #2",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T19:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P3",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #3",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T20:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P4",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #4",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T21:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P5",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #5",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T22:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P6",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #6",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-16T23:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P7",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #7",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-17T00:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P8",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #8",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-17T01:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P9",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #9",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-17T02:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  },
+  {
+    "id": "P10",
+    "type": "parlay",
+    "title": "Parley Alta Confianza #10",
+    "sport": "Multi‑Deporte",
+    "event": "Eventos seleccionados",
+    "market": "Ganador",
+    "startTime": "2026-01-17T03:41:12.285921",
+    "status": "scheduled",
+    "selections": [
+      {
+        "name": "Fútbol: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "NBA: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      },
+      {
+        "name": "Tenis: Favorito gana",
+        "odds": 1.65,
+        "probability": 0.86
+      }
+    ],
+    "totalProbability": 0.83,
+    "totalOdds": 4.49,
+    "stake": 50.0,
+    "potentialWin": 224.5,
+    "riskLevel": "green",
+    "isPremium": false,
+    "premiumScore": 0.0,
+    "premiumReason": null,
+    "result": null
+  }
+]

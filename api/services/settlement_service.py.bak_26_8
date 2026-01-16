@@ -1,0 +1,94 @@
+import json
+import os
+from typing import List, Dict, Tuple, Union
+
+from utils.football_results import get_football_result
+from utils.other_sports_results import get_other_sport_result
+from utils.bet_evaluator import evaluate_bet
+
+DATA_DIR = "data"
+HISTORY_FILE = "history.json"
+
+
+def load_json(path: str) -> Union[Dict, List]:
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_json(path: str, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def collect_pending_bets() -> List[Tuple[str, Dict]]:
+    pending = []
+
+    # 1️⃣ Apuestas diarias por fecha (estructura: { "bets": [] })
+    if os.path.exists(DATA_DIR):
+        for filename in os.listdir(DATA_DIR):
+            if not filename.endswith(".json"):
+                continue
+            filepath = os.path.join(DATA_DIR, filename)
+            data = load_json(filepath)
+            bets = data.get("bets", []) if isinstance(data, dict) else []
+            for bet in bets:
+                if bet.get("result") is None:
+                    pending.append((filepath, bet))
+
+    # 2️⃣ Histórico (estructura: lista directa)
+    history = load_json(HISTORY_FILE)
+    if isinstance(history, list):
+        for bet in history:
+            if bet.get("result") is None:
+                pending.append((HISTORY_FILE, bet))
+
+    return pending
+
+
+def settle_all_pending_bets() -> Dict:
+    pending_bets = collect_pending_bets()
+
+    if not pending_bets:
+        return {"status": "ok", "message": "no pending bets"}
+
+    settled_count = 0
+
+    for source_path, bet in pending_bets:
+        sport = bet.get("sport", "").lower()
+
+        if sport == "football":
+            event_result = get_football_result(bet)
+        else:
+            event_result = get_other_sport_result(bet)
+
+        if event_result is None:
+            continue
+
+        final_result = evaluate_bet(bet, event_result)
+
+        bet["result"] = final_result
+        bet["status"] = "settled"
+
+        data = load_json(source_path)
+
+        # Guardado en archivo diario
+        if isinstance(data, dict) and "bets" in data:
+            for idx, stored_bet in enumerate(data["bets"]):
+                if stored_bet.get("id") == bet.get("id"):
+                    data["bets"][idx] = bet
+                    settled_count += 1
+                    break
+
+        # Guardado en histórico
+        elif isinstance(data, list):
+            for idx, stored_bet in enumerate(data):
+                if stored_bet.get("id") == bet.get("id"):
+                    data[idx] = bet
+                    settled_count += 1
+                    break
+
+        save_json(source_path, data)
+
+    return {"status": "ok", "settled": settled_count}
