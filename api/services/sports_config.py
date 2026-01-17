@@ -3,10 +3,10 @@
 
 import random
 
-# Deportes habilitados en el sistema
 ENABLED_SPORTS = {
     "football": {
-        "label": "Football",
+        "code": "football",
+        "name": "Football",
         "markets": [
             "match_winner",
             "over_2_5",
@@ -16,7 +16,8 @@ ENABLED_SPORTS = {
         ]
     },
     "basketball": {
-        "label": "Basketball",
+        "code": "basketball",
+        "name": "Basketball",
         "markets": [
             "match_winner",
             "over_points",
@@ -24,7 +25,8 @@ ENABLED_SPORTS = {
         ]
     },
     "tennis": {
-        "label": "Tennis",
+        "code": "tennis",
+        "name": "Tennis",
         "markets": [
             "match_winner",
             "set_winner"
@@ -34,24 +36,18 @@ ENABLED_SPORTS = {
 
 def get_enabled_sports():
     """
-    Devuelve la lista de deportes habilitados.
+    Devuelve la lista de deportes habilitados como dicts {code, name, markets}.
     """
-    return list(ENABLED_SPORTS.keys())
+    return list(ENABLED_SPORTS.values())
 
-def get_markets_for_sport(sport: str):
-    """
-    Devuelve los mercados válidos para un deporte.
-    """
-    config = ENABLED_SPORTS.get(sport)
-    if not config:
+def get_markets_for_sport(sport_code: str):
+    sport = ENABLED_SPORTS.get(sport_code)
+    if not sport:
         return []
-    return config.get("markets", [])
+    return sport.get("markets", [])
 
-def get_random_market(sport: str):
-    """
-    Selecciona un mercado aleatorio válido para un deporte.
-    """
-    markets = get_markets_for_sport(sport)
+def get_random_market(sport_code: str):
+    markets = get_markets_for_sport(sport_code)
     if not markets:
         return None
     return random.choice(markets)
