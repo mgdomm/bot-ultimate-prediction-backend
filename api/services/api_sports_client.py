@@ -29,6 +29,16 @@ class ApiSportsClient:
 
     def _headers(self) -> Dict[str, str]:
         env = get_env()
+# DF_DIAG_API_SPORTS_CLIENT_ONCE
+_DF_DIAG_DONE = globals().get('_DF_DIAG_DONE', False)
+if not _DF_DIAG_DONE:
+    k = env.get('API_SPORTS_KEY')
+    print({
+      'diag': 'api_sports_client',
+      'key_present': bool(k),
+      'key_len': (len(k) if k else 0)
+    }, flush=True)
+    globals()['_DF_DIAG_DONE'] = True
         return {"x-apisports-key": env["API_SPORTS_KEY"], "Accept": "application/json"}
 
     def get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
