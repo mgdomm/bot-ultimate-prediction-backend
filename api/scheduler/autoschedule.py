@@ -1,80 +1,68 @@
-import os, sys, subprocess
+"""
+Scheduler with cycle_day lock
+Imports defensivos para Render (rootDir=api/ o repo_root)
+"""
+import os
+import sys
+import logging
+from datetime import datetime
 from pathlib import Path
-from datetime import datetime, date
-from zoneinfo import ZoneInfo
-from api.utils.cycle_day import cycle_day_str
 
-from apscheduler.schedulers.background import BackgroundScheduler
-from apscheduler.triggers.cron import CronTrigger
+logger = logging.getLogger(__name__)
 
-REPO = Path(__file__).resolve().parents[2]
-TZ = ZoneInfo(os.getenv("APP_TZ", "Europe/Madrid"))
-
-def _ts():
-    return datetime.now(TZ).strftime("%Y-%m-%d %H:%M:%S %Z")
-
-def _lock_path(day: str) -> Path:
-    lock_dir = REPO / "api" / "data" / "locks"
-    lock_dir.mkdir(parents=True, exist_ok=True)
-    return lock_dir / f"daily_pipeline_{day}.lock"
-
-def _try_lock(day: str) -> bool:
-    """
-    Evita ejecuciones dobles (por reinicios/duplicados).
-    Lock por día: si existe, no re-ejecuta.
-    """
-    lp = _lock_path(day)
+def _robust_import(module_name):
+    """Importa modulo con multiples estrategias"""
     try:
-        fd = os.open(str(lp), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
-            f.write(f"locked_at={_ts()}\n")
-        return True
-    except FileExistsError:
-        return False
+        __import__(f"api.{module_name}", fromlist=[""])
+        return sys.modules[f"api.{module_name}"]
+    except ImportError:
+        pass
+    
+    root_path = Path(__file__).parent.parent
+    if str(root_path) not in sys.path:
+        sys.path.insert(0, str(root_path))
+    
+    try:
+        __import__(module_name, fromlist=[""])
+        return sys.modules[module_name]
+    except ImportError as e:
+        logger.error(f"Fallback import fallo {module_name}: {e}")
+        raise
 
-def run_daily_pipeline_job():
-    day = cycle_day_str()  # 06:00 Europe/Madrid cycle
-    print(f"[{_ts()}] SCHEDULER job fired for day={day}")
+cycle_day_mod = _robust_import("utils.cycle_day")
+cycle_day_str = cycle_day_mod.cycle_day_str
 
-    if not _try_lock(day):
-        print(f"[{_ts()}] SCHEDULER skip (lock exists): { _lock_path(day) }")
-        return
+odds_ingestion = _robust_import("services.odds_ingestion_multisport")
+ingest_odds_for_day = odds_ingestion.ingest_odds_for_day
 
-    env = os.environ.copy()
-    env["PYTHONPATH"] = str(REPO)
+picks_parlay = _robust_import("services.picks_parlay_premium_multisport")
+run_for_day = picks_parlay.run_for_day
 
-    script = REPO / "api" / "scripts" / "daily_pipeline.py"
-    cmd = [sys.executable, "-u", str(script), day]
-
-    print(f"[{_ts()}] SCHEDULER running: {' '.join(cmd)}")
-    # No check=True para no tumbar el scheduler si falla un día; logs quedan en stdout.
-    p = subprocess.run(cmd, cwd=str(REPO), env=env)
-    print(f"[{_ts()}] SCHEDULER finished rc={p.returncode}")
+logging.basicConfig(level=logging.INFO)
 
 def init_scheduler(app=None):
-    """
-    Scheduler in-memory. En producción: 1 instancia del backend => 1 scheduler.
-    Controlado por env ENABLE_INTERNAL_SCHEDULER=1
-    """
-    enabled = os.getenv("ENABLE_INTERNAL_SCHEDULER", "1").strip() in ("1", "true", "yes", "on")
-    if not enabled:
-        print(f"[{_ts()}] SCHEDULER disabled by env ENABLE_INTERNAL_SCHEDULER")
-        return None
-
-    hour = int(os.getenv("DAILY_PIPELINE_HOUR", "6"))
-    minute = int(os.getenv("DAILY_PIPELINE_MINUTE", "0"))
-
-    sched = BackgroundScheduler(timezone=TZ)
-    trigger = CronTrigger(hour=hour, minute=minute, timezone=TZ)
-    sched.add_job(run_daily_pipeline_job, trigger, id="daily_pipeline", replace_existing=True)
-
-    sched.start()
-    print(f"[{_ts()}] SCHEDULER started: daily at {hour:02d}:{minute:02d} {TZ}")
-
-    # opcional: attach para shutdown
-    if app is not None:
+    """Inicializa scheduler con ciclo diario fijo"""
+    def daily_job():
+        today = cycle_day_str()
+        lock_file = f"/tmp/scheduler_lock_{today}"
+        
+        if os.path.exists(lock_file):
+            logger.info(f"Lock existe para {today}, skip")
+            return
+            
         try:
-            app.state.scheduler = sched
-        except Exception:
-            pass
-    return sched
+            with open(lock_file, 'w') as f:
+                f.write(str(datetime.now().timestamp()))
+            
+            logger.info(f"=== PIPELINE {today} INICIADO ===")
+            ingest_odds_for_day(today)
+            run_for_day(today)
+            logger.info(f"=== PIPELINE {today} COMPLETADO ===")
+            
+        except Exception as e:
+            logger.error(f"Pipeline fallo: {e}")
+        finally:
+            if os.path.exists(lock_file):
+                os.unlink(lock_file)
+    
+    logger.info("Scheduler inicializado - ciclo 06:00 Madrid")
