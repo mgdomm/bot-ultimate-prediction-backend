@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import json
 from datetime import date
 from pathlib import Path
@@ -45,6 +46,20 @@ MAX_PER_MARKET = {
     # el resto: por defecto 2
 }
 DEFAULT_MAX_PER_MARKET = 2
+
+# Defaults for economic rule (aligned with picks_parlay.py guardrails)
+try:
+    from api.services.picks_parlay import PARLAY_GUARDRAILS  # type: ignore
+except ModuleNotFoundError:
+    from services.picks_parlay import PARLAY_GUARDRAILS  # type: ignore
+
+_GUARD = (PARLAY_GUARDRAILS or {}).get("principal_2_legs", {}) if isinstance(PARLAY_GUARDRAILS, dict) else {}
+_DEFAULT_CLASSIC_PROB_FLOOR = float(_GUARD.get("min_combined_probability_floor", 0.40))
+_DEFAULT_CLASSIC_VALUE_MARGIN = float(_GUARD.get("value_margin", 0.03))
+
+# Allow override via env vars (strings)
+CLASSIC_PROB_FLOOR = float(os.environ.get("CLASSIC_PROB_FLOOR", str(_DEFAULT_CLASSIC_PROB_FLOOR)))
+CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN", str(_DEFAULT_CLASSIC_VALUE_MARGIN)))
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -100,7 +115,7 @@ def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
     pe = _f(sel.get("p_estimated"))
     if pe != pe:
         return False
-    min_required = max(float(CLASSIC_PROB_FLOOR), (1.0 / float(odds)) + float(margin))
+    min_required = max(float(CLASSIC_PROB_FLOOR), (1.0 / float(odds)) + float(CLASSIC_VALUE_MARGIN))
     if float(pe) < float(min_required):
         return False
 
