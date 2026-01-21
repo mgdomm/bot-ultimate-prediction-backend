@@ -4,8 +4,16 @@ from datetime import date
 import json
 from contextlib import asynccontextmanager
 from pathlib import Path
-from api.scheduler.autoschedule import init_scheduler
-from api.utils.cycle_day import cycle_day_str
+
+# Make imports work both ways:
+# - uvicorn api.main:app (repo root)
+# - uvicorn main:app (rootDir=api)
+try:
+    from api.scheduler.autoschedule import init_scheduler
+    from api.utils.cycle_day import cycle_day_str
+except ModuleNotFoundError:
+    from scheduler.autoschedule import init_scheduler
+    from utils.cycle_day import cycle_day_str
 
 
 # Repo root: .../bot-ultimate-prediction
