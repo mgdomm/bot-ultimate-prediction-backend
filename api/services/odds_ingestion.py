@@ -7,7 +7,7 @@ API_KEY = os.getenv("API_SPORTS_KEY")
 
 # DF_DIAG_API_SPORTS_KEY
 try:
-    _k = API_SPORTS_KEY
+    _k = API_KEY
 except NameError:
     _k = None
 print({
