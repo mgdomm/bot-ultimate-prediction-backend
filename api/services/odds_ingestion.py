@@ -4,6 +4,17 @@ import requests
 from datetime import datetime
 
 API_KEY = os.getenv("API_SPORTS_KEY")
+
+# DF_DIAG_API_SPORTS_KEY
+try:
+    _k = API_SPORTS_KEY
+except NameError:
+    _k = None
+print({
+  'diag': 'api_sports_key',
+  'present': bool(_k),
+  'len': (len(_k) if _k else 0)
+}, flush=True)
 BASE_URL = "https://v3.football.api-sports.io/odds"
 HEADERS = {
     "x-apisports-key": API_KEY
