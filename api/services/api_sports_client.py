@@ -35,4 +35,14 @@ class ApiSportsClient:
         url = self._base_url() + path
         r = requests.get(url, headers=self._headers(), params=params or {}, timeout=self.timeout)
         r.raise_for_status()
-        return r.json()
+        data = r.json()
+        if isinstance(data, dict) and data.get('errors'):
+            raise RuntimeError(
+                "API-SPORTS errors for url="
+                + str(url)
+                + " params="
+                + str(params)
+                + " errors="
+                + str(data.get('errors'))
+            )
+        return data
