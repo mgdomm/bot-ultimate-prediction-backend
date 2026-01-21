@@ -45,6 +45,49 @@ cycle_day_str = cycle_day_mod.cycle_day_str
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
+# DF_BACKOFF_V1
+# Backoff simple para evitar reintentos frecuentes cuando la API falla (ej. cuenta suspendida).
+# Persistimos estado en /tmp por day: until_ts + fails.
+BACKOFF_MIN_SECONDS = 60 * 60        # 1h
+BACKOFF_MAX_SECONDS = 6 * 60 * 60    # 6h
+
+def _backoff_path(day: str) -> Path:
+    return Path(f"/tmp/scheduler_backoff_{day}.json")
+
+def _get_backoff(day: str) -> Dict[str, Any]:
+    p = _backoff_path(day)
+    if not p.exists():
+        return {"until_ts": 0, "fails": 0}
+    try:
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if not isinstance(d, dict):
+            return {"until_ts": 0, "fails": 0}
+        return {
+            "until_ts": float(d.get("until_ts") or 0),
+            "fails": int(d.get("fails") or 0),
+        }
+    except Exception:
+        return {"until_ts": 0, "fails": 0}
+
+def _set_backoff(day: str) -> Dict[str, Any]:
+    st = _get_backoff(day)
+    fails = int(st.get("fails") or 0) + 1
+    # Exponencial suave: 1h, 2h, 4h, 6h (cap)
+    seconds = min(BACKOFF_MAX_SECONDS, BACKOFF_MIN_SECONDS * (2 ** (fails - 1)))
+    until_ts = time.time() + seconds
+    out = {"until_ts": until_ts, "fails": fails}
+    _backoff_path(day).write_text(json.dumps(out), encoding="utf-8")
+    return out
+
+def _clear_backoff(day: str) -> None:
+    p = _backoff_path(day)
+    if p.exists():
+        try:
+            p.unlink()
+        except Exception:
+            pass
+
+
 def _load_contract(day: str) -> Dict[str, Any]:
     p = API_DATA_DIR / "contracts" / day / "contract.json"
     if not p.exists():
@@ -79,6 +122,13 @@ def init_scheduler(app=None):
         while True:
             day = cycle_day_str()  # 06:00 Europe/Madrid cycle
             lock_file = f"/tmp/scheduler_lock_{day}"
+            # DF_BACKOFF_V1: si estamos en backoff, no reintentar todavía
+            st = _get_backoff(day)
+            until_ts = float(st.get('until_ts') or 0)
+            if until_ts and time.time() < until_ts:
+                logger.info('Scheduler: backoff active for %s until_ts=%s fails=%s; skip', day, int(until_ts), st.get('fails'))
+                time.sleep(600)
+                continue
 
             try:
                 if _contract_has_any_picks(day):
@@ -93,11 +143,13 @@ def init_scheduler(app=None):
                             logger.info("=== PIPELINE %s START ===", day)
                             _run_daily_pipeline(day)
                             logger.info("=== PIPELINE %s DONE ===", day)
+                            _clear_backoff(day)
                         finally:
                             if os.path.exists(lock_file):
                                 os.unlink(lock_file)
             except Exception as e:
-                logger.exception("Scheduler loop error for day=%s: %s", day, e)
+                st2 = _set_backoff(day)
+                logger.exception("Scheduler loop error for day=%s: %s (backoff until_ts=%s fails=%s)", day, e, int(st2.get('until_ts') or 0), st2.get('fails'))
 
             time.sleep(600)  # 10 min
 
