@@ -3,11 +3,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_FOOTBALL_KEY = os.getenv("API_FOOTBALL_KEY")
-THESPORTSDB_KEY = os.getenv("THESPORTSDB_KEY")
+def get_env() -> dict:
+    """
+    Returns validated environment variables for the backend.
+    """
+    api_key = os.getenv("API_SPORTS_KEY")
+    env = os.getenv("ENV", "development")
 
-if not API_FOOTBALL_KEY:
-    raise RuntimeError("API_FOOTBALL_KEY no configurada")
+    if not api_key:
+        raise RuntimeError("API_SPORTS_KEY no configurada")
 
-if not THESPORTSDB_KEY:
-    raise RuntimeError("THESPORTSDB_KEY no configurada")
+    return {
+        "API_SPORTS_KEY": api_key,
+        "ENV": env,
+    }

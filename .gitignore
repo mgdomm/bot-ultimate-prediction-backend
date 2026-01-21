@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Envs
+.venv/
+venv/
+api/.venv/
+
+# Logs
+*.log
+api/logs/
+
+# Data artifacts (generated)
+api/data/
+data/
+api/reports/
+api/backups/
+
+# OS/Editor
+.DS_Store
+.idea/
+.vscode/
+api/.env

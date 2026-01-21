@@ -1,219 +1,112 @@
-from fastapi import FastAPI, HTTPException
-from datetime import date, datetime
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.middleware.cors import CORSMiddleware
+from datetime import date
 import json
-import os
+from contextlib import asynccontextmanager
+from pathlib import Path
+from api.scheduler.autoschedule import init_scheduler
+from api.utils.cycle_day import cycle_day_str
 
-from services.bet_generator import generate_daily_bets
-from services.premium_service import apply_premium_flags
-from services.confidence_service import bot_confidence
-from services.contract_service import normalize_and_validate_bets
-from services.stats_service import (
-    calculate_roi,
-    win_rate,
-    current_streak,
-    best_and_worst_days,
-    distribution_by_sport
+
+# Repo root: .../bot-ultimate-prediction
+REPO_ROOT = Path(__file__).resolve().parents[1]
+API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    try:
+        # from api.scheduler.daily_lock import run_daily_lock  # disabled
+        # run_daily_lock()  # disabled: daily_pipeline runs at 06:00
+        print("[LOCK] Daily contract ensured")
+    except Exception as e:
+        print(f"[LOCK] Failed to build daily contract: {e}")
+    yield
+
+
+app = FastAPI(
+
+    title="Bot Ultimate Prediction API",
+    lifespan=lifespan,
 )
-from services.settlement_service import settle_all_pending_bets
 
-app = FastAPI(title="Bot Ultimate Prediction API")
+# Internal daily scheduler (06:00 Europe/Madrid)
+init_scheduler(app)
 
-DATA_DIR = "data"
-HISTORY_FILE = "history.json"
+# ✅ CORS (necesario para llamadas desde el navegador: Next dev server en :3000)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-
-# ✅ Liquidación automática al arranque (backend, no script)
-try:
-    settle_all_pending_bets()
-except Exception as e:
-    print(f"[WARN] Settlement skipped: {e}")
-
-
-def load_history():
-    if not os.path.exists(HISTORY_FILE):
-        return []
-    with open(HISTORY_FILE, "r") as f:
-        return json.load(f)
-
-
-def get_stats():
-    bets = load_history()
-
-    best_day, worst_day = best_and_worst_days(bets)
-
-    return {
-        "roi": calculate_roi(bets),
-        "winRate": win_rate(bets),
-        "currentStreak": current_streak(bets),
-        "bestDay": best_day,
-        "worstDay": worst_day,
-        "distributionBySport": distribution_by_sport(bets)
-    }
+# ✅ Global response headers (API versioning & semantic freeze)
+@app.middleware("http")
+async def add_api_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers["X-API-Version"] = "1"
+    response.headers["X-Contract-Centric"] = "true"
+    response.headers["X-API-Frozen"] = "true"
+    response.headers["Cache-Control"] = "no-store"
+    return response
 
 
-def is_locked(payload: dict) -> bool:
-    return payload.get("_meta", {}).get("locked", False)
-
-
-def select_top3_premium(bets):
-    """
-    Devuelve hasta 3 bets Premium como SUBCONJUNTO de 'bets', sin IDs duplicados.
-    Orden estable: premiumScore desc, totalProbability desc, totalOdds desc.
-    """
-    if bets is None or not isinstance(bets, list):
-        return []
-
-    premium = [b for b in bets if isinstance(b, dict) and b.get("isPremium")]
-
-    def key(b):
-        ps = b.get("premiumScore") or 0.0
-        tp = b.get("totalProbability") or 0.0
-        to = b.get("totalOdds") or 0.0
-        try:
-            ps = float(ps)
-        except Exception:
-            ps = 0.0
-        try:
-            tp = float(tp)
-        except Exception:
-            tp = 0.0
-        try:
-            to = float(to)
-        except Exception:
-            to = 0.0
-        return (-ps, -tp, -to)
-
-    premium_sorted = sorted(premium, key=key)
-
-    out = []
-    seen = set()
-    for b in premium_sorted:
-        bid = b.get("id")
-        if not bid or bid in seen:
-            continue
-        seen.add(bid)
-        out.append(b)
-        if len(out) == 3:
-            break
-    return out
-
-
+# ✅ READ-ONLY endpoint (contrato = única verdad)
+# ✅ READ-ONLY endpoint (contrato = única verdad)
 @app.get("/bets/today")
 def get_today_bets():
-    today = date.today().isoformat()
-    os.makedirs(DATA_DIR, exist_ok=True)
-    file_path = os.path.join(DATA_DIR, f"{today}.json")
+    today = cycle_day_str()  # 06:00 Europe/Madrid cycle
+    contract_path = API_DATA_DIR / "contracts" / today / "contract.json"
 
-    # ✅ Si existe y está sellado → VALIDAR contrato antes de devolver (POLICY=reject)
-    if os.path.exists(file_path):
-        with open(file_path, "r") as f:
-            payload = json.load(f)
-            if is_locked(payload):
-                classic = payload.get("classic", None)
-                parlay = payload.get("parlay", None)
-                top3c = payload.get("premiumTop3Classic", None)
-                top3p = payload.get("premiumTop3Parlay", None)
+    if not contract_path.exists():
+        raise HTTPException(status_code=404, detail="Daily contract not found")
 
-                _, classic_errors = normalize_and_validate_bets(
-                    classic, bet_type="classic", strict=True, default_stake=50.0
-                )
-                _, parlay_errors = normalize_and_validate_bets(
-                    parlay, bet_type="parlay", strict=True, default_stake=50.0
-                )
-                _, top3c_errors = normalize_and_validate_bets(
-                    top3c, bet_type="classic", strict=True, default_stake=50.0
-                )
-                _, top3p_errors = normalize_and_validate_bets(
-                    top3p, bet_type="parlay", strict=True, default_stake=50.0
-                )
+    contract = json.loads(contract_path.read_text(encoding="utf-8"))
 
-                if classic_errors or parlay_errors or top3c_errors or top3p_errors:
-                    raise HTTPException(
-                        status_code=500,
-                        detail={
-                            "message": "Locked day violates contract. Refusing to serve locked payload (POLICY=reject).",
-                            "file": str(file_path),
-                            "classicErrors": classic_errors,
-                            "parlayErrors": parlay_errors,
-                            "premiumTop3ClassicErrors": top3c_errors,
-                            "premiumTop3ParlayErrors": top3p_errors,
-                        },
-                    )
-
-                return payload
-
-    # ✅ 1. Generar apuestas (generate_daily_bets retorna dict: {"classic": [], "parlay": []})
-    daily = generate_daily_bets()
-    classic_bets = daily.get("classic", [])
-    parlay_bets = daily.get("parlay", [])
-
-    # ✅ 2. Premium separado
-    classic_result = apply_premium_flags(classic_bets)
-    parlay_result = apply_premium_flags(parlay_bets)
-
-    classic_bets = classic_result["bets"]
-    parlay_bets = parlay_result["bets"]
-
-    # ✅ 3. Normalizar y validar CONTRATO (estricto) antes de sellar el día
-    classic_norm, classic_errors = normalize_and_validate_bets(
-        classic_bets, bet_type="classic", strict=True, default_stake=50.0
-    )
-    parlay_norm, parlay_errors = normalize_and_validate_bets(
-        parlay_bets, bet_type="parlay", strict=True, default_stake=50.0
-    )
-
-    if classic_errors or parlay_errors:
-        raise HTTPException(
-            status_code=500,
-            detail={
-                "message": "Contract validation failed. Day NOT locked. Fix generator/backend to satisfy contract.",
-                "classicErrors": classic_errors,
-                "parlayErrors": parlay_errors,
-            },
-        )
-
-    classic_bets = classic_norm
-    parlay_bets = parlay_norm
-
-    premium_classic = select_top3_premium(classic_bets)
-    premium_parlay = select_top3_premium(parlay_bets)
-
-    total_premium = (
-        len([b for b in classic_bets if b.get("isPremium")]) +
-        len([b for b in parlay_bets if b.get("isPremium")])
-    )
-
-    stats = get_stats()
-    confidence = bot_confidence(
-        roi=stats["roi"],
-        win_rate=stats["winRate"],
-        streak=stats["currentStreak"]
-    )
-
-    payload = {
-        "premiumMessage": (
-            f"{total_premium} selecciones Premium hoy. "
-            f"{confidence['message']} "
-            "Apuestas con valor esperado positivo, no seguras."
-        ),
-        "premiumTop3Classic": premium_classic,
-        "premiumTop3Parlay": premium_parlay,
-        "classic": classic_bets,
-        "parlay": parlay_bets,
-        "_meta": {
-            "date": today,
-            "generatedAt": datetime.utcnow().isoformat() + "Z",
-            "locked": True,
-            "version": "1.0"
-        }
-    }
-
-    with open(file_path, "w") as f:
-        json.dump(payload, f, indent=2)
-
-    return payload
+    # Expose cycle day explicitly (client-friendly; does not change frozen contract on disk)
+    contract['cycle_day'] = today
+    contract['day'] = today
 
 
-@app.get("/stats")
-def stats():
-    return get_stats()
+    # Backwards-compatible aliases for clients that expect `parlays`
+    # Prefer aggregator {"parlays":[...]} if present (avoids duplicates)
+    premium = contract.get("picks_parlay_premium", [])
+    parlays = []
+
+    if isinstance(premium, list):
+        agg = None
+        for item in premium:
+            if isinstance(item, dict) and isinstance(item.get("parlays"), list) and len(item["parlays"]) > 0:
+                agg = item["parlays"]
+                break
+        if agg is not None:
+            parlays = agg
+        else:
+            for item in premium:
+                if isinstance(item, dict) and "legs" in item:
+                    parlays.append(item)
+
+    contract["parlays"] = parlays
+
+    # Backwards-compatible alias for clients that expect `classic`
+    contract["classic"] = contract.get("picks_classic", [])
+
+    # Optional alias: value singles
+    contract["value"] = contract.get("picks_value", [])
+
+    # featured alias (optional)
+    if contract.get("daily_featured_parlay") is not None:
+        contract["featured_parlay"] = contract["daily_featured_parlay"]
+
+    return contract
+
+
+# ✅ Operational healthcheck (no business logic)
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}

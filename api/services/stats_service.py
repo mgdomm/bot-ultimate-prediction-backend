@@ -1,100 +1,139 @@
-from __future__ import annotations
-
+import json
+from pathlib import Path
 from collections import defaultdict
-from datetime import datetime
-from typing import List, Dict, Optional
 
 
-def _day_from_bet(b: Dict) -> Optional[str]:
-    """
-    Deriva YYYY-MM-DD desde startTime (ISO). Esto evita depender de 'date' (no está en el contrato).
-    """
-    st = b.get("startTime")
-    if not isinstance(st, str) or len(st) < 10:
-        return None
+class StatsService:
+    def __init__(self, data_path: Path):
+        self.data_path = data_path
 
-    # Caso ISO típico: "2026-01-16T18:41:12.285921" o "2026-01-16T..."
-    day = st[:10]
-    if len(day) == 10 and day[4] == "-" and day[7] == "-":
-        return day
+    def _contract_path(self, date: str) -> Path:
+        return self.data_path / "contracts" / date / "contract.json"
 
-    # Fallback: intentar parseo flexible (por si viene con Z u otro formato)
-    try:
-        dt = datetime.fromisoformat(st.replace("Z", "+00:00"))
-        return dt.date().isoformat()
-    except Exception:
-        return None
+    def _settlement_path(self, date: str) -> Path:
+        return self.data_path / "settlements" / date / "settlement.json"
 
+    def _stats_path(self, date: str) -> Path:
+        return self.data_path / "stats" / date / "stats.json"
 
-def calculate_roi(bets: List[Dict]) -> float:
-    stake = sum(float(b.get("stake", 0) or 0) for b in bets)
-    if stake <= 0:
+    def _history_path(self) -> Path:
+        return self.data_path / "stats" / "history.json"
+
+    def _profit(self, stake: float, odds: float, result: str) -> float:
+        if result == "WIN":
+            return stake * (odds - 1)
+        if result == "LOSS":
+            return -stake
         return 0.0
 
-    # payout (retorno):
-    # - win  => potentialWin
-    # - void => stake (devuelto)
-    # - lose/None => 0
-    returns = 0.0
-    for b in bets:
-        r = b.get("result")
-        if r == "win":
-            returns += float(b.get("potentialWin", 0) or 0)
-        elif r == "void":
-            returns += float(b.get("stake", 0) or 0)
+    def build(self, date: str) -> None:
+        contract_path = self._contract_path(date)
+        settlement_path = self._settlement_path(date)
+        stats_path = self._stats_path(date)
 
-    return round((returns - stake) / stake * 100, 2)
+        if stats_path.exists():
+            return
 
+        if not contract_path.exists() or not settlement_path.exists():
+            return
 
-def win_rate(bets: List[Dict]) -> float:
-    if not bets:
-        return 0.0
-    wins = sum(1 for b in bets if b.get("result") == "win")
-    return round(wins / len(bets) * 100, 2)
+        with open(contract_path, "r") as f:
+            contract = json.load(f)
 
+        with open(settlement_path, "r") as f:
+            settlement = json.load(f)
 
-def current_streak(bets: List[Dict]) -> int:
-    streak = 0
-    for bet in reversed(bets):
-        if bet.get("result") == "win":
-            streak += 1
-        else:
-            break
-    return streak
+        stats_path.parent.mkdir(parents=True, exist_ok=True)
 
+        tier_data = defaultdict(lambda: {
+            "stake": 0.0,
+            "profit": 0.0,
+            "picks": 0
+        })
 
-def best_and_worst_days(bets: List[Dict]):
-    by_day = defaultdict(list)
+        # PICKS
+        pick_map = {p["pick_id"]: p for p in contract.get("picks", [])}
 
-    for b in bets:
-        day = _day_from_bet(b)
-        if day is None:
-            continue
-        by_day[day].append(b)
+        for pick in settlement.get("picks", []):
+            cp = pick_map.get(pick["pick_id"])
+            if not cp:
+                continue
 
-    day_results = {d: calculate_roi(day_bets) for d, day_bets in by_day.items()}
+            tier = cp.get("tier", "classic")
+            stake = cp.get("stake", 0.0)
+            profit = self._profit(stake, pick["odds"], pick["result"])
 
-    if not day_results:
-        return None, None
+            tier_data[tier]["stake"] += stake
+            tier_data[tier]["profit"] += profit
+            tier_data[tier]["picks"] += 1
 
-    best = max(day_results, key=day_results.get)
-    worst = min(day_results, key=day_results.get)
-    return best, worst
+        # PARLAYS
+        parlay_map = {p["parlay_id"]: p for p in contract.get("parlays", [])}
 
+        for parlay in settlement.get("parlays", []):
+            cp = parlay_map.get(parlay["parlay_id"])
+            if not cp:
+                continue
 
-def distribution_by_sport(bets: List[Dict]):
-    dist = defaultdict(lambda: {"bets": 0, "wins": 0})
+            tier = cp.get("tier", "classic")
+            stake = cp.get("stake", 0.0)
 
-    for b in bets:
-        sport = b.get("sport", "unknown")
-        dist[sport]["bets"] += 1
-        if b.get("result") == "win":
-            dist[sport]["wins"] += 1
+            if parlay["final_result"] == "WIN":
+                odds = 1.0
+                for leg in parlay["legs"]:
+                    pick = next(
+                        p for p in settlement["picks"]
+                        if p["pick_id"] == leg["pick_id"]
+                    )
+                    odds *= pick["odds"]
+                profit = stake * (odds - 1)
+            elif parlay["final_result"] == "LOSS":
+                profit = -stake
+            else:
+                profit = 0.0
 
-    return {
-        sport: {
-            "bets": v["bets"],
-            "winRate": round(v["wins"] / v["bets"] * 100, 2) if v["bets"] else 0,
+            tier_data[tier]["stake"] += stake
+            tier_data[tier]["profit"] += profit
+
+        tiers = {}
+        for tier, d in tier_data.items():
+            stake = d["stake"]
+            profit = d["profit"]
+            picks = d["picks"]
+
+            roi = profit / stake if stake > 0 else 0.0
+            yield_value = profit / picks if picks > 0 else 0.0
+
+            tiers[tier] = {
+                "stake": round(stake, 2),
+                "profit": round(profit, 2),
+                "roi": round(roi, 4),
+                "yield": round(yield_value, 4),
+                "picks": picks
+            }
+
+        daily_stats = {
+            "date": date,
+            "tiers": tiers
         }
-        for sport, v in dist.items()
-    }
+
+        # GUARDAR STATS DIARIOS
+        with open(stats_path, "w") as f:
+            json.dump(daily_stats, f, indent=2)
+
+        # HISTÓRICO
+        history_path = self._history_path()
+        history_path.parent.mkdir(parents=True, exist_ok=True)
+
+        if history_path.exists():
+            with open(history_path, "r") as f:
+                history = json.load(f)
+        else:
+            history = {"history": []}
+
+        if not any(e["date"] == date for e in history["history"]):
+            history["history"].append(daily_stats)
+            history["history"].sort(key=lambda x: x["date"])
+
+            with open(history_path, "w") as f:
+                json.dump(history, f, indent=2)
