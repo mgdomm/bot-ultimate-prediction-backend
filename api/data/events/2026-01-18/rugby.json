@@ -1,0 +1,718 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-01-18"
+  },
+  "errors": [],
+  "results": 12,
+  "response": [
+    {
+      "id": 51533,
+      "date": "2026-01-18T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768734000,
+      "timezone": "UTC",
+      "week": "8",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 21,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 42,
+        "name": "Division de Honor",
+        "type": "League",
+        "logo": "https://media.api-sports.io/rugby/leagues/42.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 322,
+          "name": "AMPO Ordizia",
+          "logo": "https://media.api-sports.io/rugby/teams/322.png"
+        },
+        "away": {
+          "id": 555,
+          "name": "Ciencias Sevilla",
+          "logo": "https://media.api-sports.io/rugby/teams/555.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 51535,
+      "date": "2026-01-18T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768734000,
+      "timezone": "UTC",
+      "week": "8",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 21,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 42,
+        "name": "Division de Honor",
+        "type": "League",
+        "logo": "https://media.api-sports.io/rugby/leagues/42.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 553,
+          "name": "CR La Vila",
+          "logo": "https://media.api-sports.io/rugby/teams/553.png"
+        },
+        "away": {
+          "id": 333,
+          "name": "Valladolid RAC",
+          "logo": "https://media.api-sports.io/rugby/teams/333.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 51536,
+      "date": "2026-01-18T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768734000,
+      "timezone": "UTC",
+      "week": "8",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 21,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 42,
+        "name": "Division de Honor",
+        "type": "League",
+        "logo": "https://media.api-sports.io/rugby/leagues/42.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 327,
+          "name": "El Salvador",
+          "logo": "https://media.api-sports.io/rugby/teams/327.png"
+        },
+        "away": {
+          "id": 325,
+          "name": "Burgos",
+          "logo": "https://media.api-sports.io/rugby/teams/325.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50735,
+      "date": "2026-01-18T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768741200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 54,
+        "name": "European Rugby Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/54.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 59,
+          "name": "Bristol",
+          "logo": "https://media.api-sports.io/rugby/teams/59.png"
+        },
+        "away": {
+          "id": 96,
+          "name": "Bordeaux Begles",
+          "logo": "https://media.api-sports.io/rugby/teams/96.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50772,
+      "date": "2026-01-18T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768741200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 52,
+        "name": "Challenge Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/52.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 60,
+          "name": "Exeter Chiefs",
+          "logo": "https://media.api-sports.io/rugby/teams/60.png"
+        },
+        "away": {
+          "id": 611,
+          "name": "Cardiff Rugby",
+          "logo": "https://media.api-sports.io/rugby/teams/611.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50773,
+      "date": "2026-01-18T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768741200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 52,
+        "name": "Challenge Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/52.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 101,
+          "name": "Lyon",
+          "logo": "https://media.api-sports.io/rugby/teams/101.png"
+        },
+        "away": {
+          "id": 392,
+          "name": "Benetton",
+          "logo": "https://media.api-sports.io/rugby/teams/392.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 51372,
+      "date": "2026-01-18T13:30:00+00:00",
+      "time": "13:30",
+      "timestamp": 1768743000,
+      "timezone": "UTC",
+      "week": "8",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 11,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 26,
+        "name": "Top10",
+        "type": "League",
+        "logo": "https://media.api-sports.io/rugby/leagues/26.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 178,
+          "name": "Emilia",
+          "logo": "https://media.api-sports.io/rugby/teams/178.png"
+        },
+        "away": {
+          "id": 182,
+          "name": "Petrarca Padova",
+          "logo": "https://media.api-sports.io/rugby/teams/182.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 51373,
+      "date": "2026-01-18T13:30:00+00:00",
+      "time": "13:30",
+      "timestamp": 1768743000,
+      "timezone": "UTC",
+      "week": "8",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 11,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 26,
+        "name": "Top10",
+        "type": "League",
+        "logo": "https://media.api-sports.io/rugby/leagues/26.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 183,
+          "name": "Rovigo",
+          "logo": "https://media.api-sports.io/rugby/teams/183.png"
+        },
+        "away": {
+          "id": 922,
+          "name": "Biella",
+          "logo": "https://media.api-sports.io/rugby/teams/922.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50736,
+      "date": "2026-01-18T15:15:00+00:00",
+      "time": "15:15",
+      "timestamp": 1768749300,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 54,
+        "name": "European Rugby Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/54.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 65,
+          "name": "Northampton Saints",
+          "logo": "https://media.api-sports.io/rugby/teams/65.png"
+        },
+        "away": {
+          "id": 397,
+          "name": "Scarlets",
+          "logo": "https://media.api-sports.io/rugby/teams/397.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50737,
+      "date": "2026-01-18T15:15:00+00:00",
+      "time": "15:15",
+      "timestamp": 1768749300,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 54,
+        "name": "European Rugby Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/54.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 100,
+          "name": "Stade Rochelais",
+          "logo": "https://media.api-sports.io/rugby/teams/100.png"
+        },
+        "away": {
+          "id": 62,
+          "name": "Harlequins",
+          "logo": "https://media.api-sports.io/rugby/teams/62.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50738,
+      "date": "2026-01-18T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768757400,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 54,
+        "name": "European Rugby Champions Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/54.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 406,
+          "name": "Glasgow Warriors",
+          "logo": "https://media.api-sports.io/rugby/teams/406.png"
+        },
+        "away": {
+          "id": 67,
+          "name": "Saracens",
+          "logo": "https://media.api-sports.io/rugby/teams/67.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 50774,
+      "date": "2026-01-18T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768757400,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 25,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 52,
+        "name": "Challenge Cup",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/rugby/leagues/52.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 104,
+          "name": "Racing 92",
+          "logo": "https://media.api-sports.io/rugby/teams/104.png"
+        },
+        "away": {
+          "id": 295,
+          "name": "Cheetahs",
+          "logo": "https://media.api-sports.io/rugby/teams/295.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        },
+        "overtime": {
+          "home": null,
+          "away": null
+        },
+        "second_overtime": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
+}

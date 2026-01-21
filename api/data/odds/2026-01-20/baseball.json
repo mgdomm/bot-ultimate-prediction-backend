@@ -1,0 +1,77 @@
+[
+  {
+    "sport": "baseball",
+    "event_id": 182174,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "182174"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  },
+  {
+    "sport": "baseball",
+    "event_id": 182176,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "182176"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  },
+  {
+    "sport": "baseball",
+    "event_id": 183246,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "183246"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  },
+  {
+    "sport": "baseball",
+    "event_id": 183251,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "183251"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  },
+  {
+    "sport": "baseball",
+    "event_id": 183252,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "183252"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  }
+]

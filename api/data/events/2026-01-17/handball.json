@@ -1,0 +1,6334 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-01-17"
+  },
+  "errors": [],
+  "results": 124,
+  "response": [
+    {
+      "id": 185956,
+      "date": "2026-01-17T10:00:00+00:00",
+      "time": "10:00",
+      "timestamp": 1768644000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 29,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "league": {
+        "id": 92,
+        "name": "Superleague Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/92.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 869,
+          "name": "Astrahanochka W",
+          "logo": "https://media.api-sports.io/handball/teams/869.png"
+        },
+        "away": {
+          "id": 4236,
+          "name": "Chernomorochka W",
+          "logo": "https://media.api-sports.io/handball/teams/4236.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 12
+        },
+        "second": {
+          "home": 16,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 185608,
+      "date": "2026-01-17T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768647600,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 29,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "league": {
+        "id": 91,
+        "name": "Superleague",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/91.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 881,
+          "name": "Omsk",
+          "logo": "https://media.api-sports.io/handball/teams/881.png"
+        },
+        "away": {
+          "id": 863,
+          "name": "St. Petersburg",
+          "logo": "https://media.api-sports.io/handball/teams/863.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 12
+        },
+        "second": {
+          "home": 9,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 190504,
+      "date": "2026-01-17T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768647600,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 43,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 186,
+        "name": "Asian Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/186.png",
+        "season": 2026
+      },
+      "teams": {
+        "home": {
+          "id": 2674,
+          "name": "Australia",
+          "logo": "https://media.api-sports.io/handball/teams/2674.png"
+        },
+        "away": {
+          "id": 2665,
+          "name": "Iran",
+          "logo": "https://media.api-sports.io/handball/teams/2665.png"
+        }
+      },
+      "scores": {
+        "home": 13,
+        "away": 39
+      },
+      "periods": {
+        "first": {
+          "home": 5,
+          "away": 21
+        },
+        "second": {
+          "home": 8,
+          "away": 18
+        }
+      }
+    },
+    {
+      "id": 177163,
+      "date": "2026-01-17T12:00:00+00:00",
+      "time": "12:00",
+      "timestamp": 1768651200,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 16,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/16.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 160,
+          "name": "AGF W",
+          "logo": "https://media.api-sports.io/handball/teams/160.png"
+        },
+        "away": {
+          "id": 169,
+          "name": "Roskilde W",
+          "logo": "https://media.api-sports.io/handball/teams/169.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 18
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 9
+        },
+        "second": {
+          "home": 14,
+          "away": 9
+        }
+      }
+    },
+    {
+      "id": 177165,
+      "date": "2026-01-17T12:00:00+00:00",
+      "time": "12:00",
+      "timestamp": 1768651200,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 16,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/16.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 3404,
+          "name": "Ejstrup/Haervejen W",
+          "logo": "https://media.api-sports.io/handball/teams/3404.png"
+        },
+        "away": {
+          "id": 1250,
+          "name": "Fredericia W",
+          "logo": "https://media.api-sports.io/handball/teams/1250.png"
+        }
+      },
+      "scores": {
+        "home": 24,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 14
+        },
+        "second": {
+          "home": 8,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 177423,
+      "date": "2026-01-17T12:30:00+00:00",
+      "time": "12:30",
+      "timestamp": 1768653000,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 25,
+        "name": "Bambusa Kvindeligaen Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/25.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 163,
+          "name": "EH Aalborg W",
+          "logo": "https://media.api-sports.io/handball/teams/163.png"
+        },
+        "away": {
+          "id": 3367,
+          "name": "HOJ W",
+          "logo": "https://media.api-sports.io/handball/teams/3367.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 13
+        },
+        "second": {
+          "home": 17,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 189347,
+      "date": "2026-01-17T12:30:00+00:00",
+      "time": "12:30",
+      "timestamp": 1768653000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 135,
+        "name": "Baltic League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/135.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 539,
+          "name": "Sviesa (Ltu)",
+          "logo": "https://media.api-sports.io/handball/teams/539.png"
+        },
+        "away": {
+          "id": 4871,
+          "name": "Tenax Dobele (Lat)",
+          "logo": "https://media.api-sports.io/handball/teams/4871.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 12
+        },
+        "second": {
+          "home": 15,
+          "away": 18
+        }
+      }
+    },
+    {
+      "id": 177164,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 16,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/16.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 186,
+          "name": "Ajax Kobenhavn W",
+          "logo": "https://media.api-sports.io/handball/teams/186.png"
+        },
+        "away": {
+          "id": 1255,
+          "name": "Sondermarkens W",
+          "logo": "https://media.api-sports.io/handball/teams/1255.png"
+        }
+      },
+      "scores": {
+        "home": 34,
+        "away": 20
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 8
+        },
+        "second": {
+          "home": 17,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 180525,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 35,
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "league": {
+        "id": 112,
+        "name": "Allsvenskan Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/112.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1034,
+          "name": "Tyreso W",
+          "logo": "https://media.api-sports.io/handball/teams/1034.png"
+        },
+        "away": {
+          "id": 4548,
+          "name": "Karlskrona W",
+          "logo": "https://media.api-sports.io/handball/teams/4548.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 13
+        },
+        "second": {
+          "home": 16,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 180527,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 35,
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "league": {
+        "id": 112,
+        "name": "Allsvenskan Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/112.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4550,
+          "name": "Redbergslids W",
+          "logo": "https://media.api-sports.io/handball/teams/4550.png"
+        },
+        "away": {
+          "id": 1934,
+          "name": "Drott Halmstad W",
+          "logo": "https://media.api-sports.io/handball/teams/1934.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 13
+        },
+        "second": {
+          "home": 14,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 180528,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 35,
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "league": {
+        "id": 112,
+        "name": "Allsvenskan Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/112.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1051,
+          "name": "Karra W",
+          "logo": "https://media.api-sports.io/handball/teams/1051.png"
+        },
+        "away": {
+          "id": 1031,
+          "name": "Skanela W",
+          "logo": "https://media.api-sports.io/handball/teams/1031.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 10
+        },
+        "second": {
+          "home": 13,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 180704,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "17",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 35,
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "league": {
+        "id": 111,
+        "name": "Allsvenskan",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/111.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1042,
+          "name": "Lugi",
+          "logo": "https://media.api-sports.io/handball/teams/1042.png"
+        },
+        "away": {
+          "id": 3376,
+          "name": "Enkoping",
+          "logo": "https://media.api-sports.io/handball/teams/3376.png"
+        }
+      },
+      "scores": {
+        "home": 36,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 13
+        },
+        "second": {
+          "home": 21,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 183023,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 6,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "league": {
+        "id": 11,
+        "name": "1. HRL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/11.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 104,
+          "name": "Zrinski W",
+          "logo": "https://media.api-sports.io/handball/teams/104.png"
+        },
+        "away": {
+          "id": 91,
+          "name": "Bjelovar W",
+          "logo": "https://media.api-sports.io/handball/teams/91.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 17
+        },
+        "second": {
+          "home": 14,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 185955,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 29,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "league": {
+        "id": 92,
+        "name": "Superleague Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/92.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 877,
+          "name": "Togliatti W",
+          "logo": "https://media.api-sports.io/handball/teams/877.png"
+        },
+        "away": {
+          "id": 875,
+          "name": "Rostov-Don W",
+          "logo": "https://media.api-sports.io/handball/teams/875.png"
+        }
+      },
+      "scores": {
+        "home": 19,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 7,
+          "away": 12
+        },
+        "second": {
+          "home": 12,
+          "away": 11
+        }
+      }
+    },
+    {
+      "id": 186488,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 241,
+          "name": "Toulon W",
+          "logo": "https://media.api-sports.io/handball/teams/241.png"
+        },
+        "away": {
+          "id": 240,
+          "name": "Plan de Cuques W",
+          "logo": "https://media.api-sports.io/handball/teams/240.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 33
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 19
+        },
+        "second": {
+          "home": 17,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 188112,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 19,
+        "name": "Latvia",
+        "code": "LV",
+        "flag": "https://media.api-sports.io/flags/lv.svg"
+      },
+      "league": {
+        "id": 60,
+        "name": "SynotTip Virsliga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/60.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 529,
+          "name": "HK Ogre/Miandum",
+          "logo": "https://media.api-sports.io/handball/teams/529.png"
+        },
+        "away": {
+          "id": 2110,
+          "name": "Latgols 2",
+          "logo": "https://media.api-sports.io/handball/teams/2110.png"
+        }
+      },
+      "scores": {
+        "home": 57,
+        "away": 12
+      },
+      "periods": {
+        "first": {
+          "home": 28,
+          "away": 5
+        },
+        "second": {
+          "home": 29,
+          "away": 7
+        }
+      }
+    },
+    {
+      "id": 190505,
+      "date": "2026-01-17T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768654800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 43,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 186,
+        "name": "Asian Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/186.png",
+        "season": 2026
+      },
+      "teams": {
+        "home": {
+          "id": 2664,
+          "name": "India",
+          "logo": "https://media.api-sports.io/handball/teams/2664.png"
+        },
+        "away": {
+          "id": 3321,
+          "name": "United Arab Emirates",
+          "logo": "https://media.api-sports.io/handball/teams/3321.png"
+        }
+      },
+      "scores": {
+        "home": 21,
+        "away": 43
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 21
+        },
+        "second": {
+          "home": 11,
+          "away": 22
+        }
+      }
+    },
+    {
+      "id": 177162,
+      "date": "2026-01-17T13:30:00+00:00",
+      "time": "13:30",
+      "timestamp": 1768656600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 16,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/16.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4662,
+          "name": "Aarhus Handbold W",
+          "logo": "https://media.api-sports.io/handball/teams/4662.png"
+        },
+        "away": {
+          "id": 190,
+          "name": "Holstebro W",
+          "logo": "https://media.api-sports.io/handball/teams/190.png"
+        }
+      },
+      "scores": {
+        "home": 18,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": 8,
+          "away": 17
+        },
+        "second": {
+          "home": 10,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 177167,
+      "date": "2026-01-17T13:30:00+00:00",
+      "time": "13:30",
+      "timestamp": 1768656600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 16,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/16.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4694,
+          "name": "Saeby W",
+          "logo": "https://media.api-sports.io/handball/teams/4694.png"
+        },
+        "away": {
+          "id": 1259,
+          "name": "Ydun W",
+          "logo": "https://media.api-sports.io/handball/teams/1259.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 15
+        },
+        "second": {
+          "home": 13,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 185957,
+      "date": "2026-01-17T13:30:00+00:00",
+      "time": "13:30",
+      "timestamp": 1768656600,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 29,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "league": {
+        "id": 92,
+        "name": "Superleague Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/92.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 874,
+          "name": "Luch W",
+          "logo": "https://media.api-sports.io/handball/teams/874.png"
+        },
+        "away": {
+          "id": 878,
+          "name": "Zvenigorod W",
+          "logo": "https://media.api-sports.io/handball/teams/878.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 35
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 18
+        },
+        "second": {
+          "home": 13,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 177023,
+      "date": "2026-01-17T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768658400,
+      "timezone": "UTC",
+      "week": "17",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 15,
+        "name": "1. Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/15.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4533,
+          "name": "Norddjurs",
+          "logo": "https://media.api-sports.io/handball/teams/4533.png"
+        },
+        "away": {
+          "id": 180,
+          "name": "Kolding",
+          "logo": "https://media.api-sports.io/handball/teams/180.png"
+        }
+      },
+      "scores": {
+        "home": 37,
+        "away": 45
+      },
+      "periods": {
+        "first": {
+          "home": 19,
+          "away": 24
+        },
+        "second": {
+          "home": 18,
+          "away": 21
+        }
+      }
+    },
+    {
+      "id": 186826,
+      "date": "2026-01-17T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768658400,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 37,
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "league": {
+        "id": 121,
+        "name": "Superlig Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/121.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4785,
+          "name": "Odunpazari W",
+          "logo": "https://media.api-sports.io/handball/teams/4785.png"
+        },
+        "away": {
+          "id": 1145,
+          "name": "Uskudar W",
+          "logo": "https://media.api-sports.io/handball/teams/1145.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 34
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 18
+        },
+        "second": {
+          "home": 16,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 186828,
+      "date": "2026-01-17T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768658400,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 37,
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "league": {
+        "id": 121,
+        "name": "Superlig Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/121.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1147,
+          "name": "Yenimahalle W",
+          "logo": "https://media.api-sports.io/handball/teams/1147.png"
+        },
+        "away": {
+          "id": 4783,
+          "name": "Ankara Yurdum W",
+          "logo": "https://media.api-sports.io/handball/teams/4783.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 187128,
+      "date": "2026-01-17T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768658400,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 9,
+        "name": "Estonia",
+        "code": "EE",
+        "flag": "https://media.api-sports.io/flags/ee.svg"
+      },
+      "league": {
+        "id": 26,
+        "name": "Meistriliiga",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/26.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4864,
+          "name": "Mistra",
+          "logo": "https://media.api-sports.io/handball/teams/4864.png"
+        },
+        "away": {
+          "id": 209,
+          "name": "Viljandi",
+          "logo": "https://media.api-sports.io/handball/teams/209.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 24
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 12
+        },
+        "second": {
+          "home": 10,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 189382,
+      "date": "2026-01-17T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768658400,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 135,
+        "name": "Baltic League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/135.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4640,
+          "name": "Pieno zvaigzdes (Ltu)",
+          "logo": "https://media.api-sports.io/handball/teams/4640.png"
+        },
+        "away": {
+          "id": 4867,
+          "name": "ASK/MSG (Lat)",
+          "logo": "https://media.api-sports.io/handball/teams/4867.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 12
+        },
+        "second": {
+          "home": 14,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 185803,
+      "date": "2026-01-17T14:30:00+00:00",
+      "time": "14:30",
+      "timestamp": 1768660200,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 18,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 58,
+        "name": "Serie A Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/58.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4759,
+          "name": "HAC Nuoro W",
+          "logo": "https://media.api-sports.io/handball/teams/4759.png"
+        },
+        "away": {
+          "id": 515,
+          "name": "Cassano W",
+          "logo": "https://media.api-sports.io/handball/teams/515.png"
+        }
+      },
+      "scores": {
+        "home": 21,
+        "away": 22
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 178256,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 132,
+        "name": "Champions League Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/132.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2211,
+          "name": "Buducnost W (Mne)",
+          "logo": "https://media.api-sports.io/handball/teams/2211.png"
+        },
+        "away": {
+          "id": 352,
+          "name": "BVB Dortmund W (Ger)",
+          "logo": "https://media.api-sports.io/handball/teams/352.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 25
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 12
+        },
+        "second": {
+          "home": 12,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 178515,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 140,
+        "name": "MOL Liga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/140.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 124,
+          "name": "Zlin W",
+          "logo": "https://media.api-sports.io/handball/teams/124.png"
+        },
+        "away": {
+          "id": 120,
+          "name": "Pisek W",
+          "logo": "https://media.api-sports.io/handball/teams/120.png"
+        }
+      },
+      "scores": {
+        "home": 19,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 9,
+          "away": 14
+        },
+        "second": {
+          "home": 10,
+          "away": 9
+        }
+      }
+    },
+    {
+      "id": 179454,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 25,
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "league": {
+        "id": 70,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/70.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1798,
+          "name": "Kjelsas W",
+          "logo": "https://media.api-sports.io/handball/teams/1798.png"
+        },
+        "away": {
+          "id": 4420,
+          "name": "Trondheim W",
+          "logo": "https://media.api-sports.io/handball/teams/4420.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 34
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 179455,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 25,
+        "name": "Norway",
+        "code": "NO",
+        "flag": "https://media.api-sports.io/flags/no.svg"
+      },
+      "league": {
+        "id": 70,
+        "name": "1. Division Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/70.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 3407,
+          "name": "Storhamar 2 W",
+          "logo": "https://media.api-sports.io/handball/teams/3407.png"
+        },
+        "away": {
+          "id": 627,
+          "name": "Volda W",
+          "logo": "https://media.api-sports.io/handball/teams/627.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 180526,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 35,
+        "name": "Sweden",
+        "code": "SE",
+        "flag": "https://media.api-sports.io/flags/se.svg"
+      },
+      "league": {
+        "id": 112,
+        "name": "Allsvenskan Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/112.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1054,
+          "name": "Lugi W",
+          "logo": "https://media.api-sports.io/handball/teams/1054.png"
+        },
+        "away": {
+          "id": 3393,
+          "name": "Alingsas W",
+          "logo": "https://media.api-sports.io/handball/teams/3393.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 25
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 15
+        },
+        "second": {
+          "home": 15,
+          "away": 10
+        }
+      }
+    },
+    {
+      "id": 180950,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "15",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 26,
+        "name": "Poland",
+        "code": "PL",
+        "flag": "https://media.api-sports.io/flags/pl.svg"
+      },
+      "league": {
+        "id": 77,
+        "name": "Superliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/77.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 679,
+          "name": "Koszalin W",
+          "logo": "https://media.api-sports.io/handball/teams/679.png"
+        },
+        "away": {
+          "id": 2527,
+          "name": "Galychanka Lviv W",
+          "logo": "https://media.api-sports.io/handball/teams/2527.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": 11,
+          "away": 11
+        },
+        "second": {
+          "home": 17,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 184599,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 27,
+        "name": "Portugal",
+        "code": "PT",
+        "flag": "https://media.api-sports.io/flags/pt.svg"
+      },
+      "league": {
+        "id": 85,
+        "name": "1a Divisao Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/85.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4173,
+          "name": "ABC Braga W",
+          "logo": "https://media.api-sports.io/handball/teams/4173.png"
+        },
+        "away": {
+          "id": 4186,
+          "name": "Gil Eanes W",
+          "logo": "https://media.api-sports.io/handball/teams/4186.png"
+        }
+      },
+      "scores": {
+        "home": 23,
+        "away": 20
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186854,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 132,
+        "name": "Champions League Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/132.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 669,
+          "name": "Sola W (Nor)",
+          "logo": "https://media.api-sports.io/handball/teams/669.png"
+        },
+        "away": {
+          "id": 174,
+          "name": "Odense W (Den)",
+          "logo": "https://media.api-sports.io/handball/teams/174.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 40
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 20
+        },
+        "second": {
+          "home": 11,
+          "away": 20
+        }
+      }
+    },
+    {
+      "id": 190353,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": "2",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 146,
+        "name": "EHF European League Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/146.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 837,
+          "name": "Baia Mare W (Rou)",
+          "logo": "https://media.api-sports.io/handball/teams/837.png"
+        },
+        "away": {
+          "id": 430,
+          "name": "Mosonmagyarovar W (Hun)",
+          "logo": "https://media.api-sports.io/handball/teams/430.png"
+        }
+      },
+      "scores": {
+        "home": 34,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 19,
+          "away": 15
+        },
+        "second": {
+          "home": 15,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 190506,
+      "date": "2026-01-17T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768662000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 43,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 186,
+        "name": "Asian Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/186.png",
+        "season": 2026
+      },
+      "teams": {
+        "home": {
+          "id": 2663,
+          "name": "Hong Kong",
+          "logo": "https://media.api-sports.io/handball/teams/2663.png"
+        },
+        "away": {
+          "id": 2667,
+          "name": "Kuwait",
+          "logo": "https://media.api-sports.io/handball/teams/2667.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 39
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 23
+        },
+        "second": {
+          "home": 13,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 178516,
+      "date": "2026-01-17T15:30:00+00:00",
+      "time": "15:30",
+      "timestamp": 1768663800,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 140,
+        "name": "MOL Liga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/140.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2349,
+          "name": "Dunajska Streda W",
+          "logo": "https://media.api-sports.io/handball/teams/2349.png"
+        },
+        "away": {
+          "id": 117,
+          "name": "HK Hodonin W",
+          "logo": "https://media.api-sports.io/handball/teams/117.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 18
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 9
+        },
+        "second": {
+          "home": 17,
+          "away": 9
+        }
+      }
+    },
+    {
+      "id": 182852,
+      "date": "2026-01-17T15:30:00+00:00",
+      "time": "15:30",
+      "timestamp": 1768663800,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 16,
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "league": {
+        "id": 54,
+        "name": "Olis Deild Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/54.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 486,
+          "name": "Valur W",
+          "logo": "https://media.api-sports.io/handball/teams/486.png"
+        },
+        "away": {
+          "id": 483,
+          "name": "Ka Thor W",
+          "logo": "https://media.api-sports.io/handball/teams/483.png"
+        }
+      },
+      "scores": {
+        "home": 31,
+        "away": 16
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 8
+        },
+        "second": {
+          "home": 16,
+          "away": 8
+        }
+      }
+    },
+    {
+      "id": 187587,
+      "date": "2026-01-17T15:30:00+00:00",
+      "time": "15:30",
+      "timestamp": 1768663800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 28,
+        "name": "Romania",
+        "code": "RO",
+        "flag": "https://media.api-sports.io/flags/ro.svg"
+      },
+      "league": {
+        "id": 88,
+        "name": "Liga Nationala Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/88.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 846,
+          "name": "Ramnicu Valcea W",
+          "logo": "https://media.api-sports.io/handball/teams/846.png"
+        },
+        "away": {
+          "id": 843,
+          "name": "Dunarea Braila W",
+          "logo": "https://media.api-sports.io/handball/teams/843.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 14
+        },
+        "second": {
+          "home": 16,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 189348,
+      "date": "2026-01-17T15:30:00+00:00",
+      "time": "15:30",
+      "timestamp": 1768663800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 135,
+        "name": "Baltic League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/135.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4868,
+          "name": "Granitas-Karys (Ltu)",
+          "logo": "https://media.api-sports.io/handball/teams/4868.png"
+        },
+        "away": {
+          "id": 535,
+          "name": "Dragunas Klaipeda (Ltu)",
+          "logo": "https://media.api-sports.io/handball/teams/535.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 16
+        },
+        "second": {
+          "home": 15,
+          "away": 21
+        }
+      }
+    },
+    {
+      "id": 177026,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "17",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 8,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "league": {
+        "id": 15,
+        "name": "1. Division",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/15.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4663,
+          "name": "Aarhus Handbold",
+          "logo": "https://media.api-sports.io/handball/teams/4663.png"
+        },
+        "away": {
+          "id": 4692,
+          "name": "Give",
+          "logo": "https://media.api-sports.io/handball/teams/4692.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 10
+        },
+        "second": {
+          "home": 14,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 177288,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 36,
+        "name": "Switzerland",
+        "code": "CH",
+        "flag": "https://media.api-sports.io/flags/ch.svg"
+      },
+      "league": {
+        "id": 116,
+        "name": "SPL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/116.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1075,
+          "name": "Rotweiss Thun W",
+          "logo": "https://media.api-sports.io/handball/teams/1075.png"
+        },
+        "away": {
+          "id": 1071,
+          "name": "Amicitia Zurich W",
+          "logo": "https://media.api-sports.io/handball/teams/1071.png"
+        }
+      },
+      "scores": {
+        "home": 16,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": 9,
+          "away": 18
+        },
+        "second": {
+          "home": 7,
+          "away": 19
+        }
+      }
+    },
+    {
+      "id": 178863,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 976,
+          "name": "Barcelona II",
+          "logo": "https://media.api-sports.io/handball/teams/976.png"
+        },
+        "away": {
+          "id": 984,
+          "name": "Malaga",
+          "logo": "https://media.api-sports.io/handball/teams/984.png"
+        }
+      },
+      "scores": {
+        "home": 36,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 183018,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 6,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "league": {
+        "id": 11,
+        "name": "1. HRL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/11.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 94,
+          "name": "Koka W",
+          "logo": "https://media.api-sports.io/handball/teams/94.png"
+        },
+        "away": {
+          "id": 4315,
+          "name": "Sinj W",
+          "logo": "https://media.api-sports.io/handball/teams/4315.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 15
+        },
+        "second": {
+          "home": 14,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 185222,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 15,
+        "name": "Hungary",
+        "code": "HU",
+        "flag": "https://media.api-sports.io/flags/hu.svg"
+      },
+      "league": {
+        "id": 50,
+        "name": "NB I Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/50.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1659,
+          "name": "NEKA W",
+          "logo": "https://media.api-sports.io/handball/teams/1659.png"
+        },
+        "away": {
+          "id": 433,
+          "name": "Vaci W",
+          "logo": "https://media.api-sports.io/handball/teams/433.png"
+        }
+      },
+      "scores": {
+        "home": 18,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": 11,
+          "away": 16
+        },
+        "second": {
+          "home": 7,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 185802,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 18,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 58,
+        "name": "Serie A Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/58.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 517,
+          "name": "Ferrara W",
+          "logo": "https://media.api-sports.io/handball/teams/517.png"
+        },
+        "away": {
+          "id": 523,
+          "name": "Padova W",
+          "logo": "https://media.api-sports.io/handball/teams/523.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186063,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 14,
+        "name": "Greece",
+        "code": "GR",
+        "flag": "https://media.api-sports.io/flags/gr.svg"
+      },
+      "league": {
+        "id": 47,
+        "name": "A1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/47.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2172,
+          "name": "Athinaikos",
+          "logo": "https://media.api-sports.io/handball/teams/2172.png"
+        },
+        "away": {
+          "id": 1628,
+          "name": "Kilkis",
+          "logo": "https://media.api-sports.io/handball/teams/1628.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186065,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 14,
+        "name": "Greece",
+        "code": "GR",
+        "flag": "https://media.api-sports.io/flags/gr.svg"
+      },
+      "league": {
+        "id": 47,
+        "name": "A1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/47.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4760,
+          "name": "Feronas",
+          "logo": "https://media.api-sports.io/handball/teams/4760.png"
+        },
+        "away": {
+          "id": 401,
+          "name": "Ionikos",
+          "logo": "https://media.api-sports.io/handball/teams/401.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 38
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 21
+        },
+        "second": {
+          "home": 18,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 186067,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 14,
+        "name": "Greece",
+        "code": "GR",
+        "flag": "https://media.api-sports.io/flags/gr.svg"
+      },
+      "league": {
+        "id": 47,
+        "name": "A1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/47.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 403,
+          "name": "PAOK",
+          "logo": "https://media.api-sports.io/handball/teams/403.png"
+        },
+        "away": {
+          "id": 397,
+          "name": "Diomidis Argous",
+          "logo": "https://media.api-sports.io/handball/teams/397.png"
+        }
+      },
+      "scores": {
+        "home": 39,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186068,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Postponed",
+        "short": "POST"
+      },
+      "country": {
+        "id": 14,
+        "name": "Greece",
+        "code": "GR",
+        "flag": "https://media.api-sports.io/flags/gr.svg"
+      },
+      "league": {
+        "id": 47,
+        "name": "A1",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/47.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 394,
+          "name": "AEK Athens",
+          "logo": "https://media.api-sports.io/handball/teams/394.png"
+        },
+        "away": {
+          "id": 406,
+          "name": "Zafeirakis",
+          "logo": "https://media.api-sports.io/handball/teams/406.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 189349,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 135,
+        "name": "Baltic League",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/135.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 212,
+          "name": "Cocks (Fin)",
+          "logo": "https://media.api-sports.io/handball/teams/212.png"
+        },
+        "away": {
+          "id": 206,
+          "name": "Polva Serviti (Est)",
+          "logo": "https://media.api-sports.io/handball/teams/206.png"
+        }
+      },
+      "scores": {
+        "home": 23,
+        "away": 40
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 22
+        },
+        "second": {
+          "home": 13,
+          "away": 18
+        }
+      }
+    },
+    {
+      "id": 190145,
+      "date": "2026-01-17T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768665600,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 148,
+        "name": "European Cup Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/148.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 678,
+          "name": "Kobierzyce W (Pol)",
+          "logo": "https://media.api-sports.io/handball/teams/678.png"
+        },
+        "away": {
+          "id": 996,
+          "name": "Elche-Mustang W (Esp)",
+          "logo": "https://media.api-sports.io/handball/teams/996.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 14
+        },
+        "second": {
+          "home": 10,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 177287,
+      "date": "2026-01-17T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768667400,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 36,
+        "name": "Switzerland",
+        "code": "CH",
+        "flag": "https://media.api-sports.io/flags/ch.svg"
+      },
+      "league": {
+        "id": 116,
+        "name": "SPL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/116.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1072,
+          "name": "Bruhl W",
+          "logo": "https://media.api-sports.io/handball/teams/1072.png"
+        },
+        "away": {
+          "id": 1077,
+          "name": "Winterthur W",
+          "logo": "https://media.api-sports.io/handball/teams/1077.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 16
+        },
+        "second": {
+          "home": 10,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 178511,
+      "date": "2026-01-17T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768667400,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 140,
+        "name": "MOL Liga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/140.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 119,
+          "name": "Olomouc W",
+          "logo": "https://media.api-sports.io/handball/teams/119.png"
+        },
+        "away": {
+          "id": 2350,
+          "name": "Sala W",
+          "logo": "https://media.api-sports.io/handball/teams/2350.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 13
+        },
+        "second": {
+          "home": 12,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 183021,
+      "date": "2026-01-17T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768667400,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 6,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "league": {
+        "id": 11,
+        "name": "1. HRL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/11.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 98,
+          "name": "Sesvete W",
+          "logo": "https://media.api-sports.io/handball/teams/98.png"
+        },
+        "away": {
+          "id": 96,
+          "name": "Osijek W",
+          "logo": "https://media.api-sports.io/handball/teams/96.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 178202,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 132,
+        "name": "Champions League Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/132.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 236,
+          "name": "Metz W (Fra)",
+          "logo": "https://media.api-sports.io/handball/teams/236.png"
+        },
+        "away": {
+          "id": 671,
+          "name": "Storhamar W (Nor)",
+          "logo": "https://media.api-sports.io/handball/teams/671.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 16
+        },
+        "second": {
+          "home": 12,
+          "away": 11
+        }
+      }
+    },
+    {
+      "id": 178212,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 132,
+        "name": "Champions League Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/132.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 427,
+          "name": "Gyor W (Hun)",
+          "logo": "https://media.api-sports.io/handball/teams/427.png"
+        },
+        "away": {
+          "id": 423,
+          "name": "DVSC Schaeffler W (Hun)",
+          "logo": "https://media.api-sports.io/handball/teams/423.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 16
+        },
+        "second": {
+          "home": 14,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 178512,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 140,
+        "name": "MOL Liga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/140.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2146,
+          "name": "Plzen W",
+          "logo": "https://media.api-sports.io/handball/teams/2146.png"
+        },
+        "away": {
+          "id": 118,
+          "name": "Most W",
+          "logo": "https://media.api-sports.io/handball/teams/118.png"
+        }
+      },
+      "scores": {
+        "home": 21,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 13
+        },
+        "second": {
+          "home": 11,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 178671,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "15",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 108,
+        "name": "Division de Honor Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/108.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 3714,
+          "name": "Elda Prestigia W",
+          "logo": "https://media.api-sports.io/handball/teams/3714.png"
+        },
+        "away": {
+          "id": 1001,
+          "name": "Malaga W",
+          "logo": "https://media.api-sports.io/handball/teams/1001.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 20
+      },
+      "periods": {
+        "first": {
+          "home": 11,
+          "away": 8
+        },
+        "second": {
+          "home": 14,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 178864,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 961,
+          "name": "BM Sinfin",
+          "logo": "https://media.api-sports.io/handball/teams/961.png"
+        },
+        "away": {
+          "id": 3415,
+          "name": "Oviedo",
+          "logo": "https://media.api-sports.io/handball/teams/3415.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 183017,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 6,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "league": {
+        "id": 11,
+        "name": "1. HRL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/11.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 93,
+          "name": "Dugo Selo W",
+          "logo": "https://media.api-sports.io/handball/teams/93.png"
+        },
+        "away": {
+          "id": 4746,
+          "name": "Brod W",
+          "logo": "https://media.api-sports.io/handball/teams/4746.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 20
+        },
+        "second": {
+          "home": 14,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 183022,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 6,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "league": {
+        "id": 11,
+        "name": "1. HRL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/11.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 99,
+          "name": "Split 2010 W",
+          "logo": "https://media.api-sports.io/handball/teams/99.png"
+        },
+        "away": {
+          "id": 1232,
+          "name": "Zamet W",
+          "logo": "https://media.api-sports.io/handball/teams/1232.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 24
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 11
+        },
+        "second": {
+          "home": 10,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 183765,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "13",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 42,
+        "name": "1. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/42.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 361,
+          "name": "Neckarsulmer W",
+          "logo": "https://media.api-sports.io/handball/teams/361.png"
+        },
+        "away": {
+          "id": 358,
+          "name": "Halle-Neustadt W",
+          "logo": "https://media.api-sports.io/handball/teams/358.png"
+        }
+      },
+      "scores": {
+        "home": 23,
+        "away": 24
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 10
+        },
+        "second": {
+          "home": 13,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 184597,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 27,
+        "name": "Portugal",
+        "code": "PT",
+        "flag": "https://media.api-sports.io/flags/pt.svg"
+      },
+      "league": {
+        "id": 85,
+        "name": "1a Divisao Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/85.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 801,
+          "name": "Colegio de Gaia W",
+          "logo": "https://media.api-sports.io/handball/teams/801.png"
+        },
+        "away": {
+          "id": 797,
+          "name": "Benfica W",
+          "logo": "https://media.api-sports.io/handball/teams/797.png"
+        }
+      },
+      "scores": {
+        "home": 18,
+        "away": 35
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 185223,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 15,
+        "name": "Hungary",
+        "code": "HU",
+        "flag": "https://media.api-sports.io/flags/hu.svg"
+      },
+      "league": {
+        "id": 50,
+        "name": "NB I Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/50.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 432,
+          "name": "Szombathelyi W",
+          "logo": "https://media.api-sports.io/handball/teams/432.png"
+        },
+        "away": {
+          "id": 428,
+          "name": "Kisvardai KC W",
+          "logo": "https://media.api-sports.io/handball/teams/428.png"
+        }
+      },
+      "scores": {
+        "home": 34,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 19,
+          "away": 13
+        },
+        "second": {
+          "home": 15,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 185224,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "11",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 15,
+        "name": "Hungary",
+        "code": "HU",
+        "flag": "https://media.api-sports.io/flags/hu.svg"
+      },
+      "league": {
+        "id": 50,
+        "name": "NB I Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/50.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 434,
+          "name": "Vasas W",
+          "logo": "https://media.api-sports.io/handball/teams/434.png"
+        },
+        "away": {
+          "id": 421,
+          "name": "Alba Fehervar W",
+          "logo": "https://media.api-sports.io/handball/teams/421.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 14
+        },
+        "second": {
+          "home": 12,
+          "away": 9
+        }
+      }
+    },
+    {
+      "id": 185804,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 18,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 58,
+        "name": "Serie A Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/58.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 518,
+          "name": "Jomi Salerno W",
+          "logo": "https://media.api-sports.io/handball/teams/518.png"
+        },
+        "away": {
+          "id": 3461,
+          "name": "Teramo W",
+          "logo": "https://media.api-sports.io/handball/teams/3461.png"
+        }
+      },
+      "scores": {
+        "home": 41,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186483,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 239,
+          "name": "Paris 92 W",
+          "logo": "https://media.api-sports.io/handball/teams/239.png"
+        },
+        "away": {
+          "id": 1510,
+          "name": "Stade Pessacais W",
+          "logo": "https://media.api-sports.io/handball/teams/1510.png"
+        }
+      },
+      "scores": {
+        "home": 35,
+        "away": 20
+      },
+      "periods": {
+        "first": {
+          "home": 22,
+          "away": 10
+        },
+        "second": {
+          "home": 13,
+          "away": 10
+        }
+      }
+    },
+    {
+      "id": 186486,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 274,
+          "name": "Sambre Avesnois W",
+          "logo": "https://media.api-sports.io/handball/teams/274.png"
+        },
+        "away": {
+          "id": 1502,
+          "name": "Palente Besancon W",
+          "logo": "https://media.api-sports.io/handball/teams/1502.png"
+        }
+      },
+      "scores": {
+        "home": 36,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 12
+        },
+        "second": {
+          "home": 18,
+          "away": 11
+        }
+      }
+    },
+    {
+      "id": 190071,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2610,
+          "name": "Austria",
+          "logo": "https://media.api-sports.io/handball/teams/2610.png"
+        },
+        "away": {
+          "id": 2378,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/handball/teams/2378.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 19
+        },
+        "second": {
+          "home": 13,
+          "away": 11
+        }
+      }
+    },
+    {
+      "id": 190072,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2375,
+          "name": "Croatia",
+          "logo": "https://media.api-sports.io/handball/teams/2375.png"
+        },
+        "away": {
+          "id": 2571,
+          "name": "Georgia",
+          "logo": "https://media.api-sports.io/handball/teams/2571.png"
+        }
+      },
+      "scores": {
+        "home": 32,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 14
+        },
+        "second": {
+          "home": 17,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 190073,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2636,
+          "name": "Ukraine",
+          "logo": "https://media.api-sports.io/handball/teams/2636.png"
+        },
+        "away": {
+          "id": 2662,
+          "name": "France",
+          "logo": "https://media.api-sports.io/handball/teams/2662.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 46
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 24
+        },
+        "second": {
+          "home": 14,
+          "away": 22
+        }
+      }
+    },
+    {
+      "id": 190148,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 148,
+        "name": "European Cup Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/148.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 3416,
+          "name": "Beti-Onak W (Esp)",
+          "logo": "https://media.api-sports.io/handball/teams/3416.png"
+        },
+        "away": {
+          "id": 4340,
+          "name": "Bursa BB W (Tur)",
+          "logo": "https://media.api-sports.io/handball/teams/4340.png"
+        }
+      },
+      "scores": {
+        "home": 24,
+        "away": 21
+      },
+      "periods": {
+        "first": {
+          "home": 9,
+          "away": 15
+        },
+        "second": {
+          "home": 15,
+          "away": 6
+        }
+      }
+    },
+    {
+      "id": 190507,
+      "date": "2026-01-17T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768669200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 43,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 186,
+        "name": "Asian Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/186.png",
+        "season": 2026
+      },
+      "teams": {
+        "home": {
+          "id": 2670,
+          "name": "Saudi Arabia",
+          "logo": "https://media.api-sports.io/handball/teams/2670.png"
+        },
+        "away": {
+          "id": 2666,
+          "name": "Japan",
+          "logo": "https://media.api-sports.io/handball/teams/2666.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 24
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 9
+        },
+        "second": {
+          "home": 15,
+          "away": 15
+        }
+      }
+    },
+    {
+      "id": 178860,
+      "date": "2026-01-17T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768671000,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 973,
+          "name": "Alcobendas",
+          "logo": "https://media.api-sports.io/handball/teams/973.png"
+        },
+        "away": {
+          "id": 1898,
+          "name": "Agustinos Alicante",
+          "logo": "https://media.api-sports.io/handball/teams/1898.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 183929,
+      "date": "2026-01-17T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768671000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 45,
+        "name": "2. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/45.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 390,
+          "name": "Solingen W",
+          "logo": "https://media.api-sports.io/handball/teams/390.png"
+        },
+        "away": {
+          "id": 380,
+          "name": "Werder Bremen W",
+          "logo": "https://media.api-sports.io/handball/teams/380.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 16
+        },
+        "second": {
+          "home": 18,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 183930,
+      "date": "2026-01-17T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768671000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 45,
+        "name": "2. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/45.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 389,
+          "name": "Regensburg W",
+          "logo": "https://media.api-sports.io/handball/teams/389.png"
+        },
+        "away": {
+          "id": 373,
+          "name": "HSG Freiburg W",
+          "logo": "https://media.api-sports.io/handball/teams/373.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 14
+        },
+        "second": {
+          "home": 11,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 183931,
+      "date": "2026-01-17T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768671000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 45,
+        "name": "2. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/45.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 379,
+          "name": "Rodertal W",
+          "logo": "https://media.api-sports.io/handball/teams/379.png"
+        },
+        "away": {
+          "id": 387,
+          "name": "Mainz W",
+          "logo": "https://media.api-sports.io/handball/teams/387.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 16
+        },
+        "second": {
+          "home": 13,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 185806,
+      "date": "2026-01-17T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768671000,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 18,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 58,
+        "name": "Serie A Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/58.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 514,
+          "name": "Casalgrande Padana W",
+          "logo": "https://media.api-sports.io/handball/teams/514.png"
+        },
+        "away": {
+          "id": 513,
+          "name": "Brixen W",
+          "logo": "https://media.api-sports.io/handball/teams/513.png"
+        }
+      },
+      "scores": {
+        "home": 17,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 178978,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4711,
+          "name": "OAR Coruna",
+          "logo": "https://media.api-sports.io/handball/teams/4711.png"
+        },
+        "away": {
+          "id": 978,
+          "name": "Cisne",
+          "logo": "https://media.api-sports.io/handball/teams/978.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 180382,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 1,
+        "name": "Austria",
+        "code": "AT",
+        "flag": "https://media.api-sports.io/flags/at.svg"
+      },
+      "league": {
+        "id": 1,
+        "name": "WHA Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/1.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 11,
+          "name": "Stockerau W",
+          "logo": "https://media.api-sports.io/handball/teams/11.png"
+        },
+        "away": {
+          "id": 6,
+          "name": "Fuchse W",
+          "logo": "https://media.api-sports.io/handball/teams/6.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 18
+        },
+        "second": {
+          "home": 10,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 180383,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 1,
+        "name": "Austria",
+        "code": "AT",
+        "flag": "https://media.api-sports.io/flags/at.svg"
+      },
+      "league": {
+        "id": 1,
+        "name": "WHA Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/1.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4,
+          "name": "Feldkirch W",
+          "logo": "https://media.api-sports.io/handball/teams/4.png"
+        },
+        "away": {
+          "id": 32,
+          "name": "Tulln W",
+          "logo": "https://media.api-sports.io/handball/teams/32.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 13
+        },
+        "second": {
+          "home": 15,
+          "away": 24
+        }
+      }
+    },
+    {
+      "id": 180384,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 1,
+        "name": "Austria",
+        "code": "AT",
+        "flag": "https://media.api-sports.io/flags/at.svg"
+      },
+      "league": {
+        "id": 1,
+        "name": "WHA Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/1.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1,
+          "name": "Atzgersdorf W",
+          "logo": "https://media.api-sports.io/handball/teams/1.png"
+        },
+        "away": {
+          "id": 31,
+          "name": "St. Polten W",
+          "logo": "https://media.api-sports.io/handball/teams/31.png"
+        }
+      },
+      "scores": {
+        "home": 40,
+        "away": 17
+      },
+      "periods": {
+        "first": {
+          "home": 19,
+          "away": 10
+        },
+        "second": {
+          "home": 21,
+          "away": 7
+        }
+      }
+    },
+    {
+      "id": 180385,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 1,
+        "name": "Austria",
+        "code": "AT",
+        "flag": "https://media.api-sports.io/flags/at.svg"
+      },
+      "league": {
+        "id": 1,
+        "name": "WHA Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/1.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "MGA Handball W",
+          "logo": "https://media.api-sports.io/handball/teams/10.png"
+        },
+        "away": {
+          "id": 3455,
+          "name": "roomz JAGS WV W",
+          "logo": "https://media.api-sports.io/handball/teams/3455.png"
+        }
+      },
+      "scores": {
+        "home": 35,
+        "away": 22
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 10
+        },
+        "second": {
+          "home": 20,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 180387,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 1,
+        "name": "Austria",
+        "code": "AT",
+        "flag": "https://media.api-sports.io/flags/at.svg"
+      },
+      "league": {
+        "id": 1,
+        "name": "WHA Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/1.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2,
+          "name": "Dornbirn/Schoren W",
+          "logo": "https://media.api-sports.io/handball/teams/2.png"
+        },
+        "away": {
+          "id": 9,
+          "name": "Korneuburg W",
+          "logo": "https://media.api-sports.io/handball/teams/9.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 26
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 12
+        },
+        "second": {
+          "home": 11,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 184596,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 27,
+        "name": "Portugal",
+        "code": "PT",
+        "flag": "https://media.api-sports.io/flags/pt.svg"
+      },
+      "league": {
+        "id": 85,
+        "name": "1a Divisao Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/85.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 806,
+          "name": "Sao Pedro Sul W",
+          "logo": "https://media.api-sports.io/handball/teams/806.png"
+        },
+        "away": {
+          "id": 2149,
+          "name": "CJ Almeida Garrett W",
+          "logo": "https://media.api-sports.io/handball/teams/2149.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 184598,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 27,
+        "name": "Portugal",
+        "code": "PT",
+        "flag": "https://media.api-sports.io/flags/pt.svg"
+      },
+      "league": {
+        "id": 85,
+        "name": "1a Divisao Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/85.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 798,
+          "name": "CALE W",
+          "logo": "https://media.api-sports.io/handball/teams/798.png"
+        },
+        "away": {
+          "id": 802,
+          "name": "Juvelis W",
+          "logo": "https://media.api-sports.io/handball/teams/802.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 21
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 11
+        },
+        "second": {
+          "home": 17,
+          "away": 10
+        }
+      }
+    },
+    {
+      "id": 185807,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 18,
+        "name": "Italy",
+        "code": "IT",
+        "flag": "https://media.api-sports.io/flags/it.svg"
+      },
+      "league": {
+        "id": 58,
+        "name": "Serie A Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/58.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 522,
+          "name": "Mezzocorona W",
+          "logo": "https://media.api-sports.io/handball/teams/522.png"
+        },
+        "away": {
+          "id": 519,
+          "name": "Leno W",
+          "logo": "https://media.api-sports.io/handball/teams/519.png"
+        }
+      },
+      "scores": {
+        "home": 27,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186965,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 590,
+          "name": "Deurningen W",
+          "logo": "https://media.api-sports.io/handball/teams/590.png"
+        },
+        "away": {
+          "id": 1743,
+          "name": "ZAP W",
+          "logo": "https://media.api-sports.io/handball/teams/1743.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186966,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Postponed",
+        "short": "POST"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 595,
+          "name": "Kwiek W",
+          "logo": "https://media.api-sports.io/handball/teams/595.png"
+        },
+        "away": {
+          "id": 4196,
+          "name": "Venlo W",
+          "logo": "https://media.api-sports.io/handball/teams/4196.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186967,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 596,
+          "name": "Quintus W",
+          "logo": "https://media.api-sports.io/handball/teams/596.png"
+        },
+        "away": {
+          "id": 593,
+          "name": "JuRo Unirek W",
+          "logo": "https://media.api-sports.io/handball/teams/593.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186968,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 597,
+          "name": "VOC Amsterdam W",
+          "logo": "https://media.api-sports.io/handball/teams/597.png"
+        },
+        "away": {
+          "id": 598,
+          "name": "Vlug en Lenig W",
+          "logo": "https://media.api-sports.io/handball/teams/598.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 187264,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 66,
+        "name": "Eredivisie",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/66.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 576,
+          "name": "Dynamico",
+          "logo": "https://media.api-sports.io/handball/teams/576.png"
+        },
+        "away": {
+          "id": 574,
+          "name": "BFC",
+          "logo": "https://media.api-sports.io/handball/teams/574.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 190147,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 148,
+        "name": "European Cup Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/148.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 998,
+          "name": "Guardes W (Esp)",
+          "logo": "https://media.api-sports.io/handball/teams/998.png"
+        },
+        "away": {
+          "id": 516,
+          "name": "Erice W (Ita)",
+          "logo": "https://media.api-sports.io/handball/teams/516.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 22
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 10
+        },
+        "second": {
+          "home": 15,
+          "away": 12
+        }
+      }
+    },
+    {
+      "id": 190149,
+      "date": "2026-01-17T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768672800,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 148,
+        "name": "European Cup Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/148.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 913,
+          "name": "Ajdovscina W (Slo)",
+          "logo": "https://media.api-sports.io/handball/teams/913.png"
+        },
+        "away": {
+          "id": 4196,
+          "name": "Venlo W (Ned)",
+          "logo": "https://media.api-sports.io/handball/teams/4196.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 14
+        },
+        "second": {
+          "home": 14,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 183928,
+      "date": "2026-01-17T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768674600,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 45,
+        "name": "2. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/45.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 376,
+          "name": "Kirchhof W",
+          "logo": "https://media.api-sports.io/handball/teams/376.png"
+        },
+        "away": {
+          "id": 392,
+          "name": "Waiblingen W",
+          "logo": "https://media.api-sports.io/handball/teams/392.png"
+        }
+      },
+      "scores": {
+        "home": 23,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": 12,
+          "away": 15
+        },
+        "second": {
+          "home": 11,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 183932,
+      "date": "2026-01-17T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768674600,
+      "timezone": "UTC",
+      "week": "14",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 13,
+        "name": "Germany",
+        "code": "DE",
+        "flag": "https://media.api-sports.io/flags/de.svg"
+      },
+      "league": {
+        "id": 45,
+        "name": "2. Bundesliga Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/45.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 378,
+          "name": "Nurtingen W",
+          "logo": "https://media.api-sports.io/handball/teams/378.png"
+        },
+        "away": {
+          "id": 4579,
+          "name": "Bergischer W",
+          "logo": "https://media.api-sports.io/handball/teams/4579.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 25
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 11
+        },
+        "second": {
+          "home": 20,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 187265,
+      "date": "2026-01-17T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768674600,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 66,
+        "name": "Eredivisie",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/66.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 572,
+          "name": "Aalsmeer 2",
+          "logo": "https://media.api-sports.io/handball/teams/572.png"
+        },
+        "away": {
+          "id": 578,
+          "name": "Emmen",
+          "logo": "https://media.api-sports.io/handball/teams/578.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 178673,
+      "date": "2026-01-17T18:45:00+00:00",
+      "time": "18:45",
+      "timestamp": 1768675500,
+      "timezone": "UTC",
+      "week": "15",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 108,
+        "name": "Division de Honor Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/108.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2170,
+          "name": "Sporting La Rioja W",
+          "logo": "https://media.api-sports.io/handball/teams/2170.png"
+        },
+        "away": {
+          "id": 997,
+          "name": "Gran Canaria W",
+          "logo": "https://media.api-sports.io/handball/teams/997.png"
+        }
+      },
+      "scores": {
+        "home": 20,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 14
+        },
+        "second": {
+          "home": 10,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 177286,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 36,
+        "name": "Switzerland",
+        "code": "CH",
+        "flag": "https://media.api-sports.io/flags/ch.svg"
+      },
+      "league": {
+        "id": 116,
+        "name": "SPL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/116.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4119,
+          "name": "Aargau Ost W",
+          "logo": "https://media.api-sports.io/handball/teams/4119.png"
+        },
+        "away": {
+          "id": 1073,
+          "name": "Herzogenbuchsee W",
+          "logo": "https://media.api-sports.io/handball/teams/1073.png"
+        }
+      },
+      "scores": {
+        "home": 29,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 14,
+          "away": 12
+        },
+        "second": {
+          "home": 15,
+          "away": 18
+        }
+      }
+    },
+    {
+      "id": 177289,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "12",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 36,
+        "name": "Switzerland",
+        "code": "CH",
+        "flag": "https://media.api-sports.io/flags/ch.svg"
+      },
+      "league": {
+        "id": 116,
+        "name": "SPL Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/116.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1076,
+          "name": "SPONO Eagles W",
+          "logo": "https://media.api-sports.io/handball/teams/1076.png"
+        },
+        "away": {
+          "id": 1078,
+          "name": "Zug W",
+          "logo": "https://media.api-sports.io/handball/teams/1078.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 30
+      },
+      "periods": {
+        "first": {
+          "home": 11,
+          "away": 16
+        },
+        "second": {
+          "home": 11,
+          "away": 14
+        }
+      }
+    },
+    {
+      "id": 178257,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "10",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 132,
+        "name": "Champions League Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/132.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 230,
+          "name": "Brest Bretagne W (Fra)",
+          "logo": "https://media.api-sports.io/handball/teams/230.png"
+        },
+        "away": {
+          "id": 4674,
+          "name": "Ikast Handbold W (Den)",
+          "logo": "https://media.api-sports.io/handball/teams/4674.png"
+        }
+      },
+      "scores": {
+        "home": 35,
+        "away": 37
+      },
+      "periods": {
+        "first": {
+          "home": 17,
+          "away": 17
+        },
+        "second": {
+          "home": 18,
+          "away": 20
+        }
+      }
+    },
+    {
+      "id": 178858,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 981,
+          "name": "Eivissa",
+          "logo": "https://media.api-sports.io/handball/teams/981.png"
+        },
+        "away": {
+          "id": 975,
+          "name": "Balonmano Soria",
+          "logo": "https://media.api-sports.io/handball/teams/975.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186481,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2091,
+          "name": "Bouillargues W",
+          "logo": "https://media.api-sports.io/handball/teams/2091.png"
+        },
+        "away": {
+          "id": 238,
+          "name": "Nice W",
+          "logo": "https://media.api-sports.io/handball/teams/238.png"
+        }
+      },
+      "scores": {
+        "home": 23,
+        "away": 38
+      },
+      "periods": {
+        "first": {
+          "home": 9,
+          "away": 21
+        },
+        "second": {
+          "home": 14,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 187263,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 66,
+        "name": "Eredivisie",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/66.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4192,
+          "name": "Tachos",
+          "logo": "https://media.api-sports.io/handball/teams/4192.png"
+        },
+        "away": {
+          "id": 4799,
+          "name": "DWS",
+          "logo": "https://media.api-sports.io/handball/teams/4799.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 190352,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "2",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 146,
+        "name": "EHF European League Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/146.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 95,
+          "name": "Lok. Zagreb W (Cro)",
+          "logo": "https://media.api-sports.io/handball/teams/95.png"
+        },
+        "away": {
+          "id": 847,
+          "name": "Rapid Bucuresti W (Rou)",
+          "logo": "https://media.api-sports.io/handball/teams/847.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 28
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 12
+        },
+        "second": {
+          "home": 15,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 190357,
+      "date": "2026-01-17T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768676400,
+      "timezone": "UTC",
+      "week": "2",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 146,
+        "name": "EHF European League Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/146.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4474,
+          "name": "Esztergomi W (Hun)",
+          "logo": "https://media.api-sports.io/handball/teams/4474.png"
+        },
+        "away": {
+          "id": 356,
+          "name": "Blomberg-Lippe W (Ger)",
+          "logo": "https://media.api-sports.io/handball/teams/356.png"
+        }
+      },
+      "scores": {
+        "home": 33,
+        "away": 32
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 16
+        },
+        "second": {
+          "home": 15,
+          "away": 16
+        }
+      }
+    },
+    {
+      "id": 187087,
+      "date": "2026-01-17T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768677300,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 21,
+        "name": "Luxembourg",
+        "code": "LU",
+        "flag": "https://media.api-sports.io/flags/lu.svg"
+      },
+      "league": {
+        "id": 63,
+        "name": "AXA League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/63.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 545,
+          "name": "Dudelange",
+          "logo": "https://media.api-sports.io/handball/teams/545.png"
+        },
+        "away": {
+          "id": 553,
+          "name": "Standard",
+          "logo": "https://media.api-sports.io/handball/teams/553.png"
+        }
+      },
+      "scores": {
+        "home": 40,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": 18,
+          "away": 14
+        },
+        "second": {
+          "home": 22,
+          "away": 17
+        }
+      }
+    },
+    {
+      "id": 187088,
+      "date": "2026-01-17T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768677300,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 21,
+        "name": "Luxembourg",
+        "code": "LU",
+        "flag": "https://media.api-sports.io/flags/lu.svg"
+      },
+      "league": {
+        "id": 63,
+        "name": "AXA League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/63.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 546,
+          "name": "Esch",
+          "logo": "https://media.api-sports.io/handball/teams/546.png"
+        },
+        "away": {
+          "id": 542,
+          "name": "Berchem",
+          "logo": "https://media.api-sports.io/handball/teams/542.png"
+        }
+      },
+      "scores": {
+        "home": 26,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 15,
+          "away": 9
+        },
+        "second": {
+          "home": 11,
+          "away": 20
+        }
+      }
+    },
+    {
+      "id": 187089,
+      "date": "2026-01-17T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768677300,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 21,
+        "name": "Luxembourg",
+        "code": "LU",
+        "flag": "https://media.api-sports.io/flags/lu.svg"
+      },
+      "league": {
+        "id": 63,
+        "name": "AXA League",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/63.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 554,
+          "name": "Rumelange",
+          "logo": "https://media.api-sports.io/handball/teams/554.png"
+        },
+        "away": {
+          "id": 548,
+          "name": "Kaerjeng",
+          "logo": "https://media.api-sports.io/handball/teams/548.png"
+        }
+      },
+      "scores": {
+        "home": 28,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 13
+        },
+        "second": {
+          "home": 12,
+          "away": 18
+        }
+      }
+    },
+    {
+      "id": 178675,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "15",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 108,
+        "name": "Division de Honor Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/108.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4491,
+          "name": "San Jose Obrero W",
+          "logo": "https://media.api-sports.io/handball/teams/4491.png"
+        },
+        "away": {
+          "id": 1003,
+          "name": "Porrino W",
+          "logo": "https://media.api-sports.io/handball/teams/1003.png"
+        }
+      },
+      "scores": {
+        "home": 22,
+        "away": 22
+      },
+      "periods": {
+        "first": {
+          "home": 11,
+          "away": 11
+        },
+        "second": {
+          "home": 11,
+          "away": 11
+        }
+      }
+    },
+    {
+      "id": 178859,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 104,
+        "name": "Division de Honor Plata",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/104.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4545,
+          "name": "Proin Triana",
+          "logo": "https://media.api-sports.io/handball/teams/4545.png"
+        },
+        "away": {
+          "id": 986,
+          "name": "Puerto Sagunto",
+          "logo": "https://media.api-sports.io/handball/teams/986.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186480,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4428,
+          "name": "Achenheim Truchtersheim W",
+          "logo": "https://media.api-sports.io/handball/teams/4428.png"
+        },
+        "away": {
+          "id": 266,
+          "name": "Clermont W",
+          "logo": "https://media.api-sports.io/handball/teams/266.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186482,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 268,
+          "name": "Le Pouzin W",
+          "logo": "https://media.api-sports.io/handball/teams/268.png"
+        },
+        "away": {
+          "id": 247,
+          "name": "Nimes W",
+          "logo": "https://media.api-sports.io/handball/teams/247.png"
+        }
+      },
+      "scores": {
+        "home": 21,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 10,
+          "away": 14
+        },
+        "second": {
+          "home": 11,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 186484,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 271,
+          "name": "Rennes W",
+          "logo": "https://media.api-sports.io/handball/teams/271.png"
+        },
+        "away": {
+          "id": 265,
+          "name": "Beglais W",
+          "logo": "https://media.api-sports.io/handball/teams/265.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 25
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 16
+        },
+        "second": {
+          "home": 12,
+          "away": 9
+        }
+      }
+    },
+    {
+      "id": 186487,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "4",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 11,
+        "name": "France",
+        "code": "FR",
+        "flag": "https://media.api-sports.io/flags/fr.svg"
+      },
+      "league": {
+        "id": 35,
+        "name": "Coupe de France Women",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/35.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2092,
+          "name": "Stella St. Maur W",
+          "logo": "https://media.api-sports.io/handball/teams/2092.png"
+        },
+        "away": {
+          "id": 267,
+          "name": "Havre W",
+          "logo": "https://media.api-sports.io/handball/teams/267.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 186969,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4583,
+          "name": "M.H.V. 81 W",
+          "logo": "https://media.api-sports.io/handball/teams/4583.png"
+        },
+        "away": {
+          "id": 599,
+          "name": "Westfriesland SEW W",
+          "logo": "https://media.api-sports.io/handball/teams/599.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 187266,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 66,
+        "name": "Eredivisie",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/66.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 4801,
+          "name": "Rotterdam Handbal",
+          "logo": "https://media.api-sports.io/handball/teams/4801.png"
+        },
+        "away": {
+          "id": 585,
+          "name": "KRAS/Volendam 2",
+          "logo": "https://media.api-sports.io/handball/teams/585.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 190074,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2614,
+          "name": "Czech Republic",
+          "logo": "https://media.api-sports.io/handball/teams/2614.png"
+        },
+        "away": {
+          "id": 2668,
+          "name": "Norway",
+          "logo": "https://media.api-sports.io/handball/teams/2668.png"
+        }
+      },
+      "scores": {
+        "home": 25,
+        "away": 29
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 16
+        },
+        "second": {
+          "home": 9,
+          "away": 13
+        }
+      }
+    },
+    {
+      "id": 190075,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2632,
+          "name": "Serbia",
+          "logo": "https://media.api-sports.io/handball/teams/2632.png"
+        },
+        "away": {
+          "id": 1546,
+          "name": "Germany",
+          "logo": "https://media.api-sports.io/handball/teams/1546.png"
+        }
+      },
+      "scores": {
+        "home": 30,
+        "away": 27
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 17
+        },
+        "second": {
+          "home": 17,
+          "away": 10
+        }
+      }
+    },
+    {
+      "id": 190076,
+      "date": "2026-01-17T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768678200,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 40,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "league": {
+        "id": 177,
+        "name": "European Championship",
+        "type": "Cup",
+        "logo": "https://media.api-sports.io/handball/leagues/177.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 2672,
+          "name": "Sweden",
+          "logo": "https://media.api-sports.io/handball/teams/2672.png"
+        },
+        "away": {
+          "id": 2628,
+          "name": "Netherlands",
+          "logo": "https://media.api-sports.io/handball/teams/2628.png"
+        }
+      },
+      "scores": {
+        "home": 36,
+        "away": 31
+      },
+      "periods": {
+        "first": {
+          "home": 16,
+          "away": 12
+        },
+        "second": {
+          "home": 20,
+          "away": 19
+        }
+      }
+    },
+    {
+      "id": 186970,
+      "date": "2026-01-17T19:45:00+00:00",
+      "time": "19:45",
+      "timestamp": 1768679100,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 67,
+        "name": "Eredivisie Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/67.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1740,
+          "name": "Foreholte W",
+          "logo": "https://media.api-sports.io/handball/teams/1740.png"
+        },
+        "away": {
+          "id": 1741,
+          "name": "E&O W",
+          "logo": "https://media.api-sports.io/handball/teams/1741.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 187267,
+      "date": "2026-01-17T19:55:00+00:00",
+      "time": "19:55",
+      "timestamp": 1768679700,
+      "timezone": "UTC",
+      "week": "16",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Netherlands",
+        "code": "NL",
+        "flag": "https://media.api-sports.io/flags/nl.svg"
+      },
+      "league": {
+        "id": 66,
+        "name": "Eredivisie",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/66.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 605,
+          "name": "Quintus",
+          "logo": "https://media.api-sports.io/handball/teams/605.png"
+        },
+        "away": {
+          "id": 573,
+          "name": "Arnhem",
+          "logo": "https://media.api-sports.io/handball/teams/573.png"
+        }
+      },
+      "scores": {
+        "home": null,
+        "away": null
+      },
+      "periods": {
+        "first": {
+          "home": null,
+          "away": null
+        },
+        "second": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 178672,
+      "date": "2026-01-17T20:00:00+00:00",
+      "time": "20:00",
+      "timestamp": 1768680000,
+      "timezone": "UTC",
+      "week": "15",
+      "status": {
+        "long": "Finished",
+        "short": "FT"
+      },
+      "country": {
+        "id": 34,
+        "name": "Spain",
+        "code": "ES",
+        "flag": "https://media.api-sports.io/flags/es.svg"
+      },
+      "league": {
+        "id": 108,
+        "name": "Division de Honor Women",
+        "type": "League",
+        "logo": "https://media.api-sports.io/handball/leagues/108.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 1000,
+          "name": "Lanzarote Zonzamas W",
+          "logo": "https://media.api-sports.io/handball/teams/1000.png"
+        },
+        "away": {
+          "id": 1002,
+          "name": "Morvedre W",
+          "logo": "https://media.api-sports.io/handball/teams/1002.png"
+        }
+      },
+      "scores": {
+        "home": 20,
+        "away": 23
+      },
+      "periods": {
+        "first": {
+          "home": 13,
+          "away": 13
+        },
+        "second": {
+          "home": 7,
+          "away": 10
+        }
+      }
+    }
+  ]
+}

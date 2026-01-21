@@ -1,0 +1,871 @@
+{
+  "contract_version": "1.0",
+  "contract_date": "2026-01-18",
+  "generated_at": "2026-01-18T11:52:47.451943",
+  "picks_classic": [
+    [
+      {
+        "sport": "nfl",
+        "eventId": "17591",
+        "bookmaker": "Betano",
+        "market": "Over/Under",
+        "selection": "Over 29.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.8033,
+        "p_safe": 0.8228,
+        "stake": 50.0,
+        "ev": -1.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "nfl",
+          "eventId": "17591",
+          "league": "NFL",
+          "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+          "startTime": "2026-01-18T20:00:00+00:00",
+          "home": {
+            "name": "New England Patriots",
+            "logo": "https://media.api-sports.io/american-football/teams/3.png"
+          },
+          "away": {
+            "name": "Houston Texans",
+            "logo": "https://media.api-sports.io/american-football/teams/26.png"
+          }
+        }
+      },
+      {
+        "sport": "nfl",
+        "eventId": "17592",
+        "bookmaker": "Betano",
+        "market": "Over/Under",
+        "selection": "Over 33.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.8033,
+        "p_safe": 0.8228,
+        "stake": 50.0,
+        "ev": -1.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "nfl",
+          "eventId": "17592",
+          "league": "NFL",
+          "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+          "startTime": "2026-01-18T01:00:00+00:00",
+          "home": {
+            "name": "Seattle Seahawks",
+            "logo": "https://media.api-sports.io/american-football/teams/23.png"
+          },
+          "away": {
+            "name": "San Francisco 49ers",
+            "logo": "https://media.api-sports.io/american-football/teams/14.png"
+          }
+        }
+      },
+      {
+        "sport": "nfl",
+        "eventId": "17593",
+        "bookmaker": "1xBet",
+        "market": "Over/Under",
+        "selection": "Over 38.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.8033,
+        "p_safe": 0.8228,
+        "stake": 50.0,
+        "ev": -1.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "nfl",
+          "eventId": "17593",
+          "league": "NFL",
+          "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+          "startTime": "2026-01-18T23:30:00+00:00",
+          "home": {
+            "name": "Chicago Bears",
+            "logo": "https://media.api-sports.io/american-football/teams/16.png"
+          },
+          "away": {
+            "name": "Los Angeles Rams",
+            "logo": "https://media.api-sports.io/american-football/teams/31.png"
+          }
+        }
+      },
+      {
+        "sport": "basketball",
+        "eventId": "449913",
+        "bookmaker": "Bet365",
+        "market": "Asian Handicap",
+        "selection": "Away +6.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "basketball",
+          "eventId": "449913",
+          "league": "Basketligan",
+          "leagueLogo": "https://media.api-sports.io/basketball/leagues/93.png",
+          "startTime": "2026-01-18T15:04:00+00:00",
+          "home": {
+            "name": "Umea",
+            "logo": "https://media.api-sports.io/basketball/teams/1206.png"
+          },
+          "away": {
+            "name": "Boras",
+            "logo": "https://media.api-sports.io/basketball/teams/1199.png"
+          }
+        }
+      },
+      {
+        "sport": "handball",
+        "eventId": "178284",
+        "bookmaker": "Sbo",
+        "market": "3Way Result",
+        "selection": "Home",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "handball",
+          "eventId": "178284",
+          "league": "Champions League Women",
+          "leagueLogo": "https://media.api-sports.io/handball/leagues/132.png",
+          "startTime": "2026-01-18T15:00:00+00:00",
+          "home": {
+            "name": "Esbjerg W (Den)",
+            "logo": null
+          },
+          "away": {
+            "name": "Bistrita W (Rou)",
+            "logo": "https://media.api-sports.io/handball/teams/838.png"
+          }
+        }
+      },
+      {
+        "sport": "hockey",
+        "eventId": "395726",
+        "bookmaker": "1xBet",
+        "market": "Total - Away",
+        "selection": "Under 3",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "hockey",
+          "eventId": "395726",
+          "league": "Extraliga",
+          "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+          "startTime": "2026-01-18T15:00:00+00:00",
+          "home": {
+            "name": "Liberec",
+            "logo": "https://media.api-sports.io/hockey/teams/127.png"
+          },
+          "away": {
+            "name": "Litvinov",
+            "logo": "https://media.api-sports.io/hockey/teams/128.png"
+          }
+        }
+      },
+      {
+        "sport": "hockey",
+        "eventId": "395727",
+        "bookmaker": "Pncl",
+        "market": "Asian Handicap (Reg Time)",
+        "selection": "Away -2.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "hockey",
+          "eventId": "395727",
+          "league": "Extraliga",
+          "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+          "startTime": "2026-01-18T15:00:00+00:00",
+          "home": {
+            "name": "Kladno",
+            "logo": "https://media.api-sports.io/hockey/teams/144.png"
+          },
+          "away": {
+            "name": "Olomouc",
+            "logo": "https://media.api-sports.io/hockey/teams/131.png"
+          }
+        }
+      },
+      {
+        "sport": "hockey",
+        "eventId": "395729",
+        "bookmaker": "1xBet",
+        "market": "Total - Away",
+        "selection": "Under 3",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "hockey",
+          "eventId": "395729",
+          "league": "Extraliga",
+          "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+          "startTime": "2026-01-18T15:30:00+00:00",
+          "home": {
+            "name": "Plzen",
+            "logo": "https://media.api-sports.io/hockey/teams/133.png"
+          },
+          "away": {
+            "name": "Mountfield HK",
+            "logo": "https://media.api-sports.io/hockey/teams/130.png"
+          }
+        }
+      },
+      {
+        "sport": "hockey",
+        "eventId": "395731",
+        "bookmaker": "1xBet",
+        "market": "Over/Under (Reg Time)",
+        "selection": "Over 3.5",
+        "odds": 1.2,
+        "p_implied": 0.8333,
+        "p_estimated": 0.7533,
+        "p_safe": 0.8053,
+        "stake": 50.0,
+        "ev": -4.8,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "hockey",
+          "eventId": "395731",
+          "league": "Extraliga",
+          "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+          "startTime": "2026-01-18T16:00:00+00:00",
+          "home": {
+            "name": "Pardubice",
+            "logo": null
+          },
+          "away": {
+            "name": "Ceske Budejovice",
+            "logo": "https://media.api-sports.io/hockey/teams/124.png"
+          }
+        }
+      },
+      {
+        "sport": "handball",
+        "eventId": "179457",
+        "bookmaker": "Bet365",
+        "market": "Home/Away",
+        "selection": "Home",
+        "odds": 1.22,
+        "p_implied": 0.8197,
+        "p_estimated": 0.7697,
+        "p_safe": 0.8022,
+        "stake": 50.0,
+        "ev": -3.05,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": false,
+        "premium_reason": null,
+        "display": {
+          "sport": "handball",
+          "eventId": "179457",
+          "league": "1. Division Women",
+          "leagueLogo": "https://media.api-sports.io/handball/leagues/70.png",
+          "startTime": "2026-01-18T15:00:00+00:00",
+          "home": {
+            "name": "Aker W",
+            "logo": null
+          },
+          "away": {
+            "name": "Asane W",
+            "logo": "https://media.api-sports.io/handball/teams/651.png"
+          }
+        }
+      }
+    ]
+  ],
+  "picks_parlay_premium": [
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "BOOM_3",
+      "label": "Boom (3 piernas)",
+      "legs": [
+        {
+          "sport": "handball",
+          "eventId": "178284",
+          "bookmaker": "Pncl",
+          "market": "Over/Under",
+          "selection": "Under 64.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "handball",
+            "eventId": "178284",
+            "league": "Champions League Women",
+            "leagueLogo": "https://media.api-sports.io/handball/leagues/132.png",
+            "startTime": "2026-01-18T15:00:00+00:00",
+            "home": {
+              "name": "Esbjerg W (Den)",
+              "logo": null
+            },
+            "away": {
+              "name": "Bistrita W (Rou)",
+              "logo": "https://media.api-sports.io/handball/teams/838.png"
+            }
+          }
+        },
+        {
+          "sport": "hockey",
+          "eventId": "395731",
+          "bookmaker": "888Sport",
+          "market": "Over/Under",
+          "selection": "Under 6",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "hockey",
+            "eventId": "395731",
+            "league": "Extraliga",
+            "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+            "startTime": "2026-01-18T16:00:00+00:00",
+            "home": {
+              "name": "Pardubice",
+              "logo": null
+            },
+            "away": {
+              "name": "Ceske Budejovice",
+              "logo": "https://media.api-sports.io/hockey/teams/124.png"
+            }
+          }
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17591",
+          "bookmaker": "Betano",
+          "market": "Over/Under",
+          "selection": "Under 45.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "nfl",
+            "eventId": "17591",
+            "league": "NFL",
+            "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+            "startTime": "2026-01-18T20:00:00+00:00",
+            "home": {
+              "name": "New England Patriots",
+              "logo": "https://media.api-sports.io/american-football/teams/3.png"
+            },
+            "away": {
+              "name": "Houston Texans",
+              "logo": "https://media.api-sports.io/american-football/teams/26.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 3.375,
+      "prob_parlay": 0.3238,
+      "note": "Fallback: mismo mercado, variedad por deporte"
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_2",
+      "label": "Seguro (2 piernas)",
+      "legs": [
+        {
+          "sport": "basketball",
+          "eventId": "449913",
+          "bookmaker": "Betano",
+          "market": "Over/Under",
+          "selection": "Under 178.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "basketball",
+            "eventId": "449913",
+            "league": "Basketligan",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/93.png",
+            "startTime": "2026-01-18T15:04:00+00:00",
+            "home": {
+              "name": "Umea",
+              "logo": "https://media.api-sports.io/basketball/teams/1206.png"
+            },
+            "away": {
+              "name": "Boras",
+              "logo": "https://media.api-sports.io/basketball/teams/1199.png"
+            }
+          }
+        },
+        {
+          "sport": "handball",
+          "eventId": "178275",
+          "bookmaker": "Pncl",
+          "market": "Over/Under",
+          "selection": "Over 56.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "handball",
+            "eventId": "178275",
+            "league": "Champions League Women",
+            "leagueLogo": "https://media.api-sports.io/handball/leagues/132.png",
+            "startTime": "2026-01-18T15:00:00+00:00",
+            "home": {
+              "name": "Ferencvaros W (Hun)",
+              "logo": "https://media.api-sports.io/handball/teams/426.png"
+            },
+            "away": {
+              "name": "Podravka Vegeta W (Cro)",
+              "logo": null
+            }
+          }
+        }
+      ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_2",
+      "label": "Seguro (2 piernas)",
+      "legs": [
+        {
+          "sport": "handball",
+          "eventId": "178284",
+          "bookmaker": "Pncl",
+          "market": "Over/Under",
+          "selection": "Under 64.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "handball",
+            "eventId": "178284",
+            "league": "Champions League Women",
+            "leagueLogo": "https://media.api-sports.io/handball/leagues/132.png",
+            "startTime": "2026-01-18T15:00:00+00:00",
+            "home": {
+              "name": "Esbjerg W (Den)",
+              "logo": null
+            },
+            "away": {
+              "name": "Bistrita W (Rou)",
+              "logo": "https://media.api-sports.io/handball/teams/838.png"
+            }
+          }
+        },
+        {
+          "sport": "hockey",
+          "eventId": "395727",
+          "bookmaker": "888Sport",
+          "market": "Over/Under",
+          "selection": "Over 4.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "hockey",
+            "eventId": "395727",
+            "league": "Extraliga",
+            "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+            "startTime": "2026-01-18T15:00:00+00:00",
+            "home": {
+              "name": "Kladno",
+              "logo": "https://media.api-sports.io/hockey/teams/144.png"
+            },
+            "away": {
+              "name": "Olomouc",
+              "logo": "https://media.api-sports.io/hockey/teams/131.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_4",
+      "label": "Seguro (4 piernas)",
+      "legs": [
+        {
+          "sport": "hockey",
+          "eventId": "395731",
+          "bookmaker": "888Sport",
+          "market": "Over/Under",
+          "selection": "Under 6",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "hockey",
+            "eventId": "395731",
+            "league": "Extraliga",
+            "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+            "startTime": "2026-01-18T16:00:00+00:00",
+            "home": {
+              "name": "Pardubice",
+              "logo": null
+            },
+            "away": {
+              "name": "Ceske Budejovice",
+              "logo": "https://media.api-sports.io/hockey/teams/124.png"
+            }
+          }
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17591",
+          "bookmaker": "10Bet",
+          "market": "Over/Under",
+          "selection": "Over 36.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "nfl",
+            "eventId": "17591",
+            "league": "NFL",
+            "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+            "startTime": "2026-01-18T20:00:00+00:00",
+            "home": {
+              "name": "New England Patriots",
+              "logo": "https://media.api-sports.io/american-football/teams/3.png"
+            },
+            "away": {
+              "name": "Houston Texans",
+              "logo": "https://media.api-sports.io/american-football/teams/26.png"
+            }
+          }
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17592",
+          "bookmaker": "Unibet",
+          "market": "Over/Under",
+          "selection": "Under 49",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "nfl",
+            "eventId": "17592",
+            "league": "NFL",
+            "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+            "startTime": "2026-01-18T01:00:00+00:00",
+            "home": {
+              "name": "Seattle Seahawks",
+              "logo": "https://media.api-sports.io/american-football/teams/23.png"
+            },
+            "away": {
+              "name": "San Francisco 49ers",
+              "logo": "https://media.api-sports.io/american-football/teams/14.png"
+            }
+          }
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17593",
+          "bookmaker": "10Bet",
+          "market": "Over/Under",
+          "selection": "Over 44",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "nfl",
+            "eventId": "17593",
+            "league": "NFL",
+            "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+            "startTime": "2026-01-18T23:30:00+00:00",
+            "home": {
+              "name": "Chicago Bears",
+              "logo": "https://media.api-sports.io/american-football/teams/16.png"
+            },
+            "away": {
+              "name": "Los Angeles Rams",
+              "logo": "https://media.api-sports.io/american-football/teams/31.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 5.0625,
+      "prob_parlay": 0.2224
+    }
+  ],
+  "daily_featured_parlay": {
+    "type": "PARLAY_PREMIUM",
+    "kind": "BOOM_3",
+    "label": "Boom (3 piernas)",
+    "legs": [
+      {
+        "sport": "handball",
+        "eventId": "178284",
+        "bookmaker": "Pncl",
+        "market": "Over/Under",
+        "selection": "Under 64.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": true,
+        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+        "display": {
+          "sport": "handball",
+          "eventId": "178284",
+          "league": "Champions League Women",
+          "leagueLogo": "https://media.api-sports.io/handball/leagues/132.png",
+          "startTime": "2026-01-18T15:00:00+00:00",
+          "home": {
+            "name": "Esbjerg W (Den)",
+            "logo": null
+          },
+          "away": {
+            "name": "Bistrita W (Rou)",
+            "logo": "https://media.api-sports.io/handball/teams/838.png"
+          }
+        }
+      },
+      {
+        "sport": "hockey",
+        "eventId": "395731",
+        "bookmaker": "888Sport",
+        "market": "Over/Under",
+        "selection": "Under 6",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": true,
+        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+        "display": {
+          "sport": "hockey",
+          "eventId": "395731",
+          "league": "Extraliga",
+          "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+          "startTime": "2026-01-18T16:00:00+00:00",
+          "home": {
+            "name": "Pardubice",
+            "logo": null
+          },
+          "away": {
+            "name": "Ceske Budejovice",
+            "logo": "https://media.api-sports.io/hockey/teams/124.png"
+          }
+        }
+      },
+      {
+        "sport": "nfl",
+        "eventId": "17591",
+        "bookmaker": "Betano",
+        "market": "Over/Under",
+        "selection": "Under 45.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": false,
+        "display": {
+          "sport": "nfl",
+          "eventId": "17591",
+          "league": "NFL",
+          "leagueLogo": "https://media.api-sports.io/american-football/leagues/1.png",
+          "startTime": "2026-01-18T20:00:00+00:00",
+          "home": {
+            "name": "New England Patriots",
+            "logo": "https://media.api-sports.io/american-football/teams/3.png"
+          },
+          "away": {
+            "name": "Houston Texans",
+            "logo": "https://media.api-sports.io/american-football/teams/26.png"
+          }
+        }
+      }
+    ],
+    "combined_odds": 3.375,
+    "prob_parlay": 0.3238,
+    "note": "Fallback: mismo mercado, variedad por deporte"
+  },
+  "metadata": {}
+}

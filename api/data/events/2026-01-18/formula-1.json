@@ -1,0 +1,9 @@
+{
+  "get": "races",
+  "parameters": {
+    "date": "2026-01-18"
+  },
+  "errors": [],
+  "results": 0,
+  "response": []
+}

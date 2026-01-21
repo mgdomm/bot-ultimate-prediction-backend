@@ -1,0 +1,45 @@
+{
+  "picks": [
+    {
+      "sport": "nfl",
+      "eventId": "17591",
+      "market": "Over/Under",
+      "selection": "Over 31.5",
+      "odds": 1.27,
+      "probability": 0.7574,
+      "edge": -0.03,
+      "n_books": 7,
+      "best_vs_2nd": 1.0079,
+      "best_vs_median": 1.0325,
+      "consensus": "medium",
+      "marketType": "totals",
+      "marketRisk": "low",
+      "inflated": false
+    },
+    {
+      "sport": "nfl",
+      "eventId": "17592",
+      "market": "Over/Under",
+      "selection": "Over 40.5",
+      "odds": 1.56,
+      "probability": 0.661,
+      "edge": 0.02,
+      "n_books": 6,
+      "best_vs_2nd": 1.0065,
+      "best_vs_median": 1.0097,
+      "consensus": "low",
+      "marketType": "totals",
+      "marketRisk": "low",
+      "inflated": false
+    }
+  ],
+  "combined_odds": 1.9812,
+  "combined_probability": 0.500641,
+  "stake": 50.0,
+  "expected_profit": 49.06,
+  "expected_edge_sum": -0.01,
+  "consensus_score_sum": 1,
+  "type": "principal_2_legs",
+  "day": "2026-01-18",
+  "source": "parlay_eligible"
+}

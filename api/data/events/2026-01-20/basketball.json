@@ -1,0 +1,6042 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-01-20"
+  },
+  "errors": [],
+  "results": 104,
+  "response": [
+    {
+      "id": 467753,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 20,
+        "name": "NBA - G League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/20.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 277,
+          "name": "Wisconsin Herd",
+          "logo": "https://media.api-sports.io/basketball/teams/277.png"
+        },
+        "away": {
+          "id": 275,
+          "name": "Westchester",
+          "logo": "https://media.api-sports.io/basketball/teams/275.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 27,
+          "quarter_2": 26,
+          "quarter_3": 35,
+          "quarter_4": 26,
+          "over_time": null,
+          "total": 114
+        },
+        "away": {
+          "quarter_1": 29,
+          "quarter_2": 29,
+          "quarter_3": 26,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 103
+        }
+      }
+    },
+    {
+      "id": 470087,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Wells Fargo Center",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 12,
+        "name": "NBA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/12.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 154,
+          "name": "Philadelphia 76ers",
+          "logo": "https://media.api-sports.io/basketball/teams/154.png"
+        },
+        "away": {
+          "id": 143,
+          "name": "Indiana Pacers",
+          "logo": "https://media.api-sports.io/basketball/teams/143.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 33,
+          "quarter_2": 17,
+          "quarter_3": 32,
+          "quarter_4": 31,
+          "over_time": null,
+          "total": 113
+        },
+        "away": {
+          "quarter_1": 30,
+          "quarter_2": 25,
+          "quarter_3": 26,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 104
+        }
+      }
+    },
+    {
+      "id": 477412,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1863,
+          "name": "Chicago State",
+          "logo": "https://media.api-sports.io/basketball/teams/1863.png"
+        },
+        "away": {
+          "id": 7588,
+          "name": "New Haven Chargers",
+          "logo": "https://media.api-sports.io/basketball/teams/7588.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 33,
+          "quarter_3": 0,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 56
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 30,
+          "quarter_3": 0,
+          "quarter_4": 32,
+          "over_time": null,
+          "total": 62
+        }
+      }
+    },
+    {
+      "id": 477413,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1971,
+          "name": "Lehigh",
+          "logo": "https://media.api-sports.io/basketball/teams/1971.png"
+        },
+        "away": {
+          "id": 1503,
+          "name": "Loyola Maryland",
+          "logo": "https://media.api-sports.io/basketball/teams/1503.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 41,
+          "quarter_3": 0,
+          "quarter_4": 47,
+          "over_time": null,
+          "total": 88
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 41,
+          "quarter_3": 0,
+          "quarter_4": 40,
+          "over_time": null,
+          "total": 81
+        }
+      }
+    },
+    {
+      "id": 477414,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 196,
+          "name": "Norfolk State",
+          "logo": "https://media.api-sports.io/basketball/teams/196.png"
+        },
+        "away": {
+          "id": 6290,
+          "name": "Elizabeth City",
+          "logo": "https://media.api-sports.io/basketball/teams/6290.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 43,
+          "quarter_3": 0,
+          "quarter_4": 43,
+          "over_time": null,
+          "total": 86
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 35,
+          "quarter_3": 0,
+          "quarter_4": 26,
+          "over_time": null,
+          "total": 61
+        }
+      }
+    },
+    {
+      "id": 482565,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 423,
+        "name": "NCAA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/423.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6992,
+          "name": "Manhattan W",
+          "logo": "https://media.api-sports.io/basketball/teams/6992.png"
+        },
+        "away": {
+          "id": 7116,
+          "name": "Rider Broncs W",
+          "logo": "https://media.api-sports.io/basketball/teams/7116.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 7,
+          "quarter_2": 18,
+          "quarter_3": 15,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 58
+        },
+        "away": {
+          "quarter_1": 8,
+          "quarter_2": 4,
+          "quarter_3": 13,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 46
+        }
+      }
+    },
+    {
+      "id": 483456,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Polideportivo Carlos Cerutti",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 18,
+        "name": "Liga A",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/18.png"
+      },
+      "country": {
+        "id": 6,
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 281,
+          "name": "Atenas",
+          "logo": "https://media.api-sports.io/basketball/teams/281.png"
+        },
+        "away": {
+          "id": 280,
+          "name": "Argentino",
+          "logo": "https://media.api-sports.io/basketball/teams/280.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 24,
+          "quarter_3": 32,
+          "quarter_4": 27,
+          "over_time": null,
+          "total": 109
+        },
+        "away": {
+          "quarter_1": 16,
+          "quarter_2": 19,
+          "quarter_3": 13,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 71
+        }
+      }
+    },
+    {
+      "id": 488651,
+      "date": "2026-01-20T00:00:00+00:00",
+      "time": "00:00",
+      "timestamp": 1768867200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Club Unión Florida Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 206,
+        "name": "Liga Femenina Women",
+        "type": "League",
+        "season": 2026,
+        "logo": "https://media.api-sports.io/basketball/leagues/206.png"
+      },
+      "country": {
+        "id": 6,
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 3442,
+          "name": "Union Florida W",
+          "logo": "https://media.api-sports.io/basketball/teams/3442.png"
+        },
+        "away": {
+          "id": 6609,
+          "name": "Lanus W",
+          "logo": "https://media.api-sports.io/basketball/teams/6609.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 17,
+          "quarter_2": 13,
+          "quarter_3": 17,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 64
+        },
+        "away": {
+          "quarter_1": 10,
+          "quarter_2": 15,
+          "quarter_3": 13,
+          "quarter_4": 8,
+          "over_time": null,
+          "total": 46
+        }
+      }
+    },
+    {
+      "id": 488996,
+      "date": "2026-01-20T00:15:00+00:00",
+      "time": "00:15",
+      "timestamp": 1768868100,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Malvin",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 110,
+        "name": "Liga Uruguaya",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/110.png"
+      },
+      "country": {
+        "id": 63,
+        "name": "Uruguay",
+        "code": "UY",
+        "flag": "https://media.api-sports.io/flags/uy.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2995,
+          "name": "Malvin",
+          "logo": "https://media.api-sports.io/basketball/teams/2995.png"
+        },
+        "away": {
+          "id": 2992,
+          "name": "Defensor",
+          "logo": "https://media.api-sports.io/basketball/teams/2992.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 27,
+          "quarter_2": 22,
+          "quarter_3": 18,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 85
+        },
+        "away": {
+          "quarter_1": 25,
+          "quarter_2": 13,
+          "quarter_3": 28,
+          "quarter_4": 10,
+          "over_time": null,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 470088,
+      "date": "2026-01-20T00:30:00+00:00",
+      "time": "00:30",
+      "timestamp": 1768869000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Barclays Center",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 12,
+        "name": "NBA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/12.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 134,
+          "name": "Brooklyn Nets",
+          "logo": "https://media.api-sports.io/basketball/teams/134.png"
+        },
+        "away": {
+          "id": 155,
+          "name": "Phoenix Suns",
+          "logo": "https://media.api-sports.io/basketball/teams/155.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 42,
+          "quarter_3": 21,
+          "quarter_4": 28,
+          "over_time": null,
+          "total": 117
+        },
+        "away": {
+          "quarter_1": 40,
+          "quarter_2": 32,
+          "quarter_3": 31,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 126
+        }
+      }
+    },
+    {
+      "id": 477400,
+      "date": "2026-01-20T00:30:00+00:00",
+      "time": "00:30",
+      "timestamp": 1768869000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2037,
+          "name": "Nicholls State",
+          "logo": "https://media.api-sports.io/basketball/teams/2037.png"
+        },
+        "away": {
+          "id": 2134,
+          "name": "Stephen F. Austin",
+          "logo": "https://media.api-sports.io/basketball/teams/2134.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 24,
+          "quarter_3": 0,
+          "quarter_4": 38,
+          "over_time": null,
+          "total": 62
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 45,
+          "quarter_3": 0,
+          "quarter_4": 34,
+          "over_time": null,
+          "total": 79
+        }
+      }
+    },
+    {
+      "id": 477415,
+      "date": "2026-01-20T00:30:00+00:00",
+      "time": "00:30",
+      "timestamp": 1768869000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 248,
+          "name": "UTRGV",
+          "logo": "https://media.api-sports.io/basketball/teams/248.png"
+        },
+        "away": {
+          "id": 2098,
+          "name": "SE Louisiana",
+          "logo": "https://media.api-sports.io/basketball/teams/2098.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 31,
+          "quarter_3": 0,
+          "quarter_4": 37,
+          "over_time": null,
+          "total": 68
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 29,
+          "quarter_3": 0,
+          "quarter_4": 36,
+          "over_time": null,
+          "total": 65
+        }
+      }
+    },
+    {
+      "id": 483457,
+      "date": "2026-01-20T00:30:00+00:00",
+      "time": "00:30",
+      "timestamp": 1768869000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Polideportivo Cincuentenario",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 18,
+        "name": "Liga A",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/18.png"
+      },
+      "country": {
+        "id": 6,
+        "name": "Argentina",
+        "code": "AR",
+        "flag": "https://media.api-sports.io/flags/ar.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 289,
+          "name": "La Union",
+          "logo": "https://media.api-sports.io/basketball/teams/289.png"
+        },
+        "away": {
+          "id": 7546,
+          "name": "Racing de Chivilcoy",
+          "logo": "https://media.api-sports.io/basketball/teams/7546.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 28,
+          "quarter_2": 20,
+          "quarter_3": 22,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 90
+        },
+        "away": {
+          "quarter_1": 20,
+          "quarter_2": 17,
+          "quarter_3": 21,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 78
+        }
+      }
+    },
+    {
+      "id": 470089,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Little Caesars Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 12,
+        "name": "NBA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/12.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 140,
+          "name": "Detroit Pistons",
+          "logo": "https://media.api-sports.io/basketball/teams/140.png"
+        },
+        "away": {
+          "id": 133,
+          "name": "Boston Celtics",
+          "logo": "https://media.api-sports.io/basketball/teams/133.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 33,
+          "quarter_3": 25,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 104
+        },
+        "away": {
+          "quarter_1": 29,
+          "quarter_2": 22,
+          "quarter_3": 31,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 103
+        }
+      }
+    },
+    {
+      "id": 477416,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2046,
+          "name": "Northern Arizona",
+          "logo": "https://media.api-sports.io/basketball/teams/2046.png"
+        },
+        "away": {
+          "id": 2012,
+          "name": "Montana",
+          "logo": "https://media.api-sports.io/basketball/teams/2012.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 72
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 98
+        }
+      }
+    },
+    {
+      "id": 477418,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2047,
+          "name": "Northern Colorado",
+          "logo": "https://media.api-sports.io/basketball/teams/2047.png"
+        },
+        "away": {
+          "id": 2013,
+          "name": "Montana State",
+          "logo": "https://media.api-sports.io/basketball/teams/2013.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 68
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 73
+        }
+      }
+    },
+    {
+      "id": 477419,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2004,
+          "name": "Miss. Valley St.",
+          "logo": "https://media.api-sports.io/basketball/teams/2004.png"
+        },
+        "away": {
+          "id": 1910,
+          "name": "Florida A&M",
+          "logo": "https://media.api-sports.io/basketball/teams/1910.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 48
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 62
+        }
+      }
+    },
+    {
+      "id": 477420,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 239,
+          "name": "New Orleans",
+          "logo": "https://media.api-sports.io/basketball/teams/239.png"
+        },
+        "away": {
+          "id": 1970,
+          "name": "Lamar",
+          "logo": "https://media.api-sports.io/basketball/teams/1970.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 89
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 477421,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1952,
+          "name": "Jackson State",
+          "logo": "https://media.api-sports.io/basketball/teams/1952.png"
+        },
+        "away": {
+          "id": 246,
+          "name": "Texas Southern",
+          "logo": "https://media.api-sports.io/basketball/teams/246.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 0,
+          "quarter_2": 45,
+          "quarter_3": 0,
+          "quarter_4": 49,
+          "over_time": null,
+          "total": 94
+        },
+        "away": {
+          "quarter_1": 0,
+          "quarter_2": 38,
+          "quarter_3": 0,
+          "quarter_4": 51,
+          "over_time": null,
+          "total": 89
+        }
+      }
+    },
+    {
+      "id": 477422,
+      "date": "2026-01-20T01:00:00+00:00",
+      "time": "01:00",
+      "timestamp": 1768870800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1939,
+          "name": "Houston Christian",
+          "logo": "https://media.api-sports.io/basketball/teams/1939.png"
+        },
+        "away": {
+          "id": 2054,
+          "name": "Northwestern St.",
+          "logo": "https://media.api-sports.io/basketball/teams/2054.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 82
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 477423,
+      "date": "2026-01-20T02:00:00+00:00",
+      "time": "02:00",
+      "timestamp": 1768874400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 233,
+          "name": "Hampton",
+          "logo": "https://media.api-sports.io/basketball/teams/233.png"
+        },
+        "away": {
+          "id": 2025,
+          "name": "N. Carolina A&T",
+          "logo": "https://media.api-sports.io/basketball/teams/2025.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 82
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 61
+        }
+      }
+    },
+    {
+      "id": 482563,
+      "date": "2026-01-20T02:00:00+00:00",
+      "time": "02:00",
+      "timestamp": 1768874400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 423,
+        "name": "NCAA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/423.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7024,
+          "name": "Montana State W",
+          "logo": "https://media.api-sports.io/basketball/teams/7024.png"
+        },
+        "away": {
+          "id": 7065,
+          "name": "Northern Colorado W",
+          "logo": "https://media.api-sports.io/basketball/teams/7065.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 16,
+          "quarter_2": 17,
+          "quarter_3": 32,
+          "quarter_4": 6,
+          "over_time": null,
+          "total": 71
+        },
+        "away": {
+          "quarter_1": 10,
+          "quarter_2": 15,
+          "quarter_3": 22,
+          "quarter_4": 10,
+          "over_time": null,
+          "total": 57
+        }
+      }
+    },
+    {
+      "id": 470091,
+      "date": "2026-01-20T03:00:00+00:00",
+      "time": "03:00",
+      "timestamp": 1768878000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Chase Center",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 12,
+        "name": "NBA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/12.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 141,
+          "name": "Golden State Warriors",
+          "logo": "https://media.api-sports.io/basketball/teams/141.png"
+        },
+        "away": {
+          "id": 147,
+          "name": "Miami Heat",
+          "logo": "https://media.api-sports.io/basketball/teams/147.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 36,
+          "quarter_2": 34,
+          "quarter_3": 34,
+          "quarter_4": 31,
+          "over_time": null,
+          "total": 135
+        },
+        "away": {
+          "quarter_1": 34,
+          "quarter_2": 32,
+          "quarter_3": 27,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 112
+        }
+      }
+    },
+    {
+      "id": 490036,
+      "date": "2026-01-20T07:00:00+00:00",
+      "time": "07:00",
+      "timestamp": 1768892400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "After Over Time",
+        "short": "AOT",
+        "timer": null
+      },
+      "league": {
+        "id": 396,
+        "name": "Higher League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/396.png"
+      },
+      "country": {
+        "id": 25,
+        "name": "Kazakhstan",
+        "code": "KZ",
+        "flag": "https://media.api-sports.io/flags/kz.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7548,
+          "name": "AiRom",
+          "logo": "https://media.api-sports.io/basketball/teams/7548.png"
+        },
+        "away": {
+          "id": 5332,
+          "name": "Tobol Kostanay 2",
+          "logo": "https://media.api-sports.io/basketball/teams/5332.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 19,
+          "quarter_2": 13,
+          "quarter_3": 13,
+          "quarter_4": 20,
+          "over_time": 7,
+          "total": 72
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 22,
+          "quarter_3": 17,
+          "quarter_4": 8,
+          "over_time": 3,
+          "total": 68
+        }
+      }
+    },
+    {
+      "id": 460119,
+      "date": "2026-01-20T08:00:00+00:00",
+      "time": "08:00",
+      "timestamp": 1768896000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "14",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 3,
+        "name": "NBL W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/3.png"
+      },
+      "country": {
+        "id": 1,
+        "name": "Australia",
+        "code": "AU",
+        "flag": "https://media.api-sports.io/flags/au.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 28,
+          "name": "Adelaide Lightning W",
+          "logo": "https://media.api-sports.io/basketball/teams/28.png"
+        },
+        "away": {
+          "id": 34,
+          "name": "Canberra Capitals W",
+          "logo": "https://media.api-sports.io/basketball/teams/34.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 11,
+          "quarter_2": 13,
+          "quarter_3": 17,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 61
+        },
+        "away": {
+          "quarter_1": 15,
+          "quarter_2": 21,
+          "quarter_3": 16,
+          "quarter_4": 15,
+          "over_time": null,
+          "total": 67
+        }
+      }
+    },
+    {
+      "id": 490037,
+      "date": "2026-01-20T09:00:00+00:00",
+      "time": "09:00",
+      "timestamp": 1768899600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 396,
+        "name": "Higher League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/396.png"
+      },
+      "country": {
+        "id": 25,
+        "name": "Kazakhstan",
+        "code": "KZ",
+        "flag": "https://media.api-sports.io/flags/kz.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7549,
+          "name": "Arlans",
+          "logo": "https://media.api-sports.io/basketball/teams/7549.png"
+        },
+        "away": {
+          "id": 3208,
+          "name": "ChelSU Kostanay",
+          "logo": "https://media.api-sports.io/basketball/teams/3208.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 15,
+          "quarter_2": 15,
+          "quarter_3": 20,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 69
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 16,
+          "quarter_3": 18,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 71
+        }
+      }
+    },
+    {
+      "id": 465823,
+      "date": "2026-01-20T09:15:00+00:00",
+      "time": "09:15",
+      "timestamp": 1768900500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Sports Complex Olimpiets",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 81,
+        "name": "Super League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/81.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 3118,
+          "name": "Dynamo Vladivostok",
+          "logo": "https://media.api-sports.io/basketball/teams/3118.png"
+        },
+        "away": {
+          "id": 1008,
+          "name": "CSKA Moscow 2",
+          "logo": "https://media.api-sports.io/basketball/teams/1008.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 14,
+          "quarter_3": 30,
+          "quarter_4": 9,
+          "over_time": null,
+          "total": 73
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 24,
+          "quarter_3": 17,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 460120,
+      "date": "2026-01-20T10:00:00+00:00",
+      "time": "10:00",
+      "timestamp": 1768903200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "14",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 3,
+        "name": "NBL W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/3.png"
+      },
+      "country": {
+        "id": 1,
+        "name": "Australia",
+        "code": "AU",
+        "flag": "https://media.api-sports.io/flags/au.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 35,
+          "name": "Perth Lynx W",
+          "logo": "https://media.api-sports.io/basketball/teams/35.png"
+        },
+        "away": {
+          "id": 31,
+          "name": "Townsville W",
+          "logo": "https://media.api-sports.io/basketball/teams/31.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 16,
+          "quarter_3": 19,
+          "quarter_4": 15,
+          "over_time": null,
+          "total": 76
+        },
+        "away": {
+          "quarter_1": 29,
+          "quarter_2": 22,
+          "quarter_3": 9,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 82
+        }
+      }
+    },
+    {
+      "id": 488972,
+      "date": "2026-01-20T10:00:00+00:00",
+      "time": "10:00",
+      "timestamp": 1768903200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 394,
+        "name": "Georgian Cup",
+        "type": "cup",
+        "season": 2026,
+        "logo": "https://media.api-sports.io/basketball/leagues/394.png"
+      },
+      "country": {
+        "id": 16,
+        "name": "Georgia",
+        "code": "GE",
+        "flag": "https://media.api-sports.io/flags/ge.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7848,
+          "name": "Akhaltsikhe",
+          "logo": "https://media.api-sports.io/basketball/teams/7848.png"
+        },
+        "away": {
+          "id": 511,
+          "name": "Kutaisi",
+          "logo": "https://media.api-sports.io/basketball/teams/511.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 15,
+          "quarter_2": 18,
+          "quarter_3": 24,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 68
+        },
+        "away": {
+          "quarter_1": 28,
+          "quarter_2": 18,
+          "quarter_3": 24,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 91
+        }
+      }
+    },
+    {
+      "id": 473411,
+      "date": "2026-01-20T11:00:00+00:00",
+      "time": "11:00",
+      "timestamp": 1768906800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Taoyuan Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 403,
+        "name": "P. League+",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/403.png"
+      },
+      "country": {
+        "id": 68,
+        "name": "Taiwan",
+        "code": "TW",
+        "flag": "https://media.api-sports.io/flags/tw.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6020,
+          "name": "Tainan TSG GhostHawks",
+          "logo": "https://media.api-sports.io/basketball/teams/6020.png"
+        },
+        "away": {
+          "id": 73,
+          "name": "Fubon Braves",
+          "logo": "https://media.api-sports.io/basketball/teams/73.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 21,
+          "quarter_2": 17,
+          "quarter_3": 23,
+          "quarter_4": 29,
+          "over_time": null,
+          "total": 90
+        },
+        "away": {
+          "quarter_1": 23,
+          "quarter_2": 21,
+          "quarter_3": 20,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 85
+        }
+      }
+    },
+    {
+      "id": 486127,
+      "date": "2026-01-20T11:30:00+00:00",
+      "time": "11:30",
+      "timestamp": 1768908600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 125,
+        "name": "WCBA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/125.png"
+      },
+      "country": {
+        "id": 11,
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2563,
+          "name": "Beijing W",
+          "logo": "https://media.api-sports.io/basketball/teams/2563.png"
+        },
+        "away": {
+          "id": 2565,
+          "name": "Guangdong W",
+          "logo": "https://media.api-sports.io/basketball/teams/2565.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 17,
+          "quarter_3": 15,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 70
+        },
+        "away": {
+          "quarter_1": 13,
+          "quarter_2": 18,
+          "quarter_3": 24,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 78
+        }
+      }
+    },
+    {
+      "id": 486128,
+      "date": "2026-01-20T11:30:00+00:00",
+      "time": "11:30",
+      "timestamp": 1768908600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 125,
+        "name": "WCBA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/125.png"
+      },
+      "country": {
+        "id": 11,
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2564,
+          "name": "Fujian W",
+          "logo": "https://media.api-sports.io/basketball/teams/2564.png"
+        },
+        "away": {
+          "id": 2568,
+          "name": "Henan W",
+          "logo": "https://media.api-sports.io/basketball/teams/2568.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 13,
+          "quarter_2": 15,
+          "quarter_3": 21,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 63
+        },
+        "away": {
+          "quarter_1": 25,
+          "quarter_2": 31,
+          "quarter_3": 26,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 96
+        }
+      }
+    },
+    {
+      "id": 486129,
+      "date": "2026-01-20T11:30:00+00:00",
+      "time": "11:30",
+      "timestamp": 1768908600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 125,
+        "name": "WCBA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/125.png"
+      },
+      "country": {
+        "id": 11,
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6697,
+          "name": "Hefei W",
+          "logo": "https://media.api-sports.io/basketball/teams/6697.png"
+        },
+        "away": {
+          "id": 2580,
+          "name": "Liaoning W",
+          "logo": "https://media.api-sports.io/basketball/teams/2580.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 28,
+          "quarter_2": 34,
+          "quarter_3": 32,
+          "quarter_4": 29,
+          "over_time": null,
+          "total": 123
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 20,
+          "quarter_3": 19,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 486130,
+      "date": "2026-01-20T11:30:00+00:00",
+      "time": "11:30",
+      "timestamp": 1768908600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 125,
+        "name": "WCBA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/125.png"
+      },
+      "country": {
+        "id": 11,
+        "name": "China",
+        "code": "CN",
+        "flag": "https://media.api-sports.io/flags/cn.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2575,
+          "name": "Sichuan W",
+          "logo": "https://media.api-sports.io/basketball/teams/2575.png"
+        },
+        "away": {
+          "id": 2574,
+          "name": "Shanxi Xing Rui W",
+          "logo": "https://media.api-sports.io/basketball/teams/2574.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 22,
+          "quarter_2": 21,
+          "quarter_3": 22,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 82
+        },
+        "away": {
+          "quarter_1": 33,
+          "quarter_2": 20,
+          "quarter_3": 16,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 91
+        }
+      }
+    },
+    {
+      "id": 488973,
+      "date": "2026-01-20T12:30:00+00:00",
+      "time": "12:30",
+      "timestamp": 1768912200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 394,
+        "name": "Georgian Cup",
+        "type": "cup",
+        "season": 2026,
+        "logo": "https://media.api-sports.io/basketball/leagues/394.png"
+      },
+      "country": {
+        "id": 16,
+        "name": "Georgia",
+        "code": "GE",
+        "flag": "https://media.api-sports.io/flags/ge.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1972,
+          "name": "Liberty",
+          "logo": "https://media.api-sports.io/basketball/teams/1972.png"
+        },
+        "away": {
+          "id": 5238,
+          "name": "TSU",
+          "logo": "https://media.api-sports.io/basketball/teams/5238.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 24,
+          "quarter_2": 13,
+          "quarter_3": 15,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 75
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 22,
+          "quarter_3": 26,
+          "quarter_4": 25,
+          "over_time": null,
+          "total": 95
+        }
+      }
+    },
+    {
+      "id": 465825,
+      "date": "2026-01-20T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768914000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "SC BC Temp-SUMZ",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 81,
+        "name": "Super League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/81.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1016,
+          "name": "Temp Sumz Revda",
+          "logo": "https://media.api-sports.io/basketball/teams/1016.png"
+        },
+        "away": {
+          "id": 2789,
+          "name": "Chelyabinsk",
+          "logo": "https://media.api-sports.io/basketball/teams/2789.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 19,
+          "quarter_2": 21,
+          "quarter_3": 15,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 71
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 17,
+          "quarter_3": 20,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 70
+        }
+      }
+    },
+    {
+      "id": 488619,
+      "date": "2026-01-20T13:00:00+00:00",
+      "time": "13:00",
+      "timestamp": 1768914000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 112,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/112.png"
+      },
+      "country": {
+        "id": 51,
+        "name": "Belarus",
+        "code": "BY",
+        "flag": "https://media.api-sports.io/flags/by.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1358,
+          "name": "BC Minsk Youth W",
+          "logo": "https://media.api-sports.io/basketball/teams/1358.png"
+        },
+        "away": {
+          "id": 1362,
+          "name": "Olimpia Grodno W",
+          "logo": "https://media.api-sports.io/basketball/teams/1362.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 10,
+          "quarter_2": 6,
+          "quarter_3": 6,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 33
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 8,
+          "quarter_3": 12,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 64
+        }
+      }
+    },
+    {
+      "id": 468688,
+      "date": "2026-01-20T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768917600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Orenburzhje Sport Hall",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 83,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/83.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1002,
+          "name": "Nadezhda W",
+          "logo": "https://media.api-sports.io/basketball/teams/1002.png"
+        },
+        "away": {
+          "id": 1004,
+          "name": "Novosibirsk W",
+          "logo": "https://media.api-sports.io/basketball/teams/1004.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 25,
+          "quarter_3": 12,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 77
+        },
+        "away": {
+          "quarter_1": 23,
+          "quarter_2": 12,
+          "quarter_3": 21,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 72
+        }
+      }
+    },
+    {
+      "id": 471692,
+      "date": "2026-01-20T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768917600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 57,
+        "name": "National League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/57.png"
+      },
+      "country": {
+        "id": 25,
+        "name": "Kazakhstan",
+        "code": "KZ",
+        "flag": "https://media.api-sports.io/flags/kz.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 768,
+          "name": "Atyrau",
+          "logo": "https://media.api-sports.io/basketball/teams/768.png"
+        },
+        "away": {
+          "id": 767,
+          "name": "Astana",
+          "logo": "https://media.api-sports.io/basketball/teams/767.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 11,
+          "quarter_2": 11,
+          "quarter_3": 17,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 50
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 17,
+          "quarter_3": 24,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 79
+        }
+      }
+    },
+    {
+      "id": 472733,
+      "date": "2026-01-20T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768917600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 389,
+        "name": "WASL",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/389.png"
+      },
+      "country": {
+        "id": 2,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 7528,
+          "name": "Sharjah",
+          "logo": "https://media.api-sports.io/basketball/teams/7528.png"
+        },
+        "away": {
+          "id": 5998,
+          "name": "Kuwait SC",
+          "logo": "https://media.api-sports.io/basketball/teams/5998.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 29,
+          "quarter_2": 17,
+          "quarter_3": 20,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 86
+        },
+        "away": {
+          "quarter_1": 24,
+          "quarter_2": 36,
+          "quarter_3": 20,
+          "quarter_4": 31,
+          "over_time": null,
+          "total": 111
+        }
+      }
+    },
+    {
+      "id": 488620,
+      "date": "2026-01-20T14:00:00+00:00",
+      "time": "14:00",
+      "timestamp": 1768917600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "After Over Time",
+        "short": "AOT",
+        "timer": null
+      },
+      "league": {
+        "id": 112,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/112.png"
+      },
+      "country": {
+        "id": 51,
+        "name": "Belarus",
+        "code": "BY",
+        "flag": "https://media.api-sports.io/flags/by.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1361,
+          "name": "Horizont Minsk W",
+          "logo": "https://media.api-sports.io/basketball/teams/1361.png"
+        },
+        "away": {
+          "id": 1364,
+          "name": "Minsk W",
+          "logo": "https://media.api-sports.io/basketball/teams/1364.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 19,
+          "quarter_2": 19,
+          "quarter_3": 16,
+          "quarter_4": 12,
+          "over_time": 2,
+          "total": 68
+        },
+        "away": {
+          "quarter_1": 14,
+          "quarter_2": 17,
+          "quarter_3": 12,
+          "quarter_4": 23,
+          "over_time": 10,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 489179,
+      "date": "2026-01-20T14:30:00+00:00",
+      "time": "14:30",
+      "timestamp": 1768919400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "Federation Cup Women - Quarter-finals",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 271,
+        "name": "Federation Cup Women",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/271.png"
+      },
+      "country": {
+        "id": 48,
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 3978,
+          "name": "Yalova W",
+          "logo": "https://media.api-sports.io/basketball/teams/3978.png"
+        },
+        "away": {
+          "id": 7488,
+          "name": "Samsun Basketbol W",
+          "logo": "https://media.api-sports.io/basketball/teams/7488.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 14,
+          "quarter_3": 13,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 70
+        },
+        "away": {
+          "quarter_1": 13,
+          "quarter_2": 30,
+          "quarter_3": 17,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 465824,
+      "date": "2026-01-20T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768921200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Sports Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 81,
+        "name": "Super League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/81.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2243,
+          "name": "Izhevsk",
+          "logo": "https://media.api-sports.io/basketball/teams/2243.png"
+        },
+        "away": {
+          "id": 2795,
+          "name": "Metallurg",
+          "logo": "https://media.api-sports.io/basketball/teams/2795.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 15,
+          "quarter_2": 22,
+          "quarter_3": 15,
+          "quarter_4": 10,
+          "over_time": null,
+          "total": 62
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 12,
+          "quarter_3": 22,
+          "quarter_4": 12,
+          "over_time": null,
+          "total": 64
+        }
+      }
+    },
+    {
+      "id": 468689,
+      "date": "2026-01-20T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768921200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "MTL Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 83,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/83.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2250,
+          "name": "Samara W",
+          "logo": "https://media.api-sports.io/basketball/teams/2250.png"
+        },
+        "away": {
+          "id": 4841,
+          "name": "Ivanovo W",
+          "logo": "https://media.api-sports.io/basketball/teams/4841.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 21,
+          "quarter_2": 27,
+          "quarter_3": 22,
+          "quarter_4": 9,
+          "over_time": null,
+          "total": 79
+        },
+        "away": {
+          "quarter_1": 11,
+          "quarter_2": 18,
+          "quarter_3": 13,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 64
+        }
+      }
+    },
+    {
+      "id": 489694,
+      "date": "2026-01-20T15:00:00+00:00",
+      "time": "15:00",
+      "timestamp": 1768921200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 394,
+        "name": "Georgian Cup",
+        "type": "cup",
+        "season": 2026,
+        "logo": "https://media.api-sports.io/basketball/leagues/394.png"
+      },
+      "country": {
+        "id": 16,
+        "name": "Georgia",
+        "code": "GE",
+        "flag": "https://media.api-sports.io/flags/ge.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7850,
+          "name": "Wings Tbilisi",
+          "logo": "https://media.api-sports.io/basketball/teams/7850.png"
+        },
+        "away": {
+          "id": 3186,
+          "name": "Margveti",
+          "logo": "https://media.api-sports.io/basketball/teams/3186.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 18,
+          "quarter_2": 24,
+          "quarter_3": 19,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 80
+        },
+        "away": {
+          "quarter_1": 31,
+          "quarter_2": 29,
+          "quarter_3": 38,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 120
+        }
+      }
+    },
+    {
+      "id": 463537,
+      "date": "2026-01-20T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768924800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Nagorny Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 82,
+        "name": "VTB United League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/82.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1026,
+          "name": "Nizhny Novgorod",
+          "logo": "https://media.api-sports.io/basketball/teams/1026.png"
+        },
+        "away": {
+          "id": 1023,
+          "name": "Enisey",
+          "logo": "https://media.api-sports.io/basketball/teams/1023.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 17,
+          "quarter_2": 14,
+          "quarter_3": 13,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 55
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 15,
+          "quarter_3": 21,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 464749,
+      "date": "2026-01-20T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768924800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Ivanofeio Sports Arena",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 369,
+        "name": "ENBL",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/369.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 609,
+          "name": "Iraklis",
+          "logo": "https://media.api-sports.io/basketball/teams/609.png"
+        },
+        "away": {
+          "id": 783,
+          "name": "Peja",
+          "logo": "https://media.api-sports.io/basketball/teams/783.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 31,
+          "quarter_2": 26,
+          "quarter_3": 32,
+          "quarter_4": 33,
+          "over_time": null,
+          "total": 122
+        },
+        "away": {
+          "quarter_1": 20,
+          "quarter_2": 24,
+          "quarter_3": 20,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 465827,
+      "date": "2026-01-20T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768924800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Khimki Basketball Center",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 81,
+        "name": "Super League",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/81.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1024,
+          "name": "Khimki M.",
+          "logo": "https://media.api-sports.io/basketball/teams/1024.png"
+        },
+        "away": {
+          "id": 1659,
+          "name": "Zenit Petersburg 2",
+          "logo": "https://media.api-sports.io/basketball/teams/1659.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 23,
+          "quarter_2": 18,
+          "quarter_3": 15,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 80
+        },
+        "away": {
+          "quarter_1": 24,
+          "quarter_2": 24,
+          "quarter_3": 18,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 82
+        }
+      }
+    },
+    {
+      "id": 467292,
+      "date": "2026-01-20T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768924800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Klaip",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 61,
+        "name": "NKL",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/61.png"
+      },
+      "country": {
+        "id": 27,
+        "name": "Lithuania",
+        "code": "LT",
+        "flag": "https://media.api-sports.io/flags/lt.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 806,
+          "name": "Neptunas 2",
+          "logo": "https://media.api-sports.io/basketball/teams/806.png"
+        },
+        "away": {
+          "id": 816,
+          "name": "Zalgiris Kaunas 2",
+          "logo": "https://media.api-sports.io/basketball/teams/816.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 16,
+          "quarter_2": 17,
+          "quarter_3": 27,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 80
+        },
+        "away": {
+          "quarter_1": 16,
+          "quarter_2": 29,
+          "quarter_3": 15,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 79
+        }
+      }
+    },
+    {
+      "id": 468686,
+      "date": "2026-01-20T16:00:00+00:00",
+      "time": "16:00",
+      "timestamp": 1768924800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Krylatskoe Sport Palace",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 83,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/83.png"
+      },
+      "country": {
+        "id": 39,
+        "name": "Russia",
+        "code": "RU",
+        "flag": "https://media.api-sports.io/flags/ru.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 998,
+          "name": "Dynamo Moscow W",
+          "logo": "https://media.api-sports.io/basketball/teams/998.png"
+        },
+        "away": {
+          "id": 1034,
+          "name": "Neftyanik Omsk W",
+          "logo": "https://media.api-sports.io/basketball/teams/1034.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 23,
+          "quarter_2": 26,
+          "quarter_3": 19,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 89
+        },
+        "away": {
+          "quarter_1": 26,
+          "quarter_2": 11,
+          "quarter_3": 23,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 77
+        }
+      }
+    },
+    {
+      "id": 462148,
+      "date": "2026-01-20T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768926600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "21",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 37,
+        "name": "Korisliiga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/37.png"
+      },
+      "country": {
+        "id": 15,
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 487,
+          "name": "Helsinki Seagulls",
+          "logo": "https://media.api-sports.io/basketball/teams/487.png"
+        },
+        "away": {
+          "id": 495,
+          "name": "Salon Vilpas",
+          "logo": "https://media.api-sports.io/basketball/teams/495.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 15,
+          "quarter_2": 22,
+          "quarter_3": 27,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 84
+        },
+        "away": {
+          "quarter_1": 20,
+          "quarter_2": 18,
+          "quarter_3": 21,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 81
+        }
+      }
+    },
+    {
+      "id": 462149,
+      "date": "2026-01-20T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768926600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "21",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 37,
+        "name": "Korisliiga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/37.png"
+      },
+      "country": {
+        "id": 15,
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 492,
+          "name": "Kouvot Kouvola",
+          "logo": "https://media.api-sports.io/basketball/teams/492.png"
+        },
+        "away": {
+          "id": 488,
+          "name": "KTP Kotka Basket",
+          "logo": "https://media.api-sports.io/basketball/teams/488.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 21,
+          "quarter_3": 27,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 90
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 15,
+          "quarter_3": 23,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 462152,
+      "date": "2026-01-20T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768926600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "21",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 37,
+        "name": "Korisliiga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/37.png"
+      },
+      "country": {
+        "id": 15,
+        "name": "Finland",
+        "code": "FI",
+        "flag": "https://media.api-sports.io/flags/fi.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 494,
+          "name": "Pyrinto Tampere",
+          "logo": "https://media.api-sports.io/basketball/teams/494.png"
+        },
+        "away": {
+          "id": 3632,
+          "name": "Honka",
+          "logo": "https://media.api-sports.io/basketball/teams/3632.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 28,
+          "quarter_2": 17,
+          "quarter_3": 22,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 84
+        },
+        "away": {
+          "quarter_1": 29,
+          "quarter_2": 26,
+          "quarter_3": 16,
+          "quarter_4": 29,
+          "over_time": null,
+          "total": 100
+        }
+      }
+    },
+    {
+      "id": 489180,
+      "date": "2026-01-20T16:30:00+00:00",
+      "time": "16:30",
+      "timestamp": 1768926600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "Federation Cup Women - Quarter-finals",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 271,
+        "name": "Federation Cup Women",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/271.png"
+      },
+      "country": {
+        "id": 48,
+        "name": "Turkey",
+        "code": "TR",
+        "flag": "https://media.api-sports.io/flags/tr.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 3970,
+          "name": "Fenerbahce 2 W",
+          "logo": "https://media.api-sports.io/basketball/teams/3970.png"
+        },
+        "away": {
+          "id": 3975,
+          "name": "Turgutlu W",
+          "logo": "https://media.api-sports.io/basketball/teams/3975.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 13,
+          "quarter_2": 14,
+          "quarter_3": 14,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 59
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 14,
+          "quarter_3": 14,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 68
+        }
+      }
+    },
+    {
+      "id": 469122,
+      "date": "2026-01-20T16:45:00+00:00",
+      "time": "16:45",
+      "timestamp": 1768927500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "17",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 239,
+        "name": "Liga Leumit",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/239.png"
+      },
+      "country": {
+        "id": 22,
+        "name": "Israel",
+        "code": "IL",
+        "flag": "https://media.api-sports.io/flags/il.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2283,
+          "name": "Hapoel Haifa",
+          "logo": "https://media.api-sports.io/basketball/teams/2283.png"
+        },
+        "away": {
+          "id": 1567,
+          "name": "Maccabi Kiryat Gat",
+          "logo": "https://media.api-sports.io/basketball/teams/1567.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 23,
+          "quarter_2": 33,
+          "quarter_3": 18,
+          "quarter_4": 26,
+          "over_time": null,
+          "total": 100
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 24,
+          "quarter_3": 23,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 83
+        }
+      }
+    },
+    {
+      "id": 457536,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "6",
+      "venue": "Bemax Arena",
+      "status": {
+        "long": "Cancelled",
+        "short": "CANC",
+        "timer": null
+      },
+      "league": {
+        "id": 203,
+        "name": "ABA League 2",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/203.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2350,
+          "name": "Podgorica",
+          "logo": "https://media.api-sports.io/basketball/teams/2350.png"
+        },
+        "away": {
+          "id": 410,
+          "name": "Cibona",
+          "logo": "https://media.api-sports.io/basketball/teams/410.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 457538,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "6",
+      "venue": "Sportski centar",
+      "status": {
+        "long": "Cancelled",
+        "short": "CANC",
+        "timer": null
+      },
+      "league": {
+        "id": 203,
+        "name": "ABA League 2",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/203.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 842,
+          "name": "Tivat",
+          "logo": "https://media.api-sports.io/basketball/teams/842.png"
+        },
+        "away": {
+          "id": 3010,
+          "name": "Borac Banja Luka",
+          "logo": "https://media.api-sports.io/basketball/teams/3010.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 462840,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "13",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 227,
+        "name": "Prva Liga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/227.png"
+      },
+      "country": {
+        "id": 10,
+        "name": "Croatia",
+        "code": "HR",
+        "flag": "https://media.api-sports.io/flags/hr.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1454,
+          "name": "Jazine",
+          "logo": "https://media.api-sports.io/basketball/teams/1454.png"
+        },
+        "away": {
+          "id": 6092,
+          "name": "Crikvenica",
+          "logo": "https://media.api-sports.io/basketball/teams/6092.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 28,
+          "quarter_2": 24,
+          "quarter_3": 22,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 98
+        },
+        "away": {
+          "quarter_1": 9,
+          "quarter_2": 19,
+          "quarter_3": 22,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 74
+        }
+      }
+    },
+    {
+      "id": 469124,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "17",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 239,
+        "name": "Liga Leumit",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/239.png"
+      },
+      "country": {
+        "id": 22,
+        "name": "Israel",
+        "code": "IL",
+        "flag": "https://media.api-sports.io/flags/il.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 684,
+          "name": "Maccabi Ashdod",
+          "logo": "https://media.api-sports.io/basketball/teams/684.png"
+        },
+        "away": {
+          "id": 685,
+          "name": "Maccabi Haifa",
+          "logo": "https://media.api-sports.io/basketball/teams/685.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 21,
+          "quarter_3": 23,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 85
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 23,
+          "quarter_3": 22,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 82
+        }
+      }
+    },
+    {
+      "id": 471942,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "6",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 203,
+        "name": "ABA League 2",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/203.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 839,
+          "name": "Primorje",
+          "logo": "https://media.api-sports.io/basketball/teams/839.png"
+        },
+        "away": {
+          "id": 3010,
+          "name": "Borac Banja Luka",
+          "logo": "https://media.api-sports.io/basketball/teams/3010.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 20,
+          "quarter_3": 8,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 65
+        },
+        "away": {
+          "quarter_1": 17,
+          "quarter_2": 17,
+          "quarter_3": 19,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 71
+        }
+      }
+    },
+    {
+      "id": 472332,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Vidzemes Olimpiskais centrs",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 204,
+        "name": "Latvia-Estonian League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/204.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2746,
+          "name": "Valmiera Glass Via",
+          "logo": "https://media.api-sports.io/basketball/teams/2746.png"
+        },
+        "away": {
+          "id": 483,
+          "name": "Tal Tech",
+          "logo": "https://media.api-sports.io/basketball/teams/483.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 29,
+          "quarter_2": 16,
+          "quarter_3": 23,
+          "quarter_4": 28,
+          "over_time": null,
+          "total": 96
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 13,
+          "quarter_3": 19,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 78
+        }
+      }
+    },
+    {
+      "id": 472736,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 389,
+        "name": "WASL",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/389.png"
+      },
+      "country": {
+        "id": 2,
+        "name": "Asia",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 6627,
+          "name": "AlUla",
+          "logo": "https://media.api-sports.io/basketball/teams/6627.png"
+        },
+        "away": {
+          "id": 960,
+          "name": "Al Arabi",
+          "logo": "https://media.api-sports.io/basketball/teams/960.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 19,
+          "quarter_2": 27,
+          "quarter_3": 14,
+          "quarter_4": 31,
+          "over_time": null,
+          "total": 91
+        },
+        "away": {
+          "quarter_1": 27,
+          "quarter_2": 18,
+          "quarter_3": 14,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 79
+        }
+      }
+    },
+    {
+      "id": 489591,
+      "date": "2026-01-20T17:00:00+00:00",
+      "time": "17:00",
+      "timestamp": 1768928400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "1",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 202,
+        "name": "Champions League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/202.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1276,
+          "name": "Tofas",
+          "logo": "https://media.api-sports.io/basketball/teams/1276.png"
+        },
+        "away": {
+          "id": 519,
+          "name": "Alba Berlin",
+          "logo": "https://media.api-sports.io/basketball/teams/519.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 23,
+          "quarter_3": 25,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 90
+        },
+        "away": {
+          "quarter_1": 12,
+          "quarter_2": 22,
+          "quarter_3": 26,
+          "quarter_4": 34,
+          "over_time": null,
+          "total": 94
+        }
+      }
+    },
+    {
+      "id": 454501,
+      "date": "2026-01-20T17:15:00+00:00",
+      "time": "17:15",
+      "timestamp": 1768929300,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 1542,
+          "name": "Olympiacos",
+          "logo": "https://media.api-sports.io/basketball/teams/1542.png"
+        },
+        "away": {
+          "id": 687,
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media.api-sports.io/basketball/teams/687.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 27,
+          "quarter_2": 31,
+          "quarter_3": 18,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 100
+        },
+        "away": {
+          "quarter_1": 24,
+          "quarter_2": 10,
+          "quarter_3": 28,
+          "quarter_4": 31,
+          "over_time": null,
+          "total": 93
+        }
+      }
+    },
+    {
+      "id": 469126,
+      "date": "2026-01-20T17:15:00+00:00",
+      "time": "17:15",
+      "timestamp": 1768929300,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "17",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 239,
+        "name": "Liga Leumit",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/239.png"
+      },
+      "country": {
+        "id": 22,
+        "name": "Israel",
+        "code": "IL",
+        "flag": "https://media.api-sports.io/flags/il.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2740,
+          "name": "Migdal Haemek",
+          "logo": "https://media.api-sports.io/basketball/teams/2740.png"
+        },
+        "away": {
+          "id": 2722,
+          "name": "Elitzur Ashkelon",
+          "logo": "https://media.api-sports.io/basketball/teams/2722.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 16,
+          "quarter_3": 24,
+          "quarter_4": 28,
+          "over_time": null,
+          "total": 88
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 26,
+          "quarter_3": 19,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 453241,
+      "date": "2026-01-20T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768930200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 194,
+        "name": "Eurocup",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/194.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1800,
+          "name": "Cedevita Olimpija",
+          "logo": "https://media.api-sports.io/basketball/teams/1800.png"
+        },
+        "away": {
+          "id": 3419,
+          "name": "Cluj-Napoca",
+          "logo": "https://media.api-sports.io/basketball/teams/3419.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 24,
+          "quarter_2": 13,
+          "quarter_3": 23,
+          "quarter_4": 26,
+          "over_time": null,
+          "total": 86
+        },
+        "away": {
+          "quarter_1": 12,
+          "quarter_2": 22,
+          "quarter_3": 25,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 80
+        }
+      }
+    },
+    {
+      "id": 454498,
+      "date": "2026-01-20T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768930200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 682,
+          "name": "Hapoel Tel-Aviv",
+          "logo": "https://media.api-sports.io/basketball/teams/682.png"
+        },
+        "away": {
+          "id": 1263,
+          "name": "Anadolu Efes",
+          "logo": "https://media.api-sports.io/basketball/teams/1263.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 14,
+          "quarter_2": 19,
+          "quarter_3": 17,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 71
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 24,
+          "quarter_3": 10,
+          "quarter_4": 13,
+          "over_time": null,
+          "total": 66
+        }
+      }
+    },
+    {
+      "id": 454723,
+      "date": "2026-01-20T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768930200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Vejlby-Risskov Hallen",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 34,
+        "name": "Basketligaen",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/34.png"
+      },
+      "country": {
+        "id": 13,
+        "name": "Denmark",
+        "code": "DK",
+        "flag": "https://media.api-sports.io/flags/dk.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 464,
+          "name": "Bakken Bears",
+          "logo": "https://media.api-sports.io/basketball/teams/464.png"
+        },
+        "away": {
+          "id": 467,
+          "name": "Herlev Wolfpack",
+          "logo": "https://media.api-sports.io/basketball/teams/467.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 27,
+          "quarter_3": 29,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 99
+        },
+        "away": {
+          "quarter_1": 11,
+          "quarter_2": 21,
+          "quarter_3": 9,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 52
+        }
+      }
+    },
+    {
+      "id": 464746,
+      "date": "2026-01-20T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768930200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Keila Tervisekeskus",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 369,
+        "name": "ENBL",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/369.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6559,
+          "name": "Keila Coolbet",
+          "logo": "https://media.api-sports.io/basketball/teams/6559.png"
+        },
+        "away": {
+          "id": 3006,
+          "name": "Sigal Prishtina",
+          "logo": "https://media.api-sports.io/basketball/teams/3006.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 17,
+          "quarter_2": 27,
+          "quarter_3": 30,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 92
+        },
+        "away": {
+          "quarter_1": 25,
+          "quarter_2": 16,
+          "quarter_3": 30,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 90
+        }
+      }
+    },
+    {
+      "id": 489212,
+      "date": "2026-01-20T17:30:00+00:00",
+      "time": "17:30",
+      "timestamp": 1768930200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "1",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 202,
+        "name": "Champions League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/202.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 794,
+          "name": "Rytas",
+          "logo": "https://media.api-sports.io/basketball/teams/794.png"
+        },
+        "away": {
+          "id": 680,
+          "name": "Hapoel Holon",
+          "logo": "https://media.api-sports.io/basketball/teams/680.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 20,
+          "quarter_2": 25,
+          "quarter_3": 33,
+          "quarter_4": 28,
+          "over_time": null,
+          "total": 106
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 11,
+          "quarter_3": 25,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 81
+        }
+      }
+    },
+    {
+      "id": 454499,
+      "date": "2026-01-20T17:45:00+00:00",
+      "time": "17:45",
+      "timestamp": 1768931100,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 16,
+          "name": "Monaco",
+          "logo": "https://media.api-sports.io/basketball/teams/16.png"
+        },
+        "away": {
+          "id": 1065,
+          "name": "Crvena zvezda",
+          "logo": "https://media.api-sports.io/basketball/teams/1065.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 21,
+          "quarter_2": 23,
+          "quarter_3": 27,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 96
+        },
+        "away": {
+          "quarter_1": 27,
+          "quarter_2": 23,
+          "quarter_3": 18,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 100
+        }
+      }
+    },
+    {
+      "id": 453234,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 194,
+        "name": "Eurocup",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/194.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 914,
+          "name": "Slask Wroclaw",
+          "logo": "https://media.api-sports.io/basketball/teams/914.png"
+        },
+        "away": {
+          "id": 606,
+          "name": "Aris",
+          "logo": "https://media.api-sports.io/basketball/teams/606.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 19,
+          "quarter_2": 31,
+          "quarter_3": 21,
+          "quarter_4": 18,
+          "over_time": null,
+          "total": 107
+        },
+        "away": {
+          "quarter_1": 24,
+          "quarter_2": 24,
+          "quarter_3": 24,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 113
+        }
+      }
+    },
+    {
+      "id": 453237,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 194,
+        "name": "Eurocup",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/194.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1792,
+          "name": "Hapoel Jerusalem",
+          "logo": "https://media.api-sports.io/basketball/teams/1792.png"
+        },
+        "away": {
+          "id": 1264,
+          "name": "Bahcesehir Kol.",
+          "logo": "https://media.api-sports.io/basketball/teams/1264.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 29,
+          "quarter_2": 20,
+          "quarter_3": 9,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 82
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 30,
+          "quarter_3": 21,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 94
+        }
+      }
+    },
+    {
+      "id": 453240,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 194,
+        "name": "Eurocup",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/194.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 550,
+          "name": "Chemnitz",
+          "logo": "https://media.api-sports.io/basketball/teams/550.png"
+        },
+        "away": {
+          "id": 24,
+          "name": "JL Bourg",
+          "logo": "https://media.api-sports.io/basketball/teams/24.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 17,
+          "quarter_2": 24,
+          "quarter_3": 26,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 88
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 20,
+          "quarter_3": 19,
+          "quarter_4": 25,
+          "over_time": null,
+          "total": 82
+        }
+      }
+    },
+    {
+      "id": 453392,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "10",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 228,
+        "name": "1. Liga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/228.png"
+      },
+      "country": {
+        "id": 12,
+        "name": "Czech Republic",
+        "code": "CZ",
+        "flag": "https://media.api-sports.io/flags/cz.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2633,
+          "name": "Zlin",
+          "logo": "https://media.api-sports.io/basketball/teams/2633.png"
+        },
+        "away": {
+          "id": 2616,
+          "name": "Opava 2",
+          "logo": "https://media.api-sports.io/basketball/teams/2616.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 30,
+          "quarter_2": 29,
+          "quarter_3": 30,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 111
+        },
+        "away": {
+          "quarter_1": 16,
+          "quarter_2": 15,
+          "quarter_3": 10,
+          "quarter_4": 25,
+          "over_time": null,
+          "total": 66
+        }
+      }
+    },
+    {
+      "id": 464747,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Hala Sportowa Kolo",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 369,
+        "name": "ENBL",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/369.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2272,
+          "name": "Dziki Warszawa",
+          "logo": "https://media.api-sports.io/basketball/teams/2272.png"
+        },
+        "away": {
+          "id": 1375,
+          "name": "Spartak Pleven",
+          "logo": "https://media.api-sports.io/basketball/teams/1375.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 25,
+          "quarter_2": 29,
+          "quarter_3": 31,
+          "quarter_4": 9,
+          "over_time": null,
+          "total": 94
+        },
+        "away": {
+          "quarter_1": 19,
+          "quarter_2": 20,
+          "quarter_3": 16,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 77
+        }
+      }
+    },
+    {
+      "id": 472209,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "GSD Ivica Glavan-Ico",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 369,
+        "name": "ENBL",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/369.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 409,
+          "name": "Alkar",
+          "logo": "https://media.api-sports.io/basketball/teams/409.png"
+        },
+        "away": {
+          "id": 2263,
+          "name": "Syntainics MBC",
+          "logo": "https://media.api-sports.io/basketball/teams/2263.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 11,
+          "quarter_2": 13,
+          "quarter_3": 15,
+          "quarter_4": 13,
+          "over_time": null,
+          "total": 52
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 13,
+          "quarter_3": 12,
+          "quarter_4": 23,
+          "over_time": null,
+          "total": 69
+        }
+      }
+    },
+    {
+      "id": 472331,
+      "date": "2026-01-20T18:00:00+00:00",
+      "time": "18:00",
+      "timestamp": 1768932000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Rimi Olimpiskais centrs",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 204,
+        "name": "Latvia-Estonian League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/204.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2745,
+          "name": "Latvijas Universitate",
+          "logo": "https://media.api-sports.io/basketball/teams/2745.png"
+        },
+        "away": {
+          "id": 2747,
+          "name": "Ventspils",
+          "logo": "https://media.api-sports.io/basketball/teams/2747.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 26,
+          "quarter_3": 23,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 96
+        },
+        "away": {
+          "quarter_1": 35,
+          "quarter_2": 27,
+          "quarter_3": 27,
+          "quarter_4": 29,
+          "over_time": null,
+          "total": 118
+        }
+      }
+    },
+    {
+      "id": 452831,
+      "date": "2026-01-20T18:15:00+00:00",
+      "time": "18:15",
+      "timestamp": 1768932900,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 49,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/49.png"
+      },
+      "country": {
+        "id": 20,
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1548,
+          "name": "Stjarnan W",
+          "logo": "https://media.api-sports.io/basketball/teams/1548.png"
+        },
+        "away": {
+          "id": 6532,
+          "name": "Hamar W",
+          "logo": "https://media.api-sports.io/basketball/teams/6532.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 24,
+          "quarter_2": 22,
+          "quarter_3": 17,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 87
+        },
+        "away": {
+          "quarter_1": 13,
+          "quarter_2": 20,
+          "quarter_3": 25,
+          "quarter_4": 17,
+          "over_time": null,
+          "total": 75
+        }
+      }
+    },
+    {
+      "id": 484745,
+      "date": "2026-01-20T18:15:00+00:00",
+      "time": "18:15",
+      "timestamp": 1768932900,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "4",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 201,
+        "name": "FIBA Europe Cup",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/201.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 918,
+          "name": "Trefl Sopot",
+          "logo": "https://media.api-sports.io/basketball/teams/918.png"
+        },
+        "away": {
+          "id": 561,
+          "name": "Rostock",
+          "logo": "https://media.api-sports.io/basketball/teams/561.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 16,
+          "quarter_3": 22,
+          "quarter_4": 19,
+          "over_time": null,
+          "total": 83
+        },
+        "away": {
+          "quarter_1": 15,
+          "quarter_2": 18,
+          "quarter_3": 20,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 74
+        }
+      }
+    },
+    {
+      "id": 453385,
+      "date": "2026-01-20T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768933800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "9",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 228,
+        "name": "1. Liga",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/228.png"
+      },
+      "country": {
+        "id": 12,
+        "name": "Czech Republic",
+        "code": "CZ",
+        "flag": "https://media.api-sports.io/flags/cz.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2612,
+          "name": "Litomerice",
+          "logo": "https://media.api-sports.io/basketball/teams/2612.png"
+        },
+        "away": {
+          "id": 3629,
+          "name": "USK Prague B",
+          "logo": "https://media.api-sports.io/basketball/teams/3629.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 23,
+          "quarter_2": 23,
+          "quarter_3": 18,
+          "quarter_4": 24,
+          "over_time": null,
+          "total": 88
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 21,
+          "quarter_3": 19,
+          "quarter_4": 26,
+          "over_time": null,
+          "total": 87
+        }
+      }
+    },
+    {
+      "id": 488932,
+      "date": "2026-01-20T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768933800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 409,
+        "name": "Division 1",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/409.png"
+      },
+      "country": {
+        "id": 77,
+        "name": "Lebanon",
+        "code": "LB",
+        "flag": "https://media.api-sports.io/flags/lb.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6361,
+          "name": "NSA",
+          "logo": "https://media.api-sports.io/basketball/teams/6361.png"
+        },
+        "away": {
+          "id": 4418,
+          "name": "Al-Riyadi",
+          "logo": "https://media.api-sports.io/basketball/teams/4418.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 14,
+          "quarter_2": 22,
+          "quarter_3": 19,
+          "quarter_4": 35,
+          "over_time": null,
+          "total": 90
+        },
+        "away": {
+          "quarter_1": 21,
+          "quarter_2": 29,
+          "quarter_3": 30,
+          "quarter_4": 27,
+          "over_time": null,
+          "total": 107
+        }
+      }
+    },
+    {
+      "id": 454500,
+      "date": "2026-01-20T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768935600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Lyon-Villeurbanne",
+          "logo": "https://media.api-sports.io/basketball/teams/26.png"
+        },
+        "away": {
+          "id": 796,
+          "name": "Zalgiris Kaunas",
+          "logo": "https://media.api-sports.io/basketball/teams/796.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 18,
+          "quarter_2": 23,
+          "quarter_3": 14,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 77
+        },
+        "away": {
+          "quarter_1": 23,
+          "quarter_2": 22,
+          "quarter_3": 30,
+          "quarter_4": 21,
+          "over_time": null,
+          "total": 96
+        }
+      }
+    },
+    {
+      "id": 457539,
+      "date": "2026-01-20T19:00:00+00:00",
+      "time": "19:00",
+      "timestamp": 1768935600,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "6",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 203,
+        "name": "ABA League 2",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/203.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6534,
+          "name": "Jahorina",
+          "logo": "https://media.api-sports.io/basketball/teams/6534.png"
+        },
+        "away": {
+          "id": 1063,
+          "name": "Vrsac",
+          "logo": "https://media.api-sports.io/basketball/teams/1063.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 30,
+          "quarter_2": 25,
+          "quarter_3": 24,
+          "quarter_4": 22,
+          "over_time": null,
+          "total": 101
+        },
+        "away": {
+          "quarter_1": 20,
+          "quarter_2": 14,
+          "quarter_3": 20,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 65
+        }
+      }
+    },
+    {
+      "id": 452832,
+      "date": "2026-01-20T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768936500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 49,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/49.png"
+      },
+      "country": {
+        "id": 20,
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 659,
+          "name": "Haukar W",
+          "logo": "https://media.api-sports.io/basketball/teams/659.png"
+        },
+        "away": {
+          "id": 7451,
+          "name": "Armann W",
+          "logo": "https://media.api-sports.io/basketball/teams/7451.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 33,
+          "quarter_2": 27,
+          "quarter_3": 28,
+          "quarter_4": 16,
+          "over_time": null,
+          "total": 104
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 19,
+          "quarter_3": 16,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 73
+        }
+      }
+    },
+    {
+      "id": 452833,
+      "date": "2026-01-20T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768936500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "15",
+      "venue": null,
+      "status": {
+        "long": "Quarter 4",
+        "short": "Q4",
+        "timer": "10"
+      },
+      "league": {
+        "id": 49,
+        "name": "Premier League W",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/49.png"
+      },
+      "country": {
+        "id": 20,
+        "name": "Iceland",
+        "code": "IS",
+        "flag": "https://media.api-sports.io/flags/is.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 660,
+          "name": "KR Reykjavik W",
+          "logo": "https://media.api-sports.io/basketball/teams/660.png"
+        },
+        "away": {
+          "id": 664,
+          "name": "Valur W",
+          "logo": "https://media.api-sports.io/basketball/teams/664.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 16,
+          "quarter_2": 12,
+          "quarter_3": 18,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 66
+        },
+        "away": {
+          "quarter_1": 24,
+          "quarter_2": 18,
+          "quarter_3": 20,
+          "quarter_4": 14,
+          "over_time": null,
+          "total": 76
+        }
+      }
+    },
+    {
+      "id": 454502,
+      "date": "2026-01-20T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768936500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 614,
+          "name": "Panathinaikos",
+          "logo": "https://media.api-sports.io/basketball/teams/614.png"
+        },
+        "away": {
+          "id": 2331,
+          "name": "Baskonia",
+          "logo": "https://media.api-sports.io/basketball/teams/2331.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 26,
+          "quarter_2": 22,
+          "quarter_3": 25,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 93
+        },
+        "away": {
+          "quarter_1": 14,
+          "quarter_2": 17,
+          "quarter_3": 23,
+          "quarter_4": 20,
+          "over_time": null,
+          "total": 74
+        }
+      }
+    },
+    {
+      "id": 471446,
+      "date": "2026-01-20T19:15:00+00:00",
+      "time": "19:15",
+      "timestamp": 1768936500,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Saudarkrokur",
+      "status": {
+        "long": "Game Finished",
+        "short": "FT",
+        "timer": null
+      },
+      "league": {
+        "id": 369,
+        "name": "ENBL",
+        "type": "cup",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/369.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 655,
+          "name": "Tindastoll",
+          "logo": "https://media.api-sports.io/basketball/teams/655.png"
+        },
+        "away": {
+          "id": 3012,
+          "name": "Dinamo Zagreb",
+          "logo": "https://media.api-sports.io/basketball/teams/3012.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 23,
+          "quarter_2": 24,
+          "quarter_3": 32,
+          "quarter_4": 25,
+          "over_time": null,
+          "total": 104
+        },
+        "away": {
+          "quarter_1": 30,
+          "quarter_2": 24,
+          "quarter_3": 31,
+          "quarter_4": 25,
+          "over_time": null,
+          "total": 110
+        }
+      }
+    },
+    {
+      "id": 454503,
+      "date": "2026-01-20T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768937400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Quarter 3",
+        "short": "Q3",
+        "timer": "9"
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 2341,
+          "name": "Valencia",
+          "logo": "https://media.api-sports.io/basketball/teams/2341.png"
+        },
+        "away": {
+          "id": 108,
+          "name": "Paris",
+          "logo": "https://media.api-sports.io/basketball/teams/108.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 27,
+          "quarter_2": 23,
+          "quarter_3": 18,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 68
+        },
+        "away": {
+          "quarter_1": 16,
+          "quarter_2": 26,
+          "quarter_3": 9,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 51
+        }
+      }
+    },
+    {
+      "id": 454504,
+      "date": "2026-01-20T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768937400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Quarter 4",
+        "short": "Q4",
+        "timer": "5"
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 2329,
+          "name": "Barcelona",
+          "logo": "https://media.api-sports.io/basketball/teams/2329.png"
+        },
+        "away": {
+          "id": 6496,
+          "name": "Dubai",
+          "logo": "https://media.api-sports.io/basketball/teams/6496.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 18,
+          "quarter_2": 31,
+          "quarter_3": 30,
+          "quarter_4": 4,
+          "over_time": null,
+          "total": 83
+        },
+        "away": {
+          "quarter_1": 22,
+          "quarter_2": 19,
+          "quarter_3": 26,
+          "quarter_4": 11,
+          "over_time": null,
+          "total": 78
+        }
+      }
+    },
+    {
+      "id": 454505,
+      "date": "2026-01-20T19:30:00+00:00",
+      "time": "19:30",
+      "timestamp": 1768937400,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Quarter 4",
+        "short": "Q4",
+        "timer": "2"
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 522,
+          "name": "Bayern",
+          "logo": "https://media.api-sports.io/basketball/teams/522.png"
+        },
+        "away": {
+          "id": 1068,
+          "name": "Partizan Mozzart Bet",
+          "logo": "https://media.api-sports.io/basketball/teams/1068.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 7,
+          "quarter_2": 25,
+          "quarter_3": 18,
+          "quarter_4": 4,
+          "over_time": null,
+          "total": 54
+        },
+        "away": {
+          "quarter_1": 18,
+          "quarter_2": 16,
+          "quarter_3": 16,
+          "quarter_4": 0,
+          "over_time": null,
+          "total": 50
+        }
+      }
+    },
+    {
+      "id": 454506,
+      "date": "2026-01-20T19:45:00+00:00",
+      "time": "19:45",
+      "timestamp": 1768938300,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "23",
+      "venue": null,
+      "status": {
+        "long": "Quarter 3",
+        "short": "Q3",
+        "timer": "6"
+      },
+      "league": {
+        "id": 120,
+        "name": "Euroleague",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/120.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": null,
+        "flag": null
+      },
+      "teams": {
+        "home": {
+          "id": 2338,
+          "name": "Real Madrid",
+          "logo": "https://media.api-sports.io/basketball/teams/2338.png"
+        },
+        "away": {
+          "id": 722,
+          "name": "Olimpia Milano",
+          "logo": "https://media.api-sports.io/basketball/teams/722.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 30,
+          "quarter_2": 24,
+          "quarter_3": 9,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 63
+        },
+        "away": {
+          "quarter_1": 23,
+          "quarter_2": 13,
+          "quarter_3": 9,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 45
+        }
+      }
+    },
+    {
+      "id": 489370,
+      "date": "2026-01-20T20:00:00+00:00",
+      "time": "20:00",
+      "timestamp": 1768939200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "1",
+      "venue": null,
+      "status": {
+        "long": "Quarter 3",
+        "short": "Q3",
+        "timer": "1"
+      },
+      "league": {
+        "id": 202,
+        "name": "Champions League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/202.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2339,
+          "name": "Tenerife",
+          "logo": "https://media.api-sports.io/basketball/teams/2339.png"
+        },
+        "away": {
+          "id": 446,
+          "name": "Nymburk",
+          "logo": "https://media.api-sports.io/basketball/teams/446.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 24,
+          "quarter_2": 25,
+          "quarter_3": 0,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 49
+        },
+        "away": {
+          "quarter_1": 26,
+          "quarter_2": 24,
+          "quarter_3": 0,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 50
+        }
+      }
+    },
+    {
+      "id": 489577,
+      "date": "2026-01-20T20:00:00+00:00",
+      "time": "20:00",
+      "timestamp": 1768939200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": "1",
+      "venue": null,
+      "status": {
+        "long": "Quarter 3",
+        "short": "Q3",
+        "timer": "2"
+      },
+      "league": {
+        "id": 202,
+        "name": "Champions League",
+        "type": "cup",
+        "season": 2025,
+        "logo": "https://media.api-sports.io/basketball/leagues/202.png"
+      },
+      "country": {
+        "id": 55,
+        "name": "Europe",
+        "code": " ",
+        "flag": "https://media.api-sports.io/flags/ .svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2333,
+          "name": "Gran Canaria",
+          "logo": "https://media.api-sports.io/basketball/teams/2333.png"
+        },
+        "away": {
+          "id": 729,
+          "name": "Trieste",
+          "logo": "https://media.api-sports.io/basketball/teams/729.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": 21,
+          "quarter_2": 18,
+          "quarter_3": 0,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 39
+        },
+        "away": {
+          "quarter_1": 26,
+          "quarter_2": 12,
+          "quarter_3": 2,
+          "quarter_4": null,
+          "over_time": null,
+          "total": 40
+        }
+      }
+    },
+    {
+      "id": 483599,
+      "date": "2026-01-20T22:30:00+00:00",
+      "time": "22:30",
+      "timestamp": 1768948200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Centro de Formacao Olimpica",
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 26,
+        "name": "NBB",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/26.png"
+      },
+      "country": {
+        "id": 8,
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 331,
+          "name": "Cearense",
+          "logo": "https://media.api-sports.io/basketball/teams/331.png"
+        },
+        "away": {
+          "id": 343,
+          "name": "Unifacisa",
+          "logo": "https://media.api-sports.io/basketball/teams/343.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 483600,
+      "date": "2026-01-20T22:30:00+00:00",
+      "time": "22:30",
+      "timestamp": 1768948200,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Ginásio Galegão",
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 26,
+        "name": "NBB",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/26.png"
+      },
+      "country": {
+        "id": 8,
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7344,
+          "name": "Osasco",
+          "logo": "https://media.api-sports.io/basketball/teams/7344.png"
+        },
+        "away": {
+          "id": 340,
+          "name": "Rio Claro",
+          "logo": "https://media.api-sports.io/basketball/teams/340.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 477426,
+      "date": "2026-01-20T23:00:00+00:00",
+      "time": "23:00",
+      "timestamp": 1768950000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2168,
+          "name": "UMass",
+          "logo": "https://media.api-sports.io/basketball/teams/2168.png"
+        },
+        "away": {
+          "id": 204,
+          "name": "Toledo",
+          "logo": "https://media.api-sports.io/basketball/teams/204.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 483601,
+      "date": "2026-01-20T23:00:00+00:00",
+      "time": "23:00",
+      "timestamp": 1768950000,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Sao Januario Gymnasium",
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 26,
+        "name": "NBB",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/26.png"
+      },
+      "country": {
+        "id": 8,
+        "name": "Brazil",
+        "code": "BR",
+        "flag": "https://media.api-sports.io/flags/br.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1437,
+          "name": "Vasco",
+          "logo": "https://media.api-sports.io/basketball/teams/1437.png"
+        },
+        "away": {
+          "id": 336,
+          "name": "Mogi",
+          "logo": "https://media.api-sports.io/basketball/teams/336.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 482566,
+      "date": "2026-01-20T23:15:00+00:00",
+      "time": "23:15",
+      "timestamp": 1768950900,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 423,
+        "name": "NCAA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/423.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 7122,
+          "name": "SE Missouri State W",
+          "logo": "https://media.api-sports.io/basketball/teams/7122.png"
+        },
+        "away": {
+          "id": 7230,
+          "name": "UT Martin W",
+          "logo": "https://media.api-sports.io/basketball/teams/7230.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 488997,
+      "date": "2026-01-20T23:15:00+00:00",
+      "time": "23:15",
+      "timestamp": 1768950900,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": "Palacio Penarol",
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 110,
+        "name": "Liga Uruguaya",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/110.png"
+      },
+      "country": {
+        "id": 63,
+        "name": "Uruguay",
+        "code": "UY",
+        "flag": "https://media.api-sports.io/flags/uy.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6286,
+          "name": "Penarol",
+          "logo": "https://media.api-sports.io/basketball/teams/6286.png"
+        },
+        "away": {
+          "id": 3002,
+          "name": "Welcome",
+          "logo": "https://media.api-sports.io/basketball/teams/3002.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 477427,
+      "date": "2026-01-20T23:30:00+00:00",
+      "time": "23:30",
+      "timestamp": 1768951800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 1845,
+          "name": "Buffalo",
+          "logo": "https://media.api-sports.io/basketball/teams/1845.png"
+        },
+        "away": {
+          "id": 1805,
+          "name": "Akron",
+          "logo": "https://media.api-sports.io/basketball/teams/1805.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 477428,
+      "date": "2026-01-20T23:30:00+00:00",
+      "time": "23:30",
+      "timestamp": 1768951800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 116,
+        "name": "NCAA",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/116.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 2058,
+          "name": "Ohio State",
+          "logo": "https://media.api-sports.io/basketball/teams/2058.png"
+        },
+        "away": {
+          "id": 2003,
+          "name": "Minnesota",
+          "logo": "https://media.api-sports.io/basketball/teams/2003.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 482567,
+      "date": "2026-01-20T23:30:00+00:00",
+      "time": "23:30",
+      "timestamp": 1768951800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 423,
+        "name": "NCAA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/423.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6817,
+          "name": "Charlotte 49ers W",
+          "logo": "https://media.api-sports.io/basketball/teams/6817.png"
+        },
+        "away": {
+          "id": 6888,
+          "name": "Florida Atlantic W",
+          "logo": "https://media.api-sports.io/basketball/teams/6888.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 482568,
+      "date": "2026-01-20T23:30:00+00:00",
+      "time": "23:30",
+      "timestamp": 1768951800,
+      "timezone": "UTC",
+      "stage": null,
+      "week": null,
+      "venue": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS",
+        "timer": null
+      },
+      "league": {
+        "id": 423,
+        "name": "NCAA Women",
+        "type": "League",
+        "season": "2025-2026",
+        "logo": "https://media.api-sports.io/basketball/leagues/423.png"
+      },
+      "country": {
+        "id": 5,
+        "name": "USA",
+        "code": "US",
+        "flag": "https://media.api-sports.io/flags/us.svg"
+      },
+      "teams": {
+        "home": {
+          "id": 6874,
+          "name": "Eastern Michigan W",
+          "logo": "https://media.api-sports.io/basketball/teams/6874.png"
+        },
+        "away": {
+          "id": 7202,
+          "name": "Toledo W",
+          "logo": "https://media.api-sports.io/basketball/teams/7202.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        },
+        "away": {
+          "quarter_1": null,
+          "quarter_2": null,
+          "quarter_3": null,
+          "quarter_4": null,
+          "over_time": null,
+          "total": null
+        }
+      }
+    }
+  ]
+}

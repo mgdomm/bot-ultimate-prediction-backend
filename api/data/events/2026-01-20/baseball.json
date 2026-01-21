@@ -1,0 +1,375 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-01-20"
+  },
+  "errors": [],
+  "results": 5,
+  "response": [
+    {
+      "id": 183251,
+      "date": "2026-01-20T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768933800,
+      "timezone": "UTC",
+      "week": "Quarter-finals",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 7,
+        "name": "Cuba",
+        "code": "CU",
+        "flag": "https://media.api-sports.io/flags/cu.svg"
+      },
+      "league": {
+        "id": 9,
+        "name": "Serie Nacional",
+        "type": "League",
+        "logo": "https://media.api-sports.io/baseball/leagues/9.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 132,
+          "name": "Mayabeque",
+          "logo": "https://media.api-sports.io/baseball/teams/132.png"
+        },
+        "away": {
+          "id": 128,
+          "name": "Industriales",
+          "logo": "https://media.api-sports.io/baseball/teams/128.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        },
+        "away": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 183252,
+      "date": "2026-01-20T18:30:00+00:00",
+      "time": "18:30",
+      "timestamp": 1768933800,
+      "timezone": "UTC",
+      "week": "Quarter-finals",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 7,
+        "name": "Cuba",
+        "code": "CU",
+        "flag": "https://media.api-sports.io/flags/cu.svg"
+      },
+      "league": {
+        "id": 9,
+        "name": "Serie Nacional",
+        "type": "League",
+        "logo": "https://media.api-sports.io/baseball/leagues/9.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 127,
+          "name": "Holguin",
+          "logo": "https://media.api-sports.io/baseball/teams/127.png"
+        },
+        "away": {
+          "id": 121,
+          "name": "Artemisa",
+          "logo": "https://media.api-sports.io/baseball/teams/121.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        },
+        "away": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 182174,
+      "date": "2026-01-20T23:00:00+00:00",
+      "time": "23:00",
+      "timestamp": 1768950000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Venezuela",
+        "code": "VE",
+        "flag": "https://media.api-sports.io/flags/ve.svg"
+      },
+      "league": {
+        "id": 31,
+        "name": "LVBP",
+        "type": "League",
+        "logo": "https://media.api-sports.io/baseball/leagues/31.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 365,
+          "name": "Zulia",
+          "logo": "https://media.api-sports.io/baseball/teams/365.png"
+        },
+        "away": {
+          "id": 362,
+          "name": "Lara",
+          "logo": "https://media.api-sports.io/baseball/teams/362.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        },
+        "away": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 182176,
+      "date": "2026-01-20T23:00:00+00:00",
+      "time": "23:00",
+      "timestamp": 1768950000,
+      "timezone": "UTC",
+      "week": null,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 24,
+        "name": "Venezuela",
+        "code": "VE",
+        "flag": "https://media.api-sports.io/flags/ve.svg"
+      },
+      "league": {
+        "id": 31,
+        "name": "LVBP",
+        "type": "League",
+        "logo": "https://media.api-sports.io/baseball/leagues/31.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 364,
+          "name": "Margarita",
+          "logo": "https://media.api-sports.io/baseball/teams/364.png"
+        },
+        "away": {
+          "id": 363,
+          "name": "Magallanes",
+          "logo": "https://media.api-sports.io/baseball/teams/363.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        },
+        "away": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        }
+      }
+    },
+    {
+      "id": 183246,
+      "date": "2026-01-20T23:00:00+00:00",
+      "time": "23:00",
+      "timestamp": 1768950000,
+      "timezone": "UTC",
+      "week": "Final",
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      },
+      "country": {
+        "id": 18,
+        "name": "Puerto-Rico",
+        "code": "PR",
+        "flag": "https://media.api-sports.io/flags/pr.svg"
+      },
+      "league": {
+        "id": 25,
+        "name": "LBPRC",
+        "type": "League",
+        "logo": "https://media.api-sports.io/baseball/leagues/25.png",
+        "season": 2025
+      },
+      "teams": {
+        "home": {
+          "id": 320,
+          "name": "Cangrejeros",
+          "logo": "https://media.api-sports.io/baseball/teams/320.png"
+        },
+        "away": {
+          "id": 827,
+          "name": "Leones de Ponce",
+          "logo": "https://media.api-sports.io/baseball/teams/827.png"
+        }
+      },
+      "scores": {
+        "home": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        },
+        "away": {
+          "hits": null,
+          "errors": null,
+          "innings": {
+            "1": null,
+            "2": null,
+            "3": null,
+            "4": null,
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "extra": null
+          },
+          "total": null
+        }
+      }
+    }
+  ]
+}

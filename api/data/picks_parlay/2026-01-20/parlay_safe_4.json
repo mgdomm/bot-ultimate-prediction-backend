@@ -1,0 +1,85 @@
+{
+  "type": "PARLAY_PREMIUM",
+  "kind": "SAFE_4",
+  "label": "Seguro (4 piernas)",
+  "legs": [
+    {
+      "sport": "basketball",
+      "eventId": "454498",
+      "bookmaker": "1xBet",
+      "market": "Over/Under",
+      "selection": "Over 164",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    },
+    {
+      "sport": "hockey",
+      "eventId": "395689",
+      "bookmaker": "Unibet",
+      "market": "Over/Under",
+      "selection": "Under 6",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    },
+    {
+      "sport": "hockey",
+      "eventId": "395734",
+      "bookmaker": "10Bet",
+      "market": "Over/Under",
+      "selection": "Over 4.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    },
+    {
+      "sport": "volleyball",
+      "eventId": "184691",
+      "bookmaker": "Marathon",
+      "market": "Over/Under",
+      "selection": "Under 3.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    }
+  ],
+  "combined_odds": 5.0625,
+  "prob_parlay": 0.2224
+}

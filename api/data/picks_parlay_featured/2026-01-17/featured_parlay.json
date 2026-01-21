@@ -1,0 +1,28 @@
+{
+  "type": "DAILY_FEATURED_PARLAY",
+  "risk_level": "HIGH",
+  "fallback_min_prob": 0.72,
+  "legs": [
+    {
+      "event_id": 1,
+      "odds": 2.1,
+      "prob_estimada": 0.74
+    },
+    {
+      "event_id": 2,
+      "odds": 1.95,
+      "prob_estimada": 0.73
+    },
+    {
+      "event_id": 3,
+      "odds": 1.85,
+      "prob_estimada": 0.72
+    }
+  ],
+  "combined_odds": 7.58,
+  "prob_parlay": 0.3889,
+  "stake_eur": 76.04,
+  "max_loss_eur": 76.04,
+  "target_profit_eur": 500.0,
+  "potential_return_eur": 576.06
+}

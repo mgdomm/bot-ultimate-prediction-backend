@@ -1,0 +1,182 @@
+[
+  {
+    "sport": "nfl",
+    "eventId": "17591",
+    "bookmaker": "Betano",
+    "market": "Over/Under",
+    "selection": "Over 29.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.8033,
+    "p_safe": 0.8228,
+    "stake": 50.0,
+    "ev": -1.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "nfl",
+    "eventId": "17592",
+    "bookmaker": "Betano",
+    "market": "Over/Under",
+    "selection": "Over 33.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.8033,
+    "p_safe": 0.8228,
+    "stake": 50.0,
+    "ev": -1.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "nfl",
+    "eventId": "17593",
+    "bookmaker": "1xBet",
+    "market": "Over/Under",
+    "selection": "Over 38.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.8033,
+    "p_safe": 0.8228,
+    "stake": 50.0,
+    "ev": -1.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "basketball",
+    "eventId": "449913",
+    "bookmaker": "Bet365",
+    "market": "Asian Handicap",
+    "selection": "Away +6.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "handball",
+    "eventId": "178284",
+    "bookmaker": "Sbo",
+    "market": "3Way Result",
+    "selection": "Home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "hockey",
+    "eventId": "395726",
+    "bookmaker": "1xBet",
+    "market": "Total - Away",
+    "selection": "Under 3",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "hockey",
+    "eventId": "395727",
+    "bookmaker": "Pncl",
+    "market": "Asian Handicap (Reg Time)",
+    "selection": "Away -2.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "hockey",
+    "eventId": "395729",
+    "bookmaker": "1xBet",
+    "market": "Total - Away",
+    "selection": "Under 3",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "hockey",
+    "eventId": "395731",
+    "bookmaker": "1xBet",
+    "market": "Over/Under (Reg Time)",
+    "selection": "Over 3.5",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "handball",
+    "eventId": "179457",
+    "bookmaker": "Bet365",
+    "market": "Home/Away",
+    "selection": "Home",
+    "odds": 1.22,
+    "p_implied": 0.8197,
+    "p_estimated": 0.7697,
+    "p_safe": 0.8022,
+    "stake": 50.0,
+    "ev": -3.05,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": false,
+    "premium_reason": null
+  }
+]

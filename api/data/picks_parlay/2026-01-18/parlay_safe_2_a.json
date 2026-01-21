@@ -1,0 +1,47 @@
+{
+  "type": "PARLAY_PREMIUM",
+  "kind": "SAFE_2",
+  "label": "Seguro (2 piernas)",
+  "legs": [
+    {
+      "sport": "basketball",
+      "eventId": "449913",
+      "bookmaker": "Betano",
+      "market": "Over/Under",
+      "selection": "Under 178.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    },
+    {
+      "sport": "handball",
+      "eventId": "178275",
+      "bookmaker": "Pncl",
+      "market": "Over/Under",
+      "selection": "Over 56.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    }
+  ],
+  "combined_odds": 2.25,
+  "prob_parlay": 0.4716
+}

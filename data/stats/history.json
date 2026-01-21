@@ -1,0 +1,23 @@
+{
+  "history": [
+    {
+      "date": "2026-01-01",
+      "tiers": {
+        "classic": {
+          "stake": 10.0,
+          "profit": 10.0,
+          "roi": 1.0,
+          "yield": 10.0,
+          "picks": 1
+        },
+        "premium": {
+          "stake": 25.0,
+          "profit": -25.0,
+          "roi": -1.0,
+          "yield": -25.0,
+          "picks": 1
+        }
+      }
+    }
+  ]
+}

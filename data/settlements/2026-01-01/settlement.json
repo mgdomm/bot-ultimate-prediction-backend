@@ -1,0 +1,43 @@
+{
+  "date": "2026-01-01",
+  "generated_at": "2026-01-02T00:00:00Z",
+  "source": "api-sports",
+  "picks": [
+    {
+      "pick_id": "p1",
+      "sport": "football",
+      "event_id": 1,
+      "market": "match_winner",
+      "selection": "home",
+      "odds": 2.0,
+      "result": "WIN",
+      "resolver": "football",
+      "evidence": {}
+    },
+    {
+      "pick_id": "p2",
+      "sport": "tennis",
+      "event_id": 2,
+      "market": "match_winner",
+      "selection": "away",
+      "odds": 1.5,
+      "result": "LOSS",
+      "resolver": "tennis",
+      "evidence": {}
+    }
+  ],
+  "parlays": [
+    {
+      "parlay_id": "parlay1",
+      "legs": [
+        { "pick_id": "p1", "result": "WIN" },
+        { "pick_id": "p2", "result": "LOSS" }
+      ],
+      "final_result": "LOSS"
+    }
+  ],
+  "integrity": {
+    "contract_hash": "test",
+    "deterministic": true
+  }
+}

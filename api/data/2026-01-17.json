@@ -1,0 +1,866 @@
+{
+  "premiumMessage": "6 selecciones Premium hoy. Baja confianza \u274c Apuestas con valor esperado positivo, no seguras.",
+  "premiumTop3Classic": [
+    {
+      "id": "C8",
+      "type": "classic",
+      "title": "Tennis - Partido #8",
+      "sport": "tennis",
+      "event": "Evento Tennis #8",
+      "market": "set_winner",
+      "startTime": "2026-01-17T13:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.21,
+          "probability": 0.8668
+        }
+      ],
+      "totalProbability": 0.87,
+      "totalOdds": 1.21,
+      "stake": 50.0,
+      "potentialWin": 60.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 97.0,
+      "premiumReason": "Alta probabilidad estimada (87%) con cuota atractiva (1.21). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C9",
+      "type": "classic",
+      "title": "Basketball - Partido #9",
+      "sport": "basketball",
+      "event": "Evento Basketball #9",
+      "market": "over_points",
+      "startTime": "2026-01-17T22:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.26,
+          "probability": 0.8571
+        }
+      ],
+      "totalProbability": 0.86,
+      "totalOdds": 1.26,
+      "stake": 50.0,
+      "potentialWin": 63.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 96.0,
+      "premiumReason": "Alta probabilidad estimada (86%) con cuota atractiva (1.26). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C7",
+      "type": "classic",
+      "title": "Tennis - Partido #7",
+      "sport": "tennis",
+      "event": "Evento Tennis #7",
+      "market": "match_winner",
+      "startTime": "2026-01-17T19:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.4,
+          "probability": 0.775
+        }
+      ],
+      "totalProbability": 0.78,
+      "totalOdds": 1.4,
+      "stake": 50.0,
+      "potentialWin": 70.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 88.0,
+      "premiumReason": "Alta probabilidad estimada (78%) con cuota atractiva (1.4). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    }
+  ],
+  "premiumTop3Parlay": [
+    {
+      "id": "P1",
+      "type": "parlay",
+      "title": "Parlay Seguro",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T16:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "match_winner",
+          "odds": 1.22,
+          "probability": 0.8656
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.22,
+          "probability": 0.8729
+        }
+      ],
+      "totalProbability": 0.76,
+      "totalOdds": 1.49,
+      "stake": 50.0,
+      "potentialWin": 74.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 81.0,
+      "premiumReason": "Alta probabilidad estimada (76%) con cuota atractiva (1.49). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P2",
+      "type": "parlay",
+      "title": "Parlay F\u00fatbol Mix",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T16:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "double_chance",
+          "odds": 1.46,
+          "probability": 0.7247
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "under_points",
+          "odds": 1.41,
+          "probability": 0.7647
+        }
+      ],
+      "totalProbability": 0.55,
+      "totalOdds": 2.06,
+      "stake": 50.0,
+      "potentialWin": 103.0,
+      "riskLevel": "yellow",
+      "isPremium": true,
+      "premiumScore": 70.0,
+      "premiumReason": "Alta probabilidad estimada (55%) con cuota atractiva (2.06). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P7",
+      "type": "parlay",
+      "title": "Parlay Seguro Multi",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T14:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "under_2_5",
+          "odds": 1.33,
+          "probability": 0.8248
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.33,
+          "probability": 0.7826
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 3",
+          "sport": "basketball",
+          "market": "match_winner",
+          "odds": 1.32,
+          "probability": 0.8268
+        }
+      ],
+      "totalProbability": 0.53,
+      "totalOdds": 2.33,
+      "stake": 50.0,
+      "potentialWin": 116.5,
+      "riskLevel": "red",
+      "isPremium": true,
+      "premiumScore": 63.0,
+      "premiumReason": "Alta probabilidad estimada (53%) con cuota atractiva (2.33). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    }
+  ],
+  "classic": [
+    {
+      "id": "C1",
+      "type": "classic",
+      "title": "Basketball - Partido #1",
+      "sport": "basketball",
+      "event": "Evento Basketball #1",
+      "market": "match_winner",
+      "startTime": "2026-01-17T17:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.52,
+          "probability": 0.7066
+        }
+      ],
+      "totalProbability": 0.71,
+      "totalOdds": 1.52,
+      "stake": 50.0,
+      "potentialWin": 76.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 86.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C2",
+      "type": "classic",
+      "title": "Tennis - Partido #2",
+      "sport": "tennis",
+      "event": "Evento Tennis #2",
+      "market": "match_winner",
+      "startTime": "2026-01-17T19:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.51,
+          "probability": 0.6992
+        }
+      ],
+      "totalProbability": 0.7,
+      "totalOdds": 1.51,
+      "stake": 50.0,
+      "potentialWin": 75.5,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 85.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C3",
+      "type": "classic",
+      "title": "Basketball - Partido #3",
+      "sport": "basketball",
+      "event": "Evento Basketball #3",
+      "market": "over_points",
+      "startTime": "2026-01-17T14:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.49,
+          "probability": 0.7111
+        }
+      ],
+      "totalProbability": 0.71,
+      "totalOdds": 1.49,
+      "stake": 50.0,
+      "potentialWin": 74.5,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 81.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C4",
+      "type": "classic",
+      "title": "Basketball - Partido #4",
+      "sport": "basketball",
+      "event": "Evento Basketball #4",
+      "market": "under_points",
+      "startTime": "2026-01-17T12:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.56,
+          "probability": 0.6902
+        }
+      ],
+      "totalProbability": 0.69,
+      "totalOdds": 1.56,
+      "stake": 50.0,
+      "potentialWin": 78.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 84.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C5",
+      "type": "classic",
+      "title": "Tennis - Partido #5",
+      "sport": "tennis",
+      "event": "Evento Tennis #5",
+      "market": "set_winner",
+      "startTime": "2026-01-17T19:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.56,
+          "probability": 0.6966
+        }
+      ],
+      "totalProbability": 0.7,
+      "totalOdds": 1.56,
+      "stake": 50.0,
+      "potentialWin": 78.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 85.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C6",
+      "type": "classic",
+      "title": "Tennis - Partido #6",
+      "sport": "tennis",
+      "event": "Evento Tennis #6",
+      "market": "set_winner",
+      "startTime": "2026-01-17T20:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.57,
+          "probability": 0.6862
+        }
+      ],
+      "totalProbability": 0.69,
+      "totalOdds": 1.57,
+      "stake": 50.0,
+      "potentialWin": 78.5,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 84.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "C7",
+      "type": "classic",
+      "title": "Tennis - Partido #7",
+      "sport": "tennis",
+      "event": "Evento Tennis #7",
+      "market": "match_winner",
+      "startTime": "2026-01-17T19:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.4,
+          "probability": 0.775
+        }
+      ],
+      "totalProbability": 0.78,
+      "totalOdds": 1.4,
+      "stake": 50.0,
+      "potentialWin": 70.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 88.0,
+      "premiumReason": "Alta probabilidad estimada (78%) con cuota atractiva (1.4). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C8",
+      "type": "classic",
+      "title": "Tennis - Partido #8",
+      "sport": "tennis",
+      "event": "Evento Tennis #8",
+      "market": "set_winner",
+      "startTime": "2026-01-17T13:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Tennis",
+          "odds": 1.21,
+          "probability": 0.8668
+        }
+      ],
+      "totalProbability": 0.87,
+      "totalOdds": 1.21,
+      "stake": 50.0,
+      "potentialWin": 60.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 97.0,
+      "premiumReason": "Alta probabilidad estimada (87%) con cuota atractiva (1.21). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C9",
+      "type": "classic",
+      "title": "Basketball - Partido #9",
+      "sport": "basketball",
+      "event": "Evento Basketball #9",
+      "market": "over_points",
+      "startTime": "2026-01-17T22:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.26,
+          "probability": 0.8571
+        }
+      ],
+      "totalProbability": 0.86,
+      "totalOdds": 1.26,
+      "stake": 50.0,
+      "potentialWin": 63.0,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 96.0,
+      "premiumReason": "Alta probabilidad estimada (86%) con cuota atractiva (1.26). Escenario s\u00f3lido seg\u00fan an\u00e1lisis contextual.",
+      "result": null
+    },
+    {
+      "id": "C10",
+      "type": "classic",
+      "title": "Basketball - Partido #10",
+      "sport": "basketball",
+      "event": "Evento Basketball #10",
+      "market": "over_points",
+      "startTime": "2026-01-17T14:09:57.059781",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Selecci\u00f3n Basketball",
+          "odds": 1.42,
+          "probability": 0.7602
+        }
+      ],
+      "totalProbability": 0.76,
+      "totalOdds": 1.42,
+      "stake": 50.0,
+      "potentialWin": 71.0,
+      "riskLevel": "green",
+      "isPremium": false,
+      "premiumScore": 86.0,
+      "premiumReason": null,
+      "result": null
+    }
+  ],
+  "parlay": [
+    {
+      "id": "P1",
+      "type": "parlay",
+      "title": "Parlay Seguro",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T16:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "match_winner",
+          "odds": 1.22,
+          "probability": 0.8656
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.22,
+          "probability": 0.8729
+        }
+      ],
+      "totalProbability": 0.76,
+      "totalOdds": 1.49,
+      "stake": 50.0,
+      "potentialWin": 74.5,
+      "riskLevel": "green",
+      "isPremium": true,
+      "premiumScore": 81.0,
+      "premiumReason": "Alta probabilidad estimada (76%) con cuota atractiva (1.49). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P2",
+      "type": "parlay",
+      "title": "Parlay F\u00fatbol Mix",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T16:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "double_chance",
+          "odds": 1.46,
+          "probability": 0.7247
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "under_points",
+          "odds": 1.41,
+          "probability": 0.7647
+        }
+      ],
+      "totalProbability": 0.55,
+      "totalOdds": 2.06,
+      "stake": 50.0,
+      "potentialWin": 103.0,
+      "riskLevel": "yellow",
+      "isPremium": true,
+      "premiumScore": 70.0,
+      "premiumReason": "Alta probabilidad estimada (55%) con cuota atractiva (2.06). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P3",
+      "type": "parlay",
+      "title": "Parlay Alto Valor",
+      "sport": "multi",
+      "event": "Combinada 2 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T12:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Basketball - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "over_points",
+          "odds": 1.42,
+          "probability": 0.7355
+        },
+        {
+          "name": "Football - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "under_2_5",
+          "odds": 1.49,
+          "probability": 0.6975
+        }
+      ],
+      "totalProbability": 0.51,
+      "totalOdds": 2.12,
+      "stake": 50.0,
+      "potentialWin": 106.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 61.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P4",
+      "type": "parlay",
+      "title": "Parlay Multideporte",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T14:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "both_teams_score",
+          "odds": 1.49,
+          "probability": 0.725
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "match_winner",
+          "odds": 1.35,
+          "probability": 0.7975
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.48,
+          "probability": 0.7212
+        }
+      ],
+      "totalProbability": 0.42,
+      "totalOdds": 2.98,
+      "stake": 50.0,
+      "potentialWin": 149.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 52.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P5",
+      "type": "parlay",
+      "title": "Parlay Equilibrado",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T12:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Basketball - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "under_points",
+          "odds": 1.5,
+          "probability": 0.7223
+        },
+        {
+          "name": "Football - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "match_winner",
+          "odds": 1.35,
+          "probability": 0.7882
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "set_winner",
+          "odds": 1.47,
+          "probability": 0.7113
+        }
+      ],
+      "totalProbability": 0.4,
+      "totalOdds": 2.98,
+      "stake": 50.0,
+      "potentialWin": 149.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 50.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P6",
+      "type": "parlay",
+      "title": "Parlay Cuota Alta",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T19:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "under_2_5",
+          "odds": 1.56,
+          "probability": 0.68
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.55,
+          "probability": 0.677
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 3",
+          "sport": "basketball",
+          "market": "under_points",
+          "odds": 1.52,
+          "probability": 0.6893
+        }
+      ],
+      "totalProbability": 0.32,
+      "totalOdds": 3.68,
+      "stake": 50.0,
+      "potentialWin": 184.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 42.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P7",
+      "type": "parlay",
+      "title": "Parlay Seguro Multi",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T14:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "under_2_5",
+          "odds": 1.33,
+          "probability": 0.8248
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.33,
+          "probability": 0.7826
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 3",
+          "sport": "basketball",
+          "market": "match_winner",
+          "odds": 1.32,
+          "probability": 0.8268
+        }
+      ],
+      "totalProbability": 0.53,
+      "totalOdds": 2.33,
+      "stake": 50.0,
+      "potentialWin": 116.5,
+      "riskLevel": "red",
+      "isPremium": true,
+      "premiumScore": 63.0,
+      "premiumReason": "Alta probabilidad estimada (53%) con cuota atractiva (2.33). Combinada l\u00f3gica con riesgo controlado.",
+      "result": null
+    },
+    {
+      "id": "P8",
+      "type": "parlay",
+      "title": "Jackpot Conservador",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T14:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Basketball - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "over_points",
+          "odds": 1.32,
+          "probability": 0.7973
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 2",
+          "sport": "tennis",
+          "market": "set_winner",
+          "odds": 1.44,
+          "probability": 0.7394
+        },
+        {
+          "name": "Football - Selecci\u00f3n 3",
+          "sport": "football",
+          "market": "over_2_5",
+          "odds": 1.33,
+          "probability": 0.7861
+        }
+      ],
+      "totalProbability": 0.46,
+      "totalOdds": 2.53,
+      "stake": 50.0,
+      "potentialWin": 126.5,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 56.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P9",
+      "type": "parlay",
+      "title": "Jackpot Moderado",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T19:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Football - Selecci\u00f3n 1",
+          "sport": "football",
+          "market": "match_winner",
+          "odds": 1.53,
+          "probability": 0.7062
+        },
+        {
+          "name": "Basketball - Selecci\u00f3n 2",
+          "sport": "basketball",
+          "market": "over_points",
+          "odds": 1.47,
+          "probability": 0.7394
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "match_winner",
+          "odds": 1.51,
+          "probability": 0.7036
+        }
+      ],
+      "totalProbability": 0.37,
+      "totalOdds": 3.4,
+      "stake": 50.0,
+      "potentialWin": 170.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 47.0,
+      "premiumReason": null,
+      "result": null
+    },
+    {
+      "id": "P10",
+      "type": "parlay",
+      "title": "Jackpot Agresivo",
+      "sport": "multi",
+      "event": "Combinada 3 selecciones",
+      "market": "Parlay",
+      "startTime": "2026-01-17T16:09:57.061267",
+      "status": "scheduled",
+      "selections": [
+        {
+          "name": "Basketball - Selecci\u00f3n 1",
+          "sport": "basketball",
+          "market": "under_points",
+          "odds": 1.52,
+          "probability": 0.6849
+        },
+        {
+          "name": "Football - Selecci\u00f3n 2",
+          "sport": "football",
+          "market": "match_winner",
+          "odds": 1.69,
+          "probability": 0.6343
+        },
+        {
+          "name": "Tennis - Selecci\u00f3n 3",
+          "sport": "tennis",
+          "market": "set_winner",
+          "odds": 1.73,
+          "probability": 0.608
+        }
+      ],
+      "totalProbability": 0.26,
+      "totalOdds": 4.44,
+      "stake": 50.0,
+      "potentialWin": 222.0,
+      "riskLevel": "red",
+      "isPremium": false,
+      "premiumScore": 36.0,
+      "premiumReason": null,
+      "result": null
+    }
+  ],
+  "_meta": {
+    "date": "2026-01-17",
+    "generatedAt": "2026-01-17T10:09:57.072057Z",
+    "locked": true,
+    "version": "1.0"
+  }
+}

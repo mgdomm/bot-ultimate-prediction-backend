@@ -1,0 +1,142 @@
+{
+  "parlays": [
+    {
+      "picks": [
+        {
+          "sport": "nfl",
+          "eventId": "17591",
+          "market": "Over/Under",
+          "selection": "Over 39.5",
+          "odds": 1.81,
+          "probability": 0.5725,
+          "edge": 0.02,
+          "n_books": 7,
+          "best_vs_2nd": 1.0284,
+          "best_vs_median": 1.0343,
+          "consensus": "medium",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17592",
+          "market": "Over/Under",
+          "selection": "Over 47.5",
+          "odds": 2.45,
+          "probability": 0.4282,
+          "edge": 0.02,
+          "n_books": 8,
+          "best_vs_2nd": 1.0,
+          "best_vs_median": 1.0403,
+          "consensus": "high",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17593",
+          "market": "Over/Under",
+          "selection": "Under 48",
+          "odds": 2.03,
+          "probability": 0.5126,
+          "edge": 0.02,
+          "n_books": 6,
+          "best_vs_2nd": 1.0253,
+          "best_vs_median": 1.0384,
+          "consensus": "medium",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        }
+      ],
+      "combined_odds": 9.002,
+      "combined_probability": 0.125661,
+      "stake": 50.0,
+      "expected_profit": 400.1,
+      "expected_edge_sum": 0.06,
+      "consensus_score_sum": 4,
+      "type": "marketing_3_legs",
+      "day": "2026-01-18",
+      "source": "inflated"
+    },
+    {
+      "picks": [
+        {
+          "sport": "basketball",
+          "eventId": "450222",
+          "market": "Over/Under",
+          "selection": "Under 142.5",
+          "odds": 1.91,
+          "probability": 0.5436,
+          "edge": 0.02,
+          "n_books": 6,
+          "best_vs_2nd": 1.0214,
+          "best_vs_median": 1.0324,
+          "consensus": "medium",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17591",
+          "market": "Over/Under",
+          "selection": "Over 44.5",
+          "odds": 2.56,
+          "probability": 0.4106,
+          "edge": 0.02,
+          "n_books": 7,
+          "best_vs_2nd": 1.0,
+          "best_vs_median": 1.0492,
+          "consensus": "medium",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17592",
+          "market": "Over/Under",
+          "selection": "Under 45",
+          "odds": 1.83,
+          "probability": 0.5664,
+          "edge": 0.02,
+          "n_books": 6,
+          "best_vs_2nd": 1.0055,
+          "best_vs_median": 1.031,
+          "consensus": "medium",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        },
+        {
+          "sport": "nfl",
+          "eventId": "17593",
+          "market": "Over/Under",
+          "selection": "Under 49.5",
+          "odds": 1.9,
+          "probability": 0.5463,
+          "edge": 0.02,
+          "n_books": 9,
+          "best_vs_2nd": 1.0106,
+          "best_vs_median": 1.044,
+          "consensus": "high",
+          "marketType": "totals",
+          "marketRisk": "low",
+          "inflated": true
+        }
+      ],
+      "combined_odds": 17.0011,
+      "combined_probability": 0.069064,
+      "stake": 50.0,
+      "expected_profit": 800.06,
+      "expected_edge_sum": 0.08,
+      "consensus_score_sum": 5,
+      "type": "marketing_4_legs",
+      "day": "2026-01-18",
+      "source": "inflated"
+    }
+  ]
+}

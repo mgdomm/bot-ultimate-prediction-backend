@@ -1,0 +1,35 @@
+{
+  "picks": [
+    {
+      "pick_id": "p1",
+      "sport": "football",
+      "event_id": 1,
+      "market": "match_winner",
+      "selection": "home",
+      "odds": 2.0,
+      "stake": 10,
+      "tier": "classic"
+    },
+    {
+      "pick_id": "p2",
+      "sport": "tennis",
+      "event_id": 2,
+      "market": "match_winner",
+      "selection": "away",
+      "odds": 1.5,
+      "stake": 20,
+      "tier": "premium"
+    }
+  ],
+  "parlays": [
+    {
+      "parlay_id": "parlay1",
+      "stake": 5,
+      "tier": "premium",
+      "legs": [
+        { "pick_id": "p1" },
+        { "pick_id": "p2" }
+      ]
+    }
+  ]
+}

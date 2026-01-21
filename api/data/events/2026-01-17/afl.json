@@ -1,0 +1,9 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-01-17"
+  },
+  "errors": [],
+  "results": 0,
+  "response": []
+}

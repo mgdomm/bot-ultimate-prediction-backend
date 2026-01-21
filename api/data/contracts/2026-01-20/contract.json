@@ -1,0 +1,869 @@
+{
+  "contract_version": "1.0",
+  "contract_date": "2026-01-20",
+  "generated_at": "2026-01-20T23:03:25.125695",
+  "picks_classic": [
+    {
+      "sport": "basketball",
+      "eventId": "453234",
+      "bookmaker": "Bet365",
+      "market": "Over/Under",
+      "selection": "Under 186.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.8033,
+      "p_safe": 0.8228,
+      "stake": 50.0,
+      "ev": -1.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "453234",
+        "league": "Eurocup",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+        "startTime": "2026-01-20T18:00:00+00:00",
+        "home": {
+          "name": "Slask Wroclaw",
+          "logo": "https://media.api-sports.io/basketball/teams/914.png"
+        },
+        "away": {
+          "name": "Aris",
+          "logo": "https://media.api-sports.io/basketball/teams/606.png"
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "453240",
+      "bookmaker": "Bet365",
+      "market": "Over/Under",
+      "selection": "Under 178.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.8033,
+      "p_safe": 0.8228,
+      "stake": 50.0,
+      "ev": -1.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "453240",
+        "league": "Eurocup",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+        "startTime": "2026-01-20T18:00:00+00:00",
+        "home": {
+          "name": "Chemnitz",
+          "logo": "https://media.api-sports.io/basketball/teams/550.png"
+        },
+        "away": {
+          "name": "JL Bourg",
+          "logo": "https://media.api-sports.io/basketball/teams/24.png"
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "454498",
+      "bookmaker": "Betano",
+      "market": "Over/Under",
+      "selection": "Over 155.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.8033,
+      "p_safe": 0.8228,
+      "stake": 50.0,
+      "ev": -1.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "454498",
+        "league": "Euroleague",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/120.png",
+        "startTime": "2026-01-20T17:30:00+00:00",
+        "home": {
+          "name": "Hapoel Tel-Aviv",
+          "logo": "https://media.api-sports.io/basketball/teams/682.png"
+        },
+        "away": {
+          "name": "Anadolu Efes",
+          "logo": "https://media.api-sports.io/basketball/teams/1263.png"
+        }
+      }
+    },
+    {
+      "sport": "handball",
+      "eventId": "178521",
+      "bookmaker": "1xBet",
+      "market": "Over/Under",
+      "selection": "Over 51.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.8033,
+      "p_safe": 0.8228,
+      "stake": 50.0,
+      "ev": -1.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "handball",
+        "eventId": "178521",
+        "league": "MOL Liga Women",
+        "leagueLogo": "https://media.api-sports.io/handball/leagues/140.png",
+        "startTime": "2026-01-20T17:00:00+00:00",
+        "home": {
+          "name": "Lazne Kynzvart W",
+          "logo": "https://media.api-sports.io/handball/teams/2145.png"
+        },
+        "away": {
+          "name": "Slavia Prague W",
+          "logo": "https://media.api-sports.io/handball/teams/122.png"
+        }
+      }
+    },
+    {
+      "sport": "football",
+      "eventId": "1383120",
+      "bookmaker": "Pinnacle",
+      "market": "Home/Away",
+      "selection": "Away",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7833,
+      "p_safe": 0.8158,
+      "stake": 50.0,
+      "ev": -3.0,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "football",
+        "eventId": "1383120",
+        "league": "League One",
+        "leagueLogo": "https://media.api-sports.io/football/leagues/183.png",
+        "startTime": "2026-01-20T19:45:00+00:00",
+        "home": {
+          "name": "East Fife",
+          "logo": "https://media.api-sports.io/football/teams/6764.png"
+        },
+        "away": {
+          "name": "Inverness CT",
+          "logo": "https://media.api-sports.io/football/teams/903.png"
+        }
+      }
+    },
+    {
+      "sport": "football",
+      "eventId": "1386875",
+      "bookmaker": "Bet365",
+      "market": "Home/Away",
+      "selection": "Home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7833,
+      "p_safe": 0.8158,
+      "stake": 50.0,
+      "ev": -3.0,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "football",
+        "eventId": "1386875",
+        "league": "Championship",
+        "leagueLogo": "https://media.api-sports.io/football/leagues/40.png",
+        "startTime": "2026-01-20T19:45:00+00:00",
+        "home": {
+          "name": "Ipswich",
+          "logo": "https://media.api-sports.io/football/teams/57.png"
+        },
+        "away": {
+          "name": "Bristol City",
+          "logo": "https://media.api-sports.io/football/teams/56.png"
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "452831",
+      "bookmaker": "Betfair",
+      "market": "3Way Result",
+      "selection": "Home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "452831",
+        "league": "Premier League W",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/49.png",
+        "startTime": "2026-01-20T18:15:00+00:00",
+        "home": {
+          "name": "Stjarnan W",
+          "logo": "https://media.api-sports.io/basketball/teams/1548.png"
+        },
+        "away": {
+          "name": "Hamar W",
+          "logo": "https://media.api-sports.io/basketball/teams/6532.png"
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "453237",
+      "bookmaker": "Bet365",
+      "market": "Asian Handicap",
+      "selection": "Away -12.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "453237",
+        "league": "Eurocup",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+        "startTime": "2026-01-20T18:00:00+00:00",
+        "home": {
+          "name": "Hapoel Jerusalem",
+          "logo": "https://media.api-sports.io/basketball/teams/1792.png"
+        },
+        "away": {
+          "name": "Bahcesehir Kol.",
+          "logo": "https://media.api-sports.io/basketball/teams/1264.png"
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "453241",
+      "bookmaker": "Bet365",
+      "market": "Asian Handicap",
+      "selection": "Home +4.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "basketball",
+        "eventId": "453241",
+        "league": "Eurocup",
+        "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+        "startTime": "2026-01-20T17:30:00+00:00",
+        "home": {
+          "name": "Cedevita Olimpija",
+          "logo": "https://media.api-sports.io/basketball/teams/1800.png"
+        },
+        "away": {
+          "name": "Cluj-Napoca",
+          "logo": "https://media.api-sports.io/basketball/teams/3419.png"
+        }
+      }
+    },
+    {
+      "sport": "football",
+      "eventId": "1383144",
+      "bookmaker": "Bet365",
+      "market": "Total - Home",
+      "selection": "Under 2.5",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": false,
+      "premium_reason": null,
+      "display": {
+        "sport": "football",
+        "eventId": "1383144",
+        "league": "League One",
+        "leagueLogo": "https://media.api-sports.io/football/leagues/183.png",
+        "startTime": "2026-01-20T19:45:00+00:00",
+        "home": {
+          "name": "Alloa Athletic",
+          "logo": "https://media.api-sports.io/football/teams/1391.png"
+        },
+        "away": {
+          "name": "Montrose",
+          "logo": "https://media.api-sports.io/football/teams/4251.png"
+        }
+      }
+    }
+  ],
+  "picks_parlay_premium": [
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "BOOM_3",
+      "label": "Boom (3 piernas)",
+      "legs": [
+        {
+          "sport": "basketball",
+          "eventId": "453234",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 167.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "basketball",
+            "eventId": "453234",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T18:00:00+00:00",
+            "home": {
+              "name": "Slask Wroclaw",
+              "logo": "https://media.api-sports.io/basketball/teams/914.png"
+            },
+            "away": {
+              "name": "Aris",
+              "logo": "https://media.api-sports.io/basketball/teams/606.png"
+            }
+          }
+        },
+        {
+          "sport": "basketball",
+          "eventId": "453237",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 167",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "basketball",
+            "eventId": "453237",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T18:00:00+00:00",
+            "home": {
+              "name": "Hapoel Jerusalem",
+              "logo": "https://media.api-sports.io/basketball/teams/1792.png"
+            },
+            "away": {
+              "name": "Bahcesehir Kol.",
+              "logo": "https://media.api-sports.io/basketball/teams/1264.png"
+            }
+          }
+        },
+        {
+          "sport": "volleyball",
+          "eventId": "184691",
+          "bookmaker": "Marathon",
+          "market": "Over/Under",
+          "selection": "Under 3.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "volleyball",
+            "eventId": "184691",
+            "league": "Mestaruusliiga Women",
+            "leagueLogo": "https://media.api-sports.io/volley/leagues/58.png",
+            "startTime": "2026-01-20T16:30:00+00:00",
+            "home": {
+              "name": "Polkky Kuusamo W",
+              "logo": "https://media.api-sports.io/volley/teams/465.png"
+            },
+            "away": {
+              "name": "Nurmon Jymy W",
+              "logo": "https://media.api-sports.io/volley/teams/463.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 3.375,
+      "prob_parlay": 0.3238,
+      "note": "Fallback: mismo mercado, variedad por deporte"
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_2",
+      "label": "Seguro (2 piernas)",
+      "legs": [
+        {
+          "sport": "basketball",
+          "eventId": "453234",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 167.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "basketball",
+            "eventId": "453234",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T18:00:00+00:00",
+            "home": {
+              "name": "Slask Wroclaw",
+              "logo": "https://media.api-sports.io/basketball/teams/914.png"
+            },
+            "away": {
+              "name": "Aris",
+              "logo": "https://media.api-sports.io/basketball/teams/606.png"
+            }
+          }
+        },
+        {
+          "sport": "basketball",
+          "eventId": "453237",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 167",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": true,
+          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+          "display": {
+            "sport": "basketball",
+            "eventId": "453237",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T18:00:00+00:00",
+            "home": {
+              "name": "Hapoel Jerusalem",
+              "logo": "https://media.api-sports.io/basketball/teams/1792.png"
+            },
+            "away": {
+              "name": "Bahcesehir Kol.",
+              "logo": "https://media.api-sports.io/basketball/teams/1264.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_2",
+      "label": "Seguro (2 piernas)",
+      "legs": [
+        {
+          "sport": "basketball",
+          "eventId": "453240",
+          "bookmaker": "1xBet",
+          "market": "Over/Under",
+          "selection": "Over 155.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "basketball",
+            "eventId": "453240",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T18:00:00+00:00",
+            "home": {
+              "name": "Chemnitz",
+              "logo": "https://media.api-sports.io/basketball/teams/550.png"
+            },
+            "away": {
+              "name": "JL Bourg",
+              "logo": "https://media.api-sports.io/basketball/teams/24.png"
+            }
+          }
+        },
+        {
+          "sport": "basketball",
+          "eventId": "453241",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 172",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "basketball",
+            "eventId": "453241",
+            "league": "Eurocup",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+            "startTime": "2026-01-20T17:30:00+00:00",
+            "home": {
+              "name": "Cedevita Olimpija",
+              "logo": "https://media.api-sports.io/basketball/teams/1800.png"
+            },
+            "away": {
+              "name": "Cluj-Napoca",
+              "logo": "https://media.api-sports.io/basketball/teams/3419.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_4",
+      "label": "Seguro (4 piernas)",
+      "legs": [
+        {
+          "sport": "basketball",
+          "eventId": "454498",
+          "bookmaker": "1xBet",
+          "market": "Over/Under",
+          "selection": "Over 164",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "basketball",
+            "eventId": "454498",
+            "league": "Euroleague",
+            "leagueLogo": "https://media.api-sports.io/basketball/leagues/120.png",
+            "startTime": "2026-01-20T17:30:00+00:00",
+            "home": {
+              "name": "Hapoel Tel-Aviv",
+              "logo": "https://media.api-sports.io/basketball/teams/682.png"
+            },
+            "away": {
+              "name": "Anadolu Efes",
+              "logo": "https://media.api-sports.io/basketball/teams/1263.png"
+            }
+          }
+        },
+        {
+          "sport": "hockey",
+          "eventId": "395689",
+          "bookmaker": "Unibet",
+          "market": "Over/Under",
+          "selection": "Under 6",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "hockey",
+            "eventId": "395689",
+            "league": "Extraliga",
+            "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+            "startTime": "2026-01-20T17:30:00+00:00",
+            "home": {
+              "name": "Sparta Prague",
+              "logo": "https://media.api-sports.io/hockey/teams/134.png"
+            },
+            "away": {
+              "name": "Mountfield HK",
+              "logo": "https://media.api-sports.io/hockey/teams/130.png"
+            }
+          }
+        },
+        {
+          "sport": "hockey",
+          "eventId": "395734",
+          "bookmaker": "10Bet",
+          "market": "Over/Under",
+          "selection": "Over 4.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "hockey",
+            "eventId": "395734",
+            "league": "Extraliga",
+            "leagueLogo": "https://media.api-sports.io/hockey/leagues/10.png",
+            "startTime": "2026-01-20T16:30:00+00:00",
+            "home": {
+              "name": "Plzen",
+              "logo": "https://media.api-sports.io/hockey/teams/133.png"
+            },
+            "away": {
+              "name": "Trinec",
+              "logo": "https://media.api-sports.io/hockey/teams/135.png"
+            }
+          }
+        },
+        {
+          "sport": "volleyball",
+          "eventId": "184691",
+          "bookmaker": "Marathon",
+          "market": "Over/Under",
+          "selection": "Under 3.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "volleyball",
+            "eventId": "184691",
+            "league": "Mestaruusliiga Women",
+            "leagueLogo": "https://media.api-sports.io/volley/leagues/58.png",
+            "startTime": "2026-01-20T16:30:00+00:00",
+            "home": {
+              "name": "Polkky Kuusamo W",
+              "logo": "https://media.api-sports.io/volley/teams/465.png"
+            },
+            "away": {
+              "name": "Nurmon Jymy W",
+              "logo": "https://media.api-sports.io/volley/teams/463.png"
+            }
+          }
+        }
+      ],
+      "combined_odds": 5.0625,
+      "prob_parlay": 0.2224
+    }
+  ],
+  "daily_featured_parlay": {
+    "type": "PARLAY_PREMIUM",
+    "kind": "BOOM_3",
+    "label": "Boom (3 piernas)",
+    "legs": [
+      {
+        "sport": "basketball",
+        "eventId": "453234",
+        "bookmaker": "Bet365",
+        "market": "Over/Under",
+        "selection": "Over 167.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": true,
+        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+        "display": {
+          "sport": "basketball",
+          "eventId": "453234",
+          "league": "Eurocup",
+          "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+          "startTime": "2026-01-20T18:00:00+00:00",
+          "home": {
+            "name": "Slask Wroclaw",
+            "logo": "https://media.api-sports.io/basketball/teams/914.png"
+          },
+          "away": {
+            "name": "Aris",
+            "logo": "https://media.api-sports.io/basketball/teams/606.png"
+          }
+        }
+      },
+      {
+        "sport": "basketball",
+        "eventId": "453237",
+        "bookmaker": "Bet365",
+        "market": "Over/Under",
+        "selection": "Over 167",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": true,
+        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
+        "display": {
+          "sport": "basketball",
+          "eventId": "453237",
+          "league": "Eurocup",
+          "leagueLogo": "https://media.api-sports.io/basketball/leagues/194.png",
+          "startTime": "2026-01-20T18:00:00+00:00",
+          "home": {
+            "name": "Hapoel Jerusalem",
+            "logo": "https://media.api-sports.io/basketball/teams/1792.png"
+          },
+          "away": {
+            "name": "Bahcesehir Kol.",
+            "logo": "https://media.api-sports.io/basketball/teams/1264.png"
+          }
+        }
+      },
+      {
+        "sport": "volleyball",
+        "eventId": "184691",
+        "bookmaker": "Marathon",
+        "market": "Over/Under",
+        "selection": "Under 3.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": false,
+        "display": {
+          "sport": "volleyball",
+          "eventId": "184691",
+          "league": "Mestaruusliiga Women",
+          "leagueLogo": "https://media.api-sports.io/volley/leagues/58.png",
+          "startTime": "2026-01-20T16:30:00+00:00",
+          "home": {
+            "name": "Polkky Kuusamo W",
+            "logo": "https://media.api-sports.io/volley/teams/465.png"
+          },
+          "away": {
+            "name": "Nurmon Jymy W",
+            "logo": "https://media.api-sports.io/volley/teams/463.png"
+          }
+        }
+      }
+    ],
+    "combined_odds": 3.375,
+    "prob_parlay": 0.3238,
+    "note": "Fallback: mismo mercado, variedad por deporte"
+  },
+  "metadata": {}
+}

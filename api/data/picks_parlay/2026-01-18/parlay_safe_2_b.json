@@ -1,0 +1,48 @@
+{
+  "type": "PARLAY_PREMIUM",
+  "kind": "SAFE_2",
+  "label": "Seguro (2 piernas)",
+  "legs": [
+    {
+      "sport": "handball",
+      "eventId": "178284",
+      "bookmaker": "Pncl",
+      "market": "Over/Under",
+      "selection": "Under 64.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": true,
+      "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS"
+    },
+    {
+      "sport": "hockey",
+      "eventId": "395727",
+      "bookmaker": "888Sport",
+      "market": "Over/Under",
+      "selection": "Over 4.5",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6867,
+      "stake": 50.0,
+      "ev": 1.5,
+      "risk": {
+        "level": "MEDIUM",
+        "p_est": 0.6867,
+        "delta_p": 0.02,
+        "ev_margin": 0.03
+      },
+      "premium": false
+    }
+  ],
+  "combined_odds": 2.25,
+  "prob_parlay": 0.4716
+}

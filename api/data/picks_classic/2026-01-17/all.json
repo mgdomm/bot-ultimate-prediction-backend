@@ -1,0 +1,242 @@
+[
+  {
+    "sport": "basketball",
+    "eventId": "449914",
+    "bookmaker": "Betano",
+    "market": "Over/Under",
+    "selection": "Under 187.5",
+    "odds": 1.5,
+    "p_implied": 0.6667,
+    "p_estimated": 0.6867,
+    "stake": 50.0,
+    "ev": 1.5,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6867,
+      "delta_p": 0.02,
+      "ev_margin": 0.03
+    },
+    "premium": true,
+    "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS"
+  },
+  {
+    "sport": "hockey",
+    "eventId": "394641",
+    "bookmaker": "888Sport",
+    "market": "Over/Under",
+    "selection": "Under 6",
+    "odds": 1.5,
+    "p_implied": 0.6667,
+    "p_estimated": 0.6867,
+    "stake": 50.0,
+    "ev": 1.5,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6867,
+      "delta_p": 0.02,
+      "ev_margin": 0.03
+    },
+    "premium": true,
+    "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS"
+  },
+  {
+    "sport": "baseball",
+    "eventId": "175227",
+    "bookmaker": "SBO",
+    "market": "Over/Under",
+    "selection": "Over 6.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "baseball",
+    "eventId": "175227",
+    "bookmaker": "Marathon",
+    "market": "Over/Under",
+    "selection": "Under 8",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "baseball",
+    "eventId": "175286",
+    "bookmaker": "Marathon",
+    "market": "Over/Under",
+    "selection": "Under 8.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "basketball",
+    "eventId": "449914",
+    "bookmaker": "Marathon Bet",
+    "market": "Over/Under",
+    "selection": "Over 178.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "football",
+    "eventId": "1504333",
+    "bookmaker": "1xBet",
+    "market": "Goals Over/Under",
+    "selection": "Under 2.0",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "football",
+    "eventId": "1504335",
+    "bookmaker": "Superbet",
+    "market": "Goals Over/Under",
+    "selection": "Over 1.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "hockey",
+    "eventId": "395177",
+    "bookmaker": "Unibet",
+    "market": "Over/Under",
+    "selection": "Under 6.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "nfl",
+    "eventId": "17590",
+    "bookmaker": "10Bet",
+    "market": "Over/Under",
+    "selection": "Over 42.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "nfl",
+    "eventId": "17590",
+    "bookmaker": "Unibet",
+    "market": "Over/Under",
+    "selection": "Under 49",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  },
+  {
+    "sport": "rugby",
+    "eventId": "50732",
+    "bookmaker": "Unibet",
+    "market": "Over/Under",
+    "selection": "Over 51.5",
+    "odds": 1.58,
+    "p_implied": 0.6329,
+    "p_estimated": 0.6529,
+    "stake": 50.0,
+    "ev": 1.58,
+    "risk": {
+      "level": "MEDIUM",
+      "p_est": 0.6529,
+      "delta_p": 0.02,
+      "ev_margin": 0.0316
+    },
+    "premium": false,
+    "premium_reason": null
+  }
+]

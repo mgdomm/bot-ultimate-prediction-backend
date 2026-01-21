@@ -1,0 +1,9 @@
+{
+  "get": "fights",
+  "parameters": {
+    "date": "2026-01-20"
+  },
+  "errors": [],
+  "results": 0,
+  "response": []
+}

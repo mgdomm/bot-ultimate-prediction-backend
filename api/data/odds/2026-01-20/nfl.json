@@ -1,0 +1,17 @@
+[
+  {
+    "sport": "nfl",
+    "event_id": 19225,
+    "param": "game",
+    "results": 0,
+    "response": {
+      "get": "odds",
+      "parameters": {
+        "game": "19225"
+      },
+      "errors": [],
+      "results": 0,
+      "response": []
+    }
+  }
+]

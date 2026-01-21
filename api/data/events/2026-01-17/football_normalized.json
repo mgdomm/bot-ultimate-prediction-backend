@@ -1,0 +1,7770 @@
+[
+  {
+    "eventId": "1505791",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T08:00:00+00:00",
+    "home": "FSV Zwickau",
+    "away": "Nasaf"
+  },
+  {
+    "eventId": "1508111",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T09:00:00+00:00",
+    "home": "Baník Souš",
+    "away": "Chomutov"
+  },
+  {
+    "eventId": "1508113",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T09:00:00+00:00",
+    "home": "Kosmonosy",
+    "away": "Velké Hamry"
+  },
+  {
+    "eventId": "1507592",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T09:30:00+00:00",
+    "home": "Turnov",
+    "away": "Jablonec II"
+  },
+  {
+    "eventId": "1448582",
+    "sport": "football",
+    "league": "3. Lig - Group 2",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "12 Bingölspor",
+    "away": "Ağrı 1970"
+  },
+  {
+    "eventId": "1502331",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "Stal Rzeszów",
+    "away": "Stal Stalowa Wola"
+  },
+  {
+    "eventId": "1503539",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "České Budějovice",
+    "away": "Písek"
+  },
+  {
+    "eventId": "1503889",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "Hertha BSC II",
+    "away": "Lichtenberg"
+  },
+  {
+    "eventId": "1506304",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "Epitsentr Dunayivtsi",
+    "away": "Kolos Kovalivka II"
+  },
+  {
+    "eventId": "1508119",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T10:00:00+00:00",
+    "home": "Fach-Donaufeld",
+    "away": "Horitschon"
+  },
+  {
+    "eventId": "1500251",
+    "sport": "football",
+    "league": "Ligue A",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Green Farmers FC",
+    "away": "Garage Express"
+  },
+  {
+    "eventId": "1501884",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Bełchatów",
+    "away": "SKRA Częstochowa"
+  },
+  {
+    "eventId": "1503898",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Randers FC",
+    "away": "Aalborg"
+  },
+  {
+    "eventId": "1503922",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Stal Mielec",
+    "away": "Chełmianka Chełm"
+  },
+  {
+    "eventId": "1506308",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Montana",
+    "away": "Spartak Pleven"
+  },
+  {
+    "eventId": "1508115",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "FK Minyor Pernik",
+    "away": "CSKA Sofia II"
+  },
+  {
+    "eventId": "1508124",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "SV Babelsberg 03",
+    "away": "VfL Halle"
+  },
+  {
+    "eventId": "1508293",
+    "sport": "football",
+    "league": "U19 Divisie 1",
+    "startTime": "2026-01-17T11:00:00+00:00",
+    "home": "Sparta Rotterdam U19",
+    "away": "PSV U19"
+  },
+  {
+    "eventId": "1421818",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Albirex Niigata S",
+    "away": "Tanjong Pagar"
+  },
+  {
+    "eventId": "1479709",
+    "sport": "football",
+    "league": "Serie A Women",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Parma W",
+    "away": "AC Milan W"
+  },
+  {
+    "eventId": "1490992",
+    "sport": "football",
+    "league": "Thai League 2",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Songkhla",
+    "away": "Chiangmai United"
+  },
+  {
+    "eventId": "1491201",
+    "sport": "football",
+    "league": "Thai League 1",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Chonburi FC",
+    "away": "Lamphun Warrior"
+  },
+  {
+    "eventId": "1503544",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Górnik Łęczna",
+    "away": "Avia Świdnik"
+  },
+  {
+    "eventId": "1506307",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "FC Isloch Minsk R.",
+    "away": "Slavia Mozyr"
+  },
+  {
+    "eventId": "1508099",
+    "sport": "football",
+    "league": "AFC U23 Asian Cup",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Uzbekistan U23",
+    "away": "China PR U23"
+  },
+  {
+    "eventId": "1508127",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Podbeskidzie",
+    "away": "Jastrzębie"
+  },
+  {
+    "eventId": "1508128",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Ringsted",
+    "away": "Nykobing FC"
+  },
+  {
+    "eventId": "1508130",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Opava II",
+    "away": "Start Brno"
+  },
+  {
+    "eventId": "1508289",
+    "sport": "football",
+    "league": "Cup",
+    "startTime": "2026-01-17T11:30:00+00:00",
+    "home": "Al Hikma",
+    "away": "Al Mabarrah"
+  },
+  {
+    "eventId": "1388773",
+    "sport": "football",
+    "league": "2. Bundesliga",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "1. FC Nürnberg",
+    "away": "SV Elversberg"
+  },
+  {
+    "eventId": "1388774",
+    "sport": "football",
+    "league": "2. Bundesliga",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Preußen Münster",
+    "away": "Karlsruher SC"
+  },
+  {
+    "eventId": "1388775",
+    "sport": "football",
+    "league": "2. Bundesliga",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Dynamo Dresden",
+    "away": "SpVgg Greuther Fürth"
+  },
+  {
+    "eventId": "1404479",
+    "sport": "football",
+    "league": "Campionato Primavera - 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Juventus U20",
+    "away": "Internazionale U20"
+  },
+  {
+    "eventId": "1437584",
+    "sport": "football",
+    "league": "U18 Premier League - North",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Nottingham Forest U18",
+    "away": "Middlesbrough U18"
+  },
+  {
+    "eventId": "1437748",
+    "sport": "football",
+    "league": "U18 Premier League - South",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Birmingham City U18",
+    "away": "Southampton U18"
+  },
+  {
+    "eventId": "1437752",
+    "sport": "football",
+    "league": "U18 Premier League - South",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Leicester City U18",
+    "away": "Chelsea U18"
+  },
+  {
+    "eventId": "1441776",
+    "sport": "football",
+    "league": "2. Lig",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Altınordu",
+    "away": "Erzin Spor"
+  },
+  {
+    "eventId": "1441781",
+    "sport": "football",
+    "league": "2. Lig",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Muğlaspor",
+    "away": "Ankaraspor"
+  },
+  {
+    "eventId": "1441785",
+    "sport": "football",
+    "league": "2. Lig",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "İçel İdmanyurdu Spor",
+    "away": "68 Aksaray Belediyespor"
+  },
+  {
+    "eventId": "1441787",
+    "sport": "football",
+    "league": "2. Lig",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Somaspor",
+    "away": "Fethiyespor"
+  },
+  {
+    "eventId": "1448346",
+    "sport": "football",
+    "league": "3. Lig - Group 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "İnegöl Kafkas Gençlik",
+    "away": "Edirnespor"
+  },
+  {
+    "eventId": "1448347",
+    "sport": "football",
+    "league": "3. Lig - Group 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "İnkılapspor",
+    "away": "Kartal Bulvarspor"
+  },
+  {
+    "eventId": "1448350",
+    "sport": "football",
+    "league": "3. Lig - Group 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Çorluspor 1947",
+    "away": "Silivrispor"
+  },
+  {
+    "eventId": "1448353",
+    "sport": "football",
+    "league": "3. Lig - Group 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Beykoz İshaklıspor",
+    "away": "Küçükçekmece Sinopspor"
+  },
+  {
+    "eventId": "1449057",
+    "sport": "football",
+    "league": "3. Lig - Group 4",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Ayvalikgucu",
+    "away": "Altay"
+  },
+  {
+    "eventId": "1460877",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 10",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Córdoba II",
+    "away": "Recreativo Huelva"
+  },
+  {
+    "eventId": "1468880",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Empoli U19",
+    "away": "Ascoli U19"
+  },
+  {
+    "eventId": "1470438",
+    "sport": "football",
+    "league": "Liga 2",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "PSIS Semarang",
+    "away": "Deltras"
+  },
+  {
+    "eventId": "1470683",
+    "sport": "football",
+    "league": "FKF Premier League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Tusker",
+    "away": "Bandari"
+  },
+  {
+    "eventId": "1482263",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Ethiopia Bunna",
+    "away": "Awassa Kenema"
+  },
+  {
+    "eventId": "1488685",
+    "sport": "football",
+    "league": "Persian Gulf Pro League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Sepahan FC",
+    "away": "Malavan"
+  },
+  {
+    "eventId": "1490993",
+    "sport": "football",
+    "league": "Thai League 2",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Mahasarakham United",
+    "away": "Nong Bua Pitchaya"
+  },
+  {
+    "eventId": "1491202",
+    "sport": "football",
+    "league": "Thai League 1",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Sukhothai FC",
+    "away": "Prachuap"
+  },
+  {
+    "eventId": "1501881",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Bersenbrück",
+    "away": "SV Meppen"
+  },
+  {
+    "eventId": "1501882",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Falkenbergs FF",
+    "away": "Böljan"
+  },
+  {
+    "eventId": "1502327",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Zlin",
+    "away": "FC BW Linz"
+  },
+  {
+    "eventId": "1502330",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Lechia Gdansk",
+    "away": "Lokomotiv Sofia"
+  },
+  {
+    "eventId": "1502432",
+    "sport": "football",
+    "league": "Tipsport Liga",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Skalica",
+    "away": "Zlaté Moravce"
+  },
+  {
+    "eventId": "1502433",
+    "sport": "football",
+    "league": "Tipsport Liga",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Šamorín",
+    "away": "Tatran Prešov"
+  },
+  {
+    "eventId": "1502940",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Kisvarda FC",
+    "away": "Zemplín Michalovce"
+  },
+  {
+    "eventId": "1502942",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Optik Rathenow",
+    "away": "Türkspor Berlin"
+  },
+  {
+    "eventId": "1502943",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Tasmania Berlin",
+    "away": "BFC Dynamo"
+  },
+  {
+    "eventId": "1502944",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Wanne Eickel",
+    "away": "SG Wattenscheid 09"
+  },
+  {
+    "eventId": "1503540",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Cukaricki",
+    "away": "Slovácko"
+  },
+  {
+    "eventId": "1503545",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "ŁKS Łódź",
+    "away": "Javor"
+  },
+  {
+    "eventId": "1503899",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Greifswalder FC",
+    "away": "Flota Świnoujście"
+  },
+  {
+    "eventId": "1503900",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "FSV Mainz 05 II",
+    "away": "Mechtersheim"
+  },
+  {
+    "eventId": "1503901",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Prostějov",
+    "away": "Slovácko II"
+  },
+  {
+    "eventId": "1503902",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "RSV Eintracht",
+    "away": "Staaken"
+  },
+  {
+    "eventId": "1503910",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Eilenburg",
+    "away": "Germania Halberstadt"
+  },
+  {
+    "eventId": "1504164",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Schalke 04 II",
+    "away": "Schott Mainz"
+  },
+  {
+    "eventId": "1505794",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "FC Aarau",
+    "away": "FC Schaffhausen"
+  },
+  {
+    "eventId": "1505796",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Elva",
+    "away": "Riga Mariners"
+  },
+  {
+    "eventId": "1505797",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "MTK Budapest",
+    "away": "Fehérvár FC"
+  },
+  {
+    "eventId": "1505799",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Cracovia Krakow",
+    "away": "Veres Rivne"
+  },
+  {
+    "eventId": "1506299",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "BVSC",
+    "away": "Kozarmisleny FC"
+  },
+  {
+    "eventId": "1506300",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Barockstadt Fulda-Lehn.",
+    "away": "1960 Hanau"
+  },
+  {
+    "eventId": "1506301",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Koper",
+    "away": "Zalaegerszegi TE"
+  },
+  {
+    "eventId": "1506305",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Pogoń Grod. Mazowiecki",
+    "away": "Chojniczanka Chojnice"
+  },
+  {
+    "eventId": "1506309",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Znicz Pruszków",
+    "away": "Olimpia Grudziądz"
+  },
+  {
+    "eventId": "1506412",
+    "sport": "football",
+    "league": "Iraqi League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Al Zawra'a",
+    "away": "Erbil"
+  },
+  {
+    "eventId": "1507597",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Union Klosterfelde",
+    "away": "Hertha Zehlendorf"
+  },
+  {
+    "eventId": "1508011",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Equity Bank",
+    "away": "Gucha Stars"
+  },
+  {
+    "eventId": "1508129",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Korona Kielce II",
+    "away": "Star Starachowice"
+  },
+  {
+    "eventId": "1508131",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Radnik Surdulica",
+    "away": "Zorya Luhansk"
+  },
+  {
+    "eventId": "1508132",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "Štětí",
+    "away": "Králův Dvůr"
+  },
+  {
+    "eventId": "1508596",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T12:00:00+00:00",
+    "home": "MCF",
+    "away": "Vihiga United FC"
+  },
+  {
+    "eventId": "1501241",
+    "sport": "football",
+    "league": "FA Women's Cup",
+    "startTime": "2026-01-17T12:15:00+00:00",
+    "home": "Sunderland W",
+    "away": "London City Lionesses"
+  },
+  {
+    "eventId": "1508259",
+    "sport": "football",
+    "league": "Malaysia Cup",
+    "startTime": "2026-01-17T12:15:00+00:00",
+    "home": "Melaka",
+    "away": "Sabah FA"
+  },
+  {
+    "eventId": "1379184",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Manchester United",
+    "away": "Manchester City"
+  },
+  {
+    "eventId": "1386310",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Chesterfield",
+    "away": "Bromley"
+  },
+  {
+    "eventId": "1386318",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Tranmere",
+    "away": "Walsall"
+  },
+  {
+    "eventId": "1386865",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Coventry",
+    "away": "Leicester"
+  },
+  {
+    "eventId": "1386868",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Watford",
+    "away": "Millwall"
+  },
+  {
+    "eventId": "1386872",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Ipswich",
+    "away": "Blackburn"
+  },
+  {
+    "eventId": "1387425",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Wigan",
+    "away": "Bolton"
+  },
+  {
+    "eventId": "1387426",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Bradford",
+    "away": "Cardiff"
+  },
+  {
+    "eventId": "1399715",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Hartlepool",
+    "away": "Altrincham"
+  },
+  {
+    "eventId": "1415371",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Iliria Fushë-Krujë",
+    "away": "Kastrioti Krujë"
+  },
+  {
+    "eventId": "1415373",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Laci",
+    "away": "FK Kukesi"
+  },
+  {
+    "eventId": "1415374",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Lushnja",
+    "away": "Korabi Peshkopi"
+  },
+  {
+    "eventId": "1415375",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Burreli",
+    "away": "Apolonia Fier"
+  },
+  {
+    "eventId": "1415376",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Pogradeci",
+    "away": "Besa Kavajë"
+  },
+  {
+    "eventId": "1429718",
+    "sport": "football",
+    "league": "Super League Women",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Westerlo W",
+    "away": "Standard Liege W"
+  },
+  {
+    "eventId": "1437430",
+    "sport": "football",
+    "league": "Division 1",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Al Zulfi",
+    "away": "Al Ula"
+  },
+  {
+    "eventId": "1438566",
+    "sport": "football",
+    "league": "Division 1",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Al Anwar",
+    "away": "Al Orubah"
+  },
+  {
+    "eventId": "1456546",
+    "sport": "football",
+    "league": "Liga Alef",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Maccabi Ahi Nazareth",
+    "away": "Hapoel Umm al-Fahm"
+  },
+  {
+    "eventId": "1461480",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 12",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "San Miguel",
+    "away": "Herbania"
+  },
+  {
+    "eventId": "1461482",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 12",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "San Bartolomé",
+    "away": "Mensajero"
+  },
+  {
+    "eventId": "1467382",
+    "sport": "football",
+    "league": "PFL",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Davao Aguilas",
+    "away": "Manila Digger"
+  },
+  {
+    "eventId": "1488586",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Dunfermline",
+    "away": "Hibernian"
+  },
+  {
+    "eventId": "1490994",
+    "sport": "football",
+    "league": "Thai League 2",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Chanthaburi",
+    "away": "Trat FC"
+  },
+  {
+    "eventId": "1491203",
+    "sport": "football",
+    "league": "Thai League 1",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Kanchanaburi",
+    "away": "Muangthong United"
+  },
+  {
+    "eventId": "1501242",
+    "sport": "football",
+    "league": "FA Women's Cup",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Chelsea W",
+    "away": "Crystal Palace W"
+  },
+  {
+    "eventId": "1501889",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "FK Jablonec",
+    "away": "Vardar Skopje"
+  },
+  {
+    "eventId": "1503541",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Neuchatel Xamax FC",
+    "away": "Grand-Saconnex"
+  },
+  {
+    "eventId": "1505798",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Brondby",
+    "away": "Piast Gliwice"
+  },
+  {
+    "eventId": "1506398",
+    "sport": "football",
+    "league": "2. Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "APEA",
+    "away": "AE Zakakiou"
+  },
+  {
+    "eventId": "1506399",
+    "sport": "football",
+    "league": "2. Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Halkanoras",
+    "away": "Ethnikos Latsion"
+  },
+  {
+    "eventId": "1506400",
+    "sport": "football",
+    "league": "2. Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "Spartakos Kitiou",
+    "away": "Iraklis Yerolakkou"
+  },
+  {
+    "eventId": "1506401",
+    "sport": "football",
+    "league": "2. Division",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "PAEEK",
+    "away": "ASIL Lysi"
+  },
+  {
+    "eventId": "1507598",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T12:30:00+00:00",
+    "home": "JäPS",
+    "away": "KäPa"
+  },
+  {
+    "eventId": "1389282",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Grenoble",
+    "away": "RED Star FC 93"
+  },
+  {
+    "eventId": "1389283",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Estac Troyes",
+    "away": "Reims"
+  },
+  {
+    "eventId": "1389718",
+    "sport": "football",
+    "league": "Ligat Ha'al",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Hapoel Petah Tikva",
+    "away": "Beitar Jerusalem"
+  },
+  {
+    "eventId": "1391017",
+    "sport": "football",
+    "league": "La Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Real Madrid",
+    "away": "Levante"
+  },
+  {
+    "eventId": "1392005",
+    "sport": "football",
+    "league": "Segunda División",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "AD Ceuta FC",
+    "away": "Valladolid"
+  },
+  {
+    "eventId": "1394244",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Hansa Rostock",
+    "away": "Erzgebirge Aue"
+  },
+  {
+    "eventId": "1394245",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "TSV 1860 München",
+    "away": "Rot-Weiß Essen"
+  },
+  {
+    "eventId": "1394247",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "FC Saarbrücken",
+    "away": "Energie Cottbus"
+  },
+  {
+    "eventId": "1394251",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "SSV Ulm 1846",
+    "away": "SV Wehen"
+  },
+  {
+    "eventId": "1394252",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Verl",
+    "away": "Waldhof Mannheim"
+  },
+  {
+    "eventId": "1416042",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Prison Leopards",
+    "away": "Kansanshi Dynamos"
+  },
+  {
+    "eventId": "1416043",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kabwe Warriors",
+    "away": "Nchanga Rangers"
+  },
+  {
+    "eventId": "1416044",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Mufulira Wanderers",
+    "away": "Green Buffaloes"
+  },
+  {
+    "eventId": "1416045",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Nkwazi",
+    "away": "Man Utd Zambia Academy"
+  },
+  {
+    "eventId": "1416050",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Konkola Blades",
+    "away": "Mines"
+  },
+  {
+    "eventId": "1421601",
+    "sport": "football",
+    "league": "Feminine Division 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Lens W",
+    "away": "Strasbourg W"
+  },
+  {
+    "eventId": "1431322",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Hércules",
+    "away": "Sevilla Atletico"
+  },
+  {
+    "eventId": "1437431",
+    "sport": "football",
+    "league": "Division 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Abha",
+    "away": "Al-Raed"
+  },
+  {
+    "eventId": "1437585",
+    "sport": "football",
+    "league": "U18 Premier League - North",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Derby County U18",
+    "away": "Sunderland U18"
+  },
+  {
+    "eventId": "1438313",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Zwaluwen",
+    "away": "UDI '19"
+  },
+  {
+    "eventId": "1453194",
+    "sport": "football",
+    "league": "Eredivisie Women",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Twente W",
+    "away": "Ajax W"
+  },
+  {
+    "eventId": "1463622",
+    "sport": "football",
+    "league": "Super League 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kavala",
+    "away": "PAS Giannina"
+  },
+  {
+    "eventId": "1463623",
+    "sport": "football",
+    "league": "Super League 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Asteras Tripolis II",
+    "away": "Kampaniakos Chalastra"
+  },
+  {
+    "eventId": "1463624",
+    "sport": "football",
+    "league": "Super League 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Makedonikos Neapolis",
+    "away": "PAOK II"
+  },
+  {
+    "eventId": "1463625",
+    "sport": "football",
+    "league": "Super League 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Niki Volos",
+    "away": "Nestos Chrisoupolis"
+  },
+  {
+    "eventId": "1463626",
+    "sport": "football",
+    "league": "Super League 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Iraklis 1908",
+    "away": "Anagennisi Karditsas"
+  },
+  {
+    "eventId": "1467866",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Cosenza U19",
+    "away": "Avellino U19"
+  },
+  {
+    "eventId": "1468092",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "ZESCO United",
+    "away": "Kabwe Warriors"
+  },
+  {
+    "eventId": "1468813",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Reggiana U19",
+    "away": "Lecco U19"
+  },
+  {
+    "eventId": "1470687",
+    "sport": "football",
+    "league": "FKF Premier League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "AFC Leopards",
+    "away": "APS Bomet"
+  },
+  {
+    "eventId": "1482262",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kedus Giorgis",
+    "away": "Dire Dawa Kenema"
+  },
+  {
+    "eventId": "1483967",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Nsingizini Hotspurs",
+    "away": "Mbabane Swallows"
+  },
+  {
+    "eventId": "1488686",
+    "sport": "football",
+    "league": "Persian Gulf Pro League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Mes Rafsanjan",
+    "away": "Kheybar Khorramabad"
+  },
+  {
+    "eventId": "1494081",
+    "sport": "football",
+    "league": "Coupe Nationale",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "JSM Bejaia",
+    "away": "Hussein Dey"
+  },
+  {
+    "eventId": "1495123",
+    "sport": "football",
+    "league": "Challenge League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Gudja United",
+    "away": "Sirens"
+  },
+  {
+    "eventId": "1500252",
+    "sport": "football",
+    "league": "Ligue A",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Vital'O",
+    "away": "Inter Star"
+  },
+  {
+    "eventId": "1501885",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "BW Lohne",
+    "away": "SV Rodinghausen"
+  },
+  {
+    "eventId": "1501886",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Wisla Plock",
+    "away": "Bohemians 1905"
+  },
+  {
+    "eventId": "1502329",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "FSV Frankfurt",
+    "away": "FC Carl Zeiss Jena"
+  },
+  {
+    "eventId": "1502945",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Empor Glauchau",
+    "away": "ZFC Meuselwitz"
+  },
+  {
+    "eventId": "1502946",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Heiligenstadt",
+    "away": "FC Rot-Weiß Erfurt"
+  },
+  {
+    "eventId": "1502947",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Lech Poznan",
+    "away": "Žilina"
+  },
+  {
+    "eventId": "1502948",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Tiszakecske FC",
+    "away": "Bekescsaba 1912"
+  },
+  {
+    "eventId": "1503219",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Simba",
+    "away": "CS Manika"
+  },
+  {
+    "eventId": "1503542",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "GKS Katowice",
+    "away": "Atert Bissen"
+  },
+  {
+    "eventId": "1503546",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kalju Nomme",
+    "away": "Rīgas FS"
+  },
+  {
+    "eventId": "1503547",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Levski Sofia",
+    "away": "Vojvodina"
+  },
+  {
+    "eventId": "1503728",
+    "sport": "football",
+    "league": "Brasiliense",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Sobradinho EC",
+    "away": "Paranoá"
+  },
+  {
+    "eventId": "1503755",
+    "sport": "football",
+    "league": "Brasiliense",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "ARUC",
+    "away": "Capital Brasilia"
+  },
+  {
+    "eventId": "1503903",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Austria Salzburg",
+    "away": "Oedt"
+  },
+  {
+    "eventId": "1503905",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Bissingen",
+    "away": "SGV Freiberg"
+  },
+  {
+    "eventId": "1503906",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "FC Bocholt",
+    "away": "BW Dingden"
+  },
+  {
+    "eventId": "1503907",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Bochum II",
+    "away": "Hannover 96 II"
+  },
+  {
+    "eventId": "1503908",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Botev Vratsa",
+    "away": "Marek"
+  },
+  {
+    "eventId": "1503911",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Floridsdorfer AC",
+    "away": "SCR Altach"
+  },
+  {
+    "eventId": "1503913",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Korona Kielce",
+    "away": "Spartak Trnava"
+  },
+  {
+    "eventId": "1503915",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Mjallby AIF",
+    "away": "Kalmar FF"
+  },
+  {
+    "eventId": "1503916",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "SpVgg Neu-Isenburg",
+    "away": "Kickers Offenbach"
+  },
+  {
+    "eventId": "1503918",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Rot-Weiß Walldorf",
+    "away": "TSV Steinbach"
+  },
+  {
+    "eventId": "1503919",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Sandecja Nowy Sącz",
+    "away": "Rekord Bielsko-Biała"
+  },
+  {
+    "eventId": "1503921",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Slavia Sofia",
+    "away": "Mladost Lucani"
+  },
+  {
+    "eventId": "1503923",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "VfR Mannheim",
+    "away": "FC 08 Homburg"
+  },
+  {
+    "eventId": "1503924",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Wegberg-Beeck",
+    "away": "Monheim"
+  },
+  {
+    "eventId": "1503925",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Wiedenbrück",
+    "away": "Hessen Kassel"
+  },
+  {
+    "eventId": "1503929",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Nürnberg II",
+    "away": "Borussia Dortmund II"
+  },
+  {
+    "eventId": "1504330",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Ariana",
+    "away": "Kalaâ Sport"
+  },
+  {
+    "eventId": "1504331",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Bouchamma",
+    "away": "EGS Gafsa"
+  },
+  {
+    "eventId": "1504332",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "CS Chebba",
+    "away": "Sfax Railways"
+  },
+  {
+    "eventId": "1504333",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Jendouba Sport",
+    "away": "AS Kasserine"
+  },
+  {
+    "eventId": "1504335",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kerkennah",
+    "away": "Sporting Ben Arous"
+  },
+  {
+    "eventId": "1504336",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Redeyef",
+    "away": "Djelma"
+  },
+  {
+    "eventId": "1504337",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "EO Sidi Bouzid",
+    "away": "Moknine"
+  },
+  {
+    "eventId": "1504658",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "AS Marsa",
+    "away": "Club Africain"
+  },
+  {
+    "eventId": "1504659",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "CA Bizertin",
+    "away": "ES Metlaoui"
+  },
+  {
+    "eventId": "1504660",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "ES Sahel",
+    "away": "Jeunesse Sportive Omrane"
+  },
+  {
+    "eventId": "1505800",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "FC Gutersloh",
+    "away": "SSV Jeddeloh"
+  },
+  {
+    "eventId": "1505801",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Hollenbach",
+    "away": "Würzburger Kickers"
+  },
+  {
+    "eventId": "1505802",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Ingolstadt II",
+    "away": "Greuther Fürth II"
+  },
+  {
+    "eventId": "1505803",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Köln II",
+    "away": "HSC Hannover"
+  },
+  {
+    "eventId": "1505804",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Pirmasens",
+    "away": "Eintracht Trier"
+  },
+  {
+    "eventId": "1505806",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "SV Sandhausen",
+    "away": "Sportfreunde Siegen"
+  },
+  {
+    "eventId": "1505807",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Wisla Krakow",
+    "away": "Septemvri Sofia"
+  },
+  {
+    "eventId": "1506200",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Khroub",
+    "away": "NC Magra"
+  },
+  {
+    "eventId": "1506202",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "RC Arba",
+    "away": "Koléa"
+  },
+  {
+    "eventId": "1506203",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "GC Mascara",
+    "away": "CRB Adrar"
+  },
+  {
+    "eventId": "1506204",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Tiaret",
+    "away": "JS El Biar"
+  },
+  {
+    "eventId": "1506205",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "JS Tixeraine",
+    "away": "Béchar Djedid"
+  },
+  {
+    "eventId": "1506206",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "WA Mostaganem",
+    "away": "RC Kouba"
+  },
+  {
+    "eventId": "1506310",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Shanghai Shenhua",
+    "away": "Auda"
+  },
+  {
+    "eventId": "1506314",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "JBK",
+    "away": "FF Jaro"
+  },
+  {
+    "eventId": "1506407",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Floriana",
+    "away": "Naxxar Lions"
+  },
+  {
+    "eventId": "1507599",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Backnang",
+    "away": "Balingen"
+  },
+  {
+    "eventId": "1507601",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Friedberg",
+    "away": "Bayern Alzenau"
+  },
+  {
+    "eventId": "1507603",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Pogon Szczecin",
+    "away": "Turan"
+  },
+  {
+    "eventId": "1507604",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "FC WIL 1900",
+    "away": "Brühl"
+  },
+  {
+    "eventId": "1508133",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Benátky nad Jizerou",
+    "away": "Admira Praha"
+  },
+  {
+    "eventId": "1508134",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Olimpia Elbląg",
+    "away": "Cartusia Kartuzy"
+  },
+  {
+    "eventId": "1508135",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "WAF Brigittenau",
+    "away": "TWL Elektra"
+  },
+  {
+    "eventId": "1508250",
+    "sport": "football",
+    "league": "Primeira Divisão",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Gorilla of the Universe",
+    "away": "Benfica"
+  },
+  {
+    "eventId": "1508260",
+    "sport": "football",
+    "league": "Malaysia Cup",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Kelantan Red Warrior FC",
+    "away": "DPMM FC"
+  },
+  {
+    "eventId": "1508597",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Naivas",
+    "away": "Migori Youth"
+  },
+  {
+    "eventId": "1508913",
+    "sport": "football",
+    "league": "São Paulo Youth Cup",
+    "startTime": "2026-01-17T13:00:00+00:00",
+    "home": "Ituano U20",
+    "away": "Palmeiras U20"
+  },
+  {
+    "eventId": "1485362",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T13:05:00+00:00",
+    "home": "Al-Wasl FC",
+    "away": "Al-Jazira"
+  },
+  {
+    "eventId": "1485363",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T13:05:00+00:00",
+    "home": "Khorfakkan",
+    "away": "Al Nasr"
+  },
+  {
+    "eventId": "1504628",
+    "sport": "football",
+    "league": "Sudani Premier League",
+    "startTime": "2026-01-17T13:15:00+00:00",
+    "home": "Al Fajr",
+    "away": "Hay Al Wadi"
+  },
+  {
+    "eventId": "1505808",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:15:00+00:00",
+    "home": "Lahti",
+    "away": "Haka"
+  },
+  {
+    "eventId": "1508136",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:15:00+00:00",
+    "home": "Emirates Club",
+    "away": "NK Varazdin"
+  },
+  {
+    "eventId": "1399129",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Barendrecht",
+    "away": "HHC"
+  },
+  {
+    "eventId": "1399130",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Koninklijke HFC",
+    "away": "Hoek"
+  },
+  {
+    "eventId": "1399133",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Rijnsburgse Boys",
+    "away": "GVVV Veenendaal"
+  },
+  {
+    "eventId": "1400852",
+    "sport": "football",
+    "league": "Super League 1",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Panserraikos",
+    "away": "Kifisia"
+  },
+  {
+    "eventId": "1438007",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Eemdijk",
+    "away": "Huizen"
+  },
+  {
+    "eventId": "1438008",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "VV Scherpenzeel",
+    "away": "ROHDA Raalte"
+  },
+  {
+    "eventId": "1438009",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Staphorst",
+    "away": "Harkemase Boys"
+  },
+  {
+    "eventId": "1438010",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Dovo",
+    "away": "Excelsior '31"
+  },
+  {
+    "eventId": "1438314",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "SteDoCo",
+    "away": "ASWH"
+  },
+  {
+    "eventId": "1438315",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Noordwijk",
+    "away": "Blauw Geel"
+  },
+  {
+    "eventId": "1438316",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Rijnvogels",
+    "away": "Gemert"
+  },
+  {
+    "eventId": "1438317",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "SVV Scheveningen",
+    "away": "Meerssen"
+  },
+  {
+    "eventId": "1439188",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Cittadella",
+    "away": "Pergolettese"
+  },
+  {
+    "eventId": "1439193",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Dolomiti Bellunesi",
+    "away": "Lecco"
+  },
+  {
+    "eventId": "1439194",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Trento",
+    "away": "Novara"
+  },
+  {
+    "eventId": "1439568",
+    "sport": "football",
+    "league": "Serie C - Girone B",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Pianese",
+    "away": "Torres"
+  },
+  {
+    "eventId": "1439575",
+    "sport": "football",
+    "league": "Serie C - Girone B",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Juventus U23",
+    "away": "Ascoli"
+  },
+  {
+    "eventId": "1439952",
+    "sport": "football",
+    "league": "Serie C - Girone C",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Benevento",
+    "away": "Casarano"
+  },
+  {
+    "eventId": "1454172",
+    "sport": "football",
+    "league": "Serie D - Girone B",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Scanzorosciate",
+    "away": "Virtus Ciserano Bergamo"
+  },
+  {
+    "eventId": "1454778",
+    "sport": "football",
+    "league": "Serie D - Girone D",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Sasso Marconi Zola",
+    "away": "Pistoiese"
+  },
+  {
+    "eventId": "1454780",
+    "sport": "football",
+    "league": "Serie D - Girone D",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Sangiuliano City",
+    "away": "Pro Palazzolo"
+  },
+  {
+    "eventId": "1456291",
+    "sport": "football",
+    "league": "Serie D - Girone I",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "AC Palermo",
+    "away": "Sancataldese"
+  },
+  {
+    "eventId": "1467855",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Como U19",
+    "away": "Vicenza U19"
+  },
+  {
+    "eventId": "1467856",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Cittadella U19",
+    "away": "Venezia U19"
+  },
+  {
+    "eventId": "1467857",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Padova U19",
+    "away": "Renate U19"
+  },
+  {
+    "eventId": "1467862",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Spezia U19",
+    "away": "Monopoli U19"
+  },
+  {
+    "eventId": "1467863",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Salernitana U19",
+    "away": "Bari U19"
+  },
+  {
+    "eventId": "1467864",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Ternana U19",
+    "away": "Palermo U19"
+  },
+  {
+    "eventId": "1468814",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Sampdoria U19",
+    "away": "Virtus Entella U19"
+  },
+  {
+    "eventId": "1468881",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Catanzaro U19",
+    "away": "Pisa U19"
+  },
+  {
+    "eventId": "1468924",
+    "sport": "football",
+    "league": "Campionato Primavera - 2",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Brescia U19",
+    "away": "AlbinoLeffe U19"
+  },
+  {
+    "eventId": "1502328",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "CSKA Sofia",
+    "away": "Mlada Boleslav"
+  },
+  {
+    "eventId": "1503927",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "FC Vaduz",
+    "away": "SC Kriens"
+  },
+  {
+    "eventId": "1508137",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T13:30:00+00:00",
+    "home": "Śląsk Wrocław II",
+    "away": "Lech Poznań II"
+  },
+  {
+    "eventId": "1436053",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T13:35:00+00:00",
+    "home": "Al-Fayha",
+    "away": "Damac"
+  },
+  {
+    "eventId": "1500253",
+    "sport": "football",
+    "league": "Ligue A",
+    "startTime": "2026-01-17T13:45:00+00:00",
+    "home": "Royal Vision",
+    "away": "Ngozi City"
+  },
+  {
+    "eventId": "1508294",
+    "sport": "football",
+    "league": "U19 Divisie 1",
+    "startTime": "2026-01-17T13:45:00+00:00",
+    "home": "NEC Nijmegen U19",
+    "away": "ADO Den Haag U19"
+  },
+  {
+    "eventId": "1378073",
+    "sport": "football",
+    "league": "Serie A",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Udinese",
+    "away": "Inter"
+  },
+  {
+    "eventId": "1379851",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Clachnacuddin",
+    "away": "Brechin"
+  },
+  {
+    "eventId": "1385473",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Queen's University",
+    "away": "H&W Welders"
+  },
+  {
+    "eventId": "1389500",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Portstewart",
+    "away": "Dergview"
+  },
+  {
+    "eventId": "1389501",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Coagh United",
+    "away": "Newry City AFC"
+  },
+  {
+    "eventId": "1389502",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Banbridge Town",
+    "away": "Rathfriland"
+  },
+  {
+    "eventId": "1389503",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Strabane Athletic",
+    "away": "Knockbreda"
+  },
+  {
+    "eventId": "1394587",
+    "sport": "football",
+    "league": "Süper Lig",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Başakşehir",
+    "away": "Fatih Karagümrük"
+  },
+  {
+    "eventId": "1395558",
+    "sport": "football",
+    "league": "FAW Championship",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Brickfield Rangers",
+    "away": "Denbigh Town"
+  },
+  {
+    "eventId": "1398127",
+    "sport": "football",
+    "league": "Segunda Liga",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Penafiel",
+    "away": "Portimonense"
+  },
+  {
+    "eventId": "1399132",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Kozakken Boys",
+    "away": "ACV"
+  },
+  {
+    "eventId": "1399134",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Spakenburg",
+    "away": "Sparta Rotterdam II"
+  },
+  {
+    "eventId": "1404475",
+    "sport": "football",
+    "league": "Campionato Primavera - 1",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Hellas Verona U20",
+    "away": "Atalanta U20"
+  },
+  {
+    "eventId": "1404476",
+    "sport": "football",
+    "league": "Campionato Primavera - 1",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Monza U20",
+    "away": "Torino U20"
+  },
+  {
+    "eventId": "1415710",
+    "sport": "football",
+    "league": "1. Division",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Ethnikos Achna",
+    "away": "Aris"
+  },
+  {
+    "eventId": "1417490",
+    "sport": "football",
+    "league": "Campionato",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Cailungo",
+    "away": "Folgore"
+  },
+  {
+    "eventId": "1417491",
+    "sport": "football",
+    "league": "Campionato",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Domagnano",
+    "away": "Pennarossa"
+  },
+  {
+    "eventId": "1417492",
+    "sport": "football",
+    "league": "Campionato",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Faetano",
+    "away": "Murata"
+  },
+  {
+    "eventId": "1417493",
+    "sport": "football",
+    "league": "Campionato",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Fiorentino",
+    "away": "Tre Penne"
+  },
+  {
+    "eventId": "1417496",
+    "sport": "football",
+    "league": "Campionato",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "San Marino Academy",
+    "away": "Libertas"
+  },
+  {
+    "eventId": "1419781",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Monza",
+    "away": "Frosinone"
+  },
+  {
+    "eventId": "1419783",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Avellino",
+    "away": "Carrarese"
+  },
+  {
+    "eventId": "1419785",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Padova",
+    "away": "Mantova"
+  },
+  {
+    "eventId": "1419786",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Venezia",
+    "away": "Catanzaro"
+  },
+  {
+    "eventId": "1419787",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Empoli",
+    "away": "Sudtirol"
+  },
+  {
+    "eventId": "1421599",
+    "sport": "football",
+    "league": "Feminine Division 1",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Saint-Étienne W",
+    "away": "Nantes W"
+  },
+  {
+    "eventId": "1425514",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Colmar",
+    "away": "Chambly Thelle FC"
+  },
+  {
+    "eventId": "1434453",
+    "sport": "football",
+    "league": "Premier League 2 Division One",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Liverpool U21",
+    "away": "Arsenal U21"
+  },
+  {
+    "eventId": "1438011",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "URK",
+    "away": "Hercules"
+  },
+  {
+    "eventId": "1438012",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "DVS 33 Ermelo",
+    "away": "ADO '20"
+  },
+  {
+    "eventId": "1438013",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "TEC",
+    "away": "Sportlust '46"
+  },
+  {
+    "eventId": "1438014",
+    "sport": "football",
+    "league": "Derde Divisie - Saturday",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Sparta Nijkerk",
+    "away": "SC Genemuiden"
+  },
+  {
+    "eventId": "1438318",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Kloetinge",
+    "away": "TOGB"
+  },
+  {
+    "eventId": "1441773",
+    "sport": "football",
+    "league": "2. Lig",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Ankaragücü",
+    "away": "Adana 1954 FK"
+  },
+  {
+    "eventId": "1442844",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Hayes & Yeading United",
+    "away": "Bognor Regis Town"
+  },
+  {
+    "eventId": "1442845",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Metropolitan Police",
+    "away": "Harrow Borough"
+  },
+  {
+    "eventId": "1442846",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Hendon",
+    "away": "AFC Portchester"
+  },
+  {
+    "eventId": "1442847",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Moneyfields",
+    "away": "Kingstonian"
+  },
+  {
+    "eventId": "1442848",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Leatherhead",
+    "away": "Binfield"
+  },
+  {
+    "eventId": "1442849",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "South Park",
+    "away": "Southall"
+  },
+  {
+    "eventId": "1442850",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Fareham Town",
+    "away": "Hartley Wintney"
+  },
+  {
+    "eventId": "1442851",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Hanworth Villa",
+    "away": "Horndean"
+  },
+  {
+    "eventId": "1442852",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Westfield (Surrey)",
+    "away": "Littlehampton Town"
+  },
+  {
+    "eventId": "1442853",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Ascot United",
+    "away": "Egham Town"
+  },
+  {
+    "eventId": "1442854",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South Central",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Raynes Park Vale",
+    "away": "Bedfont Sports"
+  },
+  {
+    "eventId": "1448814",
+    "sport": "football",
+    "league": "3. Lig - Group 3",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Giresunspor",
+    "away": "Çayelispor"
+  },
+  {
+    "eventId": "1448815",
+    "sport": "football",
+    "league": "3. Lig - Group 3",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Yeni Orduspor",
+    "away": "Amasyaspor 1968"
+  },
+  {
+    "eventId": "1449056",
+    "sport": "football",
+    "league": "3. Lig - Group 4",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Karsiyaka",
+    "away": "Kütahyaspor"
+  },
+  {
+    "eventId": "1449059",
+    "sport": "football",
+    "league": "3. Lig - Group 4",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Denizli İYG",
+    "away": "Nazilli Spor"
+  },
+  {
+    "eventId": "1471661",
+    "sport": "football",
+    "league": "Girabola",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Recreativo do Libolo",
+    "away": "1º de Agosto"
+  },
+  {
+    "eventId": "1475069",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Santa Green",
+    "away": "Black Lions"
+  },
+  {
+    "eventId": "1475071",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Sua Flamingoes",
+    "away": "Matebele"
+  },
+  {
+    "eventId": "1475072",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "BDF XI",
+    "away": "Gaborone United"
+  },
+  {
+    "eventId": "1475074",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Nico United",
+    "away": "Orapa United"
+  },
+  {
+    "eventId": "1479706",
+    "sport": "football",
+    "league": "Serie A Women",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Fiorentina W",
+    "away": "Genoa W"
+  },
+  {
+    "eventId": "1488658",
+    "sport": "football",
+    "league": "League Cup",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Haras El Hodood",
+    "away": "Al Ittihad"
+  },
+  {
+    "eventId": "1488660",
+    "sport": "football",
+    "league": "League Cup",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Masr",
+    "away": "Kahraba Ismailia"
+  },
+  {
+    "eventId": "1501887",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "AIK Stockholm",
+    "away": "Degerfors IF"
+  },
+  {
+    "eventId": "1501888",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Sogndal",
+    "away": "Førde"
+  },
+  {
+    "eventId": "1502107",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "IFK Norrkoping",
+    "away": "Lindo FF"
+  },
+  {
+    "eventId": "1503912",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "HNK Hajduk Split",
+    "away": "Siroki Brijeg"
+  },
+  {
+    "eventId": "1503928",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Treaty United",
+    "away": "Sligo Rovers"
+  },
+  {
+    "eventId": "1504165",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Waterford",
+    "away": "Riverstown FC"
+  },
+  {
+    "eventId": "1505809",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "IF Elfsborg",
+    "away": "B 93"
+  },
+  {
+    "eventId": "1506734",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Bantu",
+    "away": "Linare"
+  },
+  {
+    "eventId": "1507602",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Nizhny Novgorod",
+    "away": "Chelyabinsk"
+  },
+  {
+    "eventId": "1507605",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Laagri",
+    "away": "PK-35"
+  },
+  {
+    "eventId": "1508290",
+    "sport": "football",
+    "league": "Cup",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "Jwaaya FC",
+    "away": "Safa"
+  },
+  {
+    "eventId": "1508295",
+    "sport": "football",
+    "league": "U19 Divisie 1",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "AZ U19",
+    "away": "Feyenoord U19"
+  },
+  {
+    "eventId": "1508296",
+    "sport": "football",
+    "league": "U19 Divisie 1",
+    "startTime": "2026-01-17T14:00:00+00:00",
+    "home": "FC Volendam U19",
+    "away": "Ajax U19"
+  },
+  {
+    "eventId": "1437432",
+    "sport": "football",
+    "league": "Division 1",
+    "startTime": "2026-01-17T14:10:00+00:00",
+    "home": "Jeddah Club",
+    "away": "Al Taee"
+  },
+  {
+    "eventId": "1399135",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T14:15:00+00:00",
+    "home": "AFC Amsterdam",
+    "away": "Ijsselmeervogels"
+  },
+  {
+    "eventId": "1388462",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Borussia Dortmund",
+    "away": "FC St. Pauli"
+  },
+  {
+    "eventId": "1388463",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "1. FC Köln",
+    "away": "FSV Mainz 05"
+  },
+  {
+    "eventId": "1388464",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Hamburger SV",
+    "away": "Borussia Mönchengladbach"
+  },
+  {
+    "eventId": "1388465",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "1899 Hoffenheim",
+    "away": "Bayer Leverkusen"
+  },
+  {
+    "eventId": "1388469",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "VfL Wolfsburg",
+    "away": "1. FC Heidenheim"
+  },
+  {
+    "eventId": "1399131",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Almere City II",
+    "away": "Quick Boys"
+  },
+  {
+    "eventId": "1399136",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Katwijk",
+    "away": "RKAV Volendam"
+  },
+  {
+    "eventId": "1432360",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 2",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Eibar II",
+    "away": "SD Logroñés"
+  },
+  {
+    "eventId": "1458675",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 3",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Guarnizo",
+    "away": "Laredo"
+  },
+  {
+    "eventId": "1462399",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Cortes",
+    "away": "Bidezarra"
+  },
+  {
+    "eventId": "1462401",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Valle Egüés",
+    "away": "Pamplona"
+  },
+  {
+    "eventId": "1471801",
+    "sport": "football",
+    "league": "Girabola",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Redonda FC",
+    "away": "Desportivo Huíla"
+  },
+  {
+    "eventId": "1491610",
+    "sport": "football",
+    "league": "Stars League",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Al-Rayyan SC",
+    "away": "Al Shamal"
+  },
+  {
+    "eventId": "1503926",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Zaglebie Lubin",
+    "away": "Podbrezová"
+  },
+  {
+    "eventId": "1506312",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Chemnitzer FC",
+    "away": "Wuppertaler SV"
+  },
+  {
+    "eventId": "1506413",
+    "sport": "football",
+    "league": "Iraqi League",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Al Quwa Al Jawiya",
+    "away": "Al Shorta"
+  },
+  {
+    "eventId": "1506414",
+    "sport": "football",
+    "league": "Iraqi League",
+    "startTime": "2026-01-17T14:30:00+00:00",
+    "home": "Duhok",
+    "away": "Diyala"
+  },
+  {
+    "eventId": "1460264",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 8",
+    "startTime": "2026-01-17T14:45:00+00:00",
+    "home": "La Virgen del Camino",
+    "away": "Cultural Leonesa II"
+  },
+  {
+    "eventId": "1462402",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T14:45:00+00:00",
+    "home": "Ardoi",
+    "away": "Subiza"
+  },
+  {
+    "eventId": "1379181",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chelsea",
+    "away": "Brentford"
+  },
+  {
+    "eventId": "1379182",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Leeds",
+    "away": "Fulham"
+  },
+  {
+    "eventId": "1379183",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Liverpool",
+    "away": "Burnley"
+  },
+  {
+    "eventId": "1379186",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sunderland",
+    "away": "Crystal Palace"
+  },
+  {
+    "eventId": "1379187",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tottenham",
+    "away": "West Ham"
+  },
+  {
+    "eventId": "1379850",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Buckie Thistle",
+    "away": "Rothes"
+  },
+  {
+    "eventId": "1379852",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Deveronvale",
+    "away": "Banks O' Dee"
+  },
+  {
+    "eventId": "1379853",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Formartine United",
+    "away": "Strathspey Thistle"
+  },
+  {
+    "eventId": "1379854",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Huntly",
+    "away": "Keith"
+  },
+  {
+    "eventId": "1379855",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lossiemouth",
+    "away": "Brora Rangers"
+  },
+  {
+    "eventId": "1379856",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Nairn County",
+    "away": "Fraserburgh"
+  },
+  {
+    "eventId": "1379857",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Turriff United",
+    "away": "Forres Mechanics"
+  },
+  {
+    "eventId": "1379858",
+    "sport": "football",
+    "league": "Football League - Highland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Wick Academy",
+    "away": "Inverurie Loco Works"
+  },
+  {
+    "eventId": "1382588",
+    "sport": "football",
+    "league": "Jupiler Pro League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Zulte Waregem",
+    "away": "Genk"
+  },
+  {
+    "eventId": "1383146",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Peterhead",
+    "away": "Hamilton Academical"
+  },
+  {
+    "eventId": "1383324",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Annan Athletic",
+    "away": "Dumbarton"
+  },
+  {
+    "eventId": "1383326",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stirling Albion",
+    "away": "East Kilbride"
+  },
+  {
+    "eventId": "1383327",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stranraer",
+    "away": "Clyde"
+  },
+  {
+    "eventId": "1383328",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Spartans",
+    "away": "Forfar Athletic"
+  },
+  {
+    "eventId": "1385275",
+    "sport": "football",
+    "league": "Premiership",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bangor",
+    "away": "Portadown"
+  },
+  {
+    "eventId": "1385276",
+    "sport": "football",
+    "league": "Premiership",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cliftonville FC",
+    "away": "Carrick Rangers"
+  },
+  {
+    "eventId": "1385277",
+    "sport": "football",
+    "league": "Premiership",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Coleraine FC",
+    "away": "Crusaders FC"
+  },
+  {
+    "eventId": "1385278",
+    "sport": "football",
+    "league": "Premiership",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dungannon Swifts",
+    "away": "Ballymena United"
+  },
+  {
+    "eventId": "1385279",
+    "sport": "football",
+    "league": "Premiership",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Glenavon FC",
+    "away": "Glentoran"
+  },
+  {
+    "eventId": "1385474",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Armagh City",
+    "away": "Warrenpoint Town"
+  },
+  {
+    "eventId": "1385476",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Institute",
+    "away": "Dundela"
+  },
+  {
+    "eventId": "1385477",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Loughgall",
+    "away": "Annagh United"
+  },
+  {
+    "eventId": "1385478",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Newington Youth",
+    "away": "Ards"
+  },
+  {
+    "eventId": "1386308",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Accrington ST",
+    "away": "Milton Keynes Dons"
+  },
+  {
+    "eventId": "1386309",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bristol Rovers",
+    "away": "Colchester"
+  },
+  {
+    "eventId": "1386311",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Crawley Town",
+    "away": "Notts County"
+  },
+  {
+    "eventId": "1386312",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Crewe",
+    "away": "Barrow"
+  },
+  {
+    "eventId": "1386313",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Fleetwood Town",
+    "away": "Cambridge United"
+  },
+  {
+    "eventId": "1386314",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Grimsby",
+    "away": "Barnet"
+  },
+  {
+    "eventId": "1386315",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Oldham",
+    "away": "Cheltenham"
+  },
+  {
+    "eventId": "1386316",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Shrewsbury",
+    "away": "Harrogate Town"
+  },
+  {
+    "eventId": "1386317",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Swindon Town",
+    "away": "Salford City"
+  },
+  {
+    "eventId": "1386319",
+    "sport": "football",
+    "league": "League Two",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Gillingham",
+    "away": "Newport County"
+  },
+  {
+    "eventId": "1386863",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Oxford United",
+    "away": "Bristol City"
+  },
+  {
+    "eventId": "1386864",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Wrexham",
+    "away": "Norwich"
+  },
+  {
+    "eventId": "1386867",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Preston",
+    "away": "Derby"
+  },
+  {
+    "eventId": "1386869",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Charlton",
+    "away": "Sheffield Utd"
+  },
+  {
+    "eventId": "1386870",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sheffield Wednesday",
+    "away": "Portsmouth"
+  },
+  {
+    "eventId": "1386873",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Southampton",
+    "away": "Hull City"
+  },
+  {
+    "eventId": "1386874",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stoke City",
+    "away": "QPR"
+  },
+  {
+    "eventId": "1387415",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Wimbledon",
+    "away": "Doncaster"
+  },
+  {
+    "eventId": "1387416",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Barnsley",
+    "away": "Blackpool"
+  },
+  {
+    "eventId": "1387417",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Burton Albion",
+    "away": "Huddersfield"
+  },
+  {
+    "eventId": "1387418",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Exeter City",
+    "away": "Stevenage"
+  },
+  {
+    "eventId": "1387419",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Leyton Orient",
+    "away": "Reading"
+  },
+  {
+    "eventId": "1387420",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Luton",
+    "away": "Lincoln"
+  },
+  {
+    "eventId": "1387421",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Mansfield Town",
+    "away": "Port Vale"
+  },
+  {
+    "eventId": "1387422",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Northampton",
+    "away": "Wycombe"
+  },
+  {
+    "eventId": "1387423",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Peterborough",
+    "away": "Plymouth"
+  },
+  {
+    "eventId": "1387424",
+    "sport": "football",
+    "league": "League One",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stockport County",
+    "away": "Rotherham"
+  },
+  {
+    "eventId": "1389504",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Oxford Sunnyside",
+    "away": "Lisburn Distillery"
+  },
+  {
+    "eventId": "1389505",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Moyola Park",
+    "away": "Ballyclare Comrades"
+  },
+  {
+    "eventId": "1389506",
+    "sport": "football",
+    "league": "Premier Intermediate League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dollingstown",
+    "away": "Ballymacash Rangers"
+  },
+  {
+    "eventId": "1392700",
+    "sport": "football",
+    "league": "Challenger Pro League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "RSC Anderlecht II",
+    "away": "KAA Gent II"
+  },
+  {
+    "eventId": "1399710",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Brackley Town",
+    "away": "Yeovil Town"
+  },
+  {
+    "eventId": "1399711",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Braintree",
+    "away": "Boreham Wood"
+  },
+  {
+    "eventId": "1399712",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Eastleigh",
+    "away": "Aldershot Town"
+  },
+  {
+    "eventId": "1399713",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "FC Halifax Town",
+    "away": "Boston United"
+  },
+  {
+    "eventId": "1399714",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Gateshead",
+    "away": "Rochdale"
+  },
+  {
+    "eventId": "1399716",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Morecambe",
+    "away": "Scunthorpe"
+  },
+  {
+    "eventId": "1399717",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Solihull Moors",
+    "away": "Carlisle"
+  },
+  {
+    "eventId": "1399718",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sutton Utd",
+    "away": "Forest Green"
+  },
+  {
+    "eventId": "1399719",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Truro City",
+    "away": "Tamworth"
+  },
+  {
+    "eventId": "1399720",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Wealdstone",
+    "away": "Woking"
+  },
+  {
+    "eventId": "1401803",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chelmsford City",
+    "away": "Weston-super-Mare"
+  },
+  {
+    "eventId": "1401804",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chippenham Town",
+    "away": "Ebbsfleet United"
+  },
+  {
+    "eventId": "1401805",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dagenham & Redbridge",
+    "away": "Salisbury"
+  },
+  {
+    "eventId": "1401806",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dover",
+    "away": "Bath City"
+  },
+  {
+    "eventId": "1401807",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Farnborough",
+    "away": "Chesham United"
+  },
+  {
+    "eventId": "1401808",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Hampton & Richmond",
+    "away": "Dorking Wanderers"
+  },
+  {
+    "eventId": "1401809",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Hemel Hempstead Town",
+    "away": "Slough Town"
+  },
+  {
+    "eventId": "1401810",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Hornchurch",
+    "away": "Eastbourne Borough"
+  },
+  {
+    "eventId": "1401811",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Maidenhead",
+    "away": "Enfield Town"
+  },
+  {
+    "eventId": "1401812",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tonbridge Angels",
+    "away": "AFC Totton"
+  },
+  {
+    "eventId": "1401813",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Torquay",
+    "away": "Maidstone Utd"
+  },
+  {
+    "eventId": "1401814",
+    "sport": "football",
+    "league": "National League - South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Worthing",
+    "away": "Horsham"
+  },
+  {
+    "eventId": "1402355",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Fylde",
+    "away": "Scarborough Athletic"
+  },
+  {
+    "eventId": "1402356",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bedford Town",
+    "away": "Southport"
+  },
+  {
+    "eventId": "1402357",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Buxton",
+    "away": "Marine"
+  },
+  {
+    "eventId": "1402358",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chester",
+    "away": "Chorley"
+  },
+  {
+    "eventId": "1402359",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Curzon Ashton",
+    "away": "AFC Telford United"
+  },
+  {
+    "eventId": "1402360",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Darlington 1883",
+    "away": "Alfreton Town"
+  },
+  {
+    "eventId": "1402361",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Kidderminster Harriers",
+    "away": "Worksop Town"
+  },
+  {
+    "eventId": "1402362",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "King's Lynn Town",
+    "away": "Hereford"
+  },
+  {
+    "eventId": "1402363",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Macclesfield",
+    "away": "Oxford City"
+  },
+  {
+    "eventId": "1402364",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Merthyr Town",
+    "away": "Peterborough Sports"
+  },
+  {
+    "eventId": "1402365",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "South Shields",
+    "away": "Leamington"
+  },
+  {
+    "eventId": "1402366",
+    "sport": "football",
+    "league": "National League - North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Spennymoor Town",
+    "away": "Radcliffe"
+  },
+  {
+    "eventId": "1405153",
+    "sport": "football",
+    "league": "Football League - Lowland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Albion Rovers",
+    "away": "Caledonian Braves"
+  },
+  {
+    "eventId": "1405191",
+    "sport": "football",
+    "league": "Football League - Lowland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cumbernauld Colts",
+    "away": "Bonnyrigg Rose Athletic"
+  },
+  {
+    "eventId": "1405193",
+    "sport": "football",
+    "league": "Football League - Lowland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Civil Service Strollers",
+    "away": "Berwick Rangers"
+  },
+  {
+    "eventId": "1405231",
+    "sport": "football",
+    "league": "Football League - Lowland League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cowdenbeath",
+    "away": "Clydebank"
+  },
+  {
+    "eventId": "1413532",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group A",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bragança",
+    "away": "Celoricense"
+  },
+  {
+    "eventId": "1413534",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group A",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Camacha",
+    "away": "Mirandela"
+  },
+  {
+    "eventId": "1413536",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group A",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Vianense",
+    "away": "Tirsense"
+  },
+  {
+    "eventId": "1413537",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group A",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AR São Martinho",
+    "away": "Chaves II"
+  },
+  {
+    "eventId": "1413691",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Florgrade",
+    "away": "Leça"
+  },
+  {
+    "eventId": "1413692",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Vila Meã",
+    "away": "Beira-Mar"
+  },
+  {
+    "eventId": "1413693",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cinfães",
+    "away": "Vila Real"
+  },
+  {
+    "eventId": "1413694",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Alpendorada",
+    "away": "Rebordosa"
+  },
+  {
+    "eventId": "1413695",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Anadia",
+    "away": "Salgueiros"
+  },
+  {
+    "eventId": "1413771",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group B",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Gouveia",
+    "away": "Resende"
+  },
+  {
+    "eventId": "1413876",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Peniche",
+    "away": "Oliveira Hospital"
+  },
+  {
+    "eventId": "1413877",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Os Marialvas",
+    "away": "Eléctrico"
+  },
+  {
+    "eventId": "1413878",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Mortágua",
+    "away": "UD da Serra"
+  },
+  {
+    "eventId": "1413879",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Naval 1893",
+    "away": "Benfica Castelo Branco"
+  },
+  {
+    "eventId": "1413880",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Samora Correir",
+    "away": "Marinhense"
+  },
+  {
+    "eventId": "1413882",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lajense",
+    "away": "Vitória de Sernache"
+  },
+  {
+    "eventId": "1414056",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Alcochetense",
+    "away": "Comércio Indústria"
+  },
+  {
+    "eventId": "1414057",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Oriental Lisboa",
+    "away": "Moncarapachense"
+  },
+  {
+    "eventId": "1414058",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "O Elvas",
+    "away": "Atlético Malveira"
+  },
+  {
+    "eventId": "1414059",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lagoa",
+    "away": "FC Serpa"
+  },
+  {
+    "eventId": "1414060",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "FC Alverca II",
+    "away": "Vasco da Gama Vidigueira"
+  },
+  {
+    "eventId": "1414061",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Juventude Évora",
+    "away": "Portimonense B"
+  },
+  {
+    "eventId": "1414062",
+    "sport": "football",
+    "league": "Campeonato de Portugal Prio - Group D",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Louletano",
+    "away": "Sintrense"
+  },
+  {
+    "eventId": "1415372",
+    "sport": "football",
+    "league": "1st Division",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Skenderbeu Korce",
+    "away": "Luftëtari"
+  },
+  {
+    "eventId": "1415711",
+    "sport": "football",
+    "league": "1. Division",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Akritas",
+    "away": "AEL"
+  },
+  {
+    "eventId": "1424159",
+    "sport": "football",
+    "league": "Liga 3",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "SC Braga B",
+    "away": "São João Ver"
+  },
+  {
+    "eventId": "1424250",
+    "sport": "football",
+    "league": "Liga 3",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "SC Covilha",
+    "away": "Atlético CP"
+  },
+  {
+    "eventId": "1424251",
+    "sport": "football",
+    "league": "Liga 3",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lusitano Évora 1911",
+    "away": "Caldas"
+  },
+  {
+    "eventId": "1424688",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Hashtag United",
+    "away": "Cray Wanderers"
+  },
+  {
+    "eventId": "1424689",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dartford",
+    "away": "Aveley"
+  },
+  {
+    "eventId": "1424690",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Carshalton Athletic",
+    "away": "Chatham Town"
+  },
+  {
+    "eventId": "1424692",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "St Albans City",
+    "away": "Whitehawk"
+  },
+  {
+    "eventId": "1424693",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dulwich Hamlet",
+    "away": "Cheshunt"
+  },
+  {
+    "eventId": "1424694",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cray Valley PM",
+    "away": "Potters Bar Town"
+  },
+  {
+    "eventId": "1424695",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Billericay Town",
+    "away": "Brentwood Town"
+  },
+  {
+    "eventId": "1424696",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ramsgate",
+    "away": "Lewes"
+  },
+  {
+    "eventId": "1424697",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chichester City",
+    "away": "Wingate & Finchley"
+  },
+  {
+    "eventId": "1424698",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Folkestone Invicta",
+    "away": "Burgess Hill Town"
+  },
+  {
+    "eventId": "1425269",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Limonest",
+    "away": "Creteil"
+  },
+  {
+    "eventId": "1427981",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Sudbury",
+    "away": "Harborough Town"
+  },
+  {
+    "eventId": "1427982",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Kettering Town",
+    "away": "Alvechurch"
+  },
+  {
+    "eventId": "1427983",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Redditch United",
+    "away": "Bishop's Stortford"
+  },
+  {
+    "eventId": "1427984",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Leiston",
+    "away": "Stourbridge"
+  },
+  {
+    "eventId": "1427985",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Needham Market",
+    "away": "Stratford Town"
+  },
+  {
+    "eventId": "1427986",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Banbury United",
+    "away": "St Ives Town"
+  },
+  {
+    "eventId": "1427987",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Halesowen Town",
+    "away": "Royston Town"
+  },
+  {
+    "eventId": "1427988",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Barwell",
+    "away": "Real Bedford"
+  },
+  {
+    "eventId": "1427989",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Worcester City",
+    "away": "Stamford"
+  },
+  {
+    "eventId": "1427990",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bury Town",
+    "away": "Bromsgrove Sporting"
+  },
+  {
+    "eventId": "1427991",
+    "sport": "football",
+    "league": "Non League Premier - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Quorn",
+    "away": "Spalding United"
+  },
+  {
+    "eventId": "1428443",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Weymouth",
+    "away": "Walton & Hersham"
+  },
+  {
+    "eventId": "1428444",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Gosport Borough",
+    "away": "Taunton Town"
+  },
+  {
+    "eventId": "1428445",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Havant & Wville",
+    "away": "Gloucester City"
+  },
+  {
+    "eventId": "1428446",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bracknell Town",
+    "away": "Sholing"
+  },
+  {
+    "eventId": "1428447",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chertsey Town",
+    "away": "Dorchester Town"
+  },
+  {
+    "eventId": "1428448",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tiverton Town",
+    "away": "Hanwell Town"
+  },
+  {
+    "eventId": "1428449",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Poole Town",
+    "away": "Yate Town"
+  },
+  {
+    "eventId": "1428450",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Wimborne Town",
+    "away": "Hungerford Town"
+  },
+  {
+    "eventId": "1428451",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Berkhamsted",
+    "away": "Basingstoke Town"
+  },
+  {
+    "eventId": "1428452",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Uxbridge",
+    "away": "Plymouth Parkway"
+  },
+  {
+    "eventId": "1428453",
+    "sport": "football",
+    "league": "Non League Premier - Southern South",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Farnham Town",
+    "away": "Evesham United"
+  },
+  {
+    "eventId": "1428879",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "United of Manchester",
+    "away": "Warrington Town"
+  },
+  {
+    "eventId": "1428880",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Rylands",
+    "away": "Guiseley AFC"
+  },
+  {
+    "eventId": "1428881",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Gainsborough Trinity",
+    "away": "Morpeth Town"
+  },
+  {
+    "eventId": "1428882",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bamber Bridge",
+    "away": "Hyde United"
+  },
+  {
+    "eventId": "1428883",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stockton Town",
+    "away": "Hednesford Town"
+  },
+  {
+    "eventId": "1428884",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Hebburn Town",
+    "away": "Ashton United"
+  },
+  {
+    "eventId": "1428885",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ilkeston Town",
+    "away": "Lancaster City"
+  },
+  {
+    "eventId": "1428886",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Rushall Olympic",
+    "away": "Stocksbridge Park Steels"
+  },
+  {
+    "eventId": "1428887",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Prescot Cables",
+    "away": "Whitby Town"
+  },
+  {
+    "eventId": "1428888",
+    "sport": "football",
+    "league": "Non League Premier - Northern",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Leek Town",
+    "away": "Cleethorpes Town"
+  },
+  {
+    "eventId": "1434164",
+    "sport": "football",
+    "league": "Non League Premier - Isthmian",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Canvey Island",
+    "away": "Welling United"
+  },
+  {
+    "eventId": "1435003",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Hitchin Town",
+    "away": "Marlow"
+  },
+  {
+    "eventId": "1435004",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Leverstock Green",
+    "away": "Welwyn Garden City"
+  },
+  {
+    "eventId": "1435005",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Rayners Lane",
+    "away": "Barton Rovers"
+  },
+  {
+    "eventId": "1435006",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Northwood",
+    "away": "Enfield 1893"
+  },
+  {
+    "eventId": "1435007",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Aylesbury United",
+    "away": "AFC Dunstable"
+  },
+  {
+    "eventId": "1435008",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Beaconsfield Town",
+    "away": "Leighton Town"
+  },
+  {
+    "eventId": "1435009",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Thame United",
+    "away": "Biggleswade"
+  },
+  {
+    "eventId": "1435010",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ware",
+    "away": "Hadley"
+  },
+  {
+    "eventId": "1435011",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Milton Keynes Irish",
+    "away": "Hertford Town"
+  },
+  {
+    "eventId": "1435012",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stotfold",
+    "away": "Flackwell Heath"
+  },
+  {
+    "eventId": "1443306",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lowestoft Town",
+    "away": "Mildenhall Town"
+  },
+  {
+    "eventId": "1443307",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Takeley",
+    "away": "Concord Rangers"
+  },
+  {
+    "eventId": "1443308",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Brightlingsea Regent",
+    "away": "Felixstowe & Walton Utd"
+  },
+  {
+    "eventId": "1443309",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tilbury",
+    "away": "Bowers & Pitsea"
+  },
+  {
+    "eventId": "1443310",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cambridge City",
+    "away": "Grays Athletic"
+  },
+  {
+    "eventId": "1443311",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Walthamstow",
+    "away": "Witham Town"
+  },
+  {
+    "eventId": "1443312",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Newmarket Town",
+    "away": "Gorleston"
+  },
+  {
+    "eventId": "1443313",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Wroxham",
+    "away": "Maldon & Tiptree"
+  },
+  {
+    "eventId": "1443314",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Heybridge Swifts",
+    "away": "Redbridge"
+  },
+  {
+    "eventId": "1443315",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stanway Rovers",
+    "away": "Waltham Abbey"
+  },
+  {
+    "eventId": "1443316",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian North",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Brantham Athletic",
+    "away": "Downham Town"
+  },
+  {
+    "eventId": "1443802",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Mickleover Sports",
+    "away": "Coleshill Town"
+  },
+  {
+    "eventId": "1443803",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Belper Town",
+    "away": "Corby Town"
+  },
+  {
+    "eventId": "1443804",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Rushden & Diamonds",
+    "away": "Sutton Coldfield Town"
+  },
+  {
+    "eventId": "1443805",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Anstey Nomads",
+    "away": "Coventry Sphinx"
+  },
+  {
+    "eventId": "1443806",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Racing Club Warwick",
+    "away": "Long Eaton United"
+  },
+  {
+    "eventId": "1443807",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "St Neots Town",
+    "away": "Carlton Town"
+  },
+  {
+    "eventId": "1443808",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Boldmere St. Michaels",
+    "away": "Rugby Town"
+  },
+  {
+    "eventId": "1443809",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Shepshed Dynamo",
+    "away": "Bourne Town"
+  },
+  {
+    "eventId": "1443810",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lichfield City",
+    "away": "Wellingborough Town"
+  },
+  {
+    "eventId": "1443811",
+    "sport": "football",
+    "league": "Non League Div One - Northern Midlands",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Rugby Borough",
+    "away": "Bedworth United"
+  },
+  {
+    "eventId": "1444468",
+    "sport": "football",
+    "league": "Non League Div One - Southern Central",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Biggleswade Town",
+    "away": "London Lions"
+  },
+  {
+    "eventId": "1445774",
+    "sport": "football",
+    "league": "NPFL",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bendel Insurance",
+    "away": "El Kanemi Warriors"
+  },
+  {
+    "eventId": "1452670",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 3",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Castellón II",
+    "away": "Atlètic Lleida"
+  },
+  {
+    "eventId": "1459343",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 5",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "L'Escala",
+    "away": "Grama"
+  },
+  {
+    "eventId": "1459648",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 6",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Atzeneta",
+    "away": "Hércules II"
+  },
+  {
+    "eventId": "1459651",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 6",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "RC Catarroja",
+    "away": "Villarreal III"
+  },
+  {
+    "eventId": "1460563",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 9",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "UD Melilla II",
+    "away": "Huétor Vega"
+  },
+  {
+    "eventId": "1461790",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 13",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Santa Cruz",
+    "away": "Olímpico Totana"
+  },
+  {
+    "eventId": "1462398",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Beti Kozkor",
+    "away": "Atlético Artajonés"
+  },
+  {
+    "eventId": "1462400",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Oberena",
+    "away": "Izarra"
+  },
+  {
+    "eventId": "1462403",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 15",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Huarte",
+    "away": "Txantrea"
+  },
+  {
+    "eventId": "1462708",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 16",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Villegas",
+    "away": "Calahorra"
+  },
+  {
+    "eventId": "1463315",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 18",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Guadalajara II",
+    "away": "Marchamalo"
+  },
+  {
+    "eventId": "1468643",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Vision",
+    "away": "Medeama"
+  },
+  {
+    "eventId": "1471663",
+    "sport": "football",
+    "league": "Girabola",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Interclube",
+    "away": "Wiliete"
+  },
+  {
+    "eventId": "1473229",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bury",
+    "away": "Darlaston Town"
+  },
+  {
+    "eventId": "1473230",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Witton Albion",
+    "away": "Newcastle Town"
+  },
+  {
+    "eventId": "1473231",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bootle",
+    "away": "Stafford Rangers"
+  },
+  {
+    "eventId": "1473232",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Atherton Collieries",
+    "away": "Mossley"
+  },
+  {
+    "eventId": "1473233",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Chasetown",
+    "away": "Runcorn Linnets"
+  },
+  {
+    "eventId": "1473234",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Congleton Town",
+    "away": "Nantwich Town"
+  },
+  {
+    "eventId": "1473235",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stalybridge Celtic",
+    "away": "Kidsgrove Athletic"
+  },
+  {
+    "eventId": "1473236",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sporting Khalsa",
+    "away": "Trafford"
+  },
+  {
+    "eventId": "1473237",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Avro",
+    "away": "Lower Breck"
+  },
+  {
+    "eventId": "1473238",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Vauxhall Motors",
+    "away": "Shifnal Town FC"
+  },
+  {
+    "eventId": "1473239",
+    "sport": "football",
+    "league": "Non League Div One - Northern West",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Clitheroe",
+    "away": "Wythenshawe Town"
+  },
+  {
+    "eventId": "1476239",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Lincoln United",
+    "away": "Silsden"
+  },
+  {
+    "eventId": "1476240",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Blyth Spartans",
+    "away": "Grimsby Borough"
+  },
+  {
+    "eventId": "1476241",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Bridlington Town",
+    "away": "Bishop Auckland"
+  },
+  {
+    "eventId": "1476242",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dunston UTS",
+    "away": "Heaton Stannington"
+  },
+  {
+    "eventId": "1476243",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ashington AFC",
+    "away": "Bradford (Park Avenue)"
+  },
+  {
+    "eventId": "1476244",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Emley",
+    "away": "Hallam"
+  },
+  {
+    "eventId": "1476245",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Redcar Athletic",
+    "away": "Garforth Town"
+  },
+  {
+    "eventId": "1476246",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "North Ferriby",
+    "away": "Blyth Town"
+  },
+  {
+    "eventId": "1476247",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Brighouse Town",
+    "away": "Matlock Town"
+  },
+  {
+    "eventId": "1476248",
+    "sport": "football",
+    "league": "Non League Div One - Northern East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Pontefract Collieries",
+    "away": "Ossett United"
+  },
+  {
+    "eventId": "1476561",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sittingbourne",
+    "away": "Jersey Bulls"
+  },
+  {
+    "eventId": "1476562",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Herne Bay",
+    "away": "Crowborough Athletic"
+  },
+  {
+    "eventId": "1476563",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sheppey United",
+    "away": "Beckenham Town"
+  },
+  {
+    "eventId": "1476564",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Three Bridges",
+    "away": "VCD Athletic"
+  },
+  {
+    "eventId": "1476565",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Eastbourne Town",
+    "away": "Deal Town"
+  },
+  {
+    "eventId": "1476566",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ashford United",
+    "away": "Merstham"
+  },
+  {
+    "eventId": "1476567",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Whyteleafe",
+    "away": "Hassocks"
+  },
+  {
+    "eventId": "1476568",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Faversham Town",
+    "away": "Erith Town"
+  },
+  {
+    "eventId": "1476569",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AFC Croydon Athletic",
+    "away": "Hastings United"
+  },
+  {
+    "eventId": "1476570",
+    "sport": "football",
+    "league": "Non League Div One - Isthmian South East",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sevenoaks Town",
+    "away": "Margate"
+  },
+  {
+    "eventId": "1478886",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ebony FC",
+    "away": "Police National"
+  },
+  {
+    "eventId": "1478889",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Golden Kicks",
+    "away": "Na God"
+  },
+  {
+    "eventId": "1478890",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Golden Warriors",
+    "away": "Hakla SC"
+  },
+  {
+    "eventId": "1478895",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Nania",
+    "away": "Port City"
+  },
+  {
+    "eventId": "1478899",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sankara Nationals",
+    "away": "Wa Power"
+  },
+  {
+    "eventId": "1478901",
+    "sport": "football",
+    "league": "Division One League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tamale City",
+    "away": "Real Tamale"
+  },
+  {
+    "eventId": "1482257",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Adama Kenema",
+    "away": "Sidama Bunna"
+  },
+  {
+    "eventId": "1484668",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AS Cotonou",
+    "away": "Dadjè"
+  },
+  {
+    "eventId": "1484669",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "ASPAC",
+    "away": "Dynamo Abomey"
+  },
+  {
+    "eventId": "1484670",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dragons",
+    "away": "Coton Sport Ouidah"
+  },
+  {
+    "eventId": "1484671",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Espoir Savalou",
+    "away": "Buffles"
+  },
+  {
+    "eventId": "1484672",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "JSP",
+    "away": "Damissa"
+  },
+  {
+    "eventId": "1484695",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "AS Sobemap",
+    "away": "Bani Gansè"
+  },
+  {
+    "eventId": "1484696",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Ayema",
+    "away": "Hodio"
+  },
+  {
+    "eventId": "1484697",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cavaliers",
+    "away": "ASPAC"
+  },
+  {
+    "eventId": "1484698",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dynamo Abomey",
+    "away": "Kraké"
+  },
+  {
+    "eventId": "1484699",
+    "sport": "football",
+    "league": "Championnat National",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Espoir Savalou",
+    "away": "AS Cotonou"
+  },
+  {
+    "eventId": "1488582",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Airdrie United",
+    "away": "Arbroath"
+  },
+  {
+    "eventId": "1488584",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Dundee Utd",
+    "away": "Ayr Utd"
+  },
+  {
+    "eventId": "1488585",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Camelon Juniors",
+    "away": "Elgin City"
+  },
+  {
+    "eventId": "1488588",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Kelty Hearts",
+    "away": "Cove Rangers"
+  },
+  {
+    "eventId": "1488589",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Kilmarnock",
+    "away": "Dundee"
+  },
+  {
+    "eventId": "1488590",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Livingston",
+    "away": "ST Mirren"
+  },
+  {
+    "eventId": "1488591",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Motherwell",
+    "away": "Ross County"
+  },
+  {
+    "eventId": "1488592",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Partick",
+    "away": "Montrose"
+  },
+  {
+    "eventId": "1488594",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Stenhousemuir",
+    "away": "Morton"
+  },
+  {
+    "eventId": "1490909",
+    "sport": "football",
+    "league": "Reykjavik Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "KR Reykjavik",
+    "away": "Throttur Reykjavik"
+  },
+  {
+    "eventId": "1491358",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Spartans",
+    "away": "Inverness CT"
+  },
+  {
+    "eventId": "1498125",
+    "sport": "football",
+    "league": "Liga MX U21",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Cruz Azul U21",
+    "away": "Puebla U21"
+  },
+  {
+    "eventId": "1498126",
+    "sport": "football",
+    "league": "Liga MX U21",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Guadalajara Chivas U21",
+    "away": "Queretaro U21"
+  },
+  {
+    "eventId": "1498127",
+    "sport": "football",
+    "league": "Liga MX U21",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Necaxa U21",
+    "away": "Atlas U21"
+  },
+  {
+    "eventId": "1498128",
+    "sport": "football",
+    "league": "Liga MX U21",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Tigres UANL U21",
+    "away": "Toluca U21"
+  },
+  {
+    "eventId": "1506402",
+    "sport": "football",
+    "league": "2. Division",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Omonia 29is Maiou",
+    "away": "Ayia Napa"
+  },
+  {
+    "eventId": "1507606",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T15:00:00+00:00",
+    "home": "Sporting Kansas City",
+    "away": "FIU Panthers"
+  },
+  {
+    "eventId": "1435373",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Brixham",
+    "away": "Winchester City"
+  },
+  {
+    "eventId": "1435374",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Frome Town",
+    "away": "Malvern Town"
+  },
+  {
+    "eventId": "1435375",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Bideford",
+    "away": "Didcot Town"
+  },
+  {
+    "eventId": "1435376",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Falmouth Town",
+    "away": "Bristol Manor Farm"
+  },
+  {
+    "eventId": "1435377",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Melksham Town",
+    "away": "Shaftesbury Town"
+  },
+  {
+    "eventId": "1435378",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Larkhall Athletic",
+    "away": "Exmouth"
+  },
+  {
+    "eventId": "1435379",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Hartpury University",
+    "away": "Willand Rovers"
+  },
+  {
+    "eventId": "1435530",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Portishead Town",
+    "away": "Swindon Supermarine"
+  },
+  {
+    "eventId": "1444509",
+    "sport": "football",
+    "league": "Non League Div One - Southern South",
+    "startTime": "2026-01-17T15:00:53+00:00",
+    "home": "Sporting Club Inkberrow",
+    "away": "Mousehole"
+  },
+  {
+    "eventId": "1436049",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T15:10:00+00:00",
+    "home": "Al Kholood",
+    "away": "Al-Ahli Jeddah"
+  },
+  {
+    "eventId": "1385929",
+    "sport": "football",
+    "league": "Liga I",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Farul Constanta",
+    "away": "AFC Hermannstadt"
+  },
+  {
+    "eventId": "1391015",
+    "sport": "football",
+    "league": "La Liga",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Mallorca",
+    "away": "Athletic Club"
+  },
+  {
+    "eventId": "1391997",
+    "sport": "football",
+    "league": "Segunda División",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Cultural Leonesa",
+    "away": "Sporting Gijon"
+  },
+  {
+    "eventId": "1431321",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 2",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Europa Fc",
+    "away": "Atlético Madrid II"
+  },
+  {
+    "eventId": "1431323",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 2",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Marbella",
+    "away": "Tarazona"
+  },
+  {
+    "eventId": "1431706",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 1",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "Pontevedra",
+    "away": "Arenteiro"
+  },
+  {
+    "eventId": "1460266",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 8",
+    "startTime": "2026-01-17T15:15:00+00:00",
+    "home": "UD Santa Marta",
+    "away": "Mojados"
+  },
+  {
+    "eventId": "1381029",
+    "sport": "football",
+    "league": "Eredivisie",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Ajax",
+    "away": "GO Ahead Eagles"
+  },
+  {
+    "eventId": "1382140",
+    "sport": "football",
+    "league": "Eerste Divisie",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "FC OSS",
+    "away": "Emmen"
+  },
+  {
+    "eventId": "1389719",
+    "sport": "football",
+    "league": "Ligat Ha'al",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Hapoel Katamon",
+    "away": "Ironi Tiberias"
+  },
+  {
+    "eventId": "1394243",
+    "sport": "football",
+    "league": "3. Liga",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Alemannia Aachen",
+    "away": "VfL Osnabrück"
+  },
+  {
+    "eventId": "1396393",
+    "sport": "football",
+    "league": "Primeira Liga",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "GIL Vicente",
+    "away": "Nacional"
+  },
+  {
+    "eventId": "1397177",
+    "sport": "football",
+    "league": "Primera División Femenina",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Atletico Madrid W",
+    "away": "Espanyol W"
+  },
+  {
+    "eventId": "1432358",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 2",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Beasain",
+    "away": "Utebo"
+  },
+  {
+    "eventId": "1434695",
+    "sport": "football",
+    "league": "Premier Division",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Glacis United",
+    "away": "St Joseph S Fc"
+  },
+  {
+    "eventId": "1458983",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 4",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Pasaia KE",
+    "away": "Leioa"
+  },
+  {
+    "eventId": "1459650",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 6",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Roda",
+    "away": "La Nucía"
+  },
+  {
+    "eventId": "1459654",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 6",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Utiel",
+    "away": "Saguntino"
+  },
+  {
+    "eventId": "1460260",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 8",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Numancia II",
+    "away": "Colegios Diocesanos"
+  },
+  {
+    "eventId": "1460874",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 10",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Ceuta II",
+    "away": "Pozoblanco"
+  },
+  {
+    "eventId": "1461179",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 11",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Rotlet Molinar",
+    "away": "Peña Deportiva"
+  },
+  {
+    "eventId": "1468638",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Bibiani Gold Stars",
+    "away": "Asante Kotoko"
+  },
+  {
+    "eventId": "1488169",
+    "sport": "football",
+    "league": "National Soccer League",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Al Hilal Omdurman",
+    "away": "Rayon Sports"
+  },
+  {
+    "eventId": "1495125",
+    "sport": "football",
+    "league": "Challenge League",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "St. Andrews",
+    "away": "Balzan FC"
+  },
+  {
+    "eventId": "1503920",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Šiauliai",
+    "away": "Džiugas Telšiai"
+  },
+  {
+    "eventId": "1506408",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Hamrun Spartans",
+    "away": "Tarxien Rainbows"
+  },
+  {
+    "eventId": "1507963",
+    "sport": "football",
+    "league": "League Cup",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Gnistan",
+    "away": "Inter Turku"
+  },
+  {
+    "eventId": "1508100",
+    "sport": "football",
+    "league": "AFC U23 Asian Cup",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Australia U23",
+    "away": "Korea Republic U23"
+  },
+  {
+    "eventId": "1508140",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T15:30:00+00:00",
+    "home": "Stade Lausanne-Ouchy",
+    "away": "Bulle"
+  },
+  {
+    "eventId": "1485364",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T15:45:00+00:00",
+    "home": "Al Ain",
+    "away": "Al Wahda FC"
+  },
+  {
+    "eventId": "1387852",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Lens",
+    "away": "Auxerre"
+  },
+  {
+    "eventId": "1398519",
+    "sport": "football",
+    "league": "1. Lig",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Erokspor",
+    "away": "Van BB"
+  },
+  {
+    "eventId": "1421598",
+    "sport": "football",
+    "league": "Feminine Division 1",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Montpellier W",
+    "away": "Dijon W"
+  },
+  {
+    "eventId": "1421600",
+    "sport": "football",
+    "league": "Feminine Division 1",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "FC Fleury 91 W",
+    "away": "Marseille W"
+  },
+  {
+    "eventId": "1425268",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Rumilly Vallières",
+    "away": "Grasse"
+  },
+  {
+    "eventId": "1425745",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Lorient II",
+    "away": "Angoulême"
+  },
+  {
+    "eventId": "1432058",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 1",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Sámano",
+    "away": "Burgos Promesas"
+  },
+  {
+    "eventId": "1432973",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 4",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Málaga II",
+    "away": "Extremadura 1924"
+  },
+  {
+    "eventId": "1433275",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 5",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Elche II",
+    "away": "Colonia Moscardó"
+  },
+  {
+    "eventId": "1456980",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Correcaminos UAT II",
+    "away": "Deportivo Zap"
+  },
+  {
+    "eventId": "1457691",
+    "sport": "football",
+    "league": "Ligi kuu Bara",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Azam",
+    "away": "Coastal Union"
+  },
+  {
+    "eventId": "1458673",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 3",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Colindres",
+    "away": "Selaya"
+  },
+  {
+    "eventId": "1458985",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 4",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Lagun Onak",
+    "away": "Aurrerá Vitoria"
+  },
+  {
+    "eventId": "1459959",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 7",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Alcobendas Sport",
+    "away": "Pozuelo Alarcón"
+  },
+  {
+    "eventId": "1461180",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 11",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Portmany",
+    "away": "Constància"
+  },
+  {
+    "eventId": "1461183",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 11",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Son Cladera",
+    "away": "Mercadal"
+  },
+  {
+    "eventId": "1461788",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 13",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Águilas II",
+    "away": "Muleño"
+  },
+  {
+    "eventId": "1462707",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 16",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Agoncillo",
+    "away": "Comillas"
+  },
+  {
+    "eventId": "1463311",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 18",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Manchego",
+    "away": "Villacañas"
+  },
+  {
+    "eventId": "1475075",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Galaxy",
+    "away": "Township Rollers"
+  },
+  {
+    "eventId": "1503904",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Grobiņa",
+    "away": "Banga"
+  },
+  {
+    "eventId": "1506395",
+    "sport": "football",
+    "league": "Première Division",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Djoliba",
+    "away": "Bakaridjan"
+  },
+  {
+    "eventId": "1506396",
+    "sport": "football",
+    "league": "Première Division",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Stade Malien Bamako",
+    "away": "Mali Coura"
+  },
+  {
+    "eventId": "1508002",
+    "sport": "football",
+    "league": "Africa Cup of Nations",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "Egypt",
+    "away": "Nigeria"
+  },
+  {
+    "eventId": "1508856",
+    "sport": "football",
+    "league": "Super Cup",
+    "startTime": "2026-01-17T16:00:00+00:00",
+    "home": "MC Alger",
+    "away": "USM Alger"
+  },
+  {
+    "eventId": "1419789",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T16:15:00+00:00",
+    "home": "Reggiana",
+    "away": "Cesena"
+  },
+  {
+    "eventId": "1507607",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T16:15:00+00:00",
+    "home": "Trans Narva",
+    "away": "Tammeka"
+  },
+  {
+    "eventId": "1389716",
+    "sport": "football",
+    "league": "Ligat Ha'al",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Maccabi Bnei Raina",
+    "away": "Ashdod"
+  },
+  {
+    "eventId": "1433279",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 5",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Real Madrid III",
+    "away": "Orihuela"
+  },
+  {
+    "eventId": "1439191",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Ospitaletto",
+    "away": "Triestina"
+  },
+  {
+    "eventId": "1439192",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Lumezzane",
+    "away": "Alcione"
+  },
+  {
+    "eventId": "1439195",
+    "sport": "football",
+    "league": "Serie C - Girone A",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Pro Patria",
+    "away": "Giana Erminio"
+  },
+  {
+    "eventId": "1439569",
+    "sport": "football",
+    "league": "Serie C - Girone B",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Campobasso FC",
+    "away": "Athletic Carpi"
+  },
+  {
+    "eventId": "1439571",
+    "sport": "football",
+    "league": "Serie C - Girone B",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Guidonia Montecelio 1937",
+    "away": "Livorno"
+  },
+  {
+    "eventId": "1461181",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 11",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Collerense",
+    "away": "Felanitx"
+  },
+  {
+    "eventId": "1491611",
+    "sport": "football",
+    "league": "Stars League",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Al-Sailiya",
+    "away": "Qatar SC"
+  },
+  {
+    "eventId": "1503930",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "MP",
+    "away": "PEPO"
+  },
+  {
+    "eventId": "1506735",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T16:30:00+00:00",
+    "home": "Lijabatho",
+    "away": "Majantja"
+  },
+  {
+    "eventId": "1378069",
+    "sport": "football",
+    "league": "Serie A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Napoli",
+    "away": "Sassuolo"
+  },
+  {
+    "eventId": "1382410",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "FC Luzern",
+    "away": "FC Lugano"
+  },
+  {
+    "eventId": "1382412",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "FC Winterthur",
+    "away": "FC ST. Gallen"
+  },
+  {
+    "eventId": "1394589",
+    "sport": "football",
+    "league": "Süper Lig",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Galatasaray",
+    "away": "Gazişehir Gaziantep"
+  },
+  {
+    "eventId": "1399137",
+    "sport": "football",
+    "league": "Tweede Divisie",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "De Treffers",
+    "away": "Excelsior Maassluis"
+  },
+  {
+    "eventId": "1415708",
+    "sport": "football",
+    "league": "1. Division",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Olympiakos",
+    "away": "Pafos"
+  },
+  {
+    "eventId": "1425270",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Cannes",
+    "away": "Rousset-Ste Victoire"
+  },
+  {
+    "eventId": "1425273",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Toulon",
+    "away": "Saint-Priest"
+  },
+  {
+    "eventId": "1425274",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Istres",
+    "away": "Nimes"
+  },
+  {
+    "eventId": "1425507",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Dieppe",
+    "away": "Haguenau"
+  },
+  {
+    "eventId": "1425508",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Feignies-Aulnoye",
+    "away": "Wasquehal"
+  },
+  {
+    "eventId": "1425509",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Beauvais",
+    "away": "Blois"
+  },
+  {
+    "eventId": "1425510",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Thionville Lusitanos",
+    "away": "Bastia-Borgo"
+  },
+  {
+    "eventId": "1425511",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Bourges Foot 18",
+    "away": "Chantilly"
+  },
+  {
+    "eventId": "1425512",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Epinal",
+    "away": "St-Pryvé St-Hilaire"
+  },
+  {
+    "eventId": "1425513",
+    "sport": "football",
+    "league": "National 2 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Furiani-Agliani",
+    "away": "Biesheim"
+  },
+  {
+    "eventId": "1425740",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Saint-Colomban Locminé",
+    "away": "Poitiers"
+  },
+  {
+    "eventId": "1425741",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Chauray",
+    "away": "La Roche VF"
+  },
+  {
+    "eventId": "1425742",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Les Herbiers",
+    "away": "Bordeaux"
+  },
+  {
+    "eventId": "1425743",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Dinan Léhon",
+    "away": "Saint-Malo"
+  },
+  {
+    "eventId": "1425947",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Mâcon",
+    "away": "Saint-Étienne II"
+  },
+  {
+    "eventId": "1425948",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Union Cosnoise",
+    "away": "Vierzon FC"
+  },
+  {
+    "eventId": "1425949",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Jura Sud Foot",
+    "away": "Auxerre II"
+  },
+  {
+    "eventId": "1425950",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Hauts Lyonnais",
+    "away": "Orléans II"
+  },
+  {
+    "eventId": "1426109",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Bassin d'Arcachon Sud",
+    "away": "Toulouse II"
+  },
+  {
+    "eventId": "1426110",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Anglet Genets",
+    "away": "Canet Roussillon"
+  },
+  {
+    "eventId": "1426111",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Blagnac",
+    "away": "Lège-Cap-Ferret"
+  },
+  {
+    "eventId": "1426273",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "La Châtaigneraie",
+    "away": "Angers SCO II"
+  },
+  {
+    "eventId": "1426274",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Chauvigny",
+    "away": "Châtellerault"
+  },
+  {
+    "eventId": "1426275",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Les Sables",
+    "away": "USSA Vertou"
+  },
+  {
+    "eventId": "1426276",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Challans",
+    "away": "St-Philbert Gd Lieu"
+  },
+  {
+    "eventId": "1426277",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Le Poiré sur Vie",
+    "away": "Nantes II"
+  },
+  {
+    "eventId": "1426368",
+    "sport": "football",
+    "league": "National 3 - Group B",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "UF Touraine",
+    "away": "Châteauroux II"
+  },
+  {
+    "eventId": "1426452",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Lannion",
+    "away": "Brest II"
+  },
+  {
+    "eventId": "1426453",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Pontivy GSI",
+    "away": "Vire"
+  },
+  {
+    "eventId": "1426454",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Alençon",
+    "away": "Vitré"
+  },
+  {
+    "eventId": "1426455",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Rennes II",
+    "away": "Laval II"
+  },
+  {
+    "eventId": "1426456",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Cesson",
+    "away": "Drapeau Fougères"
+  },
+  {
+    "eventId": "1426457",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Saint-Pierre Milizac",
+    "away": "Vannes"
+  },
+  {
+    "eventId": "1426458",
+    "sport": "football",
+    "league": "National 3 - Group C",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Ergué-Gaberic",
+    "away": "Guingamp II"
+  },
+  {
+    "eventId": "1426634",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Chalon-sur-Saône",
+    "away": "Pontarlier"
+  },
+  {
+    "eventId": "1426635",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Besançon",
+    "away": "Belfort"
+  },
+  {
+    "eventId": "1426636",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Thonon Évian",
+    "away": "Racing Besançon"
+  },
+  {
+    "eventId": "1426637",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Ivry",
+    "away": "Thaon"
+  },
+  {
+    "eventId": "1426638",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Mulhouse",
+    "away": "Troyes II"
+  },
+  {
+    "eventId": "1426639",
+    "sport": "football",
+    "league": "National 3 - Group F",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Torcy",
+    "away": "Sochaux II"
+  },
+  {
+    "eventId": "1426810",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Bourgoin-Jallieu",
+    "away": "Fos"
+  },
+  {
+    "eventId": "1426811",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Gallia Lucciana",
+    "away": "Stade Beaucairois"
+  },
+  {
+    "eventId": "1426812",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Seyssinet-Pariset",
+    "away": "ASPTT Dijon"
+  },
+  {
+    "eventId": "1426813",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Cannet Rocheville",
+    "away": "Olympique Marseille II"
+  },
+  {
+    "eventId": "1426814",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Lyon Duchere",
+    "away": "Olympique Lyonnais II"
+  },
+  {
+    "eventId": "1426985",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Sainte Geneviève",
+    "away": "Oissel"
+  },
+  {
+    "eventId": "1426986",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "St Ouen l'Aumône",
+    "away": "Versailles II"
+  },
+  {
+    "eventId": "1426987",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "C' Chartres",
+    "away": "Linas-Montlhery"
+  },
+  {
+    "eventId": "1426988",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Racing Colombes 92",
+    "away": "Bastia II"
+  },
+  {
+    "eventId": "1426989",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Caen II",
+    "away": "Brétigny Foot"
+  },
+  {
+    "eventId": "1426990",
+    "sport": "football",
+    "league": "National 3 - Group D",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Dives-Cabourg",
+    "away": "Trouville Deauville"
+  },
+  {
+    "eventId": "1427152",
+    "sport": "football",
+    "league": "National 3 - Group E",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Lille II",
+    "away": "Neuilly sur Marne"
+  },
+  {
+    "eventId": "1427153",
+    "sport": "football",
+    "league": "National 3 - Group E",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Pays de Cassel",
+    "away": "Drancy"
+  },
+  {
+    "eventId": "1427154",
+    "sport": "football",
+    "league": "National 3 - Group E",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Croix Football IC",
+    "away": "Balagne"
+  },
+  {
+    "eventId": "1432363",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 2",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Real Unión",
+    "away": "Basconia"
+  },
+  {
+    "eventId": "1445519",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Leones Negros",
+    "away": "Los Cabos United"
+  },
+  {
+    "eventId": "1458676",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 3",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Revilla",
+    "away": "Bezana"
+  },
+  {
+    "eventId": "1459348",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 5",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Cornellà",
+    "away": "Vic"
+  },
+  {
+    "eventId": "1460267",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 8",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Arandina",
+    "away": "Palencia CF"
+  },
+  {
+    "eventId": "1461481",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 12",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Tenerife C",
+    "away": "Lanzarote"
+  },
+  {
+    "eventId": "1475073",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Calendar",
+    "away": "TAFIC"
+  },
+  {
+    "eventId": "1475076",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Centre Chiefs",
+    "away": "Extension Gunners"
+  },
+  {
+    "eventId": "1479708",
+    "sport": "football",
+    "league": "Serie A Women",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Napoli W",
+    "away": "Como W"
+  },
+  {
+    "eventId": "1493284",
+    "sport": "football",
+    "league": "Liga MX Femenil",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Puebla W",
+    "away": "Toluca W"
+  },
+  {
+    "eventId": "1503931",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Finn Harps",
+    "away": "Derry City"
+  },
+  {
+    "eventId": "1505810",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "New England Revolution",
+    "away": "Sarasota Paradise"
+  },
+  {
+    "eventId": "1506306",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T17:00:00+00:00",
+    "home": "Hegelmann Litauen",
+    "away": "Be1 NFA"
+  },
+  {
+    "eventId": "1382590",
+    "sport": "football",
+    "league": "Jupiler Pro League",
+    "startTime": "2026-01-17T17:15:00+00:00",
+    "home": "KVC Westerlo",
+    "away": "Cercle Brugge"
+  },
+  {
+    "eventId": "1452668",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 3",
+    "startTime": "2026-01-17T17:15:00+00:00",
+    "home": "Barcelona B",
+    "away": "Andratx"
+  },
+  {
+    "eventId": "1458986",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 4",
+    "startTime": "2026-01-17T17:15:00+00:00",
+    "home": "Deusto",
+    "away": "Deportivo Alavés III"
+  },
+  {
+    "eventId": "1379185",
+    "sport": "football",
+    "league": "Premier League",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Nottingham Forest",
+    "away": "Arsenal"
+  },
+  {
+    "eventId": "1386866",
+    "sport": "football",
+    "league": "Championship",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Swansea",
+    "away": "Birmingham"
+  },
+  {
+    "eventId": "1388466",
+    "sport": "football",
+    "league": "Bundesliga",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "RB Leipzig",
+    "away": "Bayern München"
+  },
+  {
+    "eventId": "1389717",
+    "sport": "football",
+    "league": "Ligat Ha'al",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Bnei Sakhnin",
+    "away": "Maccabi Netanya"
+  },
+  {
+    "eventId": "1391016",
+    "sport": "football",
+    "league": "La Liga",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Osasuna",
+    "away": "Oviedo"
+  },
+  {
+    "eventId": "1392000",
+    "sport": "football",
+    "league": "Segunda División",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Zaragoza",
+    "away": "Real Sociedad II"
+  },
+  {
+    "eventId": "1395548",
+    "sport": "football",
+    "league": "FAW Championship",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Flint Mountain",
+    "away": "Mold Alexandra"
+  },
+  {
+    "eventId": "1397180",
+    "sport": "football",
+    "league": "Primera División Femenina",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Eibar W",
+    "away": "Madrid CFF W"
+  },
+  {
+    "eventId": "1399721",
+    "sport": "football",
+    "league": "National League",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "York",
+    "away": "Southend"
+  },
+  {
+    "eventId": "1425267",
+    "sport": "football",
+    "league": "National 2 - Group C",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Hyères",
+    "away": "St Maur Lusitanos"
+  },
+  {
+    "eventId": "1425951",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Moulins-Yzeure Foot 03",
+    "away": "Feurs"
+  },
+  {
+    "eventId": "1426112",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Castanet",
+    "away": "SAG Cestas"
+  },
+  {
+    "eventId": "1426815",
+    "sport": "football",
+    "league": "National 3 - Group H",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Olympique d'Alès",
+    "away": "Montpellier II"
+  },
+  {
+    "eventId": "1427155",
+    "sport": "football",
+    "league": "National 3 - Group E",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Gazelec FC Ajaccio",
+    "away": "OCPAM"
+  },
+  {
+    "eventId": "1427156",
+    "sport": "football",
+    "league": "National 3 - Group E",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Le Pays du Valois",
+    "away": "Amiens SC II"
+  },
+  {
+    "eventId": "1431319",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 2",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Alcorcon",
+    "away": "Antequera"
+  },
+  {
+    "eventId": "1431702",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 1",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "CF Talavera",
+    "away": "Celta de Vigo II"
+  },
+  {
+    "eventId": "1431708",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 1",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Zamora",
+    "away": "Tenerife"
+  },
+  {
+    "eventId": "1433283",
+    "sport": "football",
+    "league": "Segunda División RFEF - Group 5",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Fuenlabrada",
+    "away": "CD Coria"
+  },
+  {
+    "eventId": "1436055",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Al-Nassr",
+    "away": "Al Shabab"
+  },
+  {
+    "eventId": "1461486",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 12",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Unión Sur Yaiza",
+    "away": "Las Palmas III"
+  },
+  {
+    "eventId": "1508914",
+    "sport": "football",
+    "league": "São Paulo Youth Cup",
+    "startTime": "2026-01-17T17:30:00+00:00",
+    "home": "Ibrachina U20",
+    "away": "Internacional U20"
+  },
+  {
+    "eventId": "1381037",
+    "sport": "football",
+    "league": "Eredivisie",
+    "startTime": "2026-01-17T17:45:00+00:00",
+    "home": "PEC Zwolle",
+    "away": "AZ Alkmaar"
+  },
+  {
+    "eventId": "1385925",
+    "sport": "football",
+    "league": "Liga I",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Rapid",
+    "away": "Metaloglobus"
+  },
+  {
+    "eventId": "1387859",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Toulouse",
+    "away": "Nice"
+  },
+  {
+    "eventId": "1396390",
+    "sport": "football",
+    "league": "Primeira Liga",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "AVS",
+    "away": "Arouca"
+  },
+  {
+    "eventId": "1396391",
+    "sport": "football",
+    "league": "Primeira Liga",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Alverca",
+    "away": "Moreirense"
+  },
+  {
+    "eventId": "1398123",
+    "sport": "football",
+    "league": "Segunda Liga",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Benfica B",
+    "away": "Chaves"
+  },
+  {
+    "eventId": "1416848",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Standard Liège II",
+    "away": "Habay-la-Neuve"
+  },
+  {
+    "eventId": "1420124",
+    "sport": "football",
+    "league": "Super League Women",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Zulte-Waregem W",
+    "away": "OH Leuven W"
+  },
+  {
+    "eventId": "1425746",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Bayonne",
+    "away": "Châteaubriant"
+  },
+  {
+    "eventId": "1425747",
+    "sport": "football",
+    "league": "National 2 - Group A",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Montlouis",
+    "away": "Saumur"
+  },
+  {
+    "eventId": "1425952",
+    "sport": "football",
+    "league": "National 3 - Group G",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Chamalières",
+    "away": "Dijon II"
+  },
+  {
+    "eventId": "1426113",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Alberes Argelès",
+    "away": "Agde"
+  },
+  {
+    "eventId": "1426114",
+    "sport": "football",
+    "league": "National 3 - Group A",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Pau II",
+    "away": "Colomiers"
+  },
+  {
+    "eventId": "1438319",
+    "sport": "football",
+    "league": "Derde Divisie - Sunday",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Roosendaal",
+    "away": "Vvsb"
+  },
+  {
+    "eventId": "1458677",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 3",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Vimenor",
+    "away": "Castro"
+  },
+  {
+    "eventId": "1488657",
+    "sport": "football",
+    "league": "League Cup",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Future FC",
+    "away": "El Gouna FC"
+  },
+  {
+    "eventId": "1488659",
+    "sport": "football",
+    "league": "League Cup",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Ismaily SC",
+    "away": "Wadi Degla"
+  },
+  {
+    "eventId": "1495124",
+    "sport": "football",
+    "league": "Challenge League",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Zebbug Rangers",
+    "away": "Melita"
+  },
+  {
+    "eventId": "1495126",
+    "sport": "football",
+    "league": "Challenge League",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Vittoriosa Stars",
+    "away": "Birzebbuga"
+  },
+  {
+    "eventId": "1503729",
+    "sport": "football",
+    "league": "Brasiliense",
+    "startTime": "2026-01-17T18:00:00+00:00",
+    "home": "Real FC",
+    "away": "Brasiliense"
+  },
+  {
+    "eventId": "1503029",
+    "sport": "football",
+    "league": "Sergipano",
+    "startTime": "2026-01-17T18:15:00+00:00",
+    "home": "Dorense",
+    "away": "América SE"
+  },
+  {
+    "eventId": "1396702",
+    "sport": "football",
+    "league": "1a Divisió",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Inter Club d'Escaldes",
+    "away": "UE Santa Coloma"
+  },
+  {
+    "eventId": "1416840",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Dessel Sport",
+    "away": "Roeselare Daisel"
+  },
+  {
+    "eventId": "1416841",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Union Saint-Gilloise II",
+    "away": "Stockay-Warfusée"
+  },
+  {
+    "eventId": "1416849",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Sporting Charleroi II",
+    "away": "Meux"
+  },
+  {
+    "eventId": "1419782",
+    "sport": "football",
+    "league": "Serie B",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Bari",
+    "away": "Juve Stabia"
+  },
+  {
+    "eventId": "1420125",
+    "sport": "football",
+    "league": "Super League Women",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Gent W",
+    "away": "Anderlecht W"
+  },
+  {
+    "eventId": "1434696",
+    "sport": "football",
+    "league": "Premier Division",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Hound Dogs",
+    "away": "Magpies"
+  },
+  {
+    "eventId": "1450471",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV A",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Oostkamp",
+    "away": "FC Lebbeke"
+  },
+  {
+    "eventId": "1450707",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV B",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Hades",
+    "away": "Nijlen"
+  },
+  {
+    "eventId": "1500586",
+    "sport": "football",
+    "league": "Goiano - 1",
+    "startTime": "2026-01-17T18:30:00+00:00",
+    "home": "Centro Oeste",
+    "away": "Jataiense"
+  },
+  {
+    "eventId": "1456787",
+    "sport": "football",
+    "league": "Liga Alef",
+    "startTime": "2026-01-17T18:45:00+00:00",
+    "home": "Shimshon Tel Aviv",
+    "away": "Nordia Jerusalem"
+  },
+  {
+    "eventId": "1381030",
+    "sport": "football",
+    "league": "Eredivisie",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Excelsior",
+    "away": "Telstar"
+  },
+  {
+    "eventId": "1381036",
+    "sport": "football",
+    "league": "Eredivisie",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Fortuna Sittard",
+    "away": "PSV Eindhoven"
+  },
+  {
+    "eventId": "1392699",
+    "sport": "football",
+    "league": "Challenger Pro League",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Liège",
+    "away": "Francs Borains"
+  },
+  {
+    "eventId": "1392702",
+    "sport": "football",
+    "league": "Challenger Pro League",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "AS Eupen",
+    "away": "SK Beveren"
+  },
+  {
+    "eventId": "1392705",
+    "sport": "football",
+    "league": "Challenger Pro League",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Patro Eisden",
+    "away": "Kortrijk"
+  },
+  {
+    "eventId": "1416842",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Albert Quévy-Mons",
+    "away": "Union Namur"
+  },
+  {
+    "eventId": "1416844",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Excelsior Virton",
+    "away": "Tubize"
+  },
+  {
+    "eventId": "1416845",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Hoogstraten",
+    "away": "Houtvenne"
+  },
+  {
+    "eventId": "1416846",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Thes Sport",
+    "away": "Ninove"
+  },
+  {
+    "eventId": "1416847",
+    "sport": "football",
+    "league": "First Amateur Division",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Zelzate",
+    "away": "Lyra-Lierse Berlaar"
+  },
+  {
+    "eventId": "1424160",
+    "sport": "football",
+    "league": "Liga 3",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Varzim",
+    "away": "Sanjoanense"
+  },
+  {
+    "eventId": "1450210",
+    "sport": "football",
+    "league": "Second Amateur Division - ACFF",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Onhaye",
+    "away": "Ostiches"
+  },
+  {
+    "eventId": "1450473",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV A",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "KRC Gent",
+    "away": "Westhoek"
+  },
+  {
+    "eventId": "1450708",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV B",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Heist",
+    "away": "Rotselaar"
+  },
+  {
+    "eventId": "1450709",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV B",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Berchem Sport",
+    "away": "Londerzeel"
+  },
+  {
+    "eventId": "1450710",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV B",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Racing Mechelen",
+    "away": "Royal Antwerp II"
+  },
+  {
+    "eventId": "1450711",
+    "sport": "football",
+    "league": "Second Amateur Division - VFV B",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Bocholt",
+    "away": "Wellen"
+  },
+  {
+    "eventId": "1476815",
+    "sport": "football",
+    "league": "Liga de Ascenso",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "CS Uruguay",
+    "away": "Aserri FC"
+  },
+  {
+    "eventId": "1500436",
+    "sport": "football",
+    "league": "Paranaense - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Atletico Paranaense",
+    "away": "Coritiba"
+  },
+  {
+    "eventId": "1500463",
+    "sport": "football",
+    "league": "Pernambucano - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Decisão",
+    "away": "Jaguaré"
+  },
+  {
+    "eventId": "1500490",
+    "sport": "football",
+    "league": "Potiguar",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "QFC",
+    "away": "Potiguar Mossoró"
+  },
+  {
+    "eventId": "1500491",
+    "sport": "football",
+    "league": "Potiguar",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "ABC",
+    "away": "Santa Cruz RN"
+  },
+  {
+    "eventId": "1500526",
+    "sport": "football",
+    "league": "Paulista - A1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Primavera SP",
+    "away": "Novorizontino"
+  },
+  {
+    "eventId": "1500587",
+    "sport": "football",
+    "league": "Goiano - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Anápolis",
+    "away": "Vila Nova"
+  },
+  {
+    "eventId": "1500630",
+    "sport": "football",
+    "league": "Alagoano",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "ASA",
+    "away": "CSA"
+  },
+  {
+    "eventId": "1500660",
+    "sport": "football",
+    "league": "Baiano - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Bahia",
+    "away": "Galícia"
+  },
+  {
+    "eventId": "1500707",
+    "sport": "football",
+    "league": "Mineiro - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "North Esporte",
+    "away": "Betim"
+  },
+  {
+    "eventId": "1500758",
+    "sport": "football",
+    "league": "Gaúcho - 1",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Novo Hamburgo",
+    "away": "Sao Jose"
+  },
+  {
+    "eventId": "1500933",
+    "sport": "football",
+    "league": "Piauiense",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Oeirense",
+    "away": "Atlético Piauiense"
+  },
+  {
+    "eventId": "1501024",
+    "sport": "football",
+    "league": "Capixaba",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Vitória ES",
+    "away": "Porto Vitória"
+  },
+  {
+    "eventId": "1501064",
+    "sport": "football",
+    "league": "Tocantinense",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Capital",
+    "away": "Araguaína"
+  },
+  {
+    "eventId": "1501065",
+    "sport": "football",
+    "league": "Tocantinense",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Gurupi",
+    "away": "Palmas"
+  },
+  {
+    "eventId": "1501066",
+    "sport": "football",
+    "league": "Tocantinense",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "União Carmolandense",
+    "away": "Tocantinópolis"
+  },
+  {
+    "eventId": "1502511",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Água Santa",
+    "away": "Sao Bento"
+  },
+  {
+    "eventId": "1502512",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Inter De Limeira",
+    "away": "Taubaté"
+  },
+  {
+    "eventId": "1503030",
+    "sport": "football",
+    "league": "Sergipano",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Sergipe",
+    "away": "Guarany SE"
+  },
+  {
+    "eventId": "1503756",
+    "sport": "football",
+    "league": "Brasiliense",
+    "startTime": "2026-01-17T19:00:00+00:00",
+    "home": "Brasília",
+    "away": "Gama"
+  },
+  {
+    "eventId": "1382413",
+    "sport": "football",
+    "league": "Super League",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "BSC Young Boys",
+    "away": "Lausanne"
+  },
+  {
+    "eventId": "1388770",
+    "sport": "football",
+    "league": "2. Bundesliga",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Hertha BSC",
+    "away": "FC Schalke 04"
+  },
+  {
+    "eventId": "1463005",
+    "sport": "football",
+    "league": "Tercera División RFEF - Group 17",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Cuarte",
+    "away": "CDJ Tamarite"
+  },
+  {
+    "eventId": "1500375",
+    "sport": "football",
+    "league": "Cearense - 1",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Ceara",
+    "away": "Iguatu"
+  },
+  {
+    "eventId": "1500756",
+    "sport": "football",
+    "league": "Gaúcho - 1",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Inter Santa Maria",
+    "away": "Juventude"
+  },
+  {
+    "eventId": "1500783",
+    "sport": "football",
+    "league": "Amazonense",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "JC",
+    "away": "São Raimundo AM"
+  },
+  {
+    "eventId": "1500784",
+    "sport": "football",
+    "league": "Amazonense",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Parintins",
+    "away": "Princesa Solimões"
+  },
+  {
+    "eventId": "1500786",
+    "sport": "football",
+    "league": "Amazonense",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Nacional AM",
+    "away": "Amazonas"
+  },
+  {
+    "eventId": "1501091",
+    "sport": "football",
+    "league": "Rondoniense",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Porto Velho",
+    "away": "Rondoniense"
+  },
+  {
+    "eventId": "1501092",
+    "sport": "football",
+    "league": "Rondoniense",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "União Cacoalense",
+    "away": "Barcelona RO"
+  },
+  {
+    "eventId": "1508004",
+    "sport": "football",
+    "league": "Liga Mayor",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Delfines Del Este",
+    "away": "Atlético Pantoja"
+  },
+  {
+    "eventId": "1508915",
+    "sport": "football",
+    "league": "São Paulo Youth Cup",
+    "startTime": "2026-01-17T19:30:00+00:00",
+    "home": "Botafogo U20",
+    "away": "Itaquá Athletico Clube U20"
+  },
+  {
+    "eventId": "1378065",
+    "sport": "football",
+    "league": "Serie A",
+    "startTime": "2026-01-17T19:45:00+00:00",
+    "home": "Cagliari",
+    "away": "Juventus"
+  },
+  {
+    "eventId": "1382592",
+    "sport": "football",
+    "league": "Jupiler Pro League",
+    "startTime": "2026-01-17T19:45:00+00:00",
+    "home": "Union St. Gilloise",
+    "away": "KV Mechelen"
+  },
+  {
+    "eventId": "1389286",
+    "sport": "football",
+    "league": "Ligue 2",
+    "startTime": "2026-01-17T19:55:00+00:00",
+    "home": "Saint Etienne",
+    "away": "Clermont Foot"
+  },
+  {
+    "eventId": "1381035",
+    "sport": "football",
+    "league": "Eredivisie",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "NAC Breda",
+    "away": "NEC Nijmegen"
+  },
+  {
+    "eventId": "1391010",
+    "sport": "football",
+    "league": "La Liga",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Real Betis",
+    "away": "Villarreal"
+  },
+  {
+    "eventId": "1391998",
+    "sport": "football",
+    "league": "Segunda División",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Almeria",
+    "away": "Deportivo La Coruna"
+  },
+  {
+    "eventId": "1421597",
+    "sport": "football",
+    "league": "Feminine Division 1",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Le Havre W",
+    "away": "Paris Saint Germain W"
+  },
+  {
+    "eventId": "1431705",
+    "sport": "football",
+    "league": "Primera División RFEF - Group 1",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Ponferradina",
+    "away": "Racing Ferrol"
+  },
+  {
+    "eventId": "1445523",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Ensenada",
+    "away": "Mineros de Fresnillo"
+  },
+  {
+    "eventId": "1483652",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Phoenix",
+    "away": "Morvant Caledonia United"
+  },
+  {
+    "eventId": "1488587",
+    "sport": "football",
+    "league": "FA Cup",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Heart Of Midlothian",
+    "away": "Falkirk"
+  },
+  {
+    "eventId": "1500438",
+    "sport": "football",
+    "league": "Paranaense - 1",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Foz Do Iguacu",
+    "away": "Andraus Brasil"
+  },
+  {
+    "eventId": "1500462",
+    "sport": "football",
+    "league": "Pernambucano - 1",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Santa Cruz",
+    "away": "Acadêmica Vitória"
+  },
+  {
+    "eventId": "1500527",
+    "sport": "football",
+    "league": "Paulista - A1",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Portuguesa",
+    "away": "Velo Clube"
+  },
+  {
+    "eventId": "1500889",
+    "sport": "football",
+    "league": "Paraibano",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Campinense",
+    "away": "Atlético Cajazeirense"
+  },
+  {
+    "eventId": "1500892",
+    "sport": "football",
+    "league": "Paraibano",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Sousa",
+    "away": "Confianca PB"
+  },
+  {
+    "eventId": "1500934",
+    "sport": "football",
+    "league": "Piauiense",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Fluminense PI",
+    "away": "Piauí"
+  },
+  {
+    "eventId": "1500992",
+    "sport": "football",
+    "league": "Acreano",
+    "startTime": "2026-01-17T20:00:00+00:00",
+    "home": "Vasco da Gama AC",
+    "away": "Rio Branco"
+  },
+  {
+    "eventId": "1387851",
+    "sport": "football",
+    "league": "Ligue 1",
+    "startTime": "2026-01-17T20:05:00+00:00",
+    "home": "Angers",
+    "away": "Marseille"
+  },
+  {
+    "eventId": "1396394",
+    "sport": "football",
+    "league": "Primeira Liga",
+    "startTime": "2026-01-17T20:30:00+00:00",
+    "home": "Rio Ave",
+    "away": "Benfica"
+  },
+  {
+    "eventId": "1500437",
+    "sport": "football",
+    "league": "Paranaense - 1",
+    "startTime": "2026-01-17T20:30:00+00:00",
+    "home": "Londrina",
+    "away": "Aruko Sports"
+  },
+  {
+    "eventId": "1508007",
+    "sport": "football",
+    "league": "Eerste Divisie",
+    "startTime": "2026-01-17T20:30:00+00:00",
+    "home": "Leo Victor",
+    "away": "Flora"
+  },
+  {
+    "eventId": "1424249",
+    "sport": "football",
+    "league": "Liga 3",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "CF Os Belenenses",
+    "away": "1º Dezembro"
+  },
+  {
+    "eventId": "1500401",
+    "sport": "football",
+    "league": "Catarinense - 1",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Carlos Renaux",
+    "away": "Camboriú"
+  },
+  {
+    "eventId": "1500591",
+    "sport": "football",
+    "league": "Goiano - 1",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Goiatuba EC",
+    "away": "Anapolina"
+  },
+  {
+    "eventId": "1500710",
+    "sport": "football",
+    "league": "Mineiro - 1",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Democrata GV",
+    "away": "Athletic Club"
+  },
+  {
+    "eventId": "1500821",
+    "sport": "football",
+    "league": "Matogrossense",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "União Rondonópolis",
+    "away": "Primavera MG"
+  },
+  {
+    "eventId": "1502513",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Grêmio Prudente",
+    "away": "Oeste"
+  },
+  {
+    "eventId": "1502514",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Ituano",
+    "away": "Ferroviária"
+  },
+  {
+    "eventId": "1504830",
+    "sport": "football",
+    "league": "Primera Division",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Jalapa",
+    "away": "Managua"
+  },
+  {
+    "eventId": "1505712",
+    "sport": "football",
+    "league": "Liga Panameña de Fútbol",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Herrera",
+    "away": "Independiente de La Chorrera"
+  },
+  {
+    "eventId": "1507608",
+    "sport": "football",
+    "league": "Friendlies Clubs",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "FBC Melgar",
+    "away": "UCV Moquegua"
+  },
+  {
+    "eventId": "1508601",
+    "sport": "football",
+    "league": "Kings World Cup Nations",
+    "startTime": "2026-01-17T21:00:00+00:00",
+    "home": "Team Brazil",
+    "away": "Team Chile"
+  },
+  {
+    "eventId": "1442493",
+    "sport": "football",
+    "league": "Liga Premier Serie B",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Aguacateros CDU",
+    "away": "Huracanes Izcalli"
+  },
+  {
+    "eventId": "1445521",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "UA Zacatecas",
+    "away": "Cimarrones"
+  },
+  {
+    "eventId": "1456982",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Zacatepec 1948",
+    "away": "Chilpancingo"
+  },
+  {
+    "eventId": "1456983",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Ciervos",
+    "away": "Lobos ULMX"
+  },
+  {
+    "eventId": "1457138",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Chapulineros",
+    "away": "Mexicali FC"
+  },
+  {
+    "eventId": "1500439",
+    "sport": "football",
+    "league": "Paranaense - 1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Maringá",
+    "away": "Azuriz"
+  },
+  {
+    "eventId": "1500528",
+    "sport": "football",
+    "league": "Paulista - A1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Capivariano",
+    "away": "Ponte Preta"
+  },
+  {
+    "eventId": "1500661",
+    "sport": "football",
+    "league": "Baiano - 1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Barcelona BA",
+    "away": "Jacuipense"
+  },
+  {
+    "eventId": "1500708",
+    "sport": "football",
+    "league": "Mineiro - 1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Cruzeiro",
+    "away": "Uberlandia"
+  },
+  {
+    "eventId": "1500858",
+    "sport": "football",
+    "league": "Carioca - 1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Bangu",
+    "away": "Madureira"
+  },
+  {
+    "eventId": "1500859",
+    "sport": "football",
+    "league": "Carioca - 1",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Boavista SC",
+    "away": "Fluminense"
+  },
+  {
+    "eventId": "1504349",
+    "sport": "football",
+    "league": "Primera Division",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "Zacatecoluca",
+    "away": "Cacahuatique"
+  },
+  {
+    "eventId": "1508916",
+    "sport": "football",
+    "league": "São Paulo Youth Cup",
+    "startTime": "2026-01-17T21:30:00+00:00",
+    "home": "RB Bragantino U20",
+    "away": "São Paulo U20"
+  },
+  {
+    "eventId": "1442494",
+    "sport": "football",
+    "league": "Liga Premier Serie B",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Dragones de Oaxaca",
+    "away": "Gorilas de Juanacatlan"
+  },
+  {
+    "eventId": "1457137",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Inter Playa del Carmen",
+    "away": "Jaguares de Chiapas"
+  },
+  {
+    "eventId": "1476817",
+    "sport": "football",
+    "league": "Liga de Ascenso",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Municipal Grecia",
+    "away": "Santa Cruz FC"
+  },
+  {
+    "eventId": "1483653",
+    "sport": "football",
+    "league": "Pro League",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Central",
+    "away": "Defence Force"
+  },
+  {
+    "eventId": "1500376",
+    "sport": "football",
+    "league": "Cearense - 1",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Maranguape",
+    "away": "Floresta"
+  },
+  {
+    "eventId": "1500755",
+    "sport": "football",
+    "league": "Gaúcho - 1",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Gremio",
+    "away": "São Luiz"
+  },
+  {
+    "eventId": "1500817",
+    "sport": "football",
+    "league": "Matogrossense",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Chapada",
+    "away": "Operário MT"
+  },
+  {
+    "eventId": "1500991",
+    "sport": "football",
+    "league": "Acreano",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "ADESG",
+    "away": "Humaitá"
+  },
+  {
+    "eventId": "1501025",
+    "sport": "football",
+    "league": "Capixaba",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Vilavelhense",
+    "away": "Rio Branco ES"
+  },
+  {
+    "eventId": "1502515",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "São José EC",
+    "away": "Juventus"
+  },
+  {
+    "eventId": "1502516",
+    "sport": "football",
+    "league": "Paulista - A2",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Sertãozinho",
+    "away": "Votuporanguense"
+  },
+  {
+    "eventId": "1508005",
+    "sport": "football",
+    "league": "Liga Mayor",
+    "startTime": "2026-01-17T22:00:00+00:00",
+    "home": "Moca",
+    "away": "Cibao"
+  },
+  {
+    "eventId": "1498963",
+    "sport": "football",
+    "league": "Division di Honor",
+    "startTime": "2026-01-17T22:30:00+00:00",
+    "home": "Bubali",
+    "away": "Nacional"
+  },
+  {
+    "eventId": "1500400",
+    "sport": "football",
+    "league": "Catarinense - 1",
+    "startTime": "2026-01-17T22:30:00+00:00",
+    "home": "Barra",
+    "away": "Brusque"
+  },
+  {
+    "eventId": "1500970",
+    "sport": "football",
+    "league": "Maranhense",
+    "startTime": "2026-01-17T22:30:00+00:00",
+    "home": "ITZ Sport",
+    "away": "Imperatriz"
+  },
+  {
+    "eventId": "1430650",
+    "sport": "football",
+    "league": "C-League",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Svay Rieng",
+    "away": "Phnom Penh Crown"
+  },
+  {
+    "eventId": "1456984",
+    "sport": "football",
+    "league": "Liga Premier Serie A",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Sporting Canamy",
+    "away": "Real Apodaca"
+  },
+  {
+    "eventId": "1476818",
+    "sport": "football",
+    "league": "Liga de Ascenso",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Inter San Carlos",
+    "away": "AD Sarchí"
+  },
+  {
+    "eventId": "1491811",
+    "sport": "football",
+    "league": "Liga MX",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Necaxa",
+    "away": "Atlas"
+  },
+  {
+    "eventId": "1493285",
+    "sport": "football",
+    "league": "Liga MX Femenil",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "América W",
+    "away": "Necaxa W"
+  },
+  {
+    "eventId": "1494409",
+    "sport": "football",
+    "league": "Liga de Expansión MX",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Tlaxcala",
+    "away": "Cancún"
+  },
+  {
+    "eventId": "1500820",
+    "sport": "football",
+    "league": "Matogrossense",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Sport Sinop",
+    "away": "CEOV Operário"
+  },
+  {
+    "eventId": "1504832",
+    "sport": "football",
+    "league": "Primera Division",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Real Madriz",
+    "away": "Real Estelí"
+  },
+  {
+    "eventId": "1508008",
+    "sport": "football",
+    "league": "Eerste Divisie",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Notch",
+    "away": "Robin Hood"
+  },
+  {
+    "eventId": "1508101",
+    "sport": "football",
+    "league": "Copa De La Liga Auf",
+    "startTime": "2026-01-17T23:00:00+00:00",
+    "home": "Club Nacional",
+    "away": "Cerro Largo"
+  },
+  {
+    "eventId": "1491810",
+    "sport": "football",
+    "league": "Liga MX",
+    "startTime": "2026-01-17T23:07:00+00:00",
+    "home": "Guadalajara Chivas",
+    "away": "Club Queretaro"
+  },
+  {
+    "eventId": "1505713",
+    "sport": "football",
+    "league": "Liga Panameña de Fútbol",
+    "startTime": "2026-01-17T23:15:00+00:00",
+    "home": "San Francisco FC",
+    "away": "Union Cocle"
+  },
+  {
+    "eventId": "1498262",
+    "sport": "football",
+    "league": "Primera A",
+    "startTime": "2026-01-17T23:20:00+00:00",
+    "home": "Atletico Nacional",
+    "away": "Chico"
+  },
+  {
+    "eventId": "1500529",
+    "sport": "football",
+    "league": "Paulista - A1",
+    "startTime": "2026-01-17T23:30:00+00:00",
+    "home": "Palmeiras",
+    "away": "Mirassol"
+  },
+  {
+    "eventId": "1500709",
+    "sport": "football",
+    "league": "Mineiro - 1",
+    "startTime": "2026-01-17T23:30:00+00:00",
+    "home": "Uniao Trabalhadores",
+    "away": "Pouso Alegre"
+  },
+  {
+    "eventId": "1498129",
+    "sport": "football",
+    "league": "Liga MX U21",
+    "startTime": "2026-01-17T23:45:00+00:00",
+    "home": "Club Tijuana U21",
+    "away": "Atl. San Luis U21"
+  }
+]
