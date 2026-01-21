@@ -28,3 +28,7 @@ api/backups/
 .idea/
 .vscode/
 api/.env
+*.bak*
+0
+0_by_risk
+api/services/=
