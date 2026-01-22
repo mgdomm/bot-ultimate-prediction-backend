@@ -24,6 +24,7 @@ P_SAFE_MIN_FALLBACK = 0.68
 # Mercados que consideramos “modernos y razonables” (evitar exóticos tipo correct score / goleadores)
 STANDARD_MARKETS = {
     "over/under",
+    "goals over/under",  # alias común en API-SPORTS (equivalente a over/under)
     "over/under 1st half",
     "over/under (reg time)",
     "asian handicap",
