@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 try:
-    from services.api_sports_client import ApiSportsClient
+    from services.api_sports_client import ApiSportsClient  # type: ignore
 except ModuleNotFoundError:
     from api.services.api_sports_client import ApiSportsClient  # type: ignore
 
@@ -16,8 +16,8 @@ except ModuleNotFoundError:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
-# Para FREE: límite determinista de requests por deporte
-MAX_EVENTS_PER_SPORT_DEFAULT = 40
+# FREE: mantener bajo para evitar rateLimit/min (se puede override con ODDS_MAX_EVENTS_PER_SPORT)
+MAX_EVENTS_PER_SPORT_DEFAULT = 8
 
 # Estrategia odds por deporte (según evidencia 2026-01-17)
 ODDS_MODE_BY_SPORT: Dict[str, Dict[str, str]] = {
@@ -36,10 +36,11 @@ ODDS_MODE_BY_SPORT: Dict[str, Dict[str, str]] = {
     # "formula-1": ...
 }
 
+
 @dataclass(frozen=True)
 class OddsIngestSummary:
     sport: str
-    status: str  # created | skipped
+    status: str  # created | skipped | rate_limited
     file: str
     requested: int
     nonzero_results: int
@@ -62,17 +63,80 @@ def _extract_event_id(sport: str, item: dict) -> Optional[int]:
     return int(x) if x is not None else None
 
 
+def _event_status_short(sport: str, item: dict) -> Optional[str]:
+    # Intento “best-effort” sin asumir estructura fija
+    if sport == "football":
+        st = (item.get("fixture") or {}).get("status") or {}
+        if isinstance(st, dict):
+            v = st.get("short")
+            return str(v) if v is not None else None
+        return None
+    # otros deportes (algunos usan game.status o status)
+    st = item.get("status")
+    if st is not None:
+        return str(st)
+    g = item.get("game")
+    if isinstance(g, dict) and g.get("status") is not None:
+        return str(g.get("status"))
+    return None
+
+
+def _is_candidate_event(sport: str, item: dict) -> bool:
+    # Filtra eventos claramente no jugables (cancelados/postpuestos/finalizados)
+    bad = {"FT", "AET", "PEN", "CANC", "PST", "ABD", "CANCELLED", "POSTPONED", "ABANDONED", "FINISHED"}
+    st = _event_status_short(sport, item)
+    if st is not None and st.upper() in bad:
+        return False
+
+    # Preferimos eventos con liga/competición (suele correlacionar con odds disponibles)
+    league = item.get("league")
+    if isinstance(league, dict):
+        if league.get("id") is not None or league.get("name"):
+            return True
+
+    # Si no hay league, no descartamos: dejamos pasar igual
+    return True
+
+
 def _load_event_ids(day: str, sport: str) -> List[int]:
+    """
+    Devuelve IDs en un orden "mejor" que sorted():
+    - preserva el orden de los eventos en el archivo (la API suele traer por schedule/importancia)
+    - filtra eventos claramente no jugables (canceled/postponed/finished)
+    - unique estable
+    """
     p = API_DATA_DIR / "events" / day / f"{sport}.json"
     if not p.exists():
         return []
+
     payload = json.loads(p.read_text(encoding="utf-8"))
-    ids: List[int] = []
+    seen: set[int] = set()
+    out: List[int] = []
+
     for item in _first_list(payload):
+        if not isinstance(item, dict):
+            continue
+        if not _is_candidate_event(sport, item):
+            continue
         eid = _extract_event_id(sport, item)
-        if eid is not None:
-            ids.append(eid)
-    return sorted(set(ids))
+        if eid is None:
+            continue
+        if eid in seen:
+            continue
+        seen.add(eid)
+        out.append(eid)
+
+    return out
+
+
+def _is_rate_limit_exc(exc: BaseException) -> bool:
+    s = str(exc)
+    if "rateLimit" in s or "Too many requests" in s:
+        return True
+    # requests.HTTPError (si viene por status_code)
+    resp = getattr(exc, "response", None)
+    code = getattr(resp, "status_code", None)
+    return code == 429
 
 
 def ingest_odds_for_day(
@@ -112,7 +176,14 @@ def ingest_odds_for_day(
         client = ApiSportsClient(sport)
 
         if mode == "date":
-            payload = client.get("/odds", params={"date": day})
+            # 1 request total; si rateLimit, no reventamos pipeline (es transitorio)
+            try:
+                payload = client.get("/odds", params={"date": day})
+            except Exception as e:
+                if _is_rate_limit_exc(e):
+                    payload = {"results": 0, "errors": {"rateLimit": str(e)}, "response": []}
+                else:
+                    raise
             out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
             nz = int(payload.get("results") or 0)
             summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, nz).__dict__)
@@ -124,18 +195,26 @@ def ingest_odds_for_day(
 
         blocks: List[Dict[str, Any]] = []
         nonzero = 0
+        requested = 0
+        status = "created"
 
         for eid in ids:
-            payload = client.get("/odds", params={param: eid})
+            try:
+                payload = client.get("/odds", params={param: eid})
+            except Exception as e:
+                if _is_rate_limit_exc(e):
+                    status = "rate_limited"
+                    break
+                raise
+
+            requested += 1
             r = int(payload.get("results") or 0)
             if r > 0:
                 nonzero += 1
-            blocks.append(
-                {"sport": sport, "event_id": eid, "param": param, "results": r, "response": payload}
-            )
+            blocks.append({"sport": sport, "event_id": eid, "param": param, "results": r, "response": payload})
 
         out_file.write_text(json.dumps(blocks, ensure_ascii=False, indent=2), encoding="utf-8")
-        summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), len(ids), nonzero).__dict__)
+        summary["sports"].append(OddsIngestSummary(sport, status, str(out_file), requested, nonzero).__dict__)
 
     return summary
 
