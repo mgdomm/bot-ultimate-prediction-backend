@@ -56,7 +56,7 @@ except ModuleNotFoundError:
 
 _GUARD = (PARLAY_GUARDRAILS or {}).get("principal_2_legs", {}) if isinstance(PARLAY_GUARDRAILS, dict) else {}
 _DEFAULT_CLASSIC_PROB_FLOOR = float(_GUARD.get("min_combined_probability_floor", 0.40))
-_DEFAULT_CLASSIC_VALUE_MARGIN = float(_GUARD.get("value_margin", 0.03))
+_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "0.0"))  # safer default for Classic (value margin)
 
 # Allow override via env vars (strings)
 CLASSIC_PROB_FLOOR = float(os.environ.get("CLASSIC_PROB_FLOOR", str(_DEFAULT_CLASSIC_PROB_FLOOR)))
