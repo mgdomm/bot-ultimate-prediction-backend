@@ -15,11 +15,11 @@ SHRINK_W = 0.35  # peso del modelo; (1-w) = peso del mercado
 
 # Rangos “seguros” para principiantes
 ODDS_MIN = 1.20
-ODDS_MAX = 1.80
+ODDS_MAX = 2.00
 
 # Umbral principal (con fallback si un día viene flojo)
 P_SAFE_MIN_PRIMARY = 0.70
-P_SAFE_MIN_FALLBACK = 0.68
+P_SAFE_MIN_FALLBACK = 0.64
 
 # Mercados que consideramos “modernos y razonables”
 STANDARD_MARKETS = {
