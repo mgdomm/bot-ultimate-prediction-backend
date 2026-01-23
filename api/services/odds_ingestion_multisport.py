@@ -239,16 +239,27 @@ def _parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     args = _parse_args()
-    sports = [s.strip() for s in args.sports.split(",") if s.strip()] if args.sports else None
-    print(
-        json.dumps(
-            ingest_odds_for_day(
-                day=args.day,
-                force=bool(args.force),
-                sports=sports,
-                max_events_per_sport=int(args.max_events),
-            ),
-            ensure_ascii=False,
-            indent=2,
-        )
+    sports = [s.strip() for s in args.sports.split(',') if s.strip()] if args.sports else None
+    summary = ingest_odds_for_day(
+        day=args.day,
+        force=bool(args.force),
+        sports=sports,
+        max_events_per_sport=int(args.max_events),
     )
+    # Log compacto (Render trunca; queremos ver downstream: classic + FREEZE)
+    compact = {
+        'day': summary.get('day'),
+        'force': summary.get('force'),
+        'max_events_per_sport': summary.get('max_events_per_sport'),
+        'sports_selected': summary.get('sports_selected'),
+        'sports': [
+            {
+                'sport': s.get('sport'),
+                'status': s.get('status'),
+                'requested': s.get('requested'),
+                'nonzero_results': s.get('nonzero_results'),
+            }
+            for s in (summary.get('sports') or [])
+        ],
+    }
+    print(json.dumps(compact, ensure_ascii=False))
