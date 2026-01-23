@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import os
+import sys
 import json
 from datetime import date
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
-from collections import Counter, defaultdict
+from collections import Counter
 
 MAX_PICKS = 10
 
@@ -20,8 +21,7 @@ ODDS_MAX = 1.80
 P_SAFE_MIN_PRIMARY = 0.70
 P_SAFE_MIN_FALLBACK = 0.68
 
-
-# Mercados que consideramos “modernos y razonables” (evitar exóticos tipo correct score / goleadores)
+# Mercados que consideramos “modernos y razonables”
 STANDARD_MARKETS = {
     "over/under",
     "goals over/under",  # alias común en API-SPORTS (equivalente a over/under)
@@ -56,7 +56,9 @@ except ModuleNotFoundError:
 
 _GUARD = (PARLAY_GUARDRAILS or {}).get("principal_2_legs", {}) if isinstance(PARLAY_GUARDRAILS, dict) else {}
 _DEFAULT_CLASSIC_PROB_FLOOR = float(_GUARD.get("min_combined_probability_floor", 0.40))
-_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "0.0"))  # safer default for Classic (value margin)
+
+# Default relajado para Classic (evita 0 picks si el modelo no supera +margin)
+_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "0.0"))
 
 # Allow override via env vars (strings)
 CLASSIC_PROB_FLOOR = float(os.environ.get("CLASSIC_PROB_FLOOR", str(_DEFAULT_CLASSIC_PROB_FLOOR)))
@@ -111,8 +113,7 @@ def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
     if ps < pmin:
         return False
 
-    # Regla económica (alineada con picks_parlay.py):
-    # p_estimated debe superar la probabilidad implícita + margen, con piso duro.
+    # Regla económica:
     pe = _f(sel.get("p_estimated"))
     if pe != pe:
         return False
@@ -139,7 +140,7 @@ def score(sel: Dict[str, Any]) -> Tuple[float, float, float]:
     """
     Orden “inteligente” para seguridad:
     1) p_safe desc
-    2) p_estimated desc (si empata)
+    2) p_estimated desc
     3) odds asc (preferimos cuotas más bajas para “seguro”)
     """
     ps = p_safe(sel)
@@ -168,12 +169,7 @@ def best_per_event(selections: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return list(best.values())
 
 
-
 def classic_risk_from_p_safe(ps: float) -> Dict[str, Any]:
-    """
-    Classic se prioriza por probabilidad (p_safe). El 'risk' visible debe reflejar eso.
-    Eliminamos EXTREME (venía upstream) y lo mapeamos a LOW/MEDIUM/HIGH.
-    """
     if ps >= 0.75:
         level = "LOW"
     elif ps >= 0.60:
@@ -183,7 +179,69 @@ def classic_risk_from_p_safe(ps: float) -> Dict[str, Any]:
     return {"level": level}
 
 
-def build_picks(day: str) -> List[Dict[str, Any]]:
+def debug_filter_reasons(all_sel: List[Dict[str, Any]]) -> Dict[str, Any]:
+    reasons = Counter()
+    markets = Counter()
+
+    for sel in all_sel:
+        if not isinstance(sel, dict):
+            reasons["not_dict"] += 1
+            continue
+
+        mkt = _market(sel)
+        markets[mkt] += 1
+
+        if mkt not in STANDARD_MARKETS:
+            reasons["market_not_standard"] += 1
+            continue
+
+        odds = _f(sel.get("odds"))
+        if odds != odds:
+            reasons["odds_nan"] += 1
+            continue
+        if odds < ODDS_MIN or odds > ODDS_MAX:
+            reasons["odds_out_of_range"] += 1
+            continue
+
+        ps = p_safe(sel)
+        if ps != ps:
+            reasons["p_safe_nan"] += 1
+            continue
+        if ps < P_SAFE_MIN_FALLBACK:
+            reasons["p_safe_below_fallback"] += 1
+            continue
+
+        pe = _f(sel.get("p_estimated"))
+        if pe != pe:
+            reasons["p_estimated_nan"] += 1
+            continue
+        min_required = max(float(CLASSIC_PROB_FLOOR), (1.0 / float(odds)) + float(CLASSIC_VALUE_MARGIN))
+        if float(pe) < float(min_required):
+            reasons["econ_rule_fail"] += 1
+            continue
+
+        if not _s(sel.get("sport")) or not _s(sel.get("eventId")):
+            reasons["missing_sport_or_eventId"] += 1
+            continue
+
+        reasons["passes_all_filters"] += 1
+
+    return {
+        "passes_all_filters": int(reasons["passes_all_filters"]),
+        "top_reasons": reasons.most_common(10),
+        "markets_top": markets.most_common(15),
+        "thresholds": {
+            "ODDS_MIN": ODDS_MIN,
+            "ODDS_MAX": ODDS_MAX,
+            "P_SAFE_MIN_PRIMARY": P_SAFE_MIN_PRIMARY,
+            "P_SAFE_MIN_FALLBACK": P_SAFE_MIN_FALLBACK,
+            "CLASSIC_PROB_FLOOR": CLASSIC_PROB_FLOOR,
+            "CLASSIC_VALUE_MARGIN": CLASSIC_VALUE_MARGIN,
+        },
+    }
+
+
+def build_picks(day: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     in_path = API_DATA_DIR / "odds_premium" / day / "all.json"
     if not in_path.exists():
         raise FileNotFoundError(f"No premium odds file found: {in_path}")
@@ -192,23 +250,26 @@ def build_picks(day: str) -> List[Dict[str, Any]]:
     if not isinstance(all_sel, list):
         raise ValueError("odds_premium/all.json no es una lista")
 
+    # debug siempre disponible para logs si picks=0
+    dbg = debug_filter_reasons([s for s in all_sel if isinstance(s, dict)])
+
     # 1) Filtrado principal
-    cand = [s for s in all_sel if is_candidate(s, P_SAFE_MIN_PRIMARY)]
+    cand = [s for s in all_sel if isinstance(s, dict) and is_candidate(s, P_SAFE_MIN_PRIMARY)]
     cand = dedupe_exact(cand)
 
     # 2) Fallback si no llegamos
     if len(cand) < MAX_PICKS:
-        cand_fb = [s for s in all_sel if is_candidate(s, P_SAFE_MIN_FALLBACK)]
+        cand_fb = [s for s in all_sel if isinstance(s, dict) and is_candidate(s, P_SAFE_MIN_FALLBACK)]
         cand_fb = dedupe_exact(cand_fb)
         cand = cand_fb
 
-    # 3) 1 pick por evento (para que la app no parezca “mismo partido repetido”)
+    # 3) 1 pick por evento
     per_event = best_per_event(cand)
 
     # 4) Orden por seguridad
     per_event.sort(key=score, reverse=True)
 
-    # 5) Selección con caps por mercado (variedad)
+    # 5) Selección con caps por mercado
     picked: List[Dict[str, Any]] = []
     used_events: set[Tuple[str, str]] = set()
     market_counts: Counter[str] = Counter()
@@ -227,7 +288,7 @@ def build_picks(day: str) -> List[Dict[str, Any]]:
         used_events.add(ek)
         market_counts[mkt] += 1
 
-    # 6) Si por caps no llegamos a 10, rellenamos ignorando caps (pero siempre 1 por evento)
+    # 6) Relleno ignorando caps (si hace falta)
     if len(picked) < MAX_PICKS:
         for sel in per_event:
             if len(picked) >= MAX_PICKS:
@@ -238,7 +299,7 @@ def build_picks(day: str) -> List[Dict[str, Any]]:
             picked.append(sel)
             used_events.add(ek)
 
-    # 7) Formato “pick” (mantiene compatibilidad con frontend)
+    # 7) Formato “pick”
     out: List[Dict[str, Any]] = []
     for sel in picked[:MAX_PICKS]:
         ps = p_safe(sel)
@@ -253,7 +314,6 @@ def build_picks(day: str) -> List[Dict[str, Any]]:
                 "p_implied": float(sel.get("p_implied")),
                 "p_estimated": float(sel.get("p_estimated")),
                 "p_safe": round(float(ps), 4),
-                # EV lo dejamos si existe (útil para el equipo, aunque no gobierna Classic)
                 "stake": float(sel.get("stake", 50)),
                 "ev": float(sel.get("ev", 0.0)),
                 "risk": classic_risk_from_p_safe(ps),
@@ -262,30 +322,32 @@ def build_picks(day: str) -> List[Dict[str, Any]]:
             }
         )
 
-    return out
+    return out, dbg
 
 
-def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
-    if day is None:
-        day = date.today().isoformat()
+def main() -> None:
+    day = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1].strip() else date.today().isoformat()
 
     out_dir = API_DATA_DIR / "picks_classic" / day
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_file = out_dir / "all.json"
+    out_path = out_dir / "all.json"
 
-    picks = build_picks(day)
-    out_file.write_text(json.dumps(picks, ensure_ascii=False, indent=2), encoding="utf-8")
+    picks, dbg = build_picks(day)
+    out_path.write_text(json.dumps(picks, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    markets = Counter((p.get("market") or "").lower() for p in picks)
-    sports = sorted({p.get("sport") for p in picks if p.get("sport")})
-    return {
+    sports = sorted({str(p.get("sport")) for p in picks if p.get("sport")})
+    markets_top = Counter([_market(p) for p in picks]).most_common(10)
+
+    summary = {
         "day": day,
         "picks": len(picks),
         "sports": sports,
-        "markets_top": markets.most_common(10),
-        "output": str(out_file),
+        "markets_top": markets_top,
+        "output": str(out_path),
+        "debug": dbg if len(picks) == 0 else None,
     }
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
-    print(json.dumps(run_for_day(), ensure_ascii=False, indent=2))
+    main()
