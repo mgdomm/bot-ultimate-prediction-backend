@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from datetime import date
+from datetime import date, datetime
 import json
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -22,6 +22,13 @@ try:
     from api.services.display_enrichment import enrich_contract_inplace, build_display_index
 except ModuleNotFoundError:
     from services.display_enrichment import enrich_contract_inplace, build_display_index  # type: ignore
+
+
+# Contract building (fallback when contract.json is missing)
+try:
+    from api.services.contract_service import create_empty_contract, populate_contract_with_day_data
+except ModuleNotFoundError:
+    from services.contract_service import create_empty_contract, populate_contract_with_day_data  # type: ignore
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -83,9 +90,19 @@ def get_today_bets():
     contract_path = API_DATA_DIR / "contracts" / today / "contract.json"
 
     if not contract_path.exists():
-        raise HTTPException(status_code=404, detail="Daily contract not found")
-
-    contract = json.loads(contract_path.read_text(encoding="utf-8"))
+        # Fallback confiable: construir contrato desde snapshots locales (sin llamar APIs externas)
+        contract = create_empty_contract(today)
+        contract = populate_contract_with_day_data(contract)
+        if not contract.get("generated_at"):
+            contract["generated_at"] = datetime.utcnow().isoformat()
+        try:
+            enrich_contract_inplace(contract)
+        except Exception as err:
+            print('[display_enrichment] failed:', err)
+        contract_path.parent.mkdir(parents=True, exist_ok=True)
+        contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
+    else:
+        contract = json.loads(contract_path.read_text(encoding="utf-8"))
 
     # DF_ENRICH_CONTRACT_ON_READ: enriquecer en memoria (no re-escribe el contrato en disco)
     try:
