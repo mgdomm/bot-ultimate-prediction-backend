@@ -357,7 +357,13 @@ def internal_ensure_today(token: str = ""):
     contract_path = API_DATA_DIR / "contracts" / day / "contract.json"
     lock_file = f"/tmp/internal_ensure_lock_{day}"
 
-    def _contract_has_any_picks() -> bool:
+    def _contract_is_complete() -> bool:
+        """True only when the frozen contract has the minimum expected sections.
+
+        /bets/today can create a fallback contract (e.g. classic-only) when the
+        instance was asleep and the pipeline didn't run. Treat that as incomplete
+        so external cron can force the pipeline.
+        """
         if not contract_path.exists():
             return False
         try:
@@ -366,13 +372,18 @@ def internal_ensure_today(token: str = ""):
             return False
         if not isinstance(c, dict):
             return False
+
         pc = c.get("picks_classic") or []
         pp = c.get("picks_parlay_premium") or []
-        pv = c.get("picks_value") or []
-        return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
+        dfp = c.get("daily_featured_parlay")
 
-    if _contract_has_any_picks():
-        return {"ok": True, "day": day, "ran_pipeline": False, "reason": "contract_already_non_empty"}
+        classic_ok = isinstance(pc, list) and len(pc) > 0
+        parlay_ok = (isinstance(pp, list) and len(pp) > 0) or isinstance(dfp, dict)
+
+        return classic_ok and parlay_ok
+
+    if _contract_is_complete():
+        return {"ok": True, "day": day, "ran_pipeline": False, "reason": "contract_already_complete"}
 
     if os.path.exists(lock_file):
         return {"ok": True, "day": day, "ran_pipeline": False, "reason": "lock_exists"}
