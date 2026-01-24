@@ -10,6 +10,7 @@ type Display = {
   startTime?: string;
   home?: { name?: string; logo?: string };
   away?: { name?: string; logo?: string };
+  live?: any;
 };
 
 type Pick = {
@@ -62,6 +63,32 @@ function asPickList(contract: Contract | null): Pick[] {
 function n(x: any, fallback = NaN) {
   const v = Number(x);
   return Number.isFinite(v) ? v : fallback;
+}
+
+// DF_LIVE_UI_V1
+function liveParts(live: any): { score: string | null; status: string | null } {
+  if (!live || typeof live !== "object") return { score: null, status: null };
+  const hs = (live as any).homeScore;
+  const as_ = (live as any).awayScore;
+  const hasScore = hs !== null && hs !== undefined && as_ !== null && as_ !== undefined;
+  const score = hasScore ? `${hs}-${as_}` : null;
+
+  const statusShort = (live as any).statusShort || (live as any).status || null;
+  let time: string | null = null;
+  const elapsed = Number((live as any).elapsed);
+  if (Number.isFinite(elapsed)) time = `${elapsed}'`;
+  else if ((live as any).timer) time = String((live as any).timer);
+  else if ((live as any).time) time = String((live as any).time);
+
+  const status = [statusShort, time].filter(Boolean).join(" ") || null;
+  return { score, status };
+}
+
+function fmtLiveLine(live: any): string | null {
+  const { score, status } = liveParts(live);
+  if (!score && !status) return null;
+  if (score && status) return `${score} · ${status}`;
+  return score || status;
 }
 
 function fmtOdds(x: any) {
@@ -330,9 +357,14 @@ export default function Page() {
                           <div className="subtle text-xs mt-1">Empieza: {fmtStart(d.startTime)}</div>
                         </div>
 
-                        <div className="flex items-center gap-2 shrink-0">
+                        <div className="flex flex-col items-end gap-1 shrink-0">
+                          <div className="flex items-center gap-2">
                           <ImgTeam src={home?.logo} alt={home?.name || "Local"} />
                           <ImgTeam src={away?.logo} alt={away?.name || "Visitante"} />
+                          </div>
+                          {fmtLiveLine((d as any).live) ? (
+                            <div className="subtle text-[11px] text-right">{fmtLiveLine((d as any).live)}</div>
+                          ) : null}
                         </div>
                       </div>
 
@@ -436,6 +468,24 @@ export default function Page() {
                                   </>
                                 )}
                               </div>
+                              {/* DF_LIVE_PARLAY_LEG */}
+                              {hasTeams ? (
+                                <div className="mt-2 grid grid-cols-3 items-center gap-2">
+                                  <div className="flex justify-start">
+                                    <ImgTeam src={h?.logo} alt={h?.name || "Local"} />
+                                  </div>
+                                  <div className="text-center">
+                                    {fmtLiveLine((dd as any).live) ? (
+                                      <div className="text-xs text-slate-100">{fmtLiveLine((dd as any).live)}</div>
+                                    ) : (
+                                      <div className="subtle text-xs">—</div>
+                                    )}
+                                  </div>
+                                  <div className="flex justify-end">
+                                    <ImgTeam src={a?.logo} alt={a?.name || "Visitante"} />
+                                  </div>
+                                </div>
+                              ) : null}
 
                               <div className="subtle text-xs mt-1">
                                 {sportEs((dd as any).sport || leg.sport)} · {(dd as any).league || "—"}
