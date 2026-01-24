@@ -1,7 +1,7 @@
 {
   "contract_version": "1.0",
   "contract_date": "2026-01-24",
-  "generated_at": "2026-01-24T13:45:21.785676",
+  "generated_at": "2026-01-24T13:59:42.181182",
   "picks_classic": [
     {
       "sport": "football",
@@ -491,108 +491,6 @@
       "label": "Boom (3 piernas)",
       "legs": [
         {
-          "sport": "basketball",
-          "eventId": "457868",
-          "bookmaker": "Pncl",
-          "market": "Over/Under",
-          "selection": "Under 139.5",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": true,
-          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-          "display": {
-            "sport": "basketball",
-            "eventId": "457868",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 75,
-              "awayScore": 58,
-              "periods": null
-            },
-            "home": {
-              "name": "Jacksonville State",
-              "logo": "https://media.api-sports.io/basketball/teams/1493.png"
-            },
-            "away": {
-              "name": "Middle Tenn. St.",
-              "logo": "https://media.api-sports.io/basketball/teams/1999.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 139.5,
-            "value": 133.0
-          }
-        },
-        {
-          "sport": "basketball",
-          "eventId": "470114",
-          "bookmaker": "10Bet",
-          "market": "Over/Under",
-          "selection": "Over 210.5",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": true,
-          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-          "display": {
-            "sport": "basketball",
-            "eventId": "470114",
-            "league": "NBA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/12.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 104,
-              "awayScore": 111,
-              "periods": null
-            },
-            "home": {
-              "name": "Detroit Pistons",
-              "logo": "https://media.api-sports.io/basketball/teams/140.png"
-            },
-            "away": {
-              "name": "Houston Rockets",
-              "logo": "https://media.api-sports.io/basketball/teams/142.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 210.5,
-            "value": 215.0
-          }
-        },
-        {
           "sport": "handball",
           "eventId": "190797",
           "bookmaker": "Pinnacle",
@@ -643,6 +541,140 @@
               "logo": "https://media.api-sports.io/handball/teams/2661.png"
             }
           }
+        },
+        {
+          "sport": "rugby",
+          "eventId": "51259",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Under 63.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51259",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 24,
+              "awayScore": 33,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Mitsubishi Dynaboars",
+              "logo": "https://media.api-sports.io/rugby/teams/199.png"
+            },
+            "away": {
+              "name": "Black Rams",
+              "logo": "https://media.api-sports.io/rugby/teams/193.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 63.5,
+            "value": 57.0
+          }
+        },
+        {
+          "sport": "rugby",
+          "eventId": "51261",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 57.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51261",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 31,
+              "awayScore": 30,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Wild Knights",
+              "logo": "https://media.api-sports.io/rugby/teams/207.png"
+            },
+            "away": {
+              "name": "Suntory Sungoliath",
+              "logo": "https://media.api-sports.io/rugby/teams/204.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 57.5,
+            "value": 61.0
+          }
         }
       ],
       "combined_odds": 3.375,
@@ -654,326 +686,6 @@
       "kind": "SAFE_2",
       "label": "Seguro (2 piernas)",
       "legs": [
-        {
-          "sport": "basketball",
-          "eventId": "457868",
-          "bookmaker": "Pncl",
-          "market": "Over/Under",
-          "selection": "Under 139.5",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": true,
-          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-          "display": {
-            "sport": "basketball",
-            "eventId": "457868",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 75,
-              "awayScore": 58,
-              "periods": null
-            },
-            "home": {
-              "name": "Jacksonville State",
-              "logo": "https://media.api-sports.io/basketball/teams/1493.png"
-            },
-            "away": {
-              "name": "Middle Tenn. St.",
-              "logo": "https://media.api-sports.io/basketball/teams/1999.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 139.5,
-            "value": 133.0
-          }
-        },
-        {
-          "sport": "basketball",
-          "eventId": "470114",
-          "bookmaker": "10Bet",
-          "market": "Over/Under",
-          "selection": "Over 210.5",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": true,
-          "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-          "display": {
-            "sport": "basketball",
-            "eventId": "470114",
-            "league": "NBA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/12.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 104,
-              "awayScore": 111,
-              "periods": null
-            },
-            "home": {
-              "name": "Detroit Pistons",
-              "logo": "https://media.api-sports.io/basketball/teams/140.png"
-            },
-            "away": {
-              "name": "Houston Rockets",
-              "logo": "https://media.api-sports.io/basketball/teams/142.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 210.5,
-            "value": 215.0
-          }
-        }
-      ],
-      "combined_odds": 2.25,
-      "prob_parlay": 0.4716
-    },
-    {
-      "type": "PARLAY_PREMIUM",
-      "kind": "SAFE_2",
-      "label": "Seguro (2 piernas)",
-      "legs": [
-        {
-          "sport": "basketball",
-          "eventId": "477559",
-          "bookmaker": "Bet365",
-          "market": "Over/Under",
-          "selection": "Over 139",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": false,
-          "display": {
-            "sport": "basketball",
-            "eventId": "477559",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 81,
-              "awayScore": 60,
-              "periods": null
-            },
-            "home": {
-              "name": "St. Francis (PA)",
-              "logo": "https://media.api-sports.io/basketball/teams/201.png"
-            },
-            "away": {
-              "name": "Chicago State",
-              "logo": "https://media.api-sports.io/basketball/teams/1863.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 139.0,
-            "value": 141.0
-          }
-        },
-        {
-          "sport": "basketball",
-          "eventId": "477560",
-          "bookmaker": "Bet365",
-          "market": "Over/Under",
-          "selection": "Under 142",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": false,
-          "display": {
-            "sport": "basketball",
-            "eventId": "477560",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 63,
-              "awayScore": 66,
-              "periods": null
-            },
-            "home": {
-              "name": "Stonehill",
-              "logo": "https://media.api-sports.io/basketball/teams/5866.png"
-            },
-            "away": {
-              "name": "LIU Sharks",
-              "logo": "https://media.api-sports.io/basketball/teams/1966.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 142.0,
-            "value": 129.0
-          }
-        }
-      ],
-      "combined_odds": 2.25,
-      "prob_parlay": 0.4716
-    },
-    {
-      "type": "PARLAY_PREMIUM",
-      "kind": "SAFE_4",
-      "label": "Seguro (4 piernas)",
-      "legs": [
-        {
-          "sport": "basketball",
-          "eventId": "477561",
-          "bookmaker": "Pncl",
-          "market": "Over/Under",
-          "selection": "Over 135.5",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": false,
-          "display": {
-            "sport": "basketball",
-            "eventId": "477561",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 66,
-              "awayScore": 76,
-              "periods": null
-            },
-            "home": {
-              "name": "Central Connecticut State",
-              "logo": "https://media.api-sports.io/basketball/teams/1856.png"
-            },
-            "away": {
-              "name": "Fairleigh Dickinson",
-              "logo": "https://media.api-sports.io/basketball/teams/1907.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "WON",
-            "metric": "TOTAL",
-            "line": 135.5,
-            "value": 142.0
-          }
-        },
-        {
-          "sport": "basketball",
-          "eventId": "477562",
-          "bookmaker": "Bet365",
-          "market": "Over/Under",
-          "selection": "Over 155",
-          "odds": 1.5,
-          "p_implied": 0.6667,
-          "p_estimated": 0.6867,
-          "stake": 50.0,
-          "ev": 1.5,
-          "risk": {
-            "level": "MEDIUM",
-            "p_est": 0.6867,
-            "delta_p": 0.02,
-            "ev_margin": 0.03
-          },
-          "premium": false,
-          "display": {
-            "sport": "basketball",
-            "eventId": "477562",
-            "league": "NCAA",
-            "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-            "startTime": "2026-01-24T00:00:00+00:00",
-            "live": {
-              "statusLong": "Game Finished",
-              "statusShort": "FT",
-              "timer": null,
-              "time": "00:00",
-              "homeScore": 67,
-              "awayScore": 68,
-              "periods": null
-            },
-            "home": {
-              "name": "Buffalo",
-              "logo": "https://media.api-sports.io/basketball/teams/1845.png"
-            },
-            "away": {
-              "name": "UMass",
-              "logo": "https://media.api-sports.io/basketball/teams/2168.png"
-            }
-          },
-          "result": {
-            "settled": true,
-            "status": "LOST",
-            "metric": "TOTAL",
-            "line": 155.0,
-            "value": 135.0
-          }
-        },
         {
           "sport": "handball",
           "eventId": "185961",
@@ -1079,6 +791,396 @@
           }
         }
       ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_2",
+      "label": "Seguro (2 piernas)",
+      "legs": [
+        {
+          "sport": "rugby",
+          "eventId": "51259",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Under 63.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51259",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 24,
+              "awayScore": 33,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Mitsubishi Dynaboars",
+              "logo": "https://media.api-sports.io/rugby/teams/199.png"
+            },
+            "away": {
+              "name": "Black Rams",
+              "logo": "https://media.api-sports.io/rugby/teams/193.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 63.5,
+            "value": 57.0
+          }
+        },
+        {
+          "sport": "rugby",
+          "eventId": "51261",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 57.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51261",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 31,
+              "awayScore": 30,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Wild Knights",
+              "logo": "https://media.api-sports.io/rugby/teams/207.png"
+            },
+            "away": {
+              "name": "Suntory Sungoliath",
+              "logo": "https://media.api-sports.io/rugby/teams/204.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 57.5,
+            "value": 61.0
+          }
+        }
+      ],
+      "combined_odds": 2.25,
+      "prob_parlay": 0.4716
+    },
+    {
+      "type": "PARLAY_PREMIUM",
+      "kind": "SAFE_4",
+      "label": "Seguro (4 piernas)",
+      "legs": [
+        {
+          "sport": "handball",
+          "eventId": "185961",
+          "bookmaker": "1xBet",
+          "market": "Over/Under",
+          "selection": "Under 60.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "handball",
+            "eventId": "185961",
+            "league": "Superleague Women",
+            "leagueLogo": "https://media.api-sports.io/handball/leagues/92.png",
+            "startTime": "2026-01-24T10:00:00+00:00",
+            "live": {
+              "statusLong": "Not Started",
+              "statusShort": "NS",
+              "timer": null,
+              "time": "10:00",
+              "homeScore": null,
+              "awayScore": null,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Chernomorochka W",
+              "logo": "https://media.api-sports.io/handball/teams/4236.png"
+            },
+            "away": {
+              "name": "Luch W",
+              "logo": "https://media.api-sports.io/handball/teams/874.png"
+            }
+          }
+        },
+        {
+          "sport": "handball",
+          "eventId": "190797",
+          "bookmaker": "Pinnacle",
+          "market": "Over/Under",
+          "selection": "Over 55.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "handball",
+            "eventId": "190797",
+            "league": "African Championship",
+            "leagueLogo": "https://media.api-sports.io/handball/leagues/183.png",
+            "startTime": "2026-01-24T11:00:00+00:00",
+            "live": {
+              "statusLong": "Not Started",
+              "statusShort": "NS",
+              "timer": null,
+              "time": "11:00",
+              "homeScore": null,
+              "awayScore": null,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Uganda",
+              "logo": "https://media.api-sports.io/handball/teams/4881.png"
+            },
+            "away": {
+              "name": "Egypt",
+              "logo": "https://media.api-sports.io/handball/teams/2661.png"
+            }
+          }
+        },
+        {
+          "sport": "rugby",
+          "eventId": "51259",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Under 63.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51259",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 24,
+              "awayScore": 33,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Mitsubishi Dynaboars",
+              "logo": "https://media.api-sports.io/rugby/teams/199.png"
+            },
+            "away": {
+              "name": "Black Rams",
+              "logo": "https://media.api-sports.io/rugby/teams/193.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 63.5,
+            "value": 57.0
+          }
+        },
+        {
+          "sport": "rugby",
+          "eventId": "51261",
+          "bookmaker": "Bet365",
+          "market": "Over/Under",
+          "selection": "Over 57.5",
+          "odds": 1.5,
+          "p_implied": 0.6667,
+          "p_estimated": 0.6867,
+          "stake": 50.0,
+          "ev": 1.5,
+          "risk": {
+            "level": "MEDIUM",
+            "p_est": 0.6867,
+            "delta_p": 0.02,
+            "ev_margin": 0.03
+          },
+          "premium": false,
+          "display": {
+            "sport": "rugby",
+            "eventId": "51261",
+            "league": "Top League",
+            "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+            "startTime": "2026-01-24T05:30:00+00:00",
+            "live": {
+              "statusLong": "Finished",
+              "statusShort": "FT",
+              "timer": null,
+              "time": "05:30",
+              "homeScore": 31,
+              "awayScore": 30,
+              "periods": {
+                "first": {
+                  "home": null,
+                  "away": null
+                },
+                "second": {
+                  "home": null,
+                  "away": null
+                },
+                "overtime": {
+                  "home": null,
+                  "away": null
+                },
+                "second_overtime": {
+                  "home": null,
+                  "away": null
+                }
+              }
+            },
+            "home": {
+              "name": "Wild Knights",
+              "logo": "https://media.api-sports.io/rugby/teams/207.png"
+            },
+            "away": {
+              "name": "Suntory Sungoliath",
+              "logo": "https://media.api-sports.io/rugby/teams/204.png"
+            }
+          },
+          "result": {
+            "settled": true,
+            "status": "WON",
+            "metric": "TOTAL",
+            "line": 57.5,
+            "value": 61.0
+          }
+        }
+      ],
       "combined_odds": 5.0625,
       "prob_parlay": 0.2224
     }
@@ -1088,108 +1190,6 @@
     "kind": "BOOM_3",
     "label": "Boom (3 piernas)",
     "legs": [
-      {
-        "sport": "basketball",
-        "eventId": "457868",
-        "bookmaker": "Pncl",
-        "market": "Over/Under",
-        "selection": "Under 139.5",
-        "odds": 1.5,
-        "p_implied": 0.6667,
-        "p_estimated": 0.6867,
-        "stake": 50.0,
-        "ev": 1.5,
-        "risk": {
-          "level": "MEDIUM",
-          "p_est": 0.6867,
-          "delta_p": 0.02,
-          "ev_margin": 0.03
-        },
-        "premium": true,
-        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-        "display": {
-          "sport": "basketball",
-          "eventId": "457868",
-          "league": "NCAA",
-          "leagueLogo": "https://media.api-sports.io/basketball/leagues/116.png",
-          "startTime": "2026-01-24T00:00:00+00:00",
-          "live": {
-            "statusLong": "Game Finished",
-            "statusShort": "FT",
-            "timer": null,
-            "time": "00:00",
-            "homeScore": 75,
-            "awayScore": 58,
-            "periods": null
-          },
-          "home": {
-            "name": "Jacksonville State",
-            "logo": "https://media.api-sports.io/basketball/teams/1493.png"
-          },
-          "away": {
-            "name": "Middle Tenn. St.",
-            "logo": "https://media.api-sports.io/basketball/teams/1999.png"
-          }
-        },
-        "result": {
-          "settled": true,
-          "status": "WON",
-          "metric": "TOTAL",
-          "line": 139.5,
-          "value": 133.0
-        }
-      },
-      {
-        "sport": "basketball",
-        "eventId": "470114",
-        "bookmaker": "10Bet",
-        "market": "Over/Under",
-        "selection": "Over 210.5",
-        "odds": 1.5,
-        "p_implied": 0.6667,
-        "p_estimated": 0.6867,
-        "stake": 50.0,
-        "ev": 1.5,
-        "risk": {
-          "level": "MEDIUM",
-          "p_est": 0.6867,
-          "delta_p": 0.02,
-          "ev_margin": 0.03
-        },
-        "premium": true,
-        "premium_reason": "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS",
-        "display": {
-          "sport": "basketball",
-          "eventId": "470114",
-          "league": "NBA",
-          "leagueLogo": "https://media.api-sports.io/basketball/leagues/12.png",
-          "startTime": "2026-01-24T00:00:00+00:00",
-          "live": {
-            "statusLong": "Game Finished",
-            "statusShort": "FT",
-            "timer": null,
-            "time": "00:00",
-            "homeScore": 104,
-            "awayScore": 111,
-            "periods": null
-          },
-          "home": {
-            "name": "Detroit Pistons",
-            "logo": "https://media.api-sports.io/basketball/teams/140.png"
-          },
-          "away": {
-            "name": "Houston Rockets",
-            "logo": "https://media.api-sports.io/basketball/teams/142.png"
-          }
-        },
-        "result": {
-          "settled": true,
-          "status": "WON",
-          "metric": "TOTAL",
-          "line": 210.5,
-          "value": 215.0
-        }
-      },
       {
         "sport": "handball",
         "eventId": "190797",
@@ -1240,6 +1240,140 @@
             "name": "Egypt",
             "logo": "https://media.api-sports.io/handball/teams/2661.png"
           }
+        }
+      },
+      {
+        "sport": "rugby",
+        "eventId": "51259",
+        "bookmaker": "Bet365",
+        "market": "Over/Under",
+        "selection": "Under 63.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": false,
+        "display": {
+          "sport": "rugby",
+          "eventId": "51259",
+          "league": "Top League",
+          "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+          "startTime": "2026-01-24T05:30:00+00:00",
+          "live": {
+            "statusLong": "Finished",
+            "statusShort": "FT",
+            "timer": null,
+            "time": "05:30",
+            "homeScore": 24,
+            "awayScore": 33,
+            "periods": {
+              "first": {
+                "home": null,
+                "away": null
+              },
+              "second": {
+                "home": null,
+                "away": null
+              },
+              "overtime": {
+                "home": null,
+                "away": null
+              },
+              "second_overtime": {
+                "home": null,
+                "away": null
+              }
+            }
+          },
+          "home": {
+            "name": "Mitsubishi Dynaboars",
+            "logo": "https://media.api-sports.io/rugby/teams/199.png"
+          },
+          "away": {
+            "name": "Black Rams",
+            "logo": "https://media.api-sports.io/rugby/teams/193.png"
+          }
+        },
+        "result": {
+          "settled": true,
+          "status": "WON",
+          "metric": "TOTAL",
+          "line": 63.5,
+          "value": 57.0
+        }
+      },
+      {
+        "sport": "rugby",
+        "eventId": "51261",
+        "bookmaker": "Bet365",
+        "market": "Over/Under",
+        "selection": "Over 57.5",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6867,
+        "stake": 50.0,
+        "ev": 1.5,
+        "risk": {
+          "level": "MEDIUM",
+          "p_est": 0.6867,
+          "delta_p": 0.02,
+          "ev_margin": 0.03
+        },
+        "premium": false,
+        "display": {
+          "sport": "rugby",
+          "eventId": "51261",
+          "league": "Top League",
+          "leagueLogo": "https://media.api-sports.io/rugby/leagues/27.png",
+          "startTime": "2026-01-24T05:30:00+00:00",
+          "live": {
+            "statusLong": "Finished",
+            "statusShort": "FT",
+            "timer": null,
+            "time": "05:30",
+            "homeScore": 31,
+            "awayScore": 30,
+            "periods": {
+              "first": {
+                "home": null,
+                "away": null
+              },
+              "second": {
+                "home": null,
+                "away": null
+              },
+              "overtime": {
+                "home": null,
+                "away": null
+              },
+              "second_overtime": {
+                "home": null,
+                "away": null
+              }
+            }
+          },
+          "home": {
+            "name": "Wild Knights",
+            "logo": "https://media.api-sports.io/rugby/teams/207.png"
+          },
+          "away": {
+            "name": "Suntory Sungoliath",
+            "logo": "https://media.api-sports.io/rugby/teams/204.png"
+          }
+        },
+        "result": {
+          "settled": true,
+          "status": "WON",
+          "metric": "TOTAL",
+          "line": 57.5,
+          "value": 61.0
         }
       }
     ],
