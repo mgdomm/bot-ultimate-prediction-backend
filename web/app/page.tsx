@@ -91,7 +91,54 @@ function fmtLiveLine(live: any): string | null {
   return score || status;
 }
 
-function fmtOdds(x: any) {
+function liveMeta(live: any): { statusShort: string | null; time: string | null; hs: any; as: any } {
+  if (!live || typeof live !== "object") return { statusShort: null, time: null, hs: null, as: null };
+  const statusShort = (live as any).statusShort || (live as any).status || null;
+  let time: string | null = null;
+  const elapsed = Number((live as any).elapsed);
+  if (Number.isFinite(elapsed)) time = `${elapsed}'`;
+  else if ((live as any).timer) time = String((live as any).timer);
+  else if ((live as any).time) time = String((live as any).time);
+  return { statusShort, time, hs: (live as any).homeScore, as: (live as any).awayScore };
+}
+
+function isFinalStatus(ss?: string | null) {
+    const v = String(ss || "").toUpperCase();
+    return v === "FT" || v === "AET" || v === "PEN" || v === "FINAL";
+  }
+
+  function outcomeForPick(live: any, market?: string, selection?: string): "WIN" | "LOSE" | null {
+    const { statusShort, hs, as } = liveMeta(live);
+    if (!isFinalStatus(statusShort)) return null;
+
+    const h = Number(hs);
+    const a = Number(as);
+    if (!Number.isFinite(h) || !Number.isFinite(a)) return null;
+
+    const m = String(market || "").toLowerCase();
+    if (!(m.includes("over/under") || m.includes("over under") || m.includes("total"))) return null;
+
+    const sel = String(selection || "");
+    const mm = sel.match(/\b(Over|Under)\s*([0-9]+(?:\.[0-9]+)?)/i);
+    if (!mm) return null;
+
+    const dir = String(mm[1]).toLowerCase();
+    const line = Number(mm[2]);
+    if (!Number.isFinite(line)) return null;
+
+    const total = h + a;
+    if (dir === "over") return total > line ? "WIN" : "LOSE";
+    if (dir === "under") return total < line ? "WIN" : "LOSE";
+    return null;
+  }
+
+  function borderStyleForOutcome(outcome: "WIN" | "LOSE" | null) {
+    if (outcome === "WIN") return { borderColor: "rgba(34,197,94,0.55)", borderWidth: "2px" } as const;
+    if (outcome === "LOSE") return { borderColor: "rgba(239,68,68,0.55)", borderWidth: "2px" } as const;
+    return null;
+  }
+
+  function fmtOdds(x: any) {
   const v = n(x);
   if (!Number.isFinite(v)) return "—";
   return v.toFixed(2);
@@ -156,31 +203,24 @@ function mercadoBonito(market?: string) {
   return market || "Mercado";
 }
 
-  function confianzaBadge(ps?: number) {
-    if (ps === null || ps === undefined) return null;
-    const p = Number(ps);
-    if (!Number.isFinite(p)) return null;
+function confianzaBadge(ps?: number) {
+  if (ps === null || ps === undefined) return null;
+  const p = Number(ps);
+  if (!Number.isFinite(p)) return null;
 
-    const pct = Math.round(p * 100);
-    const cls = pct >= 75 ? "badge badge-good" : pct >= 60 ? "badge badge-warn" : "badge badge-bad";
+  const pct = Math.round(p * 100);
+  const cls = pct >= 75 ? "badge badge-good" : pct >= 60 ? "badge badge-warn" : "badge badge-bad";
 
-    return (
-      <span className="relative inline-flex items-center group">
-        <span className={cls} tabIndex={0} role="button" aria-label="Confianza (toca para ver explicación)">
-          Confianza {pct}%
-        </span>
-        <span className="absolute left-0 top-full mt-2 z-50 hidden w-72 rounded-lg border border-white/10 bg-black/90 p-3 text-xs text-white/90 shadow-lg group-hover:block group-focus-within:block">
-          Confianza = probabilidad estimada por el modelo. No garantiza acierto; solo indica qué tan probable es según datos y mercado.
-        </span>
+  return (
+    <span className="relative inline-flex items-center group">
+      <span className={cls} tabIndex={0} role="button" aria-label="Confianza (toca para ver explicación)">
+        Confianza {pct}%
       </span>
-    );
-  }
-
-function cleanParlayTitle(label?: string, kind?: string) {
-  // Parlay cards: show ONLY the type. No legs/piernas count.
-  if (kind === "BOOM_3") return "Boom";
-  if ((kind || "").startsWith("SAFE")) return "Seguro";
-  return "Parlay";
+      <span className="absolute left-0 bottom-full mb-2 z-50 hidden w-72 rounded-lg border border-white/10 bg-black/90 p-3 text-xs text-white/90 shadow-lg group-hover:block group-focus-within:block">
+        Confianza = probabilidad estimada por el modelo. No garantiza acierto; solo indica qué tan probable es según datos y mercado.
+      </span>
+    </span>
+  );
 }
 
 function parlayTag(kind?: string) {
@@ -188,24 +228,44 @@ function parlayTag(kind?: string) {
   return "SEGURO";
 }
 
-  function initialsFromAlt(alt: string) {
-    const cleaned = (alt || "").split("(")[0].trim();
-    const parts = cleaned.split(" ").filter(Boolean);
-    const a = (parts[0]?.[0] || "").toUpperCase();
-    const b = (parts[1]?.[0] || "").toUpperCase();
-    return (a + b) || "—";
-  }
+function initialsFromAlt(alt: string) {
+  const cleaned = (alt || "").split("(")[0].trim();
+  const parts = cleaned.split(" ").filter(Boolean);
+  const a = (parts[0]?.[0] || "").toUpperCase();
+  const b = (parts[1]?.[0] || "").toUpperCase();
+  return (a + b) || "—";
+}
 
-function ImgTeam({ src, alt }: { src?: string | null; alt: string }) {
+function isBadLogo(src?: string | null) {
+  if (!src) return true;
+  const s = String(src).trim();
+  if (!s) return true;
+  const low = s.toLowerCase();
+  if (low === "null" || low === "none" || low === "n/a" || low === "na" || low === "—") return true;
+  return false;
+}
+
+function ImgTeam({
+  src,
+  alt,
+  size = 40,
+  className = "",
+}: {
+  src?: string | null;
+  alt: string;
+  size?: number;
+  className?: string;
+}) {
   const [ok, setOk] = useState(true);
 
-  if (!src || !ok) {
+  if (isBadLogo(src) || !ok) {
     const initials = initialsFromAlt(alt);
     return (
       <div
         aria-label={alt}
         title={alt}
-        className="h-10 w-10 rounded-xl border border-white/10 bg-gradient-to-br from-white/20 via-white/10 to-white/5 flex items-center justify-center text-[11px] font-semibold tracking-wide text-white/75 select-none"
+        style={{ width: size, height: size }}
+        className={`rounded-xl border border-white/10 bg-gradient-to-br from-white/20 via-white/10 to-white/5 flex items-center justify-center text-[11px] font-semibold tracking-wide text-white/75 select-none ${className}`}
       >
         {initials}
       </div>
@@ -215,14 +275,103 @@ function ImgTeam({ src, alt }: { src?: string | null; alt: string }) {
   // eslint-disable-next-line @next/next/no-img-element
   return (
     <img
-      src={src}
+      src={src as any}
       alt={alt}
-      className="h-10 w-10 rounded-xl bg-white/5 border border-white/10 object-contain"
-      onError={() => setOk(false)}
+      style={{ width: size, height: size }}
+      className={`rounded-xl bg-white/5 border border-white/10 object-contain ${className}`}
+      referrerPolicy="no-referrer"
+        loading="lazy"
+        decoding="async"
+        onLoad={(e) => {
+          const img = e.currentTarget as HTMLImageElement;
+          if (!img?.naturalWidth || img.naturalWidth <= 1) setOk(false);
+        }}
+        onError={() => setOk(false)}
     />
   );
 }
 
+function InfoTip({ children, tip }: { children: React.ReactNode; tip: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <span className="relative inline-flex items-center group">
+      <span
+        tabIndex={0}
+        role="button"
+        aria-label="Info"
+        className="cursor-help"
+        onClick={(e) => {
+          e.preventDefault();
+          setOpen((v) => !v);
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setOpen((v) => !v);
+          }
+          if (e.key === "Escape") setOpen(false);
+        }}
+        onBlur={() => setOpen(false)}
+      >
+        {children}
+      </span>
+
+      <span
+        className={
+          "absolute left-0 bottom-full mb-2 z-50 w-80 rounded-lg border border-white/10 bg-black/90 p-3 text-xs text-white/90 shadow-lg transition-opacity " +
+          (open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none") +
+          " group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto"
+        }
+      >
+        {tip}
+      </span>
+    </span>
+  );
+}
+
+function LiveScoreMini({
+  live,
+  home,
+  away,
+  size = 46,
+}: {
+  live: any;
+  home?: { name?: string; logo?: string };
+  away?: { name?: string; logo?: string };
+  size?: number;
+}) {
+  const { statusShort, time, hs, as } = liveMeta(live);
+  const hasScore = hs !== null && hs !== undefined && as !== null && as !== undefined;
+  const showStatus = Boolean(statusShort || time);
+
+  return (
+    <div className="flex items-center gap-3">
+      <div className="flex flex-col items-center">
+        <ImgTeam src={home?.logo} alt={home?.name || "Local"} size={size} />
+        <div className="mt-1 text-[15px] font-semibold tabular-nums text-slate-100">{hasScore ? String(hs) : "—"}</div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center min-w-14">
+        {showStatus ? (
+          <>
+            <div className="rounded-full border border-white/10 bg-white/[0.04] px-2 py-0.5 text-[11px] text-slate-100/90">
+              {statusShort || "—"}
+            </div>
+            {time ? <div className="mt-0.5 text-[11px] text-slate-300/80 tabular-nums">{time}</div> : null}
+          </>
+        ) : (
+          <div className="subtle text-[11px]">—</div>
+        )}
+      </div>
+
+      <div className="flex flex-col items-center">
+        <ImgTeam src={away?.logo} alt={away?.name || "Visitante"} size={size} />
+        <div className="mt-1 text-[15px] font-semibold tabular-nums text-slate-100">{hasScore ? String(as) : "—"}</div>
+      </div>
+    </div>
+  );
+}
 
 export default function Page() {
   const [contract, setContract] = useState<Contract | null>(null);
@@ -258,7 +407,7 @@ export default function Page() {
     return (
       <main className="space-y-6">
         <section className="card">
-          <div className="card-inner p-6">
+          <div className="card-inner p-6 overflow-visible">
             <div className="h1">ULTIMATE PREDICTOR</div>
             <div className="subtle mt-2">No se pudo cargar la página.</div>
             <pre className="mt-3 text-sm text-red-200 whitespace-pre-wrap">{err}</pre>
@@ -272,7 +421,7 @@ export default function Page() {
     return (
       <main className="space-y-6">
         <section className="card">
-          <div className="card-inner p-6">
+          <div className="card-inner p-6 overflow-visible">
             <div className="h1">ULTIMATE PREDICTOR</div>
             <div className="subtle mt-2">Cargando…</div>
           </div>
@@ -286,7 +435,7 @@ export default function Page() {
       {/* Banner */}
       <section className="card">
         <div
-          className="card-inner p-6 md:p-8"
+          className="card-inner p-6 md:p-8 overflow-visible"
           style={{
             background:
               "radial-gradient(1200px 240px at 15% 10%, rgba(17,197,167,0.18), transparent 55%), radial-gradient(900px 240px at 85% 0%, rgba(29,139,255,0.18), transparent 55%)",
@@ -318,7 +467,7 @@ export default function Page() {
                   value={Number.isFinite(stake) ? stake : 50}
                   onChange={(e) => setStake(Number(e.target.value || 0))}
                 />
-                              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -329,7 +478,7 @@ export default function Page() {
         <>
           {!classic.length ? (
             <section className="card">
-              <div className="card-inner p-6 text-slate-300/80">Hoy no hay predicciones.</div>
+              <div className="card-inner p-6 text-slate-300/80 overflow-visible">Hoy no hay predicciones.</div>
             </section>
           ) : (
             <section className="grid gap-4 md:grid-cols-2">
@@ -338,10 +487,11 @@ export default function Page() {
                 const home = d.home || {};
                 const away = d.away || {};
                 const profit = stake * (n(p.odds, NaN) - 1);
+                const outcome = outcomeForPick((d as any).live, p.market, p.selection);
 
                 return (
-                  <article key={`${p.sport || "sport"}-${p.eventId || "event"}-${idx}`} className="card">
-                    <div className="card-inner p-5">
+                  <article key={`${p.sport || "sport"}-${p.eventId || "event"}-${idx}`} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(outcome) || {}) }}>
+                    <div className="card-inner p-5 overflow-visible">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
                           <div className="flex flex-wrap items-center gap-2">
@@ -357,14 +507,8 @@ export default function Page() {
                           <div className="subtle text-xs mt-1">Empieza: {fmtStart(d.startTime)}</div>
                         </div>
 
-                        <div className="flex flex-col items-end gap-1 shrink-0">
-                          <div className="flex items-center gap-2">
-                          <ImgTeam src={home?.logo} alt={home?.name || "Local"} />
-                          <ImgTeam src={away?.logo} alt={away?.name || "Visitante"} />
-                          </div>
-                          {fmtLiveLine((d as any).live) ? (
-                            <div className="subtle text-[11px] text-right">{fmtLiveLine((d as any).live)}</div>
-                          ) : null}
+                        <div className="shrink-0">
+                          <LiveScoreMini live={(d as any).live} home={home} away={away} size={48} />
                         </div>
                       </div>
 
@@ -388,11 +532,30 @@ export default function Page() {
                           <div className="mono">Ganancia potencial</div>
                           <div className="text-sm text-slate-100">{fmtEur(profit)}</div>
                         </div>
+
+                        <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
+                          <div className="mono">Retorno total</div>
+                          <div className="text-sm text-slate-100">{fmtEur(stake * n(p.odds, NaN))}</div>
+                        </div>
                       </div>
 
                       {Number.isFinite(n(p.p_safe, NaN)) ? (
                         <div className="subtle text-xs mt-3">
-                          Prob. estimada (segura): <span className="text-slate-100">{fmtPct(p.p_safe)}</span>
+                          <InfoTip
+                            tip={
+                              <>
+                                <div className="font-semibold text-white/90">¿Qué significa esta probabilidad?</div>
+                                <div className="mt-1">
+                                  Es la <span className="text-white">estimación del modelo</span> para esta selección. No garantiza acierto; solo
+                                  indica qué tan probable es según datos y mercado.
+                                </div>
+                              </>
+                            }
+                          >
+                            <span>
+                              Prob. estimada: <span className="text-slate-100">{fmtPct(p.p_safe)}</span>
+                            </span>
+                          </InfoTip>
                         </div>
                       ) : null}
                     </div>
@@ -409,7 +572,7 @@ export default function Page() {
         <>
           {!parlays.length ? (
             <section className="card">
-              <div className="card-inner p-6">
+              <div className="card-inner p-6 overflow-visible">
                 <div className="h1">Parleys</div>
                 <div className="subtle mt-2">Hoy no hay parleys.</div>
               </div>
@@ -420,29 +583,63 @@ export default function Page() {
                 const legs = Array.isArray(p.legs) ? p.legs : [];
                 const title = `${legs.length} Selecciones`;
                 const tag = parlayTag(p.kind);
+
                 const profit = stake * (n(p.combined_odds, NaN) - 1);
+                const totalReturn = stake * n(p.combined_odds, NaN);
+
+                const note = typeof p.note === "string" ? p.note.trim() : "";
+                const showNote = Boolean(note) && !note.toLowerCase().startsWith("fallback:");
+
+                  const parlayOutcome = (() => {
+                    const outs = legs.map((leg) =>
+                      outcomeForPick(((leg as any).display as any)?.live, leg.market, leg.selection)
+                    );
+                    if (!outs.length) return null;
+                    if (outs.some((o) => o === null)) return null;
+                    if (outs.some((o) => o === "LOSE")) return "LOSE";
+                    return "WIN";
+                  })();
+
 
                 return (
-                  <article key={`${p.kind || "parley"}-${idx}`} className="card">
-                    <div className="card-inner p-5">
+                  <article key={`${p.kind || "parley"}-${idx}`} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(parlayOutcome) || {}) }}>
+                    <div className="card-inner p-5 overflow-visible">
                       <div className="flex items-start justify-between gap-3">
                         <div>
                           <div className="flex flex-wrap items-center gap-2">
                             <span className={p.kind === "BOOM_3" ? "badge badge-accent" : "badge"}>{tag}</span>
-                                                      </div>
+                          </div>
 
                           <div className="mt-2 text-lg font-semibold tracking-tight">{title}</div>
 
                           <div className="subtle text-xs mt-1">
-                            Cuota combinada: <span className="text-slate-100">{fmtOdds(p.combined_odds)}</span> · Prob. est.:{" "}
-                            <span className="text-slate-100">{fmtPct(p.prob_parlay)}</span>
+                            Cuota combinada: <span className="text-slate-100">{fmtOdds(p.combined_odds)}</span> ·{" "}
+                            <InfoTip
+                              tip={
+                                <>
+                                  <div className="font-semibold text-white/90">¿Por qué es tan baja?</div>
+                                  <div className="mt-1">
+                                    Imagina que es como pasar <span className="text-white">varias pruebas seguidas</span>.
+                                  </div>
+                                  <div className="mt-1">
+                                    Si fallas una, el parlay falla. Por eso, al juntar varias selecciones, el % baja mucho.
+                                  </div>
+                                </>
+                              }
+                            >
+                              <span>
+                                Prob. est.: <span className="text-slate-100">{fmtPct(p.prob_parlay)}</span>
+                              </span>
+                            </InfoTip>
                           </div>
 
                           <div className="subtle text-xs mt-1">
-                            Ganancia potencial (con stake {fmtEur(stake)}): <span className="text-slate-100">{fmtEur(profit)}</span>
+                            Retorno total (con stake {fmtEur(stake)}): <span className="text-slate-100">{fmtEur(totalReturn)}</span>
+                            {" · "}
+                            Ganancia potencial: <span className="text-slate-100">{fmtEur(profit)}</span>
                           </div>
 
-                          {p.note ? <div className="subtle text-xs mt-1">{p.note}</div> : null}
+                          {showNote ? <div className="subtle text-xs mt-1">{note}</div> : null}
                         </div>
                       </div>
 
@@ -452,48 +649,41 @@ export default function Page() {
                           const h = dd.home || {};
                           const a = dd.away || {};
                           const hasTeams = Boolean(h.name || a.name);
+                          const outcome = outcomeForPick((dd as any).live, leg.market, leg.selection);
 
                           return (
-                            <div key={i} className="rounded-2xl border border-white/10 bg-white/[0.03] p-3">
+                            <div key={i} className="rounded-2xl border border-white/10 bg-white/[0.03] p-3" style={{ ...(borderStyleForOutcome(outcome) || {}) }}>
                               <div className="mono">Selección {i + 1}</div>
 
-                              <div className="mt-1 text-sm text-slate-100">
-                                {hasTeams ? (
-                                  <>
-                                    {h.name || "Local"} vs {a.name || "Visitante"}
-                                  </>
-                                ) : (
-                                  <>
-                                    {sportEs(leg.sport)} · Evento {String(leg.eventId || "—")}
-                                  </>
-                                )}
-                              </div>
-                              {/* DF_LIVE_PARLAY_LEG */}
-                              {hasTeams ? (
-                                <div className="mt-2 grid grid-cols-3 items-center gap-2">
-                                  <div className="flex justify-start">
-                                    <ImgTeam src={h?.logo} alt={h?.name || "Local"} />
-                                  </div>
-                                  <div className="text-center">
-                                    {fmtLiveLine((dd as any).live) ? (
-                                      <div className="text-xs text-slate-100">{fmtLiveLine((dd as any).live)}</div>
+                              <div className="mt-1 flex flex-nowrap items-start justify-between gap-3">
+                                <div className="min-w-0">
+                                  <div className="text-sm text-slate-100">
+                                    {hasTeams ? (
+                                      <span className="truncate block">
+                                        {h.name || "Local"} <span className="text-slate-300/70">vs</span> {a.name || "Visitante"}
+                                      </span>
                                     ) : (
-                                      <div className="subtle text-xs">—</div>
+                                      <span className="truncate block">
+                                        {sportEs(leg.sport)} · Evento {String(leg.eventId || "—")}
+                                      </span>
                                     )}
                                   </div>
-                                  <div className="flex justify-end">
-                                    <ImgTeam src={a?.logo} alt={a?.name || "Visitante"} />
+
+                                  <div className="subtle text-xs mt-1">
+                                    {sportEs((dd as any).sport || leg.sport)} · {(dd as any).league || "—"}
+                                  </div>
+
+                                  <div className="subtle text-xs mt-1">
+                                    {mercadoBonito(leg.market)} · <span className="text-slate-100">{selectionEs(leg.selection)}</span> · Cuota{" "}
+                                    <span className="text-slate-100">{fmtOdds(leg.odds)}</span>
                                   </div>
                                 </div>
-                              ) : null}
 
-                              <div className="subtle text-xs mt-1">
-                                {sportEs((dd as any).sport || leg.sport)} · {(dd as any).league || "—"}
-                              </div>
-
-                              <div className="subtle text-xs mt-1">
-                                {mercadoBonito(leg.market)} · <span className="text-slate-100">{selectionEs(leg.selection)}</span> · Cuota{" "}
-                                <span className="text-slate-100">{fmtOdds(leg.odds)}</span>
+                                {hasTeams ? (
+                                  <div className="shrink-0">
+                                    <LiveScoreMini live={(dd as any).live} home={h} away={a} size={48} />
+                                  </div>
+                                ) : null}
                               </div>
                             </div>
                           );
