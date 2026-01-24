@@ -60,6 +60,8 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
 
     summary: Dict[str, Any] = {"day": day, "sports": []}
 
+    stop_due_to_rate_limit = False
+
     for sport in sorted(SPORT_BASE_URL.keys()):
         endpoint = EVENTS_ENDPOINT_BY_SPORT.get(sport)
         if not endpoint:
@@ -71,20 +73,35 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
             summary["sports"].append(IngestResult(sport, day, "skipped", str(out_file), None).__dict__)
             continue
 
+        if stop_due_to_rate_limit:
+            summary["sports"].append(IngestResult(sport, day, "skipped_rate_limited", str(out_file), 0).__dict__)
+            continue
+
         client = ApiSportsClient(sport)
-        payload = client.get(endpoint, params={"date": day})
+        try:
+            payload = client.get(endpoint, params={"date": day})
+            out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            summary["sports"].append(
+                IngestResult(
+                    sport=sport,
+                    day=day,
+                    status="created",
+                    file=str(out_file),
+                    results=payload.get("results") if isinstance(payload, dict) else None,
+                ).__dict__
+            )
+        except Exception as err:
+            msg = str(err)
+            payload = {"results": 0, "response": [], "errors": {"message": msg}}
+            try:
+                out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            except Exception:
+                pass
+            summary["sports"].append(IngestResult(sport, day, "error", str(out_file), 0).__dict__)
 
-        out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-        summary["sports"].append(
-            IngestResult(
-                sport=sport,
-                day=day,
-                status="created",
-                file=str(out_file),
-                results=payload.get("results"),
-            ).__dict__
-        )
+            # If daily quota is exhausted, stop trying other sports to avoid wasting calls.
+            if "reached the request limit for the day" in msg:
+                stop_due_to_rate_limit = True
 
     return summary
 
