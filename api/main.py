@@ -1,7 +1,11 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 import json
+import os
+import sys
+import subprocess
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -33,6 +37,123 @@ except ModuleNotFoundError:
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[1]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+def _parse_iso_dt(s: object):
+    if not s:
+        return None
+    try:
+        t = str(s)
+        if t.endswith("Z"):
+            t = t[:-1] + "+00:00"
+        dt = datetime.fromisoformat(t)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+        return dt
+    except Exception:
+        return None
+
+def _cycle_window_local(day: str):
+    # 06:00 Europe/Madrid -> 06:00 next day (end exclusivo)
+    tz = ZoneInfo("Europe/Madrid")
+    y, m, d = [int(x) for x in day.split("-")]
+    start = datetime(y, m, d, 6, 0, 0, tzinfo=tz)
+    end = start + timedelta(hours=24)
+    return start, end
+
+def _pick_in_window(pick: dict, start_local: datetime, end_local: datetime) -> bool:
+    disp = pick.get("display")
+    if not isinstance(disp, dict):
+        return False
+    st = _parse_iso_dt(disp.get("startTime"))
+    if st is None:
+        return False
+    st_local = st.astimezone(start_local.tzinfo)  # Europe/Madrid
+    return (st_local >= start_local) and (st_local < end_local)
+
+def _filter_contract_to_cycle_window_inplace(contract: dict) -> bool:
+    day = contract.get("contract_date") or contract.get("cycle_day") or contract.get("day")
+    if not day:
+        return False
+
+    start_local, end_local = _cycle_window_local(str(day))
+
+    changed = False
+
+    # Classic
+    pc = contract.get("picks_classic") or []
+    new_pc = []
+    if isinstance(pc, list):
+        for item in pc:
+            if isinstance(item, dict):
+                if _pick_in_window(item, start_local, end_local):
+                    new_pc.append(item)
+                else:
+                    changed = True
+            elif isinstance(item, list):
+                # soportar estructura antigua list-of-lists
+                for pick in item:
+                    if isinstance(pick, dict):
+                        if _pick_in_window(pick, start_local, end_local):
+                            new_pc.append(pick)
+                        else:
+                            changed = True
+            else:
+                changed = True
+    contract["picks_classic"] = new_pc
+
+    # Parlay premium: descartar parleys con legs fuera de ventana
+    pp = contract.get("picks_parlay_premium") or []
+    if isinstance(pp, list):
+        new_pp = []
+        for par in pp:
+            if not isinstance(par, dict):
+                changed = True
+                continue
+            legs = par.get("legs")
+            if not isinstance(legs, list):
+                legs = par.get("picks")
+            if not isinstance(legs, list) or len(legs) == 0:
+                changed = True
+                continue
+            ok = True
+            for leg in legs:
+                if not isinstance(leg, dict) or (not _pick_in_window(leg, start_local, end_local)):
+                    ok = False
+                    break
+            if ok:
+                new_pp.append(par)
+            else:
+                changed = True
+        contract["picks_parlay_premium"] = new_pp
+
+    # Featured parlay: si está fuera, lo quitamos
+    feat = contract.get("daily_featured_parlay")
+    if isinstance(feat, dict):
+        legs = feat.get("legs")
+        if not isinstance(legs, list):
+            legs = feat.get("picks")
+        ok = True
+        if not isinstance(legs, list) or len(legs) == 0:
+            ok = False
+        else:
+            for leg in legs:
+                if not isinstance(leg, dict) or (not _pick_in_window(leg, start_local, end_local)):
+                    ok = False
+                    break
+        if not ok:
+            contract["daily_featured_parlay"] = None
+            changed = True
+
+    # metadata
+    md = contract.get("metadata")
+    if not isinstance(md, dict):
+        md = {}
+        contract["metadata"] = md
+        changed = True
+    md["cycle_window"] = {"tz": "Europe/Madrid", "start": start_local.isoformat(), "end_exclusive": end_local.isoformat()}
+
+    return changed
+
 
 # DF_DIAG_MAIN_LIVE_SNAPSHOTS
 _DF_DIAG_LIVE_DONE_DAYS = set()
@@ -109,6 +230,15 @@ def get_today_bets():
         enrich_contract_inplace(contract)
     except Exception as err:
         print('[display_enrichment] failed:', err)
+
+    # DF_CYCLE_WINDOW_FILTER: asegurar ventana 06:00->06:00 Europe/Madrid (evita partidos viejos)
+    try:
+        changed = _filter_contract_to_cycle_window_inplace(contract)
+        if changed:
+            contract_path.parent.mkdir(parents=True, exist_ok=True)
+            contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as err:
+        print('[cycle_window_filter] failed:', err)
 
     # DF_DIAG_MAIN_LIVE_SNAPSHOTS: log solo si hay picks pero 0 live (1 vez por día/proceso)
     try:
@@ -212,6 +342,57 @@ def get_today_bets():
 
     return contract
 
+
+
+# ✅ Internal trigger: ensure today's contract exists (for external cron; avoids Render sleep issues)
+# Set env INTERNAL_ENSURE_TOKEN and call:
+#   GET /internal/ensure_today?token=...
+@app.get("/internal/ensure_today")
+def internal_ensure_today(token: str = ""):
+    expected = os.environ.get("INTERNAL_ENSURE_TOKEN") or ""
+    if not expected or token != expected:
+        raise HTTPException(status_code=404, detail="Not found")
+
+    day = cycle_day_str()  # 06:00 Europe/Madrid cycle
+    contract_path = API_DATA_DIR / "contracts" / day / "contract.json"
+    lock_file = f"/tmp/internal_ensure_lock_{day}"
+
+    def _contract_has_any_picks() -> bool:
+        if not contract_path.exists():
+            return False
+        try:
+            c = json.loads(contract_path.read_text(encoding="utf-8"))
+        except Exception:
+            return False
+        if not isinstance(c, dict):
+            return False
+        pc = c.get("picks_classic") or []
+        pp = c.get("picks_parlay_premium") or []
+        pv = c.get("picks_value") or []
+        return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
+
+    if _contract_has_any_picks():
+        return {"ok": True, "day": day, "ran_pipeline": False, "reason": "contract_already_non_empty"}
+
+    if os.path.exists(lock_file):
+        return {"ok": True, "day": day, "ran_pipeline": False, "reason": "lock_exists"}
+
+    try:
+        with open(lock_file, "w", encoding="utf-8") as f:
+            f.write("locked")
+
+        env = os.environ.copy()
+        env["PYTHONPATH"] = str(REPO_ROOT)
+        cmd = [sys.executable, "-u", str(REPO_ROOT / "api" / "scripts" / "daily_pipeline.py"), day]
+        subprocess.run(cmd, cwd=str(REPO_ROOT), env=env, check=True)
+
+        return {"ok": True, "day": day, "ran_pipeline": True, "reason": "pipeline_executed"}
+    finally:
+        try:
+            if os.path.exists(lock_file):
+                os.unlink(lock_file)
+        except Exception:
+            pass
 
 # ✅ Operational healthcheck (no business logic)
 @app.get("/health")

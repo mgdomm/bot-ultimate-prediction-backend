@@ -11,6 +11,8 @@ import hashlib
 import urllib.request
 from functools import lru_cache
 
+import os
+
 # API-SPORTS a veces devuelve una imagen 'image not available' con HTTP 200.
 # La detectamos por hash y devolvemos None para que el frontend haga fallback.
 PLACEHOLDER_LOGO_SHA256 = "7670cc2d08b0b4a846ac6ec076c99d3767c4d2b9322e2d31cd05871422ddbbda"
@@ -33,10 +35,64 @@ def sanitize_logo_url(url: Optional[str]) -> Optional[str]:
     if not url:
         return None
     u = str(url)
-    # Solo sanitizamos logos de API-SPORTS.
-    if API_SPORTS_MEDIA_HOST in u and _is_api_sports_placeholder_image(u):
-        return None
+    # IMPORTANT: por defecto NO hacemos red en request-path (confiabilidad).
+    # Si quieres activar el chequeo de placeholder (hace HTTP a media.api-sports.io), set:
+    #   DF_ENABLE_LOGO_PLACEHOLDER_CHECK=1
+    if API_SPORTS_MEDIA_HOST in u and os.environ.get("DF_ENABLE_LOGO_PLACEHOLDER_CHECK", "0") == "1":
+        if _is_api_sports_placeholder_image(u):
+            return None
     return u
+
+
+def _try_settle_over_under(pick: Dict[str, Any]) -> None:
+    disp = pick.get('display')
+    if not isinstance(disp, dict):
+        return
+    live = disp.get('live')
+    if not isinstance(live, dict):
+        return
+    if str(live.get('statusShort') or '').upper() != 'FT':
+        return
+
+    hs = live.get('homeScore')
+    aw = live.get('awayScore')
+    try:
+        if hs is None or aw is None:
+            return
+        total = float(hs) + float(aw)
+    except Exception:
+        return
+
+    market = str(pick.get('market') or '').lower().strip()
+    if market not in {'over/under', 'goals over/under'}:
+        return
+
+    sel = str(pick.get('selection') or '').strip()
+    ssel = sel.lower()
+    if not (ssel.startswith('over ') or ssel.startswith('under ')):
+        return
+    parts = sel.split(' ')
+    if len(parts) < 2:
+        return
+    side = parts[0].lower()
+    try:
+        line = float(parts[-1])
+    except Exception:
+        return
+
+    if side == 'over':
+        status = 'WON' if total > line else ('PUSH' if total == line else 'LOST')
+    else:
+        status = 'WON' if total < line else ('PUSH' if total == line else 'LOST')
+
+    pick['result'] = {
+        'settled': True,
+        'status': status,
+        'metric': 'TOTAL',
+        'line': line,
+        'value': total,
+    }
+
 
 
 
@@ -286,6 +342,8 @@ def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str
         "home": {"name": home.get("name"), "logo": sanitize_logo_url(home.get("logo"))},
         "away": {"name": away.get("name"), "logo": sanitize_logo_url(away.get("logo"))},
     }
+
+    _try_settle_over_under(pick)
 
 
 def _enrich_parlay_container_inplace(container: Dict[str, Any], display_index: Dict[Tuple[str, str], Dict[str, Any]]) -> None:

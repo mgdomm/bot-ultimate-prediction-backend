@@ -3,7 +3,8 @@ from __future__ import annotations
 import os
 import sys
 import json
-from datetime import date
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from collections import Counter
@@ -67,6 +68,48 @@ CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN", str(_DEFAULT
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+def _parse_iso_dt(s: Any) -> Optional[datetime]:
+    if not s:
+        return None
+    try:
+        t = str(s)
+        if t.endswith('Z'):
+            t = t[:-1] + '+00:00'
+        dt = datetime.fromisoformat(t)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo('UTC'))
+        return dt
+    except Exception:
+        return None
+
+def _cycle_window_utc(day: str) -> tuple[datetime, datetime]:
+    # Ventana del contrato: 06:00 Europe/Madrid -> 06:00 del día siguiente (end exclusivo)
+    tz = ZoneInfo('Europe/Madrid')
+    y, m, d = [int(x) for x in day.split('-')]
+    start_local = datetime(y, m, d, 6, 0, 0, tzinfo=tz)
+    start_utc = start_local.astimezone(ZoneInfo('UTC'))
+    end_utc = start_utc + timedelta(hours=24)
+    return start_utc, end_utc
+
+def _sel_in_cycle_window(sel: Dict[str, Any], display_index: Dict[Tuple[str, str], Dict[str, Any]], start_utc: datetime, end_utc: datetime) -> bool:
+    sport = str(sel.get('sport') or '')
+    eid = str(sel.get('eventId') or '')
+    if not sport or not eid:
+        return False
+    disp = display_index.get((sport, eid))
+    if not isinstance(disp, dict):
+        return False
+    st = _parse_iso_dt(disp.get('startTime'))
+    if st is None:
+        return False
+    return (st >= start_utc) and (st < end_utc)
+
+# Display index (snapshots locales) para filtrar ventana 06:00->06:00 (Europe/Madrid)
+try:
+    from api.services.display_enrichment import build_display_index  # type: ignore
+except ModuleNotFoundError:
+    from services.display_enrichment import build_display_index  # type: ignore
 
 
 def _f(x: Any, default: float = float("nan")) -> float:
@@ -249,6 +292,11 @@ def build_picks(day: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     all_sel = json.loads(in_path.read_text(encoding="utf-8"))
     if not isinstance(all_sel, list):
         raise ValueError("odds_premium/all.json no es una lista")
+
+    # Filtrado por ventana del contrato: 06:00 Europe/Madrid -> +24h (end exclusivo)
+    display_index = build_display_index(day)
+    start_utc, end_utc = _cycle_window_utc(day)
+    all_sel = [x for x in all_sel if isinstance(x, dict) and _sel_in_cycle_window(x, display_index, start_utc, end_utc)]
 
     # debug siempre disponible para logs si picks=0
     dbg = debug_filter_reasons([s for s in all_sel if isinstance(s, dict)])
