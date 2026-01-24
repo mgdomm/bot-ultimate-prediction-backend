@@ -220,8 +220,8 @@ def get_today_bets():
             enrich_contract_inplace(contract)
         except Exception as err:
             print('[display_enrichment] failed:', err)
-        contract_path.parent.mkdir(parents=True, exist_ok=True)
-        contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
+        # NOTE: Do NOT persist fallback contracts from /bets/today.
+        # The daily pipeline is the only writer of api/data/contracts/<day>/contract.json.
     else:
         contract = json.loads(contract_path.read_text(encoding="utf-8"))
 
@@ -235,8 +235,9 @@ def get_today_bets():
     try:
         changed = _filter_contract_to_cycle_window_inplace(contract)
         if changed:
-            contract_path.parent.mkdir(parents=True, exist_ok=True)
-            contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
+            # NOTE: Do NOT rewrite the frozen contract on read.
+            # Filter in-memory only; otherwise transient enrichment/window issues can permanently drop picks/parlays.
+            pass
     except Exception as err:
         print('[cycle_window_filter] failed:', err)
 
