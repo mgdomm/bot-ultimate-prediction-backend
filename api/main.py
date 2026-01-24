@@ -225,6 +225,32 @@ def get_today_bets():
     else:
         contract = json.loads(contract_path.read_text(encoding="utf-8"))
 
+        # If a frozen contract exists but is empty (can happen after deploy/ephemeral FS),
+        # rebuild in-memory from local pick artifacts (NO external API calls; NO disk writes).
+        try:
+            def _has_any_picks(c: dict) -> bool:
+                if not isinstance(c, dict):
+                    return False
+                pc = c.get("picks_classic") or []
+                pp = c.get("picks_parlay_premium") or []
+                pv = c.get("picks_value") or []
+                return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
+
+            if not _has_any_picks(contract):
+                rebuilt = create_empty_contract(today)
+                rebuilt = populate_contract_with_day_data(rebuilt)
+                # preserve generated_at if it existed (useful for debugging)
+                if contract.get("generated_at") and not rebuilt.get("generated_at"):
+                    rebuilt["generated_at"] = contract.get("generated_at")
+                md = rebuilt.get("metadata")
+                if not isinstance(md, dict):
+                    md = {}
+                    rebuilt["metadata"] = md
+                md["rebuilt_from_local_picks"] = True
+                contract = rebuilt
+        except Exception as err:
+            print('[contract_rebuild] failed:', err)
+
     # DF_ENRICH_CONTRACT_ON_READ: enriquecer en memoria (no re-escribe el contrato en disco)
     try:
         enrich_contract_inplace(contract)
