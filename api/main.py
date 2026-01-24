@@ -16,9 +16,19 @@ except ModuleNotFoundError:
     from utils.cycle_day import cycle_day_str
 
 
+
+# Display enrichment (attach logos + live scores from local event snapshots)
+try:
+    from api.services.display_enrichment import enrich_contract_inplace, build_display_index
+except ModuleNotFoundError:
+    from services.display_enrichment import enrich_contract_inplace, build_display_index  # type: ignore
+
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[1]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+# DF_DIAG_MAIN_LIVE_SNAPSHOTS
+_DF_DIAG_LIVE_DONE_DAYS = set()
 
 
 @asynccontextmanager
@@ -76,6 +86,77 @@ def get_today_bets():
         raise HTTPException(status_code=404, detail="Daily contract not found")
 
     contract = json.loads(contract_path.read_text(encoding="utf-8"))
+
+    # DF_ENRICH_CONTRACT_ON_READ: enriquecer en memoria (no re-escribe el contrato en disco)
+    try:
+        enrich_contract_inplace(contract)
+    except Exception as err:
+        print('[display_enrichment] failed:', err)
+
+    # DF_DIAG_MAIN_LIVE_SNAPSHOTS: log solo si hay picks pero 0 live (1 vez por día/proceso)
+    try:
+        total = 0
+        with_live = 0
+        def _iter_picks(c):
+            pc = c.get('picks_classic') or []
+            for container in pc:
+                if isinstance(container, list):
+                    for pick in container:
+                        if isinstance(pick, dict):
+                            yield pick
+                elif isinstance(container, dict):
+                    yield container
+            pp = c.get('picks_parlay_premium') or []
+            if isinstance(pp, list):
+                for par in pp:
+                    if not isinstance(par, dict):
+                        continue
+                    legs = par.get('legs')
+                    if not isinstance(legs, list):
+                        legs = par.get('picks')
+                    if isinstance(legs, list):
+                        for leg in legs:
+                            if isinstance(leg, dict):
+                                yield leg
+            feat = c.get('daily_featured_parlay')
+            if isinstance(feat, dict):
+                legs = feat.get('legs')
+                if not isinstance(legs, list):
+                    legs = feat.get('picks')
+                if isinstance(legs, list):
+                    for leg in legs:
+                        if isinstance(leg, dict):
+                            yield leg
+        for pick in _iter_picks(contract):
+            total += 1
+            disp = pick.get('display')
+            if isinstance(disp, dict) and disp.get('live') is not None:
+                with_live += 1
+        if total > 0 and with_live == 0 and today not in _DF_DIAG_LIVE_DONE_DAYS:
+            _DF_DIAG_LIVE_DONE_DAYS.add(today)
+            idx = build_display_index(today)  # solo lee api/data/events/<day>/*.json
+            idx_total = len(idx)
+            idx_live = 0
+            by_sport = {}
+            for (sport, _eid), d in idx.items():
+                if isinstance(d, dict) and d.get('live') is not None:
+                    idx_live += 1
+                    s = str(sport)
+                    by_sport[s] = by_sport.get(s, 0) + 1
+            print(json.dumps({
+                'diag': 'DF_DIAG_MAIN_LIVE_SNAPSHOTS',
+                'day': today,
+                'picks_total': total,
+                'picks_with_live': with_live,
+                'snapshot_index_total': idx_total,
+                'snapshot_index_with_live': idx_live,
+                'snapshot_index_with_live_by_sport': by_sport,
+            }, ensure_ascii=False), flush=True)
+    except Exception as err:
+        print(json.dumps({
+            'diag': 'DF_DIAG_MAIN_LIVE_SNAPSHOTS_ERROR',
+            'error': str(err),
+        }, ensure_ascii=False), flush=True)
 
     # Expose cycle day explicitly (client-friendly; does not change frozen contract on disk)
     contract['cycle_day'] = today

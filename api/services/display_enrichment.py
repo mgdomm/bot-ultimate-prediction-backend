@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 import json
+from collections import Counter
 
 import hashlib
 import urllib.request
@@ -89,12 +90,24 @@ def _build_football_index(day: str) -> Dict[str, Dict[str, Any]]:
 
         league = item.get("league") if isinstance(item.get("league"), dict) else {}
 
+        status = fixture.get("status") if isinstance(fixture.get("status"), dict) else {}
+        goals = item.get("goals") if isinstance(item.get("goals"), dict) else {}
+        live = {
+            "statusLong": status.get("long"),
+            "statusShort": status.get("short"),
+            "elapsed": status.get("elapsed"),
+            "extra": status.get("extra"),
+            "homeScore": goals.get("home"),
+            "awayScore": goals.get("away"),
+        }
+
         idx[str(event_id)] = {
             "sport": "football",
             "eventId": str(event_id),
             "league": league.get("name"),
             "leagueLogo": league.get("logo"),
             "startTime": fixture.get("date"),
+            "live": live,
             "home": {"name": home.get("name"), "logo": home.get("logo")},
             "away": {"name": away.get("name"), "logo": away.get("logo")},
         }
@@ -132,6 +145,22 @@ def _build_generic_games_index(day: str, sport: str) -> Dict[str, Dict[str, Any]
         away = teams.get("away") if isinstance(teams.get("away"), dict) else {}
 
         start_time = item.get("date")
+
+        status = item.get("status") if isinstance(item.get("status"), dict) else {}
+        scores = item.get("scores") if isinstance(item.get("scores"), dict) else {}
+        home_scores = scores.get("home")
+        away_scores = scores.get("away")
+        home_total = home_scores.get("total") if isinstance(home_scores, dict) else home_scores
+        away_total = away_scores.get("total") if isinstance(away_scores, dict) else away_scores
+        live = {
+            "statusLong": status.get("long"),
+            "statusShort": status.get("short"),
+            "timer": status.get("timer") or item.get("timer"),
+            "time": item.get("time"),
+            "homeScore": home_total,
+            "awayScore": away_total,
+            "periods": item.get("periods"),
+        }
         if isinstance(start_time, dict):
             d = start_time.get("date")
             t = start_time.get("time")
@@ -143,6 +172,7 @@ def _build_generic_games_index(day: str, sport: str) -> Dict[str, Dict[str, Any]
             "league": league.get("name"),
             "leagueLogo": league.get("logo"),
             "startTime": start_time,
+            "live": live,
             "home": {"name": home.get("name"), "logo": home.get("logo")},
             "away": {"name": away.get("name"), "logo": away.get("logo")},
         }
@@ -252,6 +282,7 @@ def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str
         "league": disp.get("league"),
         "leagueLogo": sanitize_logo_url(disp.get("leagueLogo")),
         "startTime": disp.get("startTime"),
+        "live": disp.get("live"),
         "home": {"name": home.get("name"), "logo": sanitize_logo_url(home.get("logo"))},
         "away": {"name": away.get("name"), "logo": sanitize_logo_url(away.get("logo"))},
     }
@@ -283,7 +314,77 @@ def enrich_contract_inplace(contract: Dict[str, Any]) -> Dict[str, Any]:
     """
     day = contract.get("contract_date")
     if not day:
-        return contract
+  
+      # DF_DIAG_DISPLAY_ENRICHMENT_LIVE
+      # Log compacto para Render: si hay picks pero no se adjuntó display/live.
+      # Esto NO llama APIs externas (solo inspecciona el contrato ya enriquecido y el display_index).
+      try:
+          def _iter_pick_dicts():
+              picks_classic = contract.get("picks_classic") or []
+              for container in picks_classic:
+                  if isinstance(container, list):
+                      for pick in container:
+                          if isinstance(pick, dict):
+                              yield pick
+                  elif isinstance(container, dict):
+                      yield container
+
+              picks_parlay = contract.get("picks_parlay_premium") or []
+              if isinstance(picks_parlay, list):
+                  for parlay in picks_parlay:
+                      if not isinstance(parlay, dict):
+                          continue
+                      legs = parlay.get("legs")
+                      if not isinstance(legs, list):
+                          legs = parlay.get("picks")
+                      if isinstance(legs, list):
+                          for leg in legs:
+                              if isinstance(leg, dict):
+                                  yield leg
+
+              featured = contract.get("daily_featured_parlay")
+              if isinstance(featured, dict):
+                  legs = featured.get("legs")
+                  if not isinstance(legs, list):
+                      legs = featured.get("picks")
+                  if isinstance(legs, list):
+                      for leg in legs:
+                          if isinstance(leg, dict):
+                              yield leg
+
+          total = 0
+          with_display = 0
+          with_live = 0
+
+          sports_index = Counter()
+          for (sport, _eid) in display_index.keys():
+              sports_index[str(sport)] += 1
+
+          for pick in _iter_pick_dicts():
+              total += 1
+              disp = pick.get("display")
+              if isinstance(disp, dict):
+                  with_display += 1
+                  if disp.get("live") is not None:
+                      with_live += 1
+
+          if total > 0 and (with_display == 0 or with_live == 0):
+              print(json.dumps({
+                  "diag": "DF_DIAG_DISPLAY_ENRICHMENT_LIVE",
+                  "day": day,
+                  "display_index_total": len(display_index),
+                  "display_index_by_sport": dict(sports_index),
+                  "picks_total": total,
+                  "picks_with_display": with_display,
+                  "picks_with_live": with_live,
+              }, ensure_ascii=False), flush=True)
+      except Exception as _e:
+          print(json.dumps({
+              "diag": "DF_DIAG_DISPLAY_ENRICHMENT_LIVE_ERROR",
+              "error": str(_e),
+          }, ensure_ascii=False), flush=True)
+
+      return contract
 
     display_index = build_display_index(day)
 
