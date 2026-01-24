@@ -301,16 +301,16 @@ def build_display_index(day: str) -> Dict[Tuple[str, str], Dict[str, Any]]:
 
     football = _build_football_index(day)
     for event_id, disp in football.items():
-        out[("football", event_id)] = disp
+        out[("football", str(event_id))] = disp
 
     nfl = _build_nfl_index(day)
     for event_id, disp in nfl.items():
-        out[("nfl", event_id)] = disp
+        out[("nfl", str(event_id))] = disp
 
     for sport in ["handball", "hockey", "basketball", "rugby", "volleyball", "baseball", "afl"]:
         idx = _build_generic_games_index(day, sport)
         for event_id, disp in idx.items():
-            out[(sport, event_id)] = disp
+            out[(sport, str(event_id))] = disp
 
     return out
 
