@@ -303,6 +303,82 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
     if not isinstance(all_picks, list):
         raise ValueError("odds_premium/all.json no es una lista")
 
+    # ✅ Cycle-window filter (06:00 Europe/Madrid -> 06:00 next day, end exclusive)
+    # Uses ONLY local event snapshots via build_display_index (no external API calls).
+    try:
+        from zoneinfo import ZoneInfo
+        from datetime import datetime, timedelta
+
+        try:
+            from api.services.display_enrichment import build_display_index
+        except ModuleNotFoundError:
+            from services.display_enrichment import build_display_index  # type: ignore
+
+        tz = ZoneInfo("Europe/Madrid")
+        y, m, d = [int(x) for x in str(day).split("-")]
+        start_local = datetime(y, m, d, 6, 0, 0, tzinfo=tz)
+        end_local = start_local + timedelta(hours=24)
+
+        display_index = build_display_index(str(day))
+
+        def _parse_iso_dt(x: object):
+            if not x:
+                return None
+            t = str(x)
+            if t.endswith("Z"):
+                t = t[:-1] + "+00:00"
+            try:
+                dt = datetime.fromisoformat(t)
+            except Exception:
+                return None
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+            return dt
+
+        kept: List[Dict[str, Any]] = []
+        dropped = 0
+
+        for pk in all_picks:
+            if not isinstance(pk, dict):
+                dropped += 1
+                continue
+            sport = _s(pk.get("sport"))
+            eid = _s(pk.get("eventId"))
+            disp = display_index.get((sport, eid))
+            st = disp.get("startTime") if isinstance(disp, dict) else None
+            dt = _parse_iso_dt(st)
+            if dt is None:
+                dropped += 1
+                continue
+            dt_local = dt.astimezone(tz)
+            if start_local <= dt_local < end_local:
+                kept.append(pk)
+            else:
+                dropped += 1
+
+        if dropped > 0:
+            print(json.dumps({
+                "diag": "DF_DIAG_PARLAY_WINDOW_FILTER",
+                "day": day,
+                "input": len(all_picks),
+                "kept": len(kept),
+                "dropped": dropped,
+                "window": {
+                    "tz": "Europe/Madrid",
+                    "start": start_local.isoformat(),
+                    "end_exclusive": end_local.isoformat(),
+                },
+            }, ensure_ascii=False), flush=True)
+
+        all_picks = kept
+
+    except Exception as err:
+        print(json.dumps({
+            "diag": "DF_DIAG_PARLAY_WINDOW_FILTER_ERROR",
+            "day": day,
+            "error": str(err),
+        }, ensure_ascii=False), flush=True)
+
     safe = build_safe_parlays(all_picks)
     boom = build_boom_parlay(all_picks)
 
