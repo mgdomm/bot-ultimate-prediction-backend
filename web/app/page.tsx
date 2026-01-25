@@ -51,114 +51,6 @@ async function getContract(signal?: AbortSignal): Promise<Contract> {
 }
 
 
-type FlashscoreMatchUrlResponse = {
-  match_url?: string | null;
-  verified?: boolean;
-  sport?: string;
-  home?: { name?: string; id?: string; slug?: string };
-  away?: { name?: string; id?: string; slug?: string };
-  expected_date?: string | null;
-};
-
-const _flashscoreCache = new Map<string, { t: number; v: FlashscoreMatchUrlResponse }>();
-
-async function getFlashscoreMatchUrl(params: {
-  sport?: string;
-  home?: string;
-  away?: string;
-  start?: string;
-  signal?: AbortSignal;
-}): Promise<FlashscoreMatchUrlResponse> {
-  const sport = params.sport || "football";
-  const home = (params.home || "").trim();
-  const away = (params.away || "").trim();
-  const start = params.start || "";
-
-  if (!home || !away) return { match_url: null, verified: false };
-
-  const key = [sport, home.toLowerCase(), away.toLowerCase(), start].join("|");
-  const hit = _flashscoreCache.get(key);
-  const now = Date.now();
-  if (hit && now - hit.t < 6 * 60 * 60 * 1000) return hit.v;
-
-  const qs =
-    `sport=${encodeURIComponent(sport)}` +
-    `&home=${encodeURIComponent(home)}` +
-    `&away=${encodeURIComponent(away)}` +
-    (start ? `&start=${encodeURIComponent(start)}` : "");
-
-  const res = await fetch(`${BACKEND_URL}/flashscore/match_url?${qs}`, {
-    cache: "no-store",
-    signal: params.signal,
-  });
-
-  if (!res.ok) return { match_url: null };
-
-  const data = (await res.json()) as FlashscoreMatchUrlResponse;
-  _flashscoreCache.set(key, { t: now, v: data });
-  return data;
-}
-
-function FlashscoreEmbed({
-  sport,
-  startTime,
-  home,
-  away,
-  fallback,
-  width = 200,
-  height = 120,
-}: {
-  sport?: string;
-  startTime?: string;
-  home?: { name?: string; logo?: string };
-  away?: { name?: string; logo?: string };
-  fallback: React.ReactNode;
-  width?: number;
-  height?: number;
-}) {
-  const homeName = (home?.name || "").trim();
-  const awayName = (away?.name || "").trim();
-
-  const [matchUrl, setMatchUrl] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!homeName || !awayName) return;
-
-    const ctrl = new AbortController();
-    getFlashscoreMatchUrl({
-      sport,
-      home: homeName,
-      away: awayName,
-      start: startTime,
-      signal: ctrl.signal,
-    })
-      .then((r) => setMatchUrl(r?.match_url ? String(r.match_url) : null))
-      .catch(() => setMatchUrl(null));
-
-    return () => ctrl.abort();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sport, homeName, awayName, startTime]);
-
-  if (!matchUrl) return <>{fallback}</>;
-
-  return (
-    <div
-      className="rounded-2xl border border-white/10 bg-white/[0.03] overflow-hidden"
-      style={{ width, height }}
-      aria-label="Live score (Flashscore)"
-    >
-      <iframe
-        src={matchUrl}
-        title={`Flashscore ${homeName} vs ${awayName}`}
-        style={{ width: "100%", height: "100%", border: 0 }}
-        loading="lazy"
-      />
-    </div>
-  );
-}
-
-
-
 function asPickList(contract: Contract | null): Pick[] {
   const containers = contract?.picks_classic || [];
   const out: Pick[] = [];
@@ -616,15 +508,9 @@ export default function Page() {
                           <div className="subtle text-xs mt-1">Empieza: {fmtStart(d.startTime)}</div>
                         </div>
 
-                        <div className="shrink-0">
-                          <FlashscoreEmbed
-                            sport={p.sport}
-                            startTime={d.startTime}
-                            home={home}
-                            away={away}
-                            fallback={<LiveScoreMini live={(d as any).live} home={home} away={away} size={48} />}
-                          />
-                        </div>
+                          <div className="shrink-0">
+                            <LiveScoreMini live={(d as any).live} home={home} away={away} size={48} />
+                          </div>
                       </div>
 
                       <div className="mt-4 grid grid-cols-2 gap-3">
@@ -794,20 +680,14 @@ export default function Page() {
                                   </div>
                                 </div>
 
-                                {hasTeams ? (
-                                  <div className="shrink-0">
-                                    <FlashscoreEmbed
-                                      sport={((dd as any).sport || leg.sport) as any}
-                                      startTime={(dd as any).startTime}
-                                      home={h}
-                                      away={a}
-                                      fallback={<LiveScoreMini live={(dd as any).live} home={h} away={a} size={48} />}
-                                    />
-                                  </div>
-                                ) : null}
+                                  {hasTeams ? (
+                                    <div className="shrink-0">
+                                      <LiveScoreMini live={(dd as any).live} home={h} away={a} size={48} />
+                                    </div>
+                                  ) : null}
+                                </div>
                               </div>
-                            </div>
-                          );
+                            );
                         })}
                       </div>
                     </div>
