@@ -6,6 +6,8 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 const LIVE_PRESTART_MS = 15 * 60 * 1000; // 15 min antes
 const LIVE_POSTSTART_MS = (2 * 60 + 10) * 60 * 1000; // 2h10m después
+// "Catch-up": si recargas mucho más tarde y el snapshot no está final, seguimos buscando FT un rato más.
+const LIVE_CATCHUP_MS = 12 * 60 * 60 * 1000; // 12h después del inicio
 const LIVE_POLL_MS = 5 * 60 * 1000; // cada 5 min
 
 
@@ -464,7 +466,9 @@ export default function Page() {
 
       for (const ev of byK.values()) {
         if (ev.startMs === null) continue;
-        const within = now >= ev.startMs - LIVE_PRESTART_MS && now <= ev.startMs + LIVE_POSTSTART_MS;
+        const withinStandard = now >= ev.startMs - LIVE_PRESTART_MS && now <= ev.startMs + LIVE_POSTSTART_MS;
+        const withinCatchup = now > ev.startMs + LIVE_POSTSTART_MS && now <= ev.startMs + LIVE_CATCHUP_MS;
+        const within = withinStandard || withinCatchup;
         if (!within) continue;
 
         const kk = `${ev.sport}:${ev.id}`;

@@ -619,9 +619,15 @@ def _api_sports_http_get_json(url: str) -> dict:
         },
         method="GET",
     )
-    with urllib.request.urlopen(req, timeout=20) as r:
-        raw = r.read().decode("utf-8", "replace")
-    data = json.loads(raw)
+
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            raw = r.read().decode("utf-8", "replace")
+        data = json.loads(raw)
+    except Exception as e:
+        # Never raise: /live/events must respond 200 and allow UI fallback.
+        return {"results": 0, "response": [], "errors": {"message": "api-sports fetch failed", "detail": str(e)}}
+
     # API-SPORTS sometimes returns {"errors":{...}} with 200
     if isinstance(data, dict) and data.get("errors"):
         # Do not raise: keep it 200 so frontend can fallback without breaking.
@@ -629,7 +635,6 @@ def _api_sports_http_get_json(url: str) -> dict:
     if not isinstance(data, dict):
         return {"results": 0, "response": [], "errors": {"message": "invalid json"}}
     return data
-
 def _live_endpoint_for_sport(sport: str) -> str:
     s = (sport or "").strip().lower()
     # align with events_ingestion.py
@@ -761,7 +766,7 @@ def live_events(sport: str = "", ids: str = ""):
 
     base = _live_base_url_for_sport(sport)
     if not base:
-        out = {"sport": sport, "ids": ids_csv, "live_by_id": {}, "errors": {"message": "sport not supported"}}
+        out = {"sport": sport, "ids": ids_csv, "live_by_id": {}, "upstream_errors": {"message": "sport not supported"}, "fetched_at": datetime.utcnow().isoformat()}
         _LIVE_EVENTS_CACHE[ck] = {"exp": now + 60, "value": out}
         return out
 
@@ -818,6 +823,10 @@ def live_events(sport: str = "", ids: str = ""):
     }
 
     # TTL: short, to protect quota across many users
+    # Normalize: keep a stable shape for UI (null or object)
+    ue = out.get("upstream_errors")
+    if ue == [] or ue == {}:
+        out["upstream_errors"] = None
     _LIVE_EVENTS_CACHE[ck] = {"exp": now + 90, "value": out}
     return out
 
