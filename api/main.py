@@ -601,6 +601,9 @@ def flashscore_match_url(
 
 _LIVE_EVENTS_CACHE = {}  # (sport, ids_csv) -> {"exp": float, "value": dict}
 
+_LIVE_EVENT_BY_ID_CACHE = {}  # (sport, id) -> {"exp": float, "value": {"live": dict|None, "upstream_errors": any}}
+_SPORTS_NO_LIVE_ALL = {"handball"}  # productos donde `live=all` no existe (medido: handball)
+
 def _api_sports_http_get_json(url: str) -> dict:
     api_key = os.environ.get("API_SPORTS_KEY") or ""
     if not api_key:
@@ -697,6 +700,47 @@ def _ids_list_from_csv(ids_csv: str) -> list[str]:
 def _ids_set_from_csv(ids_csv: str) -> set[str]:
     return set(_ids_list_from_csv(ids_csv))
 
+def _fetch_live_one_by_id_cached(
+    sport: str,
+    base: str,
+    endpoint: str,
+    event_id: str,
+    now: float,
+) -> tuple[dict | None, object | None]:
+    """Fetch live for one event id (READ-ONLY) with per-(sport,id) cache.
+    Returns (live_dict_or_none, upstream_errors_or_none).
+    """
+    ck = ((sport or '').strip().lower(), str(event_id))
+    hit = _LIVE_EVENT_BY_ID_CACHE.get(ck)
+    if isinstance(hit, dict) and hit.get('exp', 0) > now:
+        v = hit.get('value')
+        if isinstance(v, dict):
+            live = v.get('live')
+            err = v.get('upstream_errors')
+            return (live if isinstance(live, dict) else None), err
+        return None, None
+
+    url = base + endpoint + '?' + urllib.parse.urlencode({'id': str(event_id)})
+    data = _api_sports_http_get_json(url)
+    resp = data.get('response') if isinstance(data, dict) else None
+
+    live_out = None
+    if isinstance(resp, list):
+        for it in resp:
+            if not isinstance(it, dict):
+                continue
+            eid, live = _extract_live_for_item(sport, it)
+            if eid is not None and str(eid) == str(event_id) and isinstance(live, dict):
+                live_out = live
+                break
+
+    err = data.get('errors') if isinstance(data, dict) else None
+    _LIVE_EVENT_BY_ID_CACHE[ck] = {
+        'exp': now + 90,
+        'value': {'live': live_out, 'upstream_errors': err},
+    }
+    return live_out, err
+
 @app.get("/live/events")
 def live_events(sport: str = "", ids: str = ""):
     """
@@ -725,6 +769,28 @@ def live_events(sport: str = "", ids: str = ""):
     wanted = _ids_set_from_csv(ids_csv)
     ids_list = _ids_list_from_csv(ids_csv)
     single_id = ids_list[0] if len(ids_list) == 1 else ""
+
+    # Some API-Sports products do not support `live=all` (measured: handball).
+    # For those sports, fan-out N requests using `id=<id>` and merge results.
+    if not single_id and sport in _SPORTS_NO_LIVE_ALL:
+        out_map = {}
+        upstream_errors = {}
+        for eid in ids_list:
+            live, err = _fetch_live_one_by_id_cached(sport, base, endpoint, eid, now)
+            if isinstance(live, dict):
+                out_map[str(eid)] = live
+            if err:
+                upstream_errors[str(eid)] = err
+
+        out = {
+            'sport': sport,
+            'ids': ids_csv,
+            'live_by_id': out_map,
+            'upstream_errors': (upstream_errors or None),
+            'fetched_at': datetime.utcnow().isoformat(),
+        }
+        _LIVE_EVENTS_CACHE[ck] = {'exp': now + 90, 'value': out}
+        return out
 
     # API-Sports Free plan may block `ids` (plural). Strategy:
     # - if single id: use `id`

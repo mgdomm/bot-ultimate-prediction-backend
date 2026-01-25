@@ -1,8 +1,13 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+
+const LIVE_PRESTART_MS = 15 * 60 * 1000; // 15 min antes
+const LIVE_POSTSTART_MS = (2 * 60 + 10) * 60 * 1000; // 2h10m después
+const LIVE_POLL_MS = 5 * 60 * 1000; // cada 5 min
+
 
 type Display = {
   league?: string;
@@ -50,6 +55,21 @@ async function getContract(signal?: AbortSignal): Promise<Contract> {
   return res.json();
 }
 
+async function getLiveEvents(sport: string, idsCsv: string, signal?: AbortSignal) {
+  const qs = new URLSearchParams({ sport, ids: idsCsv }).toString();
+  const res = await fetch(`${BACKEND_URL}/live/events?${qs}`, { cache: "no-store", signal });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+function liveKey(sport?: string, eventId?: string | number) {
+  const s = String(sport || "").trim().toLowerCase();
+  const id = eventId === null || eventId === undefined ? "" : String(eventId).trim();
+  if (!s || !id) return "";
+  return `${s}:${id}`;
+}
+
+
 
 function asPickList(contract: Contract | null): Pick[] {
   const containers = contract?.picks_classic || [];
@@ -79,7 +99,7 @@ function liveParts(live: any): { score: string | null; status: string | null } {
   const elapsed = Number((live as any).elapsed);
   if (Number.isFinite(elapsed)) time = `${elapsed}'`;
   else if ((live as any).timer) time = String((live as any).timer);
-  else if ((live as any).time) time = String((live as any).time);
+  // NOTE: NO usar `live.time` (suele venir como hora absoluta en UTC y descuadra con Europe/Madrid)
 
   const status = [statusShort, time].filter(Boolean).join(" ") || null;
   return { score, status };
@@ -99,7 +119,7 @@ function liveMeta(live: any): { statusShort: string | null; time: string | null;
   const elapsed = Number((live as any).elapsed);
   if (Number.isFinite(elapsed)) time = `${elapsed}'`;
   else if ((live as any).timer) time = String((live as any).timer);
-  else if ((live as any).time) time = String((live as any).time);
+  // NOTE: NO usar `live.time` (suele venir como hora absoluta en UTC y descuadra con Europe/Madrid)
   return { statusShort, time, hs: (live as any).homeScore, as: (live as any).awayScore };
 }
 
@@ -379,6 +399,8 @@ export default function Page() {
   const [err, setErr] = useState<string | null>(null);
   const [tab, setTab] = useState<"classic" | "parley">("classic");
   const [stake, setStake] = useState<number>(50);
+  const [liveOverrideByKey, setLiveOverrideByKey] = useState<Record<string, any>>({});
+  const liveRef = useRef<Record<string, any>>({});
 
   useEffect(() => {
     const ctrl = new AbortController();
@@ -387,6 +409,102 @@ export default function Page() {
       .catch((e: any) => setErr(e?.message || String(e)));
     return () => ctrl.abort();
   }, []);
+
+  useEffect(() => {
+    liveRef.current = liveOverrideByKey;
+  }, [liveOverrideByKey]);
+
+  // Live polling (READ-ONLY): 1 request por deporte cada tick (ids deduplicados)
+  useEffect(() => {
+    if (!contract) return;
+    const ctrl = new AbortController();
+    let stopped = false;
+
+    const tick = async () => {
+      if (stopped) return;
+      const now = Date.now();
+
+      const byK = new Map<string, { sport: string; id: string; startMs: number | null; snapshotLive: any }>();
+
+      const addPick = (p: any) => {
+        if (!p) return;
+        const sport = String(p.sport || "").trim().toLowerCase();
+        const id = p.eventId === null || p.eventId === undefined ? "" : String(p.eventId).trim();
+        if (!sport || !id) return;
+
+        const d: any = p.display || {};
+        const startTime = d?.startTime;
+        const startMsRaw = startTime ? new Date(startTime).getTime() : Number.NaN;
+        const startMs = Number.isFinite(startMsRaw) ? startMsRaw : null;
+        const snapshotLive = d?.live;
+
+        const k = `${sport}:${id}`;
+        const prev = byK.get(k);
+        if (!prev) {
+          byK.set(k, { sport, id, startMs, snapshotLive });
+          return;
+        }
+        if (prev.startMs === null) prev.startMs = startMs;
+        else if (startMs !== null) prev.startMs = Math.min(prev.startMs, startMs);
+        if (!prev.snapshotLive && snapshotLive) prev.snapshotLive = snapshotLive;
+      };
+
+      // classic
+      for (const p of asPickList(contract)) addPick(p);
+
+      // parlays premium
+      const pp = Array.isArray(contract.picks_parlay_premium) ? contract.picks_parlay_premium : [];
+      for (const par of pp) for (const leg of (par?.legs || [])) addPick(leg);
+
+      // featured parlay (si existe)
+      const fp: any = (contract as any).daily_featured_parlay;
+      if (fp && typeof fp === "object") for (const leg of (fp?.legs || [])) addPick(leg);
+
+      const activeIdsBySport = new Map<string, Set<string>>();
+
+      for (const ev of byK.values()) {
+        if (ev.startMs === null) continue;
+        const within = now >= ev.startMs - LIVE_PRESTART_MS && now <= ev.startMs + LIVE_POSTSTART_MS;
+        if (!within) continue;
+
+        const kk = `${ev.sport}:${ev.id}`;
+        const liveFinal = (liveRef.current as any)[kk] ?? ev.snapshotLive;
+        const { statusShort } = liveMeta(liveFinal);
+        if (isFinalStatus(statusShort)) continue;
+
+        if (!activeIdsBySport.has(ev.sport)) activeIdsBySport.set(ev.sport, new Set());
+        activeIdsBySport.get(ev.sport)!.add(ev.id);
+      }
+
+      for (const [sport, idSet] of activeIdsBySport.entries()) {
+        const idsCsv = Array.from(idSet).join(",");
+        if (!idsCsv) continue;
+        try {
+          const data = await getLiveEvents(sport, idsCsv, ctrl.signal);
+          const liveById = data?.live_by_id;
+          if (!liveById || typeof liveById !== "object") continue;
+          setLiveOverrideByKey((prev) => {
+            const next = { ...prev };
+            for (const [id, live] of Object.entries(liveById)) {
+              (next as any)[`${sport}:${String(id)}`] = live;
+            }
+            return next;
+          });
+        } catch {
+          // silent: UI falls back to snapshot
+        }
+      }
+    };
+
+    tick();
+    const t = setInterval(tick, LIVE_POLL_MS);
+    return () => {
+      stopped = true;
+      clearInterval(t);
+      ctrl.abort();
+    };
+  }, [contract]);
+
 
   const classic = useMemo(() => {
     const raw = asPickList(contract);
@@ -488,7 +606,9 @@ export default function Page() {
                 const home = d.home || {};
                 const away = d.away || {};
                 const profit = stake * (n(p.odds, NaN) - 1);
-                const outcome = outcomeForPick((d as any).live, p.market, p.selection);
+                const k = liveKey(p.sport, p.eventId);
+                const liveFinal = k ? (liveOverrideByKey[k] ?? (d as any).live) : (d as any).live;
+                const outcome = outcomeForPick(liveFinal, p.market, p.selection);
 
                 return (
                   <article key={`${p.sport || "sport"}-${p.eventId || "event"}-${idx}`} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(outcome) || {}) }}>
@@ -509,7 +629,7 @@ export default function Page() {
                         </div>
 
                           <div className="shrink-0">
-                            <LiveScoreMini live={(d as any).live} home={home} away={away} size={48} />
+                            <LiveScoreMini live={liveFinal} home={home} away={away} size={48} />
                           </div>
                       </div>
 
@@ -592,9 +712,12 @@ export default function Page() {
                 const showNote = Boolean(note) && !note.toLowerCase().startsWith("fallback:");
 
                   const parlayOutcome = (() => {
-                    const outs = legs.map((leg) =>
-                      outcomeForPick(((leg as any).display as any)?.live, leg.market, leg.selection)
-                    );
+                    const outs = legs.map((leg) => {
+                      const dd: any = (leg as any).display || {};
+                      const kk = liveKey(leg.sport, leg.eventId);
+                      const liveFinalLeg = kk ? (liveOverrideByKey[kk] ?? (dd as any).live) : (dd as any).live;
+                      return outcomeForPick(liveFinalLeg, leg.market, leg.selection);
+                    });
                     if (!outs.length) return null;
                     if (outs.some((o) => o === null)) return null;
                     if (outs.some((o) => o === "LOSE")) return "LOSE";
@@ -650,7 +773,9 @@ export default function Page() {
                           const h = dd.home || {};
                           const a = dd.away || {};
                           const hasTeams = Boolean(h.name || a.name);
-                          const outcome = outcomeForPick((dd as any).live, leg.market, leg.selection);
+                          const kk = liveKey(leg.sport, leg.eventId);
+                          const liveFinalLeg = kk ? (liveOverrideByKey[kk] ?? (dd as any).live) : (dd as any).live;
+                          const outcome = outcomeForPick(liveFinalLeg, leg.market, leg.selection);
 
                           return (
                             <div key={i} className="rounded-2xl border border-white/10 bg-white/[0.03] p-3" style={{ ...(borderStyleForOutcome(outcome) || {}) }}>
@@ -682,7 +807,7 @@ export default function Page() {
 
                                   {hasTeams ? (
                                     <div className="shrink-0">
-                                      <LiveScoreMini live={(dd as any).live} home={h} away={a} size={48} />
+                                      <LiveScoreMini live={liveFinalLeg} home={h} away={a} size={48} />
                                     </div>
                                   ) : null}
                                 </div>
