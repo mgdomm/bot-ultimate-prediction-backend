@@ -20,6 +20,8 @@ api/logs/
 # Data artifacts (generated)
 api/reports/
 api/backups/
+api/data/events/
+api/data/odds/
 
 # OS/Editor
 .DS_Store

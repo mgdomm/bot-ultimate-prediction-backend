@@ -6,6 +6,10 @@ import json
 import os
 import sys
 import subprocess
+import time
+import html
+import urllib.request
+import urllib.parse
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -37,6 +41,143 @@ except ModuleNotFoundError:
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[1]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+# ---------------------------------------------------------------------------
+# Flashscore (Livesport) lightweight resolver (READ-ONLY; in-memory cache only)
+# ---------------------------------------------------------------------------
+
+_FLASH_TEAM_CACHE = {}   # (sport_name, norm_team_name) -> {"exp": float, "value": {...}}
+_FLASH_MATCH_CACHE = {}  # (sport_path, home_norm, away_norm, expected_date) -> {"exp": float, "value": {...}}
+
+def _flash_now() -> float:
+    return time.time()
+
+def _flash_norm_name(s: object) -> str:
+    t = (str(s) if s is not None else "").strip().lower()
+    # stable, dependency-free normalization
+    out = []
+    for ch in t:
+        if ch.isalnum():
+            out.append(ch)
+        else:
+            out.append(" ")
+    return " ".join("".join(out).split())
+
+def _flash_http_get_json(url: str):
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "ultimate-predictor/1.0 (flashscore-resolver; +https://example.invalid)",
+            "Accept": "application/json,text/plain,*/*",
+        },
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=15) as r:
+        raw = r.read().decode("utf-8", "replace")
+    return json.loads(raw)
+
+def _flash_http_get_text(url: str) -> str:
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "ultimate-predictor/1.0 (flashscore-resolver; +https://example.invalid)",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        },
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return r.read().decode("utf-8", "replace")
+
+def _flash_pick_date_from_title_html(html_text: str):
+    """Extract dd/mm/yyyy from <title>... without regex (best-effort)."""
+    lo = html_text.lower()
+    a = lo.find("<title>")
+    if a < 0:
+        return None
+    b = lo.find("</title>", a)
+    if b < 0:
+        return None
+    title = html.unescape(html_text[a + len("<title>"):b]).strip()
+    for i in range(0, max(0, len(title) - 10)):
+        chunk = title[i:i+10]
+        if (
+            len(chunk) == 10
+            and chunk[0:2].isdigit()
+            and chunk[2] == "/"
+            and chunk[3:5].isdigit()
+            and chunk[5] == "/"
+            and chunk[6:10].isdigit()
+        ):
+            return chunk
+    return None
+
+def _flash_sport_map(sport: str):
+    """Return (sport_path_for_flashscore_url, sport_name_for_livesport_filter)."""
+    s = (sport or "").strip().lower()
+    mapping = {
+        "football": ("football", "Soccer"),
+        "soccer": ("football", "Soccer"),
+        "basketball": ("basketball", "Basketball"),
+        "tennis": ("tennis", "Tennis"),
+        "hockey": ("hockey", "Hockey"),
+        "icehockey": ("hockey", "Hockey"),
+        "handball": ("handball", "Handball"),
+        "rugby": ("rugby", "Rugby"),
+        "volleyball": ("volleyball", "Volleyball"),
+        "baseball": ("baseball", "Baseball"),
+        "american-football": ("american-football", "American football"),
+    }
+    if s in mapping:
+        return mapping[s]
+    return (s or "football"), ""
+
+def _flash_resolve_team(sport_name: str, team_name: str):
+    norm = _flash_norm_name(team_name)
+    if not norm:
+        return None
+
+    ck = (sport_name or "", norm)
+    hit = _FLASH_TEAM_CACHE.get(ck)
+    if isinstance(hit, dict) and hit.get("exp", 0) > _flash_now():
+        return hit.get("value")
+
+    q = urllib.parse.quote_plus(team_name.strip())
+    data = _flash_http_get_json(f"https://s.livesport.services/api/v2/search/?q={q}")
+    if not isinstance(data, list):
+        return None
+
+    candidates = []
+    for it in data:
+        if not isinstance(it, dict):
+            continue
+        tname = (it.get("type") or {}).get("name") if isinstance(it.get("type"), dict) else None
+        if tname != "Team":
+            continue
+        sname = (it.get("sport") or {}).get("name") if isinstance(it.get("sport"), dict) else None
+        if sport_name and sname != sport_name:
+            continue
+        candidates.append(it)
+
+    if not candidates:
+        return None
+
+    chosen = None
+    for it in candidates:
+        if _flash_norm_name(it.get("name")) == norm:
+            chosen = it
+            break
+    if chosen is None:
+        chosen = candidates[0]
+
+    value = {
+        "name": chosen.get("name") or team_name,
+        "id": chosen.get("id"),
+        "slug": chosen.get("url"),
+    }
+
+    _FLASH_TEAM_CACHE[ck] = {"exp": _flash_now() + 7 * 24 * 3600, "value": value}
+    return value
+
 
 def _parse_iso_dt(s: object):
     if not s:
@@ -370,6 +511,235 @@ def get_today_bets():
     return contract
 
 
+
+
+# ---------------------------------------------------------------------------
+# Flashscore match URL resolver (READ-ONLY)
+# ---------------------------------------------------------------------------
+@app.get("/flashscore/match_url")
+def flashscore_match_url(
+    sport: str = "football",
+    home: str = "",
+    away: str = "",
+    start: str = "",
+):
+    """Resolve a Flashscore match URL by resolving home/away teams via Livesport search.
+    READ-ONLY (no disk writes). Does NOT call /internal/ensure_today.
+    """
+    home = (home or "").strip()
+    away = (away or "").strip()
+    if not home or not away:
+        raise HTTPException(status_code=400, detail="home and away are required")
+
+    sport_path, sport_name = _flash_sport_map(sport)
+
+    expected_date = None
+    dt = _parse_iso_dt(start)
+    if dt is not None:
+        local = dt.astimezone(ZoneInfo("Europe/Madrid"))
+        expected_date = f"{local.day:02d}/{local.month:02d}/{local.year:04d}"
+
+    home_norm = _flash_norm_name(home)
+    away_norm = _flash_norm_name(away)
+
+    mk = (sport_path, home_norm, away_norm, expected_date or "")
+    mhit = _FLASH_MATCH_CACHE.get(mk)
+    if isinstance(mhit, dict) and mhit.get("exp", 0) > _flash_now():
+        return mhit.get("value")
+
+    home_team = _flash_resolve_team(sport_name, home)
+    away_team = _flash_resolve_team(sport_name, away)
+
+    if (
+        not home_team or not away_team
+        or not home_team.get("id") or not away_team.get("id")
+        or not home_team.get("slug") or not away_team.get("slug")
+    ):
+        out = {
+            "match_url": None,
+            "verified": False,
+            "sport": sport_path,
+            "home": home_team or {"name": home},
+            "away": away_team or {"name": away},
+            "expected_date": expected_date,
+        }
+        _FLASH_MATCH_CACHE[mk] = {"exp": _flash_now() + 15 * 60, "value": out}
+        return out
+
+    match_url = (
+        f"https://www.flashscore.com/match/{sport_path}/"
+        f"{home_team['slug']}-{home_team['id']}/"
+        f"{away_team['slug']}-{away_team['id']}/"
+        f"?isDetailPopup=true"
+    )
+
+    verified = False
+    if expected_date:
+        try:
+            page = _flash_http_get_text(match_url)
+            got = _flash_pick_date_from_title_html(page)
+            verified = (got == expected_date)
+        except Exception:
+            verified = False
+
+    out = {
+        "match_url": match_url,
+        "verified": verified,
+        "sport": sport_path,
+        "home": {"name": home_team.get("name"), "id": home_team.get("id"), "slug": home_team.get("slug")},
+        "away": {"name": away_team.get("name"), "id": away_team.get("id"), "slug": away_team.get("slug")},
+        "expected_date": expected_date,
+    }
+    _FLASH_MATCH_CACHE[mk] = {"exp": _flash_now() + 6 * 3600, "value": out}
+    return out
+
+
+
+# ---------------------------------------------------------------------------
+# Live events snapshot (API-SPORTS) — READ-ONLY (in-memory cache)
+# ---------------------------------------------------------------------------
+
+_LIVE_EVENTS_CACHE = {}  # (sport, ids_csv) -> {"exp": float, "value": dict}
+
+def _api_sports_http_get_json(url: str) -> dict:
+    api_key = os.environ.get("API_SPORTS_KEY") or ""
+    if not api_key:
+        # Keep read-only behavior: return empty instead of 500 so UI can fallback.
+        return {"results": 0, "response": [], "errors": {"message": "API_SPORTS_KEY missing"}}
+
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "ultimate-predictor/1.0 (live-snapshot)",
+            "Accept": "application/json",
+            "x-apisports-key": api_key,
+        },
+        method="GET",
+    )
+    with urllib.request.urlopen(req, timeout=20) as r:
+        raw = r.read().decode("utf-8", "replace")
+    data = json.loads(raw)
+    # API-SPORTS sometimes returns {"errors":{...}} with 200
+    if isinstance(data, dict) and data.get("errors"):
+        # Do not raise: keep it 200 so frontend can fallback without breaking.
+        return data
+    if not isinstance(data, dict):
+        return {"results": 0, "response": [], "errors": {"message": "invalid json"}}
+    return data
+
+def _live_endpoint_for_sport(sport: str) -> str:
+    s = (sport or "").strip().lower()
+    # align with events_ingestion.py
+    if s in ("football", "soccer"):
+        return "/fixtures"
+    # most API-Sports products use /games
+    return "/games"
+
+def _live_base_url_for_sport(sport: str) -> str:
+    try:
+        from api.services.api_sports_hosts import SPORT_BASE_URL as _SB  # type: ignore
+    except ModuleNotFoundError:
+        from services.api_sports_hosts import SPORT_BASE_URL as _SB  # type: ignore
+    base = _SB.get((sport or "").strip().lower())
+    if not base:
+        return ""
+    return str(base).rstrip("/")
+
+def _extract_live_for_item(sport: str, item: dict) -> tuple[str | None, dict | None]:
+    s = (sport or "").strip().lower()
+
+    # football /fixtures response shape
+    if s in ("football", "soccer"):
+        fixture = item.get("fixture") if isinstance(item.get("fixture"), dict) else {}
+        eid = fixture.get("id")
+        if eid is None:
+            return None, None
+        status = fixture.get("status") if isinstance(fixture.get("status"), dict) else {}
+        goals = item.get("goals") if isinstance(item.get("goals"), dict) else {}
+        live = {
+            "statusLong": status.get("long"),
+            "statusShort": status.get("short"),
+            "elapsed": status.get("elapsed"),
+            "extra": status.get("extra"),
+            "homeScore": goals.get("home"),
+            "awayScore": goals.get("away"),
+        }
+        return str(eid), live
+
+    # generic /games shape (handball/hockey/basketball/rugby/volleyball/baseball/afl/nba)
+    eid = item.get("id")
+    if eid is None and isinstance(item.get("game"), dict):
+        eid = item["game"].get("id")  # nfl/american-football sometimes nests this way
+    if eid is None:
+        return None, None
+
+    status = item.get("status") if isinstance(item.get("status"), dict) else {}
+    scores = item.get("scores") if isinstance(item.get("scores"), dict) else {}
+    home_scores = scores.get("home")
+    away_scores = scores.get("away")
+    home_total = home_scores.get("total") if isinstance(home_scores, dict) else home_scores
+    away_total = away_scores.get("total") if isinstance(away_scores, dict) else away_scores
+
+    live = {
+        "statusLong": status.get("long"),
+        "statusShort": status.get("short"),
+        "timer": status.get("timer") or item.get("timer"),
+        "time": item.get("time"),
+        "homeScore": home_total,
+        "awayScore": away_total,
+        "periods": item.get("periods"),
+    }
+    return str(eid), live
+
+@app.get("/live/events")
+def live_events(sport: str = "", ids: str = ""):
+    """
+    Fetch live status for specific events via API-SPORTS.
+    READ-ONLY: no contract writes, no pipeline, cache in-memory.
+    Returns 200 even on upstream issues (empty map) so UI can fallback.
+    """
+    sport = (sport or "").strip().lower()
+    ids_csv = ",".join([x.strip() for x in str(ids or "").split(",") if x.strip()])
+    if not sport or not ids_csv:
+        raise HTTPException(status_code=400, detail="sport and ids are required")
+
+    ck = (sport, ids_csv)
+    now = time.time()
+    hit = _LIVE_EVENTS_CACHE.get(ck)
+    if isinstance(hit, dict) and hit.get("exp", 0) > now:
+        return hit.get("value")
+
+    base = _live_base_url_for_sport(sport)
+    if not base:
+        out = {"sport": sport, "ids": ids_csv, "live_by_id": {}, "errors": {"message": "sport not supported"}}
+        _LIVE_EVENTS_CACHE[ck] = {"exp": now + 60, "value": out}
+        return out
+
+    endpoint = _live_endpoint_for_sport(sport)
+    url = base + endpoint + "?" + urllib.parse.urlencode({"ids": ids_csv})
+
+    data = _api_sports_http_get_json(url)
+    resp = data.get("response") if isinstance(data, dict) else None
+    out_map = {}
+    if isinstance(resp, list):
+        for it in resp:
+            if not isinstance(it, dict):
+                continue
+            eid, live = _extract_live_for_item(sport, it)
+            if eid and isinstance(live, dict):
+                out_map[eid] = live
+
+    out = {
+        "sport": sport,
+        "ids": ids_csv,
+        "live_by_id": out_map,
+        "upstream_errors": data.get("errors") if isinstance(data, dict) else None,
+        "fetched_at": datetime.utcnow().isoformat(),
+    }
+
+    # TTL: short, to protect quota across many users
+    _LIVE_EVENTS_CACHE[ck] = {"exp": now + 90, "value": out}
+    return out
 
 # ✅ Internal trigger: ensure today's contract exists (for external cron; avoids Render sleep issues)
 # Set env INTERNAL_ENSURE_TOKEN and call:
