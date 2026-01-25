@@ -691,6 +691,12 @@ def _extract_live_for_item(sport: str, item: dict) -> tuple[str | None, dict | N
     }
     return str(eid), live
 
+def _ids_list_from_csv(ids_csv: str) -> list[str]:
+    return [x.strip() for x in str(ids_csv or "").split(",") if x.strip()]
+
+def _ids_set_from_csv(ids_csv: str) -> set[str]:
+    return set(_ids_list_from_csv(ids_csv))
+
 @app.get("/live/events")
 def live_events(sport: str = "", ids: str = ""):
     """
@@ -716,7 +722,15 @@ def live_events(sport: str = "", ids: str = ""):
         return out
 
     endpoint = _live_endpoint_for_sport(sport)
-    url = base + endpoint + "?" + urllib.parse.urlencode({"ids": ids_csv})
+    wanted = _ids_set_from_csv(ids_csv)
+    ids_list = _ids_list_from_csv(ids_csv)
+    single_id = ids_list[0] if len(ids_list) == 1 else ""
+
+    # API-Sports Free plan may block `ids` (plural). Strategy:
+    # - if single id: use `id`
+    # - if multiple: use `live=all` (1 request) then filter by ids
+    params = {"id": single_id} if single_id else {"live": "all"}
+    url = base + endpoint + "?" + urllib.parse.urlencode(params)
 
     data = _api_sports_http_get_json(url)
     resp = data.get("response") if isinstance(data, dict) else None
@@ -726,7 +740,7 @@ def live_events(sport: str = "", ids: str = ""):
             if not isinstance(it, dict):
                 continue
             eid, live = _extract_live_for_item(sport, it)
-            if eid and isinstance(live, dict):
+            if eid and isinstance(live, dict) and eid in wanted:
                 out_map[eid] = live
 
     out = {
