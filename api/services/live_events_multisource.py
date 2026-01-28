@@ -18,9 +18,9 @@ try:
     from api.services.api_espn_client import ESPNClient
     from api.services.api_sofascore_client import SofaScoreClient
 except ModuleNotFoundError:
-    from api_alternatives_client import AlternativeApisClient
-    from api_espn_client import ESPNClient
-    from api_sofascore_client import SofaScoreClient
+    from services.api_alternatives_client import AlternativeApisClient
+    from services.api_espn_client import ESPNClient
+    from services.api_sofascore_client import SofaScoreClient
 
 
 class LiveEventsMultiSource:

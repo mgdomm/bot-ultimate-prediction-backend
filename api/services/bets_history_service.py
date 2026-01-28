@@ -11,7 +11,11 @@ import json
 from pathlib import Path
 from datetime import datetime
 from typing import Any, Dict, List, Optional
-from api.utils.cycle_day import cycle_day_str
+
+try:
+    from api.utils.cycle_day import cycle_day_str
+except ModuleNotFoundError:
+    from utils.cycle_day import cycle_day_str
 
 
 def _outcome_for_pick(live: Dict[str, Any], market: Optional[str], selection: Optional[str]) -> Optional[str]:
