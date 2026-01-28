@@ -38,6 +38,12 @@ try:
 except ModuleNotFoundError:
     from services.contract_service import create_empty_contract, populate_contract_with_day_data  # type: ignore
 
+# Live events multisource (ESPN + alternatives + snapshots)
+try:
+    from api.services.live_events_multisource import LiveEventsMultiSource
+except ModuleNotFoundError:
+    from services.live_events_multisource import LiveEventsMultiSource  # type: ignore
+
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[1]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
@@ -749,7 +755,13 @@ def _fetch_live_one_by_id_cached(
 @app.get("/live/events")
 def live_events(sport: str = "", ids: str = ""):
     """
-    Fetch live status for specific events via API-SPORTS.
+    DF_LIVE_EVENTS_MULTISOURCE: Fetch live status for specific events.
+    
+    Supports multiple data sources by sport:
+    - Alternatives (NBA, NHL, Handball, Volleyball, AFL): balldontlie, NHL Stats, OpenLigaDB, Squiggle
+    - ESPN (Soccer, Rugby, NFL): when integrated
+    - Snapshots: fallback for unsupported sports
+    
     READ-ONLY: no contract writes, no pipeline, cache in-memory.
     Returns 200 even on upstream issues (empty map) so UI can fallback.
     """
@@ -758,76 +770,38 @@ def live_events(sport: str = "", ids: str = ""):
     if not sport or not ids_csv:
         raise HTTPException(status_code=400, detail="sport and ids are required")
 
+    # Check cache
     ck = (sport, ids_csv)
     now = time.time()
     hit = _LIVE_EVENTS_CACHE.get(ck)
     if isinstance(hit, dict) and hit.get("exp", 0) > now:
         return hit.get("value")
 
-    base = _live_base_url_for_sport(sport)
-    if not base:
-        out = {"sport": sport, "ids": ids_csv, "live_by_id": {}, "upstream_errors": {"message": "sport not supported"}, "fetched_at": datetime.utcnow().isoformat()}
-        _LIVE_EVENTS_CACHE[ck] = {"exp": now + 60, "value": out}
-        return out
-
-    endpoint = _live_endpoint_for_sport(sport)
-    wanted = _ids_set_from_csv(ids_csv)
-    ids_list = _ids_list_from_csv(ids_csv)
-    single_id = ids_list[0] if len(ids_list) == 1 else ""
-
-    # Some API-Sports products do not support `live=all` (measured: handball).
-    # For those sports, fan-out N requests using `id=<id>` and merge results.
-    if not single_id and sport in _SPORTS_NO_LIVE_ALL:
-        out_map = {}
-        upstream_errors = {}
-        for eid in ids_list:
-            live, err = _fetch_live_one_by_id_cached(sport, base, endpoint, eid, now)
-            if isinstance(live, dict):
-                out_map[str(eid)] = live
-            if err:
-                upstream_errors[str(eid)] = err
-
-        out = {
-            'sport': sport,
-            'ids': ids_csv,
-            'live_by_id': out_map,
-            'upstream_errors': (upstream_errors or None),
-            'fetched_at': datetime.utcnow().isoformat(),
-        }
-        _LIVE_EVENTS_CACHE[ck] = {'exp': now + 90, 'value': out}
-        return out
-
-    # API-Sports Free plan may block `ids` (plural). Strategy:
-    # - if single id: use `id`
-    # - if multiple: use `live=all` (1 request) then filter by ids
-    params = {"id": single_id} if single_id else {"live": "all"}
-    url = base + endpoint + "?" + urllib.parse.urlencode(params)
-
-    data = _api_sports_http_get_json(url)
-    resp = data.get("response") if isinstance(data, dict) else None
-    out_map = {}
-    if isinstance(resp, list):
-        for it in resp:
-            if not isinstance(it, dict):
-                continue
-            eid, live = _extract_live_for_item(sport, it)
-            if eid and isinstance(live, dict) and eid in wanted:
-                out_map[eid] = live
-
+    # Get today's date
+    today = cycle_day_str()  # 06:00 Europe/Madrid cycle
+    
+    # Try multisource aggregator
+    result = LiveEventsMultiSource.get_live_events(sport, today)
+    live_by_id = result.get("live_by_id", {})
+    
+    # Filter by requested ids (if not in map, will just be missing from result)
+    wanted = {x.strip() for x in ids_csv.split(",") if x.strip()}
+    filtered = {eid: live for eid, live in live_by_id.items() if str(eid) in wanted}
+    
     out = {
         "sport": sport,
         "ids": ids_csv,
-        "live_by_id": out_map,
-        "upstream_errors": data.get("errors") if isinstance(data, dict) else None,
+        "live_by_id": filtered,
+        "source": result.get("source"),
         "fetched_at": datetime.utcnow().isoformat(),
     }
+    
+    if result.get("error"):
+        out["error"] = result.get("error")
 
-    # TTL: short, to protect quota across many users
-    # Normalize: keep a stable shape for UI (null or object)
-    ue = out.get("upstream_errors")
-    if ue == [] or ue == {}:
-        out["upstream_errors"] = None
-    _LIVE_EVENTS_CACHE[ck] = {"exp": now + 90, "value": out}
+    # TTL: 5 minutes for alternatives (reasonably fresh), shorter for snapshots
+    ttl = 300 if result.get("source") in ("alternatives", "espn") else 60
+    _LIVE_EVENTS_CACHE[ck] = {"exp": now + ttl, "value": out}
     return out
 
 # ✅ Internal trigger: ensure today's contract exists (for external cron; avoids Render sleep issues)
@@ -888,8 +862,27 @@ def internal_ensure_today(token: str = ""):
         try:
             if os.path.exists(lock_file):
                 os.unlink(lock_file)
-        except Exception:
-            pass
+# ✅ Bets history endpoint (DF_BETS_HISTORY)
+try:
+    from api.services.bets_history_service import load_day_history, list_history_days
+except ModuleNotFoundError:
+    from services.bets_history_service import load_day_history, list_history_days
+
+
+@app.get("/history/days")
+def get_history_days(limit: int = 30):
+    """List recent days with archived bets"""
+    return {"days": list_history_days(limit=limit)}
+
+
+@app.get("/history/{day}")
+def get_day_history(day: str):
+    """Get archived bets for a specific day"""
+    history = load_day_history(day)
+    if not history:
+        raise HTTPException(status_code=404, detail=f"No history for day {day}")
+    return history
+
 
 # ✅ Operational healthcheck (no business logic)
 @app.get("/health")

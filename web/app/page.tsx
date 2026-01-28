@@ -399,9 +399,12 @@ function LiveScoreMini({
 export default function Page() {
   const [contract, setContract] = useState<Contract | null>(null);
   const [err, setErr] = useState<string | null>(null);
-  const [tab, setTab] = useState<"classic" | "parley">("classic");
+  const [tab, setTab] = useState<"classic" | "parley" | "history" | "soccer" | "rugby" | "nfl" | "basketball" | "hockey" | "afl" | "tennis" | "baseball">("classic");
   const [stake, setStake] = useState<number>(50);
   const [liveOverrideByKey, setLiveOverrideByKey] = useState<Record<string, any>>({});
+  const [historyDays, setHistoryDays] = useState<any[]>([]);
+  const [selectedHistoryDay, setSelectedHistoryDay] = useState<string | null>(null);
+  const [historyDayData, setHistoryDayData] = useState<any | null>(null);
   const liveRef = useRef<Record<string, any>>({});
 
   useEffect(() => {
@@ -411,6 +414,32 @@ export default function Page() {
       .catch((e: any) => setErr(e?.message || String(e)));
     return () => ctrl.abort();
   }, []);
+
+  useEffect(() => {
+    const ctrl = new AbortController();
+    fetch(`${BACKEND_URL}/history/days?limit=30`, { cache: "no-store", signal: ctrl.signal })
+      .then((res) => res.json())
+      .then((data) => setHistoryDays(data.days || []))
+      .catch(() => {
+        /* silent fail */
+      });
+    return () => ctrl.abort();
+  }, []);
+
+  useEffect(() => {
+    if (!selectedHistoryDay) {
+      setHistoryDayData(null);
+      return;
+    }
+    const ctrl = new AbortController();
+    fetch(`${BACKEND_URL}/history/${selectedHistoryDay}`, { cache: "no-store", signal: ctrl.signal })
+      .then((res) => res.json())
+      .then(setHistoryDayData)
+      .catch(() => {
+        setHistoryDayData(null);
+      });
+    return () => ctrl.abort();
+  }, [selectedHistoryDay]);
 
   useEffect(() => {
     liveRef.current = liveOverrideByKey;
@@ -512,8 +541,24 @@ export default function Page() {
 
   const classic = useMemo(() => {
     const raw = asPickList(contract);
-    // Ya viene “10 picks” del backend. Aquí solo ordenamos un poco.
-    return raw.slice().sort((a, b) => n(b.p_safe, -1e9) - n(a.p_safe, -1e9));
+    // Top 10 picks de TODOS los deportes, ordenados por confianza
+    return raw.slice().sort((a, b) => n(b.p_safe, -1e9) - n(a.p_safe, -1e9)).slice(0, 10);
+  }, [contract]);
+
+  // Picks agrupados por deporte
+  const picksBySport = useMemo(() => {
+    const raw = asPickList(contract);
+    const byS: Record<string, Pick[]> = {};
+    for (const p of raw) {
+      const s = (p.sport || "other").toLowerCase();
+      if (!byS[s]) byS[s] = [];
+      byS[s].push(p);
+    }
+    // Ordenar cada deporte por p_safe
+    for (const s in byS) {
+      byS[s].sort((a, b) => n(b.p_safe, -1e9) - n(a.p_safe, -1e9));
+    }
+    return byS;
   }, [contract]);
 
   const parlays = useMemo(() => {
@@ -571,12 +616,27 @@ export default function Page() {
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <button className={tab === "classic" ? "badge badge-accent" : "badge"} onClick={() => setTab("classic")}>
-                  Classic
+                  Classic (Top 10)
                 </button>
                 <button className={tab === "parley" ? "badge badge-accent" : "badge"} onClick={() => setTab("parley")}>
                   Parley
+                </button>
+                
+                {/* Sport tabs - muestra solo deportes con picks */}
+                {Object.keys(picksBySport).filter(s => picksBySport[s].length > 0).map((sport) => (
+                  <button 
+                    key={sport}
+                    className={tab === sport ? "badge badge-accent" : "badge"} 
+                    onClick={() => setTab(sport as any)}
+                  >
+                    {sport.charAt(0).toUpperCase() + sport.slice(1)} ({picksBySport[sport].length})
+                  </button>
+                ))}
+                
+                <button className={tab === "history" ? "badge badge-accent" : "badge"} onClick={() => { setTab("history"); setSelectedHistoryDay(null); }}>
+                  Historial
                 </button>
               </div>
 
@@ -691,6 +751,106 @@ export default function Page() {
           )}
         </>
       )}
+
+      {/* SPORT TABS - DYNAMIC RENDERING */}
+      {Object.keys(picksBySport)
+        .filter((s) => picksBySport[s].length > 0)
+        .map((sport) =>
+          tab === sport ? (
+            <div key={sport}>
+              {!picksBySport[sport].length ? (
+                <section className="card">
+                  <div className="card-inner p-6 text-slate-300/80 overflow-visible">No hay predicciones para {sportEs(sport)}.</div>
+                </section>
+              ) : (
+                <section className="grid gap-4 md:grid-cols-2">
+                  {picksBySport[sport].map((p, idx) => {
+                    const d = p.display || {};
+                    const home = d.home || {};
+                    const away = d.away || {};
+                    const profit = stake * (n(p.odds, NaN) - 1);
+                    const k = liveKey(p.sport, p.eventId);
+                    const liveFinal = k ? (liveOverrideByKey[k] ?? (d as any).live) : (d as any).live;
+                    const outcome = outcomeForPick(liveFinal, p.market, p.selection);
+
+                    return (
+                      <article key={`${p.sport || "sport"}-${p.eventId || "event"}-${idx}`} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(outcome) || {}) }}>
+                        <div className="card-inner p-5 overflow-visible">
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="min-w-0">
+                              <div className="flex flex-wrap items-center gap-2">
+                                <span className="badge badge-accent">{sportEs(p.sport)}</span>
+                                {d.league ? <span className="badge">{d.league}</span> : null}
+                                {confianzaBadge(p?.p_safe)}
+                              </div>
+
+                              <div className="mt-2 text-lg font-semibold tracking-tight truncate">
+                                {home?.name || "Local"} <span className="text-slate-300/70">vs</span> {away?.name || "Visitante"}
+                              </div>
+
+                              <div className="subtle text-xs mt-1">Empieza: {fmtStart(d.startTime)}</div>
+                            </div>
+
+                            <div className="shrink-0">
+                              <LiveScoreMini live={liveFinal} home={home} away={away} size={48} />
+                            </div>
+                          </div>
+
+                          <div className="mt-4 grid grid-cols-2 gap-3">
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
+                              <div className="mono">Mercado</div>
+                              <div className="text-sm text-slate-100">{mercadoBonito(p.market)}</div>
+                            </div>
+
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
+                              <div className="mono">Selecciona</div>
+                              <div className="text-sm text-slate-100">{selectionEs(p.selection)}</div>
+                            </div>
+
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3">
+                              <div className="mono">Cuota</div>
+                              <div className="text-sm text-slate-100">{fmtOdds(p.odds)}</div>
+                            </div>
+
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3">
+                              <div className="mono">Ganancia potencial</div>
+                              <div className="text-sm text-slate-100">{fmtEur(profit)}</div>
+                            </div>
+
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
+                              <div className="mono">Retorno total</div>
+                              <div className="text-sm text-slate-100">{fmtEur(stake * n(p.odds, NaN))}</div>
+                            </div>
+                          </div>
+
+                          {Number.isFinite(n(p.p_safe, NaN)) ? (
+                            <div className="subtle text-xs mt-3">
+                              <InfoTip
+                                tip={
+                                  <>
+                                    <div className="font-semibold text-white/90">¿Qué significa esta probabilidad?</div>
+                                    <div className="mt-1">
+                                      Es la <span className="text-white">estimación del modelo</span> para esta selección. No garantiza acierto; solo
+                                      indica qué tan probable es según datos y mercado.
+                                    </div>
+                                  </>
+                                }
+                              >
+                                <span>
+                                  Prob. estimada: <span className="text-slate-100">{fmtPct(p.p_safe)}</span>
+                                </span>
+                              </InfoTip>
+                            </div>
+                          ) : null}
+                        </div>
+                      </article>
+                    );
+                  })}
+                </section>
+              )}
+            </div>
+          ) : null
+        )}
 
       {/* PARLEY */}
       {tab === "parley" && (
@@ -823,6 +983,171 @@ export default function Page() {
                   </article>
                 );
               })}
+            </section>
+          )}
+        </>
+      )}
+
+      {/* HISTORIAL */}
+      {tab === "history" && (
+        <>
+          {!selectedHistoryDay ? (
+            <section className="grid gap-4 md:grid-cols-2">
+              {historyDays.length === 0 ? (
+                <section className="card md:col-span-2">
+                  <div className="card-inner p-6 overflow-visible">
+                    <div className="h2">Historial</div>
+                    <div className="subtle mt-2">No hay historial disponible.</div>
+                  </div>
+                </section>
+              ) : (
+                historyDays.map((day) => (
+                  <article key={day.day} className="card" style={{ cursor: "pointer" }} onClick={() => setSelectedHistoryDay(day.day)}>
+                    <div className="card-inner p-5 overflow-visible hover:bg-white/[0.06] transition-colors">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <div className="text-lg font-semibold tracking-tight">{day.day}</div>
+                          <div className="subtle text-xs mt-2">
+                            Archivado: {new Date(day.archived_at).toLocaleString("es-ES", { timeZone: "Europe/Madrid" })}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mt-4 grid grid-cols-2 gap-2">
+                        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+                          <div className="mono text-xs">Clásicas</div>
+                          <div className="text-sm text-slate-100 mt-1">
+                            {day.classic_wins}/{day.classic_total} ✓
+                          </div>
+                        </div>
+                        <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+                          <div className="mono text-xs">Parlays</div>
+                          <div className="text-sm text-slate-100 mt-1">
+                            {day.parlay_wins}/{day.parlay_total} ✓
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                ))
+              )}
+            </section>
+          ) : historyDayData ? (
+            <>
+              <section className="card">
+                <div className="card-inner p-6 overflow-visible">
+                  <button
+                    className="badge"
+                    onClick={() => {
+                      setSelectedHistoryDay(null);
+                      setHistoryDayData(null);
+                    }}
+                  >
+                    ← Volver
+                  </button>
+                  <div className="h2 mt-3">{selectedHistoryDay}</div>
+                  <div className="subtle text-xs mt-2">
+                    Archivado: {new Date(historyDayData.archived_at).toLocaleString("es-ES", { timeZone: "Europe/Madrid" })}
+                  </div>
+                </div>
+              </section>
+
+              {/* Clásicas del histórico */}
+              {Array.isArray(historyDayData.picks_classic) && historyDayData.picks_classic.length > 0 && (
+                <section>
+                  <div className="h2 mb-4">Apuestas Clásicas</div>
+                  <section className="grid gap-4 md:grid-cols-2">
+                    {(historyDayData.picks_classic as any[]).map((p, idx) => {
+                      const d = p.display || {};
+                      const outcome = p.outcome;
+                      return (
+                        <article key={idx} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(outcome as any) || {}) }}>
+                          <div className="card-inner p-5 overflow-visible">
+                            <div className="flex items-start justify-between gap-3">
+                              <div>
+                                <div className="flex flex-wrap items-center gap-2">
+                                  <span className="badge badge-accent">{sportEs(p.sport)}</span>
+                                  {outcome === "WIN" && <span className="badge" style={{ borderColor: "rgba(34,197,94,0.55)" }}>✓ WIN</span>}
+                                  {outcome === "LOSE" && <span className="badge" style={{ borderColor: "rgba(239,68,68,0.55)" }}>✗ LOSE</span>}
+                                  {outcome === "PENDING" && <span className="badge">⏳ PENDING</span>}
+                                </div>
+                                <div className="mt-2 text-sm font-semibold truncate">
+                                  {d.home?.name || "Local"} vs {d.away?.name || "Visitante"}
+                                </div>
+                                <div className="subtle text-xs mt-1">{fmtStart(d.startTime)}</div>
+                                <div className="subtle text-xs mt-1">{mercadoBonito(p.market)}</div>
+                              </div>
+                            </div>
+                            <div className="mt-3 grid grid-cols-2 gap-2">
+                              <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+                                <div className="mono text-xs">Cuota</div>
+                                <div className="text-sm text-slate-100">{fmtOdds(p.odds)}</div>
+                              </div>
+                              <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2">
+                                <div className="mono text-xs">Selección</div>
+                                <div className="text-xs text-slate-100">{selectionEs(p.selection)}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </section>
+                </section>
+              )}
+
+              {/* Parlays del histórico */}
+              {Array.isArray(historyDayData.picks_parlay_premium) && historyDayData.picks_parlay_premium.length > 0 && (
+                <section className="mt-6">
+                  <div className="h2 mb-4">Parlays</div>
+                  <section className="grid gap-4 md:grid-cols-2">
+                    {(historyDayData.picks_parlay_premium as any[]).map((p, idx) => {
+                      const outcome = p.outcome;
+                      const legs = p.legs || [];
+                      return (
+                        <article key={idx} className="card" style={{ overflow: "visible", ...(borderStyleForOutcome(outcome as any) || {}) }}>
+                          <div className="card-inner p-5 overflow-visible">
+                            <div className="flex items-start justify-between gap-3">
+                              <div>
+                                <div className="flex flex-wrap items-center gap-2">
+                                  <span className={p.kind === "BOOM_3" ? "badge badge-accent" : "badge"}>{parlayTag(p.kind)}</span>
+                                  {outcome === "WIN" && <span className="badge" style={{ borderColor: "rgba(34,197,94,0.55)" }}>✓ WIN</span>}
+                                  {outcome === "LOSE" && <span className="badge" style={{ borderColor: "rgba(239,68,68,0.55)" }}>✗ LOSE</span>}
+                                  {outcome === "PENDING" && <span className="badge">⏳ PENDING</span>}
+                                </div>
+                                <div className="mt-2 text-sm font-semibold">{legs.length} Selecciones</div>
+                                <div className="subtle text-xs mt-1">Cuota: {fmtOdds(p.combined_odds)}</div>
+                              </div>
+                            </div>
+                            <div className="mt-3 space-y-2">
+                              {legs.map((leg: any, i: number) => (
+                                <div key={i} className="rounded-lg border border-white/10 bg-white/[0.02] p-2">
+                                  <div className="flex items-center justify-between gap-2">
+                                    <div className="min-w-0 flex-1">
+                                      <div className="text-xs text-slate-100 truncate">Sel. {i + 1}</div>
+                                      <div className="text-xs text-slate-300/70 truncate">{selectionEs(leg.selection)}</div>
+                                    </div>
+                                    <div className="shrink-0 text-xs">
+                                      {p.leg_outcomes?.[i] === "WIN" && <span style={{ color: "rgba(34,197,94,1)" }}>✓</span>}
+                                      {p.leg_outcomes?.[i] === "LOSE" && <span style={{ color: "rgba(239,68,68,1)" }}>✗</span>}
+                                      {p.leg_outcomes?.[i] === "PENDING" && <span>⏳</span>}
+                                    </div>
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </section>
+                </section>
+              )}
+            </>
+          ) : (
+            <section className="card">
+              <div className="card-inner p-6 overflow-visible">
+                <div className="subtle">Cargando historial...</div>
+              </div>
             </section>
           )}
         </>

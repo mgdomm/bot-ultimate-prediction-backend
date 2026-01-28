@@ -280,19 +280,51 @@ def build_best_parlay(selections: List[Dict[str, Any]], rule_key: str, rule: Dic
 
     return candidates[0]
 
-def _try_sources_for_rule(day: str, rule_key: str, rule: Dict[str, Any]) -> Tuple[Optional[Dict[str, Any]], str]:
+def _get_pick_id(pick: Dict[str, Any]) -> str:
+    """Get unique pick identifier (sport:eventId:market:selection)"""
+    sport = pick.get("sport", "")
+    event_id = pick.get("eventId", "")
+    market = pick.get("market", "")
+    selection = pick.get("selection", "")
+    return f"{sport}:{event_id}:{market}:{selection}"
+
+
+def _filter_out_picks(selections: List[Dict[str, Any]], exclude_ids: set) -> List[Dict[str, Any]]:
+    """Remove picks that are in the exclude set"""
+    return [s for s in selections if _get_pick_id(s) not in exclude_ids]
+
+
+def _try_sources_for_rule(
+    day: str, 
+    rule_key: str, 
+    rule: Dict[str, Any],
+    used_picks_ids: set = None,
+) -> Tuple[Optional[Dict[str, Any]], str]:
+    """
+    Build best parlay for a rule, excluding picks already used in other parlays.
+    This implements DF_PARLAY_NO_DUPLICATION (A+B strategy):
+    - Exclude picks from 4-legs when building 3-legs/2-legs
+    - Also try alternative picks with similar EV if top choice has conflicts
+    """
+    if used_picks_ids is None:
+        used_picks_ids = set()
+    
     guard = PARLAY_GUARDRAILS[rule_key]
 
     inflated = load_pool(day, "inflated")
     eligible = load_pool(day, "parlay_eligible")
 
     if inflated or eligible:
-        infl_f = base_filter_pool(inflated, rule["min_odds"], guard)
+        # Remove used picks from pools
+        infl_filtered = _filter_out_picks(inflated, used_picks_ids)
+        elig_filtered = _filter_out_picks(eligible, used_picks_ids)
+        
+        infl_f = base_filter_pool(infl_filtered, rule["min_odds"], guard)
         p = build_best_parlay(infl_f, rule_key, rule)
         if p:
             return p, "inflated"
 
-        elig_f = base_filter_pool(eligible, rule["min_odds"], guard)
+        elig_f = base_filter_pool(elig_filtered, rule["min_odds"], guard)
         p = build_best_parlay(elig_f, rule_key, rule)
         if p:
             return p, "parlay_eligible"
@@ -300,13 +332,47 @@ def _try_sources_for_rule(day: str, rule_key: str, rule: Dict[str, Any]) -> Tupl
         return None, "pool_no_match"
 
     classic = load_classic_selections(day)
-    classic_f = base_filter_classic(classic, rule["min_odds"])
+    # Remove used picks from classic selections
+    classic_filtered = _filter_out_picks(classic, used_picks_ids)
+    classic_f = base_filter_classic(classic_filtered, rule["min_odds"])
     p = build_best_parlay(classic_f, rule_key, rule)
     return p, "classic"
 
 
 def run(day: str) -> None:
-    principal, principal_source = _try_sources_for_rule(day, "principal_2_legs", PARLAY_RULES["principal_2_legs"])
+    """
+    DF_PARLAY_NO_DUPLICATION: Generate parlays while avoiding repetition.
+    
+    Order: 4-legs first (marketing_4), then 3-legs (marketing_3), then 2-legs (principal)
+    Each uses picks NOT in previous ones.
+    """
+    used_picks_ids = set()
+    marketing_parlays: List[Dict[str, Any]] = []
+    
+    # 1) 4-legs first (highest risk, most picks used)
+    parlay_4, source_4 = _try_sources_for_rule(day, "marketing_4_legs", PARLAY_RULES["marketing_4_legs"], used_picks_ids)
+    if parlay_4:
+        parlay_4["type"] = "marketing_4_legs"
+        parlay_4["day"] = day
+        parlay_4["source"] = source_4
+        marketing_parlays.append(parlay_4)
+        # Mark 4-leg picks as used
+        for pick in parlay_4.get("picks", []):
+            used_picks_ids.add(_get_pick_id(pick))
+
+    # 2) 3-legs (excluding 4-leg picks)
+    parlay_3, source_3 = _try_sources_for_rule(day, "marketing_3_legs", PARLAY_RULES["marketing_3_legs"], used_picks_ids)
+    if parlay_3:
+        parlay_3["type"] = "marketing_3_legs"
+        parlay_3["day"] = day
+        parlay_3["source"] = source_3
+        marketing_parlays.append(parlay_3)
+        # Mark 3-leg picks as used
+        for pick in parlay_3.get("picks", []):
+            used_picks_ids.add(_get_pick_id(pick))
+    
+    # 3) 2-legs principal (excluding 4-leg and 3-leg picks)
+    principal, principal_source = _try_sources_for_rule(day, "principal_2_legs", PARLAY_RULES["principal_2_legs"], used_picks_ids)
     if principal:
         principal["type"] = "principal_2_legs"
         principal["day"] = day
@@ -317,15 +383,6 @@ def run(day: str) -> None:
         with open(featured_path / "featured_parlay.json", "w", encoding="utf-8") as f:
             json.dump(principal, f, ensure_ascii=False, indent=2)
 
-    marketing_parlays: List[Dict[str, Any]] = []
-    for key in ("marketing_3_legs", "marketing_4_legs"):
-        parlay, source = _try_sources_for_rule(day, key, PARLAY_RULES[key])
-        if parlay:
-            parlay["type"] = key
-            parlay["day"] = day
-            parlay["source"] = source
-            marketing_parlays.append(parlay)
-
     output_path = Path(f"api/data/picks_parlay/{day}")
     output_path.mkdir(parents=True, exist_ok=True)
     with open(output_path / "parlays.json", "w", encoding="utf-8") as f:
@@ -334,7 +391,8 @@ def run(day: str) -> None:
     print(
         f"✅ Parlays generados ({day}) — "
         f"principal: {'sí' if principal else 'no'}, "
-        f"marketing: {len(marketing_parlays)}"
+        f"marketing 4-legs: {'sí' if parlay_4 else 'no'}, "
+        f"marketing 3-legs: {'sí' if parlay_3 else 'no'}"
     )
 
 

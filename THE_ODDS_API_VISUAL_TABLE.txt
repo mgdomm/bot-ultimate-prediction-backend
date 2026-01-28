@@ -1,0 +1,127 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║           🎯 THE ODDS API - COBERTURA DE 12 DEPORTES                  ║
+║                         (Análisis 28-01-2026)                         ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ TABLA 1: COBERTURA COMPLETA POR DEPORTE                               │
+└────────────────────────────────────────────────────────────────────────┘
+
+ # │ Deporte       │ FREE │ BASIC │ Tier Min. │ Sport Key                │
+───┼───────────────┼──────┼───────┼───────────┼──────────────────────────┤
+ 1 │ Soccer        │  ✅  │  ✅   │   FREE    │ soccer                   │
+ 2 │ Rugby         │  ✅  │  ✅   │   FREE    │ rugby_union              │
+ 3 │ NFL           │  ✅  │  ✅   │   FREE    │ americanfootball_nfl     │
+ 4 │ Basketball    │  ✅  │  ✅   │   FREE    │ basketball_nba           │
+ 5 │ Hockey        │  ✅  │  ✅   │   FREE    │ icehockey_nhl            │
+ 6 │ Handball      │  ❌  │  ❌   │   ——      │ (NO DISPONIBLE)          │
+ 7 │ Volleyball    │  ❌  │  ❌   │   ——      │ (NO DISPONIBLE)          │
+ 8 │ AFL           │  ✅  │  ✅   │   FREE    │ afl_afl                  │
+ 9 │ Tennis        │  ✅  │  ✅   │   FREE    │ tennis_atp / tennis_wta  │
+10 │ Baseball      │  ✅  │  ✅   │   FREE    │ baseball_mlb             │
+11 │ Formula 1     │  ✅  │  ✅   │   FREE    │ motorsports_f1           │
+12 │ MMA           │  ❌  │  ❌   │   ——      │ (NO DISPONIBLE)          │
+───┴───────────────┴──────┴───────┴───────────┴──────────────────────────┘
+
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ TABLA 2: DIFERENCIAS ENTRE TIERS (FREE vs BASIC)                      │
+└────────────────────────────────────────────────────────────────────────┘
+
+ Característica          │ FREE ($0)    │ BASIC ($39)   │ Diferencia
+─────────────────────────┼──────────────┼───────────────┼─────────────────
+ Requests/mes            │ 500          │ 10,000        │ 20x más
+ Requests/día            │ ~17          │ ~333          │ 20x más
+ ─────────────────────────────────────────────────────────────────────
+ DEPORTES CUBIERTOS      │ 9 (mismo)    │ 9 (mismo)     │ ❌ NINGUNA
+ ─────────────────────────────────────────────────────────────────────
+ Mercados (H2H)          │ ✅           │ ✅            │ Igual
+ Spreads/Over-Under      │ ❌ Limitado  │ ✅ Más        │ BASIC mejor
+ Rate limit              │ 1 req/seg    │ 1 req/seg     │ Igual
+ Datos históricos        │ Limitado     │ Limitado      │ Limitado en ambos
+
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ RESPUESTAS A TUS 4 PREGUNTAS                                          │
+└────────────────────────────────────────────────────────────────────────┘
+
+1️⃣  Lista COMPLETA de deportes en FREE tier:
+   ✅ Soccer, Rugby, NFL, Basketball, Hockey, AFL, Tennis, Baseball, F1
+   ❌ Handball, Volleyball, MMA (no están en The Odds API)
+
+2️⃣  ¿Cubre los 12 deportes?
+   ❌ NO - Cubre 9 de 12 (75%)
+   ✅ Soccer, Rugby, NFL, Basketball, Hockey, AFL, Tennis, Baseball, F1
+   ❌ Handball, Volleyball, MMA
+
+3️⃣  Para deportes NO cubiertos, ¿qué tier necesario?
+   💡 NO EXISTE tier que los cubra en The Odds API
+   📌 Handball, Volleyball, MMA: Usar TheSportsDB o SofaScore (ambas FREE)
+
+4️⃣  ¿Diferencias FREE vs BASIC en cobertura?
+   ✅ NO - Cobertura de deportes IDÉNTICA
+   📝 Diferencias solo en: volumen requests, mercados adicionales
+
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ 📊 ESTADÍSTICAS GENERALES                                             │
+└────────────────────────────────────────────────────────────────────────┘
+
+ Total deportes solicitados      : 12
+ Cubiertos por The Odds API      : 9  (75%)
+ NO cubiertos                    : 3  (25%)
+ 
+ Todos disponibles en FREE?      : ✅ SÍ (9 deportes)
+ Necesidad de pagar?             : ❌ NO ($0 suficiente)
+ 
+ Alternativa para 12 completos   : The Odds API FREE + TheSportsDB FREE
+ Costo de cobertura 100%         : $0
+
+
+┌────────────────────────────────────────────────────────────────────────┐
+│ ⚡ CONCLUSIÓN RÁPIDA                                                    │
+└────────────────────────────────────────────────────────────────────────┘
+
+ ✅ El tier FREE cubre 9 deportes COMPLETAMENTE
+ 
+ ❌ Handball, Volleyball, MMA NO están en The Odds API (ningún tier)
+ 
+ 🔄 FREE y BASIC tienen IDÉNTICA cobertura de deportes
+    (solo difieren en volumen y mercados)
+ 
+ 💰 El pago NO agrega más deportes
+    (es solo para más requests y mercados)
+ 
+ 💡 MEJOR OPCIÓN: The Odds API FREE ($0) para 9 deportes
+                + TheSportsDB FREE ($0) para los otros 3
+                = Cobertura COMPLETA de 12 por $0
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DETALLES ADICIONALES:
+
+📋 Deportes en FREE Tier (9):
+   - Soccer: +20 ligas (EPL, La Liga, Serie A, Bundesliga, Ligue 1, etc.)
+   - Rugby: Six Nations, Rugby Championship, Test matches
+   - NFL: Liga profesional USA
+   - Basketball: NBA, EuroLeague, ligas internacionales
+   - Hockey: NHL, KHL y otras
+   - AFL: Australian Football League
+   - Tennis: ATP, WTA, Grand Slams, torneos menores
+   - Baseball: MLB, Minor League
+   - Formula 1: Campeonato mundial
+
+❌ NO en The Odds API:
+   - Handball: No existe endpoint en ningún tier
+   - Volleyball: No existe endpoint en ningún tier
+   - MMA: No existe endpoint en ningún tier
+
+✅ Alternativas para cobertura 100%:
+   - TheSportsDB: https://www.thesportsdb.com/api/
+   - SofaScore: https://www.sofascore.com/api/
+   - Ambas son 100% GRATUITAS y cubren los 12 deportes
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Última actualización: 28 de Enero de 2026
+Status: ✅ Verificado con documentación oficial

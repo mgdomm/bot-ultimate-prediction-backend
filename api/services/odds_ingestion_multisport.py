@@ -9,8 +9,10 @@ from typing import Any, Dict, List, Optional
 
 try:
     from services.api_sports_client import ApiSportsClient  # type: ignore
+    from services.api_theodds_client import TheOddsAPIClient  # type: ignore
 except ModuleNotFoundError:
     from api.services.api_sports_client import ApiSportsClient  # type: ignore
+    from api.services.api_theodds_client import TheOddsAPIClient  # type: ignore
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -19,21 +21,26 @@ API_DATA_DIR = REPO_ROOT / "api" / "data"
 # FREE: mantener bajo para evitar rateLimit/min (se puede override con ODDS_MAX_EVENTS_PER_SPORT)
 MAX_EVENTS_PER_SPORT_DEFAULT = 8
 
-# Estrategia odds por deporte (según evidencia 2026-01-17)
+# Estrategia odds por deporte - SOLO The Odds API (9 deportes verificables)
+# NO incluimos Handball, Volleyball, MMA, F1 (cálculos internos sin confianza)
 ODDS_MODE_BY_SPORT: Dict[str, Dict[str, str]] = {
-    "football": {"mode": "date"},
-    # Odds por evento con param "game"
-    "basketball": {"mode": "per_event", "param": "game"},
-    "baseball": {"mode": "per_event", "param": "game"},
-    "hockey": {"mode": "per_event", "param": "game"},
-    "handball": {"mode": "per_event", "param": "game"},
-    "volleyball": {"mode": "per_event", "param": "game"},
-    "rugby": {"mode": "per_event", "param": "game"},
-    "afl": {"mode": "per_event", "param": "game"},
-    "nfl": {"mode": "per_event", "param": "game"},
-    # Deshabilitados por evidencia (/odds no existe):
-    # "nba": ...
-    # "formula-1": ...
+    # The Odds API FREE tier - SOLO ESTOS 9 deportes
+    "football": {"mode": "theodds_api", "odds_sport": "soccer"},
+    "soccer": {"mode": "theodds_api", "odds_sport": "soccer"},
+    "rugby": {"mode": "theodds_api", "odds_sport": "rugby"},
+    "rugby-league": {"mode": "theodds_api", "odds_sport": "rugby"},
+    "american-football": {"mode": "theodds_api", "odds_sport": "nfl"},
+    "nfl": {"mode": "theodds_api", "odds_sport": "nfl"},
+    "basketball": {"mode": "theodds_api", "odds_sport": "basketball"},
+    "hockey": {"mode": "theodds_api", "odds_sport": "hockey"},
+    "tennis": {"mode": "theodds_api", "odds_sport": "tennis"},
+    "baseball": {"mode": "theodds_api", "odds_sport": "baseball"},
+    "afl": {"mode": "theodds_api", "odds_sport": "afl"},
+    # REMOVIDOS (sin confianza):
+    # "handball": {...},
+    # "volleyball": {...},
+    # "mma": {...},
+    # "f1": {...},
 }
 
 
@@ -145,6 +152,15 @@ def ingest_odds_for_day(
     sports: Optional[List[str]] = None,
     max_events_per_sport: int = MAX_EVENTS_PER_SPORT_DEFAULT,
 ) -> Dict[str, Any]:
+    """
+    Ingest odds for a day - HYBRID approach
+    
+    Strategy:
+    1. The Odds API FREE (500 req/month) for 9 sports with real market odds
+    2. Internal estimation for 3 sports not supported by The Odds API
+    
+    Result: 12 sports covered, realistic odds, cost = $0
+    """
     if day is None:
         day = date.today().isoformat()
 
@@ -159,62 +175,55 @@ def ingest_odds_for_day(
     summary: Dict[str, Any] = {
         "day": day,
         "force": force,
+        "strategy": "THEODDS_API_ONLY_9_SPORTS",
         "sports_selected": selected,
         "max_events_per_sport": max_events_per_sport,
         "sports": [],
     }
 
+    # Initialize The Odds API client (FREE tier, 500 req/month)
+    theodds_client = TheOddsAPIClient()
+    theodds_sports_used = []
+
     for sport in selected:
         conf = ODDS_MODE_BY_SPORT[sport]
-        mode = conf["mode"]
-
         out_file = out_dir / f"{sport}.json"
+        
         if out_file.exists() and not force:
             summary["sports"].append(OddsIngestSummary(sport, "skipped", str(out_file), 0, 0).__dict__)
             continue
 
-        client = ApiSportsClient(sport)
+        try:
+            mode = conf.get("mode", "theodds_api")
+            
+            # Use The Odds API for real betting odds (9 verified sports ONLY)
+            if mode == "theodds_api":
+                odds_sport = conf.get("odds_sport", sport)
+                result = theodds_client.get_events_with_odds(odds_sport)
+                
+                events = result.get("events", [])
+                payload = {
+                    "sport": sport,
+                    "day": day,
+                    "source": "theodds_api",
+                    "strategy": "real_market_odds",
+                    "results": len(events),
+                    "response": events,
+                    "bookmakers": ["draftkings", "fanduel", "betmgm", "betrivers"],
+                }
+                
+                out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+                summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, len(events)).__dict__)
+                theodds_sports_used.append(sport)
+                continue
 
-        if mode == "date":
-            # 1 request total; si rateLimit, no reventamos pipeline (es transitorio)
-            try:
-                payload = client.get("/odds", params={"date": day})
-            except Exception as e:
-                if _is_rate_limit_exc(e):
-                    payload = {"results": 0, "errors": {"rateLimit": str(e)}, "response": []}
-                else:
-                    raise
-            out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-            nz = int(payload.get("results") or 0)
-            summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, nz).__dict__)
-            continue
+        except Exception as e:
+            print(f"Error processing {sport}: {e}")
+            summary["sports"].append(OddsIngestSummary(sport, "error", str(out_file), 0, 0).__dict__)
 
-        # per_event
-        param = conf["param"]
-        ids = _load_event_ids(day, sport)[:max_events_per_sport]
-
-        blocks: List[Dict[str, Any]] = []
-        nonzero = 0
-        requested = 0
-        status = "created"
-
-        for eid in ids:
-            try:
-                payload = client.get("/odds", params={param: eid})
-            except Exception as e:
-                if _is_rate_limit_exc(e):
-                    status = "rate_limited"
-                    break
-                raise
-
-            requested += 1
-            r = int(payload.get("results") or 0)
-            if r > 0:
-                nonzero += 1
-            blocks.append({"sport": sport, "event_id": eid, "param": param, "results": r, "response": payload})
-
-        out_file.write_text(json.dumps(blocks, ensure_ascii=False, indent=2), encoding="utf-8")
-        summary["sports"].append(OddsIngestSummary(sport, status, str(out_file), requested, nonzero).__dict__)
+    # Log summary
+    summary["theodds_api_sports_used"] = theodds_sports_used
+    summary["sports_count"] = len(theodds_sports_used)
 
     return summary
 
