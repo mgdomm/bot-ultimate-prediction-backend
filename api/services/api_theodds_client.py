@@ -7,6 +7,9 @@ import requests
 from typing import Dict, List, Any, Optional
 import logging
 import os
+import time
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 logger = logging.getLogger(__name__)
 
@@ -43,6 +46,20 @@ class TheOddsAPIClient:
         if not self.api_key:
             logger.warning("ODDS_API_KEY not set in environment")
         self.session = requests.Session()
+        
+        # Add retry strategy for rate limits
+        retry_strategy = Retry(
+            total=3,
+            backoff_factor=2,  # Exponential backoff: 1s, 2s, 4s
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods=["GET"]
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+        
+        self.last_request_time = 0
+        self.min_request_interval = 1.0  # Min 1 second between requests
     
     def get_events_with_odds(self, sport: str, date: Optional[str] = None) -> Dict[str, Any]:
         """
@@ -59,6 +76,12 @@ class TheOddsAPIClient:
             return {"sport": sport, "events": [], "error": f"Sport {sport} not supported"}
         
         try:
+            # Rate limit: ensure minimum interval between requests
+            now = time.time()
+            elapsed = now - self.last_request_time
+            if elapsed < self.min_request_interval:
+                time.sleep(self.min_request_interval - elapsed)
+            
             # Get events for this sport
             url = f"{self.BASE_URL}/sports/{odds_sport_id}/events"
             params = {
@@ -67,6 +90,8 @@ class TheOddsAPIClient:
             }
             
             response = self.session.get(url, params=params, timeout=10)
+            self.last_request_time = time.time()
+            
             response.raise_for_status()
             data = response.json()
             
@@ -91,6 +116,13 @@ class TheOddsAPIClient:
                 "bookmakers_fetched": len(self.BOOKMAKERS),
             }
         
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 429:
+                logger.warning(f"TheOddsAPI rate limit (429) for {sport}. Remaining quota exceeded.")
+                return {"sport": sport, "events": [], "error": "Rate limit exceeded", "source": "theodds_api"}
+            else:
+                logger.error(f"TheOddsAPI HTTP error for {sport}: {e}")
+                return {"sport": sport, "events": [], "error": str(e), "source": "theodds_api"}
         except Exception as e:
             logger.error(f"TheOddsAPI error for {sport}: {e}")
             return {"sport": sport, "events": [], "error": str(e), "source": "theodds_api"}
