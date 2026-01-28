@@ -177,10 +177,13 @@ class TheOddsAPICached:
             if elapsed < self.min_request_interval:
                 time.sleep(self.min_request_interval - elapsed)
             
-            url = f"{self.BASE_URL}/sports/{odds_sport_id}/events"
+            # Use /odds endpoint to get actual betting odds with all bookmakers
+            url = f"{self.BASE_URL}/sports/{odds_sport_id}/odds"
             params = {
                 "apiKey": self.api_key,
+                "regions": "eu",  # Europe region for bookmakers
                 "markets": "h2h",
+                "oddsFormat": "decimal",
             }
             
             response = self.session.get(url, params=params, timeout=10)
@@ -189,7 +192,13 @@ class TheOddsAPICached:
             response.raise_for_status()
             data = response.json()
             
-            events = data.get("data", []) if isinstance(data, dict) else []
+            # The Odds API returns a list directly
+            if isinstance(data, list):
+                events = data
+            elif isinstance(data, dict):
+                events = data.get("data", [])
+            else:
+                events = []
             
             # Normalize events
             normalized_events = []
