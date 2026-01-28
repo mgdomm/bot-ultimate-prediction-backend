@@ -8,9 +8,9 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 
 try:
-    from services.live_events_multisource import get_live_events_for_sport
+    from services.live_events_multisource import LiveEventsMultiSource
 except ImportError:
-    from api.services.live_events_multisource import get_live_events_for_sport
+    from api.services.live_events_multisource import LiveEventsMultiSource
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +46,7 @@ class IngestResult:
 def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dict[str, Any]:
     """
     Ingest events for a day using free alternative APIs (ESPN, etc)
-    No API_SPORTS_KEY needed - uses Live Events Multisource
+    No API_SPORTS_KEY needed - uses LiveEventsMultiSource
     """
     if day is None:
         day = date.today().isoformat()
@@ -55,6 +55,8 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
     base_path.mkdir(parents=True, exist_ok=True)
 
     summary: Dict[str, Any] = {"day": day, "sports": []}
+    
+    multisource = LiveEventsMultiSource()
 
     for sport in SUPPORTED_SPORTS:
         out_file = base_path / f"{sport}.json"
@@ -65,17 +67,22 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
 
         try:
             # Get events from live multisource (ESPN + alternatives)
-            events = get_live_events_for_sport(sport)
+            events = multisource.get_live_events(sport, day)
             
-            payload = {
-                "results": len(events),
-                "response": events,
-                "source": "live_events_multisource",
-                "status": "success"
-            }
+            # events is already a dict with response/results structure
+            if isinstance(events, dict):
+                payload = events
+            else:
+                payload = {
+                    "results": len(events) if events else 0,
+                    "response": events or [],
+                    "source": "live_events_multisource",
+                    "status": "success"
+                }
             
             out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-            logger.info(f"Ingested {len(events)} events for {sport} on {day}")
+            results = payload.get("results", 0)
+            logger.info(f"Ingested {results} events for {sport} on {day}")
             
             summary["sports"].append(
                 IngestResult(
@@ -83,7 +90,7 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
                     day=day,
                     status="created",
                     file=str(out_file),
-                    results=len(events),
+                    results=results,
                 ).__dict__
             )
         except Exception as err:

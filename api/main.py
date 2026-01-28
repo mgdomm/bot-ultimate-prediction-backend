@@ -694,16 +694,25 @@ def _fetch_live_one_by_id_cached(
 
     # Use LiveEventsMultiSource instead of API-Sports
     try:
-        from services.live_events_multisource import get_live_events_for_sport
+        from services.live_events_multisource import LiveEventsMultiSource
     except ImportError:
-        from api.services.live_events_multisource import get_live_events_for_sport
+        from api.services.live_events_multisource import LiveEventsMultiSource
     
     live_out = None
     err = None
     try:
-        events = get_live_events_for_sport(sport, [str(event_id)])
-        if events and len(events) > 0:
-            live_out = events[0].get('live')
+        multisource = LiveEventsMultiSource()
+        events = multisource.get_live_events(sport, None)
+        if isinstance(events, dict):
+            response = events.get("response", [])
+        else:
+            response = events or []
+        
+        if response and len(response) > 0:
+            for event in response:
+                if str(event.get("eventId", "")) == str(event_id):
+                    live_out = event.get("live")
+                    break
     except Exception as e:
         err = str(e)
 
