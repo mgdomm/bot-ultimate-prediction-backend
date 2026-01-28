@@ -862,3 +862,4 @@ def get_day_history(day: str):
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+# Deploy trigger Wed Jan 28 23:55:13 UTC 2026
