@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
@@ -9,10 +10,12 @@ from typing import Any, Dict, List, Optional
 
 try:
     from services.api_sports_client import ApiSportsClient  # type: ignore
-    from services.api_theodds_client import TheOddsAPIClient  # type: ignore
+    from services.api_theodds_cached import TheOddsAPICached  # type: ignore
 except ModuleNotFoundError:
     from api.services.api_sports_client import ApiSportsClient  # type: ignore
-    from api.services.api_theodds_client import TheOddsAPIClient  # type: ignore
+    from api.services.api_theodds_cached import TheOddsAPICached  # type: ignore
+
+logger = logging.getLogger(__name__)
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -181,8 +184,14 @@ def ingest_odds_for_day(
         "sports": [],
     }
 
-    # Initialize The Odds API client (FREE tier, 500 req/month)
-    theodds_client = TheOddsAPIClient()
+    # Initialize The Odds API client with caching (FREE tier, 500 req/month)
+    # Caching ensures we fetch all odds ONCE per day, not multiple times per hour
+    theodds_client = TheOddsAPICached()
+    
+    # Fetch all odds for the day (uses cache if fresh)
+    logger.info(f"Fetching odds for {day} (uses caching to reduce API quota)")
+    all_odds = theodds_client.fetch_all_odds(day, force_refresh=force)
+    
     theodds_sports_used = []
 
     for sport in selected:
@@ -199,14 +208,15 @@ def ingest_odds_for_day(
             # Use The Odds API for real betting odds (9 verified sports ONLY)
             if mode == "theodds_api":
                 odds_sport = conf.get("odds_sport", sport)
-                result = theodds_client.get_events_with_odds(odds_sport)
                 
-                events = result.get("events", [])
+                # Get from cached result
+                events = all_odds.get(odds_sport, [])
+                
                 payload = {
                     "sport": sport,
                     "day": day,
-                    "source": "theodds_api",
-                    "strategy": "real_market_odds",
+                    "source": "theodds_api_cached",
+                    "strategy": "real_market_odds_cached",
                     "results": len(events),
                     "response": events,
                     "bookmakers": ["draftkings", "fanduel", "betmgm", "betrivers"],
@@ -218,12 +228,13 @@ def ingest_odds_for_day(
                 continue
 
         except Exception as e:
-            print(f"Error processing {sport}: {e}")
+            logger.error(f"Error processing {sport}: {e}")
             summary["sports"].append(OddsIngestSummary(sport, "error", str(out_file), 0, 0).__dict__)
 
     # Log summary
     summary["theodds_api_sports_used"] = theodds_sports_used
     summary["sports_count"] = len(theodds_sports_used)
+    summary["note"] = "Odds fetched once per day and cached to conserve The Odds API quota"
 
     return summary
 
