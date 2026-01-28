@@ -401,6 +401,7 @@ export default function Page() {
   const [err, setErr] = useState<string | null>(null);
   const [tab, setTab] = useState<"classic" | "parley" | "history" | "soccer" | "rugby" | "nfl" | "basketball" | "hockey" | "afl" | "tennis" | "baseball">("classic");
   const [stake, setStake] = useState<number>(50);
+  const [selectedDay, setSelectedDay] = useState<string>("");  // NEW: Date picker
   const [liveOverrideByKey, setLiveOverrideByKey] = useState<Record<string, any>>({});
   const [historyDays, setHistoryDays] = useState<any[]>([]);
   const [selectedHistoryDay, setSelectedHistoryDay] = useState<string | null>(null);
@@ -409,11 +410,13 @@ export default function Page() {
 
   useEffect(() => {
     const ctrl = new AbortController();
-    getContract(ctrl.signal)
+    const url = selectedDay ? `${BACKEND_URL}/bets/today?day=${encodeURIComponent(selectedDay)}` : `${BACKEND_URL}/bets/today`;
+    fetch(url, { cache: "no-store", signal: ctrl.signal })
+      .then((res) => res.json())
       .then(setContract)
       .catch((e: any) => setErr(e?.message || String(e)));
     return () => ctrl.abort();
-  }, []);
+  }, [selectedDay]);
 
   useEffect(() => {
     const ctrl = new AbortController();
@@ -649,6 +652,16 @@ export default function Page() {
                   step={1}
                   value={Number.isFinite(stake) ? stake : 50}
                   onChange={(e) => setStake(Number(e.target.value || 0))}
+                />
+                
+                <span className="text-slate-400 mx-2">|</span>
+                
+                <div className="mono">Fecha</div>
+                <input
+                  className="h-10 w-40 rounded-xl border border-white/10 bg-white/[0.04] px-3 text-slate-100 outline-none focus:border-white/20"
+                  type="date"
+                  value={selectedDay}
+                  onChange={(e) => setSelectedDay(e.target.value)}
                 />
               </div>
             </div>
