@@ -386,7 +386,7 @@ def get_today_bets(day: str = None):
                 return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
 
             if not _has_any_picks(contract):
-                rebuilt = create_empty_contract(today)
+                rebuilt = create_empty_contract(day)
                 rebuilt = populate_contract_with_day_data(rebuilt)
                 # preserve generated_at if it existed (useful for debugging)
                 if contract.get("generated_at") and not rebuilt.get("generated_at"):
@@ -455,9 +455,9 @@ def get_today_bets(day: str = None):
             disp = pick.get('display')
             if isinstance(disp, dict) and disp.get('live') is not None:
                 with_live += 1
-        if total > 0 and with_live == 0 and today not in _DF_DIAG_LIVE_DONE_DAYS:
-            _DF_DIAG_LIVE_DONE_DAYS.add(today)
-            idx = build_display_index(today)  # solo lee api/data/events/<day>/*.json
+        if total > 0 and with_live == 0 and day not in _DF_DIAG_LIVE_DONE_DAYS:
+            _DF_DIAG_LIVE_DONE_DAYS.add(day)
+            idx = build_display_index(day)  # solo lee api/data/events/<day>/*.json
             idx_total = len(idx)
             idx_live = 0
             by_sport = {}
@@ -468,7 +468,7 @@ def get_today_bets(day: str = None):
                     by_sport[s] = by_sport.get(s, 0) + 1
             print(json.dumps({
                 'diag': 'DF_DIAG_MAIN_LIVE_SNAPSHOTS',
-                'day': today,
+                'day': day,
                 'picks_total': total,
                 'picks_with_live': with_live,
                 'snapshot_index_total': idx_total,
@@ -482,8 +482,8 @@ def get_today_bets(day: str = None):
         }, ensure_ascii=False), flush=True)
 
     # Expose cycle day explicitly (client-friendly; does not change frozen contract on disk)
-    contract['cycle_day'] = today
-    contract['day'] = today
+    contract['cycle_day'] = day
+    contract['day'] = day
 
 
     # Backwards-compatible aliases for clients that expect `parlays`
