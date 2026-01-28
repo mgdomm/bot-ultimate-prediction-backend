@@ -862,6 +862,10 @@ def internal_ensure_today(token: str = ""):
         try:
             if os.path.exists(lock_file):
                 os.unlink(lock_file)
+        except Exception:
+            pass
+
+
 # ✅ Bets history endpoint (DF_BETS_HISTORY)
 try:
     from api.services.bets_history_service import load_day_history, list_history_days
