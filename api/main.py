@@ -309,11 +309,29 @@ _DF_DIAG_LIVE_DONE_DAYS = set()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
-        # from api.scheduler.daily_lock import run_daily_lock  # disabled
-        # run_daily_lock()  # disabled: daily_pipeline runs at 06:00
-        print("[LOCK] Daily contract ensured")
+        # Ensure today's contract exists (critical for Render's ephemeral filesystem)
+        day = cycle_day_str()
+        contract_path = API_DATA_DIR / "contracts" / day / "contract.json"
+        
+        if not contract_path.exists():
+            print(f"[STARTUP] Contract missing for {day}, rebuilding from local data...")
+            contract = create_empty_contract(day)
+            contract = populate_contract_with_day_data(contract)
+            contract["generated_at"] = datetime.utcnow().isoformat()
+            try:
+                enrich_contract_inplace(contract)
+            except Exception as err:
+                print(f'[startup_enrichment] failed: {err}')
+            
+            # Persist to disk
+            contract_path.parent.mkdir(parents=True, exist_ok=True)
+            contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"[STARTUP] Contract rebuilt for {day} with {len(contract.get('picks_classic', []))} classic picks")
+        else:
+            print(f"[STARTUP] Contract exists for {day}")
+            
     except Exception as e:
-        print(f"[LOCK] Failed to build daily contract: {e}")
+        print(f"[STARTUP] Failed to ensure contract: {e}")
     yield
 
 
