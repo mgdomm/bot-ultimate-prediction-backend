@@ -1,57 +1,53 @@
 from __future__ import annotations
 
 import json
+import logging
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Dict, Any, Optional
 
 try:
-    from services.api_sports_client import ApiSportsClient
-    from services.api_sports_hosts import SPORT_BASE_URL
-except ModuleNotFoundError:
-    from api.services.api_sports_client import ApiSportsClient  # type: ignore
-    from api.services.api_sports_hosts import SPORT_BASE_URL  # type: ignore
+    from services.live_events_multisource import get_live_events_for_sport
+except ImportError:
+    from api.services.live_events_multisource import get_live_events_for_sport
 
+logger = logging.getLogger(__name__)
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
-
-EVENTS_ENDPOINT_BY_SPORT: Dict[str, str] = {
-    # API-Football
-    "football": "/fixtures",
-
-    # Most API-Sports products
-    "basketball": "/games",
-    "baseball": "/games",
-    "hockey": "/games",
-    "handball": "/games",
-    "volleyball": "/games",
-    "rugby": "/games",
-    "afl": "/games",
-
-    # Panel-specific
-    "nba": "/games",
-    "nfl": "/games",  # (host is american-football)
-
-    # Others
-    "mma": "/fights",
-    "formula-1": "/races",
-}
+# Sports que traemos eventos (usando APIs alternativas FREE)
+SUPPORTED_SPORTS = [
+    "football",
+    "soccer", 
+    "basketball",
+    "nba",
+    "rugby",
+    "nfl",
+    "american-football",
+    "hockey",
+    "baseball",
+    "tennis",
+    "afl",
+]
 
 
 @dataclass(frozen=True)
 class IngestResult:
     sport: str
     day: str
-    status: str  # created | skipped
+    status: str  # created | skipped | error
     file: str
     results: Optional[int] = None
 
 
 def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dict[str, Any]:
+    """
+    Ingest events for a day using free alternative APIs (ESPN, etc)
+    No API_SPORTS_KEY needed - uses Live Events Multisource
+    """
     if day is None:
         day = date.today().isoformat()
 
@@ -60,48 +56,45 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
 
     summary: Dict[str, Any] = {"day": day, "sports": []}
 
-    stop_due_to_rate_limit = False
-
-    for sport in sorted(SPORT_BASE_URL.keys()):
-        endpoint = EVENTS_ENDPOINT_BY_SPORT.get(sport)
-        if not endpoint:
-            summary["sports"].append(IngestResult(sport, day, "skipped", "", None).__dict__)
-            continue
-
+    for sport in SUPPORTED_SPORTS:
         out_file = base_path / f"{sport}.json"
+        
         if out_file.exists() and not force:
             summary["sports"].append(IngestResult(sport, day, "skipped", str(out_file), None).__dict__)
             continue
 
-        if stop_due_to_rate_limit:
-            summary["sports"].append(IngestResult(sport, day, "skipped_rate_limited", str(out_file), 0).__dict__)
-            continue
-
-        client = ApiSportsClient(sport)
         try:
-            payload = client.get(endpoint, params={"date": day})
+            # Get events from live multisource (ESPN + alternatives)
+            events = get_live_events_for_sport(sport)
+            
+            payload = {
+                "results": len(events),
+                "response": events,
+                "source": "live_events_multisource",
+                "status": "success"
+            }
+            
             out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            logger.info(f"Ingested {len(events)} events for {sport} on {day}")
+            
             summary["sports"].append(
                 IngestResult(
                     sport=sport,
                     day=day,
                     status="created",
                     file=str(out_file),
-                    results=payload.get("results") if isinstance(payload, dict) else None,
+                    results=len(events),
                 ).__dict__
             )
         except Exception as err:
+            logger.error(f"Error ingesting {sport}: {err}")
             msg = str(err)
-            payload = {"results": 0, "response": [], "errors": {"message": msg}}
+            payload = {"results": 0, "response": [], "errors": {"message": msg}, "source": "live_events_multisource"}
             try:
                 out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
             except Exception:
                 pass
             summary["sports"].append(IngestResult(sport, day, "error", str(out_file), 0).__dict__)
-
-            # If daily quota is exhausted, stop trying other sports to avoid wasting calls.
-            if "reached the request limit for the day" in msg:
-                stop_due_to_rate_limit = True
 
     return summary
 

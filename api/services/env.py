@@ -6,14 +6,21 @@ load_dotenv()
 def get_env() -> dict:
     """
     Returns validated environment variables for the backend.
+    
+    Required:
+    - ODDS_API_KEY: The Odds API for real betting odds
+    
+    Optional:
+    - ENV: environment name (default: development)
     """
-    api_key = os.getenv("API_SPORTS_KEY")
+    odds_api_key = os.getenv("ODDS_API_KEY", "")
     env = os.getenv("ENV", "development")
 
-    if not api_key:
-        raise RuntimeError("API_SPORTS_KEY no configurada")
+    # ODDS_API_KEY is optional (fallbacks to cache if not set)
+    if not odds_api_key:
+        print("WARNING: ODDS_API_KEY not configured. Using cached odds only.")
 
     return {
-        "API_SPORTS_KEY": api_key,
+        "ODDS_API_KEY": odds_api_key,
         "ENV": env,
     }

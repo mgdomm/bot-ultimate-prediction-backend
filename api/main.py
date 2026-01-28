@@ -612,37 +612,6 @@ _LIVE_EVENTS_CACHE = {}  # (sport, ids_csv) -> {"exp": float, "value": dict}
 _LIVE_EVENT_BY_ID_CACHE = {}  # (sport, id) -> {"exp": float, "value": {"live": dict|None, "upstream_errors": any}}
 _SPORTS_NO_LIVE_ALL = {"handball"}  # productos donde `live=all` no existe (medido: handball)
 
-def _api_sports_http_get_json(url: str) -> dict:
-    api_key = os.environ.get("API_SPORTS_KEY") or ""
-    if not api_key:
-        # Keep read-only behavior: return empty instead of 500 so UI can fallback.
-        return {"results": 0, "response": [], "errors": {"message": "API_SPORTS_KEY missing"}}
-
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "ultimate-predictor/1.0 (live-snapshot)",
-            "Accept": "application/json",
-            "x-apisports-key": api_key,
-        },
-        method="GET",
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            raw = r.read().decode("utf-8", "replace")
-        data = json.loads(raw)
-    except Exception as e:
-        # Never raise: /live/events must respond 200 and allow UI fallback.
-        return {"results": 0, "response": [], "errors": {"message": "api-sports fetch failed", "detail": str(e)}}
-
-    # API-SPORTS sometimes returns {"errors":{...}} with 200
-    if isinstance(data, dict) and data.get("errors"):
-        # Do not raise: keep it 200 so frontend can fallback without breaking.
-        return data
-    if not isinstance(data, dict):
-        return {"results": 0, "response": [], "errors": {"message": "invalid json"}}
-    return data
 def _live_endpoint_for_sport(sport: str) -> str:
     s = (sport or "").strip().lower()
     # align with events_ingestion.py
@@ -650,16 +619,6 @@ def _live_endpoint_for_sport(sport: str) -> str:
         return "/fixtures"
     # most API-Sports products use /games
     return "/games"
-
-def _live_base_url_for_sport(sport: str) -> str:
-    try:
-        from api.services.api_sports_hosts import SPORT_BASE_URL as _SB  # type: ignore
-    except ModuleNotFoundError:
-        from services.api_sports_hosts import SPORT_BASE_URL as _SB  # type: ignore
-    base = _SB.get((sport or "").strip().lower())
-    if not base:
-        return ""
-    return str(base).rstrip("/")
 
 def _extract_live_for_item(sport: str, item: dict) -> tuple[str | None, dict | None]:
     s = (sport or "").strip().lower()
@@ -733,21 +692,21 @@ def _fetch_live_one_by_id_cached(
             return (live if isinstance(live, dict) else None), err
         return None, None
 
-    url = base + endpoint + '?' + urllib.parse.urlencode({'id': str(event_id)})
-    data = _api_sports_http_get_json(url)
-    resp = data.get('response') if isinstance(data, dict) else None
-
+    # Use LiveEventsMultiSource instead of API-Sports
+    try:
+        from services.live_events_multisource import get_live_events_for_sport
+    except ImportError:
+        from api.services.live_events_multisource import get_live_events_for_sport
+    
     live_out = None
-    if isinstance(resp, list):
-        for it in resp:
-            if not isinstance(it, dict):
-                continue
-            eid, live = _extract_live_for_item(sport, it)
-            if eid is not None and str(eid) == str(event_id) and isinstance(live, dict):
-                live_out = live
-                break
+    err = None
+    try:
+        events = get_live_events_for_sport(sport, [str(event_id)])
+        if events and len(events) > 0:
+            live_out = events[0].get('live')
+    except Exception as e:
+        err = str(e)
 
-    err = data.get('errors') if isinstance(data, dict) else None
     _LIVE_EVENT_BY_ID_CACHE[ck] = {
         'exp': now + 90,
         'value': {'live': live_out, 'upstream_errors': err},
