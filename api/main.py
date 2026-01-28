@@ -353,13 +353,15 @@ async def add_api_headers(request: Request, call_next):
 # ✅ READ-ONLY endpoint (contrato = única verdad)
 # ✅ READ-ONLY endpoint (contrato = única verdad)
 @app.get("/bets/today")
-def get_today_bets():
-    today = cycle_day_str()  # 06:00 Europe/Madrid cycle
-    contract_path = API_DATA_DIR / "contracts" / today / "contract.json"
+def get_today_bets(day: str = None):
+    if day is None:
+        day = cycle_day_str()  # 06:00 Europe/Madrid cycle
+    
+    contract_path = API_DATA_DIR / "contracts" / day / "contract.json"
 
     if not contract_path.exists():
         # Fallback confiable: construir contrato desde snapshots locales (sin llamar APIs externas)
-        contract = create_empty_contract(today)
+        contract = create_empty_contract(day)
         contract = populate_contract_with_day_data(contract)
         if not contract.get("generated_at"):
             contract["generated_at"] = datetime.utcnow().isoformat()
