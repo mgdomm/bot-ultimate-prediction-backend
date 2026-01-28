@@ -15,6 +15,8 @@ import logging
 import subprocess
 from pathlib import Path
 from typing import Any, Dict
+from datetime import datetime
+import pytz
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -115,38 +117,80 @@ def _run_daily_pipeline(day: str) -> None:
     subprocess.run(cmd, cwd=str(REPO_ROOT), env=env, check=True)
 
 def init_scheduler(app=None):
-    """Inicializa un loop simple (cada 10 min) que asegura el contract del cycle day."""
+    """
+    Scheduler con dos fases:
+    
+    FASE 1 (6am exacto): Ejecuta pipeline completo (genera contrato + todos los picks)
+    - Fetch odds UNA VEZ (cacheado por 6h)
+    - Genera picks para 24h
+    
+    FASE 2 (cada 10 min): Solo actualiza live scores con otras APIs
+    - NO re-ejecuta pipeline
+    - Solo enriquece contratos existentes con datos live
+    """
     import threading
+    from datetime import datetime
 
+    def is_6am_window() -> bool:
+        """Check si estamos en la ventana de 6am (6:00-6:10)"""
+        tz = pytz.timezone('Europe/Madrid')
+        now = datetime.now(tz)
+        hour = now.hour
+        minute = now.minute
+        # Ejecuta entre 6:00 y 6:10
+        return hour == 6 and minute < 10
+    
     def loop():
+        last_pipeline_day = None
+        
+        # Import live_score_update dynamically to avoid import issues
+        try:
+            from services.live_score_update import update_contract_with_live_scores
+        except ImportError:
+            from api.services.live_score_update import update_contract_with_live_scores
+        
         while True:
             day = cycle_day_str()  # 06:00 Europe/Madrid cycle
             lock_file = f"/tmp/scheduler_lock_{day}"
+            
             # DF_BACKOFF_V1: si estamos en backoff, no reintentar todavía
             st = _get_backoff(day)
             until_ts = float(st.get('until_ts') or 0)
             if until_ts and time.time() < until_ts:
-                logger.info('Scheduler: backoff active for %s until_ts=%s fails=%s; skip', day, int(until_ts), st.get('fails'))
+                logger.info('Scheduler: backoff active for %s until_ts=%s fails=%s; skip pipeline', day, int(until_ts), st.get('fails'))
                 time.sleep(600)
                 continue
 
             try:
-                if _contract_has_any_picks(day):
-                    logger.info("Scheduler: contract already non-empty for %s; skip", day)
-                else:
-                    if os.path.exists(lock_file):
-                        logger.info("Scheduler: lock exists for %s; skip", day)
+                # FASE 1: Pipeline UNA SOLA VEZ a las 6am
+                if is_6am_window() and last_pipeline_day != day:
+                    if _contract_has_any_picks(day):
+                        logger.info("Scheduler [6am check]: contract already non-empty for %s; skip", day)
                     else:
-                        try:
-                            with open(lock_file, "w", encoding="utf-8") as f:
-                                f.write("locked")
-                            logger.info("=== PIPELINE %s START ===", day)
-                            _run_daily_pipeline(day)
-                            logger.info("=== PIPELINE %s DONE ===", day)
-                            _clear_backoff(day)
-                        finally:
-                            if os.path.exists(lock_file):
-                                os.unlink(lock_file)
+                        if os.path.exists(lock_file):
+                            logger.info("Scheduler [6am check]: lock exists for %s; skip", day)
+                        else:
+                            try:
+                                with open(lock_file, "w", encoding="utf-8") as f:
+                                    f.write("locked")
+                                logger.info("=== PIPELINE %s START (6am phase) ===", day)
+                                _run_daily_pipeline(day)
+                                logger.info("=== PIPELINE %s DONE (6am phase) ===", day)
+                                last_pipeline_day = day
+                                _clear_backoff(day)
+                            finally:
+                                if os.path.exists(lock_file):
+                                    os.unlink(lock_file)
+                
+                # FASE 2: Actualizar live scores (cada 10 min si el contrato existe)
+                if _contract_has_any_picks(day):
+                    try:
+                        result = update_contract_with_live_scores(day)
+                        if result.get("updates_count", 0) > 0:
+                            logger.info(f"Updated {result['updates_count']} live scores for {day}")
+                    except Exception as e:
+                        logger.debug(f"Live score update failed (non-critical): {e}")
+                
             except Exception as e:
                 st2 = _set_backoff(day)
                 logger.exception("Scheduler loop error for day=%s: %s (backoff until_ts=%s fails=%s)", day, e, int(st2.get('until_ts') or 0), st2.get('fails'))
@@ -155,4 +199,4 @@ def init_scheduler(app=None):
 
     t = threading.Thread(target=loop, daemon=True)
     t.start()
-    logger.info("Scheduler started (loop every 10 min; cycle=06:00 Europe/Madrid)")
+    logger.info("Scheduler started (6am pipeline + 10min live updates; cycle=06:00 Europe/Madrid)")
