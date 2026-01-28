@@ -621,10 +621,10 @@ export default function Page() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex items-center gap-2 flex-wrap">
                 <button className={tab === "classic" ? "badge badge-accent" : "badge"} onClick={() => setTab("classic")}>
-                  Classic (Top 10)
+                  Top 10
                 </button>
                 <button className={tab === "parley" ? "badge badge-accent" : "badge"} onClick={() => setTab("parley")}>
-                  Parley
+                  Parlay
                 </button>
                 
                 {/* Sport tabs - muestra solo deportes con picks */}
@@ -639,7 +639,7 @@ export default function Page() {
                 ))}
                 
                 <button className={tab === "history" ? "badge badge-accent" : "badge"} onClick={() => { setTab("history"); setSelectedHistoryDay(null); }}>
-                  Historial
+                  Old Picks
                 </button>
               </div>
 
@@ -652,16 +652,6 @@ export default function Page() {
                   step={1}
                   value={Number.isFinite(stake) ? stake : 50}
                   onChange={(e) => setStake(Number(e.target.value || 0))}
-                />
-                
-                <span className="text-slate-400 mx-2">|</span>
-                
-                <div className="mono">Fecha</div>
-                <input
-                  className="h-10 w-40 rounded-xl border border-white/10 bg-white/[0.04] px-3 text-slate-100 outline-none focus:border-white/20"
-                  type="date"
-                  value={selectedDay}
-                  onChange={(e) => setSelectedDay(e.target.value)}
                 />
               </div>
             </div>
@@ -1001,11 +991,27 @@ export default function Page() {
         </>
       )}
 
-      {/* HISTORIAL */}
+      {/* OLD PICKS (HISTORY) */}
       {tab === "history" && (
         <>
           {!selectedHistoryDay ? (
-            <section className="grid gap-4 md:grid-cols-2">
+            <>
+              <section className="card">
+                <div className="card-inner p-6 overflow-visible">
+                  <div className="h2">Old Picks - Selecciona una fecha</div>
+                  <div className="subtle mt-2">Ver apuestas de días anteriores</div>
+                  <div className="mt-4 flex items-center gap-3">
+                    <div className="mono">Fecha</div>
+                    <input
+                      className="h-10 w-40 rounded-xl border border-white/10 bg-white/[0.04] px-3 text-slate-100 outline-none focus:border-white/20"
+                      type="date"
+                      value={selectedDay}
+                      onChange={(e) => setSelectedDay(e.target.value)}
+                    />
+                  </div>
+                </div>
+              </section>
+              <section className="grid gap-4 md:grid-cols-2">
               {historyDays.length === 0 ? (
                 <section className="card md:col-span-2">
                   <div className="card-inner p-6 overflow-visible">
@@ -1043,7 +1049,8 @@ export default function Page() {
                   </article>
                 ))
               )}
-            </section>
+              </section>
+            </>
           ) : historyDayData ? (
             <>
               <section className="card">
