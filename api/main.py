@@ -876,8 +876,30 @@ def get_day_history(day: str):
     return history
 
 
+# ✅ DEBUG: Test The Odds API connectivity
+@app.get("/debug/theodds/{sport}")
+def debug_theodds_api(sport: str = "basketball"):
+    """Debug endpoint to test The Odds API directly"""
+    try:
+        from api.services.api_theodds_client import TheOddsAPIClient
+    except ModuleNotFoundError:
+        from services.api_theodds_client import TheOddsAPIClient
+    
+    client = TheOddsAPIClient()
+    result = client.get_events_with_odds(sport, "2026-01-29")
+    return {
+        "sport": sport,
+        "api_key_configured": bool(client.api_key),
+        "events_count": len(result.get("events", [])),
+        "source": result.get("source"),
+        "error": result.get("error"),
+        "count": result.get("count"),
+    }
+
+
 # ✅ Operational healthcheck (no business logic)
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
 # Deploy trigger Wed Jan 28 23:55:13 UTC 2026
+
