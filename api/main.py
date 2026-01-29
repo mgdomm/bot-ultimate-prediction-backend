@@ -897,6 +897,62 @@ def debug_theodds_api(sport: str = "basketball"):
     }
 
 
+# ✅ ADMIN: Manually regenerate contract when API_KEY becomes available
+@app.post("/admin/regenerate-contract/{day}")
+def admin_regenerate_contract(day: str):
+    """
+    Manually trigger contract regeneration for a specific day.
+    Used when The Odds API key becomes available or events are missing.
+    """
+    try:
+        import shutil
+        from pathlib import Path
+        
+        # Clean previous data
+        dirs_to_clean = [
+            API_DATA_DIR / "events" / day,
+            API_DATA_DIR / "odds" / day,
+            API_DATA_DIR / "contracts" / day,
+        ]
+        
+        for d in dirs_to_clean:
+            if d.exists():
+                shutil.rmtree(d)
+                print(f"✓ Cleaned: {d}")
+        
+        # Run pipeline
+        repo_root = Path(__file__).resolve().parents[1]
+        result = subprocess.run(
+            [sys.executable, "-u", "api/scripts/daily_pipeline.py", day, "--force"],
+            cwd=str(repo_root),
+            capture_output=True,
+            text=True,
+            timeout=300,
+            env={**os.environ, "PYTHONPATH": str(repo_root)}
+        )
+        
+        # Get contract summary
+        contract_path = API_DATA_DIR / "contracts" / day / "contract.json"
+        contract = {}
+        if contract_path.exists():
+            contract = json.load(open(contract_path))
+        
+        picks_count = len(contract.get("picks_classic", []))
+        parlays_count = len(contract.get("picks_parlay_premium", []))
+        
+        return {
+            "status": "regenerated",
+            "day": day,
+            "return_code": result.returncode,
+            "picks_classic": picks_count,
+            "picks_parlay": parlays_count,
+            "success": result.returncode == 0 and (picks_count + parlays_count > 0),
+        }
+    
+    except Exception as e:
+        return {"status": "error", "error": str(e), "day": day}
+
+
 # ✅ Operational healthcheck (no business logic)
 @app.get("/health")
 def health_check():
