@@ -22,11 +22,14 @@ class TheOddsAPIClient:
     
     # Sport ID mappings in The Odds API
     SPORT_TO_ODDS_ID = {
-        "soccer": "soccer_epl",  # Premier League (default)
+        "soccer": "soccer_epl",
         "football": "soccer_epl",
-        "rugby": "rugby_union",
-        "nfl": "americanfootball_nfl",
         "basketball": "basketball_nba",
+        "nba": "basketball_nba",  # Alias for basketball
+        "rugby": "rugby_union",
+        "rugby-league": "rugby_league",
+        "nfl": "americanfootball_nfl",
+        "american-football": "americanfootball_nfl",  # Alias for NFL
         "hockey": "icehockey_nhl",
         "afl": "aussierules_afl",
         "tennis": "tennis_atp",
