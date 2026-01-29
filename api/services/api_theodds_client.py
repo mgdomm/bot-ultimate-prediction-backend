@@ -64,8 +64,9 @@ class TheOddsAPIClient:
     
     def get_events_with_odds(self, sport: str, date: Optional[str] = None) -> Dict[str, Any]:
         """
-        Get events with real betting odds for a sport, optionally filtered by date.
-        date format: "YYYY-MM-DD" (e.g., "2026-01-29")
+        Get events with real betting odds for a sport.
+        The Odds API returns live and upcoming events (typically next 7-14 days).
+        date parameter is informational but not used for filtering (API returns upcoming events only).
         Returns: {sport, events: [{eventId, home, away, odds: {bookmaker: {market: decimal}}}]}
         """
         if not self.api_key:
@@ -90,20 +91,6 @@ class TheOddsAPIClient:
                 "apiKey": self.api_key,
                 "markets": "h2h",  # Head to head (moneyline)
             }
-            
-            # Add date filtering if specified
-            if date:
-                try:
-                    # Parse date and create UTC timestamps for start of day and end of day
-                    date_obj = datetime.strptime(date, "%Y-%m-%d")
-                    commence_from = int(date_obj.timestamp())
-                    # Add 24 hours (86400 seconds)
-                    commence_to = commence_from + 86400
-                    
-                    params["commenceTimeFrom"] = str(commence_from)
-                    params["commenceTimeTo"] = str(commence_to)
-                except ValueError:
-                    logger.warning(f"Invalid date format: {date}. Expected YYYY-MM-DD. Ignoring date filter.")
             
             response = self.session.get(url, params=params, timeout=10)
             self.last_request_time = time.time()
@@ -130,6 +117,7 @@ class TheOddsAPIClient:
                 "source": "theodds_api",
                 "count": len(normalized_events),
                 "bookmakers_fetched": len(self.BOOKMAKERS),
+                "requested_date": date,
             }
         
         except requests.exceptions.HTTPError as e:
