@@ -8,11 +8,9 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 
 try:
-    from services.live_events_multisource import LiveEventsMultiSource
-    from services.api_theodds_cached import TheOddsAPICached
+    from services.api_theodds_client import TheOddsAPIClient
 except ImportError:
-    from api.services.live_events_multisource import LiveEventsMultiSource
-    from api.services.api_theodds_cached import TheOddsAPICached
+    from api.services.api_theodds_client import TheOddsAPIClient
 
 logger = logging.getLogger(__name__)
 
@@ -47,9 +45,8 @@ class IngestResult:
 
 def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dict[str, Any]:
     """
-    Ingest events for a day using free alternative APIs (ESPN, etc)
-    Fallback to The Odds API if ESPN/alternatives return no events
-    No API_SPORTS_KEY needed - uses LiveEventsMultiSource + TheOddsAPICached
+    Ingest events for a day using The Odds API (primary source for betting odds).
+    ESPN is used ONLY for live score updates (in display enrichment).
     """
     if day is None:
         day = date.today().isoformat()
@@ -59,8 +56,7 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
 
     summary: Dict[str, Any] = {"day": day, "sports": []}
     
-    multisource = LiveEventsMultiSource()
-    theodds = TheOddsAPICached()
+    theodds = TheOddsAPIClient()
 
     for sport in SUPPORTED_SPORTS:
         out_file = base_path / f"{sport}.json"
@@ -70,42 +66,33 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
             continue
 
         try:
-            # Get events from live multisource (ESPN + alternatives)
-            events = multisource.get_live_events(sport, day)
+            # PRIMARY SOURCE: Get events from The Odds API with real betting odds
+            logger.info(f"Fetching events for {sport} from The Odds API...")
+            odds_events = theodds.get_events_with_odds(sport, day)
+            odds_list = odds_events.get("events", [])
             
-            # events is already a dict with response/results structure
-            if isinstance(events, dict):
-                payload = events
-            else:
+            if odds_list:
+                # Use The Odds API as primary source
                 payload = {
-                    "results": len(events) if events else 0,
-                    "response": events or [],
-                    "source": "live_events_multisource",
+                    "results": len(odds_list),
+                    "response": odds_list,
+                    "source": "theodds_api_primary",
                     "status": "success"
                 }
-            
-            # FALLBACK: If ESPN/alternatives returned 0 events, try The Odds API
-            results = payload.get("results", 0)
-            if results == 0:
-                logger.info(f"No events from ESPN/alternatives for {sport}, trying The Odds API...")
-                try:
-                    odds_events = theodds.get_events_with_odds(sport, day)
-                    odds_list = odds_events.get("events", [])
-                    if odds_list:
-                        # Use The Odds API as fallback source
-                        payload = {
-                            "results": len(odds_list),
-                            "response": odds_list,
-                            "source": "theodds_api_fallback",
-                            "status": "success"
-                        }
-                        results = len(odds_list)
-                        logger.info(f"  Fallback to The Odds API: {results} events for {sport}")
-                except Exception as odds_err:
-                    logger.debug(f"The Odds API also failed for {sport}: {odds_err}")
+                results = len(odds_list)
+                logger.info(f"✓ The Odds API: {results} events for {sport}")
+            else:
+                # No events found - this is normal for some sports/dates
+                logger.info(f"ℹ No events found for {sport} on {day}")
+                payload = {
+                    "results": 0,
+                    "response": [],
+                    "source": "theodds_api_primary",
+                    "status": "no_events"
+                }
+                results = 0
             
             out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-            logger.info(f"Ingested {results} events for {sport} on {day}")
             
             summary["sports"].append(
                 IngestResult(
@@ -119,7 +106,7 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
         except Exception as err:
             logger.error(f"Error ingesting {sport}: {err}")
             msg = str(err)
-            payload = {"results": 0, "response": [], "errors": {"message": msg}, "source": "live_events_multisource"}
+            payload = {"results": 0, "response": [], "errors": {"message": msg}, "source": "theodds_api_primary"}
             try:
                 out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
             except Exception:

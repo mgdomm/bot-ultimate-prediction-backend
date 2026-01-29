@@ -5,6 +5,7 @@ Supported sports: Soccer, Rugby, NFL, Basketball, Hockey, AFL, Tennis, Baseball,
 """
 import requests
 from typing import Dict, List, Any, Optional
+from datetime import datetime
 import logging
 import os
 import time
@@ -63,7 +64,8 @@ class TheOddsAPIClient:
     
     def get_events_with_odds(self, sport: str, date: Optional[str] = None) -> Dict[str, Any]:
         """
-        Get events with real betting odds for a sport
+        Get events with real betting odds for a sport, optionally filtered by date.
+        date format: "YYYY-MM-DD" (e.g., "2026-01-29")
         Returns: {sport, events: [{eventId, home, away, odds: {bookmaker: {market: decimal}}}]}
         """
         if not self.api_key:
@@ -88,6 +90,20 @@ class TheOddsAPIClient:
                 "apiKey": self.api_key,
                 "markets": "h2h",  # Head to head (moneyline)
             }
+            
+            # Add date filtering if specified
+            if date:
+                try:
+                    # Parse date and create UTC timestamps for start of day and end of day
+                    date_obj = datetime.strptime(date, "%Y-%m-%d")
+                    commence_from = int(date_obj.timestamp())
+                    # Add 24 hours (86400 seconds)
+                    commence_to = commence_from + 86400
+                    
+                    params["commenceTimeFrom"] = str(commence_from)
+                    params["commenceTimeTo"] = str(commence_to)
+                except ValueError:
+                    logger.warning(f"Invalid date format: {date}. Expected YYYY-MM-DD. Ignoring date filter.")
             
             response = self.session.get(url, params=params, timeout=10)
             self.last_request_time = time.time()
