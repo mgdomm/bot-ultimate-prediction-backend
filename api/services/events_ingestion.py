@@ -9,8 +9,10 @@ from typing import Dict, Any, Optional
 
 try:
     from services.live_events_multisource import LiveEventsMultiSource
+    from services.api_theodds_cached import TheOddsAPICached
 except ImportError:
     from api.services.live_events_multisource import LiveEventsMultiSource
+    from api.services.api_theodds_cached import TheOddsAPICached
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +48,8 @@ class IngestResult:
 def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dict[str, Any]:
     """
     Ingest events for a day using free alternative APIs (ESPN, etc)
-    No API_SPORTS_KEY needed - uses LiveEventsMultiSource
+    Fallback to The Odds API if ESPN/alternatives return no events
+    No API_SPORTS_KEY needed - uses LiveEventsMultiSource + TheOddsAPICached
     """
     if day is None:
         day = date.today().isoformat()
@@ -57,6 +60,7 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
     summary: Dict[str, Any] = {"day": day, "sports": []}
     
     multisource = LiveEventsMultiSource()
+    theodds = TheOddsAPICached()
 
     for sport in SUPPORTED_SPORTS:
         out_file = base_path / f"{sport}.json"
@@ -80,8 +84,27 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
                     "status": "success"
                 }
             
-            out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            # FALLBACK: If ESPN/alternatives returned 0 events, try The Odds API
             results = payload.get("results", 0)
+            if results == 0:
+                logger.info(f"No events from ESPN/alternatives for {sport}, trying The Odds API...")
+                try:
+                    odds_events = theodds.get_events_with_odds(sport, day)
+                    odds_list = odds_events.get("events", [])
+                    if odds_list:
+                        # Use The Odds API as fallback source
+                        payload = {
+                            "results": len(odds_list),
+                            "response": odds_list,
+                            "source": "theodds_api_fallback",
+                            "status": "success"
+                        }
+                        results = len(odds_list)
+                        logger.info(f"  Fallback to The Odds API: {results} events for {sport}")
+                except Exception as odds_err:
+                    logger.debug(f"The Odds API also failed for {sport}: {odds_err}")
+            
+            out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
             logger.info(f"Ingested {results} events for {sport} on {day}")
             
             summary["sports"].append(
