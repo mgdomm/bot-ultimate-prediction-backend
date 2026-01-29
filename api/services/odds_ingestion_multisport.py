@@ -1,5 +1,14 @@
 from __future__ import annotations
 
+# Load .env at the very beginning
+import os
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    print(f"DEBUG odds_ingestion: ODDS_API_KEY after load_dotenv: {bool(os.getenv('ODDS_API_KEY'))}", flush=True)
+except ImportError as e:
+    print(f"DEBUG odds_ingestion: Failed to import load_dotenv: {e}", flush=True)
+
 import argparse
 import json
 import logging
@@ -212,17 +221,61 @@ def ingest_odds_for_day(
                 # Get from cached result
                 events = all_odds.get(odds_sport, [])
                 
-                payload = {
-                    "sport": sport,
-                    "day": day,
-                    "source": "theodds_api_cached",
-                    "strategy": "real_market_odds_cached",
-                    "results": len(events),
-                    "response": events,
-                    "bookmakers": ["draftkings", "fanduel", "betmgm", "betrivers"],
-                }
+                # Convert The Odds API format to multisport format expected by normalizer
+                # Transform:  {eventId, sport, home, away, odds:{home, away}, ...}
+                # Into:       {sport, event_id, response: [{bookmakers: [{name, bets: [{name, values: [{value, odd}]}]}]}]}
+                formatted_events = []
+                for idx, event in enumerate(events):
+                    # Use index as event_id for this batch (numeric ID required by normalizer)
+                    event_id = idx + 1
+                    event_string_id = event.get("eventId", f"event_{idx}")
+                    
+                    # Extract odds from The Odds API format
+                    odds_dict = event.get("odds", {})
+                    bookmakers_data = []
+                    
+                    # Transform odds into bookmakers format
+                    for bookmaker_name in ["draftkings", "fanduel", "betmgm", "betrivers"]:
+                        bets_data = []
+                        
+                        # h2h (home/away) odds
+                        if "home" in odds_dict and "away" in odds_dict:
+                            values = []
+                            if odds_dict["home"]:
+                                values.append({
+                                    "value": event.get("home", "Home"),
+                                    "odd": float(odds_dict["home"]),
+                                })
+                            if odds_dict["away"]:
+                                values.append({
+                                    "value": event.get("away", "Away"),
+                                    "odd": float(odds_dict["away"]),
+                                })
+                            if values:
+                                bets_data.append({
+                                    "name": "h2h",
+                                    "values": values,
+                                })
+                        
+                        if bets_data:
+                            bookmakers_data.append({
+                                "name": bookmaker_name,
+                                "bets": bets_data,
+                            })
+                    
+                    formatted_events.append({
+                        "sport": sport,
+                        "event_id": event_id,
+                        "response": {
+                            "response": [
+                                {
+                                    "bookmakers": bookmakers_data,
+                                }
+                            ]
+                        }
+                    })
                 
-                out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+                out_file.write_text(json.dumps(formatted_events, ensure_ascii=False, indent=2), encoding="utf-8")
                 summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, len(events)).__dict__)
                 theodds_sports_used.append(sport)
                 continue

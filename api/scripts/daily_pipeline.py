@@ -3,6 +3,13 @@ from pathlib import Path
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
+# Load .env file at the very beginning
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 from api.utils.cycle_day import cycle_day_str
 from api.utils.paths import data_path, ensure_dir
 
@@ -72,6 +79,13 @@ def odds_file_has_data(p: Path) -> bool:
     return True
 
 def main():
+    # Load .env before anything else
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass
+    
     args = [a for a in sys.argv[1:] if a.strip()]
     force = "--force" in args
     args = [a for a in args if a != "--force"]
@@ -81,6 +95,9 @@ def main():
 
     env = os.environ.copy()
     env["PYTHONPATH"] = str(REPO)
+    
+    # Debug: log the ODDS_API_KEY
+    print(f"[{ts()}] DEBUG: ODDS_API_KEY in env: {bool(env.get('ODDS_API_KEY'))}")
 
     # outputs (verdad única)
     events_dir      = data_path("events", day)
