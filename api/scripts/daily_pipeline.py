@@ -95,9 +95,6 @@ def main():
 
     env = os.environ.copy()
     env["PYTHONPATH"] = str(REPO)
-    
-    # Debug: log the ODDS_API_KEY
-    print(f"[{ts()}] DEBUG: ODDS_API_KEY in env: {bool(env.get('ODDS_API_KEY'))}")
 
     # outputs (verdad única)
     events_dir      = data_path("events", day)

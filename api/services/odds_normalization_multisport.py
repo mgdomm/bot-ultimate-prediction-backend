@@ -116,15 +116,12 @@ def normalize_odds_for_day(day: Optional[str] = None) -> Dict[str, Any]:
 
     odds_dir = API_DATA_DIR / "odds" / day
     sports = sorted([p.stem for p in odds_dir.glob("*.json")])
-    
-    print(f"DEBUG: odds_dir={odds_dir}, exists={odds_dir.exists()}, sports={sports[:3]}...", flush=True)
 
     normalized: List[Dict[str, Any]] = []
     sport_counts: Dict[str, int] = {}
 
     for sport in sports:
         payloads = _iter_odds_payloads_for_sport(day, sport)
-        print(f"DEBUG: sport={sport}, payloads_count={len(payloads)}", flush=True)
         sport_total = 0
 
         for _sport, event_id, payload in payloads:

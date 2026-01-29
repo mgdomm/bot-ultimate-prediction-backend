@@ -1,0 +1,863 @@
+{
+  "day": "2026-01-29",
+  "fetched_at": "2026-01-29T18:38:18.854153",
+  "sports": {
+    "soccer": [
+      {
+        "eventId": "e52dc0a3276ffe7c9d3630a81b4300ca",
+        "sport": "soccer",
+        "home": "Leeds United",
+        "away": "Arsenal",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 1.59,
+          "away": 7.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "b3c2ff07a6d24ca61f13c268a535c317",
+        "sport": "soccer",
+        "home": "Wolverhampton Wanderers",
+        "away": "Bournemouth",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 2.36,
+          "away": 3.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "36820753efb36739a83c6e5e440827b2",
+        "sport": "soccer",
+        "home": "Brighton and Hove Albion",
+        "away": "Everton",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 1.94,
+          "away": 4.4
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a3975ce7f6fd29bb83e7eadc3f7c1b3a",
+        "sport": "soccer",
+        "home": "Chelsea",
+        "away": "West Ham United",
+        "startTime": "2026-01-31T17:30:00Z",
+        "odds": {
+          "home": 1.58,
+          "away": 6.6
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "85b2c858725574961261f22c2b5b5d7e",
+        "sport": "soccer",
+        "home": "Liverpool",
+        "away": "Newcastle United",
+        "startTime": "2026-01-31T20:00:00Z",
+        "odds": {
+          "home": 1.87,
+          "away": 4.4
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "9c612b05e7fc0b581b689380f7405f35",
+        "sport": "soccer",
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 2.04,
+          "away": 4.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "d2436eec6993a6e21f00887163987e87",
+        "sport": "soccer",
+        "home": "Nottingham Forest",
+        "away": "Crystal Palace",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 4.1,
+          "away": 2.04
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "ded98b5baf6ff662af13282c2c6c7946",
+        "sport": "soccer",
+        "home": "Manchester United",
+        "away": "Fulham",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 5.8,
+          "away": 1.64
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "38a3cb5e295f55e274d589fc646cf2dd",
+        "sport": "soccer",
+        "home": "Tottenham Hotspur",
+        "away": "Manchester City",
+        "startTime": "2026-02-01T16:30:00Z",
+        "odds": {
+          "home": 1.72,
+          "away": 5.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5d2c6ee96eacb9c4bcac89213bcaf304",
+        "sport": "soccer",
+        "home": "Sunderland",
+        "away": "Burnley",
+        "startTime": "2026-02-02T20:00:00Z",
+        "odds": {
+          "home": 5.6,
+          "away": 1.81
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "4ae3a1134fb1d10167c21bf10dff498f",
+        "sport": "soccer",
+        "home": "Leeds United",
+        "away": "Nottingham Forest",
+        "startTime": "2026-02-06T20:00:00Z",
+        "odds": {
+          "home": 2.43,
+          "away": 3.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "78f2e11f06a4662eb94d23b6c7319238",
+        "sport": "soccer",
+        "home": "Manchester United",
+        "away": "Tottenham Hotspur",
+        "startTime": "2026-02-07T12:30:00Z",
+        "odds": {
+          "home": 1.72,
+          "away": 5.2
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "0232baa88f2ea7539654e9f8ebd53272",
+        "sport": "soccer",
+        "home": "Arsenal",
+        "away": "Sunderland",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 1.28,
+          "away": 15.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "9a38c80a3bab5163166bcf10f4995e8d",
+        "sport": "soccer",
+        "home": "Bournemouth",
+        "away": "Aston Villa",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 2.46,
+          "away": 2.88
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "8ca6a2f0fb6436b92bf3745d4ba81c54",
+        "sport": "soccer",
+        "home": "Burnley",
+        "away": "West Ham United",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 3.1,
+          "away": 2.55
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a6fb47d91c1bdfd7152af4938e73b4d3",
+        "sport": "soccer",
+        "home": "Wolverhampton Wanderers",
+        "away": "Chelsea",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 1.75,
+          "away": 4.9
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5064501681485a3db4abd297a0e775f4",
+        "sport": "soccer",
+        "home": "Fulham",
+        "away": "Everton",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 4.0,
+          "away": 2.19
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5c062fe74faee27e969bdccaa3040ef5",
+        "sport": "soccer",
+        "home": "Newcastle United",
+        "away": "Brentford",
+        "startTime": "2026-02-07T17:30:00Z",
+        "odds": {
+          "home": 4.6,
+          "away": 1.91
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a7f9683fe58c4fc6a5ac52396f279456",
+        "sport": "soccer",
+        "home": "Brighton and Hove Albion",
+        "away": "Crystal Palace",
+        "startTime": "2026-02-08T14:00:00Z",
+        "odds": {
+          "home": 1.86,
+          "away": 4.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "e526c157d950230afb02bc6534fbaf82",
+        "sport": "soccer",
+        "home": "Liverpool",
+        "away": "Manchester City",
+        "startTime": "2026-02-08T16:30:00Z",
+        "odds": {
+          "home": 2.6,
+          "away": 2.72
+        },
+        "source": "theodds_api"
+      }
+    ],
+    "football": [
+      {
+        "eventId": "e52dc0a3276ffe7c9d3630a81b4300ca",
+        "sport": "football",
+        "home": "Leeds United",
+        "away": "Arsenal",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 1.59,
+          "away": 7.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "b3c2ff07a6d24ca61f13c268a535c317",
+        "sport": "football",
+        "home": "Wolverhampton Wanderers",
+        "away": "Bournemouth",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 2.36,
+          "away": 3.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "36820753efb36739a83c6e5e440827b2",
+        "sport": "football",
+        "home": "Brighton and Hove Albion",
+        "away": "Everton",
+        "startTime": "2026-01-31T15:00:00Z",
+        "odds": {
+          "home": 1.94,
+          "away": 4.4
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a3975ce7f6fd29bb83e7eadc3f7c1b3a",
+        "sport": "football",
+        "home": "Chelsea",
+        "away": "West Ham United",
+        "startTime": "2026-01-31T17:30:00Z",
+        "odds": {
+          "home": 1.58,
+          "away": 6.6
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "85b2c858725574961261f22c2b5b5d7e",
+        "sport": "football",
+        "home": "Liverpool",
+        "away": "Newcastle United",
+        "startTime": "2026-01-31T20:00:00Z",
+        "odds": {
+          "home": 1.87,
+          "away": 4.4
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "9c612b05e7fc0b581b689380f7405f35",
+        "sport": "football",
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 2.04,
+          "away": 4.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "d2436eec6993a6e21f00887163987e87",
+        "sport": "football",
+        "home": "Nottingham Forest",
+        "away": "Crystal Palace",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 4.1,
+          "away": 2.04
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "ded98b5baf6ff662af13282c2c6c7946",
+        "sport": "football",
+        "home": "Manchester United",
+        "away": "Fulham",
+        "startTime": "2026-02-01T14:00:00Z",
+        "odds": {
+          "home": 5.8,
+          "away": 1.64
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "38a3cb5e295f55e274d589fc646cf2dd",
+        "sport": "football",
+        "home": "Tottenham Hotspur",
+        "away": "Manchester City",
+        "startTime": "2026-02-01T16:30:00Z",
+        "odds": {
+          "home": 1.72,
+          "away": 5.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5d2c6ee96eacb9c4bcac89213bcaf304",
+        "sport": "football",
+        "home": "Sunderland",
+        "away": "Burnley",
+        "startTime": "2026-02-02T20:00:00Z",
+        "odds": {
+          "home": 5.6,
+          "away": 1.81
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "4ae3a1134fb1d10167c21bf10dff498f",
+        "sport": "football",
+        "home": "Leeds United",
+        "away": "Nottingham Forest",
+        "startTime": "2026-02-06T20:00:00Z",
+        "odds": {
+          "home": 2.43,
+          "away": 3.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "78f2e11f06a4662eb94d23b6c7319238",
+        "sport": "football",
+        "home": "Manchester United",
+        "away": "Tottenham Hotspur",
+        "startTime": "2026-02-07T12:30:00Z",
+        "odds": {
+          "home": 1.72,
+          "away": 5.2
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "0232baa88f2ea7539654e9f8ebd53272",
+        "sport": "football",
+        "home": "Arsenal",
+        "away": "Sunderland",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 1.28,
+          "away": 15.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "9a38c80a3bab5163166bcf10f4995e8d",
+        "sport": "football",
+        "home": "Bournemouth",
+        "away": "Aston Villa",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 2.46,
+          "away": 2.88
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "8ca6a2f0fb6436b92bf3745d4ba81c54",
+        "sport": "football",
+        "home": "Burnley",
+        "away": "West Ham United",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 3.1,
+          "away": 2.55
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a6fb47d91c1bdfd7152af4938e73b4d3",
+        "sport": "football",
+        "home": "Wolverhampton Wanderers",
+        "away": "Chelsea",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 1.75,
+          "away": 4.9
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5064501681485a3db4abd297a0e775f4",
+        "sport": "football",
+        "home": "Fulham",
+        "away": "Everton",
+        "startTime": "2026-02-07T15:00:00Z",
+        "odds": {
+          "home": 4.0,
+          "away": 2.19
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5c062fe74faee27e969bdccaa3040ef5",
+        "sport": "football",
+        "home": "Newcastle United",
+        "away": "Brentford",
+        "startTime": "2026-02-07T17:30:00Z",
+        "odds": {
+          "home": 4.6,
+          "away": 1.91
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "a7f9683fe58c4fc6a5ac52396f279456",
+        "sport": "football",
+        "home": "Brighton and Hove Albion",
+        "away": "Crystal Palace",
+        "startTime": "2026-02-08T14:00:00Z",
+        "odds": {
+          "home": 1.86,
+          "away": 4.3
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "e526c157d950230afb02bc6534fbaf82",
+        "sport": "football",
+        "home": "Liverpool",
+        "away": "Manchester City",
+        "startTime": "2026-02-08T16:30:00Z",
+        "odds": {
+          "home": 2.6,
+          "away": 2.72
+        },
+        "source": "theodds_api"
+      }
+    ],
+    "nfl": [
+      {
+        "eventId": "b64e3587d7a4cf01a568e7150a2a1aec",
+        "sport": "nfl",
+        "home": "New England Patriots",
+        "away": "Seattle Seahawks",
+        "startTime": "2026-02-08T23:30:00Z",
+        "odds": {
+          "home": 3.1,
+          "away": 1.46
+        },
+        "source": "theodds_api"
+      }
+    ],
+    "basketball": [
+      {
+        "eventId": "4329ccf40a387789800b68750d2cd999",
+        "sport": "basketball",
+        "home": "Washington Wizards",
+        "away": "Milwaukee Bucks",
+        "startTime": "2026-01-30T00:10:00Z",
+        "odds": {
+          "home": 1.83,
+          "away": 2.22
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5dcf2dc23993f2a3e4cffc2b47b635e7",
+        "sport": "basketball",
+        "home": "Philadelphia 76ers",
+        "away": "Sacramento Kings",
+        "startTime": "2026-01-30T00:10:00Z",
+        "odds": {
+          "home": 1.21,
+          "away": 5.6
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "84dfdb778c615c186f3f82fd5373a505",
+        "sport": "basketball",
+        "home": "Atlanta Hawks",
+        "away": "Houston Rockets",
+        "startTime": "2026-01-30T01:10:00Z",
+        "odds": {
+          "home": 2.62,
+          "away": 1.62
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "259e7b23b4050164ea05f0aa17fb58e2",
+        "sport": "basketball",
+        "home": "Chicago Bulls",
+        "away": "Miami Heat",
+        "startTime": "2026-01-30T01:10:00Z",
+        "odds": {
+          "home": 2.14,
+          "away": 1.87
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "c58a236ed49b0f0020b8c38070b69346",
+        "sport": "basketball",
+        "home": "Dallas Mavericks",
+        "away": "Charlotte Hornets",
+        "startTime": "2026-01-30T01:40:00Z",
+        "odds": {
+          "home": 1.64,
+          "away": 2.57
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "cdf18e4dea3608573bbe51f6bfb181f5",
+        "sport": "basketball",
+        "home": "Denver Nuggets",
+        "away": "Brooklyn Nets",
+        "startTime": "2026-01-30T02:10:00Z",
+        "odds": {
+          "home": 3.78,
+          "away": 1.4
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "0c174f6428575aa93dadc9a2ea7bb3a7",
+        "sport": "basketball",
+        "home": "Phoenix Suns",
+        "away": "Detroit Pistons",
+        "startTime": "2026-01-30T02:10:00Z",
+        "odds": {
+          "home": 1.64,
+          "away": 2.6
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "6f87ca60fa0d3ec900b23a3e1d2fb336",
+        "sport": "basketball",
+        "home": "Minnesota Timberwolves",
+        "away": "Oklahoma City Thunder",
+        "startTime": "2026-01-30T02:40:00Z",
+        "odds": {
+          "home": 3.27,
+          "away": 1.5
+        },
+        "source": "theodds_api"
+      }
+    ],
+    "hockey": [
+      {
+        "eventId": "66965e4fb0a3aeb474708bf663cc3038",
+        "sport": "hockey",
+        "home": "Boston Bruins",
+        "away": "Philadelphia Flyers",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.16,
+          "away": 3.05
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "c3358713fe31e4542a012b9461d6ab57",
+        "sport": "hockey",
+        "home": "Buffalo Sabres",
+        "away": "Los Angeles Kings",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.33,
+          "away": 2.8
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "cd23d03850ee181739fe9397b91d8e7b",
+        "sport": "hockey",
+        "home": "Carolina Hurricanes",
+        "away": "Utah Mammoth",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.0,
+          "away": 3.33
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "1b3e0f12d958b8303e85fe8d1ce9b860",
+        "sport": "hockey",
+        "home": "Pittsburgh Penguins",
+        "away": "Chicago Blackhawks",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 3.4,
+          "away": 2.0
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "1f7d207fc5e7a8debd72f74150bf83cb",
+        "sport": "hockey",
+        "home": "Montr\u00e9al Canadiens",
+        "away": "Colorado Avalanche",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.33,
+          "away": 2.7
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "7e32c2e1f45f7c26fa219d118ea12694",
+        "sport": "hockey",
+        "home": "New Jersey Devils",
+        "away": "Nashville Predators",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.95,
+          "away": 2.22
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "0248e3c53e0c5259ab4b213fee196277",
+        "sport": "hockey",
+        "home": "New York Rangers",
+        "away": "New York Islanders",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 2.24,
+          "away": 2.88
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "e9e1ef8d7fbfcf163e9ee8f74c6f12bc",
+        "sport": "hockey",
+        "home": "Tampa Bay Lightning",
+        "away": "Winnipeg Jets",
+        "startTime": "2026-01-30T00:00:00Z",
+        "odds": {
+          "home": 1.92,
+          "away": 3.6
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "684f50298cb49cccc347dda11e9b0bd6",
+        "sport": "hockey",
+        "home": "Detroit Red Wings",
+        "away": "Washington Capitals",
+        "startTime": "2026-01-30T00:30:00Z",
+        "odds": {
+          "home": 2.27,
+          "away": 2.8
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "5d43ce538e1eccd34a9813f7f136cfcc",
+        "sport": "hockey",
+        "home": "Minnesota Wild",
+        "away": "Calgary Flames",
+        "startTime": "2026-01-30T01:00:00Z",
+        "odds": {
+          "home": 3.75,
+          "away": 1.92
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "ac9b5e3f5be0a386d846c9d7e1850a45",
+        "sport": "hockey",
+        "home": "St Louis Blues",
+        "away": "Florida Panthers",
+        "startTime": "2026-01-30T01:00:00Z",
+        "odds": {
+          "home": 2.08,
+          "away": 3.19
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "8486a8e2f076facbe2f7425a83d6e49e",
+        "sport": "hockey",
+        "home": "Edmonton Oilers",
+        "away": "San Jose Sharks",
+        "startTime": "2026-01-30T02:00:00Z",
+        "odds": {
+          "home": 1.91,
+          "away": 3.5
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "3d78d21eaf2116aeff730567a03bcaa8",
+        "sport": "hockey",
+        "home": "Vancouver Canucks",
+        "away": "Anaheim Ducks",
+        "startTime": "2026-01-30T03:00:00Z",
+        "odds": {
+          "home": 2.17,
+          "away": 2.95
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "55d868059145bdffc842d07496fcac5f",
+        "sport": "hockey",
+        "home": "Vegas Golden Knights",
+        "away": "Dallas Stars",
+        "startTime": "2026-01-30T03:00:00Z",
+        "odds": {
+          "home": 2.75,
+          "away": 2.42
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "65c33010332e3c0d69e40acb049b5452",
+        "sport": "hockey",
+        "home": "Seattle Kraken",
+        "away": "Toronto Maple Leafs",
+        "startTime": "2026-01-30T03:00:00Z",
+        "odds": {
+          "home": 2.55,
+          "away": 2.58
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "319e80424eef17c8f60948b718ed1e33",
+        "sport": "hockey",
+        "home": "Chicago Blackhawks",
+        "away": "Columbus Blue Jackets",
+        "startTime": "2026-01-31T01:30:00Z",
+        "odds": {
+          "home": 2.8,
+          "away": 2.31
+        },
+        "source": "theodds_api"
+      }
+    ],
+    "afl": [
+      {
+        "eventId": "8fee12c4bd7c35137e148aca80ea659a",
+        "sport": "afl",
+        "home": "Sydney Swans",
+        "away": "Carlton Blues",
+        "startTime": "2026-03-05T08:30:04Z",
+        "odds": {
+          "home": 3.1,
+          "away": 1.38
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "fc57cb223469e00714da6bcca7baa207",
+        "sport": "afl",
+        "home": "Gold Coast Suns",
+        "away": "Geelong Cats",
+        "startTime": "2026-03-06T09:05:31Z",
+        "odds": {
+          "home": 2.2,
+          "away": 1.66
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "ee36229873fb9d7f31db3cb677ebce82",
+        "sport": "afl",
+        "home": "Greater Western Sydney Giants",
+        "away": "Hawthorn Hawks",
+        "startTime": "2026-03-07T05:15:12Z",
+        "odds": {
+          "home": 1.95,
+          "away": 1.85
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "e8168c3055e0d2f3067bb47a261f9afe",
+        "sport": "afl",
+        "home": "Brisbane Lions",
+        "away": "Western Bulldogs",
+        "startTime": "2026-03-07T08:35:58Z",
+        "odds": {
+          "home": 1.43,
+          "away": 2.9
+        },
+        "source": "theodds_api"
+      },
+      {
+        "eventId": "32938c3ed956b5d910a6145275ddd22d",
+        "sport": "afl",
+        "home": "St Kilda Saints",
+        "away": "Collingwood Magpies",
+        "startTime": "2026-03-08T08:20:37Z",
+        "odds": {
+          "home": 1.76,
+          "away": 2.25
+        },
+        "source": "theodds_api"
+      }
+    ]
+  },
+  "errors": [
+    "rugby: 404 Client Error: Not Found for url: https://api.the-odds-api.com/v4/sports/rugby_union/odds?apiKey=4b0c11284d42bbda0d40b9ac542895b5&regions=eu&markets=h2h&oddsFormat=decimal",
+    "tennis: 404 Client Error: Not Found for url: https://api.the-odds-api.com/v4/sports/tennis_atp/odds?apiKey=4b0c11284d42bbda0d40b9ac542895b5&regions=eu&markets=h2h&oddsFormat=decimal",
+    "f1: 404 Client Error: Not Found for url: https://api.the-odds-api.com/v4/sports/mma_ufc/odds?apiKey=4b0c11284d42bbda0d40b9ac542895b5&regions=eu&markets=h2h&oddsFormat=decimal"
+  ]
+}

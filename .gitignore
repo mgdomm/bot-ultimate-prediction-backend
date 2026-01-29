@@ -32,3 +32,4 @@ api/.env
 0
 0_by_risk
 api/services/=
+.env

@@ -1,1 +1,4546 @@
-[]
+[
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Carlton Blues",
+    "odds": 1.38
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Carlton Blues",
+    "odds": 1.38
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Carlton Blues",
+    "odds": 1.38
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Carlton Blues",
+    "odds": 1.38
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sydney Swans",
+    "odds": 3.1
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sydney Swans",
+    "odds": 3.1
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sydney Swans",
+    "odds": 3.1
+  },
+  {
+    "sport": "afl",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sydney Swans",
+    "odds": 3.1
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Geelong Cats",
+    "odds": 1.66
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Geelong Cats",
+    "odds": 1.66
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Geelong Cats",
+    "odds": 1.66
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Geelong Cats",
+    "odds": 1.66
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Gold Coast Suns",
+    "odds": 2.2
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Gold Coast Suns",
+    "odds": 2.2
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Gold Coast Suns",
+    "odds": 2.2
+  },
+  {
+    "sport": "afl",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Gold Coast Suns",
+    "odds": 2.2
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Greater Western Sydney Giants",
+    "odds": 1.95
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Greater Western Sydney Giants",
+    "odds": 1.95
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Greater Western Sydney Giants",
+    "odds": 1.95
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Greater Western Sydney Giants",
+    "odds": 1.95
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Hawthorn Hawks",
+    "odds": 1.85
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Hawthorn Hawks",
+    "odds": 1.85
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Hawthorn Hawks",
+    "odds": 1.85
+  },
+  {
+    "sport": "afl",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Hawthorn Hawks",
+    "odds": 1.85
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brisbane Lions",
+    "odds": 1.43
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brisbane Lions",
+    "odds": 1.43
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brisbane Lions",
+    "odds": 1.43
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brisbane Lions",
+    "odds": 1.43
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Western Bulldogs",
+    "odds": 2.9
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Western Bulldogs",
+    "odds": 2.9
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Western Bulldogs",
+    "odds": 2.9
+  },
+  {
+    "sport": "afl",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Western Bulldogs",
+    "odds": 2.9
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Collingwood Magpies",
+    "odds": 2.25
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Collingwood Magpies",
+    "odds": 2.25
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Collingwood Magpies",
+    "odds": 2.25
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Collingwood Magpies",
+    "odds": 2.25
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "St Kilda Saints",
+    "odds": 1.76
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "St Kilda Saints",
+    "odds": 1.76
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "St Kilda Saints",
+    "odds": 1.76
+  },
+  {
+    "sport": "afl",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "St Kilda Saints",
+    "odds": 1.76
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "american-football",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Milwaukee Bucks",
+    "odds": 2.22
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Milwaukee Bucks",
+    "odds": 2.22
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Milwaukee Bucks",
+    "odds": 2.22
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Milwaukee Bucks",
+    "odds": 2.22
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Washington Wizards",
+    "odds": 1.83
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Washington Wizards",
+    "odds": 1.83
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Washington Wizards",
+    "odds": 1.83
+  },
+  {
+    "sport": "basketball",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Washington Wizards",
+    "odds": 1.83
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Philadelphia 76ers",
+    "odds": 1.21
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Philadelphia 76ers",
+    "odds": 1.21
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Philadelphia 76ers",
+    "odds": 1.21
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Philadelphia 76ers",
+    "odds": 1.21
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sacramento Kings",
+    "odds": 5.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sacramento Kings",
+    "odds": 5.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sacramento Kings",
+    "odds": 5.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sacramento Kings",
+    "odds": 5.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Atlanta Hawks",
+    "odds": 2.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Atlanta Hawks",
+    "odds": 2.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Atlanta Hawks",
+    "odds": 2.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Atlanta Hawks",
+    "odds": 2.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Houston Rockets",
+    "odds": 1.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Houston Rockets",
+    "odds": 1.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Houston Rockets",
+    "odds": 1.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Houston Rockets",
+    "odds": 1.62
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chicago Bulls",
+    "odds": 2.14
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chicago Bulls",
+    "odds": 2.14
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chicago Bulls",
+    "odds": 2.14
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chicago Bulls",
+    "odds": 2.14
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Miami Heat",
+    "odds": 1.87
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Miami Heat",
+    "odds": 1.87
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Miami Heat",
+    "odds": 1.87
+  },
+  {
+    "sport": "basketball",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Miami Heat",
+    "odds": 1.87
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Charlotte Hornets",
+    "odds": 2.57
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Charlotte Hornets",
+    "odds": 2.57
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Charlotte Hornets",
+    "odds": 2.57
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Charlotte Hornets",
+    "odds": 2.57
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Dallas Mavericks",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Dallas Mavericks",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Dallas Mavericks",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Dallas Mavericks",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brooklyn Nets",
+    "odds": 1.4
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brooklyn Nets",
+    "odds": 1.4
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brooklyn Nets",
+    "odds": 1.4
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brooklyn Nets",
+    "odds": 1.4
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Denver Nuggets",
+    "odds": 3.78
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Denver Nuggets",
+    "odds": 3.78
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Denver Nuggets",
+    "odds": 3.78
+  },
+  {
+    "sport": "basketball",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Denver Nuggets",
+    "odds": 3.78
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Detroit Pistons",
+    "odds": 2.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Detroit Pistons",
+    "odds": 2.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Detroit Pistons",
+    "odds": 2.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Detroit Pistons",
+    "odds": 2.6
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Phoenix Suns",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Phoenix Suns",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Phoenix Suns",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Phoenix Suns",
+    "odds": 1.64
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Minnesota Timberwolves",
+    "odds": 3.27
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Minnesota Timberwolves",
+    "odds": 3.27
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Minnesota Timberwolves",
+    "odds": 3.27
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Minnesota Timberwolves",
+    "odds": 3.27
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Oklahoma City Thunder",
+    "odds": 1.5
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Oklahoma City Thunder",
+    "odds": 1.5
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Oklahoma City Thunder",
+    "odds": 1.5
+  },
+  {
+    "sport": "basketball",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Oklahoma City Thunder",
+    "odds": 1.5
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "football",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "football",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "football",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "football",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "football",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "football",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "football",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "football",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "football",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "football",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "football",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "17",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "football",
+    "eventId": "18",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "football",
+    "eventId": "19",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "football",
+    "eventId": "20",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Boston Bruins",
+    "odds": 2.16
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Boston Bruins",
+    "odds": 2.16
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Boston Bruins",
+    "odds": 2.16
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Boston Bruins",
+    "odds": 2.16
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Philadelphia Flyers",
+    "odds": 3.05
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Philadelphia Flyers",
+    "odds": 3.05
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Philadelphia Flyers",
+    "odds": 3.05
+  },
+  {
+    "sport": "hockey",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Philadelphia Flyers",
+    "odds": 3.05
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Buffalo Sabres",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Buffalo Sabres",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Buffalo Sabres",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Buffalo Sabres",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Los Angeles Kings",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Los Angeles Kings",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Los Angeles Kings",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Los Angeles Kings",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Carolina Hurricanes",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Carolina Hurricanes",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Carolina Hurricanes",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Carolina Hurricanes",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Utah Mammoth",
+    "odds": 3.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Utah Mammoth",
+    "odds": 3.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Utah Mammoth",
+    "odds": 3.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Utah Mammoth",
+    "odds": 3.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.0
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Pittsburgh Penguins",
+    "odds": 3.4
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Pittsburgh Penguins",
+    "odds": 3.4
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Pittsburgh Penguins",
+    "odds": 3.4
+  },
+  {
+    "sport": "hockey",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Pittsburgh Penguins",
+    "odds": 3.4
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Colorado Avalanche",
+    "odds": 2.7
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Colorado Avalanche",
+    "odds": 2.7
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Colorado Avalanche",
+    "odds": 2.7
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Colorado Avalanche",
+    "odds": 2.7
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Montréal Canadiens",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Montréal Canadiens",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Montréal Canadiens",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Montréal Canadiens",
+    "odds": 2.33
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Nashville Predators",
+    "odds": 2.22
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Nashville Predators",
+    "odds": 2.22
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Nashville Predators",
+    "odds": 2.22
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Nashville Predators",
+    "odds": 2.22
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "New Jersey Devils",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "New Jersey Devils",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "New Jersey Devils",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "New Jersey Devils",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "New York Islanders",
+    "odds": 2.88
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "New York Islanders",
+    "odds": 2.88
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "New York Islanders",
+    "odds": 2.88
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "New York Islanders",
+    "odds": 2.88
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "New York Rangers",
+    "odds": 2.24
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "New York Rangers",
+    "odds": 2.24
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "New York Rangers",
+    "odds": 2.24
+  },
+  {
+    "sport": "hockey",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "New York Rangers",
+    "odds": 2.24
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Tampa Bay Lightning",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Tampa Bay Lightning",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Tampa Bay Lightning",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Tampa Bay Lightning",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Winnipeg Jets",
+    "odds": 3.6
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Winnipeg Jets",
+    "odds": 3.6
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Winnipeg Jets",
+    "odds": 3.6
+  },
+  {
+    "sport": "hockey",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Winnipeg Jets",
+    "odds": 3.6
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Detroit Red Wings",
+    "odds": 2.27
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Detroit Red Wings",
+    "odds": 2.27
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Detroit Red Wings",
+    "odds": 2.27
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Detroit Red Wings",
+    "odds": 2.27
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Washington Capitals",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Washington Capitals",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Washington Capitals",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Washington Capitals",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Calgary Flames",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Calgary Flames",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Calgary Flames",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Calgary Flames",
+    "odds": 1.92
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Minnesota Wild",
+    "odds": 3.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Minnesota Wild",
+    "odds": 3.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Minnesota Wild",
+    "odds": 3.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Minnesota Wild",
+    "odds": 3.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Florida Panthers",
+    "odds": 3.19
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Florida Panthers",
+    "odds": 3.19
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Florida Panthers",
+    "odds": 3.19
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Florida Panthers",
+    "odds": 3.19
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "St Louis Blues",
+    "odds": 2.08
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "St Louis Blues",
+    "odds": 2.08
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "St Louis Blues",
+    "odds": 2.08
+  },
+  {
+    "sport": "hockey",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "St Louis Blues",
+    "odds": 2.08
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Edmonton Oilers",
+    "odds": 1.91
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Edmonton Oilers",
+    "odds": 1.91
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Edmonton Oilers",
+    "odds": 1.91
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Edmonton Oilers",
+    "odds": 1.91
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "San Jose Sharks",
+    "odds": 3.5
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "San Jose Sharks",
+    "odds": 3.5
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "San Jose Sharks",
+    "odds": 3.5
+  },
+  {
+    "sport": "hockey",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "San Jose Sharks",
+    "odds": 3.5
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Anaheim Ducks",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Anaheim Ducks",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Anaheim Ducks",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Anaheim Ducks",
+    "odds": 2.95
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Vancouver Canucks",
+    "odds": 2.17
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Vancouver Canucks",
+    "odds": 2.17
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Vancouver Canucks",
+    "odds": 2.17
+  },
+  {
+    "sport": "hockey",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Vancouver Canucks",
+    "odds": 2.17
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Dallas Stars",
+    "odds": 2.42
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Dallas Stars",
+    "odds": 2.42
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Dallas Stars",
+    "odds": 2.42
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Dallas Stars",
+    "odds": 2.42
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Vegas Golden Knights",
+    "odds": 2.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Vegas Golden Knights",
+    "odds": 2.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Vegas Golden Knights",
+    "odds": 2.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Vegas Golden Knights",
+    "odds": 2.75
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Seattle Kraken",
+    "odds": 2.55
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Seattle Kraken",
+    "odds": 2.55
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Seattle Kraken",
+    "odds": 2.55
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Seattle Kraken",
+    "odds": 2.55
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Toronto Maple Leafs",
+    "odds": 2.58
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Toronto Maple Leafs",
+    "odds": 2.58
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Toronto Maple Leafs",
+    "odds": 2.58
+  },
+  {
+    "sport": "hockey",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Toronto Maple Leafs",
+    "odds": 2.58
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chicago Blackhawks",
+    "odds": 2.8
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Columbus Blue Jackets",
+    "odds": 2.31
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Columbus Blue Jackets",
+    "odds": 2.31
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Columbus Blue Jackets",
+    "odds": 2.31
+  },
+  {
+    "sport": "hockey",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Columbus Blue Jackets",
+    "odds": 2.31
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "New England Patriots",
+    "odds": 3.1
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Seattle Seahawks",
+    "odds": 1.46
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 7.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "soccer",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 1.59
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "soccer",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 2.36
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.94
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "3",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 1.58
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "4",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 6.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 1.87
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "5",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.4
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "6",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 2.04
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "7",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 4.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 1.64
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "soccer",
+    "eventId": "8",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 5.8
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 5.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "9",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 1.81
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 5.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Leeds United",
+    "odds": 2.43
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "11",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Nottingham Forest",
+    "odds": 3.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester United",
+    "odds": 1.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "soccer",
+    "eventId": "12",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Tottenham Hotspur",
+    "odds": 5.2
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Arsenal",
+    "odds": 1.28
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "13",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Sunderland",
+    "odds": 15.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Aston Villa",
+    "odds": 2.88
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "soccer",
+    "eventId": "14",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Bournemouth",
+    "odds": 2.46
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Burnley",
+    "odds": 3.1
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "soccer",
+    "eventId": "15",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "West Ham United",
+    "odds": 2.55
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Chelsea",
+    "odds": 4.9
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "soccer",
+    "eventId": "16",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Wolverhampton Wanderers",
+    "odds": 1.75
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Everton",
+    "odds": 2.19
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "17",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Fulham",
+    "odds": 4.0
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brentford",
+    "odds": 1.91
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "18",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Newcastle United",
+    "odds": 4.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Brighton and Hove Albion",
+    "odds": 1.86
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "19",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Crystal Palace",
+    "odds": 4.3
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Liverpool",
+    "odds": 2.6
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "betmgm",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "betrivers",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "draftkings",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  },
+  {
+    "sport": "soccer",
+    "eventId": "20",
+    "bookmaker": "fanduel",
+    "market": "h2h",
+    "selection": "Manchester City",
+    "odds": 2.72
+  }
+]

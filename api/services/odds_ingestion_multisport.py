@@ -1,13 +1,11 @@
 from __future__ import annotations
 
 # Load .env at the very beginning
-import os
 try:
     from dotenv import load_dotenv
     load_dotenv()
-    print(f"DEBUG odds_ingestion: ODDS_API_KEY after load_dotenv: {bool(os.getenv('ODDS_API_KEY'))}", flush=True)
-except ImportError as e:
-    print(f"DEBUG odds_ingestion: Failed to import load_dotenv: {e}", flush=True)
+except ImportError:
+    pass
 
 import argparse
 import json

@@ -18,6 +18,11 @@ import os
 PLACEHOLDER_LOGO_SHA256 = "7670cc2d08b0b4a846ac6ec076c99d3767c4d2b9322e2d31cd05871422ddbbda"
 API_SPORTS_MEDIA_HOST = "media.api-sports.io"
 
+try:
+    from api.services.api_thesportsdb_client import TheSportsDBClient
+except ModuleNotFoundError:
+    from services.api_thesportsdb_client import TheSportsDBClient
+
 @lru_cache(maxsize=2048)
 def _is_api_sports_placeholder_image(url: str) -> bool:
     if not url or API_SPORTS_MEDIA_HOST not in url:
@@ -42,6 +47,11 @@ def sanitize_logo_url(url: Optional[str]) -> Optional[str]:
         if _is_api_sports_placeholder_image(u):
             return None
     return u
+
+
+@lru_cache(maxsize=1)
+def _thesportsdb_client() -> TheSportsDBClient:
+    return TheSportsDBClient()
 
 
 def _try_settle_over_under(pick: Dict[str, Any]) -> None:
@@ -236,6 +246,59 @@ def _build_generic_games_index(day: str, sport: str) -> Dict[str, Dict[str, Any]
     return idx
 
 
+def _build_odds_events_index(day: str, sport: str) -> Dict[str, Dict[str, Any]]:
+    """
+    Builder para eventos derivados de The Odds API (cache diario), con formato:
+      {eventId, sport, home, away, startTime, odds}
+    """
+    raw_path = _events_dir(day) / f"{sport}.json"
+    data = _safe_read_json(raw_path)
+    if not data:
+        return {}
+
+    response = data.get("response") if isinstance(data, dict) else None
+    if not isinstance(response, list):
+        return {}
+
+    idx: Dict[str, Dict[str, Any]] = {}
+    for item in response:
+        if not isinstance(item, dict):
+            continue
+
+        event_id = item.get("eventId") or item.get("id")
+        if event_id is None:
+            continue
+
+        home_name = item.get("home")
+        away_name = item.get("away")
+        start_time = item.get("startTime") or item.get("commence_time")
+
+        if not home_name or not away_name:
+            continue
+
+        home_logo = None
+        away_logo = None
+        try:
+            client = _thesportsdb_client()
+            home_logo = client.get_team_logo(str(home_name))
+            away_logo = client.get_team_logo(str(away_name))
+        except Exception:
+            pass
+
+        idx[str(event_id)] = {
+            "sport": sport,
+            "eventId": str(event_id),
+            "league": item.get("league"),
+            "leagueLogo": None,
+            "startTime": start_time,
+            "live": item.get("live"),
+            "home": {"name": home_name, "logo": home_logo},
+            "away": {"name": away_name, "logo": away_logo},
+        }
+
+    return idx
+
+
 def _build_nfl_index(day: str) -> Dict[str, Dict[str, Any]]:
     """
     NFL (american-football) viene como:
@@ -309,6 +372,12 @@ def build_display_index(day: str) -> Dict[Tuple[str, str], Dict[str, Any]]:
 
     for sport in ["handball", "hockey", "basketball", "rugby", "volleyball", "baseball", "afl"]:
         idx = _build_generic_games_index(day, sport)
+        for event_id, disp in idx.items():
+            out[(sport, str(event_id))] = disp
+
+    # The Odds API cached events (no logos, but needed for picks window + display)
+    for sport in ["soccer", "football", "rugby", "rugby-league", "american-football", "nfl", "basketball", "hockey", "tennis", "baseball", "afl"]:
+        idx = _build_odds_events_index(day, sport)
         for event_id, disp in idx.items():
             out[(sport, str(event_id))] = disp
 
