@@ -1,0 +1,18 @@
+[
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "market": "ou",
+    "selection": "over",
+    "odds": 251.0,
+    "probability": 0.01,
+    "edge": 0.006,
+    "n_books": 994,
+    "best_vs_2nd": 1.0,
+    "best_vs_median": 132.6038,
+    "consensus": "high",
+    "marketType": "other",
+    "marketRisk": "high",
+    "inflated": true
+  }
+]
