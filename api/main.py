@@ -328,7 +328,27 @@ async def lifespan(app: FastAPI):
             contract_path.write_text(json.dumps(contract, ensure_ascii=False, indent=2), encoding="utf-8")
             print(f"[STARTUP] Contract rebuilt for {day} with {len(contract.get('picks_classic', []))} classic picks")
         else:
-            print(f"[STARTUP] Contract exists for {day}")
+            # Contract exists - verify it has picks
+            try:
+                existing = json.loads(contract_path.read_text(encoding="utf-8"))
+                picks_count = len(existing.get('picks_classic', []))
+                print(f"[STARTUP] Contract exists for {day} with {picks_count} classic picks")
+                
+                # If contract exists but is empty, rebuild from local picks
+                if picks_count == 0 and (contract_path.stat().st_size < 1000):
+                    print(f"[STARTUP] Contract empty, rebuilding from local pick files...")
+                    rebuilt = create_empty_contract(day)
+                    rebuilt = populate_contract_with_day_data(rebuilt)
+                    rebuilt["generated_at"] = existing.get("generated_at", datetime.utcnow().isoformat())
+                    rebuilt["freeze_until"] = existing.get("freeze_until", rebuilt.get("generated_at"))
+                    try:
+                        enrich_contract_inplace(rebuilt)
+                    except Exception as err:
+                        print(f'[startup_enrichment] failed: {err}')
+                    contract_path.write_text(json.dumps(rebuilt, ensure_ascii=False, indent=2), encoding="utf-8")
+                    print(f"[STARTUP] Contract rebuilt from local picks with {len(rebuilt.get('picks_classic', []))} classic picks")
+            except Exception as e:
+                print(f"[STARTUP] Error checking existing contract: {e}")
             
     except Exception as e:
         print(f"[STARTUP] Failed to ensure contract: {e}")
