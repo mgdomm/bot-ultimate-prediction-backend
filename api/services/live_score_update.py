@@ -13,9 +13,9 @@ from datetime import date as date_type
 logger = logging.getLogger(__name__)
 
 try:
-    from services.live_events_multisource import get_live_events_for_sport
+    from services.live_events_multisource import LiveEventsMultiSource
 except ImportError:
-    from api.services.live_events_multisource import get_live_events_for_sport
+    from api.services.live_events_multisource import LiveEventsMultiSource
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -55,14 +55,12 @@ def update_contract_with_live_scores(day: str) -> Dict[str, Any]:
     for sport, event_ids in picks_by_sport.items():
         try:
             # Fetch live events from alternative APIs
-            live_events = get_live_events_for_sport(sport, event_ids)
+            live_result = LiveEventsMultiSource.get_live_events(sport, str(date_type.today()))
+            live_by_id = live_result.get("live_by_id", {})
             
-            if not live_events:
+            if not live_by_id:
                 logger.debug(f"No live events found for {sport}")
                 continue
-            
-            # Build lookup: eventId -> live_data
-            live_by_id = {str(e.get("eventId", "")): e for e in live_events}
             
             # Update picks with live data
             for section in ["picks_classic", "picks_parlay_premium", "picks_value"]:
