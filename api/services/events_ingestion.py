@@ -21,16 +21,10 @@ API_DATA_DIR = REPO_ROOT / "api" / "data"
 # Sports que traemos eventos (usando The Odds API FREE - 9 sports verified)
 # MUST match ODDS_MODE_BY_SPORT in odds_ingestion_multisport.py
 SUPPORTED_SPORTS = [
-    "football",
-    "soccer", 
+    "soccer",
     "basketball",
-    "rugby",
-    "rugby-league",
     "nfl",
-    "american-football",
     "hockey",
-    "baseball",
-    "tennis",
     "afl",
 ]
 

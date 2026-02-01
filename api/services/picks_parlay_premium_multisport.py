@@ -11,16 +11,16 @@ from typing import Any, Dict, List, Optional, Tuple
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
-SIMPLE_MARKETS = {"over/under", "moneyline", "handicap"}
+SIMPLE_MARKETS = {"over/under", "moneyline", "handicap", "h2h"}
 
 # Reglas producto (ajustadas a datos reales: hoy no hay LOW)
-SAFE_P_MIN = 0.68
-SAFE_EV_MIN = 0.0
-SAFE_ALLOWED_RISK = {"MEDIUM", "HIGH"}
+SAFE_P_MIN = 0.60
+SAFE_EV_MIN = -0.01
+SAFE_ALLOWED_RISK = {"LOW", "MEDIUM", "HIGH", "EXTREME"}
 
-BOOM_P_MIN = 0.64
-BOOM_EV_MIN = 0.0
-BOOM_ALLOWED_RISK = {"MEDIUM", "HIGH"}
+BOOM_P_MIN = 0.60
+BOOM_EV_MIN = -0.01
+BOOM_ALLOWED_RISK = {"LOW", "MEDIUM", "HIGH", "EXTREME"}
 
 BOOM_TARGET_ODDS_1 = 3.0
 BOOM_TARGET_ODDS_2 = 2.5
@@ -140,8 +140,6 @@ def make_parlay(kind: str, legs: List[Dict[str, Any]], label: str, note: Optiona
 def filter_pool(all_picks: List[Dict[str, Any]], pmin: float, evmin: float, allowed_risks: set[str]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
     for p in all_picks:
-        if not _is_simple_market(p):
-            continue
         if _risk_level(p) not in allowed_risks:
             continue
         if _prob(p) < pmin:

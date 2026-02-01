@@ -46,9 +46,10 @@ class TheOddsAPIClient:
     ]
     
     def __init__(self):
-        self.api_key = os.environ.get("ODDS_API_KEY")
+        # DEPRECATED: Use OddsAPIIOClient instead
+        self.api_key = os.environ.get("ODDS_APIIO_KEY")
         if not self.api_key:
-            logger.warning("ODDS_API_KEY not set in environment")
+            logger.warning("ODDS_APIIO_KEY not set in environment")
         self.session = requests.Session()
         
         # Add retry strategy for rate limits
@@ -73,7 +74,7 @@ class TheOddsAPIClient:
         Returns: {sport, events: [{eventId, home, away, odds: {bookmaker: {market: decimal}}}]}
         """
         if not self.api_key:
-            return {"sport": sport, "events": [], "error": "ODDS_API_KEY not configured"}
+            return {"sport": sport, "events": [], "error": "ODDS_APIIO_KEY not configured"}
         
         sport_lower = sport.lower()
         odds_sport_id = self.SPORT_TO_ODDS_ID.get(sport_lower)
@@ -100,8 +101,14 @@ class TheOddsAPIClient:
             
             response.raise_for_status()
             data = response.json()
-            
-            events = data.get("data", []) if isinstance(data, dict) else []
+
+            # The Odds API devuelve una lista; si viene dict, usamos "data"
+            if isinstance(data, list):
+                events = data
+            elif isinstance(data, dict):
+                events = data.get("data", [])
+            else:
+                events = []
             
             # Normalize events
             normalized_events = []

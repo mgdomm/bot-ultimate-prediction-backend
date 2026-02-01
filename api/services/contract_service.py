@@ -1,5 +1,5 @@
 from typing import Dict, List, Optional
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 import json
 from pathlib import Path
 
@@ -78,7 +78,12 @@ def freeze_and_save_contract(contract: Dict) -> Dict:
     # ✅ Enriquecimiento determinista con snapshots locales (nombres/logos)
     enrich_contract_inplace(contract)
 
-    contract["generated_at"] = datetime.utcnow().isoformat()
+    now = datetime.utcnow()
+    contract["generated_at"] = now.isoformat()
+    
+    # Freeze 24 horas desde ahora (cuando se procese el último evento)
+    freeze_until = now + timedelta(hours=24)
+    contract["freeze_until"] = freeze_until.isoformat()
 
     day = contract["contract_date"]
     base_path = API_DATA_DIR / "contracts" / day

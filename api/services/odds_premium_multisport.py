@@ -5,8 +5,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
-PREMIUM_PROBABILITY_THRESHOLD = 0.86
-MIN_PREMIUM_PER_DAY = 2
+PREMIUM_PROBABILITY_THRESHOLD = 0.70
+MIN_PREMIUM_PER_DAY = 6
 
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -34,8 +34,10 @@ def _key(sel: Dict[str, Any]) -> Tuple[str, str, str, str]:
 
 
 def is_premium_strict(sel: Dict[str, Any]) -> bool:
-    # Definición estricta original (puede dar 0; transparencia total)
-    return (_risk_level(sel) == "LOW") and (_f(sel.get("p_estimated")) >= PREMIUM_PROBABILITY_THRESHOLD)
+    # Estricto pero más permisivo: riesgo conocido y prob >= umbral relajado
+    return (_risk_level(sel).upper() in {"LOW", "MEDIUM", "HIGH", "EXTREME"}) and (
+        _f(sel.get("p_estimated")) >= PREMIUM_PROBABILITY_THRESHOLD
+    )
 
 
 def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
@@ -65,7 +67,7 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
             sel.pop("premium_reason", None)
 
     # 2) Fallback determinista: asegurar MIN_PREMIUM_PER_DAY si hay candidatos reales
-    # Candidatos: EV>0 y risk in {LOW, MEDIUM}
+    # Candidatos: EV>-0.10 y riesgo conocido
     if strict_count < MIN_PREMIUM_PER_DAY:
         best_by_key: Dict[Tuple[str, str, str, str], Dict[str, Any]] = {}
 
@@ -73,9 +75,9 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
             if sel.get("premium") is True:
                 continue
             r = _risk_level(sel)
-            if r not in {"LOW", "MEDIUM"}:
+            if not r:
                 continue
-            if _f(sel.get("ev"), default=-1e9) <= 0:
+            if _f(sel.get("ev"), default=-1e9) < -0.10:
                 continue
 
             k = _key(sel)
@@ -103,6 +105,13 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
             sel["premium"] = True
             sel["premium_reason"] = "FALLBACK_TOP2_MEDIUM_OR_LOW_EV_POS"
             picked += 1
+
+    # 3) Si todavía quedan sin premium, marcamos el resto como premium relajado para habilitar pools/parlays
+    for sel in data:
+        if sel.get("premium") is True:
+            continue
+        sel["premium"] = True
+        sel["premium_reason"] = "RELAXED_ALL_FOR_POOL"
 
     premium_total = sum(1 for sel in data if sel.get("premium") is True)
 

@@ -24,16 +24,12 @@ class TheOddsAPICached:
     
     # Sport ID mappings in The Odds API
     SPORT_TO_ODDS_ID = {
+        # Solo los deportes habilitados en ingesta actual
         "soccer": "soccer_epl",
-        "football": "soccer_epl",
-        "rugby": "rugby_union",
         "nfl": "americanfootball_nfl",
         "basketball": "basketball_nba",
         "hockey": "icehockey_nhl",
         "afl": "aussierules_afl",
-        "tennis": "tennis_atp",
-        "baseball": "baseball_mlb",
-        "f1": "mma_ufc",
     }
     
     BOOKMAKERS = [
@@ -44,9 +40,10 @@ class TheOddsAPICached:
     ]
     
     def __init__(self, cache_dir: Optional[str] = None):
-        self.api_key = os.environ.get("ODDS_API_KEY")
+        # DEPRECATED: Use OddsAPIIOClient instead
+        self.api_key = os.environ.get("ODDS_APIIO_KEY")
         if not self.api_key:
-            logger.warning("ODDS_API_KEY not set in environment")
+            logger.warning("ODDS_APIIO_KEY not set in environment")
         
         self.session = requests.Session()
         
@@ -123,7 +120,7 @@ class TheOddsAPICached:
                 return cached
         
         if not self.api_key:
-            logger.warning("ODDS_API_KEY not configured, attempting to use cache")
+            logger.warning("ODDS_APIIO_KEY not configured, attempting to use cache")
             cached = self.load_from_cache(day)
             return cached if cached else {}
         
@@ -162,7 +159,7 @@ class TheOddsAPICached:
         Returns: {sport, events: [...]}
         """
         if not self.api_key:
-            return {"sport": sport, "events": [], "error": "ODDS_API_KEY not configured"}
+            return {"sport": sport, "events": [], "error": "ODDS_APIIO_KEY not configured"}
         
         sport_lower = sport.lower()
         odds_sport_id = self.SPORT_TO_ODDS_ID.get(sport_lower)
@@ -182,7 +179,7 @@ class TheOddsAPICached:
             params = {
                 "apiKey": self.api_key,
                 "regions": "eu",  # Europe region for bookmakers
-                "markets": "h2h",
+                "markets": "h2h,spreads,totals",  # Request all main markets
                 "oddsFormat": "decimal",
             }
             
@@ -241,24 +238,50 @@ class TheOddsAPICached:
                 return None
             
             odds_by_market = {}
-            bookmakers = event.get("bookmakers", [])
-            
+            bookmakers = event.get("bookmakers", []) or []
+
             for bookmaker in bookmakers:
                 bookie_name = bookmaker.get("key")
-                markets = bookmaker.get("markets", [])
+                markets = bookmaker.get("markets", []) or []
                 
                 for market in markets:
                     market_key = market.get("key")
-                    outcomes = market.get("outcomes", [])
+                    outcomes = market.get("outcomes", []) or []
                     
+                    # Process h2h (moneyline)
                     if market_key == "h2h" and len(outcomes) >= 2:
                         if not odds_by_market.get("h2h"):
                             odds_by_market["h2h"] = {}
-                        
                         odds_by_market["h2h"][bookie_name] = {
                             "home": float(outcomes[0].get("price", 0)),
                             "away": float(outcomes[1].get("price", 0)),
                         }
+                    
+                    # Process spreads (handicaps)
+                    elif market_key == "spreads" and len(outcomes) >= 2:
+                        if not odds_by_market.get("spreads"):
+                            odds_by_market["spreads"] = {}
+                        if bookie_name not in odds_by_market["spreads"]:
+                            odds_by_market["spreads"][bookie_name] = []
+                        for outcome in outcomes:
+                            odds_by_market["spreads"][bookie_name].append({
+                                "name": outcome.get("name"),
+                                "point": float(outcome.get("point", 0)),
+                                "price": float(outcome.get("price", 0)),
+                            })
+                    
+                    # Process totals (over/under)
+                    elif market_key == "totals" and len(outcomes) >= 2:
+                        if not odds_by_market.get("totals"):
+                            odds_by_market["totals"] = {}
+                        if bookie_name not in odds_by_market["totals"]:
+                            odds_by_market["totals"][bookie_name] = []
+                        for outcome in outcomes:
+                            odds_by_market["totals"][bookie_name].append({
+                                "name": outcome.get("name"),
+                                "point": float(outcome.get("point", 0)),
+                                "price": float(outcome.get("price", 0)),
+                            })
             
             best_odds = self._get_best_odds(odds_by_market)
             
@@ -269,6 +292,7 @@ class TheOddsAPICached:
                 "away": away_team,
                 "startTime": commence_time,
                 "odds": best_odds,
+                "bookmakers": bookmakers,
                 "source": "theodds_api",
             }
             

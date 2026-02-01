@@ -13,14 +13,14 @@ def get_env() -> dict:
     Optional:
     - ENV: environment name (default: development)
     """
-    odds_api_key = os.getenv("ODDS_API_KEY", "")
+    odds_apiio_key = os.getenv("ODDS_APIIO_KEY", "")
     env = os.getenv("ENV", "development")
 
-    # ODDS_API_KEY is optional (fallbacks to cache if not set)
-    if not odds_api_key:
-        print("WARNING: ODDS_API_KEY not configured. Using cached odds only.")
+    # ODDS_APIIO_KEY is optional (fallbacks to cache if not set)
+    if not odds_apiio_key:
+        print("WARNING: ODDS_APIIO_KEY not configured. Using cached odds only.")
 
     return {
-        "ODDS_API_KEY": odds_api_key,
+        "ODDS_APIIO_KEY": odds_apiio_key,
         "ENV": env,
     }

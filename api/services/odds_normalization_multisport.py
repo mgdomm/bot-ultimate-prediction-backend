@@ -19,7 +19,7 @@ def _as_float(x) -> Optional[float]:
         return None
 
 
-def _football_date_dict_to_payloads(sport: str, data: Dict[str, Any]) -> List[Tuple[str, int, Dict[str, Any]]]:
+def _football_date_dict_to_payloads(sport: str, data: Dict[str, Any]) -> List[Tuple[str, str, Dict[str, Any]]]:
     """
     Football en modo "date" guarda el JSON directo del endpoint:
       {"response":[{"fixture":{"id":...}, "bookmakers":[...], ...}, ...], ...}
@@ -27,7 +27,7 @@ def _football_date_dict_to_payloads(sport: str, data: Dict[str, Any]) -> List[Tu
     Para reutilizar el normalizador actual (que espera payload["response"] como lista),
     generamos 1 payload por evento: {"response":[item]} y event_id = fixture.id
     """
-    out: List[Tuple[str, int, Dict[str, Any]]] = []
+    out: List[Tuple[str, str, Dict[str, Any]]] = []
     resp = data.get("response")
     if not isinstance(resp, list):
         return out
@@ -41,17 +41,13 @@ def _football_date_dict_to_payloads(sport: str, data: Dict[str, Any]) -> List[Tu
         fid = fixture.get("id")
         if fid is None:
             continue
-        try:
-            event_id = int(fid)
-        except Exception:
-            continue
-
-        out.append((sport, event_id, {"response": [item]}))
+        # Keep provider event id as string to align with events/display indices
+        out.append((sport, str(fid), {"response": [item]}))
 
     return out
 
 
-def _iter_odds_payloads_for_sport(day: str, sport: str) -> List[Tuple[str, int, Dict[str, Any]]]:
+def _iter_odds_payloads_for_sport(day: str, sport: str) -> List[Tuple[str, str, Dict[str, Any]]]:
     """
     Devuelve lista de tuples: (sport, event_id, payload_dict)
     donde payload_dict es un dict con clave "response": [ ... items ... ]
@@ -61,7 +57,7 @@ def _iter_odds_payloads_for_sport(day: str, sport: str) -> List[Tuple[str, int, 
         return []
 
     data = json.loads(p.read_text(encoding="utf-8"))
-    out: List[Tuple[str, int, Dict[str, Any]]] = []
+    out: List[Tuple[str, str, Dict[str, Any]]] = []
 
     # ✅ football (date mode) actual: dict directo con response:[{fixture:{id},bookmakers...}, ...]
     if sport == "football" and isinstance(data, dict):
@@ -84,10 +80,7 @@ def _iter_odds_payloads_for_sport(day: str, sport: str) -> List[Tuple[str, int, 
             payload = block.get("response")
             if eid is None or not isinstance(payload, dict):
                 continue
-            try:
-                out.append((sport, int(eid), payload))
-            except Exception:
-                continue
+            out.append((sport, str(eid), payload))
         return out
 
     # multisport format: [{sport,event_id,param,results,response:<payload>}]
@@ -98,10 +91,7 @@ def _iter_odds_payloads_for_sport(day: str, sport: str) -> List[Tuple[str, int, 
         payload = block.get("response")
         if eid is None or not isinstance(payload, dict):
             continue
-        try:
-            out.append((sport, int(eid), payload))
-        except Exception:
-            continue
+        out.append((sport, str(eid), payload))
 
     return out
 
@@ -156,7 +146,7 @@ def normalize_odds_for_day(day: Optional[str] = None) -> Dict[str, Any]:
     normalized.sort(
         key=lambda r: (
             r.get("sport") or "",
-            int(r.get("eventId") or 0),
+            str(r.get("eventId") or ""),
             r.get("market") or "",
             str(r.get("selection") or ""),
             r.get("bookmaker") or "",

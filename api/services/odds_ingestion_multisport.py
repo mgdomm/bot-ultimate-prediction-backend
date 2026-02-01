@@ -17,10 +17,12 @@ from typing import Any, Dict, List, Optional
 
 try:
     from services.api_sports_client import ApiSportsClient  # type: ignore
-    from services.api_theodds_cached import TheOddsAPICached  # type: ignore
+    from services.api_oddsapiio_client import OddsAPIIOClient  # type: ignore
+    from services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 except ModuleNotFoundError:
     from api.services.api_sports_client import ApiSportsClient  # type: ignore
-    from api.services.api_theodds_cached import TheOddsAPICached  # type: ignore
+    from api.services.api_oddsapiio_client import OddsAPIIOClient  # type: ignore
+    from api.services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 
 logger = logging.getLogger(__name__)
 
@@ -28,29 +30,48 @@ logger = logging.getLogger(__name__)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
+
+def _parse_american_odds(odds_str: str) -> float:
+    """Convert American odds string (+110, -110) to decimal odds"""
+    try:
+        if isinstance(odds_str, (int, float)):
+            odds_num = float(odds_str)
+            # If it looks like decimal already (< 10), return as-is
+            if 0.5 < odds_num < 20:
+                return odds_num
+            # Otherwise treat as american odds
+            if odds_num >= 100:  # Positive american odds
+                return 1 + (odds_num / 100)
+            else:  # Negative american odds
+                return 1 + (100 / abs(odds_num))
+        
+        odds_str = str(odds_str).strip()
+        odds_num = float(odds_str.replace("+", ""))
+        
+        if odds_num >= 100:  # Positive american odds
+            return 1 + (odds_num / 100)
+        else:  # Negative american odds
+            return 1 + (100 / abs(odds_num))
+    except:
+        return 1.0  # Default fallback
+
+
 # FREE: mantener bajo para evitar rateLimit/min (se puede override con ODDS_MAX_EVENTS_PER_SPORT)
 MAX_EVENTS_PER_SPORT_DEFAULT = 8
 
-# Estrategia odds por deporte - SOLO The Odds API (9 deportes verificables)
-# NO incluimos Handball, Volleyball, MMA, F1 (cálculos internos sin confianza)
+# Estrategia odds por deporte - MIGRADO A SportsGameOdds.com (FREE tier: 8 deportes, 9 bookmakers)
+# SportsGameOdds: 2,500 objetos/mes, 10 req/min, 10 min update frequency
+# Strategy: 1 request per sport per day (8 requests/day max) → 24h freeze en contrato
 ODDS_MODE_BY_SPORT: Dict[str, Dict[str, str]] = {
-    # The Odds API FREE tier - SOLO ESTOS 9 deportes
-    "football": {"mode": "theodds_api", "odds_sport": "soccer"},
-    "soccer": {"mode": "theodds_api", "odds_sport": "soccer"},
-    "rugby": {"mode": "theodds_api", "odds_sport": "rugby"},
-    "rugby-league": {"mode": "theodds_api", "odds_sport": "rugby"},
-    "american-football": {"mode": "theodds_api", "odds_sport": "nfl"},
-    "nfl": {"mode": "theodds_api", "odds_sport": "nfl"},
-    "basketball": {"mode": "theodds_api", "odds_sport": "basketball"},
-    "hockey": {"mode": "theodds_api", "odds_sport": "hockey"},
-    "tennis": {"mode": "theodds_api", "odds_sport": "tennis"},
-    "baseball": {"mode": "theodds_api", "odds_sport": "baseball"},
-    "afl": {"mode": "theodds_api", "odds_sport": "afl"},
-    # REMOVIDOS (sin confianza):
-    # "handball": {...},
-    # "volleyball": {...},
-    # "mma": {...},
-    # "f1": {...},
+    # SportsGameOdds FREE tier (8 deportes soportados)
+    "nfl": {"mode": "sportsgameodds", "league_id": "NFL"},
+    "nba": {"mode": "sportsgameodds", "league_id": "NBA"},
+    "mlb": {"mode": "sportsgameodds", "league_id": "MLB"},
+    "nhl": {"mode": "sportsgameodds", "league_id": "NHL"},
+    "college_football": {"mode": "sportsgameodds", "league_id": "NCAAF"},
+    "college_basketball": {"mode": "sportsgameodds", "league_id": "NCAAB"},
+    "soccer_champions": {"mode": "sportsgameodds", "league_id": "UEFA_CHAMPIONS_LEAGUE"},
+    "soccer_mls": {"mode": "sportsgameodds", "league_id": "MLS"},
 }
 
 
@@ -163,13 +184,14 @@ def ingest_odds_for_day(
     max_events_per_sport: int = MAX_EVENTS_PER_SPORT_DEFAULT,
 ) -> Dict[str, Any]:
     """
-    Ingest odds for a day - HYBRID approach
+    Ingest odds for a day - MIGRATED TO SportsGameOdds.com
     
     Strategy:
-    1. The Odds API FREE (500 req/month) for 9 sports with real market odds
-    2. Internal estimation for 3 sports not supported by The Odds API
-    
-    Result: 12 sports covered, realistic odds, cost = $0
+    - SportsGameOdds FREE tier: 8 sports, 9 bookmakers, 2,500 objects/month
+    - Rate limit: 10 requests/minute, 10 minute update frequency
+    - Implementation: 1 request per sport per day = 8 requests/day max
+    - Caching: Daily cache ensures contract freeze works (24h, no re-fetch)
+    - Sports: NFL, NBA, MLB, NHL, NCAAF, NCAAB, UEFA_CHAMPIONS_LEAGUE, MLS
     """
     if day is None:
         day = date.today().isoformat()
@@ -185,21 +207,21 @@ def ingest_odds_for_day(
     summary: Dict[str, Any] = {
         "day": day,
         "force": force,
-        "strategy": "THEODDS_API_ONLY_9_SPORTS",
+        "strategy": "SPORTSGAMEODDS_8_SPORTS_24H_FREEZE",
         "sports_selected": selected,
         "max_events_per_sport": max_events_per_sport,
         "sports": [],
     }
 
-    # Initialize The Odds API client with caching (FREE tier, 500 req/month)
-    # Caching ensures we fetch all odds ONCE per day, not multiple times per hour
-    theodds_client = TheOddsAPICached()
+    # Initialize SportsGameOdds client with caching (FREE tier, 2,500 objects/month, 10 req/min)
+    # Caching ensures we fetch all odds ONCE per day (1 request per sport = 8 requests/day max)
+    odds_client = SportsGameOddsClient()
     
     # Fetch all odds for the day (uses cache if fresh)
-    logger.info(f"Fetching odds for {day} (uses caching to reduce API quota)")
-    all_odds = theodds_client.fetch_all_odds(day, force_refresh=force)
+    logger.info(f"Fetching odds for {day} (uses caching, 8 requests/day max for SportsGameOdds)")
+    all_odds = odds_client.fetch_all_odds(day, force_refresh=force)
     
-    theodds_sports_used = []
+    odds_sports_used = []
 
     for sport in selected:
         conf = ODDS_MODE_BY_SPORT[sport]
@@ -210,82 +232,133 @@ def ingest_odds_for_day(
             continue
 
         try:
-            mode = conf.get("mode", "theodds_api")
+            mode = conf.get("mode", "sportsgameodds")
             
-            # Use The Odds API for real betting odds (9 verified sports ONLY)
-            if mode == "theodds_api":
-                odds_sport = conf.get("odds_sport", sport)
+            # Use SportsGameOdds for real betting odds (8 leagues with 9 bookmakers each)
+            if mode == "sportsgameodds":
+                league_id = conf.get("league_id", sport)
                 
-                # Get from cached result
-                events = all_odds.get(odds_sport, [])
+                # Get raw events from SportsGameOdds cache
+                raw_events = all_odds.get(sport, [])
                 
-                # Convert The Odds API format to multisport format expected by normalizer
-                # Transform:  {eventId, sport, home, away, odds:{home, away}, ...}
-                # Into:       {sport, event_id, response: [{bookmakers: [{name, bets: [{name, values: [{value, odd}]}]}]}]}
+                # Transform SportsGameOdds RAW format to normalized format expected by system
+                # Input: SportsGameOdds RAW with odds dict and players dict
+                # Output: {sport, event_id, response: {response: [{bookmakers: [{name, bets: [{name, values}]}]}]}}
                 formatted_events = []
-                for idx, event in enumerate(events):
-                    # Use index as event_id for this batch (numeric ID required by normalizer)
-                    event_id = idx + 1
-                    event_string_id = event.get("eventId", f"event_{idx}")
-                    
-                    # Extract odds from The Odds API format
-                    odds_dict = event.get("odds", {})
-                    bookmakers_data = []
-                    
-                    # Transform odds into bookmakers format
-                    for bookmaker_name in ["draftkings", "fanduel", "betmgm", "betrivers"]:
-                        bets_data = []
+                
+                for idx, raw_event in enumerate(raw_events):
+                    try:
+                        event_id = idx + 1
+                        teams = raw_event.get("teams", {})
+                        home_team = teams.get("home", {}).get("names", {}).get("short", "HOME")
+                        away_team = teams.get("away", {}).get("names", {}).get("short", "AWAY")
                         
-                        # h2h (home/away) odds
-                        if "home" in odds_dict and "away" in odds_dict:
-                            values = []
-                            if odds_dict["home"]:
-                                values.append({
-                                    "value": event.get("home", "Home"),
-                                    "odd": float(odds_dict["home"]),
-                                })
-                            if odds_dict["away"]:
-                                values.append({
-                                    "value": event.get("away", "Away"),
-                                    "odd": float(odds_dict["away"]),
-                                })
-                            if values:
-                                bets_data.append({
-                                    "name": "h2h",
-                                    "values": values,
+                        # Extract odds from SportsGameOdds format
+                        odds_dict = raw_event.get("odds", {})
+                        bookmakers_data = []
+                        
+                        # Collect odds by bookmaker
+                        bookmaker_bets = {}
+                        
+                        for odd_id, odd_info in odds_dict.items():
+                            # Skip if no odds available
+                            if not odd_info.get("bookOddsAvailable") and not odd_info.get("fairOddsAvailable"):
+                                continue
+                            
+                            # Extract market type from oddID
+                            # Format examples: "points-home-reg-ml-home", "points-away-1h-ou-over"
+                            parts = odd_id.split("-")
+                            if len(parts) < 5:
+                                continue
+                            
+                            market_period = parts[2]  # "reg", "1h", "game", etc
+                            bet_type = parts[3]        # "ml" (moneyline), "sp" (spread), "ou" (over/under)
+                            side = parts[4]            # "home", "away", "over", "under"
+                            
+                            # Focus on main market moneylines (h2h)
+                            if bet_type not in ["ml", "sp", "ou"]:
+                                continue
+                            
+                            # Extract odds by bookmaker
+                            by_bookmaker = odd_info.get("byBookmaker", {})
+                            
+                            for bm_name, bm_data in by_bookmaker.items():
+                                odds_value = bm_data.get("odds")
+                                if not odds_value:
+                                    continue
+                                
+                                if bm_name not in bookmaker_bets:
+                                    bookmaker_bets[bm_name] = {}
+                                
+                                # Group by market type (h2h, spreads, totals)
+                                market_key = bet_type
+                                if market_key not in bookmaker_bets[bm_name]:
+                                    bookmaker_bets[bm_name][market_key] = []
+                                
+                                # Create bet value
+                                value_entry = {
+                                    "value": side,
+                                    "odd": _parse_american_odds(odds_value),
+                                }
+                                
+                                # Add point if applicable (for spreads and totals)
+                                point = odd_info.get("bookSpread") or odd_info.get("fairSpread")
+                                if point:
+                                    value_entry["point"] = float(point)
+                                
+                                bookmaker_bets[bm_name][market_key].append(value_entry)
+                        
+                        # Format bookmakers for output
+                        for bm_name, markets in bookmaker_bets.items():
+                            bets_list = []
+                            for market_type, values in markets.items():
+                                if values:
+                                    bets_list.append({
+                                        "name": market_type,
+                                        "values": values,
+                                    })
+                            
+                            if bets_list:
+                                bookmakers_data.append({
+                                    "name": bm_name,
+                                    "bets": bets_list,
                                 })
                         
-                        if bets_data:
-                            bookmakers_data.append({
-                                "name": bookmaker_name,
-                                "bets": bets_data,
+                        # Create normalized event structure
+                        if bookmakers_data:
+                            formatted_events.append({
+                                "sport": sport,
+                                "event_id": event_id,
+                                "response": {
+                                    "response": [
+                                        {
+                                            "bookmakers": bookmakers_data,
+                                        }
+                                    ]
+                                }
                             })
                     
-                    formatted_events.append({
-                        "sport": sport,
-                        "event_id": event_id,
-                        "response": {
-                            "response": [
-                                {
-                                    "bookmakers": bookmakers_data,
-                                }
-                            ]
-                        }
-                    })
+                    except Exception as e:
+                        logger.debug(f"Error processing event in {sport}: {e}")
+                        continue
                 
-                out_file.write_text(json.dumps(formatted_events, ensure_ascii=False, indent=2), encoding="utf-8")
-                summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, len(events)).__dict__)
-                theodds_sports_used.append(sport)
+                if formatted_events:
+                    out_file.write_text(json.dumps(formatted_events, ensure_ascii=False, indent=2), encoding="utf-8")
+                    summary["sports"].append(OddsIngestSummary(sport, "created", str(out_file), 1, len(formatted_events)).__dict__)
+                    odds_sports_used.append(sport)
+                else:
+                    summary["sports"].append(OddsIngestSummary(sport, "no_odds", str(out_file), 0, 0).__dict__)
                 continue
+
 
         except Exception as e:
             logger.error(f"Error processing {sport}: {e}")
             summary["sports"].append(OddsIngestSummary(sport, "error", str(out_file), 0, 0).__dict__)
 
     # Log summary
-    summary["theodds_api_sports_used"] = theodds_sports_used
-    summary["sports_count"] = len(theodds_sports_used)
-    summary["note"] = "Odds fetched once per day and cached to conserve The Odds API quota"
+    summary["sportsgameodds_sports_used"] = odds_sports_used
+    summary["sports_count"] = len(odds_sports_used)
+    summary["note"] = "Odds fetched once per day and cached (8 requests/day max for SportsGameOdds FREE tier)"
 
     return summary
 
@@ -293,6 +366,7 @@ def ingest_odds_for_day(
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Ingest odds multisport into api/data/odds/<day>/<sport>.json")
     p.add_argument("day", nargs="?", default=None, help="YYYY-MM-DD (default: today)")
+    p.add_argument("--day", dest="day_opt", default=None, help="YYYY-MM-DD (alias; optional named)")
     p.add_argument("--force", action="store_true", help="Regenerate even if output files already exist")
     p.add_argument(
         "--sports",
@@ -310,9 +384,10 @@ def _parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     args = _parse_args()
+    day = args.day_opt or args.day
     sports = [s.strip() for s in args.sports.split(',') if s.strip()] if args.sports else None
     summary = ingest_odds_for_day(
-        day=args.day,
+        day=day,
         force=bool(args.force),
         sports=sports,
         max_events_per_sport=int(args.max_events),

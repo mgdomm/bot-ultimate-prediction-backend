@@ -16,7 +16,6 @@ import subprocess
 from pathlib import Path
 from typing import Any, Dict
 from datetime import datetime
-import pytz
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -108,6 +107,23 @@ def _contract_has_any_picks(day: str) -> bool:
     pv = c.get("picks_value") or []
     return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
 
+def _contract_is_frozen(day: str) -> bool:
+    """Check if contract is still frozen (freeze_until is in the future)"""
+    from datetime import datetime
+    c = _load_contract(day)
+    if not isinstance(c, dict):
+        return False
+    
+    freeze_until_str = c.get("freeze_until")
+    if not freeze_until_str:
+        return False
+    
+    try:
+        freeze_until = datetime.fromisoformat(freeze_until_str)
+        return datetime.utcnow() < freeze_until
+    except Exception:
+        return False
+
 def _run_daily_pipeline(day: str) -> None:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(REPO_ROOT)
@@ -133,8 +149,14 @@ def init_scheduler(app=None):
 
     def is_6am_window() -> bool:
         """Check si estamos en la ventana de 6am (6:00-6:10)"""
-        tz = pytz.timezone('Europe/Madrid')
-        now = datetime.now(tz)
+        try:
+            import pytz
+            tz = pytz.timezone('Europe/Madrid')
+            now = datetime.now(tz)
+        except ImportError:
+            # Fallback sin pytz - usa UTC
+            now = datetime.utcnow()
+        
         hour = now.hour
         minute = now.minute
         # Ejecuta entre 6:00 y 6:10
@@ -162,10 +184,26 @@ def init_scheduler(app=None):
                 continue
 
             try:
-                # FASE 1: Pipeline UNA SOLA VEZ a las 6am
+                # FASE 1: Pipeline UNA SOLA VEZ a las 6am (si no está congelado)
                 if is_6am_window() and last_pipeline_day != day:
-                    if _contract_has_any_picks(day):
-                        logger.info("Scheduler [6am check]: contract already non-empty for %s; skip", day)
+                    if _contract_has_any_picks(day) and _contract_is_frozen(day):
+                        logger.info("Scheduler [6am check]: contract frozen for %s (freeze_until in future); skip pipeline", day)
+                    elif _contract_has_any_picks(day):
+                        logger.info("Scheduler [6am check]: contract exists but NOT frozen for %s; re-run pipeline", day)
+                        if os.path.exists(lock_file):
+                            logger.info("Scheduler [6am check]: lock exists for %s; skip", day)
+                        else:
+                            try:
+                                with open(lock_file, "w", encoding="utf-8") as f:
+                                    f.write("locked")
+                                logger.info("=== PIPELINE %s START (6am phase - re-run) ===", day)
+                                _run_daily_pipeline(day)
+                                logger.info("=== PIPELINE %s DONE (6am phase - re-run) ===", day)
+                                last_pipeline_day = day
+                                _clear_backoff(day)
+                            finally:
+                                if os.path.exists(lock_file):
+                                    os.unlink(lock_file)
                     else:
                         if os.path.exists(lock_file):
                             logger.info("Scheduler [6am check]: lock exists for %s; skip", day)

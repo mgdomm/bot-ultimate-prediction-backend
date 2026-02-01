@@ -16,11 +16,11 @@ SHRINK_W = 0.35  # peso del modelo; (1-w) = peso del mercado
 
 # Rangos “seguros” para principiantes
 ODDS_MIN = 1.20
-ODDS_MAX = 2.00
+ODDS_MAX = 2.30
 
 # Umbral principal (con fallback si un día viene flojo)
 P_SAFE_MIN_PRIMARY = 0.70
-P_SAFE_MIN_FALLBACK = 0.64
+P_SAFE_MIN_FALLBACK = 0.60
 
 # Mercados que consideramos “modernos y razonables”
 STANDARD_MARKETS = {
@@ -28,6 +28,7 @@ STANDARD_MARKETS = {
     "goals over/under",  # alias común en API-SPORTS (equivalente a over/under)
     "over/under 1st half",
     "over/under (reg time)",
+    "h2h",  # alias frecuente de moneyline
     "asian handicap",
     "asian handicap first half",
     "asian handicap (reg time)",
@@ -59,7 +60,9 @@ _GUARD = (PARLAY_GUARDRAILS or {}).get("principal_2_legs", {}) if isinstance(PAR
 _DEFAULT_CLASSIC_PROB_FLOOR = float(_GUARD.get("min_combined_probability_floor", 0.40))
 
 # Default relajado para Classic (evita 0 picks si el modelo no supera +margin)
-_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "0.0"))
+# Permitimos buffer negativo ligero para no quedarnos en 0 picks si el modelo
+# está apenas por debajo de la prob implícita; -0.10 (~10pp) fue necesario hoy.
+_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "-0.10"))
 
 # Allow override via env vars (strings)
 CLASSIC_PROB_FLOOR = float(os.environ.get("CLASSIC_PROB_FLOOR", str(_DEFAULT_CLASSIC_PROB_FLOOR)))
@@ -140,10 +143,7 @@ def market_cap(mkt: str) -> int:
 
 
 def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
-    mkt = _market(sel)
-    if mkt not in STANDARD_MARKETS:
-        return False
-
+    # Aceptamos cualquier mercado; limitamos volumen por score y top N.
     odds = _f(sel.get("odds"))
     if odds != odds:
         return False
@@ -171,12 +171,17 @@ def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
     return True
 
 
-def event_key(sel: Dict[str, Any]) -> Tuple[str, str]:
+def is_candidate_relaxed(sel: Dict[str, Any]) -> bool:
+    """Fallback más permisivo si el día viene sin picks."""
     return (_s(sel.get("sport")), _s(sel.get("eventId")))
 
 
 def pick_key(sel: Dict[str, Any]) -> Tuple[str, str, str, str]:
     return (_s(sel.get("sport")), _s(sel.get("eventId")), _s(sel.get("market")), _s(sel.get("selection")))
+
+
+def event_key(sel: Dict[str, Any]) -> Tuple[str, str]:
+    return (_s(sel.get("sport")), _s(sel.get("eventId")))
 
 
 def score(sel: Dict[str, Any]) -> Tuple[float, float, float]:
@@ -233,10 +238,6 @@ def debug_filter_reasons(all_sel: List[Dict[str, Any]]) -> Dict[str, Any]:
 
         mkt = _market(sel)
         markets[mkt] += 1
-
-        if mkt not in STANDARD_MARKETS:
-            reasons["market_not_standard"] += 1
-            continue
 
         odds = _f(sel.get("odds"))
         if odds != odds:
@@ -311,41 +312,11 @@ def build_picks(day: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
         cand_fb = dedupe_exact(cand_fb)
         cand = cand_fb
 
-    # 3) 1 pick por evento
-    per_event = best_per_event(cand)
+    # 3) Orden por seguridad
+    cand.sort(key=score, reverse=True)
 
-    # 4) Orden por seguridad
-    per_event.sort(key=score, reverse=True)
-
-    # 5) Selección con caps por mercado
-    picked: List[Dict[str, Any]] = []
-    used_events: set[Tuple[str, str]] = set()
-    market_counts: Counter[str] = Counter()
-
-    for sel in per_event:
-        if len(picked) >= MAX_PICKS:
-            break
-        ek = event_key(sel)
-        if ek in used_events:
-            continue
-        mkt = _market(sel)
-        if market_counts[mkt] >= market_cap(mkt):
-            continue
-
-        picked.append(sel)
-        used_events.add(ek)
-        market_counts[mkt] += 1
-
-    # 6) Relleno ignorando caps (si hace falta)
-    if len(picked) < MAX_PICKS:
-        for sel in per_event:
-            if len(picked) >= MAX_PICKS:
-                break
-            ek = event_key(sel)
-            if ek in used_events:
-                continue
-            picked.append(sel)
-            used_events.add(ek)
+    # 4) Top N directo (permitimos múltiples mercados por evento)
+    picked: List[Dict[str, Any]] = cand[:MAX_PICKS]
 
     # 7) Formato “pick”
     out: List[Dict[str, Any]] = []

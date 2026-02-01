@@ -1,0 +1,23 @@
+{
+  "day": "2026-01-29",
+  "fetched_at": "2026-01-29T22:31:29.653242",
+  "sports": {},
+  "errors": [
+    "soccer: 404 Not Found",
+    "football: 404 Not Found",
+    "soccer_la_liga: 404 Not Found",
+    "soccer_serie_a: 404 Not Found",
+    "soccer_ligue_1: 404 Not Found",
+    "soccer_bundesliga: 404 Not Found",
+    "nfl: 404 Not Found",
+    "american-football: 404 Not Found",
+    "basketball: 404 Not Found",
+    "nba: 404 Not Found",
+    "hockey: 404 Not Found",
+    "baseball: 404 Not Found",
+    "tennis: 404 Not Found",
+    "rugby: 404 Not Found",
+    "rugby-league: 404 Not Found",
+    "afl: 404 Not Found"
+  ]
+}
