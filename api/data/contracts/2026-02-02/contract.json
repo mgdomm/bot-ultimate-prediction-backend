@@ -1,0 +1,442 @@
+{
+  "contract_version": "1.0",
+  "contract_date": "2026-02-02",
+  "generated_at": "2026-02-02T20:45:14.881332",
+  "picks_classic": [
+    {
+      "sport": "nba",
+      "eventId": "BNiuL1HzJbAcZsuQpa83",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nba",
+        "eventId": "BNiuL1HzJbAcZsuQpa83",
+        "league": "NBA",
+        "leagueLogo": null,
+        "startTime": "2026-02-02T20:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Hornets",
+          "logo": null
+        },
+        "away": {
+          "name": "Pelicans",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nba",
+      "eventId": "BNiuL1HzJbAcZsuQpa83",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nba",
+        "eventId": "BNiuL1HzJbAcZsuQpa83",
+        "league": "NBA",
+        "leagueLogo": null,
+        "startTime": "2026-02-02T20:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Hornets",
+          "logo": null
+        },
+        "away": {
+          "name": "Pelicans",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "4wpcgLkVZ41NZj1b6uUI",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "4wpcgLkVZ41NZj1b6uUI",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Capitals",
+          "logo": null
+        },
+        "away": {
+          "name": "Islanders",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "KdfweduYm4TjpVc5mUak",
+      "bookmaker": "draftkings",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "KdfweduYm4TjpVc5mUak",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Panthers",
+          "logo": null
+        },
+        "away": {
+          "name": "Sabres",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "KuhqOhjwrJplF0RaA7C3",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "KuhqOhjwrJplF0RaA7C3",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T01:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Predators",
+          "logo": null
+        },
+        "away": {
+          "name": "Blues",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "QJ9HHacTCwLCRJLbZMNw",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "QJ9HHacTCwLCRJLbZMNw",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Penguins",
+          "logo": null
+        },
+        "away": {
+          "name": "Senators",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "VrAOI3vG6vTzQhvEA29E",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "VrAOI3vG6vTzQhvEA29E",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T01:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Blackhawks",
+          "logo": null
+        },
+        "away": {
+          "name": "Sharks",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "gZurloIY5D6swxAUVEpF",
+      "bookmaker": "draftkings",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "gZurloIY5D6swxAUVEpF",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T01:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Stars",
+          "logo": null
+        },
+        "away": {
+          "name": "Jets",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "j7NfXc1iamAzKpfXmm1h",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "j7NfXc1iamAzKpfXmm1h",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T00:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Wild",
+          "logo": null
+        },
+        "away": {
+          "name": "Canadiens",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "mnDnPOxXElZWlX8U96HR",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "mnDnPOxXElZWlX8U96HR",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-03T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Flames",
+          "logo": null
+        },
+        "away": {
+          "name": "Maple Leafs",
+          "logo": null
+        }
+      }
+    }
+  ],
+  "picks_parlay_premium": [],
+  "daily_featured_parlay": null,
+  "metadata": {},
+  "picks_value": [],
+  "freeze_until": "2026-02-03T20:45:14.881332"
+}
