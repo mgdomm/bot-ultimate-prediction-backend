@@ -2,15 +2,16 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 
 try:
-    from services.api_theodds_client import TheOddsAPIClient
+    from services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 except ImportError:
-    from api.services.api_theodds_client import TheOddsAPIClient
+    from api.services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 
 logger = logging.getLogger(__name__)
 
@@ -18,15 +19,13 @@ logger = logging.getLogger(__name__)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
-# Sports que traemos eventos (usando The Odds API FREE - 9 sports verified)
-# MUST match ODDS_MODE_BY_SPORT in odds_ingestion_multisport.py
-SUPPORTED_SPORTS = [
-    "soccer",
-    "basketball",
-    "nfl",
-    "hockey",
-    "afl",
-]
+def _env_sports() -> List[str]:
+    """Return sports list from env (comma separated) defaulting to nba only."""
+    raw = os.environ.get("SGO_EVENTS_SPORTS") or os.environ.get("EVENTS_SPORTS")
+    if raw:
+        return [s.strip().lower() for s in raw.split(",") if s.strip()]
+    # Default: start with NBA only to protect quota; can be expanded later via env.
+    return ["nba"]
 
 
 @dataclass(frozen=True)
@@ -38,11 +37,19 @@ class IngestResult:
     results: Optional[int] = None
 
 
+def _choose_team_name(team: Dict[str, Any]) -> str:
+    names = team.get("names") if isinstance(team.get("names"), dict) else {}
+    for key in ("medium", "long", "short"):
+        val = names.get(key)
+        if val:
+            return str(val)
+    # Fallback to bare teamID
+    tid = team.get("teamID")
+    return str(tid) if tid is not None else ""
+
+
 def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dict[str, Any]:
-    """
-    Ingest events for a day using The Odds API (primary source for betting odds).
-    ESPN is used ONLY for live score updates (in display enrichment).
-    """
+    """Ingest events for a day using SportsGameOdds (single source for picks)."""
     if day is None:
         day = date.today().isoformat()
 
@@ -51,57 +58,92 @@ def ingest_events_for_day(day: Optional[str] = None, force: bool = False) -> Dic
 
     summary: Dict[str, Any] = {"day": day, "sports": []}
     
-    theodds = TheOddsAPIClient()
+    sports = _env_sports()
 
-    for sport in SUPPORTED_SPORTS:
+    client = SportsGameOddsClient()
+    all_events = client.fetch_all_odds(day, force_refresh=force)  # cached; 1 req per sport max
+
+    for sport in sports:
         out_file = base_path / f"{sport}.json"
-        
+
         if out_file.exists() and not force:
             summary["sports"].append(IngestResult(sport, day, "skipped", str(out_file), None).__dict__)
             continue
 
         try:
-            # PRIMARY SOURCE: Get events from The Odds API with real betting odds
-            logger.info(f"Fetching events for {sport} from The Odds API...")
-            odds_events = theodds.get_events_with_odds(sport, day)
-            odds_list = odds_events.get("events", [])
-            
-            if odds_list:
-                # Use The Odds API as primary source
-                payload = {
-                    "results": len(odds_list),
-                    "response": odds_list,
-                    "source": "theodds_api_primary",
-                    "status": "success"
-                }
-                results = len(odds_list)
-                logger.info(f"✓ The Odds API: {results} events for {sport}")
-            else:
-                # No events found - this is normal for some sports/dates
-                logger.info(f"ℹ No events found for {sport} on {day}")
-                payload = {
-                    "results": 0,
-                    "response": [],
-                    "source": "theodds_api_primary",
-                    "status": "no_events"
-                }
-                results = 0
-            
+            raw_events = all_events.get(sport, []) if isinstance(all_events, dict) else []
+            cleaned = []
+
+            for ev in raw_events if isinstance(raw_events, list) else []:
+                if not isinstance(ev, dict):
+                    continue
+
+                status = ev.get("status") if isinstance(ev.get("status"), dict) else {}
+                teams = ev.get("teams") if isinstance(ev.get("teams"), dict) else {}
+                home = teams.get("home") if isinstance(teams.get("home"), dict) else {}
+                away = teams.get("away") if isinstance(teams.get("away"), dict) else {}
+
+                event_id = ev.get("eventID") or ev.get("eventId") or ev.get("id")
+                if not event_id:
+                    continue
+
+                # Skip finished/cancelled
+                if status.get("cancelled") or status.get("ended") or status.get("completed"):
+                    continue
+
+                start_time = status.get("startsAt") or ev.get("startTime")
+                if not start_time:
+                    continue
+
+                cleaned.append({
+                    "eventId": str(event_id),
+                    "sport": sport,
+                    "league": ev.get("leagueID") or ev.get("sportID") or ev.get("league"),
+                    "startTime": start_time,
+                    "status": {
+                        "started": status.get("started"),
+                        "completed": status.get("completed"),
+                        "ended": status.get("ended"),
+                        "cancelled": status.get("cancelled"),
+                        "live": status.get("live"),
+                        "delayed": status.get("delayed"),
+                        "oddsPresent": status.get("oddsPresent"),
+                        "oddsAvailable": status.get("oddsAvailable"),
+                    },
+                    "home": {
+                        "id": home.get("teamID"),
+                        "name": _choose_team_name(home),
+                        "colors": home.get("colors") if isinstance(home.get("colors"), dict) else None,
+                    },
+                    "away": {
+                        "id": away.get("teamID"),
+                        "name": _choose_team_name(away),
+                        "colors": away.get("colors") if isinstance(away.get("colors"), dict) else None,
+                    },
+                })
+
+            payload = {
+                "results": len(cleaned),
+                "response": cleaned,
+                "source": "sportsgameodds",
+                "status": "success" if cleaned else "no_events",
+            }
+
             out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-            
+
             summary["sports"].append(
                 IngestResult(
                     sport=sport,
                     day=day,
                     status="created",
                     file=str(out_file),
-                    results=results,
+                    results=len(cleaned),
                 ).__dict__
             )
         except Exception as err:
             logger.error(f"Error ingesting {sport}: {err}")
             msg = str(err)
-            payload = {"results": 0, "response": [], "errors": {"message": msg}, "source": "theodds_api_primary"}
+            payload = {"results": 0, "response": [], "errors": {"message": msg}, "source": "sportsgameodds"}
             try:
                 out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
             except Exception:

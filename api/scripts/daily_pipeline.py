@@ -13,6 +13,18 @@ except ImportError:
 from api.utils.cycle_day import cycle_day_str
 from api.utils.paths import data_path, ensure_dir
 
+
+def _env_sports(defaults):
+    raw = (
+        os.environ.get("ODDS_SPORTS")
+        or os.environ.get("SGO_EVENTS_SPORTS")
+        or os.environ.get("EVENTS_SPORTS")
+    )
+    if not raw:
+        return defaults
+    out = [s.strip().lower() for s in raw.split(",") if s.strip()]
+    return out or defaults
+
 REPO = Path(__file__).resolve().parents[2]
 
 def ts():
@@ -121,8 +133,12 @@ def main():
     # 1) odds ingestion (solo deportes vacíos; evita gastar API de más)
     from api.services.odds_ingestion_multisport import ODDS_MODE_BY_SPORT  # import local (sin requests)
 
+    allowed_sports = _env_sports(sorted(ODDS_MODE_BY_SPORT.keys()))
+
     need_sports: List[str] = []
-    for sport in sorted(ODDS_MODE_BY_SPORT.keys()):
+    for sport in allowed_sports:
+        if sport not in ODDS_MODE_BY_SPORT:
+            continue
         p = odds_dir / f"{sport}.json"
         if force or (not odds_file_has_data(p)):
             need_sports.append(sport)

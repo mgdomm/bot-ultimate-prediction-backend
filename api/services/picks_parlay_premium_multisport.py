@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import date
 from itertools import combinations
 from pathlib import Path
@@ -10,6 +11,16 @@ from typing import Any, Dict, List, Optional, Tuple
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+# Agregar el repo root al path para que los imports funcionen
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+# Imports de otros servicios (try/except pattern similar a main.py)
+try:
+    from api.services.display_enrichment import build_display_index
+except ModuleNotFoundError:
+    from services.display_enrichment import build_display_index  # type: ignore
 
 SIMPLE_MARKETS = {"over/under", "moneyline", "handicap", "h2h"}
 
@@ -306,11 +317,6 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
     try:
         from zoneinfo import ZoneInfo
         from datetime import datetime, timedelta
-
-        try:
-            from api.services.display_enrichment import build_display_index
-        except ModuleNotFoundError:
-            from services.display_enrichment import build_display_index  # type: ignore
 
         tz = ZoneInfo("Europe/Madrid")
         y, m, d = [int(x) for x in str(day).split("-")]

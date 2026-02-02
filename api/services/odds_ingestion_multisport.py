@@ -10,6 +10,7 @@ except ImportError:
 import argparse
 import json
 import logging
+import os
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
@@ -73,6 +74,19 @@ ODDS_MODE_BY_SPORT: Dict[str, Dict[str, str]] = {
     "soccer_champions": {"mode": "sportsgameodds", "league_id": "UEFA_CHAMPIONS_LEAGUE"},
     "soccer_mls": {"mode": "sportsgameodds", "league_id": "MLS"},
 }
+
+
+def _env_sports(default: List[str]) -> List[str]:
+    """Read sport list from env (comma separated), fallback to provided default."""
+    raw = (
+        os.environ.get("ODDS_SPORTS")
+        or os.environ.get("SGO_EVENTS_SPORTS")
+        or os.environ.get("EVENTS_SPORTS")
+    )
+    if not raw:
+        return default
+    out = [s.strip().lower() for s in raw.split(",") if s.strip()]
+    return out or default
 
 
 @dataclass(frozen=True)
@@ -199,7 +213,9 @@ def ingest_odds_for_day(
     out_dir = API_DATA_DIR / "odds" / day
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    selected = sorted(ODDS_MODE_BY_SPORT.keys()) if not sports else sports
+    default_sports = sorted(ODDS_MODE_BY_SPORT.keys())
+    selected = sports or _env_sports(default_sports)
+    # validate
     unknown = [s for s in selected if s not in ODDS_MODE_BY_SPORT]
     if unknown:
         raise SystemExit(f"Unknown sports: {unknown}. Allowed: {sorted(ODDS_MODE_BY_SPORT.keys())}")
@@ -246,9 +262,17 @@ def ingest_odds_for_day(
                 # Output: {sport, event_id, response: {response: [{bookmakers: [{name, bets: [{name, values}]}]}]}}
                 formatted_events = []
                 
-                for idx, raw_event in enumerate(raw_events):
+                for raw_event in raw_events:
                     try:
-                        event_id = idx + 1
+                        event_id = (
+                            raw_event.get("eventID")
+                            or raw_event.get("eventId")
+                            or raw_event.get("id")
+                            or raw_event.get("event_id")
+                        )
+                        if not event_id:
+                            continue
+                        event_id = str(event_id)
                         teams = raw_event.get("teams", {})
                         home_team = teams.get("home", {}).get("names", {}).get("short", "HOME")
                         away_team = teams.get("away", {}).get("names", {}).get("short", "AWAY")

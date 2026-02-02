@@ -355,12 +355,78 @@ def _build_nfl_index(day: str) -> Dict[str, Dict[str, Any]]:
     return idx
 
 
+def _build_sgo_index_for_file(path: Path, sport: str) -> Dict[str, Dict[str, Any]]:
+    data = _safe_read_json(path)
+    if not data:
+        return {}
+
+    response = data.get("response") if isinstance(data, dict) else None
+    if response is None and isinstance(data, list):
+        response = data
+    if not isinstance(response, list):
+        return {}
+
+    def _team_name(team: Dict[str, Any]) -> Optional[str]:
+        if not isinstance(team, dict):
+            return None
+        if team.get("name"):
+            return str(team.get("name"))
+        names = team.get("names") if isinstance(team.get("names"), dict) else {}
+        for key in ("medium", "long", "short", "name"):
+            val = names.get(key)
+            if val:
+                return str(val)
+        return None
+
+    idx: Dict[str, Dict[str, Any]] = {}
+    for item in response:
+        if not isinstance(item, dict):
+            continue
+
+        event_id = item.get("eventId") or item.get("eventID") or item.get("id")
+        if not event_id:
+            continue
+
+        status = item.get("status") if isinstance(item.get("status"), dict) else {}
+        start_time = item.get("startTime") or status.get("startsAt")
+        if not start_time:
+            continue
+
+        home = item.get("home") or {}
+        away = item.get("away") or {}
+        if not isinstance(home, dict):
+            home = {"name": home}
+        if not isinstance(away, dict):
+            away = {"name": away}
+
+        idx[str(event_id)] = {
+            "sport": sport,
+            "eventId": str(event_id),
+            "league": item.get("league"),
+            "startTime": start_time,
+            "live": status,
+            "home": {"name": _team_name(home), "logo": None},
+            "away": {"name": _team_name(away), "logo": None},
+        }
+
+    return idx
+
+
 def build_display_index(day: str) -> Dict[Tuple[str, str], Dict[str, Any]]:
     """
     Índice genérico multi-deporte:
       (sport, eventId) -> display_payload
     """
     out: Dict[Tuple[str, str], Dict[str, Any]] = {}
+
+    # SportsGameOdds snapshots (primary source for picks + window filter)
+    events_dir = _events_dir(day)
+    if events_dir.exists():
+        for path in sorted(events_dir.glob("*.json")):
+            sport = path.stem
+            idx = _build_sgo_index_for_file(path, sport)
+            for event_id, disp in idx.items():
+                out[(sport, str(event_id))] = disp
 
     football = _build_football_index(day)
     for event_id, disp in football.items():
@@ -375,11 +441,12 @@ def build_display_index(day: str) -> Dict[Tuple[str, str], Dict[str, Any]]:
         for event_id, disp in idx.items():
             out[(sport, str(event_id))] = disp
 
-    # The Odds API cached events (no logos, but needed for picks window + display)
+    # Legacy odds-based events (kept for compatibility if present)
     for sport in ["soccer", "football", "rugby", "rugby-league", "american-football", "nfl", "basketball", "hockey", "tennis", "baseball", "afl"]:
         idx = _build_odds_events_index(day, sport)
         for event_id, disp in idx.items():
-            out[(sport, str(event_id))] = disp
+            if (sport, str(event_id)) not in out:
+                out[(sport, str(event_id))] = disp
 
     return out
 
