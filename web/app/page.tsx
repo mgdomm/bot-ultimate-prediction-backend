@@ -214,11 +214,36 @@ function selectionEs(sel?: string) {
   return sel.replace(/\bUnder\b/gi, "Menos de").replace(/\bOver\b/gi, "Más de");
 }
 
+function parseLine(sel?: string, fallback?: any) {
+  const m = String(sel || "").match(/\b(?:over|under)\s*([0-9]+(?:\.[0-9]+)?)/i);
+  if (m) {
+    const v = Number(m[1]);
+    if (Number.isFinite(v)) return v;
+  }
+  const f = Number(fallback);
+  return Number.isFinite(f) ? f : NaN;
+}
+
+function selectionPretty(p: Pick) {
+  const sel = String(p.selection || "");
+  const mkt = String(p.market || "").toLowerCase();
+  const line = parseLine(sel, (p as any)?.line);
+
+  // Over/Under style markets: mostramos la línea si existe
+  if (mkt === "ou" || mkt === "o/u" || mkt === "over/under" || mkt === "goals over/under") {
+    const dir = /under/i.test(sel) ? "Menos de" : /over/i.test(sel) ? "Más de" : selectionEs(sel);
+    const lineText = Number.isFinite(line) ? line.toString() : "—";
+    return `${dir} ${lineText}`.trim();
+  }
+
+  return selectionEs(sel);
+}
+
 function mercadoBonito(market?: string) {
   const v = (market || "").toLowerCase();
-  if (v === "over/under") return "Total (Más/Menos)";
-  if (v === "moneyline") return "Ganador";
-  if (v === "handicap") return "Hándicap";
+  if (v === "ml" || v === "moneyline") return "Ganador (Moneyline)";
+  if (v === "ou" || v === "o/u" || v === "over/under" || v === "goals over/under") return "Total (Más/Menos)";
+  if (v === "spread" || v === "handicap") return "Hándicap";
   if (v === "home/away") return "Local/Visitante";
   if (v === "3way result") return "1X2 (3 opciones)";
   if (v.includes("asian handicap")) return "Hándicap asiático";
@@ -725,7 +750,7 @@ export default function Page() {
 
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
                           <div className="mono">Selecciona</div>
-                          <div className="text-sm text-slate-100">{selectionEs(p.selection)}</div>
+                          <div className="text-sm text-slate-100">{selectionPretty(p)}</div>
                         </div>
 
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3">
@@ -824,7 +849,7 @@ export default function Page() {
 
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3 col-span-2">
                               <div className="mono">Selecciona</div>
-                              <div className="text-sm text-slate-100">{selectionEs(p.selection)}</div>
+                              <div className="text-sm text-slate-100">{selectionPretty(p)}</div>
                             </div>
 
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-3">
