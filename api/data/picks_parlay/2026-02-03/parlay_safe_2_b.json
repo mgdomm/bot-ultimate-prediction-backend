@@ -1,0 +1,46 @@
+{
+  "type": "PARLAY_PREMIUM",
+  "kind": "SAFE_2",
+  "label": "Seguro (fallback Classic)",
+  "legs": [
+    {
+      "sport": "nba",
+      "eventId": "YK504R4b7LBAJmfJMC4B",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nba",
+      "eventId": "hTEKm8e2TC08M75hsnDV",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    }
+  ],
+  "combined_odds": 1.44,
+  "prob_parlay": 0.5675,
+  "note": "Fallback: usando picks Classic publicados"
+}
