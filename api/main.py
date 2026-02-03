@@ -13,6 +13,11 @@ import urllib.parse
 from contextlib import asynccontextmanager
 from pathlib import Path
 
+# Ensure repo root is importable when cwd=api (e.g., Render start)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.append(str(REPO_ROOT))
+
 # Make imports work both ways:
 # - uvicorn api.main:app (repo root)
 # - uvicorn main:app (rootDir=api)
@@ -45,7 +50,6 @@ except ModuleNotFoundError:
     from services.live_events_multisource import LiveEventsMultiSource  # type: ignore
 
 # Repo root: .../bot-ultimate-prediction
-REPO_ROOT = Path(__file__).resolve().parents[1]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
 # ---------------------------------------------------------------------------
