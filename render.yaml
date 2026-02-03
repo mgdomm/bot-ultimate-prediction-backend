@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r api/requirements.txt
-    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    startCommand: PYTHONPATH=/opt/render/project/src uvicorn api.main:app --host 0.0.0.0 --port $PORT
     autoDeploy: true
     envVars:
       - key: PYTHONPATH
