@@ -9,7 +9,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from collections import Counter
 
-MAX_PICKS = 10
+# Número máximo de picks que exporta Classic (ajustable por env). Mantiene el Top 10 en UI,
+# pero nos permite llevar más picks por deporte para tabs específicas.
+MAX_PICKS = int(os.environ.get("CLASSIC_MAX_PICKS", "20"))
 
 # Probabilidad conservadora (seguridad = probabilidad de acertar)
 SHRINK_W = 0.35  # peso del modelo; (1-w) = peso del mercado
@@ -19,8 +21,8 @@ ODDS_MIN = 1.20
 ODDS_MAX = 2.30
 
 # Umbral principal (con fallback si un día viene flojo)
-P_SAFE_MIN_PRIMARY = 0.70
-P_SAFE_MIN_FALLBACK = 0.60
+P_SAFE_MIN_PRIMARY = float(os.environ.get("CLASSIC_P_SAFE_MIN_PRIMARY", "0.70"))
+P_SAFE_MIN_FALLBACK = float(os.environ.get("CLASSIC_P_SAFE_MIN_FALLBACK", "0.58"))
 
 # Mercados que consideramos “modernos y razonables”
 STANDARD_MARKETS = {

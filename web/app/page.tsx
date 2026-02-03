@@ -47,6 +47,7 @@ type ParlayPremium = {
 type Contract = {
   contract_date?: string;
   picks_classic?: any[];
+  picks_by_sport?: Record<string, Pick[]>;
   picks_parlay_premium?: ParlayPremium[];
   daily_featured_parlay?: ParlayPremium | null;
 };
@@ -399,7 +400,7 @@ function LiveScoreMini({
 export default function Page() {
   const [contract, setContract] = useState<Contract | null>(null);
   const [err, setErr] = useState<string | null>(null);
-  const [tab, setTab] = useState<"classic" | "parley" | "history" | "soccer" | "rugby" | "nfl" | "basketball" | "hockey" | "afl" | "tennis" | "baseball">("classic");
+  const [tab, setTab] = useState<string>("classic");
   const [stake, setStake] = useState<number>(50);
   const [selectedDay, setSelectedDay] = useState<string>("");  // NEW: Date picker
   const [liveOverrideByKey, setLiveOverrideByKey] = useState<Record<string, any>>({});
@@ -550,14 +551,30 @@ export default function Page() {
 
   // Picks agrupados por deporte
   const picksBySport = useMemo(() => {
+    const normalize = (s: string) => (s || "other").toLowerCase();
+
+    // Preferimos el mapa enviado por contrato (sin filtros, top 20 por deporte)
+    if (contract?.picks_by_sport && typeof contract.picks_by_sport === "object") {
+      const out: Record<string, Pick[]> = {};
+      for (const [sport, picks] of Object.entries(contract.picks_by_sport)) {
+        if (!Array.isArray(picks)) continue;
+        const key = normalize(sport);
+        out[key] = picks
+          .slice()
+          .sort((a, b) => n(b.p_safe, -1e9) - n(a.p_safe, -1e9))
+          .slice(0, 20);
+      }
+      return out;
+    }
+
+    // Fallback: calculamos a partir de classic
     const raw = asPickList(contract);
     const byS: Record<string, Pick[]> = {};
     for (const p of raw) {
-      const s = (p.sport || "other").toLowerCase();
+      const s = normalize(p.sport || "other");
       if (!byS[s]) byS[s] = [];
       byS[s].push(p);
     }
-    // Ordenar cada deporte por p_safe
     for (const s in byS) {
       byS[s].sort((a, b) => n(b.p_safe, -1e9) - n(a.p_safe, -1e9));
     }
@@ -876,6 +893,7 @@ export default function Page() {
                 const totalReturn = stake * n(p.combined_odds, NaN);
 
                 const note = typeof p.note === "string" ? p.note.trim() : "";
+                const isFallbackNote = note.toLowerCase().includes("fallback");
                 const showNote = Boolean(note) && !note.toLowerCase().startsWith("fallback:");
 
                   const parlayOutcome = (() => {
@@ -899,6 +917,23 @@ export default function Page() {
                         <div>
                           <div className="flex flex-wrap items-center gap-2">
                             <span className={p.kind === "BOOM_3" ? "badge badge-accent" : "badge"}>{tag}</span>
+                            {isFallbackNote ? (
+                              <InfoTip
+                                tip={
+                                  <>
+                                    <div className="font-semibold text-white/90">Umbrales relajados</div>
+                                    <div className="mt-1">Parlay generado con filtros de probabilidad/EV más permisivos al no haber opciones premium hoy.</div>
+                                  </>
+                                }
+                              >
+                                <span
+                                  className="badge"
+                                  style={{ borderColor: "rgba(239,68,68,0.65)", color: "#ef4444" }}
+                                >
+                                  i
+                                </span>
+                              </InfoTip>
+                            ) : null}
                           </div>
 
                           <div className="mt-2 text-lg font-semibold tracking-tight">{title}</div>

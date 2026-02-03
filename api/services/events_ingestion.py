@@ -20,12 +20,21 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
 
 def _env_sports() -> List[str]:
-    """Return sports list from env (comma separated) defaulting to nba only."""
+    """Return sports list from env (comma separated) defaulting to full SGO coverage."""
     raw = os.environ.get("SGO_EVENTS_SPORTS") or os.environ.get("EVENTS_SPORTS")
     if raw:
         return [s.strip().lower() for s in raw.split(",") if s.strip()]
-    # Default: start with NBA only to protect quota; can be expanded later via env.
-    return ["nba"]
+    # Default full slate (8 deportes) para ingestión automática diaria
+    return [
+        "nba",
+        "nfl",
+        "nhl",
+        "mlb",
+        "college_basketball",
+        "college_football",
+        "soccer_champions",
+        "soccer_mls",
+    ]
 
 
 @dataclass(frozen=True)

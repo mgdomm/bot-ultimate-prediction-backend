@@ -1,13 +1,20 @@
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
+from collections import defaultdict
 import json
 from pathlib import Path
 
 # Import robusto: funciona si ejecutas desde repo root o desde /api
 try:
-    from services.display_enrichment import enrich_contract_inplace
+    from services.display_enrichment import enrich_contract_inplace, build_display_index
 except ModuleNotFoundError:  # ejecución desde repo root
-    from api.services.display_enrichment import enrich_contract_inplace  # type: ignore
+    from api.services.display_enrichment import enrich_contract_inplace, build_display_index  # type: ignore
+
+try:
+    from services.picks_classic_multisport import p_safe as classic_p_safe  # type: ignore
+except ModuleNotFoundError:  # ejecución desde repo root
+    from api.services.picks_classic_multisport import p_safe as classic_p_safe  # type: ignore
 
 CONTRACT_VERSION = "1.0"
 
@@ -25,6 +32,7 @@ def create_empty_contract(contract_date: Optional[str] = None) -> Dict:
         "contract_date": contract_date,
         "generated_at": None,
         "picks_classic": [],
+        "picks_by_sport": {},  # mapa sport -> lista de picks sin filtros para tabs por deporte
         "picks_parlay_premium": [],
         "daily_featured_parlay": None,
         "metadata": {},
@@ -43,6 +51,98 @@ def _load_jsons_from_folder(folder: Path) -> List[Dict]:
     return items
 
 
+def _parse_iso_dt(s: object) -> Optional[datetime]:
+    if not s:
+        return None
+    try:
+        t = str(s)
+        if t.endswith("Z"):
+            t = t[:-1] + "+00:00"
+        dt = datetime.fromisoformat(t)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+        return dt
+    except Exception:
+        return None
+
+
+def _cycle_window_utc(day: str) -> Tuple[datetime, datetime]:
+    tz = ZoneInfo("Europe/Madrid")
+    y, m, d = [int(x) for x in str(day).split("-")]
+    start_local = datetime(y, m, d, 6, 0, 0, tzinfo=tz)
+    start_utc = start_local.astimezone(ZoneInfo("UTC"))
+    end_utc = start_utc + timedelta(hours=24)
+    return start_utc, end_utc
+
+
+def _build_picks_by_sport(day: str) -> Dict[str, List[Dict]]:
+    """
+    Genera un mapa sport -> picks (top 20 por deporte, sin filtros adicionales) a partir de odds_premium.
+    Se usa para las tabs de deportes en la web. Ordenado por seguridad (p_safe).
+    """
+
+    odds_path = API_DATA_DIR / "odds_premium" / day / "all.json"
+    if not odds_path.exists():
+        return {}
+
+    try:
+        raw = json.loads(odds_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if not isinstance(raw, list):
+        return {}
+
+    display_index = build_display_index(day)
+    start_utc, end_utc = _cycle_window_utc(day)
+
+    def in_window(sport_key: str, eid: str) -> bool:
+        disp = display_index.get((sport_key, eid))
+        if not isinstance(disp, dict):
+            return False
+        st = _parse_iso_dt(disp.get("startTime"))
+        return bool(st and (st >= start_utc) and (st < end_utc))
+
+    best_by_sport: Dict[str, Dict[Tuple[str, str, str, str], Dict]] = defaultdict(dict)
+
+    def pick_key(p: Dict[str, object]) -> Tuple[str, str, str, str]:
+        return (
+            str(p.get("sport") or ""),
+            str(p.get("eventId") or ""),
+            str(p.get("market") or ""),
+            str(p.get("selection") or ""),
+        )
+
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+
+        sport_raw = str(item.get("sport") or "").strip()
+        sport = sport_raw.lower()
+        eid = str(item.get("eventId") or "").strip()
+        if not sport or not eid:
+            continue
+        if not in_window(sport_raw, eid):
+            continue
+
+        ps = classic_p_safe(item)
+        pick = dict(item)
+        if ps == ps:  # NaN check
+            pick["p_safe"] = round(float(ps), 4)
+
+        key = pick_key(item)
+        existing = best_by_sport[sport].get(key)
+        if existing is None or float(pick.get("p_safe") or -1e9) > float(existing.get("p_safe") or -1e9):
+            best_by_sport[sport][key] = pick
+
+    out: Dict[str, List[Dict]] = {}
+    for sport, picks_map in best_by_sport.items():
+        picks = list(picks_map.values())
+        picks.sort(key=lambda p: float(p.get("p_safe") or -1e9), reverse=True)
+        out[sport] = picks[:20]
+
+    return out
+
+
 def populate_contract_with_day_data(contract: Dict) -> Dict:
     day = contract["contract_date"]
 
@@ -54,6 +154,9 @@ def populate_contract_with_day_data(contract: Dict) -> Dict:
         contract["picks_classic"] = _load_jsons_from_folder(
             API_DATA_DIR / "picks_classic" / day
         )
+
+    # picks_por_deporte: top 20 por sport, sin filtros (para tabs específicas)
+    contract["picks_by_sport"] = _build_picks_by_sport(day)
 
     contract["picks_parlay_premium"] = _load_jsons_from_folder(
         API_DATA_DIR / "picks_parlay" / day

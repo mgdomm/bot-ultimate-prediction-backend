@@ -248,6 +248,24 @@ def _filter_contract_to_cycle_window_inplace(contract: dict) -> bool:
                 changed = True
     contract["picks_classic"] = new_pc
 
+    # Picks por deporte (tabs de la web): filtramos cada lista por ventana
+    pbs = contract.get("picks_by_sport") or {}
+    if isinstance(pbs, dict):
+        new_pbs = {}
+        for sport, picks in pbs.items():
+            if not isinstance(picks, list):
+                changed = True
+                continue
+            filtered = []
+            for pick in picks:
+                if isinstance(pick, dict) and _pick_in_window(pick, start_local, end_local):
+                    filtered.append(pick)
+                else:
+                    changed = True
+            if filtered:
+                new_pbs[sport] = filtered
+        contract["picks_by_sport"] = new_pbs
+
     # Parlay premium: descartar parleys con legs fuera de ventana
     pp = contract.get("picks_parlay_premium") or []
     if isinstance(pp, list):
@@ -421,7 +439,14 @@ def get_today_bets(day: str = None):
                 pc = c.get("picks_classic") or []
                 pp = c.get("picks_parlay_premium") or []
                 pv = c.get("picks_value") or []
-                return (isinstance(pc, list) and len(pc) > 0) or (isinstance(pp, list) and len(pp) > 0) or (isinstance(pv, list) and len(pv) > 0)
+                pbs = c.get("picks_by_sport") or {}
+                has_pbs = isinstance(pbs, dict) and any(isinstance(v, list) and len(v) > 0 for v in pbs.values())
+                return (
+                    (isinstance(pc, list) and len(pc) > 0)
+                    or (isinstance(pp, list) and len(pp) > 0)
+                    or (isinstance(pv, list) and len(pv) > 0)
+                    or has_pbs
+                )
 
             if not _has_any_picks(contract):
                 rebuilt = create_empty_contract(day)

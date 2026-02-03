@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import os
 from datetime import date
 from itertools import combinations
 from pathlib import Path
@@ -25,12 +26,17 @@ except ModuleNotFoundError:
 SIMPLE_MARKETS = {"over/under", "moneyline", "handicap", "h2h"}
 
 # Reglas producto (ajustadas a datos reales: hoy no hay LOW)
-SAFE_P_MIN = 0.60
-SAFE_EV_MIN = -0.01
+SAFE_P_MIN = float(os.environ.get("PARLAY_SAFE_P_MIN", "0.60"))
+SAFE_EV_MIN = float(os.environ.get("PARLAY_SAFE_EV_MIN", "-0.01"))
 SAFE_ALLOWED_RISK = {"LOW", "MEDIUM", "HIGH", "EXTREME"}
 
-BOOM_P_MIN = 0.60
-BOOM_EV_MIN = -0.01
+SAFE_P_MIN_FALLBACK = float(os.environ.get("PARLAY_SAFE_P_MIN_FALLBACK", "0.56"))
+SAFE_EV_MIN_FALLBACK = float(os.environ.get("PARLAY_SAFE_EV_MIN_FALLBACK", "-0.07"))
+
+BOOM_P_MIN = float(os.environ.get("PARLAY_BOOM_P_MIN", "0.60"))
+BOOM_EV_MIN = float(os.environ.get("PARLAY_BOOM_EV_MIN", "-0.01"))
+BOOM_P_MIN_FALLBACK = float(os.environ.get("PARLAY_BOOM_P_MIN_FALLBACK", "0.55"))
+BOOM_EV_MIN_FALLBACK = float(os.environ.get("PARLAY_BOOM_EV_MIN_FALLBACK", "-0.07"))
 BOOM_ALLOWED_RISK = {"LOW", "MEDIUM", "HIGH", "EXTREME"}
 
 BOOM_TARGET_ODDS_1 = 3.0
@@ -151,6 +157,8 @@ def make_parlay(kind: str, legs: List[Dict[str, Any]], label: str, note: Optiona
 def filter_pool(all_picks: List[Dict[str, Any]], pmin: float, evmin: float, allowed_risks: set[str]) -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
     for p in all_picks:
+        if not isinstance(p, dict):
+            continue
         if _risk_level(p) not in allowed_risks:
             continue
         if _prob(p) < pmin:
@@ -163,8 +171,14 @@ def filter_pool(all_picks: List[Dict[str, Any]], pmin: float, evmin: float, allo
     return out
 
 
-def build_safe_parlays(all_picks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    pool = filter_pool(all_picks, SAFE_P_MIN, SAFE_EV_MIN, SAFE_ALLOWED_RISK)
+def build_safe_parlays(
+    all_picks: List[Dict[str, Any]],
+    pmin: float = SAFE_P_MIN,
+    evmin: float = SAFE_EV_MIN,
+    allowed_risks: set[str] = SAFE_ALLOWED_RISK,
+    note: Optional[str] = None,
+) -> List[Dict[str, Any]]:
+    pool = filter_pool(all_picks, pmin, evmin, allowed_risks)
     pool = _dedupe_exact(pool)
     per_event = _best_pick_per_event(pool)
 
@@ -198,11 +212,11 @@ def build_safe_parlays(all_picks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
     out: List[Dict[str, Any]] = []
     if len(safe2_a_legs) == 2:
-        out.append(make_parlay("SAFE_2", safe2_a_legs, "Seguro (2 piernas)"))
+        out.append(make_parlay("SAFE_2", safe2_a_legs, "Seguro (2 piernas)", note))
     if len(safe2_b_legs) == 2:
-        out.append(make_parlay("SAFE_2", safe2_b_legs, "Seguro (2 piernas)"))
+        out.append(make_parlay("SAFE_2", safe2_b_legs, "Seguro (2 piernas)", note))
     if len(safe4_legs) == 4:
-        out.append(make_parlay("SAFE_4", safe4_legs, "Seguro (4 piernas)"))
+        out.append(make_parlay("SAFE_4", safe4_legs, "Seguro (4 piernas)", note))
 
     return out
 
@@ -217,14 +231,20 @@ def _diversity_sports_ok(legs: List[Dict[str, Any]]) -> bool:
     return len(sports) >= 2
 
 
-def build_boom_parlay(all_picks: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
-    pool = filter_pool(all_picks, BOOM_P_MIN, BOOM_EV_MIN, BOOM_ALLOWED_RISK)
+def build_boom_parlay(
+    all_picks: List[Dict[str, Any]],
+    pmin: float = BOOM_P_MIN,
+    evmin: float = BOOM_EV_MIN,
+    note: Optional[str] = None,
+) -> Optional[Dict[str, Any]]:
+    pool = filter_pool(all_picks, pmin, evmin, BOOM_ALLOWED_RISK)
     pool = _dedupe_exact(pool)
 
     per_event = _best_pick_per_event(pool)
     per_event.sort(key=lambda p: (_prob(p), _ev(p), _odds(p)), reverse=True)
 
-    K = min(60, len(per_event))
+    # Ampliamos la base para más combinaciones diversas
+    K = min(120, len(per_event))
     candidates = per_event[:K]
     if len(candidates) < 3:
         return None
@@ -244,6 +264,9 @@ def build_boom_parlay(all_picks: List[Dict[str, Any]]) -> Optional[Dict[str, Any
             elif diversity_mode == "sports":
                 if not _diversity_sports_ok(legs):
                     continue
+            elif diversity_mode == "any_diversity":
+                if not (_diversity_markets_ok(legs) or _diversity_sports_ok(legs)):
+                    continue
 
             o = combined_odds(legs)
             if o < target_odds:
@@ -258,11 +281,16 @@ def build_boom_parlay(all_picks: List[Dict[str, Any]]) -> Optional[Dict[str, Any
 
     legs = search(BOOM_TARGET_ODDS_1, "markets") or search(BOOM_TARGET_ODDS_2, "markets")
     if legs:
-        return make_parlay("BOOM_3", legs, "Boom (3 piernas)")
+        return make_parlay("BOOM_3", legs, "Boom (3 piernas)", note)
 
     legs = search(BOOM_TARGET_ODDS_1, "sports") or search(BOOM_TARGET_ODDS_2, "sports")
     if legs:
-        return make_parlay("BOOM_3", legs, "Boom (3 piernas)", note="Fallback: mismo mercado, variedad por deporte")
+        return make_parlay("BOOM_3", legs, "Boom (3 piernas)", note=note or "Fallback: mismo mercado, variedad por deporte")
+
+    # Diversidad ampliada: mercados O deportes, con objetivo de cuota más bajo
+    legs = search(2.0, "any_diversity")
+    if legs:
+        return make_parlay("BOOM_3", legs, "Boom (3 piernas)", note=note or "Fallback: diversidad flexible (mercados o deportes)")
 
     # 3) Último fallback: mejor por probabilidad
     best_local = None
@@ -280,7 +308,7 @@ def build_boom_parlay(all_picks: List[Dict[str, Any]]) -> Optional[Dict[str, Any
             best_score = score
             best_local = legs
     if best_local:
-        return make_parlay("BOOM_3", best_local, "Boom (3 piernas)", note="Fallback final: mejor probabilidad")
+        return make_parlay("BOOM_3", best_local, "Boom (3 piernas)", note=note or "Fallback final: mejor probabilidad")
 
     best_local = None
     best_score = (-1.0, -1.0)
@@ -295,7 +323,7 @@ def build_boom_parlay(all_picks: List[Dict[str, Any]]) -> Optional[Dict[str, Any
             best_score = score
             best_local = legs
     if best_local:
-        return make_parlay("BOOM_3", best_local, "Boom (3 piernas)", note="Fallback final: sin diversidad disponible")
+        return make_parlay("BOOM_3", best_local, "Boom (3 piernas)", note=note or "Fallback final: sin diversidad disponible")
 
     return None
 
@@ -386,6 +414,58 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
     safe = build_safe_parlays(all_picks)
     boom = build_boom_parlay(all_picks)
 
+    # Fallback suave si no logramos ningún parlay con thresholds principales
+    if not safe and boom is None:
+        safe = build_safe_parlays(
+            all_picks,
+            pmin=SAFE_P_MIN_FALLBACK,
+            evmin=SAFE_EV_MIN_FALLBACK,
+            allowed_risks=SAFE_ALLOWED_RISK,
+            note="Fallback: umbrales relajados",
+        )
+        boom = build_boom_parlay(
+            all_picks,
+            pmin=BOOM_P_MIN_FALLBACK,
+            evmin=BOOM_EV_MIN_FALLBACK,
+            note="Fallback: umbrales relajados",
+        )
+
+    # Si faltan parleys, rellenar usando picks Classic (más confiables disponibles)
+    classic_pool: List[Dict[str, Any]] = []
+    try:
+        classic_path = API_DATA_DIR / "picks_classic" / day / "all.json"
+        if classic_path.exists():
+            classic_raw = json.loads(classic_path.read_text(encoding="utf-8"))
+            if isinstance(classic_raw, list):
+                classic_pool = filter_pool(classic_raw, pmin=0.55, evmin=-10.0, allowed_risks=SAFE_ALLOWED_RISK)
+                classic_pool = _dedupe_exact(classic_pool)
+                classic_pool = _best_pick_per_event(classic_pool)
+                classic_pool.sort(key=lambda p: (_prob(p), _ev(p), _odds(p)), reverse=True)
+    except Exception:
+        classic_pool = []
+
+    def _take(n: int) -> List[Dict[str, Any]]:
+        return classic_pool[:n]
+
+    # 1) Si no hay safe_2, genera hasta 2 usando Classic
+    safe_current = [p for p in safe if p.get("kind") == "SAFE_2"]
+    while len(safe_current) < 2 and len(classic_pool) >= 2:
+        legs = _take(2 + len(safe_current))[-2:]
+        if len(legs) == 2:
+            safe.append(make_parlay("SAFE_2", legs, "Seguro (fallback Classic)", note="Fallback: usando picks Classic publicados"))
+            safe_current.append(safe[-1])
+
+    # 2) Si falta safe_4, genera uno desde Classic
+    has_safe4 = any(p.get("kind") == "SAFE_4" for p in safe)
+    if not has_safe4 and len(classic_pool) >= 4:
+        legs = _take(4)
+        safe.append(make_parlay("SAFE_4", legs, "Seguro (4) fallback Classic", note="Fallback: usando picks Classic publicados"))
+
+    # 3) Si no hay boom, arma uno de Classic (3 piernas más altas)
+    if boom is None and len(classic_pool) >= 3:
+        legs = _take(3)
+        boom = make_parlay("BOOM_3", legs, "Boom (fallback Classic)", note="Fallback: usando picks Classic publicados")
+
     out_dir = API_DATA_DIR / "picks_parlay" / day
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -430,17 +510,19 @@ def run_for_day(day: Optional[str] = None) -> Dict[str, Any]:
         "day": day,
         "safe_count": len(safe_items),
         "boom_generated": boom is not None,
-        "parlays_aggregate_count": len(aggregate),
         "written": written,
+        "aggregate_count": len(aggregate),
     }
 
 
-def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Build premium parlays from api/data/odds_premium/<day>/all.json")
-    p.add_argument("day", nargs="?", default=None, help="YYYY-MM-DD (default: today)")
-    return p.parse_args()
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("day", nargs="?", default=None)
+    args = parser.parse_args()
+
+    result = run_for_day(args.day)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
-    args = _parse_args()
-    print(json.dumps(run_for_day(args.day), ensure_ascii=False, indent=2))
+    main()

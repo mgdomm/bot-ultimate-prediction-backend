@@ -523,6 +523,14 @@ def enrich_contract_inplace(contract: Dict[str, Any]) -> Dict[str, Any]:
                   elif isinstance(container, dict):
                       yield container
 
+              picks_by_sport = contract.get("picks_by_sport") or {}
+              if isinstance(picks_by_sport, dict):
+                  for picks in picks_by_sport.values():
+                      if isinstance(picks, list):
+                          for pick in picks:
+                              if isinstance(pick, dict):
+                                  yield pick
+
               picks_parlay = contract.get("picks_parlay_premium") or []
               if isinstance(picks_parlay, list):
                   for parlay in picks_parlay:
@@ -553,6 +561,8 @@ def enrich_contract_inplace(contract: Dict[str, Any]) -> Dict[str, Any]:
           sports_index = Counter()
           for (sport, _eid) in display_index.keys():
               sports_index[str(sport)] += 1
+
+          picks_by_sport = contract.get("picks_by_sport") or {}
 
           for pick in _iter_pick_dicts():
               total += 1
@@ -591,6 +601,16 @@ def enrich_contract_inplace(contract: Dict[str, Any]) -> Dict[str, Any]:
                     enrich_pick_inplace(pick, display_index)
         elif isinstance(container, dict):
             enrich_pick_inplace(container, display_index)
+
+    # picks_by_sport: dict sport -> lista de picks (tabs deportes)
+    picks_by_sport = contract.get("picks_by_sport") or {}
+    if isinstance(picks_by_sport, dict):
+        for picks in picks_by_sport.values():
+            if not isinstance(picks, list):
+                continue
+            for pick in picks:
+                if isinstance(pick, dict):
+                    enrich_pick_inplace(pick, display_index)
 
     # picks_parlay_premium: lista de parleys; cada uno tiene legs/picks
     picks_parlay = contract.get("picks_parlay_premium") or []
