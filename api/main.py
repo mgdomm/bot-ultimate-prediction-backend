@@ -43,6 +43,12 @@ try:
 except ModuleNotFoundError:
     from services.contract_service import create_empty_contract, populate_contract_with_day_data  # type: ignore
 
+# Line enrichment (add point/total to picks when available in raw odds)
+try:
+    from api.services.line_enrichment import inject_lines_into_contract
+except ModuleNotFoundError:
+    from services.line_enrichment import inject_lines_into_contract  # type: ignore
+
 # Live events multisource (ESPN + alternatives + snapshots)
 try:
     from api.services.live_events_multisource import LiveEventsMultiSource
@@ -472,6 +478,12 @@ def get_today_bets(day: str = None):
         enrich_contract_inplace(contract)
     except Exception as err:
         print('[display_enrichment] failed:', err)
+
+    # DF_LINE_ENRICH: intentar añadir line (puntos/total) desde odds raw si existe
+    try:
+        inject_lines_into_contract(contract, day)
+    except Exception as err:
+        print('[line_enrichment] failed:', err)
 
     # DF_CYCLE_WINDOW_FILTER: asegurar ventana 06:00->06:00 Europe/Madrid (evita partidos viejos)
     try:
