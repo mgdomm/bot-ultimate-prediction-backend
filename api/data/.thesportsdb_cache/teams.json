@@ -259,5 +259,11 @@
   },
   "hurricanes": {
     "logo": null
+  },
+  "{'id': 'new_england_patriots_nfl', 'name': 'patriots', 'colors': {'primary': '#0d244d', 'secondary': '#b1b8bd', 'primarycontrast': '#ffffff', 'secondarycontrast': '#0d244d'}}": {
+    "logo": null
+  },
+  "{'id': 'seattle_seahawks_nfl', 'name': 'seahawks', 'colors': {'primary': '#002244', 'secondary': '#69be28', 'primarycontrast': '#ffffff', 'secondarycontrast': '#002244'}}": {
+    "logo": null
   }
 }

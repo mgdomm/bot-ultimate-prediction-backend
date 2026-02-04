@@ -1,193 +1,3640 @@
 {
   "contract_version": "1.0",
   "contract_date": "2026-02-04",
-  "generated_at": "2026-02-04T21:44:50.828187",
+  "generated_at": "2026-02-04T22:12:34.465974",
   "picks_classic": [
     {
-      "sport": "basketball",
-      "eventId": "bk_1_2026-02-04",
-      "bookmaker": "DemoBook",
-      "market": "Spread",
-      "selection": "Home Team",
-      "odds": 1.95,
-      "p_implied": 0.5128205128205129,
-      "p_estimated": 0.5398110661268557,
+      "sport": "college_basketball",
+      "eventId": "WIQyqpOITQwR4DyX6Fmg",
+      "bookmaker": "draftkings",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
       "stake": 50.0,
-      "ev": 1.2,
+      "ev": -4.8,
       "risk": {
-        "level": "LOW",
-        "p_est": 0.5398110661268557,
-        "delta_p": 0.02,
-        "ev_margin": 0.05
+        "level": "LOW"
       },
       "premium": true,
-      "premium_reason": "DEMO_DATA",
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
       "display": {
-        "sport": "basketball",
-        "eventId": "bk_1_2026-02-04",
-        "league": null,
+        "sport": "college_basketball",
+        "eventId": "WIQyqpOITQwR4DyX6Fmg",
+        "league": "NCAAB",
         "leagueLogo": null,
-        "startTime": "2026-02-04T20:00:00",
-        "live": {},
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
         "home": {
-          "name": "Lakers",
+          "name": "Marshall",
           "logo": null
         },
         "away": {
-          "name": "Celtics",
+          "name": "Southern Mississippi",
           "logo": null
         }
       }
     },
     {
-      "sport": "basketball",
-      "eventId": "bk_2_2026-02-04",
-      "bookmaker": "DemoBook",
-      "market": "Spread",
-      "selection": "Home Team",
-      "odds": 2.1,
-      "p_implied": 0.47619047619047616,
-      "p_estimated": 0.5012531328320803,
+      "sport": "college_basketball",
+      "eventId": "ZryIYr61WKUEGUcUVw6d",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
       "stake": 50.0,
-      "ev": 1.2,
+      "ev": -4.8,
       "risk": {
-        "level": "LOW",
-        "p_est": 0.5012531328320803,
-        "delta_p": 0.02,
-        "ev_margin": 0.05
+        "level": "LOW"
       },
       "premium": true,
-      "premium_reason": "DEMO_DATA",
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
       "display": {
-        "sport": "basketball",
-        "eventId": "bk_2_2026-02-04",
-        "league": null,
+        "sport": "college_basketball",
+        "eventId": "ZryIYr61WKUEGUcUVw6d",
+        "league": "NCAAB",
         "leagueLogo": null,
-        "startTime": "2026-02-04T22:00:00",
-        "live": {},
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
         "home": {
-          "name": "Warriors",
+          "name": "Minnesota",
           "logo": null
         },
         "away": {
-          "name": "Nuggets",
+          "name": "Michigan State",
           "logo": null
         }
       }
     },
     {
-      "sport": "football",
-      "eventId": "fb_1_2026-02-04",
-      "bookmaker": "DemoBook",
-      "market": "Spread",
-      "selection": "Home Team",
-      "odds": 2.4,
-      "p_implied": 0.4166666666666667,
-      "p_estimated": 0.4385964912280702,
+      "sport": "college_basketball",
+      "eventId": "g1bFUCOe9ZeMnAVFyHMM",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
       "stake": 50.0,
-      "ev": 1.2,
+      "ev": -4.8,
       "risk": {
-        "level": "LOW",
-        "p_est": 0.4385964912280702,
-        "delta_p": 0.02,
-        "ev_margin": 0.05
+        "level": "LOW"
       },
       "premium": true,
-      "premium_reason": "DEMO_DATA",
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
       "display": {
-        "sport": "football",
-        "eventId": "fb_1_2026-02-04",
-        "league": null,
+        "sport": "college_basketball",
+        "eventId": "g1bFUCOe9ZeMnAVFyHMM",
+        "league": "NCAAB",
         "leagueLogo": null,
-        "startTime": "2026-02-04T19:00:00",
-        "live": {},
+        "startTime": "2026-02-05T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
         "home": {
-          "name": "Manchester United",
+          "name": "Seattle",
           "logo": null
         },
         "away": {
-          "name": "Liverpool",
+          "name": "Pepperdine",
           "logo": null
         }
       }
     },
     {
-      "sport": "nfl",
-      "eventId": "nfl_1_2026-02-04",
-      "bookmaker": "DemoBook",
-      "market": "Spread",
-      "selection": "Home Team",
-      "odds": 1.85,
-      "p_implied": 0.5405405405405405,
-      "p_estimated": 0.5689900426742531,
+      "sport": "college_basketball",
+      "eventId": "ty2N40KAATHEjs0HXMUu",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
       "stake": 50.0,
-      "ev": 1.2,
+      "ev": -4.8,
       "risk": {
-        "level": "LOW",
-        "p_est": 0.5689900426742531,
-        "delta_p": 0.02,
-        "ev_margin": 0.05
+        "level": "LOW"
       },
       "premium": true,
-      "premium_reason": "DEMO_DATA",
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
       "display": {
-        "sport": "nfl",
-        "eventId": "nfl_1_2026-02-04",
-        "league": null,
+        "sport": "college_basketball",
+        "eventId": "ty2N40KAATHEjs0HXMUu",
+        "league": "NCAAB",
         "leagueLogo": null,
-        "startTime": "2026-02-04T18:00:00",
-        "live": {},
+        "startTime": "2026-02-05T02:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
         "home": {
-          "name": "Chiefs",
+          "name": "Kentucky",
           "logo": null
         },
         "away": {
-          "name": "49ers",
+          "name": "Oklahoma",
           "logo": null
         }
       }
     },
     {
-      "sport": "hockey",
-      "eventId": "hk_1_2026-02-04",
-      "bookmaker": "DemoBook",
-      "market": "Spread",
-      "selection": "Home Team",
-      "odds": 1.9,
-      "p_implied": 0.5263157894736842,
-      "p_estimated": 0.554016620498615,
+      "sport": "nba",
+      "eventId": "19C8QaMVmfX7bMJZ9aBw",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
       "stake": 50.0,
-      "ev": 1.2,
+      "ev": -4.8,
       "risk": {
-        "level": "LOW",
-        "p_est": 0.554016620498615,
-        "delta_p": 0.02,
-        "ev_margin": 0.05
+        "level": "LOW"
       },
       "premium": true,
-      "premium_reason": "DEMO_DATA",
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
       "display": {
-        "sport": "hockey",
-        "eventId": "hk_1_2026-02-04",
-        "league": null,
+        "sport": "nba",
+        "eventId": "19C8QaMVmfX7bMJZ9aBw",
+        "league": "NBA",
         "leagueLogo": null,
-        "startTime": "2026-02-04T21:00:00",
-        "live": {},
+        "startTime": "2026-02-05T03:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
         "home": {
-          "name": "Maple Leafs",
+          "name": "Clippers",
           "logo": null
         },
         "away": {
-          "name": "Hurricanes",
+          "name": "Cavaliers",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nba",
+      "eventId": "UX9nfFIvchLFfcAmMb0N",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nba",
+        "eventId": "UX9nfFIvchLFfcAmMb0N",
+        "league": "NBA",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Kings",
+          "logo": null
+        },
+        "away": {
+          "name": "Grizzlies",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nba",
+      "eventId": "qqTk7Gz4cO76s3nRdfI1",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nba",
+        "eventId": "qqTk7Gz4cO76s3nRdfI1",
+        "league": "NBA",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T02:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Spurs",
+          "logo": null
+        },
+        "away": {
+          "name": "Thunder",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "6E5dObxpavc5dLykwOPM",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "6E5dObxpavc5dLykwOPM",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T02:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Stars",
+          "logo": null
+        },
+        "away": {
+          "name": "Blues",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "HSej1bS7S7jUEGgH3Fl4",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "HSej1bS7S7jUEGgH3Fl4",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Panthers",
+          "logo": null
+        },
+        "away": {
+          "name": "Bruins",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "MPdbImh3HJ8drSSgIUtp",
+      "bookmaker": "draftkings",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "MPdbImh3HJ8drSSgIUtp",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Jets",
+          "logo": null
+        },
+        "away": {
+          "name": "Canadiens",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "UhidWEtyqzi95nVCVXMv",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "UhidWEtyqzi95nVCVXMv",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T02:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Avalanche",
+          "logo": null
+        },
+        "away": {
+          "name": "Sharks",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "Ui76KMRVSTFjq4IOPgHT",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "Ui76KMRVSTFjq4IOPgHT",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T02:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Mammoth",
+          "logo": null
+        },
+        "away": {
+          "name": "Red Wings",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "V3MOJBTydy5jLjyaBCkV",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "V3MOJBTydy5jLjyaBCkV",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T01:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Predators",
+          "logo": null
+        },
+        "away": {
+          "name": "Wild",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "dmrOIem4iNNdycUAfPTB",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "dmrOIem4iNNdycUAfPTB",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Blue Jackets",
+          "logo": null
+        },
+        "away": {
+          "name": "Blackhawks",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "mDUOQzadKPHGTaY8F7Do",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "mDUOQzadKPHGTaY8F7Do",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Kings",
+          "logo": null
+        },
+        "away": {
+          "name": "Kraken",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "oH1QpbXS5uMnMeekHBye",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "oH1QpbXS5uMnMeekHBye",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Flames",
+          "logo": null
+        },
+        "away": {
+          "name": "Oilers",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nhl",
+      "eventId": "xcsMNJ5ptT5fodzHXdFF",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "nhl",
+        "eventId": "xcsMNJ5ptT5fodzHXdFF",
+        "league": "NHL",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T03:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Golden Knights",
+          "logo": null
+        },
+        "away": {
+          "name": "Canucks",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "jErgX6bRsF9I1P7Y70H8",
+      "bookmaker": "fanduel",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2040816326530612,
+      "p_implied": 0.8305,
+      "p_estimated": 0.7505,
+      "p_safe": 0.8025,
+      "stake": 50.0,
+      "ev": -4.82,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "college_basketball",
+        "eventId": "jErgX6bRsF9I1P7Y70H8",
+        "league": "NCAAB",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:30:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Wichita State",
+          "logo": null
+        },
+        "away": {
+          "name": "Charlotte",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "OWjF3EtnxUdl0BisZdVT",
+      "bookmaker": "fanduel",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2127659574468086,
+      "p_implied": 0.8246,
+      "p_estimated": 0.7446,
+      "p_safe": 0.7966,
+      "stake": 50.0,
+      "ev": -4.85,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "college_basketball",
+        "eventId": "OWjF3EtnxUdl0BisZdVT",
+        "league": "NCAAB",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "James Madison",
+          "logo": null
+        },
+        "away": {
+          "name": "Louisiana Lafayette",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "iZrpuKomdtspdfEPzGeS",
+      "bookmaker": "fanduel",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2127659574468086,
+      "p_implied": 0.8246,
+      "p_estimated": 0.7446,
+      "p_safe": 0.7966,
+      "stake": 50.0,
+      "ev": -4.85,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P",
+      "display": {
+        "sport": "college_basketball",
+        "eventId": "iZrpuKomdtspdfEPzGeS",
+        "league": "NCAAB",
+        "leagueLogo": null,
+        "startTime": "2026-02-05T00:00:00.000Z",
+        "live": {
+          "started": false,
+          "completed": false,
+          "ended": false,
+          "cancelled": false,
+          "live": false,
+          "delayed": false,
+          "oddsPresent": true,
+          "oddsAvailable": true
+        },
+        "home": {
+          "name": "Houston",
+          "logo": null
+        },
+        "away": {
+          "name": "UCF",
           "logo": null
         }
       }
     }
   ],
-  "picks_by_sport": {},
+  "picks_by_sport": {
+    "nhl": [
+      {
+        "sport": "nhl",
+        "eventId": "6E5dObxpavc5dLykwOPM",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "6E5dObxpavc5dLykwOPM",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Stars",
+            "logo": null
+          },
+          "away": {
+            "name": "Blues",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "HSej1bS7S7jUEGgH3Fl4",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "HSej1bS7S7jUEGgH3Fl4",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Panthers",
+            "logo": null
+          },
+          "away": {
+            "name": "Bruins",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "MPdbImh3HJ8drSSgIUtp",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "MPdbImh3HJ8drSSgIUtp",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Jets",
+            "logo": null
+          },
+          "away": {
+            "name": "Canadiens",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "UhidWEtyqzi95nVCVXMv",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "UhidWEtyqzi95nVCVXMv",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Avalanche",
+            "logo": null
+          },
+          "away": {
+            "name": "Sharks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "Ui76KMRVSTFjq4IOPgHT",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "Ui76KMRVSTFjq4IOPgHT",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Mammoth",
+            "logo": null
+          },
+          "away": {
+            "name": "Red Wings",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "V3MOJBTydy5jLjyaBCkV",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "V3MOJBTydy5jLjyaBCkV",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Predators",
+            "logo": null
+          },
+          "away": {
+            "name": "Wild",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "dmrOIem4iNNdycUAfPTB",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nhl",
+          "eventId": "dmrOIem4iNNdycUAfPTB",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Blue Jackets",
+            "logo": null
+          },
+          "away": {
+            "name": "Blackhawks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "MPdbImh3HJ8drSSgIUtp",
+        "bookmaker": "bovada",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "nhl",
+          "eventId": "MPdbImh3HJ8drSSgIUtp",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Jets",
+            "logo": null
+          },
+          "away": {
+            "name": "Canadiens",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "oH1QpbXS5uMnMeekHBye",
+        "bookmaker": "caesars",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "nhl",
+          "eventId": "oH1QpbXS5uMnMeekHBye",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Flames",
+            "logo": null
+          },
+          "away": {
+            "name": "Oilers",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "oH1QpbXS5uMnMeekHBye",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "nhl",
+          "eventId": "oH1QpbXS5uMnMeekHBye",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Flames",
+            "logo": null
+          },
+          "away": {
+            "name": "Oilers",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "xcsMNJ5ptT5fodzHXdFF",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "nhl",
+          "eventId": "xcsMNJ5ptT5fodzHXdFF",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Golden Knights",
+            "logo": null
+          },
+          "away": {
+            "name": "Canucks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "UhidWEtyqzi95nVCVXMv",
+        "bookmaker": "caesars",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3597122302158273,
+        "p_implied": 0.7354,
+        "p_estimated": 0.6554,
+        "stake": 50.0,
+        "ev": -5.44,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6554,
+          "delta_p": -0.08,
+          "ev_margin": -0.1088
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7074,
+        "display": {
+          "sport": "nhl",
+          "eventId": "UhidWEtyqzi95nVCVXMv",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Avalanche",
+            "logo": null
+          },
+          "away": {
+            "name": "Sharks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "MPdbImh3HJ8drSSgIUtp",
+        "bookmaker": "caesars",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nhl",
+          "eventId": "MPdbImh3HJ8drSSgIUtp",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Jets",
+            "logo": null
+          },
+          "away": {
+            "name": "Canadiens",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "mDUOQzadKPHGTaY8F7Do",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nhl",
+          "eventId": "mDUOQzadKPHGTaY8F7Do",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Kings",
+            "logo": null
+          },
+          "away": {
+            "name": "Kraken",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "xcsMNJ5ptT5fodzHXdFF",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nhl",
+          "eventId": "xcsMNJ5ptT5fodzHXdFF",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Golden Knights",
+            "logo": null
+          },
+          "away": {
+            "name": "Canucks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "HSej1bS7S7jUEGgH3Fl4",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3773584905660377,
+        "p_implied": 0.726,
+        "p_estimated": 0.646,
+        "stake": 50.0,
+        "ev": -5.51,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.646,
+          "delta_p": -0.08,
+          "ev_margin": -0.1102
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.698,
+        "display": {
+          "sport": "nhl",
+          "eventId": "HSej1bS7S7jUEGgH3Fl4",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Panthers",
+            "logo": null
+          },
+          "away": {
+            "name": "Bruins",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "6E5dObxpavc5dLykwOPM",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nhl",
+          "eventId": "6E5dObxpavc5dLykwOPM",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Stars",
+            "logo": null
+          },
+          "away": {
+            "name": "Blues",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "6E5dObxpavc5dLykwOPM",
+        "bookmaker": "bovada",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nhl",
+          "eventId": "6E5dObxpavc5dLykwOPM",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Stars",
+            "logo": null
+          },
+          "away": {
+            "name": "Blues",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "UhidWEtyqzi95nVCVXMv",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nhl",
+          "eventId": "UhidWEtyqzi95nVCVXMv",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Avalanche",
+            "logo": null
+          },
+          "away": {
+            "name": "Sharks",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nhl",
+        "eventId": "Ui76KMRVSTFjq4IOPgHT",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779,
+        "display": {
+          "sport": "nhl",
+          "eventId": "Ui76KMRVSTFjq4IOPgHT",
+          "league": "NHL",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Mammoth",
+            "logo": null
+          },
+          "away": {
+            "name": "Red Wings",
+            "logo": null
+          }
+        }
+      }
+    ],
+    "college_basketball": [
+      {
+        "sport": "college_basketball",
+        "eventId": "10BfwB56PgeeGgbQQDbZ",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "10BfwB56PgeeGgbQQDbZ",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "American Univ.",
+            "logo": null
+          },
+          "away": {
+            "name": "Bucknell",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "OWjF3EtnxUdl0BisZdVT",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "OWjF3EtnxUdl0BisZdVT",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "James Madison",
+            "logo": null
+          },
+          "away": {
+            "name": "Louisiana Lafayette",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "Pfm917Agctf7bedEP33G",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "Pfm917Agctf7bedEP33G",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Cleveland",
+            "logo": null
+          },
+          "away": {
+            "name": "Oakland",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "WIQyqpOITQwR4DyX6Fmg",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "WIQyqpOITQwR4DyX6Fmg",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Marshall",
+            "logo": null
+          },
+          "away": {
+            "name": "Southern Mississippi",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "kqzPnMTVtVKzStcl7Nh7",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "kqzPnMTVtVKzStcl7Nh7",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Middle Tennessee St.",
+            "logo": null
+          },
+          "away": {
+            "name": "Florida Int.",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "ty2N40KAATHEjs0HXMUu",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "ty2N40KAATHEjs0HXMUu",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Kentucky",
+            "logo": null
+          },
+          "away": {
+            "name": "Oklahoma",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "1zvOqEZheSKXByWdhwxc",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "1zvOqEZheSKXByWdhwxc",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Alabama",
+            "logo": null
+          },
+          "away": {
+            "name": "Texas A&M",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "ZryIYr61WKUEGUcUVw6d",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "ZryIYr61WKUEGUcUVw6d",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Minnesota",
+            "logo": null
+          },
+          "away": {
+            "name": "Michigan State",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "h9d7NqBrpQutNSQiQpQY",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "h9d7NqBrpQutNSQiQpQY",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Pacific",
+            "logo": null
+          },
+          "away": {
+            "name": "Santa Clara",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "yeWyw8nTFnhsHnlfkzqt",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "yeWyw8nTFnhsHnlfkzqt",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Georgia St.",
+            "logo": null
+          },
+          "away": {
+            "name": "Troy",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "56e2wfMsUcE41zXEn3qJ",
+        "bookmaker": "caesars",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3597122302158273,
+        "p_implied": 0.7354,
+        "p_estimated": 0.6554,
+        "stake": 50.0,
+        "ev": -5.44,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6554,
+          "delta_p": -0.08,
+          "ev_margin": -0.1088
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7074,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "56e2wfMsUcE41zXEn3qJ",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Grambling St.",
+            "logo": null
+          },
+          "away": {
+            "name": "Arkansas-Pine",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "sFPILAOZWU0ze0xG4hRy",
+        "bookmaker": "caesars",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3597122302158273,
+        "p_implied": 0.7354,
+        "p_estimated": 0.6554,
+        "stake": 50.0,
+        "ev": -5.44,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6554,
+          "delta_p": -0.08,
+          "ev_margin": -0.1088
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7074,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "sFPILAOZWU0ze0xG4hRy",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-04T23:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Villanova",
+            "logo": null
+          },
+          "away": {
+            "name": "Seton Hall",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "CbAsqHYZ1Gh6Mu9cmuWX",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "CbAsqHYZ1Gh6Mu9cmuWX",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "George Mason",
+            "logo": null
+          },
+          "away": {
+            "name": "Duquesne",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "Vue3v62buWZ3X3By9Aab",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "Vue3v62buWZ3X3By9Aab",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-04T23:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Virginia Military",
+            "logo": null
+          },
+          "away": {
+            "name": "Wofford",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "k5R4hHKOQsZZB7r4HjgP",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "k5R4hHKOQsZZB7r4HjgP",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "San Francisco",
+            "logo": null
+          },
+          "away": {
+            "name": "Loyola Marymount",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "jErgX6bRsF9I1P7Y70H8",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3773584905660377,
+        "p_implied": 0.726,
+        "p_estimated": 0.646,
+        "stake": 50.0,
+        "ev": -5.51,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.646,
+          "delta_p": -0.08,
+          "ev_margin": -0.1102
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.698,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "jErgX6bRsF9I1P7Y70H8",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Wichita State",
+            "logo": null
+          },
+          "away": {
+            "name": "Charlotte",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "U1nOlyYYZtL5tb7bM9d4",
+        "bookmaker": "unibet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3802281368821292,
+        "p_implied": 0.7245,
+        "p_estimated": 0.6445,
+        "stake": 50.0,
+        "ev": -5.52,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6445,
+          "delta_p": -0.08,
+          "ev_margin": -0.1104
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6965,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "U1nOlyYYZtL5tb7bM9d4",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-04T23:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Appalachian State",
+            "logo": null
+          },
+          "away": {
+            "name": "South Alabama",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "ty2N40KAATHEjs0HXMUu",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "ty2N40KAATHEjs0HXMUu",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Kentucky",
+            "logo": null
+          },
+          "away": {
+            "name": "Oklahoma",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "8TAVxVCsERPzMsB7GVVh",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "8TAVxVCsERPzMsB7GVVh",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "California",
+            "logo": null
+          },
+          "away": {
+            "name": "Georgia Tech",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "UfWVG7QiJL3E1f1LGrBd",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "college_basketball",
+          "eventId": "UfWVG7QiJL3E1f1LGrBd",
+          "league": "NCAAB",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Baylor",
+            "logo": null
+          },
+          "away": {
+            "name": "Colorado",
+            "logo": null
+          }
+        }
+      }
+    ],
+    "nba": [
+      {
+        "sport": "nba",
+        "eventId": "DtYzDgdkcuY2YFXeERn5",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nba",
+          "eventId": "DtYzDgdkcuY2YFXeERn5",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Rockets",
+            "logo": null
+          },
+          "away": {
+            "name": "Celtics",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "UX9nfFIvchLFfcAmMb0N",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123,
+        "display": {
+          "sport": "nba",
+          "eventId": "UX9nfFIvchLFfcAmMb0N",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Kings",
+            "logo": null
+          },
+          "away": {
+            "name": "Grizzlies",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nba",
+          "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Raptors",
+            "logo": null
+          },
+          "away": {
+            "name": "Timberwolves",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "YJD4fFlC5BGJ455JO75t",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nba",
+          "eventId": "YJD4fFlC5BGJ455JO75t",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Knicks",
+            "logo": null
+          },
+          "away": {
+            "name": "Nuggets",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "qqTk7Gz4cO76s3nRdfI1",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053,
+        "display": {
+          "sport": "nba",
+          "eventId": "qqTk7Gz4cO76s3nRdfI1",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Spurs",
+            "logo": null
+          },
+          "away": {
+            "name": "Thunder",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "19C8QaMVmfX7bMJZ9aBw",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3703703703703702,
+        "p_implied": 0.7297,
+        "p_estimated": 0.6497,
+        "stake": 50.0,
+        "ev": -5.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6497,
+          "delta_p": -0.08,
+          "ev_margin": -0.1096
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7017,
+        "display": {
+          "sport": "nba",
+          "eventId": "19C8QaMVmfX7bMJZ9aBw",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Clippers",
+            "logo": null
+          },
+          "away": {
+            "name": "Cavaliers",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "DtYzDgdkcuY2YFXeERn5",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3703703703703702,
+        "p_implied": 0.7297,
+        "p_estimated": 0.6497,
+        "stake": 50.0,
+        "ev": -5.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6497,
+          "delta_p": -0.08,
+          "ev_margin": -0.1096
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7017,
+        "display": {
+          "sport": "nba",
+          "eventId": "DtYzDgdkcuY2YFXeERn5",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Rockets",
+            "logo": null
+          },
+          "away": {
+            "name": "Celtics",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "19C8QaMVmfX7bMJZ9aBw",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.373134328358209,
+        "p_implied": 0.7283,
+        "p_estimated": 0.6483,
+        "stake": 50.0,
+        "ev": -5.49,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6483,
+          "delta_p": -0.08,
+          "ev_margin": -0.1098
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7003,
+        "display": {
+          "sport": "nba",
+          "eventId": "19C8QaMVmfX7bMJZ9aBw",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Clippers",
+            "logo": null
+          },
+          "away": {
+            "name": "Cavaliers",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "qqTk7Gz4cO76s3nRdfI1",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942,
+        "display": {
+          "sport": "nba",
+          "eventId": "qqTk7Gz4cO76s3nRdfI1",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Spurs",
+            "logo": null
+          },
+          "away": {
+            "name": "Thunder",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nba",
+          "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Raptors",
+            "logo": null
+          },
+          "away": {
+            "name": "Timberwolves",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "UX9nfFIvchLFfcAmMb0N",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nba",
+          "eventId": "UX9nfFIvchLFfcAmMb0N",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Kings",
+            "logo": null
+          },
+          "away": {
+            "name": "Grizzlies",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "YJD4fFlC5BGJ455JO75t",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nba",
+          "eventId": "YJD4fFlC5BGJ455JO75t",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Knicks",
+            "logo": null
+          },
+          "away": {
+            "name": "Nuggets",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "qqTk7Gz4cO76s3nRdfI1",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863,
+        "display": {
+          "sport": "nba",
+          "eventId": "qqTk7Gz4cO76s3nRdfI1",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T02:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Spurs",
+            "logo": null
+          },
+          "away": {
+            "name": "Thunder",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "dOk6NpxhM9uhsTXspA57",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821,
+        "display": {
+          "sport": "nba",
+          "eventId": "dOk6NpxhM9uhsTXspA57",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Bucks",
+            "logo": null
+          },
+          "away": {
+            "name": "Pelicans",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "DtYzDgdkcuY2YFXeERn5",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643,
+        "display": {
+          "sport": "nba",
+          "eventId": "DtYzDgdkcuY2YFXeERn5",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Rockets",
+            "logo": null
+          },
+          "away": {
+            "name": "Celtics",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "dOk6NpxhM9uhsTXspA57",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4545454545454546,
+        "p_implied": 0.6875,
+        "p_estimated": 0.6075,
+        "stake": 50.0,
+        "ev": -5.82,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6075,
+          "delta_p": -0.08,
+          "ev_margin": -0.1164
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6595,
+        "display": {
+          "sport": "nba",
+          "eventId": "dOk6NpxhM9uhsTXspA57",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Bucks",
+            "logo": null
+          },
+          "away": {
+            "name": "Pelicans",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "YJD4fFlC5BGJ455JO75t",
+        "bookmaker": "pointsbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6367,
+        "stake": 50.0,
+        "ev": -2.25,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6367,
+          "delta_p": -0.03,
+          "ev_margin": -0.045
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6562,
+        "display": {
+          "sport": "nba",
+          "eventId": "YJD4fFlC5BGJ455JO75t",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Knicks",
+            "logo": null
+          },
+          "away": {
+            "name": "Nuggets",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "dOk6NpxhM9uhsTXspA57",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6367,
+        "stake": 50.0,
+        "ev": -2.25,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6367,
+          "delta_p": -0.03,
+          "ev_margin": -0.045
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6562,
+        "display": {
+          "sport": "nba",
+          "eventId": "dOk6NpxhM9uhsTXspA57",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T01:00:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Bucks",
+            "logo": null
+          },
+          "away": {
+            "name": "Pelicans",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "19C8QaMVmfX7bMJZ9aBw",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.6666666666666665,
+        "p_implied": 0.6,
+        "p_estimated": 0.57,
+        "stake": 50.0,
+        "ev": -2.5,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.57,
+          "delta_p": -0.03,
+          "ev_margin": -0.05
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5895,
+        "display": {
+          "sport": "nba",
+          "eventId": "19C8QaMVmfX7bMJZ9aBw",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T03:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Clippers",
+            "logo": null
+          },
+          "away": {
+            "name": "Cavaliers",
+            "logo": null
+          }
+        }
+      },
+      {
+        "sport": "nba",
+        "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+        "bookmaker": "bovada",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.7142857142857144,
+        "p_implied": 0.5833,
+        "p_estimated": 0.5533,
+        "stake": 50.0,
+        "ev": -2.57,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5533,
+          "delta_p": -0.03,
+          "ev_margin": -0.0514
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5728,
+        "display": {
+          "sport": "nba",
+          "eventId": "M5FiFqrIlbzS2Yu6rVZV",
+          "league": "NBA",
+          "leagueLogo": null,
+          "startTime": "2026-02-05T00:30:00.000Z",
+          "live": {
+            "started": false,
+            "completed": false,
+            "ended": false,
+            "cancelled": false,
+            "live": false,
+            "delayed": false,
+            "oddsPresent": true,
+            "oddsAvailable": true
+          },
+          "home": {
+            "name": "Raptors",
+            "logo": null
+          },
+          "away": {
+            "name": "Timberwolves",
+            "logo": null
+          }
+        }
+      }
+    ]
+  },
   "picks_parlay_premium": [],
   "daily_featured_parlay": null,
   "metadata": {},
   "picks_value": [],
-  "freeze_until": "2026-02-05T21:44:50.828187"
+  "freeze_until": "2026-02-05T22:12:34.465974"
 }
