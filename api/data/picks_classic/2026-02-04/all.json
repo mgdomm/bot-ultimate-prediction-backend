@@ -1,0 +1,362 @@
+[
+  {
+    "sport": "college_basketball",
+    "eventId": "14",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "away",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "17",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "4",
+    "bookmaker": "williamhill",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nfl",
+    "eventId": "1",
+    "bookmaker": "espnbet",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "2",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "3",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "4",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_champions",
+    "eventId": "5",
+    "bookmaker": "draftkings",
+    "market": "ml",
+    "selection": "away",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "1",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2105263157894737,
+    "p_implied": 0.8261,
+    "p_estimated": 0.7461,
+    "p_safe": 0.7981,
+    "stake": 50.0,
+    "ev": -4.84,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_champions",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "sp",
+    "selection": "home",
+    "odds": 1.2173913043478262,
+    "p_implied": 0.8214,
+    "p_estimated": 0.7414,
+    "p_safe": 0.7934,
+    "stake": 50.0,
+    "ev": -4.87,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_mls",
+    "eventId": "10",
+    "bookmaker": "fanduel",
+    "market": "sp",
+    "selection": "away",
+    "odds": 1.2173913043478262,
+    "p_implied": 0.8214,
+    "p_estimated": 0.7414,
+    "p_safe": 0.7934,
+    "stake": 50.0,
+    "ev": -4.87,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "6",
+    "bookmaker": "caesars",
+    "market": "ml",
+    "selection": "away",
+    "odds": 1.2197802197802199,
+    "p_implied": 0.8198,
+    "p_estimated": 0.7398,
+    "p_safe": 0.7918,
+    "stake": 50.0,
+    "ev": -4.88,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "9",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2222222222222223,
+    "p_implied": 0.8182,
+    "p_estimated": 0.7382,
+    "p_safe": 0.7902,
+    "stake": 50.0,
+    "ev": -4.89,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_champions",
+    "eventId": "2",
+    "bookmaker": "fanduel",
+    "market": "sp",
+    "selection": "away",
+    "odds": 1.2325581395348837,
+    "p_implied": 0.8113,
+    "p_estimated": 0.7313,
+    "p_safe": 0.7833,
+    "stake": 50.0,
+    "ev": -4.93,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "7",
+    "bookmaker": "caesars",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2380952380952381,
+    "p_implied": 0.8077,
+    "p_estimated": 0.7277,
+    "p_safe": 0.7797,
+    "stake": 50.0,
+    "ev": -4.95,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "1",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2380952380952381,
+    "p_implied": 0.8077,
+    "p_estimated": 0.7277,
+    "p_safe": 0.7797,
+    "stake": 50.0,
+    "ev": -4.95,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "11",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "away",
+    "odds": 1.25,
+    "p_implied": 0.8,
+    "p_estimated": 0.72,
+    "p_safe": 0.772,
+    "stake": 50.0,
+    "ev": -5.0,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_mls",
+    "eventId": "1",
+    "bookmaker": "fanduel",
+    "market": "sp",
+    "selection": "away",
+    "odds": 1.25,
+    "p_implied": 0.8,
+    "p_estimated": 0.72,
+    "p_safe": 0.772,
+    "stake": 50.0,
+    "ev": -5.0,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "3",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2564102564102564,
+    "p_implied": 0.7959,
+    "p_estimated": 0.7159,
+    "p_safe": 0.7679,
+    "stake": 50.0,
+    "ev": -5.03,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "soccer_mls",
+    "eventId": "3",
+    "bookmaker": "draftkings",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2564102564102564,
+    "p_implied": 0.7959,
+    "p_estimated": 0.7159,
+    "p_safe": 0.7679,
+    "stake": 50.0,
+    "ev": -5.03,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  }
+]

@@ -17,6 +17,7 @@ MAX_PICKS = int(os.environ.get("CLASSIC_MAX_PICKS", "20"))
 SHRINK_W = 0.35  # peso del modelo; (1-w) = peso del mercado
 
 # Rangos “seguros” para principiantes
+# Piso de cuota mínimo (permitimos >=1.20 pero priorizamos cuotas más altas en el ordenamiento)
 ODDS_MIN = 1.20
 ODDS_MAX = 2.30
 
@@ -191,12 +192,12 @@ def score(sel: Dict[str, Any]) -> Tuple[float, float, float]:
     Orden “inteligente” para seguridad:
     1) p_safe desc
     2) p_estimated desc
-    3) odds asc (preferimos cuotas más bajas para “seguro”)
+    3) odds desc (preferimos cuotas más atractivas dentro del rango permitido)
     """
     ps = p_safe(sel)
     pe = _f(sel.get("p_estimated"), default=0.0)
-    odds = _f(sel.get("odds"), default=999.0)
-    return (ps, pe, -odds)
+    odds = _f(sel.get("odds"), default=0.0)
+    return (ps, pe, odds)
 
 
 def dedupe_exact(selections: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -298,8 +299,10 @@ def build_picks(day: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
 
     # Filtrado por ventana del contrato: 06:00 Europe/Madrid -> +24h (end exclusivo)
     display_index = build_display_index(day)
-    start_utc, end_utc = _cycle_window_utc(day)
-    all_sel = [x for x in all_sel if isinstance(x, dict) and _sel_in_cycle_window(x, display_index, start_utc, end_utc)]
+    if display_index:
+        start_utc, end_utc = _cycle_window_utc(day)
+        all_sel = [x for x in all_sel if isinstance(x, dict) and _sel_in_cycle_window(x, display_index, start_utc, end_utc)]
+    # Si no hay display_index (event snapshots no cargados), mantenemos todos los picks para evitar quedarnos en cero.
 
     # debug siempre disponible para logs si picks=0
     dbg = debug_filter_reasons([s for s in all_sel if isinstance(s, dict)])

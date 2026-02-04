@@ -1,0 +1,2746 @@
+{
+  "contract_version": "1.0",
+  "contract_date": "2026-02-04",
+  "generated_at": "2026-02-04T19:48:47.056976",
+  "picks_classic": [
+    {
+      "sport": "college_basketball",
+      "eventId": "14",
+      "bookmaker": "betmgm",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "17",
+      "bookmaker": "betmgm",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nba",
+      "eventId": "4",
+      "bookmaker": "williamhill",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nfl",
+      "eventId": "1",
+      "bookmaker": "espnbet",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nhl",
+      "eventId": "2",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nhl",
+      "eventId": "3",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nhl",
+      "eventId": "4",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_champions",
+      "eventId": "5",
+      "bookmaker": "draftkings",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.2,
+      "p_implied": 0.8333,
+      "p_estimated": 0.7533,
+      "p_safe": 0.8053,
+      "stake": 50.0,
+      "ev": -4.8,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nhl",
+      "eventId": "1",
+      "bookmaker": "betmgm",
+      "market": "ou",
+      "selection": "under",
+      "odds": 1.2105263157894737,
+      "p_implied": 0.8261,
+      "p_estimated": 0.7461,
+      "p_safe": 0.7981,
+      "stake": 50.0,
+      "ev": -4.84,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_champions",
+      "eventId": "1",
+      "bookmaker": "fanduel",
+      "market": "sp",
+      "selection": "home",
+      "odds": 1.2173913043478262,
+      "p_implied": 0.8214,
+      "p_estimated": 0.7414,
+      "p_safe": 0.7934,
+      "stake": 50.0,
+      "ev": -4.87,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_mls",
+      "eventId": "10",
+      "bookmaker": "fanduel",
+      "market": "sp",
+      "selection": "away",
+      "odds": 1.2173913043478262,
+      "p_implied": 0.8214,
+      "p_estimated": 0.7414,
+      "p_safe": 0.7934,
+      "stake": 50.0,
+      "ev": -4.87,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "6",
+      "bookmaker": "caesars",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.2197802197802199,
+      "p_implied": 0.8198,
+      "p_estimated": 0.7398,
+      "p_safe": 0.7918,
+      "stake": 50.0,
+      "ev": -4.88,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "9",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2222222222222223,
+      "p_implied": 0.8182,
+      "p_estimated": 0.7382,
+      "p_safe": 0.7902,
+      "stake": 50.0,
+      "ev": -4.89,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_champions",
+      "eventId": "2",
+      "bookmaker": "fanduel",
+      "market": "sp",
+      "selection": "away",
+      "odds": 1.2325581395348837,
+      "p_implied": 0.8113,
+      "p_estimated": 0.7313,
+      "p_safe": 0.7833,
+      "stake": 50.0,
+      "ev": -4.93,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "7",
+      "bookmaker": "caesars",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2380952380952381,
+      "p_implied": 0.8077,
+      "p_estimated": 0.7277,
+      "p_safe": 0.7797,
+      "stake": 50.0,
+      "ev": -4.95,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nba",
+      "eventId": "1",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2380952380952381,
+      "p_implied": 0.8077,
+      "p_estimated": 0.7277,
+      "p_safe": 0.7797,
+      "stake": 50.0,
+      "ev": -4.95,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "11",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.25,
+      "p_implied": 0.8,
+      "p_estimated": 0.72,
+      "p_safe": 0.772,
+      "stake": 50.0,
+      "ev": -5.0,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_mls",
+      "eventId": "1",
+      "bookmaker": "fanduel",
+      "market": "sp",
+      "selection": "away",
+      "odds": 1.25,
+      "p_implied": 0.8,
+      "p_estimated": 0.72,
+      "p_safe": 0.772,
+      "stake": 50.0,
+      "ev": -5.0,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "nba",
+      "eventId": "3",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2564102564102564,
+      "p_implied": 0.7959,
+      "p_estimated": 0.7159,
+      "p_safe": 0.7679,
+      "stake": 50.0,
+      "ev": -5.03,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    },
+    {
+      "sport": "soccer_mls",
+      "eventId": "3",
+      "bookmaker": "draftkings",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.2564102564102564,
+      "p_implied": 0.7959,
+      "p_estimated": 0.7159,
+      "p_safe": 0.7679,
+      "stake": 50.0,
+      "ev": -5.03,
+      "risk": {
+        "level": "LOW"
+      },
+      "premium": true,
+      "premium_reason": "STRICT_LOW_AND_HIGH_P"
+    }
+  ],
+  "picks_by_sport": {
+    "soccer_mls": [
+      {
+        "sport": "soccer_mls",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3703703703703702,
+        "p_implied": 0.7297,
+        "p_estimated": 0.6497,
+        "stake": 50.0,
+        "ev": -5.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6497,
+          "delta_p": -0.08,
+          "ev_margin": -0.1096
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7017
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "4",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3773584905660377,
+        "p_implied": 0.726,
+        "p_estimated": 0.646,
+        "stake": 50.0,
+        "ev": -5.51,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.646,
+          "delta_p": -0.08,
+          "ev_margin": -0.1102
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.698
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "5",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3773584905660377,
+        "p_implied": 0.726,
+        "p_estimated": 0.646,
+        "stake": 50.0,
+        "ev": -5.51,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.646,
+          "delta_p": -0.08,
+          "ev_margin": -0.1102
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.698
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "11",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "15",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.392156862745098,
+        "p_implied": 0.7183,
+        "p_estimated": 0.6383,
+        "stake": 50.0,
+        "ev": -5.57,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6383,
+          "delta_p": -0.08,
+          "ev_margin": -0.1114
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6903
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "3",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "5",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "15",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.425531914893617,
+        "p_implied": 0.7015,
+        "p_estimated": 0.6215,
+        "stake": 50.0,
+        "ev": -5.7,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6215,
+          "delta_p": -0.08,
+          "ev_margin": -0.114
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6735
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "3",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.425531914893617,
+        "p_implied": 0.7015,
+        "p_estimated": 0.6215,
+        "stake": 50.0,
+        "ev": -5.7,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6215,
+          "delta_p": -0.08,
+          "ev_margin": -0.114
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6735
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "4",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.425531914893617,
+        "p_implied": 0.7015,
+        "p_estimated": 0.6215,
+        "stake": 50.0,
+        "ev": -5.7,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6215,
+          "delta_p": -0.08,
+          "ev_margin": -0.114
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6735
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "1",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.434782608695652,
+        "p_implied": 0.697,
+        "p_estimated": 0.617,
+        "stake": 50.0,
+        "ev": -5.74,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.617,
+          "delta_p": -0.08,
+          "ev_margin": -0.1148
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.669
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.434782608695652,
+        "p_implied": 0.697,
+        "p_estimated": 0.617,
+        "stake": 50.0,
+        "ev": -5.74,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.617,
+          "delta_p": -0.08,
+          "ev_margin": -0.1148
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.669
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "11",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "13",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "13",
+        "bookmaker": "williamhill",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643
+      }
+    ],
+    "nfl": [
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779
+      },
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4545454545454546,
+        "p_implied": 0.6875,
+        "p_estimated": 0.6075,
+        "stake": 50.0,
+        "ev": -5.82,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6075,
+          "delta_p": -0.08,
+          "ev_margin": -0.1164
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6595
+      },
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "betmgm",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.7142857142857144,
+        "p_implied": 0.5833,
+        "p_estimated": 0.5533,
+        "stake": 50.0,
+        "ev": -2.57,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5533,
+          "delta_p": -0.03,
+          "ev_margin": -0.0514
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5728
+      },
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.8,
+        "p_implied": 0.5556,
+        "p_estimated": 0.5256,
+        "stake": 50.0,
+        "ev": -2.7,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5256,
+          "delta_p": -0.03,
+          "ev_margin": -0.054
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5451
+      },
+      {
+        "sport": "nfl",
+        "eventId": "1",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 2.1399999999999997,
+        "p_implied": 0.4673,
+        "p_estimated": 0.4373,
+        "stake": 50.0,
+        "ev": -3.21,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.4373,
+          "delta_p": -0.03,
+          "ev_margin": -0.0642
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.4568
+      }
+    ],
+    "nhl": [
+      {
+        "sport": "nhl",
+        "eventId": "2",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "nhl",
+        "eventId": "3",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "nhl",
+        "eventId": "3",
+        "bookmaker": "caesars",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "nhl",
+        "eventId": "1",
+        "bookmaker": "espnbet",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053
+      },
+      {
+        "sport": "nhl",
+        "eventId": "3",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "nhl",
+        "eventId": "2",
+        "bookmaker": "bovada",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "bovada",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "nhl",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.434782608695652,
+        "p_implied": 0.697,
+        "p_estimated": 0.617,
+        "stake": 50.0,
+        "ev": -5.74,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.617,
+          "delta_p": -0.08,
+          "ev_margin": -0.1148
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.669
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "betmgm",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.4504504504504505,
+        "p_implied": 0.6894,
+        "p_estimated": 0.6094,
+        "stake": 50.0,
+        "ev": -5.8,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6094,
+          "delta_p": -0.08,
+          "ev_margin": -0.116
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6614
+      },
+      {
+        "sport": "nhl",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.5714285714285714,
+        "p_implied": 0.6364,
+        "p_estimated": 0.6064,
+        "stake": 50.0,
+        "ev": -2.35,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6064,
+          "delta_p": -0.03,
+          "ev_margin": -0.047
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6259
+      },
+      {
+        "sport": "nhl",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.5813953488372094,
+        "p_implied": 0.6324,
+        "p_estimated": 0.6024,
+        "stake": 50.0,
+        "ev": -2.37,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6024,
+          "delta_p": -0.03,
+          "ev_margin": -0.0474
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6219
+      },
+      {
+        "sport": "nhl",
+        "eventId": "3",
+        "bookmaker": "betmgm",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.5917159763313609,
+        "p_implied": 0.6283,
+        "p_estimated": 0.5983,
+        "stake": 50.0,
+        "ev": -2.38,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5983,
+          "delta_p": -0.03,
+          "ev_margin": -0.0476
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6178
+      },
+      {
+        "sport": "nhl",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.6024096385542168,
+        "p_implied": 0.6241,
+        "p_estimated": 0.5941,
+        "stake": 50.0,
+        "ev": -2.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5941,
+          "delta_p": -0.03,
+          "ev_margin": -0.048
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6136
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.7692307692307692,
+        "p_implied": 0.5652,
+        "p_estimated": 0.5352,
+        "stake": 50.0,
+        "ev": -2.66,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5352,
+          "delta_p": -0.03,
+          "ev_margin": -0.0532
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5547
+      },
+      {
+        "sport": "nhl",
+        "eventId": "1",
+        "bookmaker": "betmgm",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.8,
+        "p_implied": 0.5556,
+        "p_estimated": 0.5256,
+        "stake": 50.0,
+        "ev": -2.7,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5256,
+          "delta_p": -0.03,
+          "ev_margin": -0.054
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5451
+      },
+      {
+        "sport": "nhl",
+        "eventId": "1",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.8695652173913042,
+        "p_implied": 0.5349,
+        "p_estimated": 0.5049,
+        "stake": 50.0,
+        "ev": -2.8,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5049,
+          "delta_p": -0.03,
+          "ev_margin": -0.056
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5244
+      },
+      {
+        "sport": "nhl",
+        "eventId": "4",
+        "bookmaker": "bovada",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.9090909090909092,
+        "p_implied": 0.5238,
+        "p_estimated": 0.4938,
+        "stake": 50.0,
+        "ev": -2.86,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.4938,
+          "delta_p": -0.03,
+          "ev_margin": -0.0572
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5133
+      },
+      {
+        "sport": "nhl",
+        "eventId": "3",
+        "bookmaker": "bovada",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.9523809523809523,
+        "p_implied": 0.5122,
+        "p_estimated": 0.4822,
+        "stake": 50.0,
+        "ev": -2.93,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.4822,
+          "delta_p": -0.03,
+          "ev_margin": -0.0586
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5017
+      }
+    ],
+    "nba": [
+      {
+        "sport": "nba",
+        "eventId": "4",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "nba",
+        "eventId": "4",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.353356890459364,
+        "p_implied": 0.7389,
+        "p_estimated": 0.6589,
+        "stake": 50.0,
+        "ev": -5.41,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6589,
+          "delta_p": -0.08,
+          "ev_margin": -0.1082
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7109
+      },
+      {
+        "sport": "nba",
+        "eventId": "5",
+        "bookmaker": "bovada",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "nba",
+        "eventId": "2",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053
+      },
+      {
+        "sport": "nba",
+        "eventId": "5",
+        "bookmaker": "betmgm",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053
+      },
+      {
+        "sport": "nba",
+        "eventId": "7",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053
+      },
+      {
+        "sport": "nba",
+        "eventId": "8",
+        "bookmaker": "bovada",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3636363636363638,
+        "p_implied": 0.7333,
+        "p_estimated": 0.6533,
+        "stake": 50.0,
+        "ev": -5.46,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6533,
+          "delta_p": -0.08,
+          "ev_margin": -0.1092
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7053
+      },
+      {
+        "sport": "nba",
+        "eventId": "10",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3703703703703702,
+        "p_implied": 0.7297,
+        "p_estimated": 0.6497,
+        "stake": 50.0,
+        "ev": -5.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6497,
+          "delta_p": -0.08,
+          "ev_margin": -0.1096
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7017
+      },
+      {
+        "sport": "nba",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.3703703703703702,
+        "p_implied": 0.7297,
+        "p_estimated": 0.6497,
+        "stake": 50.0,
+        "ev": -5.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6497,
+          "delta_p": -0.08,
+          "ev_margin": -0.1096
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7017
+      },
+      {
+        "sport": "nba",
+        "eventId": "1",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3745318352059925,
+        "p_implied": 0.7275,
+        "p_estimated": 0.6475,
+        "stake": 50.0,
+        "ev": -5.5,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6475,
+          "delta_p": -0.08,
+          "ev_margin": -0.11
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6995
+      },
+      {
+        "sport": "nba",
+        "eventId": "1",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "nba",
+        "eventId": "10",
+        "bookmaker": "espnbet",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "nba",
+        "eventId": "4",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "nba",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "nba",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "nba",
+        "eventId": "3",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "nba",
+        "eventId": "3",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "nba",
+        "eventId": "7",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "nba",
+        "eventId": "9",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "nba",
+        "eventId": "3",
+        "bookmaker": "caesars",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779
+      }
+    ],
+    "college_basketball": [
+      {
+        "sport": "college_basketball",
+        "eventId": "13",
+        "bookmaker": "caesars",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "16",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3508771929824561,
+        "p_implied": 0.7403,
+        "p_estimated": 0.6603,
+        "stake": 50.0,
+        "ev": -5.4,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6603,
+          "delta_p": -0.08,
+          "ev_margin": -0.108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7123
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "17",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "6",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.3571428571428572,
+        "p_implied": 0.7368,
+        "p_estimated": 0.6568,
+        "stake": 50.0,
+        "ev": -5.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6568,
+          "delta_p": -0.08,
+          "ev_margin": -0.1086
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7088
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "12",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3597122302158273,
+        "p_implied": 0.7354,
+        "p_estimated": 0.6554,
+        "stake": 50.0,
+        "ev": -5.44,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6554,
+          "delta_p": -0.08,
+          "ev_margin": -0.1088
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.7074
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "7",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.3846153846153846,
+        "p_implied": 0.7222,
+        "p_estimated": 0.6422,
+        "stake": 50.0,
+        "ev": -5.54,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6422,
+          "delta_p": -0.08,
+          "ev_margin": -0.1108
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6942
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "19",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "4",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.5154639175257731,
+        "p_implied": 0.6599,
+        "p_estimated": 0.6299,
+        "stake": 50.0,
+        "ev": -2.27,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6299,
+          "delta_p": -0.03,
+          "ev_margin": -0.0454
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6494
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.4878048780487805,
+        "p_implied": 0.6721,
+        "p_estimated": 0.5921,
+        "stake": 50.0,
+        "ev": -5.95,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5921,
+          "delta_p": -0.08,
+          "ev_margin": -0.119
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6441
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "13",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.617283950617284,
+        "p_implied": 0.6183,
+        "p_estimated": 0.5883,
+        "stake": 50.0,
+        "ev": -2.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5883,
+          "delta_p": -0.03,
+          "ev_margin": -0.0486
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6078
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.617283950617284,
+        "p_implied": 0.6183,
+        "p_estimated": 0.5883,
+        "stake": 50.0,
+        "ev": -2.43,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5883,
+          "delta_p": -0.03,
+          "ev_margin": -0.0486
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6078
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.625,
+        "p_implied": 0.6154,
+        "p_estimated": 0.5854,
+        "stake": 50.0,
+        "ev": -2.44,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5854,
+          "delta_p": -0.03,
+          "ev_margin": -0.0488
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6049
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "17",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.6329113924050633,
+        "p_implied": 0.6124,
+        "p_estimated": 0.5824,
+        "stake": 50.0,
+        "ev": -2.45,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5824,
+          "delta_p": -0.03,
+          "ev_margin": -0.049
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6019
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "16",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.6451612903225805,
+        "p_implied": 0.6078,
+        "p_estimated": 0.5778,
+        "stake": 50.0,
+        "ev": -2.47,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5778,
+          "delta_p": -0.03,
+          "ev_margin": -0.0494
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5973
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.6493506493506493,
+        "p_implied": 0.6063,
+        "p_estimated": 0.5763,
+        "stake": 50.0,
+        "ev": -2.47,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5763,
+          "delta_p": -0.03,
+          "ev_margin": -0.0494
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5958
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.6578947368421053,
+        "p_implied": 0.6032,
+        "p_estimated": 0.5732,
+        "stake": 50.0,
+        "ev": -2.48,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5732,
+          "delta_p": -0.03,
+          "ev_margin": -0.0496
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5927
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "18",
+        "bookmaker": "caesars",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.6666666666666665,
+        "p_implied": 0.6,
+        "p_estimated": 0.57,
+        "stake": 50.0,
+        "ev": -2.5,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.57,
+          "delta_p": -0.03,
+          "ev_margin": -0.05
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5895
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.6666666666666665,
+        "p_implied": 0.6,
+        "p_estimated": 0.57,
+        "stake": 50.0,
+        "ev": -2.5,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.57,
+          "delta_p": -0.03,
+          "ev_margin": -0.05
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5895
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "16",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.6802721088435373,
+        "p_implied": 0.5951,
+        "p_estimated": 0.5651,
+        "stake": 50.0,
+        "ev": -2.52,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5651,
+          "delta_p": -0.03,
+          "ev_margin": -0.0504
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.5846
+      }
+    ],
+    "soccer_champions": [
+      {
+        "sport": "soccer_champions",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.4,
+        "p_implied": 0.7143,
+        "p_estimated": 0.6343,
+        "stake": 50.0,
+        "ev": -5.6,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6343,
+          "delta_p": -0.08,
+          "ev_margin": -0.112
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6863
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "4",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4081632653061225,
+        "p_implied": 0.7101,
+        "p_estimated": 0.6301,
+        "stake": 50.0,
+        "ev": -5.64,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6301,
+          "delta_p": -0.08,
+          "ev_margin": -0.1128
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6821
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "5",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4166666666666667,
+        "p_implied": 0.7059,
+        "p_estimated": 0.6259,
+        "stake": 50.0,
+        "ev": -5.67,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6259,
+          "delta_p": -0.08,
+          "ev_margin": -0.1134
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6779
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "5",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.434782608695652,
+        "p_implied": 0.697,
+        "p_estimated": 0.617,
+        "stake": 50.0,
+        "ev": -5.74,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.617,
+          "delta_p": -0.08,
+          "ev_margin": -0.1148
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.669
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.434782608695652,
+        "p_implied": 0.697,
+        "p_estimated": 0.617,
+        "stake": 50.0,
+        "ev": -5.74,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.617,
+          "delta_p": -0.08,
+          "ev_margin": -0.1148
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.669
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "8",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.4444444444444444,
+        "p_implied": 0.6923,
+        "p_estimated": 0.6123,
+        "stake": 50.0,
+        "ev": -5.78,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6123,
+          "delta_p": -0.08,
+          "ev_margin": -0.1156
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6643
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "3",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4545454545454546,
+        "p_implied": 0.6875,
+        "p_estimated": 0.6075,
+        "stake": 50.0,
+        "ev": -5.82,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6075,
+          "delta_p": -0.08,
+          "ev_margin": -0.1164
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6595
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "2",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6367,
+        "stake": 50.0,
+        "ev": -2.25,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6367,
+          "delta_p": -0.03,
+          "ev_margin": -0.045
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6562
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "4",
+        "bookmaker": "williamhill",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6367,
+        "stake": 50.0,
+        "ev": -2.25,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6367,
+          "delta_p": -0.03,
+          "ev_margin": -0.045
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6562
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "4",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.5,
+        "p_implied": 0.6667,
+        "p_estimated": 0.6367,
+        "stake": 50.0,
+        "ev": -2.25,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6367,
+          "delta_p": -0.03,
+          "ev_margin": -0.045
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6562
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "ou",
+        "selection": "under",
+        "odds": 1.4651162790697674,
+        "p_implied": 0.6825,
+        "p_estimated": 0.6025,
+        "stake": 50.0,
+        "ev": -5.86,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6025,
+          "delta_p": -0.08,
+          "ev_margin": -0.1172
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6545
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "5",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.526315789473684,
+        "p_implied": 0.6552,
+        "p_estimated": 0.6252,
+        "stake": 50.0,
+        "ev": -2.29,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.6252,
+          "delta_p": -0.03,
+          "ev_margin": -0.0458
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6447
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "8",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.4878048780487805,
+        "p_implied": 0.6721,
+        "p_estimated": 0.5921,
+        "stake": 50.0,
+        "ev": -5.95,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5921,
+          "delta_p": -0.08,
+          "ev_margin": -0.119
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6441
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "6",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.5882352941176472,
+        "p_implied": 0.6296,
+        "p_estimated": 0.5996,
+        "stake": 50.0,
+        "ev": -2.38,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5996,
+          "delta_p": -0.03,
+          "ev_margin": -0.0476
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6191
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "sp",
+        "selection": "home",
+        "odds": 1.5882352941176472,
+        "p_implied": 0.6296,
+        "p_estimated": 0.5996,
+        "stake": 50.0,
+        "ev": -2.38,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5996,
+          "delta_p": -0.03,
+          "ev_margin": -0.0476
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6191
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "3",
+        "bookmaker": "draftkings",
+        "market": "ou",
+        "selection": "over",
+        "odds": 1.606060606060606,
+        "p_implied": 0.6226,
+        "p_estimated": 0.5926,
+        "stake": 50.0,
+        "ev": -2.41,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5926,
+          "delta_p": -0.03,
+          "ev_margin": -0.0482
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6121
+      },
+      {
+        "sport": "soccer_champions",
+        "eventId": "7",
+        "bookmaker": "draftkings",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.606060606060606,
+        "p_implied": 0.6226,
+        "p_estimated": 0.5926,
+        "stake": 50.0,
+        "ev": -2.41,
+        "risk": {
+          "level": "EXTREME",
+          "p_est": 0.5926,
+          "delta_p": -0.03,
+          "ev_margin": -0.0482
+        },
+        "premium": true,
+        "premium_reason": "RELAXED_ALL_FOR_POOL",
+        "p_safe": 0.6121
+      }
+    ]
+  },
+  "picks_parlay_premium": [
+    {
+      "picks": [
+        {
+          "sport": "nba",
+          "eventId": "3",
+          "bookmaker": "espnbet",
+          "market": "ml",
+          "selection": "home",
+          "odds": 1.2564102564102564,
+          "p_implied": 0.7959,
+          "p_estimated": 0.7159,
+          "p_safe": 0.7679,
+          "stake": 50.0,
+          "ev": -5.03,
+          "risk": {
+            "level": "LOW"
+          },
+          "premium": true,
+          "premium_reason": "STRICT_LOW_AND_HIGH_P"
+        },
+        {
+          "sport": "college_basketball",
+          "eventId": "11",
+          "bookmaker": "espnbet",
+          "market": "ml",
+          "selection": "away",
+          "odds": 1.25,
+          "p_implied": 0.8,
+          "p_estimated": 0.72,
+          "p_safe": 0.772,
+          "stake": 50.0,
+          "ev": -5.0,
+          "risk": {
+            "level": "LOW"
+          },
+          "premium": true,
+          "premium_reason": "STRICT_LOW_AND_HIGH_P"
+        },
+        {
+          "sport": "soccer_mls",
+          "eventId": "1",
+          "bookmaker": "fanduel",
+          "market": "sp",
+          "selection": "away",
+          "odds": 1.25,
+          "p_implied": 0.8,
+          "p_estimated": 0.72,
+          "p_safe": 0.772,
+          "stake": 50.0,
+          "ev": -5.0,
+          "risk": {
+            "level": "LOW"
+          },
+          "premium": true,
+          "premium_reason": "STRICT_LOW_AND_HIGH_P"
+        }
+      ],
+      "combined_odds": 1.9631,
+      "combined_probability": null,
+      "stake": 50.0,
+      "expected_profit": 48.16,
+      "expected_edge_sum": null,
+      "consensus_score_sum": null,
+      "type": "forced_fallback",
+      "source": "classic_forced",
+      "day": "2026-02-04"
+    }
+  ],
+  "daily_featured_parlay": {
+    "picks": [
+      {
+        "sport": "nba",
+        "eventId": "3",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "home",
+        "odds": 1.2564102564102564,
+        "p_implied": 0.7959,
+        "p_estimated": 0.7159,
+        "p_safe": 0.7679,
+        "stake": 50.0,
+        "ev": -5.03,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": true,
+        "premium_reason": "STRICT_LOW_AND_HIGH_P"
+      },
+      {
+        "sport": "college_basketball",
+        "eventId": "11",
+        "bookmaker": "espnbet",
+        "market": "ml",
+        "selection": "away",
+        "odds": 1.25,
+        "p_implied": 0.8,
+        "p_estimated": 0.72,
+        "p_safe": 0.772,
+        "stake": 50.0,
+        "ev": -5.0,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": true,
+        "premium_reason": "STRICT_LOW_AND_HIGH_P"
+      },
+      {
+        "sport": "soccer_mls",
+        "eventId": "1",
+        "bookmaker": "fanduel",
+        "market": "sp",
+        "selection": "away",
+        "odds": 1.25,
+        "p_implied": 0.8,
+        "p_estimated": 0.72,
+        "p_safe": 0.772,
+        "stake": 50.0,
+        "ev": -5.0,
+        "risk": {
+          "level": "LOW"
+        },
+        "premium": true,
+        "premium_reason": "STRICT_LOW_AND_HIGH_P"
+      }
+    ],
+    "combined_odds": 1.9631,
+    "combined_probability": null,
+    "stake": 50.0,
+    "expected_profit": 48.16,
+    "expected_edge_sum": null,
+    "consensus_score_sum": null,
+    "type": "forced_fallback",
+    "source": "classic_forced",
+    "day": "2026-02-04"
+  },
+  "metadata": {},
+  "picks_value": [],
+  "freeze_until": "2026-02-05T19:48:47.056976"
+}

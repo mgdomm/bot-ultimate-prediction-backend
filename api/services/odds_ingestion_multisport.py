@@ -57,6 +57,17 @@ def _parse_american_odds(odds_str: str) -> float:
         return 1.0  # Default fallback
 
 
+def _to_float(val: Any) -> Optional[float]:
+    """Parse numeric strings like "+3.5" or "2.5" into float, else None."""
+    try:
+        f = float(val)
+        if f == f:  # filter NaN
+            return f
+    except Exception:
+        return None
+    return None
+
+
 # FREE: mantener bajo para evitar rateLimit/min (se puede override con ODDS_MAX_EVENTS_PER_SPORT)
 MAX_EVENTS_PER_SPORT_DEFAULT = 8
 
@@ -325,10 +336,34 @@ def ingest_odds_for_day(
                                     "odd": _parse_american_odds(odds_value),
                                 }
                                 
-                                # Add point if applicable (for spreads and totals)
+                                # Add line/point if applicable
                                 point = odd_info.get("bookSpread") or odd_info.get("fairSpread")
-                                if point:
-                                    value_entry["point"] = float(point)
+
+                                # Over/Under markets carry bookOverUnder/fairOverUnder instead of spreads
+                                if bet_type == "ou":
+                                    point = (
+                                        odd_info.get("bookOverUnder")
+                                        or odd_info.get("fairOverUnder")
+                                        or point
+                                    )
+
+                                # If we still don't have a point, try bookmaker-level fields
+                                if point is None:
+                                    for bm_data in by_bookmaker.values():
+                                        if not isinstance(bm_data, dict):
+                                            continue
+                                        cand = (
+                                            bm_data.get("overUnder")
+                                            or bm_data.get("total")
+                                            or bm_data.get("spread")
+                                        )
+                                        point = cand if cand is not None else point
+                                        if point is not None:
+                                            break
+
+                                parsed_point = _to_float(point)
+                                if parsed_point is not None:
+                                    value_entry["point"] = parsed_point
                                 
                                 bookmaker_bets[bm_name][market_key].append(value_entry)
                         

@@ -175,6 +175,56 @@ def base_filter_classic(selections: List[Dict[str, Any]], min_odds: float) -> Li
     return filtered
 
 
+def force_parlay_from_classic(day: str, max_legs: int = 3, min_odds: float = 1.20) -> Optional[Dict[str, Any]]:
+    """
+    Último fallback: arma un parlay simple tomando las mejores cuotas de classic
+    (eventos únicos) ignorando guardrails. Garantiza 2–3 legs si hay material.
+    """
+    classic = load_classic_selections(day)
+    if not classic:
+        return None
+
+    sorted_picks = sorted(
+        [p for p in classic if isinstance(p, dict)],
+        key=lambda p: float(p.get("odds") or 0.0),
+        reverse=True,
+    )
+
+    seen_events = set()
+    legs: List[Dict[str, Any]] = []
+    for pick in sorted_picks:
+        try:
+            odds = float(pick.get("odds") or 0.0)
+        except Exception:
+            continue
+        if odds < float(min_odds):
+            continue
+        eid = str(pick.get("eventId") or "").strip()
+        if not eid or eid in seen_events:
+            continue
+        legs.append(pick)
+        seen_events.add(eid)
+        if len(legs) >= max_legs:
+            break
+
+    if len(legs) < 2:
+        return None
+
+    odds = combined_odds(legs)
+    return {
+        "picks": legs,
+        "combined_odds": round(float(odds), 4),
+        "combined_probability": combined_probability(legs) or None,
+        "stake": float(STAKE),
+        "expected_profit": round(float(profit_from_odds(odds)), 2),
+        "expected_edge_sum": None,
+        "consensus_score_sum": None,
+        "type": "forced_fallback",
+        "source": "classic_forced",
+        "day": day,
+    }
+
+
 def valid_events(picks: List[Dict[str, Any]]) -> bool:
     event_ids = {str(p.get("eventId")) for p in picks}
     return len(event_ids) == len(picks)
@@ -348,6 +398,7 @@ def run(day: str) -> None:
     """
     used_picks_ids = set()
     marketing_parlays: List[Dict[str, Any]] = []
+    forced_used = False
     
     # 1) 4-legs first (highest risk, most picks used)
     parlay_4, source_4 = _try_sources_for_rule(day, "marketing_4_legs", PARLAY_RULES["marketing_4_legs"], used_picks_ids)
@@ -383,6 +434,25 @@ def run(day: str) -> None:
         with open(featured_path / "featured_parlay.json", "w", encoding="utf-8") as f:
             json.dump(principal, f, ensure_ascii=False, indent=2)
 
+        # También lo exponemos en la lista premium para no dejar el carrusel vacío
+        marketing_parlays.append(principal)
+        for pick in principal.get("picks", []):
+            used_picks_ids.add(_get_pick_id(pick))
+
+    # 4) Fallback duro: si no hay ningún parlay generado, forzamos uno desde classic (mejores cuotas)
+    if not marketing_parlays:
+        forced = force_parlay_from_classic(day, max_legs=3, min_odds=1.20)
+        if forced:
+            forced_used = True
+            marketing_parlays.append(forced)
+            if not principal:
+                # Usar el forced como featured para que UI siempre tenga al menos uno
+                featured_path = Path(f"api/data/picks_parlay_featured/{day}")
+                featured_path.mkdir(parents=True, exist_ok=True)
+                with open(featured_path / "featured_parlay.json", "w", encoding="utf-8") as f:
+                    json.dump(forced, f, ensure_ascii=False, indent=2)
+                principal = forced
+
     output_path = Path(f"api/data/picks_parlay/{day}")
     output_path.mkdir(parents=True, exist_ok=True)
     with open(output_path / "parlays.json", "w", encoding="utf-8") as f:
@@ -392,7 +462,8 @@ def run(day: str) -> None:
         f"✅ Parlays generados ({day}) — "
         f"principal: {'sí' if principal else 'no'}, "
         f"marketing 4-legs: {'sí' if parlay_4 else 'no'}, "
-        f"marketing 3-legs: {'sí' if parlay_3 else 'no'}"
+        f"marketing 3-legs: {'sí' if parlay_3 else 'no'}, "
+        f"forced fallback: {'sí' if forced_used else 'no'}"
     )
 
 

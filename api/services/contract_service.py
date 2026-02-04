@@ -3,6 +3,7 @@ from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 from collections import defaultdict
 import json
+import os
 from pathlib import Path
 
 # Import robusto: funciona si ejecutas desde repo root o desde /api
@@ -21,6 +22,11 @@ CONTRACT_VERSION = "1.0"
 # Repo root: .../bot-ultimate-prediction
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_DATA_DIR = REPO_ROOT / "api" / "data"
+
+
+# Pisos de cuota para tabs por deporte (UI más atractiva)
+PICKS_BY_SPORT_MIN_ODDS = float(os.environ.get("PICKS_BY_SPORT_MIN_ODDS", "1.35"))
+PICKS_BY_SPORT_FALLBACK_ODDS = float(os.environ.get("PICKS_BY_SPORT_FALLBACK_ODDS", "1.20"))
 
 
 def create_empty_contract(contract_date: Optional[str] = None) -> Dict:
@@ -93,16 +99,22 @@ def _build_picks_by_sport(day: str) -> Dict[str, List[Dict]]:
         return {}
 
     display_index = build_display_index(day)
-    start_utc, end_utc = _cycle_window_utc(day)
+    if display_index:
+        start_utc, end_utc = _cycle_window_utc(day)
 
-    def in_window(sport_key: str, eid: str) -> bool:
-        disp = display_index.get((sport_key, eid))
-        if not isinstance(disp, dict):
-            return False
-        st = _parse_iso_dt(disp.get("startTime"))
-        return bool(st and (st >= start_utc) and (st < end_utc))
+        def in_window(sport_key: str, eid: str) -> bool:
+            disp = display_index.get((sport_key, eid))
+            if not isinstance(disp, dict):
+                return False
+            st = _parse_iso_dt(disp.get("startTime"))
+            return bool(st and (st >= start_utc) and (st < end_utc))
+    else:
+        # Sin snapshots de eventos, aceptamos todo para no vaciar las tabs por deporte.
+        def in_window(sport_key: str, eid: str) -> bool:
+            return True
 
     best_by_sport: Dict[str, Dict[Tuple[str, str, str, str], Dict]] = defaultdict(dict)
+    fb_by_sport: Dict[str, Dict[Tuple[str, str, str, str], Dict]] = defaultdict(dict)
 
     def pick_key(p: Dict[str, object]) -> Tuple[str, str, str, str]:
         return (
@@ -124,20 +136,43 @@ def _build_picks_by_sport(day: str) -> Dict[str, List[Dict]]:
         if not in_window(sport_raw, eid):
             continue
 
+        try:
+            odds = float(item.get("odds") or 0.0)
+        except Exception:
+            odds = 0.0
+
         ps = classic_p_safe(item)
         pick = dict(item)
         if ps == ps:  # NaN check
             pick["p_safe"] = round(float(ps), 4)
 
         key = pick_key(item)
-        existing = best_by_sport[sport].get(key)
-        if existing is None or float(pick.get("p_safe") or -1e9) > float(existing.get("p_safe") or -1e9):
-            best_by_sport[sport][key] = pick
+
+        def _store(target: Dict[str, Dict[Tuple[str, str, str, str], Dict]]):
+            existing = target[sport].get(key)
+            if existing is None or float(pick.get("p_safe") or -1e9) > float(existing.get("p_safe") or -1e9):
+                target[sport][key] = pick
+
+        if odds >= PICKS_BY_SPORT_MIN_ODDS:
+            _store(best_by_sport)
+        elif odds >= PICKS_BY_SPORT_FALLBACK_ODDS:
+            _store(fb_by_sport)
 
     out: Dict[str, List[Dict]] = {}
-    for sport, picks_map in best_by_sport.items():
+    sports_keys = set(best_by_sport.keys()) | set(fb_by_sport.keys())
+    for sport in sports_keys:
+        picks_map = best_by_sport.get(sport) or {}
+        if not picks_map:
+            picks_map = fb_by_sport.get(sport) or {}
+
         picks = list(picks_map.values())
-        picks.sort(key=lambda p: float(p.get("p_safe") or -1e9), reverse=True)
+        picks.sort(
+            key=lambda p: (
+                float(p.get("p_safe") or -1e9),
+                float(p.get("odds") or 0.0),
+            ),
+            reverse=True,
+        )
         out[sport] = picks[:20]
 
     return out
@@ -158,9 +193,20 @@ def populate_contract_with_day_data(contract: Dict) -> Dict:
     # picks_por_deporte: top 20 por sport, sin filtros (para tabs específicas)
     contract["picks_by_sport"] = _build_picks_by_sport(day)
 
-    contract["picks_parlay_premium"] = _load_jsons_from_folder(
-        API_DATA_DIR / "picks_parlay" / day
-    )
+    parlay_dir = API_DATA_DIR / "picks_parlay" / day
+    parlays_json = parlay_dir / "parlays.json"
+
+    if parlays_json.exists():
+        try:
+            loaded = json.load(open(parlays_json, encoding="utf-8"))
+            if isinstance(loaded, dict) and isinstance(loaded.get("parlays"), list):
+                contract["picks_parlay_premium"] = loaded.get("parlays")
+            else:
+                contract["picks_parlay_premium"] = []
+        except Exception:
+            contract["picks_parlay_premium"] = []
+    else:
+        contract["picks_parlay_premium"] = _load_jsons_from_folder(parlay_dir)
 
     featured_path = API_DATA_DIR / "picks_parlay_featured" / day / "featured_parlay.json"
     if featured_path.exists():
