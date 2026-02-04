@@ -1,11 +1,11 @@
 {
   "contract_version": "1.0",
-  "contract_date": "2026-02-04",
-  "generated_at": "2026-02-04T21:44:50.828187",
+  "contract_date": "2026-02-06",
+  "generated_at": "2026-02-04T21:44:22.596151",
   "picks_classic": [
     {
       "sport": "basketball",
-      "eventId": "bk_1_2026-02-04",
+      "eventId": "bk_1_2026-02-06",
       "bookmaker": "DemoBook",
       "market": "Spread",
       "selection": "Home Team",
@@ -24,10 +24,10 @@
       "premium_reason": "DEMO_DATA",
       "display": {
         "sport": "basketball",
-        "eventId": "bk_1_2026-02-04",
+        "eventId": "bk_1_2026-02-06",
         "league": null,
         "leagueLogo": null,
-        "startTime": "2026-02-04T20:00:00",
+        "startTime": "2026-02-06T20:00:00",
         "live": {},
         "home": {
           "name": "Lakers",
@@ -41,7 +41,7 @@
     },
     {
       "sport": "basketball",
-      "eventId": "bk_2_2026-02-04",
+      "eventId": "bk_2_2026-02-06",
       "bookmaker": "DemoBook",
       "market": "Spread",
       "selection": "Home Team",
@@ -60,10 +60,10 @@
       "premium_reason": "DEMO_DATA",
       "display": {
         "sport": "basketball",
-        "eventId": "bk_2_2026-02-04",
+        "eventId": "bk_2_2026-02-06",
         "league": null,
         "leagueLogo": null,
-        "startTime": "2026-02-04T22:00:00",
+        "startTime": "2026-02-06T22:00:00",
         "live": {},
         "home": {
           "name": "Warriors",
@@ -77,7 +77,7 @@
     },
     {
       "sport": "football",
-      "eventId": "fb_1_2026-02-04",
+      "eventId": "fb_1_2026-02-06",
       "bookmaker": "DemoBook",
       "market": "Spread",
       "selection": "Home Team",
@@ -96,10 +96,10 @@
       "premium_reason": "DEMO_DATA",
       "display": {
         "sport": "football",
-        "eventId": "fb_1_2026-02-04",
+        "eventId": "fb_1_2026-02-06",
         "league": null,
         "leagueLogo": null,
-        "startTime": "2026-02-04T19:00:00",
+        "startTime": "2026-02-06T19:00:00",
         "live": {},
         "home": {
           "name": "Manchester United",
@@ -113,7 +113,7 @@
     },
     {
       "sport": "nfl",
-      "eventId": "nfl_1_2026-02-04",
+      "eventId": "nfl_1_2026-02-06",
       "bookmaker": "DemoBook",
       "market": "Spread",
       "selection": "Home Team",
@@ -132,10 +132,10 @@
       "premium_reason": "DEMO_DATA",
       "display": {
         "sport": "nfl",
-        "eventId": "nfl_1_2026-02-04",
+        "eventId": "nfl_1_2026-02-06",
         "league": null,
         "leagueLogo": null,
-        "startTime": "2026-02-04T18:00:00",
+        "startTime": "2026-02-06T18:00:00",
         "live": {},
         "home": {
           "name": "Chiefs",
@@ -149,7 +149,7 @@
     },
     {
       "sport": "hockey",
-      "eventId": "hk_1_2026-02-04",
+      "eventId": "hk_1_2026-02-06",
       "bookmaker": "DemoBook",
       "market": "Spread",
       "selection": "Home Team",
@@ -168,10 +168,10 @@
       "premium_reason": "DEMO_DATA",
       "display": {
         "sport": "hockey",
-        "eventId": "hk_1_2026-02-04",
+        "eventId": "hk_1_2026-02-06",
         "league": null,
         "leagueLogo": null,
-        "startTime": "2026-02-04T21:00:00",
+        "startTime": "2026-02-06T21:00:00",
         "live": {},
         "home": {
           "name": "Maple Leafs",
@@ -189,5 +189,5 @@
   "daily_featured_parlay": null,
   "metadata": {},
   "picks_value": [],
-  "freeze_until": "2026-02-05T21:44:50.828187"
+  "freeze_until": "2026-02-05T21:44:22.596151"
 }

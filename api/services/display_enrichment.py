@@ -454,6 +454,7 @@ def build_display_index(day: str) -> Dict[Tuple[str, str], Dict[str, Any]]:
 def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str], Dict[str, Any]]) -> None:
     """
     Inyecta pick["display"] si se puede resolver por (sport,eventId).
+    Si no hay datos en display_index, crea un objeto display básico con placeholders.
     NO borra nada.
     """
     sport = pick.get("sport")
@@ -463,21 +464,33 @@ def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str
 
     key = (str(sport), str(event_id))
     disp = display_index.get(key)
-    if not disp:
-        return
-
-    home = disp.get("home") if isinstance(disp.get("home"), dict) else {}
-    away = disp.get("away") if isinstance(disp.get("away"), dict) else {}
-    pick["display"] = {
-        "sport": disp.get("sport"),
-        "eventId": disp.get("eventId"),
-        "league": disp.get("league"),
-        "leagueLogo": sanitize_logo_url(disp.get("leagueLogo")),
-        "startTime": disp.get("startTime"),
-        "live": disp.get("live"),
-        "home": {"name": home.get("name"), "logo": sanitize_logo_url(home.get("logo"))},
-        "away": {"name": away.get("name"), "logo": sanitize_logo_url(away.get("logo"))},
-    }
+    
+    if disp:
+        # Caso normal: tenemos datos del evento
+        home = disp.get("home") if isinstance(disp.get("home"), dict) else {}
+        away = disp.get("away") if isinstance(disp.get("away"), dict) else {}
+        pick["display"] = {
+            "sport": disp.get("sport"),
+            "eventId": disp.get("eventId"),
+            "league": disp.get("league"),
+            "leagueLogo": sanitize_logo_url(disp.get("leagueLogo")),
+            "startTime": disp.get("startTime"),
+            "live": disp.get("live"),
+            "home": {"name": home.get("name"), "logo": sanitize_logo_url(home.get("logo"))},
+            "away": {"name": away.get("name"), "logo": sanitize_logo_url(away.get("logo"))},
+        }
+    else:
+        # Fallback: crear display básico sin datos de eventos
+        pick["display"] = {
+            "sport": str(sport),
+            "eventId": str(event_id),
+            "league": None,
+            "leagueLogo": None,
+            "startTime": None,
+            "live": None,
+            "home": {"name": "Local", "logo": None},
+            "away": {"name": "Visitante", "logo": None},
+        }
 
     _try_settle_over_under(pick)
 

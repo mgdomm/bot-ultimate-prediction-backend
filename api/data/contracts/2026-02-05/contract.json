@@ -1,11 +1,193 @@
 {
   "contract_version": "1.0",
   "contract_date": "2026-02-05",
-  "generated_at": "2026-02-01T12:24:08.563432",
-  "picks_classic": [],
+  "generated_at": "2026-02-04T21:44:22.591514",
+  "picks_classic": [
+    {
+      "sport": "basketball",
+      "eventId": "bk_1_2026-02-05",
+      "bookmaker": "DemoBook",
+      "market": "Spread",
+      "selection": "Home Team",
+      "odds": 1.95,
+      "p_implied": 0.5128205128205129,
+      "p_estimated": 0.5398110661268557,
+      "stake": 50.0,
+      "ev": 1.2,
+      "risk": {
+        "level": "LOW",
+        "p_est": 0.5398110661268557,
+        "delta_p": 0.02,
+        "ev_margin": 0.05
+      },
+      "premium": true,
+      "premium_reason": "DEMO_DATA",
+      "display": {
+        "sport": "basketball",
+        "eventId": "bk_1_2026-02-05",
+        "league": null,
+        "leagueLogo": null,
+        "startTime": "2026-02-05T20:00:00",
+        "live": {},
+        "home": {
+          "name": "Lakers",
+          "logo": null
+        },
+        "away": {
+          "name": "Celtics",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "basketball",
+      "eventId": "bk_2_2026-02-05",
+      "bookmaker": "DemoBook",
+      "market": "Spread",
+      "selection": "Home Team",
+      "odds": 2.1,
+      "p_implied": 0.47619047619047616,
+      "p_estimated": 0.5012531328320803,
+      "stake": 50.0,
+      "ev": 1.2,
+      "risk": {
+        "level": "LOW",
+        "p_est": 0.5012531328320803,
+        "delta_p": 0.02,
+        "ev_margin": 0.05
+      },
+      "premium": true,
+      "premium_reason": "DEMO_DATA",
+      "display": {
+        "sport": "basketball",
+        "eventId": "bk_2_2026-02-05",
+        "league": null,
+        "leagueLogo": null,
+        "startTime": "2026-02-05T22:00:00",
+        "live": {},
+        "home": {
+          "name": "Warriors",
+          "logo": null
+        },
+        "away": {
+          "name": "Nuggets",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "football",
+      "eventId": "fb_1_2026-02-05",
+      "bookmaker": "DemoBook",
+      "market": "Spread",
+      "selection": "Home Team",
+      "odds": 2.4,
+      "p_implied": 0.4166666666666667,
+      "p_estimated": 0.4385964912280702,
+      "stake": 50.0,
+      "ev": 1.2,
+      "risk": {
+        "level": "LOW",
+        "p_est": 0.4385964912280702,
+        "delta_p": 0.02,
+        "ev_margin": 0.05
+      },
+      "premium": true,
+      "premium_reason": "DEMO_DATA",
+      "display": {
+        "sport": "football",
+        "eventId": "fb_1_2026-02-05",
+        "league": null,
+        "leagueLogo": null,
+        "startTime": "2026-02-05T19:00:00",
+        "live": {},
+        "home": {
+          "name": "Manchester United",
+          "logo": null
+        },
+        "away": {
+          "name": "Liverpool",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "nfl",
+      "eventId": "nfl_1_2026-02-05",
+      "bookmaker": "DemoBook",
+      "market": "Spread",
+      "selection": "Home Team",
+      "odds": 1.85,
+      "p_implied": 0.5405405405405405,
+      "p_estimated": 0.5689900426742531,
+      "stake": 50.0,
+      "ev": 1.2,
+      "risk": {
+        "level": "LOW",
+        "p_est": 0.5689900426742531,
+        "delta_p": 0.02,
+        "ev_margin": 0.05
+      },
+      "premium": true,
+      "premium_reason": "DEMO_DATA",
+      "display": {
+        "sport": "nfl",
+        "eventId": "nfl_1_2026-02-05",
+        "league": null,
+        "leagueLogo": null,
+        "startTime": "2026-02-05T18:00:00",
+        "live": {},
+        "home": {
+          "name": "Chiefs",
+          "logo": null
+        },
+        "away": {
+          "name": "49ers",
+          "logo": null
+        }
+      }
+    },
+    {
+      "sport": "hockey",
+      "eventId": "hk_1_2026-02-05",
+      "bookmaker": "DemoBook",
+      "market": "Spread",
+      "selection": "Home Team",
+      "odds": 1.9,
+      "p_implied": 0.5263157894736842,
+      "p_estimated": 0.554016620498615,
+      "stake": 50.0,
+      "ev": 1.2,
+      "risk": {
+        "level": "LOW",
+        "p_est": 0.554016620498615,
+        "delta_p": 0.02,
+        "ev_margin": 0.05
+      },
+      "premium": true,
+      "premium_reason": "DEMO_DATA",
+      "display": {
+        "sport": "hockey",
+        "eventId": "hk_1_2026-02-05",
+        "league": null,
+        "leagueLogo": null,
+        "startTime": "2026-02-05T21:00:00",
+        "live": {},
+        "home": {
+          "name": "Maple Leafs",
+          "logo": null
+        },
+        "away": {
+          "name": "Hurricanes",
+          "logo": null
+        }
+      }
+    }
+  ],
+  "picks_by_sport": {},
   "picks_parlay_premium": [],
   "daily_featured_parlay": null,
   "metadata": {},
   "picks_value": [],
-  "freeze_until": "2026-02-02T12:24:08.563432"
+  "freeze_until": "2026-02-05T21:44:22.591514"
 }
