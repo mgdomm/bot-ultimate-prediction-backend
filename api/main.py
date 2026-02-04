@@ -219,11 +219,12 @@ def _cycle_window_local(day: str):
 
 def _pick_in_window(pick: dict, start_local: datetime, end_local: datetime) -> bool:
     disp = pick.get("display")
+    # Si no hay display/startTime, no filtramos: preferimos mostrar antes que vaciar UI.
     if not isinstance(disp, dict):
-        return False
+        return True
     st = _parse_iso_dt(disp.get("startTime"))
     if st is None:
-        return False
+        return True
     st_local = st.astimezone(start_local.tzinfo)  # Europe/Madrid
     return (st_local >= start_local) and (st_local < end_local)
 
