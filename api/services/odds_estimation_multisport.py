@@ -75,6 +75,7 @@ def estimate_odds_for_day(day: Optional[str] = None) -> Dict[str, Any]:
             "odds": float(item["odds"]),
             "p_implied": float(item["p_implied"]),
             "p_estimated": p_estimated,
+            "point": item.get("point"),  # O/U line, spread, handicap
         })
 
     out_file.write_text(json.dumps(estimated, ensure_ascii=False, indent=2), encoding="utf-8")

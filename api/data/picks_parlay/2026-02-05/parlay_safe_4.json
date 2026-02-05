@@ -1,0 +1,82 @@
+{
+  "type": "PARLAY_PREMIUM",
+  "kind": "SAFE_4",
+  "label": "Seguro (4) fallback Classic",
+  "legs": [
+    {
+      "sport": "college_basketball",
+      "eventId": "57tXxAXDahLf4PdocYhp",
+      "bookmaker": "fanduel",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6367,
+      "p_safe": 0.6562,
+      "stake": 50.0,
+      "ev": -2.25,
+      "risk": {
+        "level": "MEDIUM"
+      },
+      "premium": true,
+      "premium_reason": "RELAXED_ALL_FOR_POOL"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "6natNRwBNKoQC8JVuwU3",
+      "bookmaker": "betmgm",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6367,
+      "p_safe": 0.6562,
+      "stake": 50.0,
+      "ev": -2.25,
+      "risk": {
+        "level": "MEDIUM"
+      },
+      "premium": true,
+      "premium_reason": "RELAXED_ALL_FOR_POOL"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "ACIuRmrqdLUvVjszghHs",
+      "bookmaker": "betmgm",
+      "market": "ml",
+      "selection": "home",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6367,
+      "p_safe": 0.6562,
+      "stake": 50.0,
+      "ev": -2.25,
+      "risk": {
+        "level": "MEDIUM"
+      },
+      "premium": true,
+      "premium_reason": "RELAXED_ALL_FOR_POOL"
+    },
+    {
+      "sport": "college_basketball",
+      "eventId": "PzaJuqjfpslflPs5aZMI",
+      "bookmaker": "espnbet",
+      "market": "ml",
+      "selection": "away",
+      "odds": 1.5,
+      "p_implied": 0.6667,
+      "p_estimated": 0.6367,
+      "p_safe": 0.6562,
+      "stake": 50.0,
+      "ev": -2.25,
+      "risk": {
+        "level": "MEDIUM"
+      },
+      "premium": true,
+      "premium_reason": "RELAXED_ALL_FOR_POOL"
+    }
+  ],
+  "combined_odds": 5.0625,
+  "prob_parlay": 0.1643,
+  "note": "Fallback: usando picks Classic publicados"
+}

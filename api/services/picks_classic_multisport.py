@@ -17,13 +17,13 @@ MAX_PICKS = int(os.environ.get("CLASSIC_MAX_PICKS", "20"))
 SHRINK_W = 0.35  # peso del modelo; (1-w) = peso del mercado
 
 # Rangos “seguros” para principiantes
-# Piso de cuota mínimo (permitimos >=1.20 pero priorizamos cuotas más altas en el ordenamiento)
-ODDS_MIN = 1.20
-ODDS_MAX = 2.30
+# Cuotas competitivas (retornos atractivos sin excluir demasiado)
+ODDS_MIN = 1.40
+ODDS_MAX = 4.50
 
-# Umbral principal (con fallback si un día viene flojo)
-P_SAFE_MIN_PRIMARY = float(os.environ.get("CLASSIC_P_SAFE_MIN_PRIMARY", "0.70"))
-P_SAFE_MIN_FALLBACK = float(os.environ.get("CLASSIC_P_SAFE_MIN_FALLBACK", "0.58"))
+# Umbral principal (balanceado para aceptar picks competitivos)
+P_SAFE_MIN_PRIMARY = float(os.environ.get("CLASSIC_P_SAFE_MIN_PRIMARY", "0.58"))
+P_SAFE_MIN_FALLBACK = float(os.environ.get("CLASSIC_P_SAFE_MIN_FALLBACK", "0.50"))
 
 # Mercados que consideramos “modernos y razonables”
 STANDARD_MARKETS = {
@@ -62,10 +62,9 @@ except ModuleNotFoundError:
 _GUARD = (PARLAY_GUARDRAILS or {}).get("principal_2_legs", {}) if isinstance(PARLAY_GUARDRAILS, dict) else {}
 _DEFAULT_CLASSIC_PROB_FLOOR = float(_GUARD.get("min_combined_probability_floor", 0.40))
 
-# Default relajado para Classic (evita 0 picks si el modelo no supera +margin)
-# Permitimos buffer negativo ligero para no quedarnos en 0 picks si el modelo
-# está apenas por debajo de la prob implícita; -0.10 (~10pp) fue necesario hoy.
-_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "-0.10"))
+# Classic con margen realista: APIs gratuitas tienen vig integrado (-5% ~ -10%)
+# Compensamos con P_SAFE alto (confianza del modelo) + filtros de cuota
+_DEFAULT_CLASSIC_VALUE_MARGIN = float(os.environ.get("CLASSIC_VALUE_MARGIN_DEFAULT", "-0.05"))
 
 # Allow override via env vars (strings)
 CLASSIC_PROB_FLOOR = float(os.environ.get("CLASSIC_PROB_FLOOR", str(_DEFAULT_CLASSIC_PROB_FLOOR)))
@@ -335,6 +334,7 @@ def build_picks(day: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
                 "market": sel.get("market"),
                 "selection": sel.get("selection"),
                 "odds": float(sel.get("odds")),
+                "point": sel.get("point"),  # O/U line, spread, handicap
                 "p_implied": float(sel.get("p_implied")),
                 "p_estimated": float(sel.get("p_estimated")),
                 "p_safe": round(float(ps), 4),

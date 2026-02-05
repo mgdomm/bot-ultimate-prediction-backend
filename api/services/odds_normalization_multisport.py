@@ -126,6 +126,7 @@ def normalize_odds_for_day(day: Optional[str] = None) -> Dict[str, Any]:
                         for value in values:
                             odds = _as_float(value.get("odd"))
                             selection = value.get("value")
+                            point = _as_float(value.get("point"))  # O/U line, spread, handicap
                             if odds is None or selection is None or market is None:
                                 continue
 
@@ -137,6 +138,7 @@ def normalize_odds_for_day(day: Optional[str] = None) -> Dict[str, Any]:
                                     "market": market,
                                     "selection": selection,
                                     "odds": odds,
+                                    "point": point,  # Include line/handicap value
                                 }
                             )
                             sport_total += 1

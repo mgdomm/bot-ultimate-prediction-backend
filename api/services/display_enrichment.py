@@ -57,7 +57,7 @@ def _thesportsdb_client() -> TheSportsDBClient:
 def _try_settle_over_under(pick: Dict[str, Any]) -> None:
     disp = pick.get('display')
     if not isinstance(disp, dict):
-        return
+       return
     live = disp.get('live')
     if not isinstance(live, dict):
         return
@@ -74,21 +74,33 @@ def _try_settle_over_under(pick: Dict[str, Any]) -> None:
         return
 
     market = str(pick.get('market') or '').lower().strip()
-    if market not in {'over/under', 'goals over/under'}:
+    if market not in {'over/under', 'goals over/under', 'ou'}:
         return
 
-    sel = str(pick.get('selection') or '').strip()
-    ssel = sel.lower()
-    if not (ssel.startswith('over ') or ssel.startswith('under ')):
-        return
-    parts = sel.split(' ')
-    if len(parts) < 2:
-        return
-    side = parts[0].lower()
-    try:
-        line = float(parts[-1])
-    except Exception:
-        return
+    # Prefer 'point' field from normalized odds (77.5, 150.5, etc.)
+    line = pick.get('point')
+    
+    # Fallback: parse selection string if point not available
+    if line is None:
+        sel = str(pick.get('selection') or '').strip()
+        ssel = sel.lower()
+        if not (ssel.startswith('over ') or ssel.startswith('under ')):
+            return
+        parts = sel.split(' ')
+        if len(parts) < 2:
+            return
+        try:
+            line = float(parts[-1])
+        except Exception:
+            return
+    else:
+        try:
+            line = float(line)
+        except Exception:
+            return
+
+    sel = str(pick.get('selection') or '').lower().strip()
+    side = 'over' if sel.startswith('over') else 'under'
 
     if side == 'over':
         status = 'WON' if total > line else ('PUSH' if total == line else 'LOST')
@@ -491,6 +503,10 @@ def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str
             "home": {"name": "Local", "logo": None},
             "away": {"name": "Visitante", "logo": None},
         }
+
+    # Copy 'point' to 'line' for frontend O/U display (e.g., "Menos de 150.5")
+    if pick.get("point") is not None:
+        pick["line"] = pick["point"]
 
     _try_settle_over_under(pick)
 

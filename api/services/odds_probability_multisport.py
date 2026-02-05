@@ -44,6 +44,7 @@ def enrich_odds_with_implied_probability(day: Optional[str] = None) -> Dict[str,
             "selection": item.get("selection"),
             "odds": odds,
             "p_implied": round(p_implied, 4),
+            "point": item.get("point"),  # O/U line, spread, handicap
         })
 
     out_file.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")

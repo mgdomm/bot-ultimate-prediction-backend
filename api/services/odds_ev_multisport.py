@@ -50,6 +50,7 @@ def calculate_ev_for_day(day: Optional[str] = None, stake: float = DEFAULT_STAKE
             "p_estimated": float(item["p_estimated"]),
             "stake": float(stake),
             "ev": round(ev, 2),
+            "point": item.get("point"),  # O/U line, spread, handicap
         })
 
     out_file.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
