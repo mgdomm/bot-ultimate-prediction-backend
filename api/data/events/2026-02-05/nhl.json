@@ -1,0 +1,259 @@
+{
+  "results": 7,
+  "response": [
+    {
+      "eventId": "HznvCTpMdH75fOIsIlh6",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NEW_YORK_RANGERS_NHL",
+        "name": "Rangers",
+        "colors": {
+          "primary": "#0069AA",
+          "secondary": "#D31245",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000000"
+        }
+      },
+      "away": {
+        "id": "CAROLINA_HURRICANES_NHL",
+        "name": "Hurricanes",
+        "colors": {
+          "primary": "#CC0000",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "If9ja7MDByHGsVdwdCVB",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "WASHINGTON_CAPITALS_NHL",
+        "name": "Capitals",
+        "colors": {
+          "primary": "#041E41",
+          "secondary": "#D42329",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#041E41"
+        }
+      },
+      "away": {
+        "id": "NASHVILLE_PREDATORS_NHL",
+        "name": "Predators",
+        "colors": {
+          "primary": "#041E42",
+          "secondary": "#FFB81C",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#041E42"
+        }
+      }
+    },
+    {
+      "eventId": "JXTtJ0i407Qp0jXlwmqp",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NEW_JERSEY_DEVILS_NHL",
+        "name": "Devils",
+        "colors": {
+          "primary": "#CE1126",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CE1126"
+        }
+      },
+      "away": {
+        "id": "NEW_YORK_ISLANDERS_NHL",
+        "name": "Islanders",
+        "colors": {
+          "primary": "#00539B",
+          "secondary": "#F47D30",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#00539B"
+        }
+      }
+    },
+    {
+      "eventId": "z4rNbLbjPmxmxDqqPVmL",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BUFFALO_SABRES_NHL",
+        "name": "Sabres",
+        "colors": {
+          "primary": "#002654",
+          "secondary": "#FCB514",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#002654"
+        }
+      },
+      "away": {
+        "id": "PITTSBURGH_PENGUINS_NHL",
+        "name": "Penguins",
+        "colors": {
+          "primary": "#FCB514",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "zAs4dTXBkgUOGGuwhZu2",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "PHILADELPHIA_FLYERS_NHL",
+        "name": "Flyers",
+        "colors": {
+          "primary": "#F74902",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "OTTAWA_SENATORS_NHL",
+        "name": "Senators",
+        "colors": {
+          "primary": "#CE1126",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CE1126"
+        }
+      }
+    },
+    {
+      "eventId": "9ag2rjiqe18MyjKgK2ej",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "TAMPA_BAY_LIGHTNING_NHL",
+        "name": "Lightning",
+        "colors": {
+          "primary": "#00205B",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "FLORIDA_PANTHERS_NHL",
+        "name": "Panthers",
+        "colors": {
+          "primary": "#041E42",
+          "secondary": "#C8102E",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#041E42"
+        }
+      }
+    },
+    {
+      "eventId": "8S2ksv0Rw8FBaUHciH1v",
+      "sport": "nhl",
+      "league": "NHL",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "VEGAS_GOLDEN_KNIGHTS_NHL",
+        "name": "Golden Knights",
+        "colors": {
+          "primary": "#B4975A",
+          "secondary": "#333F42",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#B4975A"
+        }
+      },
+      "away": {
+        "id": "LOS_ANGELES_KINGS_NHL",
+        "name": "Kings",
+        "colors": {
+          "primary": "#ACAEA9",
+          "secondary": "#111111",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#ACAEA9"
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}

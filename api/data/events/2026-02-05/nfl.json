@@ -1,0 +1,43 @@
+{
+  "results": 1,
+  "response": [
+    {
+      "eventId": "tul4kdsZLIblfvy2QE8R",
+      "sport": "nfl",
+      "league": "NFL",
+      "startTime": "2026-02-08T23:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NEW_ENGLAND_PATRIOTS_NFL",
+        "name": "Patriots",
+        "colors": {
+          "primary": "#0D244D",
+          "secondary": "#B1B8BD",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0D244D"
+        }
+      },
+      "away": {
+        "id": "SEATTLE_SEAHAWKS_NFL",
+        "name": "Seahawks",
+        "colors": {
+          "primary": "#002244",
+          "secondary": "#69BE28",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#002244"
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}

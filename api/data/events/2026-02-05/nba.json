@@ -1,0 +1,295 @@
+{
+  "results": 8,
+  "response": [
+    {
+      "eventId": "WfppdyGDCFR4ubtiDSjV",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "ORLANDO_MAGIC_NBA",
+        "name": "Magic",
+        "colors": {
+          "primary": "#007DC5",
+          "secondary": "#C4CED3",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#007DC5"
+        }
+      },
+      "away": {
+        "id": "BROOKLYN_NETS_NBA",
+        "name": "Nets",
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "rQ70fSgZrvlUBL4Z7K9Q",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "DETROIT_PISTONS_NBA",
+        "name": "Pistons",
+        "colors": {
+          "primary": "#006BB6",
+          "secondary": "#ED174C",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000000"
+        }
+      },
+      "away": {
+        "id": "WASHINGTON_WIZARDS_NBA",
+        "name": "Wizards",
+        "colors": {
+          "primary": "#F5002F",
+          "secondary": "#002566",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#F5002F"
+        }
+      }
+    },
+    {
+      "eventId": "3x99BxyCkntgqMbaxEzr",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "ATLANTA_HAWKS_NBA",
+        "name": "Hawks",
+        "colors": {
+          "primary": "#E03A3E",
+          "secondary": "#FFFFFF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#E03A3E"
+        }
+      },
+      "away": {
+        "id": "UTAH_JAZZ_NBA",
+        "name": "Jazz",
+        "colors": {
+          "primary": "#002B5C",
+          "secondary": "#F9A01B",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#002B5C"
+        }
+      }
+    },
+    {
+      "eventId": "rHaBwQssoNzLNcvuQ2D2",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "TORONTO_RAPTORS_NBA",
+        "name": "Raptors",
+        "colors": {
+          "primary": "#CE1141",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CE1141"
+        }
+      },
+      "away": {
+        "id": "CHICAGO_BULLS_NBA",
+        "name": "Bulls",
+        "colors": {
+          "primary": "#CE1141",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CE1141"
+        }
+      }
+    },
+    {
+      "eventId": "CZ2YMZmIV8DRK1lIeHmd",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "HOUSTON_ROCKETS_NBA",
+        "name": "Rockets",
+        "colors": {
+          "primary": "#CE1141",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CHARLOTTE_HORNETS_NBA",
+        "name": "Hornets",
+        "colors": {
+          "primary": "#008CA8",
+          "secondary": "#1D1160",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#008CA8"
+        }
+      }
+    },
+    {
+      "eventId": "Aek03nVq1NmSJuQywVP4",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "DALLAS_MAVERICKS_NBA",
+        "name": "Mavericks",
+        "colors": {
+          "primary": "#007DC5",
+          "secondary": "#20385B",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#007DC5"
+        }
+      },
+      "away": {
+        "id": "SAN_ANTONIO_SPURS_NBA",
+        "name": "Spurs",
+        "colors": {
+          "primary": "#A6AFAF",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "4fSnDCylYnMPkTrg79gO",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "LOS_ANGELES_LAKERS_NBA",
+        "name": "Lakers",
+        "colors": {
+          "primary": "#552582",
+          "secondary": "#FDB927",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#552582"
+        }
+      },
+      "away": {
+        "id": "PHILADELPHIA_76ERS_NBA",
+        "name": "76ers",
+        "colors": {
+          "primary": "#006BB6",
+          "secondary": "#ED174C",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000000"
+        }
+      }
+    },
+    {
+      "eventId": "ykVXXP02MkiOELCHKay3",
+      "sport": "nba",
+      "league": "NBA",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "PHOENIX_SUNS_NBA",
+        "name": "Suns",
+        "colors": {
+          "primary": "#E56020",
+          "secondary": "#1D1160",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#E56020"
+        }
+      },
+      "away": {
+        "id": "GOLDEN_STATE_WARRIORS_NBA",
+        "name": "Warriors",
+        "colors": {
+          "primary": "#006BB6",
+          "secondary": "#FDB927",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#006BB6"
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}

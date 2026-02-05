@@ -1,102 +1,362 @@
 [
   {
-    "sport": "basketball",
-    "eventId": "bk_1_2026-02-05",
-    "bookmaker": "DemoBook",
-    "market": "Spread",
-    "selection": "Home Team",
-    "odds": 1.95,
-    "p_implied": 0.5128205128205129,
-    "p_estimated": 0.5398110661268557,
+    "sport": "college_basketball",
+    "eventId": "F8Oj98JkWxL3XvvZfgcq",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
     "stake": 50.0,
-    "ev": 1.2,
+    "ev": -4.8,
     "risk": {
-      "level": "LOW",
-      "p_est": 0.5398110661268557,
-      "delta_p": 0.02,
-      "ev_margin": 0.05
+      "level": "LOW"
     },
     "premium": true,
-    "premium_reason": "DEMO_DATA"
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
   },
   {
-    "sport": "basketball",
-    "eventId": "bk_2_2026-02-05",
-    "bookmaker": "DemoBook",
-    "market": "Spread",
-    "selection": "Home Team",
-    "odds": 2.1,
-    "p_implied": 0.47619047619047616,
-    "p_estimated": 0.5012531328320803,
+    "sport": "college_basketball",
+    "eventId": "Ja73HP69jaBcEWaySmoz",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
     "stake": 50.0,
-    "ev": 1.2,
+    "ev": -4.8,
     "risk": {
-      "level": "LOW",
-      "p_est": 0.5012531328320803,
-      "delta_p": 0.02,
-      "ev_margin": 0.05
+      "level": "LOW"
     },
     "premium": true,
-    "premium_reason": "DEMO_DATA"
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
   },
   {
-    "sport": "football",
-    "eventId": "fb_1_2026-02-05",
-    "bookmaker": "DemoBook",
-    "market": "Spread",
-    "selection": "Home Team",
-    "odds": 2.4,
-    "p_implied": 0.4166666666666667,
-    "p_estimated": 0.4385964912280702,
+    "sport": "college_basketball",
+    "eventId": "RTWqJScW2VnvFH8ms0nO",
+    "bookmaker": "fanduel",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
     "stake": 50.0,
-    "ev": 1.2,
+    "ev": -4.8,
     "risk": {
-      "level": "LOW",
-      "p_est": 0.4385964912280702,
-      "delta_p": 0.02,
-      "ev_margin": 0.05
+      "level": "LOW"
     },
     "premium": true,
-    "premium_reason": "DEMO_DATA"
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
   },
   {
-    "sport": "nfl",
-    "eventId": "nfl_1_2026-02-05",
-    "bookmaker": "DemoBook",
-    "market": "Spread",
-    "selection": "Home Team",
-    "odds": 1.85,
-    "p_implied": 0.5405405405405405,
-    "p_estimated": 0.5689900426742531,
+    "sport": "college_basketball",
+    "eventId": "gcqhGbDDA9I3InRwPFiu",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
     "stake": 50.0,
-    "ev": 1.2,
+    "ev": -4.8,
     "risk": {
-      "level": "LOW",
-      "p_est": 0.5689900426742531,
-      "delta_p": 0.02,
-      "ev_margin": 0.05
+      "level": "LOW"
     },
     "premium": true,
-    "premium_reason": "DEMO_DATA"
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
   },
   {
-    "sport": "hockey",
-    "eventId": "hk_1_2026-02-05",
-    "bookmaker": "DemoBook",
-    "market": "Spread",
-    "selection": "Home Team",
-    "odds": 1.9,
-    "p_implied": 0.5263157894736842,
-    "p_estimated": 0.554016620498615,
+    "sport": "college_basketball",
+    "eventId": "kaRR2vkMlSPaadLEhh4g",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
     "stake": 50.0,
-    "ev": 1.2,
+    "ev": -4.8,
     "risk": {
-      "level": "LOW",
-      "p_est": 0.554016620498615,
-      "delta_p": 0.02,
-      "ev_margin": 0.05
+      "level": "LOW"
     },
     "premium": true,
-    "premium_reason": "DEMO_DATA"
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "rQ70fSgZrvlUBL4Z7K9Q",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "8S2ksv0Rw8FBaUHciH1v",
+    "bookmaker": "espnbet",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "9ag2rjiqe18MyjKgK2ej",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "HznvCTpMdH75fOIsIlh6",
+    "bookmaker": "espnbet",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "If9ja7MDByHGsVdwdCVB",
+    "bookmaker": "espnbet",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "JXTtJ0i407Qp0jXlwmqp",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "z4rNbLbjPmxmxDqqPVmL",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "zAs4dTXBkgUOGGuwhZu2",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2,
+    "p_implied": 0.8333,
+    "p_estimated": 0.7533,
+    "p_safe": 0.8053,
+    "stake": 50.0,
+    "ev": -4.8,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "RehmkciJzUzWAfUUTv0S",
+    "bookmaker": "draftkings",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2105263157894737,
+    "p_implied": 0.8261,
+    "p_estimated": 0.7461,
+    "p_safe": 0.7981,
+    "stake": 50.0,
+    "ev": -4.84,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "hj8vjugLEN4tHmE85j9V",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2105263157894737,
+    "p_implied": 0.8261,
+    "p_estimated": 0.7461,
+    "p_safe": 0.7981,
+    "stake": 50.0,
+    "ev": -4.84,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "V5UZ0HkdjdaP3xXpfZtR",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2197802197802199,
+    "p_implied": 0.8198,
+    "p_estimated": 0.7398,
+    "p_safe": 0.7918,
+    "stake": 50.0,
+    "ev": -4.88,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "JFcPFfKb5DJNXaX30dHa",
+    "bookmaker": "williamhill",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2222222222222223,
+    "p_implied": 0.8182,
+    "p_estimated": 0.7382,
+    "p_safe": 0.7902,
+    "stake": 50.0,
+    "ev": -4.89,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "college_basketball",
+    "eventId": "qzYhqTA7TgSZUbf3v1tO",
+    "bookmaker": "espnbet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2222222222222223,
+    "p_implied": 0.8182,
+    "p_estimated": 0.7382,
+    "p_safe": 0.7902,
+    "stake": 50.0,
+    "ev": -4.89,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "Aek03nVq1NmSJuQywVP4",
+    "bookmaker": "betmgm",
+    "market": "ou",
+    "selection": "under",
+    "odds": 1.2222222222222223,
+    "p_implied": 0.8182,
+    "p_estimated": 0.7382,
+    "p_safe": 0.7902,
+    "stake": 50.0,
+    "ev": -4.89,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
+  },
+  {
+    "sport": "nba",
+    "eventId": "WfppdyGDCFR4ubtiDSjV",
+    "bookmaker": "williamhill",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.2222222222222223,
+    "p_implied": 0.8182,
+    "p_estimated": 0.7382,
+    "p_safe": 0.7902,
+    "stake": 50.0,
+    "ev": -4.89,
+    "risk": {
+      "level": "LOW"
+    },
+    "premium": true,
+    "premium_reason": "STRICT_LOW_AND_HIGH_P"
   }
 ]

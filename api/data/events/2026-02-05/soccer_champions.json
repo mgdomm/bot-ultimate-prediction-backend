@@ -1,0 +1,293 @@
+{
+  "results": 8,
+  "response": [
+    {
+      "eventId": "b1wvfTPjDQw4vRimBKk3",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-17T17:45:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "GALATASARAY_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Galatasaray",
+        "colors": {
+          "secondary": "#FF0000",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FFFFFF",
+          "primary": "#FF9900"
+        }
+      },
+      "away": {
+        "id": "JUVENTUS_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Juventus",
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "JCyLDoiT4VNvw1xULL9Z",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-17T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BORUSSIA_DORTMUND_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Dortmund",
+        "colors": {
+          "primary": "#FFE600",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "ATALANTA_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Atalanta",
+        "colors": {
+          "primary": "#0000CC",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "eventId": "mjbBItmzo45UHWUTbORY",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-17T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "QARABAG_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Qarabağ",
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "NEWCASTLE_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Newcastle",
+        "colors": {
+          "primaryContrast": "#000000",
+          "primary": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "eventId": "pxxLyiW0XRmAioxaZXQ2",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-17T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BENFICA_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Benfica",
+        "colors": {
+          "primary": "#CC0000",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "REAL_MADRID_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Real Madrid",
+        "colors": {
+          "primary": "#004996",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "wGASDNDG70pBSCBxrYZo",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-17T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "AS_MONACO_UEFA_CHAMPIONS_LEAGUE",
+        "name": "AS Monaco",
+        "colors": {
+          "primary": "#FF0000",
+          "secondary": "#FFFFFF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FF0000"
+        }
+      },
+      "away": {
+        "id": "PARIS_SAINT_GERMAIN_UEFA_CHAMPIONS_LEAGUE",
+        "name": "PSG",
+        "colors": {
+          "primary": "#000066",
+          "secondary": "#FF1541",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000066"
+        }
+      }
+    },
+    {
+      "eventId": "07QmGWJ5vJEzvUCGsLRr",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-18T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CLUB_BRUGGE_KV_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Club Brugge",
+        "colors": {
+          "primary": "#0080FF",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "ATLETICO_MADRID_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Atl. Madrid",
+        "colors": {
+          "primary": "#C40000",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "Jy3mxDYYw8rt0qmN1ZfF",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-18T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "OLYMPIACOS_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Olympiacos",
+        "colors": {
+          "primary": "#FF0000",
+          "secondary": "#FFFFFF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FF0000"
+        }
+      },
+      "away": {
+        "id": "BAYER_LEVERKUSEN_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Leverkusen",
+        "colors": {
+          "primary": "#FF2222",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "pJ7y0N5vyp7lCJvILWpF",
+      "sport": "soccer_champions",
+      "league": "UEFA_CHAMPIONS_LEAGUE",
+      "startTime": "2026-02-18T20:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BODOGLIMT_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Bodø/Glimt",
+        "colors": {
+          "primary": "#FFCC33",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "INTER_UEFA_CHAMPIONS_LEAGUE",
+        "name": "Inter",
+        "colors": {
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#1A57CC",
+          "primary": "#1A57CC"
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}

@@ -1,0 +1,1763 @@
+{
+  "results": 49,
+  "response": [
+    {
+      "eventId": "hj8vjugLEN4tHmE85j9V",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-05T23:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UMBC_NCAAB",
+        "name": "Maryland Baltimore",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "BINGHAMTON_NCAAB",
+        "name": "Binghamton",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "tlgtUNeHDAGZl2xn2UlZ",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-05T23:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BRYANT_UNIVERSITY_NCAAB",
+        "name": "Bryant",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "ALBANY_NCAAB",
+        "name": "Albany NY",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "C7EOE3JQUOhPf5EDGSsO",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-05T23:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MICHIGAN_NCAAB",
+        "name": "Michigan",
+        "colors": {
+          "primary": "#00274C",
+          "secondary": "#FFCD00",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#00274C"
+        }
+      },
+      "away": {
+        "id": "PENN_STATE_NCAAB",
+        "name": "Penn State",
+        "colors": {
+          "primary": "#162952",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "3aMShbzEbv3IPvBBp4HA",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "EASTERN_KENTUCKY_NCAAB",
+        "name": "Eastern Kentucky",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "FLORIDA_GULF_COAST_NCAAB",
+        "name": "FGCU",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "57tXxAXDahLf4PdocYhp",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "BELLARMINE_NCAAB",
+        "name": "Bellarmine",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "STETSON_NCAAB",
+        "name": "Stetson",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "5YZ1bM7HmAGI07qsH9hY",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NJIT_NCAAB",
+        "name": "NJIT",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "away": {
+        "id": "UMASS_LOWELL_NCAAB",
+        "name": "UMass Lowell",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "6natNRwBNKoQC8JVuwU3",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CINCINNATI_NCAAB",
+        "name": "Cincinnati",
+        "colors": {
+          "primary": "#E00122",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#E00122"
+        }
+      },
+      "away": {
+        "id": "WEST_VIRGINIA_NCAAB",
+        "name": "West Virginia",
+        "colors": {
+          "primary": "#EAAA00",
+          "secondary": "#002855",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#EAAA00"
+        }
+      }
+    },
+    {
+      "eventId": "AJp03TmyT0zo91Qa8KGI",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SACRED_HEART_NCAAB",
+        "name": "Sacred Heart",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "FAIRFIELD_NCAAB",
+        "name": "Fairfield",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "Bu8DRqF5Dhqan0XzNTB5",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CHARLESTON_NCAAB",
+        "name": "Charleston",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "UNC_AT_NCAAB",
+        "name": "UNC A&T",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      }
+    },
+    {
+      "eventId": "F8Oj98JkWxL3XvvZfgcq",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CENTRAL_CONNECTICUT_STATE_NCAAB",
+        "name": "C Connecticut St.",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CHICAGO_STATE_NCAAB",
+        "name": "Chicago State",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "JFcPFfKb5DJNXaX30dHa",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SIENA_NCAAB",
+        "name": "Siena",
+        "colors": {
+          "primary": "#00912A",
+          "secondary": "#374DF5",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FFFFFF"
+        }
+      },
+      "away": {
+        "id": "IONA_NCAAB",
+        "name": "Iona",
+        "colors": {
+          "primary": "#DD9221",
+          "secondary": "#712D3D",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#DD9221"
+        }
+      }
+    },
+    {
+      "eventId": "JlL1cUx7HWBBM5uB2poE",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "WEST_GEORGIA_NCAAB",
+        "name": "West Georgia Wolves",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "away": {
+        "id": "NORTH_FLORIDA_NCAAB",
+        "name": "North Florida",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "MIkQ1iyrNnWQncgHrlZt",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "WAGNER_NCAAB",
+        "name": "Wagner",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "LE_MOYNE_NCAAB",
+        "name": "Le Moyne",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "Mx7GFFYPOWZulMRsBQFr",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "STONY_BROOK_NCAAB",
+        "name": "Stony Brook",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MONMOUTH_NCAAB",
+        "name": "Monmouth",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "PzaJuqjfpslflPs5aZMI",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MANHATTAN_NCAAB",
+        "name": "Manhattan",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "SAINT_PETERS_NCAAB",
+        "name": "Saint Peter's",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      }
+    },
+    {
+      "eventId": "RehmkciJzUzWAfUUTv0S",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "QUINNIPIAC_NCAAB",
+        "name": "Quinnipiac",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CANISIUS_NCAAB",
+        "name": "Canisius",
+        "colors": {
+          "primary": "#0E2756",
+          "secondary": "#FFBA00",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0E2756"
+        }
+      }
+    },
+    {
+      "eventId": "UOG7uNKU4exebATolvkC",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MARIST_NCAAB",
+        "name": "Marist",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "RIDER_NCAAB",
+        "name": "Rider",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "WcJxL1xTKSTRC6pXlaTE",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "FAIRLEIGH_DICKINSON_NCAAB",
+        "name": "Fairleigh Dickinson",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "STONEHILL_NCAAB",
+        "name": "Stonehill",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "b7Km04RTg7ldJ9OmWsvQ",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CAMPBELL_NCAAB",
+        "name": "Campbell",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "DREXEL_NCAAB",
+        "name": "Drexel",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "buuy3kPs2Q8u95MWUqk8",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UNC_WILMINGTON_NCAAB",
+        "name": "UNC Wilmington",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "WILLIAM__MARY_NCAAB",
+        "name": "William & Mary",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "fDhgwiMpaUOEa8KShRSw",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "HAMPTON_NCAAB",
+        "name": "Hampton",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "ELON_NCAAB",
+        "name": "Elon Phoenix",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "kaRR2vkMlSPaadLEhh4g",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "HOFSTRA_NCAAB",
+        "name": "Hofstra",
+        "colors": {
+          "primary": "#003591",
+          "secondary": "#FDC82F",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#003591"
+        }
+      },
+      "away": {
+        "id": "NORTHEASTERN_NCAAB",
+        "name": "Northeastern",
+        "colors": {
+          "primary": "#D41B2C",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#D41B2C"
+        }
+      }
+    },
+    {
+      "eventId": "nIKfb9EUAqJjX9SoV3nK",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CHATTANOOGA_NCAAB",
+        "name": "Chattanooga",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MERCER_NCAAB",
+        "name": "Mercer",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "57fVmBE9TyU0qnwJYpmn",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "ARKANSAS_LITTLE_ROCK_NCAAB",
+        "name": "Arkansas Little Rock",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "away": {
+        "id": "LINDENWOOD_NCAAB",
+        "name": "Lindenwood Lions",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "dSaU5v4V0dvxvFXzCLvA",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NORTH_DAKOTA_NCAAB",
+        "name": "North Dakota",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "OMAHA_NCAAB",
+        "name": "Nebraska-Omaha",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "qzYhqTA7TgSZUbf3v1tO",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SAMFORD_NCAAB",
+        "name": "Samford",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CITADEL_NCAAB",
+        "name": "Citadel",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "tQTB2nWt9r9UeZEvf3Pa",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UTAH_VALLEY_NCAAB",
+        "name": "Utah Valley St.",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "ABILENE_CHRISTIAN_NCAAB",
+        "name": "Abilene Christian",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "y4yAvstQEM5tycJYUwxY",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NORTH_DAKOTA_ST_NCAAB",
+        "name": "North Dakota State",
+        "colors": {
+          "primary": "#005541",
+          "secondary": "#FFC92A",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#005541"
+        }
+      },
+      "away": {
+        "id": "DENVER_NCAAB",
+        "name": "Denver",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "RTWqJScW2VnvFH8ms0nO",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "TENNESSEE_TECH_NCAAB",
+        "name": "Tennessee Tech",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "WESTERN_ILLINOIS_NCAAB",
+        "name": "Western Illinois",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "V5UZ0HkdjdaP3xXpfZtR",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "TENNESSEE_MARTIN_NCAAB",
+        "name": "Tennessee-Martin",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      },
+      "away": {
+        "id": "SOUTHERN_INDIANA_NCAAB",
+        "name": "USI",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "WU89mysY3QVOPBRW41O6",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MARYLAND_NCAAB",
+        "name": "Maryland",
+        "colors": {
+          "primary": "#CF102D",
+          "secondary": "#FFCD23",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CF102D"
+        }
+      },
+      "away": {
+        "id": "OHIO_STATE_NCAAB",
+        "name": "Ohio State",
+        "colors": {
+          "primary": "#C10435",
+          "secondary": "#B0B7BC",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#C10435"
+        }
+      }
+    },
+    {
+      "eventId": "XMqkoEEHlfTY77UhT1XD",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SOUTHEAST_MISSOURI_STATE_NCAAB",
+        "name": "SE Missouri St",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MOREHEAD_STATE_NCAAB",
+        "name": "Morehead St.",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "ACIuRmrqdLUvVjszghHs",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "WESTERN_KENTUCKY_NCAAB",
+        "name": "W. Kentucky",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "JACKSONVILLE_STATE_NCAAB",
+        "name": "JSU",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "GdiTsXGJgkPiDuLwred1",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MONTANA_STATE_NCAAB",
+        "name": "Montana St.",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "IDAHO_NCAAB",
+        "name": "Idaho",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "Wq9ZIrtBx6b1hqtQf4WK",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UAB_NCAAB",
+        "name": "UAB",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MEMPHIS_NCAAB",
+        "name": "Memphis",
+        "colors": {
+          "primary": "#0D3182",
+          "secondary": "#888C8F",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0D3182"
+        }
+      }
+    },
+    {
+      "eventId": "YvUEBlmhSbgrUk9AnOeH",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UC_DAVIS_NCAAB",
+        "name": "UC Davis",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "UC_SANTA_BARBARA_NCAAB",
+        "name": "UC Santa Barbara",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "exMdOJUA5cHnQ9kgXOPu",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "WEBER_STATE_NCAAB",
+        "name": "Weber",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "NORTHERN_COLORADO_NCAAB",
+        "name": "Northern Colorado",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "gYYqCItsJwsRjoCOhClj",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "IDAHO_STATE_NCAAB",
+        "name": "Idaho State",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "NORTHERN_ARIZONA_NCAAB",
+        "name": "Northern Arizona",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "yy5SfDH5CbVPGbNKq3RV",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T02:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "MONTANA_NCAAB",
+        "name": "Montana",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "EASTERN_WASHINGTON_NCAAB",
+        "name": "Eastern Washington",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "eventId": "4mn20hrwUtFRHb2khLLV",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CAL_POLY_NCAAB",
+        "name": "Cal Poly",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CAL_STATE_NORTHRIDGE_NCAAB",
+        "name": "CSU Northridge",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "Ja73HP69jaBcEWaySmoz",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "CALIFORNIA_BAPTIST_NCAAB",
+        "name": "California Baptist",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "TARLETON_NCAAB",
+        "name": "Tarleton St.",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "gcqhGbDDA9I3InRwPFiu",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UC_SAN_DIEGO_NCAAB",
+        "name": "UC San Diego",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "LONG_BEACH_STATE_NCAAB",
+        "name": "Long Beach",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "jWiEVQCypFn4Mod0HA6q",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T03:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "UC_IRVINE_NCAAB",
+        "name": "UC Irvine",
+        "colors": {
+          "primary": "#0C2340",
+          "secondary": "#DFB22F",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0C2340"
+        }
+      },
+      "away": {
+        "id": "CAL_STATE_BAKERSFIELD_NCAAB",
+        "name": "CS Bakersfield",
+        "colors": {
+          "primary": "#374df5",
+          "secondary": "#374df5",
+          "text": "#ffffff"
+        }
+      }
+    },
+    {
+      "eventId": "lkDGsbn0hqn0rDS2r5EO",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-06T23:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "DAVIDSON_NCAAB",
+        "name": "Davidson",
+        "colors": {
+          "primary": "#BF0C26",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#BF0C26"
+        }
+      },
+      "away": {
+        "id": "LOYOLA_CHICAGO_NCAAB",
+        "name": "Loyola Chicago",
+        "colors": {
+          "primary": "#582931",
+          "secondary": "#FDBA0B",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#582931"
+        }
+      }
+    },
+    {
+      "eventId": "pxFZvsrfUB6KOVmRo2WS",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-07T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "YALE_NCAAB",
+        "name": "Yale",
+        "colors": {
+          "primary": "#00467F",
+          "secondary": "#9FB9CF",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#00467F"
+        }
+      },
+      "away": {
+        "id": "BROWN_NCAAB",
+        "name": "Brown",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "tv4tMVBmshBXB7Fyh0sW",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-07T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "VCU_NCAAB",
+        "name": "VCU",
+        "colors": {
+          "primary": "#FFB300",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "DAYTON_NCAAB",
+        "name": "Dayton",
+        "colors": {
+          "primary": "#CE1141",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "BdFLdgRsKt3IjqD1eDFO",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-07T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SOUTHERN_ILLINOIS_NCAAB",
+        "name": "Southern Illinois",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MURRAY_STATE_NCAAB",
+        "name": "Murray St.",
+        "colors": {
+          "primary": "#002144",
+          "secondary": "#EDAF09",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#002144"
+        }
+      }
+    },
+    {
+      "eventId": "O2VcWBLlPwE8fKzqlw4c",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-07T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NORTHERN_IOWA_NCAAB",
+        "name": "Northern Iowa",
+        "colors": {
+          "primary": "#4B116F",
+          "secondary": "#FFCC00",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#4B116F"
+        }
+      },
+      "away": {
+        "id": "BRADLEY_NCAAB",
+        "name": "Bradley",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "ajhuzcDHwdYDDD5EbEIY",
+      "sport": "college_basketball",
+      "league": "NCAAB",
+      "startTime": "2026-02-07T01:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "VALPARAISO_NCAAB",
+        "name": "Valparaiso",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "EVANSVILLE_NCAAB",
+        "name": "Evansville",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}

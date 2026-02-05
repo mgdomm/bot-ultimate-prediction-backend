@@ -1,0 +1,537 @@
+{
+  "results": 15,
+  "response": [
+    {
+      "eventId": "Rhe9kdYeHE7IwJsYB8vV",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-21T19:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "ST_LOUIS_CITY_MLS",
+        "name": "St. Louis",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "CHARLOTTE_MLS",
+        "name": "Charlotte",
+        "colors": {
+          "primary": "#3180FF",
+          "secondary": "#010101",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#3180FF"
+        }
+      }
+    },
+    {
+      "eventId": "ZbUYN3OUuVwn6OwTP1aZ",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-21T21:45:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "FC_CINCINNATI_MLS",
+        "name": "Cincinnati",
+        "colors": {
+          "secondary": "#FF7309",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0433FF",
+          "primary": "#0433FF"
+        }
+      },
+      "away": {
+        "id": "ATLANTA_UNITED_FC_MLS",
+        "name": "Atlanta",
+        "colors": {
+          "primary": "#80000A",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#FFFFFF"
+        }
+      }
+    },
+    {
+      "eventId": "8OUoym4zgsD8Wy72QN74",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "VANCOUVER_WHITECAPS_MLS",
+        "name": "Vancouver",
+        "colors": {
+          "primaryContrast": "#FFFFFF",
+          "primary": "#000066"
+        }
+      },
+      "away": {
+        "id": "REAL_SALT_LAKE_MLS",
+        "name": "Salt Lake",
+        "colors": {
+          "primary": "#CC0000",
+          "secondary": "#FFFF00",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#CC0000"
+        }
+      }
+    },
+    {
+      "eventId": "RBH1GDUXW80bAHKlKWkT",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "DC_UNITED_MLS",
+        "name": "DC United",
+        "colors": {
+          "primary": "#FF0000",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "PHILADELPHIA_UNION_MLS",
+        "name": "Philadelphia",
+        "colors": {
+          "secondary": "#999900",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000033",
+          "primary": "#000033"
+        }
+      }
+    },
+    {
+      "eventId": "m3nCxo9Id9lIKjRa6rpw",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T00:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "ORLANDO_CITY_SC_MLS",
+        "name": "Orlando",
+        "colors": {
+          "primaryContrast": "#FFFFFF",
+          "primary": "#660099"
+        }
+      },
+      "away": {
+        "id": "NEW_YORK_RED_BULLS_MLS",
+        "name": "NY Red Bulls",
+        "colors": {
+          "primary": "#CC0000",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "KUUXQMpLeoSEt3NN7Tv7",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "FC_DALLAS_MLS",
+        "name": "Dallas",
+        "colors": {
+          "secondary": "#CC0000",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FFFFFF",
+          "primary": "#FF0000"
+        }
+      },
+      "away": {
+        "id": "TORONTO_FC_MLS",
+        "name": "Toronto",
+        "colors": {
+          "primaryContrast": "#000000",
+          "primary": "#FF0000"
+        }
+      }
+    },
+    {
+      "eventId": "SBLKhkRetICBta9Zc7Ps",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "AUSTIN_MLS",
+        "name": "Austin",
+        "colors": {
+          "primary": "#1CA949",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MINNESOTA_UNITED_FC_MLS",
+        "name": "Minnesota",
+        "colors": {
+          "primary": "#585958",
+          "secondary": "#9CCEE5",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#585958"
+        }
+      }
+    },
+    {
+      "eventId": "lCNq8Wvxkr5ZiHvZczmi",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "NASHVILLE_SC_MLS",
+        "name": "Nashville",
+        "colors": {
+          "secondary": "#ECE83A",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0F1545",
+          "primary": "#0F1545"
+        }
+      },
+      "away": {
+        "id": "NEW_ENGLAND_REVOLUTION_MLS",
+        "name": "New England",
+        "colors": {
+          "primary": "#000066",
+          "secondary": "#FF0000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000066"
+        }
+      }
+    },
+    {
+      "eventId": "rUbuK3W15olZYQxswq7X",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T01:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "HOUSTON_DYNAMO_MLS",
+        "name": "Houston",
+        "colors": {
+          "secondary": "#FFFFFF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FF6600",
+          "primary": "#FF6600"
+        }
+      },
+      "away": {
+        "id": "CHICAGO_FIRE_MLS",
+        "name": "Chicago",
+        "colors": {
+          "secondary": "#000066",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#FF0000",
+          "primary": "#FF0000"
+        }
+      }
+    },
+    {
+      "eventId": "HjxIoDqPvCdyBVuWgh9v",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T02:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "LOS_ANGELES_FC_MLS",
+        "name": "Los Angeles",
+        "colors": {
+          "primary": "#C39E69",
+          "secondary": "#303030",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#C39E69"
+        }
+      },
+      "away": {
+        "id": "INTER_MIAMI_MLS",
+        "name": "Inter Miami",
+        "colors": {
+          "primary": "#212322",
+          "secondary": "#F6B5CC",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#212322"
+        }
+      }
+    },
+    {
+      "eventId": "CR8aPxWFFGIdMpy7AJYe",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T03:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SAN_DIEGO_MLS",
+        "name": "San Diego FC",
+        "colors": {
+          "primary": "#374DF5",
+          "secondary": "",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": ""
+        }
+      },
+      "away": {
+        "id": "MONTREAL_IMPACT_MLS",
+        "name": "Montréal",
+        "colors": {
+          "primary": "#0033FF",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#0033FF"
+        }
+      }
+    },
+    {
+      "eventId": "ENIOVh4uwTCvs9wtDLFI",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T03:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "PORTLAND_TIMBERS_MLS",
+        "name": "Portland",
+        "colors": {
+          "primaryContrast": "#FFFFFF",
+          "primary": "#006633"
+        }
+      },
+      "away": {
+        "id": "COLUMBUS_CREW_MLS",
+        "name": "Columbus",
+        "colors": {
+          "primary": "#FFFF00",
+          "secondary": "",
+          "primaryContrast": "#000000",
+          "secondaryContrast": ""
+        }
+      }
+    },
+    {
+      "eventId": "mBBOUh9iYGmjFMXKRmKp",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-22T03:30:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SAN_JOSE_EARTHQUAKES_MLS",
+        "name": "San Jose",
+        "colors": {
+          "primary": "#3366FF",
+          "secondary": "#000000",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#3366FF"
+        }
+      },
+      "away": {
+        "id": "SPORTING_KANSAS_CITY_MLS",
+        "name": "Kansas City",
+        "colors": {
+          "primary": "#000033",
+          "secondary": "#99CCFF",
+          "primaryContrast": "#FFFFFF",
+          "secondaryContrast": "#000033"
+        }
+      }
+    },
+    {
+      "eventId": "boNDuScfIR4IMGijYMGH",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-23T00:00:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "LOS_ANGELES_GALAXY_MLS",
+        "name": "LA Galaxy",
+        "colors": {
+          "primary": "#FFCC00",
+          "secondary": "#FFFFFF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#000000"
+        }
+      },
+      "away": {
+        "id": "NEW_YORK_CITY_FC_MLS",
+        "name": "NY City",
+        "colors": {
+          "secondary": "#171D23",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#6EADE0",
+          "primary": "#6EADE0"
+        }
+      }
+    },
+    {
+      "eventId": "ec2seUIiqUhZlJyeXEgq",
+      "sport": "soccer_mls",
+      "league": "MLS",
+      "startTime": "2026-02-23T02:15:00.000Z",
+      "status": {
+        "started": false,
+        "completed": false,
+        "ended": false,
+        "cancelled": false,
+        "live": false,
+        "delayed": false,
+        "oddsPresent": true,
+        "oddsAvailable": true
+      },
+      "home": {
+        "id": "SEATTLE_SOUNDERS_MLS",
+        "name": "Seattle",
+        "colors": {
+          "primary": "#33CC00",
+          "secondary": "#0066FF",
+          "primaryContrast": "#000000",
+          "secondaryContrast": "#33CC00"
+        }
+      },
+      "away": {
+        "id": "COLORADO_RAPIDS_MLS",
+        "name": "Colorado",
+        "colors": {
+          "primaryContrast": "#FFFFFF",
+          "primary": "#660033"
+        }
+      }
+    }
+  ],
+  "source": "sportsgameodds",
+  "status": "success"
+}
