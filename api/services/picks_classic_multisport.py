@@ -152,6 +152,27 @@ def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
     if odds < ODDS_MIN or odds > ODDS_MAX:
         return False
 
+    # Filter O/U to only accept full-game totals (not quarters/players)
+    market = _s(sel.get("market")).lower()
+    if market in {"ou", "over/under", "goals over/under"}:
+        point = _f(sel.get("point"))
+        if point is None or point != point:  # NaN check
+            return False
+        sport = _s(sel.get("sport")).lower()
+        # Minimum point thresholds for full-game totals by sport
+        min_total = {
+            "nba": 200.0,
+            "college_basketball": 120.0,
+            "nhl": 5.0,
+            "mlb": 6.0,
+            "nfl": 35.0,
+            "college_football": 40.0,
+            "soccer_champions": 1.5,
+            "soccer_mls": 1.5,
+        }.get(sport, 0.0)
+        if point < min_total:
+            return False
+
     ps = p_safe(sel)
     if ps != ps:
         return False
