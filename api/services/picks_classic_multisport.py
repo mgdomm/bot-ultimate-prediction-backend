@@ -152,25 +152,39 @@ def is_candidate(sel: Dict[str, Any], pmin: float) -> bool:
     if odds < ODDS_MIN or odds > ODDS_MAX:
         return False
 
-    # Filter O/U to only accept full-game totals (not quarters/players)
+    # Filter O/U and Spreads to only accept full-game lines (not quarters/players/periods)
     market = _s(sel.get("market")).lower()
-    if market in {"ou", "over/under", "goals over/under"}:
+    if market in {"ou", "over/under", "goals over/under", "sp", "spread", "handicap"}:
         point = _f(sel.get("point"))
         if point is None or point != point:  # NaN check
             return False
         sport = _s(sel.get("sport")).lower()
-        # Minimum point thresholds for full-game totals by sport
-        min_total = {
-            "nba": 200.0,
-            "college_basketball": 120.0,
-            "nhl": 5.0,
-            "mlb": 6.0,
-            "nfl": 35.0,
-            "college_football": 40.0,
-            "soccer_champions": 1.5,
-            "soccer_mls": 1.5,
-        }.get(sport, 0.0)
-        if point < min_total:
+        
+        # Minimum thresholds for full-game lines by sport
+        if market in {"ou", "over/under", "goals over/under"}:
+            # O/U totals
+            min_line = {
+                "nba": 200.0,
+                "college_basketball": 120.0,
+                "nhl": 5.0,
+                "mlb": 6.0,
+                "nfl": 35.0,
+                "college_football": 40.0,
+                "soccer_champions": 1.5,
+                "soccer_mls": 1.5,
+            }.get(sport, 0.0)
+        else:
+            # Spread/Handicap - use absolute value, full-game spreads typically 2+ points
+            min_line = {
+                "nba": 2.0,
+                "college_basketball": 2.0,
+                "nhl": 1.0,
+                "mlb": 1.0,
+                "nfl": 2.0,
+                "college_football": 2.0,
+            }.get(sport, 1.5)
+        
+        if abs(point) < min_line:
             return False
 
     ps = p_safe(sel)

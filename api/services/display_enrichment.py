@@ -504,7 +504,14 @@ def enrich_pick_inplace(pick: Dict[str, Any], display_index: Dict[Tuple[str, str
             "away": {"name": "Visitante", "logo": None},
         }
 
-    # Copy 'point' to 'line' for frontend O/U display (e.g., "Menos de 150.5")
+    # Copy team names to top-level homeTeam/awayTeam for frontend compatibility
+    if "display" in pick and isinstance(pick["display"], dict):
+        home = pick["display"].get("home", {}) or {}
+        away = pick["display"].get("away", {}) or {}
+        pick["display"]["homeTeam"] = home.get("name")
+        pick["display"]["awayTeam"] = away.get("name")
+
+    # Copy 'point' to 'line' for frontend O/U/Spread display (e.g., "Menos de 150.5")
     if pick.get("point") is not None:
         pick["line"] = pick["point"]
 

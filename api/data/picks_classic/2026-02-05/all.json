@@ -191,25 +191,6 @@
   },
   {
     "sport": "nhl",
-    "eventId": "8S2ksv0Rw8FBaUHciH1v",
-    "bookmaker": "draftkings",
-    "market": "sp",
-    "selection": "away",
-    "odds": 1.5,
-    "point": 0.5,
-    "p_implied": 0.6667,
-    "p_estimated": 0.6367,
-    "p_safe": 0.6562,
-    "stake": 50.0,
-    "ev": -2.25,
-    "risk": {
-      "level": "MEDIUM"
-    },
-    "premium": true,
-    "premium_reason": "RELAXED_ALL_FOR_POOL"
-  },
-  {
-    "sport": "nhl",
     "eventId": "9ag2rjiqe18MyjKgK2ej",
     "bookmaker": "williamhill",
     "market": "ml",
@@ -235,63 +216,6 @@
     "selection": "away",
     "odds": 1.5,
     "point": null,
-    "p_implied": 0.6667,
-    "p_estimated": 0.6367,
-    "p_safe": 0.6562,
-    "stake": 50.0,
-    "ev": -2.25,
-    "risk": {
-      "level": "MEDIUM"
-    },
-    "premium": true,
-    "premium_reason": "RELAXED_ALL_FOR_POOL"
-  },
-  {
-    "sport": "nhl",
-    "eventId": "JXTtJ0i407Qp0jXlwmqp",
-    "bookmaker": "bovada",
-    "market": "sp",
-    "selection": "away",
-    "odds": 1.5,
-    "point": 0.5,
-    "p_implied": 0.6667,
-    "p_estimated": 0.6367,
-    "p_safe": 0.6562,
-    "stake": 50.0,
-    "ev": -2.25,
-    "risk": {
-      "level": "MEDIUM"
-    },
-    "premium": true,
-    "premium_reason": "RELAXED_ALL_FOR_POOL"
-  },
-  {
-    "sport": "nhl",
-    "eventId": "z4rNbLbjPmxmxDqqPVmL",
-    "bookmaker": "betmgm",
-    "market": "sp",
-    "selection": "away",
-    "odds": 1.5,
-    "point": 0.5,
-    "p_implied": 0.6667,
-    "p_estimated": 0.6367,
-    "p_safe": 0.6562,
-    "stake": 50.0,
-    "ev": -2.25,
-    "risk": {
-      "level": "MEDIUM"
-    },
-    "premium": true,
-    "premium_reason": "RELAXED_ALL_FOR_POOL"
-  },
-  {
-    "sport": "nhl",
-    "eventId": "zAs4dTXBkgUOGGuwhZu2",
-    "bookmaker": "bovada",
-    "market": "sp",
-    "selection": "home",
-    "odds": 1.5,
-    "point": 0.5,
     "p_implied": 0.6667,
     "p_estimated": 0.6367,
     "p_safe": 0.6562,
@@ -373,6 +297,82 @@
     "p_safe": 0.6423,
     "stake": 50.0,
     "ev": -2.3,
+    "risk": {
+      "level": "MEDIUM"
+    },
+    "premium": true,
+    "premium_reason": "RELAXED_ALL_FOR_POOL"
+  },
+  {
+    "sport": "nba",
+    "eventId": "4fSnDCylYnMPkTrg79gO",
+    "bookmaker": "williamhill",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.5319148936170213,
+    "point": null,
+    "p_implied": 0.6528,
+    "p_estimated": 0.6228,
+    "p_safe": 0.6423,
+    "stake": 50.0,
+    "ev": -2.3,
+    "risk": {
+      "level": "MEDIUM"
+    },
+    "premium": true,
+    "premium_reason": "RELAXED_ALL_FOR_POOL"
+  },
+  {
+    "sport": "nba",
+    "eventId": "CZ2YMZmIV8DRK1lIeHmd",
+    "bookmaker": "unibet",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.5405405405405406,
+    "point": null,
+    "p_implied": 0.6491,
+    "p_estimated": 0.6191,
+    "p_safe": 0.6386,
+    "stake": 50.0,
+    "ev": -2.31,
+    "risk": {
+      "level": "MEDIUM"
+    },
+    "premium": true,
+    "premium_reason": "RELAXED_ALL_FOR_POOL"
+  },
+  {
+    "sport": "nba",
+    "eventId": "ykVXXP02MkiOELCHKay3",
+    "bookmaker": "betmgm",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.5405405405405406,
+    "point": null,
+    "p_implied": 0.6491,
+    "p_estimated": 0.6191,
+    "p_safe": 0.6386,
+    "stake": 50.0,
+    "ev": -2.31,
+    "risk": {
+      "level": "MEDIUM"
+    },
+    "premium": true,
+    "premium_reason": "RELAXED_ALL_FOR_POOL"
+  },
+  {
+    "sport": "nhl",
+    "eventId": "If9ja7MDByHGsVdwdCVB",
+    "bookmaker": "bovada",
+    "market": "ml",
+    "selection": "home",
+    "odds": 1.5405405405405406,
+    "point": null,
+    "p_implied": 0.6491,
+    "p_estimated": 0.6191,
+    "p_safe": 0.6386,
+    "stake": 50.0,
+    "ev": -2.31,
     "risk": {
       "level": "MEDIUM"
     },
