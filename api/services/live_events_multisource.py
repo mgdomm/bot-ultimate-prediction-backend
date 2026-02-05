@@ -16,11 +16,9 @@ from pathlib import Path
 try:
     from api.services.api_alternatives_client import AlternativeApisClient
     from api.services.api_espn_client import ESPNClient
-    from api.services.api_sofascore_client import SofaScoreClient
 except ModuleNotFoundError:
     from services.api_alternatives_client import AlternativeApisClient
     from services.api_espn_client import ESPNClient
-    from services.api_sofascore_client import SofaScoreClient
 
 
 class LiveEventsMultiSource:
@@ -72,33 +70,17 @@ class LiveEventsMultiSource:
     @staticmethod
     def get_events_with_odds(sport: str, date: str) -> Dict[str, Any]:
         """
-        Get events for a sport WITH odds from SofaScore
-        SofaScore is completely free and supports all 12 sports with betting odds
+        DEPRECATED: Odds now come from SportsGameOdds API only (via daily pipeline)
+        This method returns empty results for compatibility.
         
-        Returns: {"events": [{eventId, sport, home, away, startTime, status, odds, live}], "source": "sofascore", "count": int}
+        Returns: {"events": [], "source": "deprecated", "count": 0}
         """
-        try:
-            sofascore = SofaScoreClient()
-            result = sofascore.get_events_with_odds(sport, date)
-            
-            # Enrich with live data if available
-            if result.get("events"):
-                live_result = LiveEventsMultiSource.get_live_events(sport, date)
-                live_by_id = live_result.get("live_by_id", {})
-                
-                for event in result["events"]:
-                    event_id = event.get("eventId")
-                    if event_id in live_by_id:
-                        event["live"] = live_by_id[event_id]
-            
-            return result
-        except Exception as e:
-            print(f"[multisource] SofaScore failed for {sport}: {e}")
-            return {
-                "events": [],
-                "source": "sofascore",
-                "error": str(e),
-            }
+        return {
+            "events": [],
+            "source": "sportsgameodds_pipeline",
+            "count": 0,
+            "note": "Use /bets/today endpoint for picks with odds"
+        }
     
     @staticmethod
     def _get_from_espn(sport: str, date: str) -> Dict[str, Any]:

@@ -17,12 +17,8 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 try:
-    from services.api_sports_client import ApiSportsClient  # type: ignore
-    from services.api_oddsapiio_client import OddsAPIIOClient  # type: ignore
     from services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 except ModuleNotFoundError:
-    from api.services.api_sports_client import ApiSportsClient  # type: ignore
-    from api.services.api_oddsapiio_client import OddsAPIIOClient  # type: ignore
     from api.services.api_sportsgameodds_client import SportsGameOddsClient  # type: ignore
 
 logger = logging.getLogger(__name__)
