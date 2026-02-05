@@ -998,5 +998,43 @@ def admin_regenerate_contract(day: str):
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
+# ✅ DIAGNOSTIC: Check SportsGameOdds API configuration
+@app.get("/diagnostic/api-config")
+def diagnostic_api_config():
+    """Check if SportsGameOdds API key is configured"""
+    api_key = os.environ.get("SPORTS_GAME_ODDS_API_KEY")
+    
+    # Get current contract info
+    today = cycle_day_str()
+    contract_path = API_DATA_DIR / "contracts" / today / "contract.json"
+    contract_exists = contract_path.exists()
+    picks_count = 0
+    is_demo = False
+    
+    if contract_exists:
+        try:
+            contract = json.load(open(contract_path))
+            picks_count = len(contract.get("picks_classic", []))
+            # Check if first pick has demo data
+            first_pick = contract.get("picks_classic", [{}])[0] if picks_count > 0 else {}
+            home_name = first_pick.get("display", {}).get("home", {}).get("name", "")
+            is_demo = home_name in ["Local", "Home Team", "Lakers", "Warriors"]
+        except Exception:
+            pass
+    
+    return {
+        "api_key_configured": bool(api_key),
+        "api_key_preview": f"{api_key[:10]}..." if api_key else None,
+        "contract_date": today,
+        "contract_exists": contract_exists,
+        "picks_count": picks_count,
+        "is_demo_data": is_demo,
+        "needs_regeneration": is_demo or picks_count < 10,
+        "regenerate_url": f"/admin/regenerate-contract/{today}",
+    }
+
+
 # Deploy trigger Wed Jan 28 23:55:13 UTC 2026
 
